@@ -1,0 +1,15 @@
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.errorTextLarge {
+    font-size: 65px;
+}
+
+.errorTextSmall {
+    font-size: 38px;
+}

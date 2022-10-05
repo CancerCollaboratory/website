@@ -1,0 +1,43 @@
+@import '../../styles/colors';
+
+.redBtn {
+    background-color: $color-dark-red;
+    border: 1px solid $color-dark-red;
+    border-radius: 18px;
+    margin: 14px 14px 6px 14px;
+    padding: 4px 12px;
+    cursor: pointer;
+    max-width: max-content;
+
+    &:hover {
+        background-color: $color-light-red;
+        border-color: $color-light-red;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 11.5px;
+    }
+}
+
+.blueBtn {
+    background-color: $color-dark-text;
+    border: 1px solid $color-dark-text;
+    border-radius: 18px;
+    margin: 14px 14px 6px 14px;
+    padding: 4px 12px;
+    cursor: pointer;
+    max-width: max-content;
+
+    &:hover {
+        background-color: $color-light-blue;
+        border-color: $color-light-blue;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 11.5px;
+    }
+}

@@ -1,0 +1,15 @@
+.cardItem {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin: 14px 15px 0px 15px;
+    padding-bottom: 12px;
+    width: 260px;
+}
+
+@media screen and (max-width: 750px) {
+    .cardItem {
+        width: 90%;
+    }
+}
