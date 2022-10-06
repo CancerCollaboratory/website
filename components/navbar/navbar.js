@@ -62,24 +62,36 @@ export default function Navbar() {
       </div>
       <div className={styles.navDropdown} id="navMenu" aria-expanded="false">
         <ul className={styles.navbarItemsExpanded}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About Us</Link>
-          </li>
-          <li>
-            <Link href="/services">Our Services</Link>
-          </li>
-          <li>
-            <Link href="/research">Our Research</Link>
-          </li>
-          <li>
-            <Link href="/support">Support</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact Us</Link>
-          </li>
+          <Link href="/">
+            <a>
+              <li>Home</li>
+            </a>
+          </Link>
+          <Link href="/about">
+            <a>
+              <li>About Us</li>
+            </a>
+          </Link>
+          <Link href="/services">
+            <a>
+              <li>Our Services</li>
+            </a>
+          </Link>
+          <Link href="/research">
+            <a>
+              <li>Our Research</li>
+            </a>
+          </Link>
+          <Link href="/support">
+            <a>
+              <li>Support</li>
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a>
+              <li>Contact Us</li>
+            </a>
+          </Link>
         </ul>
       </div>
     </div>
