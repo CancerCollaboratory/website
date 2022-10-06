@@ -22,12 +22,14 @@
     box-shadow: 0 2px 8px -1px silver;
     padding-bottom: 12px;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-.navbarItems {
-    list-style: none;
+.navbarItemsLine {
     display: flex;
     align-items: flex-end;
+    list-style: none;
 
     a {
         color: black;
@@ -38,21 +40,22 @@
     }
 }
 
-.navbarToggler {
+.navbarToggler,
+.navbarItemsExpanded {
     display: none;
 }
 
 @media screen and (max-width: 968px) {
     .navbarToggler {
-        width: 31.5px;
+        width: 31px;
         height:  28px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        bottom: 21px;
-        right: 21px;
+        margin-bottom: 4px;
+        margin-right: 20px;
+        border: 1px solid black;
     }
 
     .iconBar {
@@ -62,7 +65,32 @@
         border-bottom: 1px solid black;
     }
 
-    .navbarItems {
+    .navbarItemsLine,
+    .navDropdown[aria-expanded="false"] {
         display: none;
+    }
+
+    .navDropdown[aria-expanded="true"] {
+        height: max-content;
+        background-color: lightblue;
+    }
+
+    .navbarItemsExpanded {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        list-style: none;
+
+        li {
+            margin: 5px 0px;
+
+            a {
+                color: black;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 0px 14px;
+            }
+        }
     }
 }
