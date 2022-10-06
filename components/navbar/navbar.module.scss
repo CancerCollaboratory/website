@@ -42,19 +42,22 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
     .navbarToggler {
-        width: 30px;
-        height:  23px;
+        width: 31.5px;
+        height:  28px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: absolute;
+        bottom: 21px;
+        right: 21px;
     }
 
     .iconBar {
         width: 17px;
-        margin: 2px 0px;
+        margin: 2.5px 0px;
         border-radius: 1px;
         border-bottom: 1px solid black;
     }
