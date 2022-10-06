@@ -2,6 +2,21 @@ import Link from "next/link";
 import styles from "./navbar.module.scss";
 
 export default function Navbar() {
+  function expandNavMenu() {
+    let isExpanded = document
+      .getElementById("navBtn")
+      .getAttribute("aria-expanded");
+    if (isExpanded === "false") {
+      document.getElementById("navBtn").setAttribute("aria-expanded", "true");
+      document.getElementById("navMenu").setAttribute("aria-expanded", "true");
+      isExpanded = "true";
+    } else {
+      document.getElementById("navBtn").setAttribute("aria-expanded", "false");
+      document.getElementById("navMenu").setAttribute("aria-expanded", "false");
+      isExpanded = "false";
+    }
+  }
+
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.secondaryNavbar}></div>
@@ -13,12 +28,40 @@ export default function Navbar() {
           height="112"
           className={styles.siteLogo}
         ></img>
-        <button type="button" className={styles.navbarToggler}>
+        <button
+          type="button"
+          className={styles.navbarToggler}
+          onClick={expandNavMenu}
+          id="navBtn"
+          aria-expanded="false"
+        >
           <span className={styles.iconBar}></span>
           <span className={styles.iconBar}></span>
           <span className={styles.iconBar}></span>
         </button>
-        <ul className={styles.navbarItems}>
+        <ul className={styles.navbarItemsLine}>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+          <li>
+            <Link href="/about">About Us</Link>
+          </li>
+          <li>
+            <Link href="/services">Our Services</Link>
+          </li>
+          <li>
+            <Link href="/research">Our Research</Link>
+          </li>
+          <li>
+            <Link href="/support">Support</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact Us</Link>
+          </li>
+        </ul>
+      </div>
+      <div className={styles.navDropdown} id="navMenu" aria-expanded="false">
+        <ul className={styles.navbarItemsExpanded}>
           <li>
             <Link href="/">Home</Link>
           </li>
