@@ -71,8 +71,8 @@
     }
 
     .navDropdown[aria-expanded="true"] {
+        margin-top: 6px;
         height: max-content;
-        background-color: lightblue;
     }
 
     .navbarItemsExpanded {
@@ -81,16 +81,15 @@
         align-items: flex-start;
         list-style: none;
 
-        li {
-            margin: 5px 0px;
-
-            a {
-                color: black;
-                text-decoration: none;
-                font-size: 16px;
-                font-weight: 500;
-                margin: 0px 14px;
-            }
+        a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 6px 0px 6px 10px;
+            width: 100%;
+            border-bottom: 1px solid black;
+            cursor: pointer;
         }
     }
 }
