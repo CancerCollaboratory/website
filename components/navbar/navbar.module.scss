@@ -37,3 +37,29 @@
         margin: 0px 14px;
     }
 }
+
+.navbarToggler {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbarToggler {
+        width: 30px;
+        height:  23px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconBar {
+        width: 17px;
+        margin: 2px 0px;
+        border-radius: 1px;
+        border-bottom: 1px solid black;
+    }
+
+    .navbarItems {
+        display: none;
+    }
+}
