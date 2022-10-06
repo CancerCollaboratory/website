@@ -13,26 +13,33 @@ export default function Navbar() {
           height="112"
           className={styles.siteLogo}
         ></img>
-        <ul className={styles.navbarItems}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About Us</Link>
-          </li>
-          <li>
-            <Link href="/services">Our Services</Link>
-          </li>
-          <li>
-            <Link href="/research">Our Research</Link>
-          </li>
-          <li>
-            <Link href="/support">Support</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact Us</Link>
-          </li>
-        </ul>
+        <button type="button" className={styles.navbarToggler}>
+          <span className={styles.iconBar}></span>
+          <span className={styles.iconBar}></span>
+          <span className={styles.iconBar}></span>
+        </button>
+        <div>
+          <ul className={styles.navbarItems}>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about">About Us</Link>
+            </li>
+            <li>
+              <Link href="/services">Our Services</Link>
+            </li>
+            <li>
+              <Link href="/research">Our Research</Link>
+            </li>
+            <li>
+              <Link href="/support">Support</Link>
+            </li>
+            <li>
+              <Link href="/contact">Contact Us</Link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
