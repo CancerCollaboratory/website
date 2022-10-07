@@ -40,7 +40,7 @@
     margin-right: 16px;
 
     li {
-        margin: 0px 12px;
+        margin: 0px 11px;
         height: 28px;
         display: flex;
         align-items: center;
@@ -59,8 +59,8 @@
             font-family: 'Open Sans', sans-serif;
             border-radius: 15px;
             border: 1px solid black;
-            padding: 3.5px 0px 3.5px 27.5px;
-            width: 132px;
+            padding: 3.5px 7.5px 3.5px 27.5px;
+            width: 100px;
             background-repeat: no-repeat;
             background-image: $icon-search;
             background-size: 15px 15px;
@@ -82,6 +82,14 @@
 
     .navbarItemsLine {
         margin: 8px 0px 0px 47px;
+
+        li {
+            margin: 0px 12px;
+
+            .searchBar {
+                width: 125px;
+            }
+        }
     }
 }
 
@@ -147,7 +155,7 @@
                 font-family: 'Open Sans', sans-serif;
                 border-radius: 15px;
                 border: 1px solid black;
-                padding: 3.5px 0px 3.5px 27.5px;
+                padding: 3.5px 7.5px 3.5px 27.5px;
                 background-repeat: no-repeat;
                 background-image: $icon-search;
                 background-size: 15px 15px;
