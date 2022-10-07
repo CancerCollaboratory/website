@@ -1,10 +1,8 @@
-# Website Replacement Project
+## Website Replacement Project
 
 This will be the new Cancer Genome Collaboratory website.
 
-## Start Developing
-
-Run the development server:
+To start developing, run the development server:
 
 ```bash
 npm run dev
