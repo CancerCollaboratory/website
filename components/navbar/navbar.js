@@ -73,6 +73,16 @@ export default function Navbar() {
       </div>
       <div className={styles.navDropdown} id="navMenu" aria-expanded="false">
         <ul className={styles.navbarItemsExpanded}>
+          <li className={styles.searchBarContainer}>
+            <form>
+              <input
+                className={styles.expandedSearchBar}
+                type="text"
+                name="search"
+                placeholder="Search"
+              ></input>
+            </form>
+          </li>
           <Link href="/about">
             <li>About Us</li>
           </Link>
