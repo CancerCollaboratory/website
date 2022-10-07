@@ -9,7 +9,7 @@
 }
 
 .imageContainer {
-    margin: -35px 48px 0px 20px;
+    margin: -35px 44px 0px 28px;
 }
 
 .siteLogo {
@@ -36,14 +36,30 @@
 .navbarItemsLine {
     display: flex;
     align-items: flex-end;
-    list-style: none;
+    margin-right: 16px;
 
-    a {
-        color: black;
-        text-decoration: none;
-        font-weight: 500;
-        margin: 0px 14px;
-        font-size: 14px;
+    li {
+        margin: 0px 12px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13.5px;
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    
+        .searchBar {
+            font-weight: 500;
+            font-family: 'Open Sans', sans-serif;
+            border-radius: 15px;
+            border: 1px solid black;
+            padding: 3.5px 0px 3.5px 11px;
+            width: 132px;
+        }
     }
 }
 
@@ -52,15 +68,14 @@
     display: none;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 991px) {
     .mainNavbar {
         flex-direction: column;
         align-items: flex-start;
     }
 
     .navbarItemsLine {
-        margin-left: 47px;
-        margin-top: 10px;
+        margin: 8px 0px 0px 47px;
     }
 }
 
@@ -108,7 +123,7 @@
         li {
             color: black;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13.5px;
             font-weight: 500;
             padding: 6px 0px 6px 10px;
             width: 100%;
