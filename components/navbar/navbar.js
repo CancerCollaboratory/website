@@ -45,7 +45,7 @@ export default function Navbar() {
         </button>
         <ul className={styles.navbarItemsLine}>
           <li>
-            <Link href="/about">About Us</Link>
+            <Link href="/about-collaboratory">About Us</Link>
           </li>
           <li>
             <Link href="/services">Our Services</Link>
@@ -54,10 +54,10 @@ export default function Navbar() {
             <Link href="/research">Our Research</Link>
           </li>
           <li>
-            <Link href="/support">Support</Link>
+            <Link href="/support/overview">Support</Link>
           </li>
           <li>
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/contact-us">Contact Us</Link>
           </li>
           <li>
             <form>
@@ -83,7 +83,7 @@ export default function Navbar() {
               ></input>
             </form>
           </li>
-          <Link href="/about">
+          <Link href="/about-collaboratory">
             <li>About Us</li>
           </Link>
           <Link href="/services">
@@ -92,10 +92,10 @@ export default function Navbar() {
           <Link href="/research">
             <li>Our Research</li>
           </Link>
-          <Link href="/support">
+          <Link href="/support/overview">
             <li>Support</li>
           </Link>
-          <Link href="/contact">
+          <Link href="/contact-us">
             <li>Contact Us</li>
           </Link>
         </ul>
