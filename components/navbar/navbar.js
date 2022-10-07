@@ -45,9 +45,6 @@ export default function Navbar() {
         </button>
         <ul className={styles.navbarItemsLine}>
           <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
             <Link href="/about">About Us</Link>
           </li>
           <li>
@@ -62,13 +59,20 @@ export default function Navbar() {
           <li>
             <Link href="/contact">Contact Us</Link>
           </li>
+          <li>
+            <form>
+              <input
+                className={styles.searchBar}
+                type="text"
+                name="search"
+                placeholder="Search"
+              ></input>
+            </form>
+          </li>
         </ul>
       </div>
       <div className={styles.navDropdown} id="navMenu" aria-expanded="false">
         <ul className={styles.navbarItemsExpanded}>
-          <Link href="/">
-            <li>Home</li>
-          </Link>
           <Link href="/about">
             <li>About Us</li>
           </Link>
