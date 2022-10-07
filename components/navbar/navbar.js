@@ -21,13 +21,17 @@ export default function Navbar() {
     <div className={styles.navbarContainer}>
       <div className={styles.secondaryNavbar}></div>
       <div className={styles.mainNavbar}>
-        <img
-          src="/assets/navbar/svgs/logo-cancer-genome-collaboratory.svg"
-          alt="Cancer Genome Collaboratory"
-          width="275"
-          height="112"
-          className={styles.siteLogo}
-        ></img>
+        <div className={styles.imageContainer}>
+          <Link href="/">
+            <img
+              src="/assets/navbar/svgs/logo-cancer-genome-collaboratory.svg"
+              alt="Cancer Genome Collaboratory"
+              width="275"
+              height="112"
+              className={styles.siteLogo}
+            ></img>
+          </Link>
+        </div>
         <button
           type="button"
           className={styles.navbarToggler}
@@ -63,34 +67,22 @@ export default function Navbar() {
       <div className={styles.navDropdown} id="navMenu" aria-expanded="false">
         <ul className={styles.navbarItemsExpanded}>
           <Link href="/">
-            <a>
-              <li>Home</li>
-            </a>
+            <li>Home</li>
           </Link>
           <Link href="/about">
-            <a>
-              <li>About Us</li>
-            </a>
+            <li>About Us</li>
           </Link>
           <Link href="/services">
-            <a>
-              <li>Our Services</li>
-            </a>
+            <li>Our Services</li>
           </Link>
           <Link href="/research">
-            <a>
-              <li>Our Research</li>
-            </a>
+            <li>Our Research</li>
           </Link>
           <Link href="/support">
-            <a>
-              <li>Support</li>
-            </a>
+            <li>Support</li>
           </Link>
           <Link href="/contact">
-            <a>
-              <li>Contact Us</li>
-            </a>
+            <li>Contact Us</li>
           </Link>
         </ul>
       </div>
