@@ -8,8 +8,14 @@
     z-index: 1;
 }
 
-.siteLogo {
+.imageContainer {
     margin: -35px 48px 0px 20px;
+}
+
+.siteLogo {
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .secondaryNavbar {
@@ -81,7 +87,7 @@
         align-items: flex-start;
         list-style: none;
 
-        a {
+        li {
             color: black;
             text-decoration: none;
             font-size: 16px;
