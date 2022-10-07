@@ -45,16 +45,16 @@ export default function Navbar() {
         </button>
         <ul className={styles.navbarItemsLine}>
           <li>
-            <Link href="/about-collaboratory">About Us</Link>
+            <Link href="/about-collaboratory">About Us ▾</Link>
           </li>
           <li>
-            <Link href="/services">Our Services</Link>
+            <Link href="/services">Our Services ▾</Link>
           </li>
           <li>
-            <Link href="/research">Our Research</Link>
+            <Link href="/research">Our Research ▾</Link>
           </li>
           <li>
-            <Link href="/support/overview">Support</Link>
+            <Link href="/support/overview">Support ▾</Link>
           </li>
           <li>
             <Link href="/contact-us">Contact Us</Link>
