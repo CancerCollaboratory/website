@@ -39,12 +39,11 @@
     align-items: flex-end;
     margin-right: 16px;
 
-    li {
+    .navbarItem {
         margin: 0px 11px;
         height: 28px;
         display: flex;
         align-items: center;
-        justify-content: center;
 
         a {
             color: black;
@@ -83,8 +82,8 @@
     .navbarItemsLine {
         margin: 8px 0px 0px 47px;
 
-        li {
-            margin: 0px 12px;
+        .navbarItem {
+            width: max-content;
 
             .searchBar {
                 width: 125px;
