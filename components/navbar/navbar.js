@@ -45,39 +45,23 @@ export default function Navbar() {
         </button>
         <div className={styles.navbarItemsLine}>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLink}>
-              <Link href="/about-collaboratory">About Us ▾</Link>
-            </div>
-            <div className={styles.subMenuDropdown}>
-              <Link href="/about-collaboratory">About the Collaboratory</Link>
-              <Link href="/about-team">Our Team</Link>
-              <Link href="/about-funders-collaborators">
-                Funders & Collaborators
-              </Link>
-            </div>
-          </div>
-          <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLink}>
-              <Link href="/services">Our Services ▾</Link>
-            </div>
+            <Link href="/about-collaboratory">About Us ▾</Link>
             <div className={styles.subMenuDropdown}></div>
           </div>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLink}>
-              <Link href="/research">Our Research ▾</Link>
-            </div>
+            <Link href="/services">Our Services ▾</Link>
             <div className={styles.subMenuDropdown}></div>
           </div>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLink}>
-              <Link href="/support/overview">Support ▾</Link>
-            </div>
+            <Link href="/research">Our Research ▾</Link>
             <div className={styles.subMenuDropdown}></div>
           </div>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLink}>
-              <Link href="/contact-us">Contact Us</Link>
-            </div>
+            <Link href="/support/overview">Support ▾</Link>
+            <div className={styles.subMenuDropdown}></div>
+          </div>
+          <div className={styles.navbarItem}>
+            <Link href="/contact-us">Contact Us</Link>
             <div className={styles.subMenuDropdown}></div>
           </div>
           <div className={styles.navbarItem}>
