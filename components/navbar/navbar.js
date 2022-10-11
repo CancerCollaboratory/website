@@ -90,33 +90,21 @@ export default function Navbar() {
         </div>
       </div>
       <div className={styles.navDropdown} id="navMenu" aria-expanded="false">
-        <ul className={styles.navbarItemsExpanded}>
-          <li className={styles.searchBarContainer}>
-            <form>
-              <input
-                className={styles.expandedSearchBar}
-                type="text"
-                name="search"
-                placeholder="Search"
-              ></input>
-            </form>
-          </li>
-          <Link href="/about-collaboratory">
-            <li>About Us</li>
-          </Link>
-          <Link href="/services">
-            <li>Our Services</li>
-          </Link>
-          <Link href="/research">
-            <li>Our Research</li>
-          </Link>
-          <Link href="/support/overview">
-            <li>Support</li>
-          </Link>
-          <Link href="/contact-us">
-            <li>Contact Us</li>
-          </Link>
-        </ul>
+        <div className={styles.navbarItemsExpanded}>
+          <div className={styles.extendSearchBar}>
+            <input
+              className={styles.expandedSearchBar}
+              type="text"
+              name="search"
+              placeholder="Search"
+            />
+          </div>
+          <Link href="/about-collaboratory">About Us</Link>
+          <Link href="/services">Our Services</Link>
+          <Link href="/research">Our Research</Link>
+          <Link href="/support/overview">Support</Link>
+          <Link href="/contact-us">Contact Us</Link>
+        </div>
       </div>
     </div>
   );
