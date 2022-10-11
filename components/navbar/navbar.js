@@ -139,7 +139,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className={styles.navDropdown} id="navMenu" aria-expanded="false">
-        <div className={styles.navbarItemsExpanded}>
+        <div className={styles.expandedMenuContainer}>
           <div className={styles.extendSearchBar}>
             <input
               className={styles.expandedSearchBar}
@@ -148,11 +148,26 @@ export default function Navbar() {
               placeholder="Search"
             />
           </div>
-          <Link href="/about-collaboratory">About Us ▾</Link>
-          <Link href="/services">Our Services ▾</Link>
-          <Link href="/research">Our Research ▾</Link>
-          <Link href="/support/overview">Support ▾</Link>
-          <Link href="/contact-us">Contact Us</Link>
+          <div className={styles.expandedMenuItem}>
+            <Link href="/about-collaboratory">About Us ▾</Link>
+            <div className={styles.expandedSubMenuItem}></div>
+          </div>
+          <div className={styles.expandedMenuItem}>
+            <Link href="/services">Our Services ▾</Link>
+            <div className={styles.expandedSubMenuItem}></div>
+          </div>
+          <div className={styles.expandedMenuItem}>
+            <Link href="/research">Our Research ▾</Link>
+            <div className={styles.expandedSubMenuItem}></div>
+          </div>
+          <div className={styles.expandedMenuItem}>
+            <Link href="/support/overview">Support ▾</Link>
+            <div className={styles.expandedSubMenuItem}></div>
+          </div>
+          <div className={styles.expandedMenuItem}>
+            <Link href="/contact-us">Contact Us</Link>
+            <div className={styles.expandedSubMenuItem}></div>
+          </div>
         </div>
       </div>
     </div>
