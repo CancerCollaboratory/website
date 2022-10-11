@@ -69,7 +69,7 @@
         &:hover {
             .subMenuDropdown {
                 top: 126px;
-                padding: 6px 6px 0px 6px;
+                padding-top: 6px;
                 display: flex;
                 flex-direction: column;
                 position: absolute;
@@ -78,7 +78,7 @@
                 background-color: white;
 
                 a {
-                    padding-bottom: 6px;
+                    padding: 0px 6px 6px;
                     
                     &:hover {
                         color: $color-dark-red;
@@ -87,6 +87,12 @@
 
                 .innerSubMenuItem {
                     padding-left: 12px;
+                }
+
+                .subMenuDivision {
+                    margin-bottom: 5px;
+                    width: 100%;
+                    border-bottom: 1px solid black;
                 }
             }
         }
