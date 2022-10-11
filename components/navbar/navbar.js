@@ -46,23 +46,36 @@ export default function Navbar() {
         <div className={styles.navbarItemsLine}>
           <div className={styles.navbarItem}>
             <Link href="/about-collaboratory">About Us ▾</Link>
-            <div className={styles.subMenuDropdown}></div>
+            <div className={styles.subMenuDropdown}>
+              <Link href="/about-collaboratory">About the Collaboratory</Link>
+              <Link href="/about-team">Our Team</Link>
+              <Link href="/about-funders-collaborators">
+                Funders & Collaborators
+              </Link>
+            </div>
           </div>
           <div className={styles.navbarItem}>
             <Link href="/services">Our Services ▾</Link>
-            <div className={styles.subMenuDropdown}></div>
+            <div className={styles.subMenuDropdown}>
+              <Link href="/services">Our Services</Link>
+            </div>
           </div>
           <div className={styles.navbarItem}>
             <Link href="/research">Our Research ▾</Link>
-            <div className={styles.subMenuDropdown}></div>
+            <div className={styles.subMenuDropdown}>
+              <Link href="/research/hardware-software-infrastructure">
+                Hardware & Software Infrastructure
+              </Link>
+            </div>
           </div>
           <div className={styles.navbarItem}>
             <Link href="/support/overview">Support ▾</Link>
-            <div className={styles.subMenuDropdown}></div>
+            <div className={styles.subMenuDropdown}>
+              <Link href="/support/getting-started">Getting Started</Link>
+            </div>
           </div>
           <div className={styles.navbarItem}>
             <Link href="/contact-us">Contact Us</Link>
-            <div className={styles.subMenuDropdown}></div>
           </div>
           <div className={styles.navbarItem}>
             <form>
