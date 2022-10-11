@@ -99,10 +99,10 @@ export default function Navbar() {
               placeholder="Search"
             />
           </div>
-          <Link href="/about-collaboratory">About Us</Link>
-          <Link href="/services">Our Services</Link>
-          <Link href="/research">Our Research</Link>
-          <Link href="/support/overview">Support</Link>
+          <Link href="/about-collaboratory">About Us ▾</Link>
+          <Link href="/services">Our Services ▾</Link>
+          <Link href="/research">Our Research ▾</Link>
+          <Link href="/support/overview">Support ▾</Link>
           <Link href="/contact-us">Contact Us</Link>
         </div>
       </div>
