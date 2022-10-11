@@ -42,8 +42,7 @@
     .navbarItem {
         margin: 0px 11px;
         height: 28px;
-        display: flex;
-        align-items: center;
+        display: block;
 
         a {
             color: black;
@@ -64,6 +63,10 @@
             background-image: $icon-search;
             background-size: 15px 15px;
             background-position: 7px;
+        }
+
+        .subMenuDropdown {
+            display: none;
         }
     }
 }
@@ -87,6 +90,26 @@
 
             .searchBar {
                 width: 125px;
+            }
+
+            &:hover {
+                .subMenuDropdown {
+                    padding: 6px 6px 0px 6px;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    margin-left: 6px;
+                    margin-top: 4px;
+                    border: 1px solid black;
+
+                    a {
+                        padding-bottom: 6px;
+                        
+                        &:hover {
+                            color: $color-dark-red;
+                        }
+                    }
+                }
             }
         }
     }
