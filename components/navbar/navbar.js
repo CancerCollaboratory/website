@@ -43,23 +43,44 @@ export default function Navbar() {
           <span className={styles.iconBar}></span>
           <span className={styles.iconBar}></span>
         </button>
-        <ul className={styles.navbarItemsLine}>
-          <li>
-            <Link href="/about-collaboratory">About Us ▾</Link>
-          </li>
-          <li>
-            <Link href="/services">Our Services ▾</Link>
-          </li>
-          <li>
-            <Link href="/research">Our Research ▾</Link>
-          </li>
-          <li>
-            <Link href="/support/overview">Support ▾</Link>
-          </li>
-          <li>
-            <Link href="/contact-us">Contact Us</Link>
-          </li>
-          <li>
+        <div className={styles.navbarItemsLine}>
+          <div className={styles.navbarItem}>
+            <div className={styles.navbarItemLink}>
+              <Link href="/about-collaboratory">About Us ▾</Link>
+            </div>
+            <div className={styles.subMenuDropdown}>
+              <Link href="/about-collaboratory">About the Collaboratory</Link>
+              <Link href="/about-team">Our Team</Link>
+              <Link href="/about-funders-collaborators">
+                Funders & Collaborators
+              </Link>
+            </div>
+          </div>
+          <div className={styles.navbarItem}>
+            <div className={styles.navbarItemLink}>
+              <Link href="/services">Our Services ▾</Link>
+            </div>
+            <div className={styles.subMenuDropdown}></div>
+          </div>
+          <div className={styles.navbarItem}>
+            <div className={styles.navbarItemLink}>
+              <Link href="/research">Our Research ▾</Link>
+            </div>
+            <div className={styles.subMenuDropdown}></div>
+          </div>
+          <div className={styles.navbarItem}>
+            <div className={styles.navbarItemLink}>
+              <Link href="/support/overview">Support ▾</Link>
+            </div>
+            <div className={styles.subMenuDropdown}></div>
+          </div>
+          <div className={styles.navbarItem}>
+            <div className={styles.navbarItemLink}>
+              <Link href="/contact-us">Contact Us</Link>
+            </div>
+            <div className={styles.subMenuDropdown}></div>
+          </div>
+          <div className={styles.navbarItem}>
             <form>
               <input
                 className={styles.searchBar}
@@ -68,8 +89,8 @@ export default function Navbar() {
                 placeholder="Search"
               ></input>
             </form>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
       <div className={styles.navDropdown} id="navMenu" aria-expanded="false">
         <ul className={styles.navbarItemsExpanded}>
