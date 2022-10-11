@@ -159,19 +159,12 @@
         flex-direction: column;
         align-items: flex-start;
         list-style: none;
+        border-bottom: 1px solid black;
 
-        .searchBarContainer {
-            cursor: default;
-        }
-
-        li {
-            color: black;
-            font-size: 13.5px;
-            font-weight: 500;
-            padding: 6px 12px 6px 12px;
+        .extendSearchBar {
+            display: flex;
+            justify-content: center;
             width: 100%;
-            border-bottom: 1px solid black;
-            cursor: pointer;
 
             .expandedSearchBar {
                 width: 100%;
@@ -185,8 +178,21 @@
                 background-image: $icon-search;
                 background-size: 15px 15px;
                 background-position: 7px;
-                margin-top: 6px;
-                margin-bottom: 4px;
+                margin: 13px 13px;
+            }
+        }
+
+        a {
+            color: black;
+            font-size: 13.5px;
+            font-weight: 500;
+            padding: 7px 13px;
+            width: 100%;
+            border-top: 1px solid black;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-dark-red;
             }
         }
     }
