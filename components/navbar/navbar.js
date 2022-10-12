@@ -148,7 +148,7 @@ export default function Navbar() {
               placeholder="Search"
             />
           </div>
-          <button className={styles.expandedMenuItem}>
+          <button type="button" className={styles.expandedMenuItem}>
             <p className={styles.itemName}>About Us ▾</p>
             <div className={styles.expandedSubMenuItem}>
               <Link href="/about-collaboratory">About the Collaboratory</Link>
@@ -158,19 +158,19 @@ export default function Navbar() {
               </Link>
             </div>
           </button>
-          <button className={styles.expandedMenuItem}>
+          <button type="button" className={styles.expandedMenuItem}>
             <p className={styles.itemName}>Our Services ▾</p>
             <div className={styles.expandedSubMenuItem}></div>
           </button>
-          <button className={styles.expandedMenuItem}>
+          <button type="button" className={styles.expandedMenuItem}>
             <p className={styles.itemName}>Our Research ▾</p>
             <div className={styles.expandedSubMenuItem}></div>
           </button>
-          <button className={styles.expandedMenuItem}>
+          <button type="button" className={styles.expandedMenuItem}>
             <p className={styles.itemName}>Support ▾</p>
             <div className={styles.expandedSubMenuItem}></div>
           </button>
-          <button className={styles.expandedMenuItem}>
+          <button type="button" className={styles.expandedMenuItem}>
             <p className={styles.itemName}>Contact Us</p>
             <div className={styles.expandedSubMenuItem}></div>
           </button>
