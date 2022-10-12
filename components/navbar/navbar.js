@@ -148,26 +148,32 @@ export default function Navbar() {
               placeholder="Search"
             />
           </div>
-          <div className={styles.expandedMenuItem}>
-            <Link href="/about-collaboratory">About Us ▾</Link>
+          <button className={styles.expandedMenuItem}>
+            <p className={styles.itemName}>About Us ▾</p>
+            <div className={styles.expandedSubMenuItem}>
+              <Link href="/about-collaboratory">About the Collaboratory</Link>
+              <Link href="/about-team">Our Team</Link>
+              <Link href="/about-funders-collaborators">
+                Funders & Collaborators
+              </Link>
+            </div>
+          </button>
+          <button className={styles.expandedMenuItem}>
+            <p className={styles.itemName}>Our Services ▾</p>
             <div className={styles.expandedSubMenuItem}></div>
-          </div>
-          <div className={styles.expandedMenuItem}>
-            <Link href="/services">Our Services ▾</Link>
+          </button>
+          <button className={styles.expandedMenuItem}>
+            <p className={styles.itemName}>Our Research ▾</p>
             <div className={styles.expandedSubMenuItem}></div>
-          </div>
-          <div className={styles.expandedMenuItem}>
-            <Link href="/research">Our Research ▾</Link>
+          </button>
+          <button className={styles.expandedMenuItem}>
+            <p className={styles.itemName}>Support ▾</p>
             <div className={styles.expandedSubMenuItem}></div>
-          </div>
-          <div className={styles.expandedMenuItem}>
-            <Link href="/support/overview">Support ▾</Link>
+          </button>
+          <button className={styles.expandedMenuItem}>
+            <p className={styles.itemName}>Contact Us</p>
             <div className={styles.expandedSubMenuItem}></div>
-          </div>
-          <div className={styles.expandedMenuItem}>
-            <Link href="/contact-us">Contact Us</Link>
-            <div className={styles.expandedSubMenuItem}></div>
-          </div>
+          </button>
         </div>
       </div>
     </div>
