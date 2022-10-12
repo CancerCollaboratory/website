@@ -92,7 +92,7 @@
                 .subMenuDivision {
                     margin-bottom: 5px;
                     width: 100%;
-                    border-bottom: 1px solid black;
+                    border-bottom: 1px solid $color-navbar-main-submenu-border;
                 }
             }
         }
@@ -169,7 +169,7 @@
         flex-direction: column;
         align-items: flex-start;
         list-style: none;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid $color-navbar-expanded-menu-border;
 
         .extendSearchBar {
             display: flex;
@@ -182,32 +182,39 @@
                 font-size: 13.5px;
                 font-family: 'Open Sans', sans-serif;
                 border-radius: 15px;
-                border: 1px solid black;
+                background-color: $color-table-row;
+                border: 1px solid $color-search-bar-border;
+                border-top: 2px solid $color-search-bar-border-top;
                 padding: 3.5px 7.5px 3.5px 27.5px;
                 background-repeat: no-repeat;
                 background-image: $icon-search;
                 background-size: 15px 15px;
                 background-position: 7px;
-                margin: 13px 13px;
+                margin: 14px 15px;
             }
         }
 
         .expandedMenuItem {
-            width: 100%;
-            padding: 7px 13px;
-            border-top: 1px solid black;
+            border-top: 1px solid $color-navbar-expanded-menu-border;
             width: 100%;
             cursor: pointer;
 
+            &:hover {
+                background-color: $color-table-row;
+
+                a {
+                    color: $color-dark-red;
+                }
+            }
+
             a {
-                color: black;
+                display: block;
+                color: $color-mix-gray;
                 font-size: 13.5px;
                 font-weight: 500;
                 text-decoration: none;
-    
-                &:hover {
-                    color: $color-dark-red;
-                }
+                width: 100%;
+                padding: 8px 15px;
             }
         }
     }
