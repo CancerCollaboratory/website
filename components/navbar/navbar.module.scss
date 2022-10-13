@@ -212,16 +212,17 @@
             cursor: pointer;
 
             &:hover {
-                .expandedSubMenuItem[aria-expanded="false"] { 
-                    background-color: $color-table-row;
-                }
-
                 .itemName {
                     color: $color-dark-red;
+
+                    &:hover {
+                        background-color: $color-table-row;
+                    }
                 }
 
                 .noSubMenu {
-                        color: $color-dark-red;
+                    color: $color-dark-red;
+                    background-color: $color-table-row;
                 }
             }
 
@@ -229,7 +230,6 @@
                 display: flex;
                 flex-direction: column;
                 border-top: 1px solid $color-navbar-expanded-menu-border;
-                background-color: white;
                 
                 a {
                     color: $color-mix-gray;
