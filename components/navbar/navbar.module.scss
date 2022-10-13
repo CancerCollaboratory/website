@@ -22,6 +22,42 @@
 .secondaryNavbar {
     background-color: $color-dark-gray;
     height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.secondaryNavbarItemsList {
+    list-style: none;
+    display: flex;
+    margin-right: 6px;
+    font-size: 11.5px;
+
+    .listItemColoredBlock {
+        margin-right: 11px;
+
+        a {
+            color: white;
+            padding: 5px 9px;
+            text-decoration: none;
+            background-color: $color-dark-text;
+            border-radius: 15px;
+
+            &:hover {
+                background-color: $color-light-blue;
+            }
+        }
+    }
+
+    .listItemBlock {
+        margin-right: 11px;
+
+        a {
+            color: $color-secondary-navbar-block-item;
+            text-decoration: none;
+        }
+    }
 }
 
 .mainNavbar {
