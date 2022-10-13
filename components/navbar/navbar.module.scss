@@ -37,10 +37,10 @@
 .navbarItemsLine {
     display: flex;
     align-items: flex-end;
-    margin-right: 16px;
+    margin-right: 8px;
 
     .navbarItem {
-        margin: 0px 11px;
+        margin: 0px 10px;
         height: 28px;
         display: flex;
         align-items: center;
@@ -61,13 +61,15 @@
             font-size: 13.5px;
             font-family: 'Open Sans', sans-serif;
             border-radius: 15px;
-            border: 1px solid black;
+            border: 1px solid $color-search-bar-border;
+            border-top: 2px solid $color-search-bar-border-top;
             padding: 3.5px 7.5px 3.5px 27.5px;
-            width: 100px;
+            width: 136px;
             background-repeat: no-repeat;
             background-image: $icon-search;
             background-size: 15px 15px;
             background-position: 7px;
+            background-color: $color-table-row;
         }
 
         &:hover {
@@ -117,11 +119,13 @@
     }
 
     .navbarItemsLine {
-        margin: 8px 0px 0px 47px;
+        margin: 8px 8px 0px 64.5px;
 
         .navbarItem {
+            margin: 0px 11px;
+
             .searchBar {
-                width: 125px;
+                width: 168px;
             }
 
             &:hover {
