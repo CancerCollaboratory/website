@@ -3,7 +3,7 @@ import styles from "./footer.module.scss";
 export default function Footer() {
   return (
     <div className={styles.footer}>
-      <p>This is the footer.</p>
+      <p>This is a temporary footer.</p>
     </div>
   );
 }
