@@ -135,23 +135,27 @@
     }
 
     .navbarToggler {
-        width: 31px;
-        height:  28px;
+        width: 34px;
+        height:  30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-bottom: 4px;
         margin-right: 20px;
-        border: 1px solid black;
+        border: 1px solid $color-search-bar-border;
         cursor: pointer;
+
+        &:hover {
+            background-color: $color-search-bar-border;
+        }
     }
 
     .iconBar {
-        width: 17px;
+        width: 18px;
         margin: 2.5px 0px;
         border-radius: 1px;
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid $color-navbar-toggle-icon-bar;
     }
 
     .navbarItemsLine,
