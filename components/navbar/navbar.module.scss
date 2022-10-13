@@ -21,25 +21,24 @@
 
 .secondaryNavbar {
     background-color: $color-dark-gray;
-    height: 44px;
+    height: 44.5px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
 }
 
 .secondaryNavbarItemsList {
     list-style: none;
     display: flex;
-    margin-right: 6px;
+    margin-right: 5px;
     font-size: 11.5px;
 
     .listItemColoredBlock {
-        margin-right: 11px;
+        margin-right: 12px;
 
         a {
             color: white;
-            padding: 5px 9px;
+            padding: 4.5px 9.5px;
             text-decoration: none;
             background-color: $color-dark-text;
             border-radius: 15px;
@@ -51,7 +50,7 @@
     }
 
     .listItemBlock {
-        margin-right: 11px;
+        margin-right: 12px;
 
         a {
             color: $color-secondary-navbar-block-item;
