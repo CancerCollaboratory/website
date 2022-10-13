@@ -73,16 +73,16 @@
         &:hover {
             .subMenuDropdown {
                 top: 126px;
-                padding-top: 10px;
+                padding-top: 7px;
                 display: flex;
                 flex-direction: column;
                 position: absolute;
-                margin-left: 6px;
+                margin-left: 8px;
                 border: 1px solid $color-navbar-expanded-menu-border;
                 background-color: white;
 
                 a {
-                    padding: 0px 8px 10px 8px;
+                    padding: 3.5px 14px 12px 14px;
                     
                     &:hover {
                         color: $color-dark-red;
@@ -90,7 +90,8 @@
                 }
 
                 .innerSubMenuItem {
-                    padding-left: 12px;
+                    padding-left: 26px;
+                    padding-top: 0px;
                 }
 
                 .subMenuDivision {
