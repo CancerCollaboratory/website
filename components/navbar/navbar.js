@@ -155,7 +155,34 @@ export default function Navbar() {
 
   return (
     <div className={styles.navbarContainer}>
-      <div className={styles.secondaryNavbar}></div>
+      <div className={styles.secondaryNavbar}>
+        <ul className={styles.secondaryNavbarItemsList}>
+          <li className={styles.listItemColoredBlock}>
+            <Link href="/services-request-account">Request an Account</Link>
+          </li>
+          <li className={styles.listItemColoredBlock}>
+            <Link href="/support/getting-started">Getting Started</Link>
+          </li>
+          <li className={styles.listItemBlock}>
+            <a href="https://console.cancercollaboratory.org" target="_blank">
+              Console
+            </a>
+          </li>
+          <li className={styles.listItemBlock}>
+            <a href="https://billing.cancercollaboratory.org" target="_blank">
+              Usage and Billing
+            </a>
+          </li>
+          <li className={styles.listItemBlock}>
+            <a
+              href="https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D"
+              target="_blank"
+            >
+              Repository
+            </a>
+          </li>
+        </ul>
+      </div>
       <div className={styles.mainNavbar}>
         <div className={styles.imageContainer}>
           <Link href="/">
