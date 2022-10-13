@@ -144,7 +144,7 @@
     }
 
     .navbarToggler {
-        width: 34px;
+        width: 35px;
         height:  30px;
         display: flex;
         flex-direction: column;
@@ -153,6 +153,8 @@
         margin-bottom: 4px;
         margin-right: 20px;
         border: 1px solid $color-search-bar-border;
+        background-color: white;
+        border-radius: 4px;
         cursor: pointer;
 
         &:hover {
