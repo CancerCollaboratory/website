@@ -204,18 +204,51 @@
             cursor: pointer;
 
             &:hover {
-                background-color: $color-table-row;
+                .expandedSubMenuItem[aria-expanded="false"] { 
+                    background-color: $color-table-row;
+                }
 
                 .itemName {
                     color: $color-dark-red;
                 }
+
+                .noSubMenu {
+                        color: $color-dark-red;
+                }
+            }
+
+            .expandedSubMenuItem[aria-expanded="true"] {
+                display: flex;
+                flex-direction: column;
+                border-top: 1px solid $color-navbar-expanded-menu-border;
+                background-color: white;
+                
+                a {
+                    color: $color-mix-gray;
+                    font-size: 13.5px;
+                    text-decoration: none;
+                    padding: 9px 30px;
+
+                    &:hover {
+                        background-color: $color-table-row;
+                        color: $color-dark-red;
+                    }
+                }
+
+                .innerExpandedMenu {
+                    padding-left: 48px;
+                }
             }
 
             .itemName {
-                display: block;
                 color: $color-mix-gray;
                 font-size: 13.5px;
-                text-decoration: none;
+                padding: 9px 15px;
+            }
+
+            .noSubMenu {
+                color: $color-mix-gray;
+                font-size: 13.5px;
                 padding: 9px 15px;
             }
         }
