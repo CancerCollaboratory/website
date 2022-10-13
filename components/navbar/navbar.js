@@ -163,12 +163,16 @@ export default function Navbar() {
           <li className={styles.listItemColoredBlock}>
             <Link href="/support/getting-started">Getting Started</Link>
           </li>
-          <li className={styles.listItemBlock}>
+          <li
+            className={`${styles.listItemBlock} ${styles.listItemRightBorder}`}
+          >
             <a href="https://console.cancercollaboratory.org" target="_blank">
               Console
             </a>
           </li>
-          <li className={styles.listItemBlock}>
+          <li
+            className={`${styles.listItemBlock} ${styles.listItemRightBorder}`}
+          >
             <a href="https://billing.cancercollaboratory.org" target="_blank">
               Usage and Billing
             </a>
