@@ -16,6 +16,16 @@ export default function Navbar() {
     }
   }
 
+  function clickedOutsideExpandedSubMenu() {
+    if (typeof window !== "undefined") {
+      window.addEventListener("click", function (e) {
+        if (!document.getElementById("expandedMenu").contains(e.target)) {
+          setAriaExpandedFalse();
+        }
+      });
+    }
+  }
+
   function setAriaExpandedFalse() {
     document
       .getElementById("subMenuAboutItem")
@@ -140,6 +150,8 @@ export default function Navbar() {
       .getAttribute("aria-expanded");
     toggleAriaExpanded(isSubMenuSupportExpanded, "subMenuSupportItem");
   }
+
+  clickedOutsideExpandedSubMenu();
 
   return (
     <div className={styles.navbarContainer}>
@@ -272,122 +284,128 @@ export default function Navbar() {
               placeholder="Search"
             />
           </div>
-          <button
-            type="button"
-            className={styles.expandedMenuItem}
-            onClick={expandAboutSubMenu}
-          >
-            <p className={styles.itemName}>About Us ▾</p>
-            <div
-              className={styles.expandedSubMenuItem}
-              id="subMenuAboutItem"
-              aria-expanded="false"
+          <div id="expandedMenu" className={styles.wrapExpandedMenu}>
+            <button
+              type="button"
+              className={styles.expandedMenuItem}
+              onClick={expandAboutSubMenu}
             >
-              <Link href="/about-collaboratory">About the Collaboratory</Link>
-              <Link href="/about-team">Our Team</Link>
-              <Link href="/about-funders-collaborators">
-                Funders & Collaborators
-              </Link>
-            </div>
-          </button>
-          <button
-            type="button"
-            className={styles.expandedMenuItem}
-            onClick={expandServicesSubMenu}
-          >
-            <p className={styles.itemName}>Our Services ▾</p>
-            <div
-              className={styles.expandedSubMenuItem}
-              id="subMenuServicesItem"
-              aria-expanded="false"
+              <p className={styles.itemName}>About Us ▾</p>
+              <div
+                className={styles.expandedSubMenuItem}
+                id="subMenuAboutItem"
+                aria-expanded="false"
+              >
+                <Link href="/about-collaboratory">About the Collaboratory</Link>
+                <Link href="/about-team">Our Team</Link>
+                <Link href="/about-funders-collaborators">
+                  Funders & Collaborators
+                </Link>
+              </div>
+            </button>
+            <button
+              type="button"
+              className={styles.expandedMenuItem}
+              onClick={expandServicesSubMenu}
             >
-              <Link href="/services">Our Services</Link>
-              <Link href="/services-cloud-resources">Cloud Resources</Link>
-              <Link href="/services-dockstore">Dockstore</Link>
-              <Link href="/services-request-account">Request an Account</Link>
-            </div>
-          </button>
-          <button
-            type="button"
-            className={styles.expandedMenuItem}
-            onClick={expandResearchSubMenu}
-          >
-            <p className={styles.itemName}>Our Research ▾</p>
-            <div
-              className={styles.expandedSubMenuItem}
-              id="subMenuResearchItem"
-              aria-expanded="false"
+              <p className={styles.itemName}>Our Services ▾</p>
+              <div
+                className={styles.expandedSubMenuItem}
+                id="subMenuServicesItem"
+                aria-expanded="false"
+              >
+                <Link href="/services">Our Services</Link>
+                <Link href="/services-cloud-resources">Cloud Resources</Link>
+                <Link href="/services-dockstore">Dockstore</Link>
+                <Link href="/services-request-account">Request an Account</Link>
+              </div>
+            </button>
+            <button
+              type="button"
+              className={styles.expandedMenuItem}
+              onClick={expandResearchSubMenu}
             >
-              <Link href="/research#technology_development_cores">
-                Technology Development Cores
-              </Link>
-              <Link href="/research/hardware-software-infrastructure">
-                <a className={styles.innerExpandedMenu}>
-                  Hardware & Software Infrastructure
-                </a>
-              </Link>
-              <Link href="/research/benchmarking">
-                <a className={styles.innerExpandedMenu}>Benchmarking</a>
-              </Link>
-              <Link href="/research/training-outreach">
-                <a className={styles.innerExpandedMenu}>Training & Outreach</a>
-              </Link>
-              <Link href="/research/management-finance">
-                <a className={styles.innerExpandedMenu}>Management & Finance</a>
-              </Link>
-              <Link href="/research#research_modules">Research Modules</Link>
-              <Link href="/research/indexing-search-compression">
-                <a className={styles.innerExpandedMenu}>
-                  Indexing, Search & Compression
-                </a>
-              </Link>
-              <Link href="/research/variant-identification-consequence">
-                <a className={styles.innerExpandedMenu}>
-                  Variant Identification & Consequence
-                </a>
-              </Link>
-              <Link href="/research/drug-target-identification">
-                <a className={styles.innerExpandedMenu}>
-                  Drug Target Identification
-                </a>
-              </Link>
-              <Link href="/research/bioethics-protection-phi">
-                <a className={styles.innerExpandedMenu}>
-                  Bioethics & Protection of PHI
-                </a>
-              </Link>
-              <Link href="/publications-presentations">
-                <a className={styles.innerExpandedMenu}>
-                  Publications & Presentations
-                </a>
-              </Link>
-            </div>
-          </button>
-          <button
-            type="button"
-            className={styles.expandedMenuItem}
-            onClick={expandSupportSubMenu}
-          >
-            <p className={styles.itemName}>Support ▾</p>
-            <div
-              className={styles.expandedSubMenuItem}
-              id="subMenuSupportItem"
-              aria-expanded="false"
+              <p className={styles.itemName}>Our Research ▾</p>
+              <div
+                className={styles.expandedSubMenuItem}
+                id="subMenuResearchItem"
+                aria-expanded="false"
+              >
+                <Link href="/research#technology_development_cores">
+                  Technology Development Cores
+                </Link>
+                <Link href="/research/hardware-software-infrastructure">
+                  <a className={styles.innerExpandedMenu}>
+                    Hardware & Software Infrastructure
+                  </a>
+                </Link>
+                <Link href="/research/benchmarking">
+                  <a className={styles.innerExpandedMenu}>Benchmarking</a>
+                </Link>
+                <Link href="/research/training-outreach">
+                  <a className={styles.innerExpandedMenu}>
+                    Training & Outreach
+                  </a>
+                </Link>
+                <Link href="/research/management-finance">
+                  <a className={styles.innerExpandedMenu}>
+                    Management & Finance
+                  </a>
+                </Link>
+                <Link href="/research#research_modules">Research Modules</Link>
+                <Link href="/research/indexing-search-compression">
+                  <a className={styles.innerExpandedMenu}>
+                    Indexing, Search & Compression
+                  </a>
+                </Link>
+                <Link href="/research/variant-identification-consequence">
+                  <a className={styles.innerExpandedMenu}>
+                    Variant Identification & Consequence
+                  </a>
+                </Link>
+                <Link href="/research/drug-target-identification">
+                  <a className={styles.innerExpandedMenu}>
+                    Drug Target Identification
+                  </a>
+                </Link>
+                <Link href="/research/bioethics-protection-phi">
+                  <a className={styles.innerExpandedMenu}>
+                    Bioethics & Protection of PHI
+                  </a>
+                </Link>
+                <Link href="/publications-presentations">
+                  <a className={styles.innerExpandedMenu}>
+                    Publications & Presentations
+                  </a>
+                </Link>
+              </div>
+            </button>
+            <button
+              type="button"
+              className={styles.expandedMenuItem}
+              onClick={expandSupportSubMenu}
             >
-              <Link href="/support/getting-started">Getting Started</Link>
-              <Link href="/support/best-practices">Best Practices</Link>
-              <Link href="/support/user-guide">User Guide</Link>
-              <Link href="/support/glossary-terms">Glossary of Terms</Link>
-              <Link href="/support/workshops">Workshops</Link>
-              <Link href="/support/faqs">FAQs</Link>
-              <Link href="/support/system-status">System Status</Link>
-            </div>
-          </button>
-          <button type="button" className={styles.expandedMenuItem}>
-            <Link href="/contact-us">
-              <div className={styles.noSubMenu}>Contact Us</div>
-            </Link>
-          </button>
+              <p className={styles.itemName}>Support ▾</p>
+              <div
+                className={styles.expandedSubMenuItem}
+                id="subMenuSupportItem"
+                aria-expanded="false"
+              >
+                <Link href="/support/getting-started">Getting Started</Link>
+                <Link href="/support/best-practices">Best Practices</Link>
+                <Link href="/support/user-guide">User Guide</Link>
+                <Link href="/support/glossary-terms">Glossary of Terms</Link>
+                <Link href="/support/workshops">Workshops</Link>
+                <Link href="/support/faqs">FAQs</Link>
+                <Link href="/support/system-status">System Status</Link>
+              </div>
+            </button>
+            <button type="button" className={styles.expandedMenuItem}>
+              <Link href="/contact-us">
+                <div className={styles.noSubMenu}>Contact Us</div>
+              </Link>
+            </button>
+          </div>
         </div>
       </div>
     </div>
