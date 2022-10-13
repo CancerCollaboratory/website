@@ -46,10 +46,14 @@
         align-items: center;
 
         a {
-            color: black;
+            color: $color-dark-gray;
             text-decoration: none;
             font-weight: 500;
             font-size: 13.5px;
+
+            &:hover {
+                color: $color-dark-red;
+            }
         }
     
         .searchBar {
@@ -69,16 +73,16 @@
         &:hover {
             .subMenuDropdown {
                 top: 126px;
-                padding-top: 6px;
+                padding-top: 10px;
                 display: flex;
                 flex-direction: column;
                 position: absolute;
                 margin-left: 6px;
-                border: 1px solid black;
+                border: 1px solid $color-navbar-expanded-menu-border;
                 background-color: white;
 
                 a {
-                    padding: 0px 6px 6px;
+                    padding: 0px 8px 10px 8px;
                     
                     &:hover {
                         color: $color-dark-red;
