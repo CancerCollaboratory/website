@@ -158,8 +158,19 @@
         align-items: flex-start;
     }
 
+    .imageContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: -35px 0px 0px 28px;
+        padding-right: 491.5px;
+    }
+
     .navbarItemsLine {
-        margin: 8px 8px 0px 64.5px;
+        width: 100%;
+        margin: 8px 0px 1px 0px;
+        padding: 0px 8px 0px 64.5px;
+        justify-content: center;
 
         .navbarItem {
             margin: 0px 11px;
@@ -185,6 +196,12 @@
     .mainNavbar {
         flex-direction: row;
         align-items: flex-end;
+    }
+
+    .imageContainer {
+        width: max-content;
+        justify-content: flex-start;
+        padding-right: 0px;
     }
 
     .navbarToggler {
