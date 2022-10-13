@@ -213,10 +213,9 @@
 
             &:hover {
                 .itemName {
-                    color: $color-dark-red;
-
                     &:hover {
                         background-color: $color-table-row;
+                        color: $color-dark-red;
                     }
                 }
 
