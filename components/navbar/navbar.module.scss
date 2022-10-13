@@ -162,6 +162,10 @@
         }
     }
 
+    .navbarToggler[aria-expanded="true"] {
+        background-color: $color-search-bar-border;
+    }
+
     .iconBar {
         width: 18px;
         margin: 2.5px 0px;
