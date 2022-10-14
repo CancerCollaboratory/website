@@ -18,7 +18,7 @@
         .secondaryNavbarItemsList {
             display: flex;
             font-size: 12px;
-            margin-right: 36px;
+            margin-right: 45px;
 
             .listColoredBlock {
                 display: flex;
@@ -177,7 +177,7 @@
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
-                margin-right: 24px;
+                margin-right: 27.5px;
             }
         }
 
@@ -191,11 +191,21 @@
     }
 }
 
+@media screen and (max-width: 1280px) {
+    .navbarContainer {
+        .secondaryNavbar {
+            .secondaryNavbarItemsList {
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
-                margin-right: 20px;
+                margin-right: 16.5px;
             }
         }
 
@@ -234,7 +244,7 @@
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
-                margin-right: 8px;
+                margin-right: 7.5px;
             }
         }
     }
@@ -242,6 +252,12 @@
 
 @media screen and (max-width: 1050px) {
     .navbarContainer {
+        .secondaryNavbar {
+            .secondaryNavbarItemsList {
+                margin-right: 2.2px;
+            }
+        }
+
         .mainNavbar {
             .navbarItemsLine {
                 .navbarItem {
