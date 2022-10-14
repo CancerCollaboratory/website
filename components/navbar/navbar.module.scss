@@ -89,6 +89,7 @@
     .navbarItem {
         display: flex;
         align-items: center;
+        margin-left: 2px;
 
         a {
             padding: 0px 10px 0px 5px;
@@ -96,14 +97,15 @@
             text-decoration: none;
             font-weight: 500;
             font-size: 13.1px;
+            border-left: 3px solid white;
 
             &:hover {
                 color: $color-dark-red;
+                border-left: 3px solid $color-dark-red;
             }
         }
     
         .searchBar {
-            margin: 0px 10px;
             font-weight: 500;
             font-size: 13.1px;
             font-family: 'Open Sans', sans-serif;
@@ -117,20 +119,12 @@
             background-size: 15px 15px;
             background-position: 7px;
             background-color: $color-table-row;
-        }
-
-        .verticalBar {
-            width: 3px;
-            height: 18px;
-            background-color: white;
-            margin-left: 2px;
+            margin: 0px 10px 0px 8px;
         }
 
         &:hover {
-            .verticalBar {
-                background-color: $color-dark-red;
-            }
-
+            height: 28px;
+            
             .subMenuDropdown {
                 top: 126px;
                 padding-top: 7px;
@@ -142,6 +136,7 @@
                 background-color: white;
 
                 a {
+                    border: none;
                     padding: 3.5px 14px 12px 14px;
                     
                     &:hover {
@@ -199,6 +194,8 @@
         justify-content: center;
 
         .navbarItem {
+            margin-left: 3px;
+
             a {
                 font-size: 13.5px;
                 padding: 0px 11px 0px 5px;
@@ -207,12 +204,7 @@
             .searchBar {
                 width: 168px;
                 font-size: 13.5px;
-                margin: 0px 11px;
-            }
-
-            .verticalBar {
-                margin-left: 3px;
-                height: 18.5px;
+                margin: 0px 11px 0px 8px;
             }
 
             &:hover {
