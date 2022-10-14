@@ -87,11 +87,11 @@
     margin-right: 8px;
 
     .navbarItem {
-        margin: 0px 10px;
         display: flex;
         align-items: center;
 
         a {
+            padding: 0px 10px 0px 5px;
             color: $color-dark-gray;
             text-decoration: none;
             font-weight: 500;
@@ -103,6 +103,7 @@
         }
     
         .searchBar {
+            margin: 0px 10px;
             font-weight: 500;
             font-size: 13.1px;
             font-family: 'Open Sans', sans-serif;
@@ -118,7 +119,18 @@
             background-color: $color-table-row;
         }
 
+        .verticalBar {
+            width: 3px;
+            height: 18px;
+            background-color: white;
+            margin-left: 2px;
+        }
+
         &:hover {
+            .verticalBar {
+                background-color: $color-dark-red;
+            }
+
             .subMenuDropdown {
                 top: 126px;
                 padding-top: 7px;
@@ -187,15 +199,20 @@
         justify-content: center;
 
         .navbarItem {
-            margin: 0px 11px;
-
             a {
                 font-size: 13.5px;
+                padding: 0px 11px 0px 5px;
             }
 
             .searchBar {
                 width: 168px;
                 font-size: 13.5px;
+                margin: 0px 11px;
+            }
+
+            .verticalBar {
+                margin-left: 3px;
+                height: 18.5px;
             }
 
             &:hover {
