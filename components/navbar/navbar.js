@@ -186,6 +186,7 @@ export default function Navbar() {
         </button>
         <div className={styles.navbarItemsLine}>
           <div className={styles.navbarItem}>
+            <div className={styles.verticalBar}></div>
             <Link href="/about-collaboratory">About Us ▾</Link>
             <div className={styles.subMenuDropdown}>
               <Link href="/about-collaboratory">About the Collaboratory</Link>
@@ -194,6 +195,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className={styles.navbarItem}>
+            <div className={styles.verticalBar}></div>
             <Link href="/services">Our Services ▾</Link>
             <div className={styles.subMenuDropdown}>
               <Link href="/services">Our Services</Link>
@@ -203,6 +205,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className={styles.navbarItem}>
+            <div className={styles.verticalBar}></div>
             <Link href="/research">Our Research ▾</Link>
             <div className={styles.subMenuDropdown}>
               <Link href="/research#technology_development_cores">
@@ -239,6 +242,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className={styles.navbarItem}>
+            <div className={styles.verticalBar}></div>
             <Link href="/support/overview">Support ▾</Link>
             <div className={styles.subMenuDropdown}>
               <Link href="/support/getting-started">Getting Started</Link>
@@ -251,6 +255,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className={styles.navbarItem}>
+            <div className={styles.verticalBar}></div>
             <Link href="/contact-us">Contact Us</Link>
           </div>
           <div className={styles.navbarItem}>
