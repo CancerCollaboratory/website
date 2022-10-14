@@ -28,39 +28,46 @@
 }
 
 .secondaryNavbarItemsList {
-    list-style: none;
     display: flex;
     margin-right: 5px;
     font-size: 11.5px;
 
-    .listItemColoredBlock {
-        margin-right: 12px;
+    .listColoredBlock {
+        display: flex;
 
-        a {
-            color: white;
-            padding: 4.5px 9.5px;
-            text-decoration: none;
-            background-color: $color-dark-text;
-            border-radius: 15px;
-
-            &:hover {
-                background-color: $color-light-blue;
+        .itemColoredBlock {
+            margin-right: 12px;
+    
+            a {
+                color: white;
+                padding: 4.5px 9.5px;
+                text-decoration: none;
+                background-color: $color-dark-text;
+                border-radius: 15px;
+    
+                &:hover {
+                    background-color: $color-light-blue;
+                }
             }
         }
     }
 
-    .listItemBlock {
-        margin-right: 12px;
+    .listBlock {
+        display: flex;
 
-        a {
-            color: $color-secondary-navbar-block-item;
-            text-decoration: none;
+        .itemBlock {
+            margin-right: 12px;
+
+            a {
+                color: $color-secondary-navbar-block-item;
+                text-decoration: none;
+            }
         }
-    }
 
-    .listItemRightBorder {
-        border-right: 3px solid $color-secondary-navbar-block-item;
-        padding-right: 12px;
+        .itemBlockRightBorder {
+            border-right: 3px solid $color-secondary-navbar-block-item;
+            padding-right: 12px;
+        }
     }
 }
 
@@ -158,7 +165,7 @@
     }
 
     .secondaryNavbarItemsList {
-        margin: 0px 0px 0px 260px;
+        margin: 0px 0px 0px 258px;
     }
 
     .mainNavbar {
@@ -203,15 +210,34 @@
 @media screen and (max-width: 767px) {
     .secondaryNavbar {
         justify-content: flex-end;
+        height: max-content;
     }
 
     .secondaryNavbarItemsList {
-        margin: 0px 10px 0px 118px;
-        font-size: 8px;
+        flex-direction: column;
+        margin: 14.5px 0px 10px 0px;
+        font-size: 11.1px;
 
-        .listItemRightBorder {
-            border-right: none;
-            padding-right: 0px;
+        .listColoredBlock {
+            margin: 0px 6px;
+
+            .itemColoredBlock {
+                margin: 0px 6px;
+            }
+        }
+
+        .listBlock {
+            justify-content: center;
+            margin: 11.5px 6px 0px 6px;
+
+            .itemBlock {
+                margin: 0px 6px;
+            }
+
+            .itemBlockRightBorder {
+                border-right: none;
+                padding-right: 0px;
+            }
         }
     }
 
