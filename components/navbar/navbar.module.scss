@@ -7,298 +7,322 @@
     top: 0;
     z-index: 1;
     width: 100%;
-}
 
-.imageContainer {
-    margin: -35px 210px 0px 0px;
-}
-
-.siteLogo {
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.secondaryNavbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: $color-dark-gray;
-    height: 44.5px;
-}
-
-.secondaryNavbarItemsList {
-    display: flex;
-    font-size: 12px;
-    margin-right: 36px;
-
-    .listColoredBlock {
-        display: flex;
-
-        .itemColoredBlock {
-            margin-right: 13px;
-    
-            a {
-                padding: 5px 10px;
-                color: white;
-                background-color: $color-dark-text;
-                border-radius: 15px;
-                text-decoration: none;
-    
-                &:hover {
-                    background-color: $color-light-blue;
-                }
-            }
-        }
-    }
-
-    .listBlock {
-        display: flex;
-
-        .itemBlock {
-            margin-right: 13px;
-
-            a {
-                color: $color-secondary-navbar-block-item;
-                text-decoration: none;
-            }
-        }
-
-        .itemBlockRightBorder {
-            border-right: 3px solid $color-secondary-navbar-block-item;
-            padding-right: 13px;
-        }
-    }
-}
-
-.mainNavbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    background-color: white;
-    box-shadow: 0 2px 8px -1px silver;
-    padding: 0px 18px 12px 18px;
-}
-
-.navbarItemsLine {
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-
-    .navbarItem {
+    .secondaryNavbar {
         display: flex;
         align-items: center;
-        margin-left: 6px;
+        justify-content: flex-end;
+        background-color: $color-dark-gray;
+        height: 44.5px;
 
-        a {
-            padding: 0px 14px 0px 5px;
-            color: $color-dark-gray;
-            border-left: 3px solid white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 14px;
+        .secondaryNavbarItemsList {
+            display: flex;
+            font-size: 12px;
+            margin-right: 36px;
 
-            &:hover {
-                color: $color-dark-red;
-                border-left: 3px solid $color-dark-red;
-            }
-        }
-    
-        .searchBar {
-            font-weight: 500;
-            font-size: 14px;
-            font-family: 'Open Sans', sans-serif;
-            border-radius: 15px;
-            border: 1px solid $color-search-bar-border;
-            border-top: 2px solid $color-search-bar-border-top;
-            background-repeat: no-repeat;
-            background-image: $icon-search;
-            background-size: 15.2px 15.2px;
-            background-position: 7px;
-            background-color: $color-table-row;
-            margin: 0px 14px 0px 8px;
-            padding: 4px 8px 4px 28px;
-            width: 185px;
-        }
-
-        &:hover {
-            height: 30px;
-            
-            .subMenuDropdown {
+            .listColoredBlock {
                 display: flex;
-                flex-direction: column;
-                position: absolute;
-                top: 126px;
-                padding-top: 7px;
-                margin-left: 8px;
-                background-color: white;
-                border: 1px solid $color-navbar-expanded-menu-border;
 
-                a {
-                    border: none;
-                    padding: 3.5px 14px 12px 14px;
-                    
-                    &:hover {
-                        color: $color-dark-red;
+                .itemColoredBlock {
+                    margin-right: 13px;
+
+                    a {
+                        padding: 5px 10px;
+                        color: white;
+                        background-color: $color-dark-text;
+                        border-radius: 15px;
+                        text-decoration: none;
+
+                        &:hover {
+                            background-color: $color-light-blue;
+                        }
+                    }
+                }
+            }
+
+            .listBlock {
+                display: flex;
+
+                .itemBlock {
+                    margin-right: 13px;
+
+                    a {
+                        color: $color-secondary-navbar-block-item;
+                        text-decoration: none;
                     }
                 }
 
-                .innerSubMenuItem {
-                    padding-left: 26px;
-                    padding-top: 0px;
-                }
-
-                .subMenuDivision {
-                    width: 100%;
-                    margin-bottom: 5px;
-                    border-bottom: 1px solid $color-navbar-main-submenu-border;
+                .itemBlockRightBorder {
+                    border-right: 3px solid $color-secondary-navbar-block-item;
+                    padding-right: 13px;
                 }
             }
         }
     }
-}
 
-.navbarToggler,
-.subMenuDropdown,
-.expandedMenuContainer {
-    display: none;
+    .mainNavbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: white;
+        box-shadow: 0 2px 8px -1px silver;
+        padding: 0px 26px 12px 26px;
+
+        .imageContainer {
+            margin: -35px 142px 0px 0px;
+
+            .siteLogo {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .navbarToggler {
+            display: none;
+        }
+
+        .navbarItemsLine {
+            display: flex;
+            justify-content: space-between;
+            width: 65%;
+
+            .navbarItem {
+                display: flex;
+                align-items: center;
+                margin-left: 6px;
+
+                a {
+                    padding: 0px 14px 0px 5px;
+                    color: $color-dark-gray;
+                    border-left: 3px solid white;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    &:hover {
+                        color: $color-dark-red;
+                        border-left: 3px solid $color-dark-red;
+                    }
+                }
+
+                .searchBar {
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-family: "Open Sans", sans-serif;
+                    border-radius: 15px;
+                    border: 1px solid $color-search-bar-border;
+                    border-top: 2px solid $color-search-bar-border-top;
+                    background-repeat: no-repeat;
+                    background-image: $icon-search;
+                    background-size: 15.2px 15.2px;
+                    background-position: 7px;
+                    background-color: $color-table-row;
+                    margin: 0px 14px 0px 8px;
+                    padding: 4px 8px 4px 28px;
+                    width: 185px;
+                }
+
+                .subMenuDropdown {
+                    display: none;
+                }
+
+                &:hover {
+                    height: 30px;
+
+                    .subMenuDropdown {
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        top: 126px;
+                        padding-top: 7px;
+                        margin-left: 8px;
+                        background-color: white;
+                        border: 1px solid $color-navbar-expanded-menu-border;
+
+                        a {
+                            border: none;
+                            padding: 3.5px 14px 12px 14px;
+
+                            &:hover {
+                                color: $color-dark-red;
+                            }
+                        }
+
+                        .innerSubMenuItem {
+                            padding-left: 26px;
+                            padding-top: 0px;
+                        }
+
+                        .subMenuDivision {
+                            width: 100%;
+                            margin-bottom: 5px;
+                            border-bottom: 1px solid $color-navbar-main-submenu-border;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .navDropdown {
+        .expandedMenuContainer {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 1375px) {
-    .mainNavbar {
-        padding: 0px 0px 12px 0px;
-    }
+    .navbarContainer {
+        .secondaryNavbar {
+            .secondaryNavbarItemsList {
+                margin-right: 24px;
+            }
+        }
 
-    .secondaryNavbarItemsList {
-        margin-right: 24px;
-    }
+        .mainNavbar {
+            padding: 0px 0px 12px 0px;
 
-    .imageContainer {
-        margin: -35px 90px 0px 0px;
-    }
-
-    .navbarItemsLine {
-        width: 65%;
+            .imageContainer {
+                margin: -35px 90px 0px 0px;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .secondaryNavbarItemsList {
-        margin-right: 20px;
-    }
-
-    .imageContainer {
-        margin: -35px 44px 0px 0px;
-    }
-
-    .navbarItemsLine {    
-        .navbarItem {
-            margin-left: 2px;
-    
-            a {
-                padding: 0px 10px 0px 5px;
-                font-size: 13.1px;
+    .navbarContainer {
+        .secondaryNavbar {
+            .secondaryNavbarItemsList {
+                margin-right: 20px;
             }
-        
-            .searchBar {
-                width: 152px;
-                font-size: 13.1px;
-                background-size: 15px 15px;
-                margin: 0px 10px 0px 8px;
-                padding: 3.5px 7.5px 3.5px 27.5px;
+        }
+
+        .mainNavbar {
+            .imageContainer {
+                margin: -35px 44px 0px 0px;
             }
-    
-            &:hover {
-                height: 28px;
+
+            .navbarItemsLine {
+                .navbarItem {
+                    margin-left: 2px;
+
+                    a {
+                        padding: 0px 10px 0px 5px;
+                        font-size: 13.1px;
+                    }
+
+                    .searchBar {
+                        width: 152px;
+                        font-size: 13.1px;
+                        background-size: 15px 15px;
+                        margin: 0px 10px 0px 8px;
+                        padding: 3.5px 7.5px 3.5px 27.5px;
+                    }
+
+                    &:hover {
+                        height: 28px;
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .secondaryNavbarItemsList {
-        margin-right: 8px;
+    .navbarContainer {
+        .secondaryNavbar {
+            .secondaryNavbarItemsList {
+                margin-right: 8px;
+            }
+        }
     }
 }
 
 @media screen and (max-width: 1050px) {
-    .navbarItemsLine {    
-        .navbarItem {        
-            .searchBar {
-                width: 133px;
+    .navbarContainer {
+        .mainNavbar {
+            .navbarItemsLine {
+                .navbarItem {
+                    .searchBar {
+                        width: 133px;
+                    }
+                }
             }
         }
     }
 }
 
 @media screen and (max-width: 991px) {
-    .secondaryNavbar {
-        justify-content: center;
-    }
+    .navbarContainer {
+        .secondaryNavbar {
+            justify-content: center;
 
-    .secondaryNavbarItemsList {
-        display: flex;
-        font-size: 11.5px;
-        margin: 0px 0px 0px 258px;
-    
-        .listColoredBlock {    
-            .itemColoredBlock {
-                margin-right: 12px;
-        
-                a {
-                    padding: 4.5px 9.5px;
+            .secondaryNavbarItemsList {
+                display: flex;
+                font-size: 11.5px;
+                margin: 0px 0px 0px 258px;
+
+                .listColoredBlock {
+                    .itemColoredBlock {
+                        margin-right: 12px;
+
+                        a {
+                            padding: 4.5px 9.5px;
+                        }
+                    }
+                }
+
+                .listBlock {
+                    .itemBlock {
+                        margin-right: 12px;
+                    }
+
+                    .itemBlockRightBorder {
+                        padding-right: 12px;
+                    }
                 }
             }
         }
-    
-        .listBlock {    
-            .itemBlock {
-                margin-right: 12px;
-            }
-    
-            .itemBlockRightBorder {
-                padding-right: 12px;
-            }
-        }
-    }
 
-    .mainNavbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+        .mainNavbar {
+            flex-direction: column;
+            align-items: flex-start;
 
-    .imageContainer {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin: -35px 0px 0px 28px;
-        padding-right: 491.5px;
-    }
-
-    .navbarItemsLine {
-        width: 100%;
-        margin: 8.5px 0px 1px 0px;
-        padding: 0px 8px 0px 64.5px;
-        justify-content: center;
-
-        .navbarItem {
-            margin-left: 4px;
-
-            a {
-                font-size: 13.1px;
-                padding: 0px 12px 0px 5px;
+            .imageContainer {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin: -35px 0px 0px 28px;
+                padding-right: 491.5px;
             }
 
-            .searchBar {
-                width: 168px;
-                font-size: 13.1px;
-                margin: 0px 12px 0px 8px;
-            }
+            .navbarItemsLine {
+                width: 100%;
+                margin: 8.5px 0px 1px 0px;
+                padding: 0px 8px 0px 64.5px;
+                justify-content: center;
 
-            &:hover {
-                .subMenuDropdown {
-                    top: 158px;
+                .navbarItem {
+                    margin-left: 4px;
+
+                    a {
+                        font-size: 13.1px;
+                        padding: 0px 12px 0px 5px;
+                    }
+
+                    .searchBar {
+                        width: 168px;
+                        font-size: 13.1px;
+                        margin: 0px 12px 0px 8px;
+                    }
+
+                    &:hover {
+                        .subMenuDropdown {
+                            top: 158px;
+                        }
+                    }
                 }
             }
         }
@@ -306,180 +330,188 @@
 }
 
 @media screen and (max-width: 767px) {
-    .secondaryNavbar {
-        justify-content: flex-end;
-        height: max-content;
-    }
+    .navbarContainer {
+        .secondaryNavbar {
+            justify-content: flex-end;
+            height: max-content;
 
-    .secondaryNavbarItemsList {
-        flex-direction: column;
-        margin: 14.6px 0px 10.1px 0px;
-        font-size: 11.1px;
+            .secondaryNavbarItemsList {
+                flex-direction: column;
+                margin: 14.6px 0px 10.1px 0px;
+                font-size: 11.1px;
 
-        .listColoredBlock {
-            margin: 0px 5.8px;
+                .listColoredBlock {
+                    margin: 0px 5.8px;
 
-            .itemColoredBlock {
-                margin: 0px 5.8px;
+                    .itemColoredBlock {
+                        margin: 0px 5.8px;
+                    }
+                }
+
+                .listBlock {
+                    justify-content: center;
+                    margin: 11.7px 5.8px 0px 5.8px;
+
+                    .itemBlock {
+                        margin: 0px 5.8px;
+                    }
+
+                    .itemBlockRightBorder {
+                        border-right: none;
+                        padding-right: 0px;
+                    }
+                }
             }
         }
 
-        .listBlock {
-            justify-content: center;
-            margin: 11.7px 5.8px 0px 5.8px;
+        .mainNavbar {
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
 
-            .itemBlock {
-                margin: 0px 5.8px;
-            }
-
-            .itemBlockRightBorder {
-                border-right: none;
+            .imageContainer {
+                width: max-content;
+                justify-content: flex-start;
                 padding-right: 0px;
             }
-        }
-    }
 
-    .mainNavbar {
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-between;
-    }
-
-    .imageContainer {
-        width: max-content;
-        justify-content: flex-start;
-        padding-right: 0px;
-    }
-
-    .navbarToggler {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 35px;
-        height:  30px;
-        margin-bottom: 4px;
-        margin-right: 20px;
-        background-color: white;
-        border: 1px solid $color-search-bar-border;
-        border-radius: 4px;
-        cursor: pointer;
-
-        &:hover {
-            background-color: $color-search-bar-border;
-        }
-    }
-
-    .navbarToggler[aria-expanded="true"] {
-        background-color: $color-search-bar-border;
-    }
-
-    .iconBar {
-        width: 18px;
-        margin: 2.25px 0px;
-        border-radius: 1px;
-        border-bottom: 2px solid $color-navbar-toggle-icon-bar;
-    }
-
-    .navbarItemsLine,
-    .expandedSubMenuItem,
-    .navDropdown[aria-expanded="false"] {
-        display: none;
-    }
-
-    .navDropdown[aria-expanded="true"] {
-        margin-top: 4px;
-        height: max-content;
-    }
-
-    .expandedMenuContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        list-style: none;
-        border-bottom: 1px solid $color-navbar-expanded-menu-border;
-
-        .extendSearchBar {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-
-            .expandedSearchBar {
-                width: 100%;
-                font-weight: 500;
-                font-size: 13.5px;
-                font-family: 'Open Sans', sans-serif;
-                border-radius: 15px;
-                background-color: $color-table-row;
-                border: 1px solid $color-search-bar-border;
-                border-top: 2px solid $color-search-bar-border-top;
-                background-image: $icon-search;
-                background-repeat: no-repeat;
-                background-size: 15px 15px;
-                background-position: 7px;
-                padding: 3.5px 7.5px 3.5px 27.5px;
-                margin: 14px 15px;
-            }
-        }
-
-        .wrapExpandedMenu {
-            width: 100%;
-        }
-
-        .expandedMenuItem {
-            border: none;
-            border-top: 1px solid $color-navbar-expanded-menu-border;
-            background-color: white;
-            width: 100%;
-            text-align: left;
-            cursor: pointer;
-
-            &:hover {
-                .itemName {
-                    &:hover {
-                        background-color: $color-table-row;
-                        color: $color-dark-red;
-                    }
-                }
-
-                .noSubMenu {
-                    background-color: $color-table-row;
-                    color: $color-dark-red;
-                }
-            }
-
-            .expandedSubMenuItem[aria-expanded="true"] {
+            .navbarToggler {
                 display: flex;
                 flex-direction: column;
-                border-top: 1px solid $color-navbar-expanded-menu-border;
-                
-                a {
-                    color: $color-mix-gray;
-                    font-size: 13.5px;
-                    text-decoration: none;
-                    padding: 9px 28px;
+                justify-content: center;
+                align-items: center;
+                width: 35px;
+                height: 30px;
+                margin-bottom: 4px;
+                margin-right: 20px;
+                background-color: white;
+                border: 1px solid $color-search-bar-border;
+                border-radius: 4px;
+                cursor: pointer;
 
-                    &:hover {
+                &:hover {
+                    background-color: $color-search-bar-border;
+                }
+
+                .iconBar {
+                    width: 18px;
+                    margin: 2.25px 0px;
+                    border-radius: 1px;
+                    border-bottom: 2px solid $color-navbar-toggle-icon-bar;
+                }
+            }
+
+            .navbarToggler[aria-expanded="true"] {
+                background-color: $color-search-bar-border;
+            }
+
+            .navbarItemsLine {
+                display: none;
+            }
+        }
+
+        .navDropdown[aria-expanded="false"] {
+            display: none;
+        }
+
+        .navDropdown[aria-expanded="true"] {
+            margin-top: 4px;
+            height: max-content;
+
+            .expandedMenuContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                list-style: none;
+                border-bottom: 1px solid $color-navbar-expanded-menu-border;
+
+                .extendSearchBar {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+
+                    .expandedSearchBar {
+                        width: 100%;
+                        font-weight: 500;
+                        font-size: 13.5px;
+                        font-family: "Open Sans", sans-serif;
+                        border-radius: 15px;
                         background-color: $color-table-row;
-                        color: $color-dark-red;
+                        border: 1px solid $color-search-bar-border;
+                        border-top: 2px solid $color-search-bar-border-top;
+                        background-image: $icon-search;
+                        background-repeat: no-repeat;
+                        background-size: 15px 15px;
+                        background-position: 7px;
+                        padding: 3.5px 7.5px 3.5px 27.5px;
+                        margin: 14px 15px;
                     }
                 }
 
-                .innerExpandedMenu {
-                    padding-left: 44.5px;
+                .wrapExpandedMenu {
+                    width: 100%;
+
+                    .expandedMenuItem {
+                        border: none;
+                        border-top: 1px solid $color-navbar-expanded-menu-border;
+                        background-color: white;
+                        width: 100%;
+                        text-align: left;
+                        cursor: pointer;
+
+                        &:hover {
+                            .itemName {
+                                &:hover {
+                                    background-color: $color-table-row;
+                                    color: $color-dark-red;
+                                }
+                            }
+
+                            .noSubMenu {
+                                background-color: $color-table-row;
+                                color: $color-dark-red;
+                            }
+                        }
+
+                        .expandedSubMenuItem {
+                            display: none;
+                        }
+
+                        .expandedSubMenuItem[aria-expanded="true"] {
+                            display: flex;
+                            flex-direction: column;
+                            border-top: 1px solid $color-navbar-expanded-menu-border;
+
+                            a {
+                                color: $color-mix-gray;
+                                font-size: 13.5px;
+                                text-decoration: none;
+                                padding: 9px 28px;
+
+                                &:hover {
+                                    background-color: $color-table-row;
+                                    color: $color-dark-red;
+                                }
+                            }
+
+                            .innerExpandedMenu {
+                                padding-left: 44.5px;
+                            }
+                        }
+
+                        .itemName {
+                            color: $color-mix-gray;
+                            font-size: 13.5px;
+                            padding: 9px 15px;
+                        }
+
+                        .noSubMenu {
+                            color: $color-mix-gray;
+                            font-size: 13.5px;
+                            padding: 9px 15px;
+                        }
+                    }
                 }
-            }
-
-            .itemName {
-                color: $color-mix-gray;
-                font-size: 13.5px;
-                padding: 9px 15px;
-            }
-
-            .noSubMenu {
-                color: $color-mix-gray;
-                font-size: 13.5px;
-                padding: 9px 15px;
             }
         }
     }
