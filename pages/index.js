@@ -22,9 +22,7 @@ export default function Home({ pageData }) {
     <div>
       <Navbar></Navbar>
       <Head>
-        <title>
-          Cloud Computing for Big Data Genomics | Cancer Genome Collaboratory
-        </title>
+        <title>Cloud Computing for Big Data Genomics | Cancer Genome Collaboratory</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Footer></Footer>
