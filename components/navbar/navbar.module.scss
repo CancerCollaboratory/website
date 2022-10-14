@@ -83,12 +83,11 @@
 
 .navbarItemsLine {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     margin-right: 8px;
 
     .navbarItem {
         margin: 0px 10px;
-        height: 28px;
         display: flex;
         align-items: center;
 
@@ -105,7 +104,7 @@
     
         .searchBar {
             font-weight: 500;
-            font-size: 13.5px;
+            font-size: 13.1px;
             font-family: 'Open Sans', sans-serif;
             border-radius: 15px;
             border: 1px solid $color-search-bar-border;
@@ -196,6 +195,7 @@
 
             .searchBar {
                 width: 168px;
+                font-size: 13.5px;
             }
 
             &:hover {
