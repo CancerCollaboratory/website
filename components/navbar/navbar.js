@@ -3,9 +3,7 @@ import styles from "./navbar.module.scss";
 
 export default function Navbar() {
   function expandNavMenu() {
-    let isExpanded = document
-      .getElementById("navBtn")
-      .getAttribute("aria-expanded");
+    let isExpanded = document.getElementById("navBtn").getAttribute("aria-expanded");
     if (isExpanded === "false") {
       document.getElementById("navBtn").setAttribute("aria-expanded", "true");
       document.getElementById("navMenu").setAttribute("aria-expanded", "true");
@@ -27,18 +25,10 @@ export default function Navbar() {
   }
 
   function setAriaExpandedFalse() {
-    document
-      .getElementById("subMenuAboutItem")
-      .setAttribute("aria-expanded", "false");
-    document
-      .getElementById("subMenuServicesItem")
-      .setAttribute("aria-expanded", "false");
-    document
-      .getElementById("subMenuResearchItem")
-      .setAttribute("aria-expanded", "false");
-    document
-      .getElementById("subMenuSupportItem")
-      .setAttribute("aria-expanded", "false");
+    document.getElementById("subMenuAboutItem").setAttribute("aria-expanded", "false");
+    document.getElementById("subMenuServicesItem").setAttribute("aria-expanded", "false");
+    document.getElementById("subMenuResearchItem").setAttribute("aria-expanded", "false");
+    document.getElementById("subMenuSupportItem").setAttribute("aria-expanded", "false");
   }
 
   function collapseSubMenuItem(subMenuItemId) {
@@ -76,34 +66,22 @@ export default function Navbar() {
     for (let itemIdIndex = 0; itemIdIndex < 3; itemIdIndex++) {
       if (filteredSubMenuItemIds[itemIdIndex] === "subMenuAboutItem") {
         if (isSubMenuAboutExpanded === "true") {
-          document
-            .getElementById("subMenuAboutItem")
-            .setAttribute("aria-expanded", "false");
+          document.getElementById("subMenuAboutItem").setAttribute("aria-expanded", "false");
           isSubMenuAboutExpanded = "false";
         }
-      } else if (
-        filteredSubMenuItemIds[itemIdIndex] === "subMenuServicesItem"
-      ) {
+      } else if (filteredSubMenuItemIds[itemIdIndex] === "subMenuServicesItem") {
         if (isSubMenuServicesExpanded === "true") {
-          document
-            .getElementById("subMenuServicesItem")
-            .setAttribute("aria-expanded", "false");
+          document.getElementById("subMenuServicesItem").setAttribute("aria-expanded", "false");
           isSubMenuServicesExpanded = "false";
         }
-      } else if (
-        filteredSubMenuItemIds[itemIdIndex] === "subMenuResearchItem"
-      ) {
+      } else if (filteredSubMenuItemIds[itemIdIndex] === "subMenuResearchItem") {
         if (isSubMenuResearchExpanded === "true") {
-          document
-            .getElementById("subMenuResearchItem")
-            .setAttribute("aria-expanded", "false");
+          document.getElementById("subMenuResearchItem").setAttribute("aria-expanded", "false");
           isSubMenuResearchExpanded = "false";
         }
       } else if (filteredSubMenuItemIds[itemIdIndex] === "subMenuSupportItem") {
         if (isSubMenuSupportExpanded === "true") {
-          document
-            .getElementById("subMenuSupportItem")
-            .setAttribute("aria-expanded", "false");
+          document.getElementById("subMenuSupportItem").setAttribute("aria-expanded", "false");
           isSubMenuSupportExpanded = "false";
         }
       }
@@ -112,14 +90,10 @@ export default function Navbar() {
 
   function toggleAriaExpanded(isSubMenuItemExpanded, subMenuItemId) {
     if (isSubMenuItemExpanded === "false") {
-      document
-        .getElementById(subMenuItemId)
-        .setAttribute("aria-expanded", "true");
+      document.getElementById(subMenuItemId).setAttribute("aria-expanded", "true");
       collapseSubMenuItem(subMenuItemId);
     } else {
-      document
-        .getElementById(subMenuItemId)
-        .setAttribute("aria-expanded", "false");
+      document.getElementById(subMenuItemId).setAttribute("aria-expanded", "false");
     }
   }
 
@@ -157,33 +131,33 @@ export default function Navbar() {
     <div className={styles.navbarContainer}>
       <div className={styles.secondaryNavbar}>
         <div className={styles.secondaryNavbarItemsList}>
-          <div className={styles.listItemColoredBlock}>
-            <Link href="/services-request-account">Request an Account</Link>
+          <div className={styles.listColoredBlock}>
+            <div className={styles.itemColoredBlock}>
+              <Link href="/services-request-account">Request an Account</Link>
+            </div>
+            <div className={styles.itemColoredBlock}>
+              <Link href="/support/getting-started">Getting Started</Link>
+            </div>
           </div>
-          <div className={styles.listItemColoredBlock}>
-            <Link href="/support/getting-started">Getting Started</Link>
-          </div>
-          <div
-            className={`${styles.listItemBlock} ${styles.listItemRightBorder}`}
-          >
-            <a href="https://console.cancercollaboratory.org" target="_blank">
-              Console
-            </a>
-          </div>
-          <div
-            className={`${styles.listItemBlock} ${styles.listItemRightBorder}`}
-          >
-            <a href="https://billing.cancercollaboratory.org" target="_blank">
-              Usage and Billing
-            </a>
-          </div>
-          <div className={styles.listItemBlock}>
-            <a
-              href="https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D"
-              target="_blank"
-            >
-              Repository
-            </a>
+          <div className={styles.listBlock}>
+            <div className={`${styles.itemBlock} ${styles.itemBlockRightBorder}`}>
+              <a href="https://console.cancercollaboratory.org" target="_blank">
+                Console
+              </a>
+            </div>
+            <div className={`${styles.itemBlock} ${styles.itemBlockRightBorder}`}>
+              <a href="https://billing.cancercollaboratory.org" target="_blank">
+                Usage and Billing
+              </a>
+            </div>
+            <div className={styles.itemBlock}>
+              <a
+                href="https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D"
+                target="_blank"
+              >
+                Repository
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -216,9 +190,7 @@ export default function Navbar() {
             <div className={styles.subMenuDropdown}>
               <Link href="/about-collaboratory">About the Collaboratory</Link>
               <Link href="/about-team">Our Team</Link>
-              <Link href="/about-funders-collaborators">
-                Funders & Collaborators
-              </Link>
+              <Link href="/about-funders-collaborators">Funders & Collaborators</Link>
             </div>
           </div>
           <div className={styles.navbarItem}>
@@ -237,9 +209,7 @@ export default function Navbar() {
                 Technology Development Cores
               </Link>
               <Link href="/research/hardware-software-infrastructure">
-                <a className={styles.innerSubMenuItem}>
-                  Hardware & Software Infrastructure
-                </a>
+                <a className={styles.innerSubMenuItem}>Hardware & Software Infrastructure</a>
               </Link>
               <Link href="/research/benchmarking">
                 <a className={styles.innerSubMenuItem}>Benchmarking</a>
@@ -253,29 +223,19 @@ export default function Navbar() {
               <div className={styles.subMenuDivision}></div>
               <Link href="/research#research_modules">Research Modules</Link>
               <Link href="/research/indexing-search-compression">
-                <a className={styles.innerSubMenuItem}>
-                  Indexing, Search & Compression
-                </a>
+                <a className={styles.innerSubMenuItem}>Indexing, Search & Compression</a>
               </Link>
               <Link href="/research/variant-identification-consequence">
-                <a className={styles.innerSubMenuItem}>
-                  Variant Identification & Consequence
-                </a>
+                <a className={styles.innerSubMenuItem}>Variant Identification & Consequence</a>
               </Link>
               <Link href="/research/drug-target-identification">
-                <a className={styles.innerSubMenuItem}>
-                  Drug Target Identification
-                </a>
+                <a className={styles.innerSubMenuItem}>Drug Target Identification</a>
               </Link>
               <Link href="/research/bioethics-protection-phi">
-                <a className={styles.innerSubMenuItem}>
-                  Bioethics & Protection of PHI
-                </a>
+                <a className={styles.innerSubMenuItem}>Bioethics & Protection of PHI</a>
               </Link>
               <div className={styles.subMenuDivision}></div>
-              <Link href="/publications-presentations">
-                Publications & Presentations
-              </Link>
+              <Link href="/publications-presentations">Publications & Presentations</Link>
             </div>
           </div>
           <div className={styles.navbarItem}>
@@ -316,11 +276,7 @@ export default function Navbar() {
             />
           </div>
           <div id="expandedMenu" className={styles.wrapExpandedMenu}>
-            <button
-              type="button"
-              className={styles.expandedMenuItem}
-              onClick={expandAboutSubMenu}
-            >
+            <button type="button" className={styles.expandedMenuItem} onClick={expandAboutSubMenu}>
               <p className={styles.itemName}>About Us ▾</p>
               <div
                 className={styles.expandedSubMenuItem}
@@ -329,9 +285,7 @@ export default function Navbar() {
               >
                 <Link href="/about-collaboratory">About the Collaboratory</Link>
                 <Link href="/about-team">Our Team</Link>
-                <Link href="/about-funders-collaborators">
-                  Funders & Collaborators
-                </Link>
+                <Link href="/about-funders-collaborators">Funders & Collaborators</Link>
               </div>
             </button>
             <button
@@ -366,48 +320,32 @@ export default function Navbar() {
                   Technology Development Cores
                 </Link>
                 <Link href="/research/hardware-software-infrastructure">
-                  <a className={styles.innerExpandedMenu}>
-                    Hardware & Software Infrastructure
-                  </a>
+                  <a className={styles.innerExpandedMenu}>Hardware & Software Infrastructure</a>
                 </Link>
                 <Link href="/research/benchmarking">
                   <a className={styles.innerExpandedMenu}>Benchmarking</a>
                 </Link>
                 <Link href="/research/training-outreach">
-                  <a className={styles.innerExpandedMenu}>
-                    Training & Outreach
-                  </a>
+                  <a className={styles.innerExpandedMenu}>Training & Outreach</a>
                 </Link>
                 <Link href="/research/management-finance">
-                  <a className={styles.innerExpandedMenu}>
-                    Management & Finance
-                  </a>
+                  <a className={styles.innerExpandedMenu}>Management & Finance</a>
                 </Link>
                 <Link href="/research#research_modules">Research Modules</Link>
                 <Link href="/research/indexing-search-compression">
-                  <a className={styles.innerExpandedMenu}>
-                    Indexing, Search & Compression
-                  </a>
+                  <a className={styles.innerExpandedMenu}>Indexing, Search & Compression</a>
                 </Link>
                 <Link href="/research/variant-identification-consequence">
-                  <a className={styles.innerExpandedMenu}>
-                    Variant Identification & Consequence
-                  </a>
+                  <a className={styles.innerExpandedMenu}>Variant Identification & Consequence</a>
                 </Link>
                 <Link href="/research/drug-target-identification">
-                  <a className={styles.innerExpandedMenu}>
-                    Drug Target Identification
-                  </a>
+                  <a className={styles.innerExpandedMenu}>Drug Target Identification</a>
                 </Link>
                 <Link href="/research/bioethics-protection-phi">
-                  <a className={styles.innerExpandedMenu}>
-                    Bioethics & Protection of PHI
-                  </a>
+                  <a className={styles.innerExpandedMenu}>Bioethics & Protection of PHI</a>
                 </Link>
                 <Link href="/publications-presentations">
-                  <a className={styles.innerExpandedMenu}>
-                    Publications & Presentations
-                  </a>
+                  <a className={styles.innerExpandedMenu}>Publications & Presentations</a>
                 </Link>
               </div>
             </button>
