@@ -396,10 +396,9 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 35px;
-                height: 30px;
-                margin-bottom: 4px;
-                margin-right: 20px;
+                width: 33px;
+                height: 32px;
+                margin: 0px 20px 4px 0px;
                 background-color: white;
                 border: 1px solid $color-search-bar-border;
                 border-radius: 4px;
@@ -410,7 +409,7 @@
                 }
 
                 .iconBar {
-                    width: 18px;
+                    width: 17.25px;
                     margin: 2.25px 0px;
                     border-radius: 1px;
                     border-bottom: 2px solid $color-navbar-toggle-icon-bar;
@@ -527,6 +526,59 @@
                             padding: 9px 15px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 388px) {
+    .navbarContainer {
+        .secondaryNavbar {
+            .secondaryNavbarItemsList {
+                font-size: 10px;
+                margin: 13.6px 0px 9.6px 0px;
+
+                .listColoredBlock {
+                    margin: 0px 5.4px;
+
+                    .itemColoredBlock {
+                        margin: 0px 5.4px;
+
+                        a {
+                            padding: 4px 9px;
+                        }
+                    }
+                }
+
+                .listBlock {
+                    margin: 11.2px 5.4px 0px 5.4px;
+
+                    .itemBlock {
+                        margin: 0px 5.4px;
+                    }
+                }
+            }
+        }
+
+        .mainNavbar {
+            .imageContainer {
+                margin: -23px 0px 0px 9px;
+
+                .siteLogo {
+                    width: 178px;
+                    height: auto;
+                }
+            }
+
+            .navbarToggler {
+                margin: 0px 16.75px 2px 0px;
+                width: 27px;
+                height: 26px;
+
+                .iconBar {
+                    width: 13.25px;
+                    margin: 1.75px 0px;
                 }
             }
         }
