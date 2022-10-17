@@ -70,7 +70,7 @@
         padding-bottom: 13px;
 
         .imageContainer {
-            margin: -35px 106px 0px 9px;
+            margin: -35px 106px 0px 11.5px;
 
             .siteLogo {
                 &:hover {
@@ -85,7 +85,6 @@
 
         .navbarItemsLine {
             display: flex;
-            justify-content: flex-end;
 
             .navbarItem {
                 display: flex;
@@ -110,14 +109,14 @@
                     font-weight: 500;
                     font-size: 14px;
                     font-family: "Open Sans", sans-serif;
-                    border-radius: 15px;
                     border: 1px solid $color-search-bar-border;
                     border-top: 2px solid $color-search-bar-border-top;
-                    background-repeat: no-repeat;
+                    background-color: $color-table-row;
                     background-image: $icon-search;
+                    background-repeat: no-repeat;
                     background-size: 15.2px 15.2px;
                     background-position: 7px;
-                    background-color: $color-table-row;
+                    border-radius: 15px;
                     margin: 0px 14px 0px 8px;
                     padding: 4px 8px 4px 28px;
                     width: 185px;
@@ -151,13 +150,12 @@
 
                         .innerSubMenuItem {
                             padding-left: 26px;
-                            padding-top: 0px;
                         }
 
                         .subMenuDivision {
-                            width: 100%;
-                            margin-bottom: 5px;
                             border-bottom: 1px solid $color-navbar-main-submenu-border;
+                            margin-bottom: 5px;
+                            width: 100%;
                         }
                     }
                 }
