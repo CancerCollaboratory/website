@@ -403,6 +403,7 @@
                     width: 100%;
 
                     .expandedMenuItem {
+                        border: none;
                         border-top: 1px solid $color-navbar-expanded-menu-border;
                         background-color: white;
                         text-align: left;
