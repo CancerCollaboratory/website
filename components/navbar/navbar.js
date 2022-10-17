@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavbarLink from "../navbarLink/navbarLink";
 import styles from "./navbar.module.scss";
 
 export default function Navbar() {
@@ -125,6 +126,21 @@ export default function Navbar() {
     toggleAriaExpanded(isSubMenuSupportExpanded, "subMenuSupportItem");
   }
 
+  const navbarAboutLinks = [
+    {
+      link: "/about-collaboratory",
+      label: "About the Collaboratory",
+    },
+    {
+      link: "/about-team",
+      label: "Our Team",
+    },
+    {
+      link: "/about-funders-collaborators",
+      label: "Funders & Collaborators",
+    },
+  ];
+
   clickedOutsideExpandedSubMenu();
 
   return (
@@ -188,9 +204,9 @@ export default function Navbar() {
           <div className={styles.navbarItem}>
             <Link href="/about-collaboratory">About Us ▾</Link>
             <div className={styles.subMenuDropdown}>
-              <Link href="/about-collaboratory">About the Collaboratory</Link>
-              <Link href="/about-team">Our Team</Link>
-              <Link href="/about-funders-collaborators">Funders & Collaborators</Link>
+              {navbarAboutLinks.map((navLink, index) => {
+                <NavbarLink key={index} link={navLink.link} label={navLink.label} />;
+              })}
             </div>
           </div>
           <div className={styles.navbarItem}>
