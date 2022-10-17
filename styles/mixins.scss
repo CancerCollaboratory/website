@@ -1,0 +1,29 @@
+@mixin breakpoint-1 {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-2 {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-3 {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-4 {
+    @media (max-width: 388px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-5 {
+    @media (max-width: 315px) {
+        @content;
+    }
+}
