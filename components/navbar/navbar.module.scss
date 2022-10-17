@@ -11,20 +11,19 @@
     .secondaryNavbar {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         background-color: $color-dark-gray;
         height: 44.5px;
 
         .secondaryNavbarItemsList {
             display: flex;
             font-size: 12px;
-            margin-right: 45px;
 
             .listColoredBlock {
                 display: flex;
 
                 .itemColoredBlock {
-                    margin-right: 13px;
+                    margin-left: 13px;
 
                     a {
                         padding: 4.7px 9.7px;
@@ -44,7 +43,7 @@
                 display: flex;
 
                 .itemBlock {
-                    margin-right: 13px;
+                    margin-left: 13px;
 
                     a {
                         color: $color-secondary-navbar-block-item;
@@ -67,7 +66,7 @@
         align-items: flex-end;
         background-color: white;
         box-shadow: 0 2px 8px -1px silver;
-        padding: 0px 40px 12px 40px;
+        padding-bottom: 13px;
 
         .imageContainer {
             margin: -35px 142px 0px 11.5px;
@@ -85,8 +84,7 @@
 
         .navbarItemsLine {
             display: flex;
-            justify-content: space-between;
-            width: 65%;
+            justify-content: flex-end;
 
             .navbarItem {
                 display: flex;
@@ -173,96 +171,38 @@
     }
 }
 
-@media screen and (max-width: 1375px) {
+@media screen and (max-width: 1199px) {
     .navbarContainer {
         .secondaryNavbar {
-            .secondaryNavbarItemsList {
-                margin-right: 27.5px;
-            }
+            padding-left: 438px;
         }
 
         .mainNavbar {
-            padding: 0px 0px 12px 0px;
+            padding: 0px 7px 13px 7px;
 
-            .imageContainer {
-                margin: -35px 90px 0px 11.5px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1280px) {
-    .navbarContainer {
-        .secondaryNavbar {
-            .secondaryNavbarItemsList {
-                margin-right: 15px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .navbarContainer {
-        .secondaryNavbar {
-            .secondaryNavbarItemsList {
-                margin-right: 16.5px;
-            }
-        }
-
-        .mainNavbar {
             .imageContainer {
                 margin: -35px 48px 0px 7.5px;
             }
 
             .navbarItemsLine {
                 .navbarItem {
-                    margin-left: 2px;
+                    margin-left: 4px;
 
                     a {
-                        padding: 0px 10px 0px 5px;
-                        font-size: 13.1px;
+                        padding: 0px 12px 0px 5px;
+                        font-size: 12px;
                     }
 
                     .searchBar {
                         width: 152px;
-                        font-size: 13.1px;
+                        font-size: 12px;
                         background-size: 15px 15px;
-                        margin: 0px 10px 0px 8px;
+                        margin: 0px 12px 0px 8px;
                         padding: 3.5px 7.5px 3.5px 27.5px;
                     }
 
                     &:hover {
                         height: 28px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    .navbarContainer {
-        .secondaryNavbar {
-            .secondaryNavbarItemsList {
-                margin-right: 7.5px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .navbarContainer {
-        .secondaryNavbar {
-            .secondaryNavbarItemsList {
-                margin-right: 2.2px;
-            }
-        }
-
-        .mainNavbar {
-            .navbarItemsLine {
-                .navbarItem {
-                    .searchBar {
-                        width: 133px;
                     }
                 }
             }
