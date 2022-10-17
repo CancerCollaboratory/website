@@ -1,6 +1,4 @@
-import Navbar from "../components/navbar/navbar";
-import Footer from "../components/footer/footer";
-import Head from "next/head";
+import WrapPage from "../components/wrapPage/wrapPage";
 import { getPageData } from "../lib/pages";
 import { attributesToProps } from "html-react-parser";
 
@@ -17,19 +15,6 @@ const insertLink = {
   },
 };
 
-export default function Home({ pageData }) {
-  return (
-    <div>
-      <Navbar></Navbar>
-      <Head>
-        <title>Cloud Computing for Big Data Genomics | Cancer Genome Collaboratory</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-      <Footer></Footer>
-    </div>
-  );
-}
-
 export async function getStaticProps() {
   const pageData = getPageData("home");
   return {
@@ -38,3 +23,13 @@ export async function getStaticProps() {
     },
   };
 }
+
+const Home = ({ pageData }) => {
+  return (
+    <>
+      <WrapPage></WrapPage>
+    </>
+  );
+};
+
+export default Home;

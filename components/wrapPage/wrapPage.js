@@ -1,7 +1,7 @@
 import Navbar from "../navbar/navbar";
 import Footer from "../footer/footer";
 
-const PageStarter = ({ children }) => {
+const WrapPage = ({ children }) => {
   return (
     <>
       <Navbar></Navbar>
@@ -11,4 +11,4 @@ const PageStarter = ({ children }) => {
   );
 };
 
-export default PageStarter;
+export default WrapPage;

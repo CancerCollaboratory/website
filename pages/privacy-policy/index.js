@@ -1,11 +1,11 @@
-import Navbar from "../../components/navbar/navbar";
-import Footer from "../../components/footer/footer";
+import WrapPage from "../../components/wrapPage/wrapPage";
 
-export default function PrivacyPolicy() {
+const PrivacyPolicy = () => {
   return (
-    <div>
-      <Navbar></Navbar>
-      <Footer></Footer>
-    </div>
+    <>
+      <WrapPage></WrapPage>
+    </>
   );
-}
+};
+
+export default PrivacyPolicy;
