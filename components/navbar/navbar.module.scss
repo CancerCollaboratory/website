@@ -584,3 +584,50 @@
         }
     }
 }
+
+@media screen and (max-width: 315px) {
+    .navbarContainer {
+        .secondaryNavbar {
+            .secondaryNavbarItemsList {
+                font-size: 9px;
+
+                .listColoredBlock {
+                    margin: 0px 5px;
+
+                    .itemColoredBlock {
+                        margin: 0px 5px;
+                    }
+                }
+
+                .listBlock {
+                    margin: 11.2px 5px 0px 5px;
+
+                    .itemBlock {
+                        margin: 0px 5px;
+                    }
+                }
+            }
+        }
+
+        .mainNavbar {
+            .imageContainer {
+                margin-top: -19px;
+
+                .siteLogo {
+                    width: 148px;
+                    height: auto;
+                }
+            }
+
+            .navbarToggler {
+                margin-right: 15.5px;
+                width: 26px;
+                height: 25px;
+
+                .iconBar {
+                    width: 13px;
+                }
+            }
+        }
+    }
+}
