@@ -212,10 +212,9 @@
 @media screen and (max-width: 991px) {
     .navbarContainer {
         .secondaryNavbar {
-            padding-left: 204px;
+            padding-left: 203px;
 
             .secondaryNavbarItemsList {
-                display: flex;
                 font-size: 11.5px;
 
                 .listColoredBlock {
@@ -242,21 +241,20 @@
 
         .mainNavbar {
             flex-direction: column;
-            align-items: flex-start;
 
             .imageContainer {
-                width: 100%;
                 display: flex;
                 justify-content: center;
-                margin: -35px 0px 0px 28px;
-                padding-right: 491.5px;
+                margin: -35px 0px 0px 0px;
+                padding-right: 442px;
+                width: 100%;
             }
 
             .navbarItemsLine {
-                width: 100%;
-                margin: 8.5px 0px 1px 0px;
-                padding-left: 43px;
                 justify-content: center;
+                margin: 9px 0px 1px 0px;
+                padding-left: 35px;
+                width: 100%;
 
                 .navbarItem {
                     margin-left: 4px;
@@ -267,9 +265,9 @@
                     }
 
                     .searchBar {
-                        width: 168px;
                         font-size: 12.6px;
                         margin: 0px 12px 0px 8px;
+                        width: 168px;
                     }
 
                     &:hover {
