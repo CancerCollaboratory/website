@@ -1,28 +1,28 @@
-@mixin breakpoint-1 {
+@mixin breakpoint-1199-px {
     @media (max-width: 1199px) {
         @content;
     }
 }
 
-@mixin breakpoint-2 {
+@mixin breakpoint-991-px {
     @media (max-width: 991px) {
         @content;
     }
 }
 
-@mixin breakpoint-3 {
+@mixin breakpoint-767-px {
     @media (max-width: 767px) {
         @content;
     }
 }
 
-@mixin breakpoint-4 {
+@mixin breakpoint-388-px {
     @media (max-width: 388px) {
         @content;
     }
 }
 
-@mixin breakpoint-5 {
+@mixin breakpoint-315-px {
     @media (max-width: 315px) {
         @content;
     }

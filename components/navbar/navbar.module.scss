@@ -171,7 +171,7 @@
     }
 }
 
-@include breakpoint-1 {
+@include breakpoint-1199-px {
     .navbarContainer {
         .secondaryNavbar {
             padding-left: 436px;
@@ -210,7 +210,7 @@
     }
 }
 
-@include breakpoint-2 {
+@include breakpoint-991-px {
     .navbarContainer {
         .secondaryNavbar {
             padding-left: 203px;
@@ -282,7 +282,7 @@
     }
 }
 
-@include breakpoint-3 {
+@include breakpoint-767-px {
     .navbarContainer {
         .secondaryNavbar {
             justify-content: flex-end;
@@ -469,7 +469,7 @@
     }
 }
 
-@include breakpoint-4 {
+@include breakpoint-388-px {
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
@@ -522,7 +522,7 @@
     }
 }
 
-@include breakpoint-5 {
+@include breakpoint-315-px {
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
