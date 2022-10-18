@@ -86,14 +86,15 @@
 
         .navbarItemsLine {
             display: flex;
+            align-items: center;
 
             .navbarItem {
                 display: flex;
-                align-items: center;
-                margin-left: 6px;
+                margin: 0px 6px;
+                height: max-content;
 
                 a {
-                    padding: 0px 14px 0px 5px;
+                    padding: 0px 8px 0px 5px;
                     color: $color-dark-x2-gray;
                     border-left: 3px solid white;
                     text-decoration: none;
@@ -118,7 +119,7 @@
                     background-size: 15.2px 15.2px;
                     background-position: 7px;
                     border-radius: 15px;
-                    margin: 0px 14px 0px 8px;
+                    margin: 0px 8px;
                     padding: 4px 8px 4px 28px;
                     width: 185px;
                 }
@@ -186,17 +187,15 @@
 
             .navbarItemsLine {
                 .navbarItem {
-                    margin-left: 4px;
+                    margin: 0px 4px;
 
                     a {
                         font-size: 11.9px;
-                        padding-right: 12px;
                     }
 
                     .searchBar {
                         font-size: 12px;
                         background-size: 15px 15px;
-                        margin: 0px 12px 0px 8px;
                         padding: 3.5px 7.5px 3.5px 27.5px;
                         width: 152px;
                     }
@@ -254,15 +253,12 @@
                 width: 100%;
 
                 .navbarItem {
-                    margin-left: 4px;
-
                     a {
                         font-size: 12.6px;
                     }
 
                     .searchBar {
                         font-size: 12.6px;
-                        margin: 0px 12px 0px 8px;
                         width: 168px;
                     }
 
