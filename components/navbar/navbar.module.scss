@@ -171,7 +171,7 @@
     }
 }
 
-@include respond-to("extra-large") {
+@include respond-to("large") {
     .navbarContainer {
         .secondaryNavbar {
             padding-left: 436px;
@@ -206,7 +206,7 @@
     }
 }
 
-@include respond-to("large") {
+@include respond-to("medium") {
     .navbarContainer {
         .secondaryNavbar {
             padding-left: 203px;
@@ -278,7 +278,7 @@
     }
 }
 
-@include respond-to("medium") {
+@include respond-to("small") {
     .navbarContainer {
         .secondaryNavbar {
             justify-content: flex-end;
@@ -470,7 +470,7 @@
     }
 }
 
-@include respond-to("small") {
+@include respond-to("extra-small") {
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
@@ -523,7 +523,7 @@
     }
 }
 
-@include respond-to("extra-small") {
+@include respond-to("extra-extra-small") {
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
