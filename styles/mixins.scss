@@ -1,29 +1,19 @@
-@mixin breakpoint-1199-px {
-    @media (max-width: 1199px) {
-        @content;
-    }
-}
+$breakpoints: (
+    extra-large: 1199px,
+    large: 991px,
+    medium: 767px,
+    small: 388px,
+    extra-small: 315px
+);
 
-@mixin breakpoint-991-px {
-    @media (max-width: 991px) {
-        @content;
+@mixin respond-to($label) {
+    @if not map-has-key($breakpoints, $label) {
+        @error "Error: `#{$label}` is not a valid breakpoint label.";
     }
-}
 
-@mixin breakpoint-767-px {
-    @media (max-width: 767px) {
-        @content;
-    }
-}
-
-@mixin breakpoint-388-px {
-    @media (max-width: 388px) {
-        @content;
-    }
-}
-
-@mixin breakpoint-315-px {
-    @media (max-width: 315px) {
-        @content;
+    @else {
+        @media (max-width: map-get($breakpoints, $label)) {
+            @content;
+        }
     }
 }
