@@ -4,9 +4,9 @@ import Footer from "../footer/footer";
 const WrapPage = ({ children }) => {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar />
       {children}
-      <Footer></Footer>
+      <Footer />
     </>
   );
 };
