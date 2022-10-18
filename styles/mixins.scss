@@ -1,9 +1,9 @@
 $breakpoints: (
-    extra-large: 1199px,
-    large: 991px,
-    medium: 767px,
-    small: 388px,
-    extra-small: 315px
+    large: 1199px,
+    medium: 991px,
+    small: 767px,
+    extra-small: 388px,
+    extra-extra-small: 315px
 );
 
 @mixin respond-to($label) {
