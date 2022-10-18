@@ -128,8 +128,6 @@
                 }
 
                 &:hover {
-                    height: 30px;
-
                     .subMenuDropdown {
                         display: flex;
                         flex-direction: column;
@@ -201,10 +199,6 @@
                         margin: 0px 12px 0px 8px;
                         padding: 3.5px 7.5px 3.5px 27.5px;
                         width: 152px;
-                    }
-
-                    &:hover {
-                        height: 28px;
                     }
                 }
             }
