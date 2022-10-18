@@ -241,10 +241,10 @@ export default function Navbar() {
         <div className={styles.secondaryNavbarItemsList}>
           <div className={styles.listColoredBlock}>
             <div className={styles.itemColoredBlock}>
-              <Link href="/services-request-account">Request an Account</Link>
+              <NavbarLink link={"/services-request-account"} label={"Request an Account"} />
             </div>
             <div className={styles.itemColoredBlock}>
-              <Link href="/support/getting-started">Getting Started</Link>
+              <NavbarLink link={"/support/getting-started"} label={"Getting Started"} />
             </div>
           </div>
           <div className={styles.listBlock}>
@@ -294,7 +294,7 @@ export default function Navbar() {
         </button>
         <div className={styles.navbarItemsLine}>
           <div className={styles.navbarItem}>
-            <Link href="/about-collaboratory">About Us ▾</Link>
+            <NavbarLink link={"/about-collaboratory"} label={"About Us ▾"} />
             <div className={styles.subMenuDropdown}>
               {navbarLinksAbout.map((navLink, index) => (
                 <NavbarLink key={index} link={navLink.link} label={navLink.label} />
@@ -302,7 +302,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className={styles.navbarItem}>
-            <Link href="/services">Our Services ▾</Link>
+            <NavbarLink link={"/services"} label={"Our Services ▾"} />
             <div className={styles.subMenuDropdown}>
               {navbarLinksServices.map((navLink, index) => (
                 <NavbarLink key={index} link={navLink.link} label={navLink.label} />
@@ -310,29 +310,33 @@ export default function Navbar() {
             </div>
           </div>
           <div className={styles.navbarItem}>
-            <Link href="/research">Our Research ▾</Link>
+            <NavbarLink link={"/research"} label={"Our Research ▾"} />
             <div className={styles.subMenuDropdown}>
-              <Link href="/research#technology_development_cores">
-                Technology Development Cores
-              </Link>
+              <NavbarLink
+                link={"/research#technology_development_cores"}
+                label={"Technology Development Cores"}
+              />
               <div className={styles.innerSubMenu}>
                 {navbarLinksResearchSectionA.map((navLink, index) => (
                   <NavbarLink key={index} link={navLink.link} label={navLink.label} />
                 ))}
               </div>
               <div className={styles.subMenuDivision}></div>
-              <Link href="/research#research_modules">Research Modules</Link>
+              <NavbarLink link={"/research#research_modules"} label={"Research Modules"} />
               <div className={styles.innerSubMenu}>
                 {navbarLinksResearchSectionB.map((navLink, index) => (
                   <NavbarLink key={index} link={navLink.link} label={navLink.label} />
                 ))}
               </div>
               <div className={styles.subMenuDivision}></div>
-              <Link href="/publications-presentations">Publications & Presentations</Link>
+              <NavbarLink
+                link={"/publications-presentations"}
+                label={"Publications & Presentations"}
+              />
             </div>
           </div>
           <div className={styles.navbarItem}>
-            <Link href="/support/overview">Support ▾</Link>
+            <NavbarLink link={"/support/overview"} label={"Support ▾"} />
             <div className={styles.subMenuDropdown}>
               {navbarLinksSupport.map((navLink, index) => (
                 <NavbarLink key={index} link={navLink.link} label={navLink.label} />
@@ -340,7 +344,7 @@ export default function Navbar() {
             </div>
           </div>
           <div className={styles.navbarItem}>
-            <Link href="/contact-us">Contact Us</Link>
+            <NavbarLink link={"/contact-us"} label={"Contact Us"} />
           </div>
           <div className={styles.navbarItem}>
             <form>
@@ -404,23 +408,25 @@ export default function Navbar() {
                 id="subMenuResearchItem"
                 aria-expanded="false"
               >
-                <Link href="/research#technology_development_cores">
-                  Technology Development Cores
-                </Link>
+                <NavbarLink
+                  link={"/research#technology_development_cores"}
+                  label={"Technology Development Cores"}
+                />
                 <div className={styles.innerExpandedMenu}>
                   {navbarLinksResearchSectionA.map((navLink, index) => (
                     <NavbarLink key={index} link={navLink.link} label={navLink.label} />
                   ))}
                 </div>
-                <Link href="/research#research_modules">Research Modules</Link>
+                <NavbarLink link={"/research#research_modules"} label={"Research Modules"} />
                 <div className={styles.innerExpandedMenu}>
                   {navbarLinksResearchSectionB.map((navLink, index) => (
                     <NavbarLink key={index} link={navLink.link} label={navLink.label} />
                   ))}
                 </div>
-                <Link href="/publications-presentations">
-                  <a>Publications & Presentations</a>
-                </Link>
+                <NavbarLink
+                  link={"/publications-presentations"}
+                  label={"Publications & Presentations"}
+                />
               </div>
             </button>
             <button
