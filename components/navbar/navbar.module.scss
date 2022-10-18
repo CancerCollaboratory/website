@@ -171,7 +171,7 @@
     }
 }
 
-@include breakpoint-1199-px {
+@include respond-to("extra-large") {
     .navbarContainer {
         .secondaryNavbar {
             padding-left: 436px;
@@ -206,7 +206,7 @@
     }
 }
 
-@include breakpoint-991-px {
+@include respond-to("large") {
     .navbarContainer {
         .secondaryNavbar {
             padding-left: 203px;
@@ -278,7 +278,7 @@
     }
 }
 
-@include breakpoint-767-px {
+@include respond-to("medium") {
     .navbarContainer {
         .secondaryNavbar {
             justify-content: flex-end;
@@ -470,7 +470,7 @@
     }
 }
 
-@include breakpoint-388-px {
+@include respond-to("small") {
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
@@ -523,7 +523,7 @@
     }
 }
 
-@include breakpoint-315-px {
+@include respond-to("extra-small") {
     .navbarContainer {
         .secondaryNavbar {
             .secondaryNavbarItemsList {
