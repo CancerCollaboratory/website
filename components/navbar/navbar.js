@@ -126,7 +126,7 @@ export default function Navbar() {
     toggleAriaExpanded(isSubMenuSupportExpanded, "subMenuSupportItem");
   }
 
-  const navbarAboutLinks = [
+  const navbarLinksAbout = [
     {
       link: "/about-collaboratory",
       label: "About the Collaboratory",
@@ -138,6 +138,98 @@ export default function Navbar() {
     {
       link: "/about-funders-collaborators",
       label: "Funders & Collaborators",
+    },
+  ];
+
+  const navbarLinksServices = [
+    {
+      link: "/services",
+      label: "Our Services",
+    },
+    {
+      link: "/services-cloud-resources",
+      label: "Cloud Resources",
+    },
+    {
+      link: "/services-dockstore",
+      label: "Dockstore",
+    },
+    {
+      link: "/services-request-account",
+      label: "Request an Account",
+    },
+  ];
+
+  const navbarLinksResearchSectionA = [
+    {
+      link: "/research/hardware-software-infrastructure",
+      label: "Hardware & Software Infrastructure",
+    },
+    {
+      link: "/research/benchmarking",
+      label: "Benchmarking",
+    },
+    {
+      link: "/research/training-outreach",
+      label: "Training & Outreach",
+    },
+    {
+      link: "/research/management-finance",
+      label: "Management & Finance",
+    },
+  ];
+
+  const navbarLinksResearchSectionB = [
+    {
+      link: "/research/indexing-search-compression",
+      label: "Indexing, Search & Compression",
+    },
+    {
+      link: "/research/variant-identification-consequence",
+      label: "Variant Identification & Consequence",
+    },
+    {
+      link: "/research/tumour-heterogenity-evolution",
+      label: "Tumour Heterogeneity & Evolution",
+    },
+    {
+      link: "/research/drug-target-identification",
+      label: "Drug Target Identification",
+    },
+    {
+      link: "/research/bioethics-protection-phi",
+      label: "Bioethics & Protection of PHI",
+    },
+  ];
+
+  const navbarLinksSupport = [
+    {
+      link: "/support/getting-started",
+      label: "Getting Started",
+    },
+    {
+      link: "/support/best-practices",
+      label: "Best Practices",
+    },
+    {
+      link: "/support/user-guide",
+      label: "User Guide",
+    },
+    {
+      link: "/support/glossary-terms",
+      label: "Glossary of Terms",
+    },
+    {
+      link: "/support/workshops",
+      label: "Workshops",
+    },
+    {
+      link: "/support/faqs",
+      label: "FAQs",
+    },
+    {
+      link: "/support/system-status",
+      label: "System Status",
     },
   ];
 
@@ -204,18 +296,17 @@ export default function Navbar() {
           <div className={styles.navbarItem}>
             <Link href="/about-collaboratory">About Us ▾</Link>
             <div className={styles.subMenuDropdown}>
-              {navbarAboutLinks.map((navLink, index) => {
-                <NavbarLink key={index} link={navLink.link} label={navLink.label} />;
-              })}
+              {navbarLinksAbout.map((navLink, index) => (
+                <NavbarLink key={index} link={navLink.link} label={navLink.label} />
+              ))}
             </div>
           </div>
           <div className={styles.navbarItem}>
             <Link href="/services">Our Services ▾</Link>
             <div className={styles.subMenuDropdown}>
-              <Link href="/services">Our Services</Link>
-              <Link href="/services-cloud-resources">Cloud Resources</Link>
-              <Link href="/services-dockstore">Dockstore</Link>
-              <Link href="/services-request-account">Request an Account</Link>
+              {navbarLinksServices.map((navLink, index) => (
+                <NavbarLink key={index} link={navLink.link} label={navLink.label} />
+              ))}
             </div>
           </div>
           <div className={styles.navbarItem}>
@@ -224,32 +315,18 @@ export default function Navbar() {
               <Link href="/research#technology_development_cores">
                 Technology Development Cores
               </Link>
-              <Link href="/research/hardware-software-infrastructure">
-                <a className={styles.innerSubMenuItem}>Hardware & Software Infrastructure</a>
-              </Link>
-              <Link href="/research/benchmarking">
-                <a className={styles.innerSubMenuItem}>Benchmarking</a>
-              </Link>
-              <Link href="/research/training-outreach">
-                <a className={styles.innerSubMenuItem}>Training & Outreach</a>
-              </Link>
-              <Link href="/research/management-finance">
-                <a className={styles.innerSubMenuItem}>Management & Finance</a>
-              </Link>
+              <div className={styles.innerSubMenu}>
+                {navbarLinksResearchSectionA.map((navLink, index) => (
+                  <NavbarLink key={index} link={navLink.link} label={navLink.label} />
+                ))}
+              </div>
               <div className={styles.subMenuDivision}></div>
               <Link href="/research#research_modules">Research Modules</Link>
-              <Link href="/research/indexing-search-compression">
-                <a className={styles.innerSubMenuItem}>Indexing, Search & Compression</a>
-              </Link>
-              <Link href="/research/variant-identification-consequence">
-                <a className={styles.innerSubMenuItem}>Variant Identification & Consequence</a>
-              </Link>
-              <Link href="/research/drug-target-identification">
-                <a className={styles.innerSubMenuItem}>Drug Target Identification</a>
-              </Link>
-              <Link href="/research/bioethics-protection-phi">
-                <a className={styles.innerSubMenuItem}>Bioethics & Protection of PHI</a>
-              </Link>
+              <div className={styles.innerSubMenu}>
+                {navbarLinksResearchSectionB.map((navLink, index) => (
+                  <NavbarLink key={index} link={navLink.link} label={navLink.label} />
+                ))}
+              </div>
               <div className={styles.subMenuDivision}></div>
               <Link href="/publications-presentations">Publications & Presentations</Link>
             </div>
@@ -257,13 +334,9 @@ export default function Navbar() {
           <div className={styles.navbarItem}>
             <Link href="/support/overview">Support ▾</Link>
             <div className={styles.subMenuDropdown}>
-              <Link href="/support/getting-started">Getting Started</Link>
-              <Link href="/support/best-practices">Best Practices</Link>
-              <Link href="/support/user-guide">User Guide</Link>
-              <Link href="/support/glossary-terms">Glossary of Terms</Link>
-              <Link href="/support/workshops">Workshops</Link>
-              <Link href="/support/faqs">FAQs</Link>
-              <Link href="/support/system-status">System Status</Link>
+              {navbarLinksSupport.map((navLink, index) => (
+                <NavbarLink key={index} link={navLink.link} label={navLink.label} />
+              ))}
             </div>
           </div>
           <div className={styles.navbarItem}>

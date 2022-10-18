@@ -149,8 +149,10 @@
                             }
                         }
 
-                        .innerSubMenuItem {
-                            padding-left: 26px;
+                        .innerSubMenu {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 12px;
                         }
 
                         .subMenuDivision {
