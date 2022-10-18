@@ -12,6 +12,8 @@ const Navbar = () => {
   const [expandedMenu, setExpandedMenu] = useState(null);
   const menuDropdown = useRef(null);
 
+  const subMenuIds = ["subMenuAbout", "subMenuServices", "subMenuResearch", "subMenuSupport"];
+
   const navbarLinksAbout = [
     {
       link: "/about-collaboratory",
@@ -135,26 +137,56 @@ const Navbar = () => {
     setIsSubMenuSupportExpanded(false);
   }
 
+  function collapseSubMenuItems(activeSubMenu) {
+    const filteredSubMenuIds = subMenuIds.filter(
+      subMenuId => subMenuId !== activeSubMenu && subMenuId
+    );
+
+    for (let idIndex = 0; idIndex < 3; idIndex++) {
+      if (filteredSubMenuIds[idIndex] === subMenuIds[0]) {
+        if (isSubMenuAboutExpanded) {
+          setIsSubMenuAboutExpanded(false);
+        }
+      } else if (filteredSubMenuIds[idIndex] === subMenuIds[1]) {
+        if (isSubMenuServicesExpanded) {
+          setIsSubMenuServicesExpanded(false);
+        }
+      } else if (filteredSubMenuIds[idIndex] === subMenuIds[2]) {
+        if (isSubMenuResearchExpanded) {
+          setIsSubMenuResearchExpanded(false);
+        }
+      } else {
+        if (isSubMenuSupportExpanded) {
+          setIsSubMenuSupportExpanded(false);
+        }
+      }
+    }
+  }
+
   function expandAboutSubMenu() {
     !isSubMenuAboutExpanded ? setIsSubMenuAboutExpanded(true) : setIsSubMenuAboutExpanded(false);
+    collapseSubMenuItems(subMenuIds[0]);
   }
 
   function expandServicesSubMenu() {
     !isSubMenuServicesExpanded
       ? setIsSubMenuServicesExpanded(true)
       : setIsSubMenuServicesExpanded(false);
+    collapseSubMenuItems(subMenuIds[1]);
   }
 
   function expandResearchSubMenu() {
     !isSubMenuResearchExpanded
       ? setIsSubMenuResearchExpanded(true)
       : setIsSubMenuResearchExpanded(false);
+    collapseSubMenuItems(subMenuIds[2]);
   }
 
   function expandSupportSubMenu() {
     !isSubMenuSupportExpanded
       ? setIsSubMenuSupportExpanded(true)
       : setIsSubMenuSupportExpanded(false);
+    collapseSubMenuItems(subMenuIds[3]);
   }
 
   function collapseSubMenu() {
