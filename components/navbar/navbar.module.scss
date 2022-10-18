@@ -443,7 +443,12 @@
                             }
 
                             .innerExpandedMenu {
-                                padding-left: 44.5px;
+                                display: flex;
+                                flex-direction: column;
+
+                                a {
+                                    padding-left: 44.5px;
+                                }
                             }
                         }
 
