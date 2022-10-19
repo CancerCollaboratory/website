@@ -263,10 +263,7 @@ const Navbar = () => {
         </button>
         <div className={styles.navbarItemsLine}>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLabel}>
-              <div className={styles.navbarItemBorder}></div>
-              <NavbarLink link={"/about-collaboratory"} label={"About Us ▾"} />
-            </div>
+            <NavbarLink link={"/about-collaboratory"} label={"About Us ▾"} />
             <div className={styles.subMenuDropdown}>
               {navbarLinksAbout.map((navLink, index) => (
                 <NavbarLink key={index} link={navLink.link} label={navLink.label} />
@@ -274,10 +271,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLabel}>
-              <div className={styles.navbarItemBorder}></div>
-              <NavbarLink link={"/services"} label={"Our Services ▾"} />
-            </div>
+            <NavbarLink link={"/services"} label={"Our Services ▾"} />
             <div className={styles.subMenuDropdown}>
               {navbarLinksServices.map((navLink, index) => (
                 <NavbarLink key={index} link={navLink.link} label={navLink.label} />
@@ -285,10 +279,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLabel}>
-              <div className={styles.navbarItemBorder}></div>
-              <NavbarLink link={"/research"} label={"Our Research ▾"} />
-            </div>
+            <NavbarLink link={"/research"} label={"Our Research ▾"} />
             <div className={styles.subMenuDropdown}>
               <NavbarLink
                 link={"/research#technology_development_cores"}
@@ -314,10 +305,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLabel}>
-              <div className={styles.navbarItemBorder}></div>
-              <NavbarLink link={"/support/overview"} label={"Support ▾"} />
-            </div>
+            <NavbarLink link={"/support/overview"} label={"Support ▾"} />
             <div className={styles.subMenuDropdown}>
               {navbarLinksSupport.map((navLink, index) => (
                 <NavbarLink key={index} link={navLink.link} label={navLink.label} />
@@ -325,12 +313,9 @@ const Navbar = () => {
             </div>
           </div>
           <div className={styles.navbarItem}>
-            <div className={styles.navbarItemLabel}>
-              <div className={styles.navbarItemBorder}></div>
-              <NavbarLink link={"/contact-us"} label={"Contact Us"} />
-            </div>
+            <NavbarLink link={"/contact-us"} label={"Contact Us"} />
           </div>
-          <div className={`${styles.navbarItem} ${styles.searchItem}`}>
+          <div className={styles.navbarItem}>
             <form>
               <input
                 className={styles.searchBar}
