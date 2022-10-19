@@ -264,7 +264,7 @@ const Navbar = () => {
         <div className={styles.navbarItemsLine}>
           <div className={styles.navbarItem}>
             <div className={styles.navbarItemLabel}>
-              <div className={navbarItemBorder}></div>
+              <div className={styles.navbarItemBorder}></div>
               <NavbarLink link={"/about-collaboratory"} label={"About Us ▾"} />
             </div>
             <div className={styles.subMenuDropdown}>
@@ -275,7 +275,7 @@ const Navbar = () => {
           </div>
           <div className={styles.navbarItem}>
             <div className={styles.navbarItemLabel}>
-              <div className={navbarItemBorder}></div>
+              <div className={styles.navbarItemBorder}></div>
               <NavbarLink link={"/services"} label={"Our Services ▾"} />
             </div>
             <div className={styles.subMenuDropdown}>
@@ -286,7 +286,7 @@ const Navbar = () => {
           </div>
           <div className={styles.navbarItem}>
             <div className={styles.navbarItemLabel}>
-              <div className={navbarItemBorder}></div>
+              <div className={styles.navbarItemBorder}></div>
               <NavbarLink link={"/research"} label={"Our Research ▾"} />
             </div>
             <div className={styles.subMenuDropdown}>
@@ -315,7 +315,7 @@ const Navbar = () => {
           </div>
           <div className={styles.navbarItem}>
             <div className={styles.navbarItemLabel}>
-              <div className={navbarItemBorder}></div>
+              <div className={styles.navbarItemBorder}></div>
               <NavbarLink link={"/support/overview"} label={"Support ▾"} />
             </div>
             <div className={styles.subMenuDropdown}>
@@ -326,7 +326,7 @@ const Navbar = () => {
           </div>
           <div className={styles.navbarItem}>
             <div className={styles.navbarItemLabel}>
-              <div className={navbarItemBorder}></div>
+              <div className={styles.navbarItemBorder}></div>
               <NavbarLink link={"/contact-us"} label={"Contact Us"} />
             </div>
           </div>
