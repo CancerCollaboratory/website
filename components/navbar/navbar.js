@@ -6,6 +6,11 @@ import SearchBar from "../searchBar/searchBar";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
+  const [isMenuAboutExpanded, setIsMenuAboutExpanded] = useState(false);
+  const [isMenuServicesExpanded, setIsMenuServicesExpanded] = useState(false);
+  const [isMenuResearchExpanded, setIsMenuResearchExpanded] = useState(false);
+  const [isMenuSupportExpanded, setIsMenuSupportExpanded] = useState(false);
+
   const mainNavbarItems = [
     {
       label: "About Us ▾",
@@ -24,6 +29,8 @@ const Navbar = () => {
           link: "/about-funders-collaborators",
         },
       ],
+      setMenuExpanded: setIsMenuAboutExpanded,
+      isMenuExpanded: isMenuAboutExpanded,
     },
     {
       label: "Our Services ▾",
@@ -46,6 +53,8 @@ const Navbar = () => {
           link: "/services-request-account",
         },
       ],
+      setMenuExpanded: setIsMenuServicesExpanded,
+      isMenuExpanded: isMenuServicesExpanded,
     },
     {
       label: "Our Research ▾",
@@ -104,6 +113,8 @@ const Navbar = () => {
         label: "Publications & Presentations",
         link: "/publications-presentations",
       },
+      setMenuExpanded: setIsMenuResearchExpanded,
+      isMenuExpanded: isMenuResearchExpanded,
     },
     {
       label: "Support ▾",
@@ -138,6 +149,8 @@ const Navbar = () => {
           link: "/support/system-status",
         },
       ],
+      setMenuExpanded: setIsMenuSupportExpanded,
+      isMenuExpanded: isMenuSupportExpanded,
     },
     {
       label: "Contact Us",
@@ -182,33 +195,12 @@ const Navbar = () => {
 
   const [isToggled, setIsToggled] = useState(false);
 
-  const [isMenuAboutExpanded, setIsMenuAboutExpanded] = useState(false);
-  const [isMenuServicesExpanded, setIsMenuServicesExpanded] = useState(false);
-  const [isMenuResearchExpanded, setIsMenuResearchExpanded] = useState(false);
-  const [isMenuSupportExpanded, setIsMenuSupportExpanded] = useState(false);
-
   function expandNavMenu() {
     if (!isToggled) {
       setIsToggled(true);
     } else {
       setIsToggled(false);
     }
-  }
-
-  function expandMenuAbout() {
-    !isMenuAboutExpanded ? setIsMenuAboutExpanded(true) : setIsMenuAboutExpanded(false);
-  }
-
-  function expandServicesMenu() {
-    !isMenuServicesExpanded ? setIsMenuServicesExpanded(true) : setIsMenuServicesExpanded(false);
-  }
-
-  function expandResearchMenu() {
-    !isMenuResearchExpanded ? setIsMenuResearchExpanded(true) : setIsMenuResearchExpanded(false);
-  }
-
-  function expandSupportMenu() {
-    !isMenuSupportExpanded ? setIsMenuSupportExpanded(true) : setIsMenuSupportExpanded(false);
   }
 
   return (
@@ -263,37 +255,51 @@ const Navbar = () => {
         <div className={styles.navbarItemsLine}>
           {mainNavbarItems.map((item, index) =>
             index < 2 || index === 3 ? (
-              <div className={styles.navbarItem} key={index}>
+              <div
+                className={styles.navbarItem}
+                onMouseOver={() => item.setMenuExpanded(true)}
+                onMouseLeave={() => item.setMenuExpanded(false)}
+                key={index}
+              >
                 <MenuDropdown
                   label={item.label}
                   hasLink={true}
                   link={item.link}
                   styleSubMenu={styles.subMenuDropdown}
                   items={item.navbarSubMenuItems}
+                  isHovered={item.isMenuExpanded}
                 />
               </div>
             ) : index === 2 ? (
-              <div className={styles.navbarItem} key={index}>
+              <div
+                className={styles.navbarItem}
+                onMouseOver={() => item.setMenuExpanded(true)}
+                onMouseLeave={() => item.setMenuExpanded(false)}
+                key={index}
+              >
                 <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
-                <div className={styles.subMenuDropdown}>
-                  {item.navbarSubMenuItems.map((section, index) => (
-                    <React.Fragment key={index}>
-                      <MenuDropdown
-                        label={section.label}
-                        hasLink={true}
-                        link={section.link}
-                        styleSubMenu={styles.innerSubMenu}
-                        items={section.subMenuSection}
-                      />
-                      <div className={styles.subMenuDivision}></div>
-                    </React.Fragment>
-                  ))}
-                  <NavbarLink
-                    label={item.navbarSubMenuItem.label}
-                    isExternalLink={false}
-                    link={item.navbarSubMenuItem.link}
-                  />
-                </div>
+                {item.isMenuExpanded && (
+                  <div className={styles.subMenuDropdown}>
+                    {item.navbarSubMenuItems.map((section, index) => (
+                      <React.Fragment key={index}>
+                        <MenuDropdown
+                          label={section.label}
+                          hasLink={true}
+                          link={section.link}
+                          styleSubMenu={styles.innerSubMenu}
+                          items={section.subMenuSection}
+                          isHovered={item.isMenuExpanded}
+                        />
+                        <div className={styles.subMenuDivision}></div>
+                      </React.Fragment>
+                    ))}
+                    <NavbarLink
+                      label={item.navbarSubMenuItem.label}
+                      isExternalLink={false}
+                      link={item.navbarSubMenuItem.link}
+                    />
+                  </div>
+                )}
               </div>
             ) : (
               <div className={styles.navbarItem} key={index}>
