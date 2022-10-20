@@ -1,11 +1,5 @@
-import WrapPage from "../../../components/wrapPage/wrapPage";
-
 const HardwareAndSoftwareInfrastructure = () => {
-  return (
-    <>
-      <WrapPage></WrapPage>
-    </>
-  );
+  return <></>;
 };
 
 export default HardwareAndSoftwareInfrastructure;

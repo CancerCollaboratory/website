@@ -1,11 +1,5 @@
-import WrapPage from "../../components/wrapPage/wrapPage";
-
 const AboutCollaboratory = () => {
-  return (
-    <>
-      <WrapPage></WrapPage>
-    </>
-  );
+  return <></>;
 };
 
 export default AboutCollaboratory;

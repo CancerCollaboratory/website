@@ -1,4 +1,3 @@
-import WrapPage from "../components/wrapPage/wrapPage";
 import { getPageData } from "../lib/pages";
 import { attributesToProps } from "html-react-parser";
 
@@ -25,11 +24,7 @@ export async function getStaticProps() {
 }
 
 const Home = ({ pageData }) => {
-  return (
-    <>
-      <WrapPage></WrapPage>
-    </>
-  );
+  return <></>;
 };
 
 export default Home;
