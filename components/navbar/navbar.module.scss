@@ -417,10 +417,6 @@
                         }
 
                         .expandedSubMenuItem {
-                            display: none;
-                        }
-
-                        .expandedSubMenuItem[aria-expanded="true"] {
                             display: flex;
                             flex-direction: column;
                             border-top: 1px solid $color-light-x3-gray;
