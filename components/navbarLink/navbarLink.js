@@ -8,6 +8,7 @@ const NavbarLink = ({
   isImage,
   srcPath,
   hasPriority,
+  styleImageContainer,
   styleImage,
   width,
   height,
@@ -28,7 +29,7 @@ const NavbarLink = ({
           </a>
         ) : (
           <Link href={link}>
-            <>
+            <div className={styleImageContainer}>
               <Image
                 src={srcPath}
                 alt={label}
@@ -37,7 +38,7 @@ const NavbarLink = ({
                 width={width}
                 height={height}
               />
-            </>
+            </div>
           </Link>
         )
       ) : isExternalLink ? (
