@@ -202,6 +202,7 @@ const Navbar = () => {
   function expandNavMenu() {
     if (!isToggled) {
       setIsToggled(true);
+      collapseSubMenuItems("");
     } else {
       setIsToggled(false);
     }
