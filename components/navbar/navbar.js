@@ -182,12 +182,33 @@ const Navbar = () => {
 
   const [isToggled, setIsToggled] = useState(false);
 
+  const [isMenuAboutExpanded, setIsMenuAboutExpanded] = useState(false);
+  const [isMenuServicesExpanded, setIsMenuServicesExpanded] = useState(false);
+  const [isMenuResearchExpanded, setIsMenuResearchExpanded] = useState(false);
+  const [isMenuSupportExpanded, setIsMenuSupportExpanded] = useState(false);
+
   function expandNavMenu() {
     if (!isToggled) {
       setIsToggled(true);
     } else {
       setIsToggled(false);
     }
+  }
+
+  function expandMenuAbout() {
+    !isMenuAboutExpanded ? setIsMenuAboutExpanded(true) : setIsMenuAboutExpanded(false);
+  }
+
+  function expandServicesMenu() {
+    !isMenuServicesExpanded ? setIsMenuServicesExpanded(true) : setIsMenuServicesExpanded(false);
+  }
+
+  function expandResearchMenu() {
+    !isMenuResearchExpanded ? setIsMenuResearchExpanded(true) : setIsMenuResearchExpanded(false);
+  }
+
+  function expandSupportMenu() {
+    !isMenuSupportExpanded ? setIsMenuSupportExpanded(true) : setIsMenuSupportExpanded(false);
   }
 
   return (
