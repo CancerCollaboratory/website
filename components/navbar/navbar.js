@@ -8,7 +8,7 @@ import styles from "./navbar.module.scss";
 const Navbar = () => {
   const mainNavbarItems = [
     {
-      label: "About Us",
+      label: "About Us ▾",
       link: "/about-collaboratory",
       navbarSubMenuItems: [
         {
