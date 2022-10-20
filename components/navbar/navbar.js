@@ -217,19 +217,18 @@ const Navbar = () => {
         </div>
       </div>
       <div className={styles.mainNavbar}>
-        <div className={styles.imageContainer}>
-          <NavbarLink
-            label={websiteLogo.label}
-            isExternalLink={false}
-            link={websiteLogo.link}
-            isImage={true}
-            srcPath={websiteLogo.srcPath}
-            hasPriority={true}
-            styleImage={styles.siteLogo}
-            width={websiteLogo.width}
-            height={websiteLogo.height}
-          />
-        </div>
+        <NavbarLink
+          label={websiteLogo.label}
+          isExternalLink={false}
+          link={websiteLogo.link}
+          isImage={true}
+          srcPath={websiteLogo.srcPath}
+          hasPriority={true}
+          styleImageContainer={styles.imageContainer}
+          styleImage={styles.siteLogo}
+          width={websiteLogo.width}
+          height={websiteLogo.height}
+        />
         <button
           type="button"
           className={styles.navbarToggler}
