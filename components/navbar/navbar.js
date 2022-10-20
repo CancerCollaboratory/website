@@ -15,6 +15,7 @@ const Navbar = () => {
     {
       label: "About Us ▾",
       link: "/about-collaboratory",
+      subMenuId: "subMenuAbout",
       navbarSubMenuItems: [
         {
           label: "About the Collaboratory",
@@ -29,12 +30,13 @@ const Navbar = () => {
           link: "/about-funders-collaborators",
         },
       ],
-      setMenuExpanded: setIsMenuAboutExpanded,
       isMenuExpanded: isMenuAboutExpanded,
+      setIsMenuExpanded: setIsMenuAboutExpanded,
     },
     {
       label: "Our Services ▾",
       link: "/services",
+      subMenuId: "subMenuServices",
       navbarSubMenuItems: [
         {
           label: "Our Services",
@@ -53,12 +55,13 @@ const Navbar = () => {
           link: "/services-request-account",
         },
       ],
-      setMenuExpanded: setIsMenuServicesExpanded,
       isMenuExpanded: isMenuServicesExpanded,
+      setIsMenuExpanded: setIsMenuServicesExpanded,
     },
     {
       label: "Our Research ▾",
       link: "/research",
+      subMenuId: "subMenuResearch",
       navbarSubMenuItems: [
         {
           label: "Technology Development Cores",
@@ -113,12 +116,13 @@ const Navbar = () => {
         label: "Publications & Presentations",
         link: "/publications-presentations",
       },
-      setMenuExpanded: setIsMenuResearchExpanded,
       isMenuExpanded: isMenuResearchExpanded,
+      setIsMenuExpanded: setIsMenuResearchExpanded,
     },
     {
       label: "Support ▾",
       link: "/support/overview",
+      subMenuId: "subMenuSupport",
       navbarSubMenuItems: [
         {
           label: "Getting Started",
@@ -149,8 +153,8 @@ const Navbar = () => {
           link: "/support/system-status",
         },
       ],
-      setMenuExpanded: setIsMenuSupportExpanded,
       isMenuExpanded: isMenuSupportExpanded,
+      setIsMenuExpanded: setIsMenuSupportExpanded,
     },
     {
       label: "Contact Us",
@@ -200,6 +204,37 @@ const Navbar = () => {
       setIsToggled(true);
     } else {
       setIsToggled(false);
+    }
+  }
+
+  function expandSubMenu(isExpanded, setExpanded, menuId) {
+    !isExpanded ? setExpanded(true) : setExpanded(false);
+    collapseSubMenuItems(menuId);
+  }
+
+  function collapseSubMenuItems(activeSubMenu) {
+    const filteredSubMenuIds = mainNavbarItems.filter(
+      (item, index) => index < 4 && item.subMenuId !== activeSubMenu
+    );
+
+    for (let index = 0; index < 3; index++) {
+      if (filteredSubMenuIds[index].subMenuId === mainNavbarItems[0].subMenuId) {
+        if (isMenuAboutExpanded) {
+          setIsMenuAboutExpanded(false);
+        }
+      } else if (filteredSubMenuIds[index].subMenuId === mainNavbarItems[1].subMenuId) {
+        if (isMenuServicesExpanded) {
+          setIsMenuServicesExpanded(false);
+        }
+      } else if (filteredSubMenuIds[index].subMenuId === mainNavbarItems[2].subMenuId) {
+        if (isMenuResearchExpanded) {
+          setIsMenuResearchExpanded(false);
+        }
+      } else {
+        if (isMenuSupportExpanded) {
+          setIsMenuSupportExpanded(false);
+        }
+      }
     }
   }
 
@@ -257,8 +292,8 @@ const Navbar = () => {
             index < 2 || index === 3 ? (
               <div
                 className={styles.navbarItem}
-                onMouseOver={() => item.setMenuExpanded(true)}
-                onMouseLeave={() => item.setMenuExpanded(false)}
+                onMouseOver={() => item.setIsMenuExpanded(true)}
+                onMouseLeave={() => item.setIsMenuExpanded(false)}
                 key={index}
               >
                 <MenuDropdown
@@ -267,14 +302,14 @@ const Navbar = () => {
                   link={item.link}
                   styleSubMenu={styles.subMenuDropdown}
                   items={item.navbarSubMenuItems}
-                  isHovered={item.isMenuExpanded}
+                  shouldExpand={item.isMenuExpanded}
                 />
               </div>
             ) : index === 2 ? (
               <div
                 className={styles.navbarItem}
-                onMouseOver={() => item.setMenuExpanded(true)}
-                onMouseLeave={() => item.setMenuExpanded(false)}
+                onMouseOver={() => item.setIsMenuExpanded(true)}
+                onMouseLeave={() => item.setIsMenuExpanded(false)}
                 key={index}
               >
                 <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
@@ -288,7 +323,7 @@ const Navbar = () => {
                           link={section.link}
                           styleSubMenu={styles.innerSubMenu}
                           items={section.subMenuSection}
-                          isHovered={item.isMenuExpanded}
+                          shouldExpand={item.isMenuExpanded}
                         />
                         <div className={styles.subMenuDivision}></div>
                       </React.Fragment>
@@ -319,34 +354,52 @@ const Navbar = () => {
           <div className={styles.wrapExpandedMenu}>
             {mainNavbarItems.map((item, index) =>
               index < 2 || index === 3 ? (
-                <button type="button" className={styles.expandedMenuItem} key={index}>
+                <button
+                  type="button"
+                  className={styles.expandedMenuItem}
+                  onClick={() =>
+                    expandSubMenu(item.isMenuExpanded, item.setIsMenuExpanded, item.subMenuId)
+                  }
+                  key={index}
+                >
                   <MenuDropdown
                     label={item.label}
                     hasLink={false}
                     styleSubMenu={styles.expandedSubMenuItem}
                     items={item.navbarSubMenuItems}
+                    shouldExpand={item.isMenuExpanded}
                   />
                 </button>
               ) : index === 2 ? (
-                <button type="button" className={styles.expandedMenuItem} key={index}>
+                <button
+                  type="button"
+                  className={styles.expandedMenuItem}
+                  onClick={() =>
+                    expandSubMenu(item.isMenuExpanded, item.setIsMenuExpanded, item.subMenuId)
+                  }
+                  key={index}
+                >
                   <p className={styles.itemName}>{item.label}</p>
-                  <div className={styles.expandedSubMenuItem}>
-                    {item.navbarSubMenuItems.map((section, index) => (
-                      <MenuDropdown
-                        label={section.label}
-                        hasLink={true}
-                        link={section.link}
-                        styleSubMenu={styles.innerExpandedMenu}
-                        items={section.subMenuSection}
-                        key={index}
+                  {item.isMenuExpanded && (
+                    <div className={styles.expandedSubMenuItem}>
+                      {item.navbarSubMenuItems.map((section, index) => (
+                        <MenuDropdown
+                          label={section.label}
+                          hasLink={true}
+                          link={section.link}
+                          styleSubMenu={styles.innerExpandedMenu}
+                          items={section.subMenuSection}
+                          shouldExpand={item.isMenuExpanded}
+                          key={index}
+                        />
+                      ))}
+                      <NavbarLink
+                        label={item.navbarSubMenuItem.label}
+                        isExternalLink={false}
+                        link={item.navbarSubMenuItem.link}
                       />
-                    ))}
-                    <NavbarLink
-                      label={item.navbarSubMenuItem.label}
-                      isExternalLink={false}
-                      link={item.navbarSubMenuItem.link}
-                    />
-                  </div>
+                    </div>
+                  )}
                 </button>
               ) : (
                 <button type="button" className={styles.expandedMenuItem} key={index}>
