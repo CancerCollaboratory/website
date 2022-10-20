@@ -125,40 +125,34 @@
                 }
 
                 .subMenuDropdown {
-                    display: none;
-                }
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 121px;
+                    padding-top: 7px;
+                    margin-left: 10.5px;
+                    background-color: white;
+                    border: 1px solid $color-light-x3-gray;
 
-                &:hover {
-                    .subMenuDropdown {
+                    a {
+                        border: none;
+                        padding: 3.5px 14px 12px 14px;
+
+                        &:hover {
+                            color: $color-dark-red;
+                        }
+                    }
+
+                    .innerSubMenu {
                         display: flex;
                         flex-direction: column;
-                        position: absolute;
-                        top: 121px;
-                        padding-top: 7px;
-                        margin-left: 10.5px;
-                        background-color: white;
-                        border: 1px solid $color-light-x3-gray;
+                        padding-left: 12px;
+                    }
 
-                        a {
-                            border: none;
-                            padding: 3.5px 14px 12px 14px;
-
-                            &:hover {
-                                color: $color-dark-red;
-                            }
-                        }
-
-                        .innerSubMenu {
-                            display: flex;
-                            flex-direction: column;
-                            padding-left: 12px;
-                        }
-
-                        .subMenuDivision {
-                            border-bottom: 1px solid $color-light-x6-gray;
-                            margin-bottom: 5px;
-                            width: 100%;
-                        }
+                    .subMenuDivision {
+                        border-bottom: 1px solid $color-light-x6-gray;
+                        margin-bottom: 5px;
+                        width: 100%;
                     }
                 }
             }
@@ -270,10 +264,8 @@
                         width: 168px;
                     }
 
-                    &:hover {
-                        .subMenuDropdown {
-                            top: 153px;
-                        }
+                    .subMenuDropdown {
+                        top: 153px;
                     }
                 }
             }
