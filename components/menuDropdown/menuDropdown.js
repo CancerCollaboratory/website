@@ -1,13 +1,13 @@
 import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../navbar/navbar.module.scss";
 
-const MenuDropdown = ({ label, hasLink, link, styleSubMenu, items, isHovered }) => {
+const MenuDropdown = ({ label, hasLink, link, styleSubMenu, items, shouldExpand }) => {
   return (
     <>
       {hasLink ? (
         <>
           <NavbarLink label={label} link={link} />
-          {isHovered && (
+          {shouldExpand && (
             <div className={styleSubMenu}>
               {items?.map((item, index) => (
                 <NavbarLink key={index} label={item.label} link={item.link} />
@@ -18,7 +18,7 @@ const MenuDropdown = ({ label, hasLink, link, styleSubMenu, items, isHovered }) 
       ) : (
         <>
           <p className={styles.itemName}>{label}</p>
-          {isHovered && (
+          {shouldExpand && (
             <div className={styleSubMenu}>
               {items?.map((item, index) => (
                 <NavbarLink key={index} label={item.label} link={item.link} />
