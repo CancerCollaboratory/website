@@ -12,7 +12,7 @@ export default function MyApp({ Component, pageProps }) {
   } else {
     return (
       <Layout>
-        (<Component {...pageProps} />)
+        <Component {...pageProps} />
       </Layout>
     );
   }
