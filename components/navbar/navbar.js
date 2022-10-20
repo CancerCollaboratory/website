@@ -218,7 +218,7 @@ const Navbar = () => {
       (item, index) => index < 4 && item.subMenuId !== activeSubMenu
     );
 
-    for (let index = 0; index < 3; index++) {
+    for (let index = 0; filteredSubMenuIds.length === 3 ? index < 3 : index < 4; index++) {
       if (filteredSubMenuIds[index].subMenuId === mainNavbarItems[0].subMenuId) {
         if (isMenuAboutExpanded) {
           setIsMenuAboutExpanded(false);
@@ -352,7 +352,7 @@ const Navbar = () => {
             styleContainer={styles.extendSearchBar}
             styleInput={styles.expandedSearchBar}
           />
-          <div className={styles.wrapExpandedMenu}>
+          <div className={styles.wrapExpandedMenu} onMouseLeave={() => collapseSubMenuItems("")}>
             {mainNavbarItems.map((item, index) =>
               index < 2 || index === 3 ? (
                 <button
