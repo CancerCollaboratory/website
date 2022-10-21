@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import NavbarLink from "../navbarLink/navbarLink";
 import MenuDropdown from "../menuDropdown/menuDropdown";
 import SearchBar from "../searchBar/searchBar";
@@ -89,7 +88,7 @@ const Navbar = () => {
           <ul className={styles.listColoredBlock}>
             {data.headerList.headerTop.map((item, index) => (
               <li className={styles.itemColoredBlock} key={index}>
-                <NavbarLink label={item.label} isExternalLink={true} link={item.link} />
+                <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
               </li>
             ))}
           </ul>
@@ -97,11 +96,11 @@ const Navbar = () => {
             {data.headerList.headerBottom.map((item, index) =>
               index < 2 ? (
                 <li className={`${styles.itemBlock} ${styles.itemBlockRightBorder}`} key={index}>
-                  <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
+                  <NavbarLink label={item.label} isExternalLink={true} link={item.link} />
                 </li>
               ) : (
                 <li className={styles.itemBlock} key={index}>
-                  <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
+                  <NavbarLink label={item.label} isExternalLink={true} link={item.link} />
                 </li>
               )
             )}
@@ -111,15 +110,16 @@ const Navbar = () => {
       <div className={styles.mainNavbar}>
         <NavbarLink
           label={data.websiteLogo.label}
+          isLinkWrapped={true}
+          wrapStyle={styles.imageContainer}
           isExternalLink={false}
           link={data.websiteLogo.link}
-          isImage={true}
-          srcPath={data.websiteLogo.srcPath}
-          hasPriority={true}
-          styleImageContainer={styles.imageContainer}
+          isImageWrapped={true}
+          imageSrcPath={data.websiteLogo.srcPath}
           styleImage={styles.siteLogo}
-          width={data.websiteLogo.width}
-          height={data.websiteLogo.height}
+          imageWidth={data.websiteLogo.width}
+          imageHeight={data.websiteLogo.height}
+          isImageHighPriority={true}
         />
         <button
           type="button"
@@ -255,9 +255,13 @@ const Navbar = () => {
                 </button>
               ) : (
                 <button type="button" className={styles.expandedMenuItem} key={index}>
-                  <Link href={item.link}>
-                    <div className={styles.noSubMenu}>{item.label}</div>
-                  </Link>
+                  <NavbarLink
+                    label={item.label}
+                    isLinkWrapped={true}
+                    wrapStyle={styles.noSubMenu}
+                    isExternalLink={false}
+                    link={item.link}
+                  />
                 </button>
               )
             )}
