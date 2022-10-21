@@ -39,6 +39,62 @@
                     "link": "/services-request-account"
                 }
             ]
+        },
+        {
+            "label": "Our Research",
+            "link": "/research",
+            "subItems": [
+                {
+                    "label": "Technology Development Cores",
+                    "link": "/research#technology_development_cores"
+                },
+                {
+                    "label": "Research Modules",
+                    "link": "/research#research_modules"
+                },
+                {
+                    "label": "Publications & Presentations",
+                    "link": "/publications-presentations"
+                }
+            ]
+        },
+        {
+            "label": "Support",
+            "link": "/support/overview",
+            "subItems": [
+                {
+                    "label": "Getting Started",
+                    "link": "/support/getting-started"
+                },
+                {
+                    "label": "Best Practices",
+                    "link": "/support/best-practices"
+                },
+                {
+                    "label": "User Guide",
+                    "link": "/support/user-guides"
+                },
+                {
+                    "label": "Glossary of Terms",
+                    "link": "/support/glossary-terms"
+                },
+                {
+                    "label": "Workshops",
+                    "link": "/support/workshops"
+                },
+                {
+                    "label": "FAQs",
+                    "link": "/support/faqs"
+                },
+                {
+                    "label": "System Status",
+                    "link": "/support/system-status"
+                }
+            ]
+        },
+        {
+            "label": "Contact Us",
+            "link": "/contact-us"
         }
     ]
 }
