@@ -1,5 +1,6 @@
+import { useRouter } from "next/router";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import React, { useState } from "react";
 import NavbarLink from "../navbarLink/navbarLink";
 import MenuDropdown from "../menuDropdown/menuDropdown";
 import SearchBar from "../searchBar/searchBar";
@@ -7,11 +8,12 @@ import data from "../../content/components/navbarItems.json";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
+  const { asPath } = useRouter();
+  const [isToggled, setIsToggled] = useState(false);
   const [isMenuAboutExpanded, setIsMenuAboutExpanded] = useState(false);
   const [isMenuServicesExpanded, setIsMenuServicesExpanded] = useState(false);
   const [isMenuResearchExpanded, setIsMenuResearchExpanded] = useState(false);
   const [isMenuSupportExpanded, setIsMenuSupportExpanded] = useState(false);
-  const [isToggled, setIsToggled] = useState(false);
 
   const useMenuStates = [
     {
@@ -31,6 +33,14 @@ const Navbar = () => {
       setIsMenuExpanded: setIsMenuSupportExpanded,
     },
   ];
+
+  useEffect(() => {
+    setIsToggled(false);
+    setIsMenuAboutExpanded(false);
+    setIsMenuServicesExpanded(false);
+    setIsMenuResearchExpanded(false);
+    setIsMenuSupportExpanded(false);
+  }, [asPath]);
 
   function expandNavMenu() {
     if (!isToggled) {
