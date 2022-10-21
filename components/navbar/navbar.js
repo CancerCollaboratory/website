@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import NavbarLink from "../navbarLink/navbarLink";
 import MenuDropdown from "../menuDropdown/menuDropdown";
 import SearchBar from "../searchBar/searchBar";
-import data from "../../content/navbar/data.json";
+import data from "../../content/components/navbarItems.json";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
