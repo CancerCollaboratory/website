@@ -137,27 +137,21 @@
                     background-color: white;
                     border: 1px solid $color-light-x3-gray;
 
-                    li {
-                        a {
-                            display: block;
-                            border: none;
-
-                            &:hover {
-                                color: $color-dark-red;
-                            }
-                        }
-                    }
-
                     a {
+                        display: block;
+                        border: none;
                         padding: 3.5px 14px 12px 14px;
+
+                        &:hover {
+                            color: $color-dark-red;
+                        }
                     }
 
                     .innerSubMenu {
-                        li {
-                            display: flex;
-                            flex-direction: column;
-                            padding-left: 12px;
-                        }
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 12px;
+                        list-style: none;
                     }
 
                     .subMenuDivision {
@@ -433,6 +427,7 @@
                             border-top: 1px solid $color-light-x3-gray;
 
                             a {
+                                display: block;
                                 color: $color-dark-x1-gray;
                                 font-size: 13.5px;
                                 text-decoration: none;
