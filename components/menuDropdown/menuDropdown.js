@@ -10,8 +10,8 @@ const MenuDropdown = ({ label, hasLink, link, styleSubMenu, items, shouldExpand 
           {shouldExpand && (
             <ul className={styleSubMenu}>
               {items?.map((item, index) => (
-                <li>
-                  <NavbarLink key={index} label={item.label} link={item.link} />
+                <li key={index}>
+                  <NavbarLink label={item.label} link={item.link} />
                 </li>
               ))}
             </ul>
@@ -23,8 +23,8 @@ const MenuDropdown = ({ label, hasLink, link, styleSubMenu, items, shouldExpand 
           {shouldExpand && (
             <ul className={styleSubMenu}>
               {items?.map((item, index) => (
-                <li>
-                  <NavbarLink key={index} label={item.label} link={item.link} />
+                <li key={index}>
+                  <NavbarLink label={item.label} link={item.link} />
                 </li>
               ))}
             </ul>
