@@ -11,6 +11,7 @@ const Navbar = () => {
   const [isMenuServicesExpanded, setIsMenuServicesExpanded] = useState(false);
   const [isMenuResearchExpanded, setIsMenuResearchExpanded] = useState(false);
   const [isMenuSupportExpanded, setIsMenuSupportExpanded] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);
 
   const useMenuStates = [
     {
@@ -30,8 +31,6 @@ const Navbar = () => {
       setIsMenuExpanded: setIsMenuSupportExpanded,
     },
   ];
-
-  const [isToggled, setIsToggled] = useState(false);
 
   function expandNavMenu() {
     if (!isToggled) {
@@ -75,30 +74,30 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbarContainer}>
-      <div className={styles.secondaryNavbar}>
-        <div className={styles.secondaryNavbarItemsList}>
-          <div className={styles.listColoredBlock}>
+      <nav className={styles.secondaryNavbarContainer}>
+        <div className={styles.secondaryNavbarBlock}>
+          <ul className={styles.listColoredBlock}>
             {data.headerList.headerTop.map((item, index) => (
-              <div className={styles.itemColoredBlock} key={index}>
+              <li className={styles.itemColoredBlock} key={index}>
                 <NavbarLink label={item.label} isExternalLink={true} link={item.link} />
-              </div>
+              </li>
             ))}
-          </div>
-          <div className={styles.listBlock}>
+          </ul>
+          <ul className={styles.listBlock}>
             {data.headerList.headerBottom.map((item, index) =>
               index < 2 ? (
-                <div className={`${styles.itemBlock} ${styles.itemBlockRightBorder}`} key={index}>
+                <li className={`${styles.itemBlock} ${styles.itemBlockRightBorder}`} key={index}>
                   <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
-                </div>
+                </li>
               ) : (
-                <div className={styles.itemBlock} key={index}>
+                <li className={styles.itemBlock} key={index}>
                   <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
-                </div>
+                </li>
               )
             )}
-          </div>
+          </ul>
         </div>
-      </div>
+      </nav>
       <div className={styles.mainNavbar}>
         <NavbarLink
           label={data.websiteLogo.label}
