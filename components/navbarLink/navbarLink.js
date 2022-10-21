@@ -3,42 +3,55 @@ import Image from "next/future/image";
 
 const NavbarLink = ({
   label,
+  isLinkWrapped,
+  wrapStyle,
   isExternalLink,
   link,
-  isImage,
-  srcPath,
-  hasPriority,
-  styleImageContainer,
+  isImageWrapped,
+  imageSrcPath,
   styleImage,
-  width,
-  height,
+  imageWidth,
+  imageHeight,
+  isImageHighPriority,
 }) => {
   return (
     <>
-      {isImage ? (
-        isExternalLink ? (
+      {isLinkWrapped ? (
+        isImageWrapped ? (
+          isExternalLink ? (
+            <a href={link} target="_blank">
+              <div className={wrapStyle}>
+                <Image
+                  src={imageSrcPath}
+                  alt={label}
+                  priority={isImageHighPriority}
+                  className={styleImage}
+                  width={imageWidth}
+                  height={imageHeight}
+                />
+              </div>
+            </a>
+          ) : (
+            <Link href={link}>
+              <div className={wrapStyle}>
+                <Image
+                  src={imageSrcPath}
+                  alt={label}
+                  priority={isImageHighPriority}
+                  className={styleImage}
+                  width={imageWidth}
+                  height={imageHeight}
+                />
+              </div>
+            </Link>
+          )
+        ) : isExternalLink ? (
           <a href={link} target="_blank">
-            <Image
-              src={srcPath}
-              alt={label}
-              priority={hasPriority}
-              className={styleImage}
-              width={width}
-              height={height}
-            />
+            <div className={wrapStyle}>{label}</div>
           </a>
         ) : (
           <Link href={link}>
-            <div className={styleImageContainer}>
-              <Image
-                src={srcPath}
-                alt={label}
-                priority={hasPriority}
-                className={styleImage}
-                width={width}
-                height={height}
-              />
-            </div>
+            <div className={wrapStyle}>{label}</div>
           </Link>
         )
       ) : isExternalLink ? (
