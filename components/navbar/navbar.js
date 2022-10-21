@@ -150,8 +150,8 @@ const Navbar = () => {
                 <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
                 {useMenuStates[index].isMenuExpanded && (
                   <div className={styles.subMenuDropdown}>
-                    {item.navbarSubMenuItems.map((section, index) => (
-                      <React.Fragment key={index}>
+                    {item.navbarSubMenuItems.map((section, subIndex) => (
+                      <React.Fragment key={subIndex}>
                         <MenuDropdown
                           label={section.label}
                           hasLink={true}
@@ -225,7 +225,7 @@ const Navbar = () => {
                   <p className={styles.itemName}>{item.label}</p>
                   {useMenuStates[index].isMenuExpanded && (
                     <div className={styles.expandedSubMenuItem}>
-                      {item.navbarSubMenuItems.map((section, index) => (
+                      {item.navbarSubMenuItems.map((section, subIndex) => (
                         <MenuDropdown
                           label={section.label}
                           hasLink={true}
@@ -233,7 +233,7 @@ const Navbar = () => {
                           styleSubMenu={styles.innerExpandedMenu}
                           items={section.subMenuSection}
                           shouldExpand={useMenuStates[index].isMenuExpanded}
-                          key={index}
+                          key={subIndex}
                         />
                       ))}
                       <NavbarLink
