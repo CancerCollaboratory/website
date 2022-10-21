@@ -133,22 +133,31 @@
                     top: 121px;
                     padding-top: 7px;
                     margin-left: 10.5px;
+                    list-style: none;
                     background-color: white;
                     border: 1px solid $color-light-x3-gray;
 
-                    a {
-                        border: none;
-                        padding: 3.5px 14px 12px 14px;
+                    li {
+                        a {
+                            display: block;
+                            border: none;
 
-                        &:hover {
-                            color: $color-dark-red;
+                            &:hover {
+                                color: $color-dark-red;
+                            }
                         }
                     }
 
+                    a {
+                        padding: 3.5px 14px 12px 14px;
+                    }
+
                     .innerSubMenu {
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 12px;
+                        li {
+                            display: flex;
+                            flex-direction: column;
+                            padding-left: 12px;
+                        }
                     }
 
                     .subMenuDivision {
