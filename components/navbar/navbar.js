@@ -121,7 +121,7 @@ const Navbar = () => {
           <span className={styles.iconBar}></span>
           <span className={styles.iconBar}></span>
         </button>
-        <div className={styles.navbarItemsLine}>
+        <nav className={styles.navbarItemsLine}>
           {data.mainNavbarItems.map((item, index) =>
             index < 2 || index === 3 ? (
               <div
@@ -177,7 +177,7 @@ const Navbar = () => {
             )
           )}
           <SearchBar styleContainer={styles.navbarItem} styleInput={styles.searchBar} />
-        </div>
+        </nav>
       </div>
       <div className={styles.navDropdown} aria-expanded={isToggled.toString()}>
         <div className={styles.expandedMenuContainer}>
