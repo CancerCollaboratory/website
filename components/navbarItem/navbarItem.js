@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../navbar/navbar.module.scss";
 import NavbarMenu from "../navbarMenu/navbarMenu";
@@ -25,7 +26,7 @@ const NavbarItem = ({
   }
 
   return (
-    <>
+    <EscapeOutside onEscapeOutside={() => setIsItemMenuExpanded(false)}>
       {isItemlLink ? (
         <div
           className={styles.navbarItem}
@@ -55,7 +56,7 @@ const NavbarItem = ({
           )}
         </div>
       )}
-    </>
+    </EscapeOutside>
   );
 };
 
