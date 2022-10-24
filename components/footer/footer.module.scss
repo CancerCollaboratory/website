@@ -11,6 +11,30 @@
 
     .footerTailContainer {
         display: flex;
+        justify-content: center;
         background-color: $color-dark-blue;
+        padding: 20px 0px;
+
+        .footerItemContainer {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 15px;
+            font-size: 12px;
+
+            a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                margin-bottom: 9.75px;
+            }
+
+            ul {
+                list-style: none;
+            }
+        }
+
+        .footerItemRightBorder {
+            border-right: 1px solid $color-light-x2-blue;
+        }
     }
 }
