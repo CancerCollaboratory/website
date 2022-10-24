@@ -11,13 +11,14 @@ const NavbarItem = ({
   styleItemMenu,
   styleItemSubMenu,
   itemMenu,
+  isNavbarDropdownExpanded,
 }) => {
   const { asPath } = useRouter();
   const [isItemMenuExpanded, setIsItemMenuExpanded] = useState(false);
 
   useEffect(() => {
     setIsItemMenuExpanded(false);
-  }, [asPath]);
+  }, [asPath, isNavbarDropdownExpanded]);
 
   function expandSubMenu() {
     !isItemMenuExpanded ? setIsItemMenuExpanded(true) : setIsItemMenuExpanded(false);
