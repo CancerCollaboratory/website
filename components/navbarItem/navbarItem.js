@@ -45,7 +45,7 @@ const NavbarItem = ({
       ) : (
         <div className={styles.expandedMenuItem} onClick={() => expandSubMenu()}>
           <p className={styles.itemName}>{itemLabel}</p>
-          {isItemMenuExpanded && itemMenu && (
+          {isItemMenuExpanded && (
             <NavbarMenu
               styleMenu={styleItemMenu}
               styleSubMenu={styleItemSubMenu}

@@ -87,16 +87,29 @@ const Navbar = () => {
             styleInput={styles.expandedSearchBar}
           />
           <div className={styles.wrapExpandedMenu}>
-            {data.mainNavbarItems.map((item, index) => (
-              <NavbarItem
-                itemLabel={item.label}
-                isItemlLink={false}
-                styleItemMenu={styles.expandedSubMenuItem}
-                styleItemSubMenu={styles.innerExpandedMenu}
-                itemMenu={item?.navbarSubMenuItems}
-                key={index}
-              />
-            ))}
+            {data.mainNavbarItems.map((item, index) =>
+              item.navbarSubMenuItems ? (
+                <NavbarItem
+                  itemLabel={item.label}
+                  isItemlLink={false}
+                  styleItemMenu={styles.expandedSubMenuItem}
+                  styleItemSubMenu={styles.innerExpandedMenu}
+                  itemMenu={item.navbarSubMenuItems}
+                  isNavbarDropdownExpanded={isNavbarDropdownToggled}
+                  key={index}
+                />
+              ) : (
+                <div className={styles.expandedMenuItem} key={index}>
+                  <NavbarLink
+                    label={item.label}
+                    isLinkWrapped={true}
+                    wrapStyle={styles.noSubMenu}
+                    isExternalLink={false}
+                    link={item.link}
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
       </div>
