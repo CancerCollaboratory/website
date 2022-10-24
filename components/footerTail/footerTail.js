@@ -1,3 +1,0 @@
-const FooterTail = () => {
-  return <></>;
-};
