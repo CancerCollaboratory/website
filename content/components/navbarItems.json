@@ -94,12 +94,12 @@
                             "link": "/research/bioethics-protection-phi"
                         }
                     ]
+                },
+                {
+                    "label": "Publications & Presentations",
+                    "link": "/publications-presentations"
                 }
-            ],
-            "navbarSubMenuItem": {
-                "label": "Publications & Presentations",
-                "link": "/publications-presentations"
-            }
+            ]
         },
         {
             "label": "Support ▾",
@@ -155,11 +155,13 @@
         "headerBottom": [
             {
                 "label": "Console",
-                "link": "https://console.cancercollaboratory.org"
+                "link": "https://console.cancercollaboratory.org",
+                "hasBorder": "true"
             },
             {
                 "label": "Usage and Billing",
-                "link": "https://billing.cancercollaboratory.org"
+                "link": "https://billing.cancercollaboratory.org",
+                "hasBorder": "true"
             },
             {
                 "label": "Repository",
