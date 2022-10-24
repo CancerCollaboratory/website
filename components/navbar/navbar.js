@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import { clsx } from "clsx";
+import clsx from "clsx";
 import NavbarLink from "../navbarLink/navbarLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";
