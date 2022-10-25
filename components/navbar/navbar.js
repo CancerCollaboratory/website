@@ -48,7 +48,7 @@ const Navbar = () => {
           <NavbarLink
             label={data.websiteLogo.label}
             isLinkWrapped={true}
-            wrapStyle={styles.imageContainer}
+            styleWrap={styles.imageContainer}
             isExternalLink={false}
             link={data.websiteLogo.link}
             isImageWrapped={true}
@@ -105,7 +105,7 @@ const Navbar = () => {
                     <NavbarLink
                       label={item.label}
                       isLinkWrapped={true}
-                      wrapStyle={styles.noSubMenu}
+                      styleWrap={styles.noSubMenu}
                       isExternalLink={false}
                       link={item.link}
                     />
