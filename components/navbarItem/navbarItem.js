@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../navbar/navbar.module.scss";
 import NavbarMenu from "../navbarMenu/navbarMenu";
@@ -11,20 +12,21 @@ const NavbarItem = ({
   styleItemMenu,
   styleItemSubMenu,
   itemMenu,
+  isNavbarDropdownExpanded,
 }) => {
   const { asPath } = useRouter();
   const [isItemMenuExpanded, setIsItemMenuExpanded] = useState(false);
 
   useEffect(() => {
     setIsItemMenuExpanded(false);
-  }, [asPath]);
+  }, [asPath, isNavbarDropdownExpanded]);
 
   function expandSubMenu() {
     !isItemMenuExpanded ? setIsItemMenuExpanded(true) : setIsItemMenuExpanded(false);
   }
 
   return (
-    <>
+    <EscapeOutside onEscapeOutside={() => setIsItemMenuExpanded(false)}>
       {isItemlLink ? (
         <div
           className={styles.navbarItem}
@@ -44,7 +46,7 @@ const NavbarItem = ({
       ) : (
         <div className={styles.expandedMenuItem} onClick={() => expandSubMenu()}>
           <p className={styles.itemName}>{itemLabel}</p>
-          {isItemMenuExpanded && itemMenu && (
+          {isItemMenuExpanded && (
             <NavbarMenu
               styleMenu={styleItemMenu}
               styleSubMenu={styleItemSubMenu}
@@ -54,7 +56,7 @@ const NavbarItem = ({
           )}
         </div>
       )}
-    </>
+    </EscapeOutside>
   );
 };
 
