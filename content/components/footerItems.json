@@ -63,32 +63,40 @@
             "link": "/support/overview",
             "subItems": [
                 {
-                    "label": "Getting Started",
-                    "link": "/support/getting-started"
+                    "column": [
+                        {
+                            "label": "Getting Started",
+                            "link": "/support/getting-started"
+                        },
+                        {
+                            "label": "User Guide",
+                            "link": "/support/user-guide"
+                        },
+                        {
+                            "label": "Workshops",
+                            "link": "/support/workshops"
+                        },
+                        {
+                            "label": "System Status",
+                            "link": "/support/system-status"
+                        }
+                    ]
                 },
                 {
-                    "label": "Best Practices",
-                    "link": "/support/best-practices"
-                },
-                {
-                    "label": "User Guide",
-                    "link": "/support/user-guide"
-                },
-                {
-                    "label": "Glossary of Terms",
-                    "link": "/support/glossary-terms"
-                },
-                {
-                    "label": "Workshops",
-                    "link": "/support/workshops"
-                },
-                {
-                    "label": "FAQs",
-                    "link": "/support/faqs"
-                },
-                {
-                    "label": "System Status",
-                    "link": "/support/system-status"
+                    "column": [
+                        {
+                            "label": "Best Practices",
+                            "link": "/support/best-practices"
+                        },
+                        {
+                            "label": "Glossary of Terms",
+                            "link": "/support/glossary-terms"
+                        },
+                        {
+                            "label": "FAQs",
+                            "link": "/support/faqs"
+                        }
+                    ]
                 }
             ]
         },
