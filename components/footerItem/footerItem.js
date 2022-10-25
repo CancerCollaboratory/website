@@ -1,4 +1,3 @@
-import React from "react";
 import clsx from "clsx";
 import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../footer/footer.module.scss";
