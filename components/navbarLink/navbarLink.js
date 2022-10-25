@@ -4,9 +4,10 @@ import Image from "next/future/image";
 const NavbarLink = ({
   label,
   isLinkWrapped,
-  wrapStyle,
+  styleWrap,
   isExternalLink,
   link,
+  styleLink,
   isImageWrapped,
   imageSrcPath,
   styleImage,
@@ -20,7 +21,7 @@ const NavbarLink = ({
         isImageWrapped ? (
           isExternalLink ? (
             <a href={link} target="_blank">
-              <div className={wrapStyle}>
+              <div className={styleWrap}>
                 <Image
                   src={imageSrcPath}
                   alt={label}
@@ -33,7 +34,7 @@ const NavbarLink = ({
             </a>
           ) : (
             <Link href={link}>
-              <div className={wrapStyle}>
+              <div className={styleWrap}>
                 <Image
                   src={imageSrcPath}
                   alt={label}
@@ -47,11 +48,11 @@ const NavbarLink = ({
           )
         ) : isExternalLink ? (
           <a href={link} target="_blank">
-            <div className={wrapStyle}>{label}</div>
+            <div className={styleWrap}>{label}</div>
           </a>
         ) : (
           <Link href={link}>
-            <div className={wrapStyle}>{label}</div>
+            <div className={styleWrap}>{label}</div>
           </Link>
         )
       ) : isExternalLink ? (
@@ -59,7 +60,9 @@ const NavbarLink = ({
           {label}
         </a>
       ) : (
-        <Link href={link}>{label}</Link>
+        <Link href={link}>
+          <a className={styleLink}>{label}</a>
+        </Link>
       )}
     </>
   );
