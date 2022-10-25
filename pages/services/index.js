@@ -1,11 +1,5 @@
-import Navbar from "../../components/navbar/navbar";
-import Footer from "../../components/footer/footer";
+const Services = () => {
+  return <></>;
+};
 
-export default function Support() {
-  return (
-    <div>
-      <Navbar></Navbar>
-      <Footer></Footer>
-    </div>
-  );
-}
+export default Services;

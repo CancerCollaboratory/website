@@ -1,39 +1,567 @@
 @import "../../styles/colors";
+@import "../../styles/svgs";
+@import "../../styles/mixins";
 
 .navbarContainer {
     position: sticky;
     left: 0;
     top: 0;
-    width: 100%;
     z-index: 1;
+    width: 100%;
+
+    .secondaryNavbarContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-dark-x2-gray;
+        padding-left: 608px;
+        height: 44.5px;
+
+        .secondaryNavbarBlock {
+            display: flex;
+            font-size: 12px;
+
+            .listColoredBlock {
+                display: flex;
+                list-style: none;
+
+                .itemColoredBlock {
+                    margin-left: 13px;
+
+                    a {
+                        padding: 4.7px 9.7px;
+                        color: white;
+                        background-color: $color-dark-blue;
+                        border-radius: 15px;
+                        text-decoration: none;
+
+                        &:hover {
+                            background-color: $color-light-x1-blue;
+                        }
+                    }
+                }
+            }
+
+            .listBlock {
+                display: flex;
+                list-style: none;
+
+                .itemBlock {
+                    margin-left: 13px;
+
+                    a {
+                        color: $color-light-x3-blue;
+                        text-decoration: none;
+                    }
+                }
+
+                .itemBorderRight {
+                    border-right: 3px solid $color-light-x3-blue;
+                    padding-right: 13px;
+                }
+            }
+        }
+    }
+
+    .mainNavbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: white;
+        box-shadow: 0 2px 8px -1px silver;
+        padding-bottom: 13px;
+
+        .imageContainer {
+            margin: -35px 106px 0px 11.5px;
+
+            .siteLogo {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .navbarToggler {
+            display: none;
+        }
+
+        .navbarItemsLine {
+            display: flex;
+            align-items: center;
+
+            .navbarItem {
+                display: flex;
+                margin: 0px 6px;
+                height: max-content;
+
+                a {
+                    padding: 0px 8px 0px 5px;
+                    color: $color-dark-x2-gray;
+                    border-left: 3px solid white;
+                    text-decoration: none;
+                    font-weight: 500;
+                    font-size: 14px;
+
+                    &:hover {
+                        color: $color-dark-red;
+                        border-left: 3px solid $color-dark-red;
+                    }
+                }
+
+                .searchBar {
+                    font-weight: 500;
+                    font-size: 14px;
+                    font-family: "Open Sans", sans-serif;
+                    border: 1px solid $color-light-x2-gray;
+                    border-top: 2px solid $color-light-x4-gray;
+                    background-color: $color-light-x5-gray;
+                    background-image: $icon-search;
+                    background-repeat: no-repeat;
+                    background-size: 15.2px 15.2px;
+                    background-position: 7px;
+                    border-radius: 15px;
+                    margin: 0px 8px;
+                    padding: 4px 8px 4px 28px;
+                    width: 185px;
+                }
+
+                .subMenuDropdown {
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 121px;
+                    padding-top: 7px;
+                    margin-left: 10.5px;
+                    list-style: none;
+                    background-color: white;
+                    border: 1px solid $color-light-x3-gray;
+
+                    a {
+                        display: block;
+                        border: none;
+                        padding: 3.5px 14px 12px 14px;
+
+                        &:hover {
+                            color: $color-dark-red;
+                        }
+                    }
+
+                    .innerSubMenu {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 12px;
+                        list-style: none;
+                    }
+
+                    .subMenuDivision {
+                        border-bottom: 1px solid $color-light-x6-gray;
+                        margin-bottom: 5px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .navDropdown {
+        .expandedMenuContainer {
+            display: none;
+        }
+    }
 }
 
-.siteLogo {
-    margin: -35px 48px 0px 20px;
+@include respond-to("large") {
+    .navbarContainer {
+        .secondaryNavbarContainer {
+            padding-left: 436px;
+        }
+
+        .mainNavbar {
+            padding: 0px 7px 13px 7px;
+
+            .imageContainer {
+                margin: -35px 48px 0px 9.5px;
+            }
+
+            .navbarItemsLine {
+                .navbarItem {
+                    margin: 0px 3.85px;
+
+                    a {
+                        font-size: 12px;
+                    }
+
+                    .searchBar {
+                        font-size: 12px;
+                        background-size: 15px 15px;
+                        padding: 3.5px 7.5px 3.5px 27.5px;
+                        width: 152px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.secondaryNavbar {
-    background-color: $color-dark-gray;
-    height: 44px;
+@include respond-to("medium") {
+    .navbarContainer {
+        .secondaryNavbarContainer {
+            padding-left: 203px;
+            position: relative;
+            z-index: 1;
+
+            .secondaryNavbarBlock {
+                font-size: 11.5px;
+
+                .listColoredBlock {
+                    .itemColoredBlock {
+                        margin-left: 12px;
+
+                        a {
+                            padding: 4.5px 9.5px;
+                        }
+                    }
+                }
+
+                .listBlock {
+                    .itemBlock {
+                        margin-left: 12px;
+                    }
+
+                    .itemBorderRight {
+                        padding-right: 12px;
+                    }
+                }
+            }
+        }
+
+        .mainNavbar {
+            flex-direction: column;
+
+            .imageContainer {
+                display: flex;
+                justify-content: center;
+                margin: -35px 0px 0px 0px;
+                padding-right: 442px;
+                width: 100%;
+
+                .siteLogo {
+                    z-index: 1;
+                }
+            }
+
+            .navbarItemsLine {
+                justify-content: center;
+                margin: 9px 0px 1px 0px;
+                padding-left: 35px;
+                width: 100%;
+
+                .navbarItem {
+                    margin: 0px 4px;
+
+                    a {
+                        font-size: 12.6px;
+                    }
+
+                    .searchBar {
+                        font-size: 12.6px;
+                        width: 168px;
+                    }
+
+                    .subMenuDropdown {
+                        top: 153px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-.mainNavbar {
-    background-color: white;
-    box-shadow: 0 2px 8px -1px silver;
-    padding-bottom: 12px;
-    display: flex;
+@include respond-to("small") {
+    .navbarContainer {
+        .secondaryNavbarContainer {
+            justify-content: flex-end;
+            height: max-content;
+            padding-left: 0px;
+
+            .secondaryNavbarBlock {
+                flex-direction: column;
+                margin: 15.1px 0px 10.6px 0px;
+                font-size: 11.1px;
+
+                .listColoredBlock {
+                    margin: 0px 8px;
+
+                    .itemColoredBlock {
+                        margin: 0px 5.8px;
+                    }
+                }
+
+                .listBlock {
+                    justify-content: center;
+                    margin: 12.2px 8px 0px 8px;
+
+                    .itemBlock {
+                        margin: 0px 5.8px;
+                    }
+
+                    .itemBorderRight {
+                        border-right: none;
+                        padding-right: 0px;
+                    }
+                }
+            }
+        }
+
+        .mainNavbar {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .imageContainer {
+                width: max-content;
+                margin-left: 17.5px;
+                padding-right: 0px;
+            }
+
+            .navbarToggler {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 33px;
+                height: 32px;
+                margin: 0px 19.25px 2.5px 0px;
+                background-color: white;
+                border: 1px solid $color-light-x2-gray;
+                border-radius: 4px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $color-light-x2-gray;
+                }
+
+                .iconBar {
+                    width: 17.25px;
+                    margin: 2.25px 0px;
+                    border-radius: 1px;
+                    border-bottom: 2px solid $color-light-x1-gray;
+                }
+            }
+
+            .navbarToggler[aria-expanded="true"] {
+                background-color: $color-light-x2-gray;
+            }
+
+            .navbarItemsLine {
+                display: none;
+            }
+        }
+
+        .navDropdown[aria-expanded="false"] {
+            display: none;
+        }
+
+        .navDropdown[aria-expanded="true"] {
+            height: max-content;
+            margin-top: 4px;
+
+            .expandedMenuContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                list-style: none;
+                border-bottom: 1px solid $color-light-x3-gray;
+
+                .extendSearchBar {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+
+                    .expandedSearchBar {
+                        font-weight: 500;
+                        font-size: 13.5px;
+                        font-family: "Open Sans", sans-serif;
+                        border: 1px solid $color-light-x2-gray;
+                        border-top: 2px solid $color-light-x4-gray;
+                        border-radius: 15px;
+                        background-color: $color-light-x5-gray;
+                        background-image: $icon-search;
+                        background-repeat: no-repeat;
+                        background-size: 15px 15px;
+                        background-position: 7px;
+                        padding: 3.5px 7.5px 3.5px 27.5px;
+                        margin: 14px 15px;
+                        width: 100%;
+                    }
+                }
+
+                .wrapExpandedMenu {
+                    width: 100%;
+
+                    .expandedMenuItem {
+                        border: none;
+                        border-top: 1px solid $color-light-x3-gray;
+                        background-color: white;
+                        text-align: left;
+                        cursor: pointer;
+                        width: 100%;
+
+                        &:hover {
+                            .itemName {
+                                &:hover {
+                                    background-color: $color-light-x5-gray;
+                                    color: $color-dark-red;
+                                }
+                            }
+
+                            .noSubMenu {
+                                background-color: $color-light-x5-gray;
+                                color: $color-dark-red;
+                            }
+                        }
+
+                        .expandedSubMenuItem {
+                            display: flex;
+                            flex-direction: column;
+                            border-top: 1px solid $color-light-x3-gray;
+
+                            a {
+                                display: block;
+                                color: $color-dark-x1-gray;
+                                font-size: 13.5px;
+                                text-decoration: none;
+                                padding: 9px 28px;
+
+                                &:hover {
+                                    background-color: $color-light-x5-gray;
+                                    color: $color-dark-red;
+                                }
+                            }
+
+                            .innerExpandedMenu {
+                                display: flex;
+                                flex-direction: column;
+
+                                a {
+                                    padding-left: 44.5px;
+                                }
+                            }
+                        }
+
+                        .itemName {
+                            color: $color-dark-x1-gray;
+                            font-size: 13.5px;
+                            padding: 9px 15px;
+                        }
+
+                        .noSubMenu {
+                            color: $color-dark-x1-gray;
+                            font-size: 13.5px;
+                            padding: 9.5px 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-.navbarItems {
-    list-style: none;
-    display: flex;
-    align-items: flex-end;
+@include respond-to("extra-small") {
+    .navbarContainer {
+        .secondaryNavbarContainer {
+            .secondaryNavbarBlock {
+                font-size: 10px;
+                margin: 13.7px 0px 9.7px 0px;
 
-    a {
-        color: black;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        margin: 0px 14px;
+                .listColoredBlock {
+                    margin: 0px 6px;
+
+                    .itemColoredBlock {
+                        margin: 0px 5.3px;
+
+                        a {
+                            padding: 4px 9px;
+                        }
+                    }
+                }
+
+                .listBlock {
+                    margin: 11.3px 6px 0px 6px;
+
+                    .itemBlock {
+                        margin: 0px 5.3px;
+                    }
+                }
+            }
+        }
+
+        .mainNavbar {
+            .imageContainer {
+                margin: -23px 0px 0px 14.25px;
+
+                .siteLogo {
+                    width: 178px;
+                    height: auto;
+                }
+            }
+
+            .navbarToggler {
+                margin: 0px 16.75px 2px 0px;
+                width: 27px;
+                height: 26px;
+
+                .iconBar {
+                    width: 13.25px;
+                    margin: 1.75px 0px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .navbarContainer {
+        .secondaryNavbarContainer {
+            .secondaryNavbarBlock {
+                font-size: 9px;
+
+                .listColoredBlock {
+                    margin: 0px 5px;
+
+                    .itemColoredBlock {
+                        margin: 0px 5px;
+                    }
+                }
+
+                .listBlock {
+                    margin: 11.2px 5px 0px 5px;
+
+                    .itemBlock {
+                        margin: 0px 5px;
+                    }
+                }
+            }
+        }
+
+        .mainNavbar {
+            .imageContainer {
+                margin: -19px 0px 0px 13px;
+
+                .siteLogo {
+                    width: 148px;
+                }
+            }
+
+            .navbarToggler {
+                margin-right: 15.5px;
+                width: 26px;
+                height: 25px;
+
+                .iconBar {
+                    width: 13px;
+                }
+            }
+        }
     }
 }

@@ -1,0 +1,19 @@
+$breakpoints: (
+    large: 1199px,
+    medium: 991px,
+    small: 767px,
+    extra-small: 388px,
+    extra-extra-small: 315px
+);
+
+@mixin respond-to($label) {
+    @if not map-has-key($breakpoints, $label) {
+        @error "Error: `#{$label}` is not a valid breakpoint label.";
+    }
+
+    @else {
+        @media (max-width: map-get($breakpoints, $label)) {
+            @content;
+        }
+    }
+}
