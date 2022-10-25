@@ -8,32 +8,52 @@ const FooterItem = ({ label, labelLink, footerItem }) => {
     <div
       className={clsx(
         styles.footerItemContainer,
-        footerItem.subItems && styles.footerItemRightBorder
+        footerItem.subItems ? styles.footerItemRightBorder : styles.resetFooterItemMargin
       )}
     >
-      <NavbarLink label={label} link={labelLink} styleLink={utilStyles.itemLabel} />
-      <ul
-        className={clsx(
-          styles.subItemsList,
-          footerItem.subItems?.length === 2 && styles.subItemsRow
+      <NavbarLink
+        label={label}
+        link={labelLink}
+        styleLink={clsx(
+          utilStyles.itemLabel,
+          !footerItem.subItems ? styles.resetInternalMargins : undefined
         )}
-      >
-        {footerItem.subItems?.map((subItem, subItemIndex) =>
-          !subItem?.column ? (
-            <li key={subItemIndex}>
-              <NavbarLink label={subItem.label} link={subItem.link} />
-            </li>
-          ) : (
-            <div className={subItemIndex === 0 && styles.columnPadding}>
-              {subItem.column.map((columnItem, columnIndex) => (
-                <li key={columnIndex}>
-                  <NavbarLink label={columnItem.label} link={columnItem.link} />
-                </li>
-              ))}
-            </div>
-          )
-        )}
-      </ul>
+      />
+      {footerItem.subItems && (
+        <ul
+          className={clsx(
+            styles.subItemsList,
+            footerItem.subItems[0].column && styles.subItemsGrid
+          )}
+        >
+          {footerItem.subItems?.map((subItem, subItemIndex) =>
+            !subItem?.column ? (
+              <li key={subItemIndex}>
+                <NavbarLink
+                  label={subItem.label}
+                  link={subItem.link}
+                  styleLink={subItem.lastSubItem && styles.resetInternalMargins}
+                />
+              </li>
+            ) : (
+              <div
+                className={subItemIndex === 0 ? styles.columnPadding : undefined}
+                key={subItemIndex}
+              >
+                {subItem.column.map((columnItem, columnIndex) => (
+                  <li key={columnIndex}>
+                    <NavbarLink
+                      label={columnItem.label}
+                      link={columnItem.link}
+                      styleLink={columnItem.lastSubItem && styles.resetInternalMargins}
+                    />
+                  </li>
+                ))}
+              </div>
+            )
+          )}
+        </ul>
+      )}
     </div>
   );
 };

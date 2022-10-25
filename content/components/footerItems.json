@@ -14,7 +14,8 @@
                 },
                 {
                     "label": "Funders & Collaborators",
-                    "link": "/about-funders-collaborators"
+                    "link": "/about-funders-collaborators",
+                    "lastSubItem": "true"
                 }
             ]
         },
@@ -36,7 +37,8 @@
                 },
                 {
                     "label": "Request an Account",
-                    "link": "/services-request-account"
+                    "link": "/services-request-account",
+                    "lastSubItem": "true"
                 }
             ]
         },
@@ -54,7 +56,8 @@
                 },
                 {
                     "label": "Publications & Presentations",
-                    "link": "/publications-presentations"
+                    "link": "/publications-presentations",
+                    "lastSubItem": "true"
                 }
             ]
         },
@@ -78,7 +81,8 @@
                         },
                         {
                             "label": "System Status",
-                            "link": "/support/system-status"
+                            "link": "/support/system-status",
+                            "lastSubItem": "true"
                         }
                     ]
                 },
@@ -94,7 +98,8 @@
                         },
                         {
                             "label": "FAQs",
-                            "link": "/support/faqs"
+                            "link": "/support/faqs",
+                            "lastSubItem": "true"
                         }
                     ]
                 }
