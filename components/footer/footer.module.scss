@@ -1,4 +1,5 @@
 @import '../../styles/colors';
+@import '../../styles/mixins';
 
 .footerContainer {
     display: flex;
@@ -18,18 +19,33 @@
         .footerItemContainer {
             display: flex;
             flex-direction: column;
-            padding: 0px 15px;
-            font-size: 12px;
+            padding: 0px 18.75px;
+            font-size: 12.5px;
 
             a {
                 display: block;
                 color: white;
                 text-decoration: none;
                 margin-bottom: 9.75px;
+                width: max-content;
+
+                &:hover {
+                    color: $color-light-x5-blue;
+                }
             }
 
-            ul {
+            .subItemsList {
+                display: flex;
+                flex-direction: column;
                 list-style: none;
+
+                .columnPadding {
+                    padding-right: 18.75px;
+                }
+            }
+
+            .subItemsRow {
+                flex-direction: row;
             }
         }
 
@@ -38,3 +54,18 @@
         }
     }
 }
+
+// large: 1199px
+@include respond-to("large") {}
+
+// medium: 991px
+@include respond-to("medium") {}
+
+// small: 767px
+@include respond-to("small") {}
+
+// extra-small: 388px
+@include respond-to("extra-small") {}
+
+// extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
