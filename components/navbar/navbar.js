@@ -28,7 +28,7 @@ const Navbar = () => {
             <ul className={styles.listColoredBlock}>
               {data.headerList.headerTop.map((item, index) => (
                 <li className={styles.itemColoredBlock} key={index}>
-                  <NavbarLink label={item.label} isExternalLink={false} link={item.link} />
+                  <NavbarLink label={item.label} isLinkExternal={false} link={item.link} />
                 </li>
               ))}
             </ul>
@@ -38,7 +38,7 @@ const Navbar = () => {
                   className={clsx(styles.itemBlock, item?.hasBorder && styles.itemBorderRight)}
                   key={index}
                 >
-                  <NavbarLink label={item.label} isExternalLink={true} link={item.link} />
+                  <NavbarLink label={item.label} isLinkExternal={true} link={item.link} />
                 </li>
               ))}
             </ul>
@@ -49,13 +49,13 @@ const Navbar = () => {
             label={data.websiteLogo.label}
             isLinkWrapped={true}
             styleWrap={styles.imageContainer}
-            isExternalLink={false}
+            isLinkExternal={false}
             link={data.websiteLogo.link}
             isImageWrapped={true}
             imageSrcPath={data.websiteLogo.srcPath}
             styleImage={styles.siteLogo}
-            imageWidth={data.websiteLogo.width}
-            imageHeight={data.websiteLogo.height}
+            imageWidth={275}
+            imageHeight={112}
             isImageHighPriority={true}
           />
           <div
@@ -106,7 +106,7 @@ const Navbar = () => {
                       label={item.label}
                       isLinkWrapped={true}
                       styleWrap={styles.noSubMenu}
-                      isExternalLink={false}
+                      isLinkExternal={false}
                       link={item.link}
                     />
                   </div>
