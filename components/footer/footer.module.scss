@@ -188,17 +188,20 @@
             padding: 19.5px 0px 4.5px 0px;
 
             .footerItemContainer {
+                align-items: center;
                 font-size: 12.5px;
                 margin-bottom: 24.2px;
 
                 a {
-                    display: flex;
-                    justify-content: center;
                     margin-bottom: 9.2px;
-                    width: 100%;
                 }
 
                 .subItemsList {
+                    li {
+                        display: flex;
+                        justify-content: center;
+                    }
+
                     .columnPadding {
                         padding-bottom: 9.2px;
                     }
