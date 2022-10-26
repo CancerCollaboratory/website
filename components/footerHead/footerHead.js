@@ -3,6 +3,10 @@ import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../footer/footer.module.scss";
 
 const FooterHead = ({ headItem }) => {
+  function getCurrentYear() {
+    return <span>{new Date().getFullYear()}</span>;
+  }
+
   return (
     <>
       {headItem.logo ? (
@@ -21,7 +25,9 @@ const FooterHead = ({ headItem }) => {
         </div>
       ) : (
         <div className={styles.headItemContainer}>
-          <p className={styles.headItemLabel}>{headItem.label}</p>
+          <p className={styles.headItemLabel}>
+            © {getCurrentYear()} {headItem.label}
+          </p>
           <div className={styles.headLinksContainer}>
             {headItem.links.map((linkItem, index) => (
               <React.Fragment key={index}>
