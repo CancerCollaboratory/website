@@ -5,7 +5,7 @@ const NavbarLink = ({
   label,
   isLinkWrapped,
   styleWrap,
-  isExternalLink,
+  isLinkExternal,
   link,
   styleLink,
   isImageWrapped,
@@ -19,7 +19,7 @@ const NavbarLink = ({
     <>
       {isLinkWrapped ? (
         isImageWrapped ? (
-          isExternalLink ? (
+          isLinkExternal ? (
             <a href={link} target="_blank">
               <div className={styleWrap}>
                 <Image
@@ -29,6 +29,7 @@ const NavbarLink = ({
                   className={styleImage}
                   width={imageWidth}
                   height={imageHeight}
+                  quality={100}
                 />
               </div>
             </a>
@@ -42,11 +43,12 @@ const NavbarLink = ({
                   className={styleImage}
                   width={imageWidth}
                   height={imageHeight}
+                  quality={100}
                 />
               </div>
             </Link>
           )
-        ) : isExternalLink ? (
+        ) : isLinkExternal ? (
           <a href={link} target="_blank">
             <div className={styleWrap}>{label}</div>
           </a>
@@ -55,7 +57,33 @@ const NavbarLink = ({
             <div className={styleWrap}>{label}</div>
           </Link>
         )
-      ) : isExternalLink ? (
+      ) : isImageWrapped ? (
+        isLinkExternal ? (
+          <a href={link} target="_blank">
+            <Image
+              src={imageSrcPath}
+              alt={label}
+              priority={isImageHighPriority}
+              className={styleImage}
+              width={imageWidth}
+              height={imageHeight}
+              quality={100}
+            />
+          </a>
+        ) : (
+          <Link href={link}>
+            <Image
+              src={imageSrcPath}
+              alt={label}
+              priority={isImageHighPriority}
+              className={styleImage}
+              width={imageWidth}
+              height={imageHeight}
+              quality={100}
+            />
+          </Link>
+        )
+      ) : isLinkExternal ? (
         <a href={link} target="_blank">
           {label}
         </a>
