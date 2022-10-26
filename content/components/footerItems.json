@@ -1,5 +1,30 @@
 {
-    "footerItems": [
+    "footerHeadItems": [
+        {
+            "logo": {
+                "label": "Ontario Institute for Cancer Research",
+                "srcPath": "/assets/footer/logo-oicr.png",
+                "link": "https://oicr.on.ca"
+            }
+        },
+        {
+            "label": "Cancer Genome Collaboratory. All rights reserved.",
+            "links": [
+                {
+                    "label": "Terms & Conditions",
+                    "link": "https://oicr.on.ca/terms-and-conditions",
+                    "isLinkExternal": "true"
+                },
+                {
+                    "label": "Privacy",
+                    "link": "/privacy-policy",
+                    "isLinkExternal": "false",
+                    "lastLink": "true"
+                }
+            ]
+        }
+    ],
+    "footerTailItems": [
         {
             "label": "About Us",
             "link": "/about-collaboratory",
