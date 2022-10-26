@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-top: 1px solid $color-light-x4-gray;
 
     .footerHeadContainer {
         display: flex;
@@ -12,7 +13,7 @@
         align-items: center;
 
         .footerLogoContainer {
-            margin: 17px 14.5px 17px 0px;
+            margin: 17px 15px 17px 0px;
 
             a {
                 display: flex;
@@ -45,8 +46,8 @@
                 }
 
                 .verticalLine {
-                    margin: 0px 8px;
-                    height: 14px;
+                    margin: 0px 7.8px;
+                    height: 13px;
                     border-left: 1px solid $color-dark-x1-gray;
                 }
             }
@@ -122,6 +123,26 @@
 
 @include respond-to("medium") {
     .footerContainer {
+        .footerHeadContainer {
+            .headItemContainer {
+                .headItemLabel {
+                    margin-bottom: 2.25px;
+                    font-size: 11px;
+                }
+
+                .headLinksContainer {
+                    a {
+                        font-size: 11px;
+                    }
+
+                    .verticalLine {
+                        margin: 0px 7.6px;
+                        height: 11.3px;
+                    }
+                }
+            }
+        }
+
         .footerTailContainer {
             .footerItemContainer {
                 padding: 0px 18.5px;
@@ -133,6 +154,35 @@
 
 @include respond-to("small") {
     .footerContainer {
+        .footerHeadContainer {
+            flex-direction: column;
+
+            .footerLogoContainer {
+                margin-right: 0px;
+            }
+
+            .headItemContainer {
+                align-items: center;
+                margin-bottom: 17px;
+
+                .headItemLabel {
+                    margin-bottom: 2.4px;
+                    font-size: 12.5px;
+                }
+
+                .headLinksContainer {
+                    a {
+                        font-size: 12.5px;
+                    }
+
+                    .verticalLine {
+                        margin: 0px 7.8px;
+                        height: 13px;
+                    }
+                }
+            }
+        }
+
         .footerTailContainer {
             flex-direction: column;
             padding: 19.5px 0px 4.5px 0px;
@@ -168,6 +218,36 @@
 
 @include respond-to("extra-small") {
     .footerContainer {
+        .footerHeadContainer {
+            .footerLogoContainer {
+                margin: 14.5px 0px;
+
+                .footerLogo {
+                    width: 65px;
+                    height: auto;
+                }
+            }
+
+            .headItemContainer {
+                margin-bottom: 14.5px;
+
+                .headItemLabel {
+                    font-size: 10.5px;
+                }
+
+                .headLinksContainer {
+                    a {
+                        font-size: 10.5px;
+                    }
+
+                    .verticalLine {
+                        margin: 0px 7.5px;
+                        height: 11px;
+                    }
+                }
+            }
+        }
+
         .footerTailContainer {
             padding: 17.5px 0px 3.5px 0px;
 
@@ -195,6 +275,35 @@
 
 @include respond-to("extra-extra-small") {
     .footerContainer {
+        .footerHeadContainer {
+            .footerLogoContainer {
+                margin: 13.5px 0px;
+
+                .footerLogo {
+                    width: 60px;
+                }
+            }
+
+            .headItemContainer {
+                margin-bottom: 13.5px;
+
+                .headItemLabel {
+                    font-size: 9.5px;
+                }
+
+                .headLinksContainer {
+                    a {
+                        font-size: 9.5px;
+                    }
+
+                    .verticalLine {
+                        margin: 0px 6.5px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+
         .footerTailContainer {
             padding-top: 17px;
 
