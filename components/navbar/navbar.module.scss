@@ -105,9 +105,6 @@
                 }
 
                 .searchBar {
-                    font-weight: 500;
-                    font-size: 14px;
-                    font-family: "Open Sans", sans-serif;
                     border: 1px solid $color-light-x3-gray;
                     border-top: 2px solid $color-light-x5-gray;
                     background-color: $color-light-x6-gray;
@@ -118,6 +115,9 @@
                     border-radius: 15px;
                     margin: 0px 8px;
                     padding: 4px 8px 4px 28px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 500;
+                    font-size: 14px;
                     width: 185px;
                 }
 
@@ -126,8 +126,8 @@
                     flex-direction: column;
                     position: absolute;
                     top: 121px;
-                    padding-top: 7px;
                     margin-left: 10.5px;
+                    padding-top: 7px;
                     background-color: white;
                     border: 1px solid $color-light-x4-gray;
 
@@ -186,9 +186,9 @@
                     }
 
                     .searchBar {
-                        font-size: 12px;
                         background-size: 15px 15px;
                         padding: 3.5px 7.5px 3.5px 27.5px;
+                        font-size: 12px;
                         width: 152px;
                     }
                 }
@@ -371,9 +371,6 @@
                     width: 100%;
 
                     .expandedSearchBar {
-                        font-weight: 500;
-                        font-size: 13.5px;
-                        font-family: "Open Sans", sans-serif;
                         border: 1px solid $color-light-x3-gray;
                         border-top: 2px solid $color-light-x5-gray;
                         border-radius: 15px;
@@ -382,8 +379,11 @@
                         background-repeat: no-repeat;
                         background-size: 15px 15px;
                         background-position: 7px;
-                        padding: 3.5px 7.5px 3.5px 27.5px;
                         margin: 14px 15px;
+                        padding: 3.5px 7.5px 3.5px 27.5px;
+                        font-family: "Open Sans", sans-serif;
+                        font-weight: 500;
+                        font-size: 13.5px;
                         width: 100%;
                     }
                 }
@@ -421,8 +421,8 @@
                             a {
                                 display: block;
                                 color: $color-dark-x2-gray;
-                                font-size: 13.5px;
                                 padding: 9px 28px;
+                                font-size: 13.5px;
 
                                 &:hover {
                                     background-color: $color-light-x6-gray;
@@ -442,14 +442,14 @@
 
                         .itemName {
                             color: $color-dark-x2-gray;
-                            font-size: 13.5px;
                             padding: 9px 15px;
+                            font-size: 13.5px;
                         }
 
                         .noSubMenu {
                             color: $color-dark-x2-gray;
-                            font-size: 13.5px;
                             padding: 9.5px 15px;
+                            font-size: 13.5px;
                         }
                     }
                 }
@@ -462,8 +462,8 @@
     .navbarContainer {
         .secondaryNavbarContainer {
             .secondaryNavbarBlock {
-                font-size: 10px;
                 margin: 13.7px 0px 9.7px 0px;
+                font-size: 10px;
 
                 .listColoredBlock {
                     margin: 0px 6px;
