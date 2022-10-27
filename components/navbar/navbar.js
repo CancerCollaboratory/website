@@ -70,7 +70,7 @@ const Navbar = () => {
           <div className={styles.navbarItemsLine}>
             {data.mainNavbarItems.map((item, index) => (
               <NavbarItem
-                itemLabel={item.label}
+                itemLabel={item.label !== "Contact Us" ? item.label + " ▾" : item.label}
                 isItemlLink={true}
                 itemLink={item.link}
                 styleItemMenu={styles.subMenuDropdown}
@@ -92,7 +92,7 @@ const Navbar = () => {
               {data.mainNavbarItems.map((item, index) =>
                 item.navbarSubMenuItems ? (
                   <NavbarItem
-                    itemLabel={item.label}
+                    itemLabel={item.label + " ▾"}
                     isItemlLink={false}
                     styleItemMenu={styles.expandedSubMenuItem}
                     styleItemSubMenu={styles.innerExpandedMenu}
