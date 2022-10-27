@@ -23,7 +23,6 @@
 
             .listColoredBlock {
                 display: flex;
-                list-style: none;
 
                 .itemColoredBlock {
                     margin-left: 13px;
@@ -33,7 +32,6 @@
                         color: white;
                         background-color: $color-dark-blue;
                         border-radius: 15px;
-                        text-decoration: none;
 
                         &:hover {
                             background-color: $color-light-x1-blue;
@@ -44,14 +42,12 @@
 
             .listBlock {
                 display: flex;
-                list-style: none;
 
                 .itemBlock {
                     margin-left: 13px;
 
                     a {
                         color: $color-light-x4-blue;
-                        text-decoration: none;
                     }
                 }
 
@@ -99,7 +95,6 @@
                     padding: 0px 8px 0px 5px;
                     color: $color-dark-x3-gray;
                     border-left: 3px solid white;
-                    text-decoration: none;
                     font-weight: 500;
                     font-size: 14px;
 
@@ -133,7 +128,6 @@
                     top: 121px;
                     padding-top: 7px;
                     margin-left: 10.5px;
-                    list-style: none;
                     background-color: white;
                     border: 1px solid $color-light-x4-gray;
 
@@ -151,7 +145,6 @@
                         display: flex;
                         flex-direction: column;
                         padding-left: 12px;
-                        list-style: none;
                     }
 
                     .subMenuDivision {
@@ -370,7 +363,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                list-style: none;
                 border-bottom: 1px solid $color-light-x4-gray;
 
                 .extendSearchBar {
@@ -430,7 +422,6 @@
                                 display: block;
                                 color: $color-dark-x2-gray;
                                 font-size: 13.5px;
-                                text-decoration: none;
                                 padding: 9px 28px;
 
                                 &:hover {
