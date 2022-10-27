@@ -20,7 +20,7 @@ const FooterHead = ({ headItem }) => {
             styleImage={styles.footerLogo}
             imageWidth={77}
             imageHeight={56}
-            isImageHighPriority={true}
+            isImageHighPriority={false}
           />
         </div>
       ) : (
