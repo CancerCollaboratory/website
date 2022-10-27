@@ -54,8 +54,8 @@ const Navbar = () => {
             isImageWrapped={true}
             imageSrcPath={data.websiteLogo.srcPath}
             styleImage={styles.siteLogo}
-            imageWidth={275}
-            imageHeight={112}
+            imageWidth={data.websiteLogo.width}
+            imageHeight={data.websiteLogo.height}
             isImageHighPriority={true}
           />
           <div
