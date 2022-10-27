@@ -5,15 +5,7 @@ import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../navbar/navbar.module.scss";
 import NavbarMenu from "../navbarMenu/navbarMenu";
 
-const NavbarItem = ({
-  itemLabel,
-  isItemlLink,
-  itemLink,
-  styleItemMenu,
-  styleItemSubMenu,
-  itemMenu,
-  isNavbarDropdownExpanded,
-}) => {
+const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdownExpanded }) => {
   const { asPath } = useRouter();
   const [isItemMenuExpanded, setIsItemMenuExpanded] = useState(false);
 
@@ -36,8 +28,8 @@ const NavbarItem = ({
           <NavbarLink label={itemLabel} link={itemLink} />
           {isItemMenuExpanded && itemMenu && (
             <NavbarMenu
-              styleMenu={styleItemMenu}
-              styleSubMenu={styleItemSubMenu}
+              styleMenu={styles.subMenuDropdown}
+              styleSubMenu={styles.innerSubMenu}
               menuItems={itemMenu}
               hasSubMenuDivison={isItemlLink}
             />
@@ -48,8 +40,8 @@ const NavbarItem = ({
           <p className={styles.itemName}>{itemLabel}</p>
           {isItemMenuExpanded && (
             <NavbarMenu
-              styleMenu={styleItemMenu}
-              styleSubMenu={styleItemSubMenu}
+              styleMenu={styles.expandedSubMenuItem}
+              styleSubMenu={styles.innerExpandedMenu}
               menuItems={itemMenu}
               hasSubMenuDivison={isItemlLink}
             />
