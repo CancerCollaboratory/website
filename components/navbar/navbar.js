@@ -68,9 +68,13 @@ const Navbar = () => {
             <span className={styles.iconBar}></span>
           </div>
           <div className={styles.navbarItemsLine}>
-            {data.mainNavbarItems.map((item, index) => (
+            {data.navbarItems.map((item, index) => (
               <NavbarItem
-                itemLabel={item.label !== "Contact Us" ? item.label + " ▾" : item.label}
+                itemLabel={
+                  item.label !== data.navbarItems[4].label
+                    ? item.label + data.itemCaret
+                    : item.label
+                }
                 isItemlLink={true}
                 itemLink={item.link}
                 styleItemMenu={styles.subMenuDropdown}
@@ -89,10 +93,10 @@ const Navbar = () => {
               styleInput={styles.expandedSearchBar}
             />
             <div className={styles.wrapExpandedMenu}>
-              {data.mainNavbarItems.map((item, index) =>
+              {data.navbarItems.map((item, index) =>
                 item.navbarSubMenuItems ? (
                   <NavbarItem
-                    itemLabel={item.label + " ▾"}
+                    itemLabel={item.label + data.itemCaret}
                     isItemlLink={false}
                     styleItemMenu={styles.expandedSubMenuItem}
                     styleItemSubMenu={styles.innerExpandedMenu}
