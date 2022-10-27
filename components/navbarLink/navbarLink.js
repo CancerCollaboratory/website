@@ -20,7 +20,7 @@ const NavbarLink = ({
       {isLinkWrapped ? (
         isImageWrapped ? (
           isLinkExternal ? (
-            <a href={link} target="_blank">
+            <a href={link} target="_blank" rel="noreferrer">
               <div className={styleWrap}>
                 <Image
                   src={imageSrcPath}
@@ -49,7 +49,7 @@ const NavbarLink = ({
             </Link>
           )
         ) : isLinkExternal ? (
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             <div className={styleWrap}>{label}</div>
           </a>
         ) : (
@@ -59,7 +59,7 @@ const NavbarLink = ({
         )
       ) : isImageWrapped ? (
         isLinkExternal ? (
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             <Image
               src={imageSrcPath}
               alt={label}
@@ -84,7 +84,7 @@ const NavbarLink = ({
           </Link>
         )
       ) : isLinkExternal ? (
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noreferrer">
           {label}
         </a>
       ) : (
