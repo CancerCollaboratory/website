@@ -1,8 +1,33 @@
-.subNavContainer {
-    display: flex;
-    justify-content: center;
+@import "../../styles/colors";
+@import "../../styles/mixins";
 
-    .subNavbarItemContainer {
-        text-decoration: none;
+.subNavbarContainer {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 10px 0px;
+
+    li {
+        margin: 0px 12.25px 0px 4.25px;
+
+        a {
+            display: block;
+            color: $color-dark-x3-gray;
+            text-decoration: none;
+            border-left: 3px solid white;
+            padding-left: 5px;
+            font-size: 12px;
+
+            &:hover {
+                color: $color-dark-red;
+                border-left: 3px solid $color-dark-red;
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .subNavbarContainer {
+        display: none;
     }
 }
