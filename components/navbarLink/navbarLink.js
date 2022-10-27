@@ -30,6 +30,7 @@ const NavbarLink = ({
                   width={imageWidth}
                   height={imageHeight}
                   quality={100}
+                  placeholder={"blur"}
                 />
               </div>
             </a>
@@ -44,6 +45,7 @@ const NavbarLink = ({
                   width={imageWidth}
                   height={imageHeight}
                   quality={100}
+                  placeholder={"blur"}
                 />
               </div>
             </Link>
@@ -68,6 +70,7 @@ const NavbarLink = ({
               width={imageWidth}
               height={imageHeight}
               quality={100}
+              placeholder={"blur"}
             />
           </a>
         ) : (
@@ -80,6 +83,7 @@ const NavbarLink = ({
               width={imageWidth}
               height={imageHeight}
               quality={100}
+              placeholder={"blur"}
             />
           </Link>
         )
