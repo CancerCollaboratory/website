@@ -73,8 +73,6 @@ const Navbar = () => {
                 itemLabel={item.label}
                 isItemlLink={true}
                 itemLink={item.link}
-                styleItemMenu={styles.subMenuDropdown}
-                styleItemSubMenu={styles.innerSubMenu}
                 itemMenu={item?.navbarSubMenuItems}
                 key={index}
               />
@@ -94,8 +92,6 @@ const Navbar = () => {
                   <NavbarItem
                     itemLabel={item.label}
                     isItemlLink={false}
-                    styleItemMenu={styles.expandedSubMenuItem}
-                    styleItemSubMenu={styles.innerExpandedMenu}
                     itemMenu={item.navbarSubMenuItems}
                     isNavbarDropdownExpanded={isNavbarDropdownToggled}
                     key={index}
