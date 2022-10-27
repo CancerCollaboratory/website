@@ -23,8 +23,8 @@ const SubNavbar = () => {
   return (
     <ul className={styles.subNavbarContainer}>
       {data.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
-        <li>
-          <NavbarLink label={item.label} link={item.link} key={index} />
+        <li key={index}>
+          <NavbarLink label={item.label} link={item.link} />
         </li>
       ))}
     </ul>
