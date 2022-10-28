@@ -29,7 +29,30 @@ const SubNavbar = () => {
         <ul className={styles.subNavbarContainer}>
           {data.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
             <li key={index}>
-              <NavbarLink label={item.label} link={item.link} />
+              <NavbarLink
+                label={item.label}
+                link={item.link}
+                styleLink={
+                  asPath === item.link ||
+                  ((asPath === data.navbarItems[2].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[0].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[1].link) &&
+                    item.link !== data.navbarItems[2].navbarSubMenuItems[2].link) ||
+                  ((asPath === data.navbarItems[2].navbarSubMenuItems[0].subMenuSection[0].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[0].subMenuSection[1].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[0].subMenuSection[2].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[0].subMenuSection[3].link) &&
+                    item.link === data.navbarItems[2].navbarSubMenuItems[0].link) ||
+                  ((asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[0].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[1].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[2].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[3].link ||
+                    asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[4].link) &&
+                    item.link === data.navbarItems[2].navbarSubMenuItems[1].link)
+                    ? styles.selectedSubNavbarItem
+                    : undefined
+                }
+              />
             </li>
           ))}
         </ul>
