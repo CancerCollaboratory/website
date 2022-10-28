@@ -1,5 +1,6 @@
 import Navbar from "../navbar/navbar";
 import SubNavbar from "../subNavbar/subNavbar";
+import Jumbotron from "../jumbotron/jumbotron";
 import Footer from "../footer/footer";
 
 const Layout = ({ children }) => {
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
       <SubNavbar />
+      <Jumbotron />
       {children}
       <Footer />
     </>
