@@ -109,6 +109,11 @@
                     }
                 }
 
+                .selectedNavbarItem {
+                    color: $color-dark-red;
+                    border-left: 3px solid $color-dark-red;
+                }
+
                 .searchBar {
                     font-weight: 500;
                     font-size: 14px;
