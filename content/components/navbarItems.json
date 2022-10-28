@@ -3,6 +3,7 @@
         {
             "label": "About Us",
             "link": "/about-collaboratory",
+            "reducedSlug": "/about",
             "subMenuId": "subMenuAbout",
             "navbarSubMenuItems": [
                 {
@@ -104,6 +105,7 @@
         {
             "label": "Support",
             "link": "/support/overview",
+            "reducedSlug": "/support",
             "subMenuId": "subMenuSupport",
             "navbarSubMenuItems": [
                 {
