@@ -18,9 +18,9 @@ const FooterHead = ({ headItem }) => {
             isImageWrapped={true}
             imageSrcPath={headItem.logo.srcPath}
             styleImage={styles.footerLogo}
+            imageHasPriority={true}
             imageWidth={77}
             imageHeight={56}
-            isImageHighPriority={true}
           />
         </div>
       ) : (
