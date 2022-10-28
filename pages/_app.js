@@ -4,10 +4,7 @@ import "../styles/reset.scss";
 export default function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || (page => page);
 
-  if (
-    getLayout(<Component {...pageProps} />).type.length > 0 &&
-    getLayout(<Component {...pageProps} />).type.name !== "Home"
-  ) {
+  if (getLayout(<Component {...pageProps} />).type.length > 0) {
     return getLayout(<Component {...pageProps} />);
   } else {
     return (
