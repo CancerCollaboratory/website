@@ -11,23 +11,30 @@ const SubNavbar = () => {
   function getNavbarItemIndex(route) {
     data.navbarItems.map((item, index) =>
       item.navbarSubMenuItems?.map(
-        subItem => subItem.link === route && setActiveNavbarItemIndex(index)
+        subItem =>
+          (subItem.link === route || item.link === route) && setActiveNavbarItemIndex(index)
       )
     );
   }
 
   useEffect(() => {
-    asPath !== data.navbarItems[3].label && getNavbarItemIndex(asPath);
+    asPath !== data.navbarItems[3].link &&
+      asPath !== data.navbarItems[4].link &&
+      getNavbarItemIndex(asPath);
   });
 
   return (
-    <ul className={styles.subNavbarContainer}>
-      {data.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
-        <li key={index}>
-          <NavbarLink label={item.label} link={item.link} />
-        </li>
-      ))}
-    </ul>
+    <>
+      {asPath !== data.navbarItems[3].link && asPath !== data.navbarItems[4].link && (
+        <ul className={styles.subNavbarContainer}>
+          {data.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
+            <li key={index}>
+              <NavbarLink label={item.label} link={item.link} />
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
   );
 };
 
