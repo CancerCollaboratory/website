@@ -5,7 +5,7 @@ import data from "../../content/components/footerItems.json";
 
 const Footer = () => {
   return (
-    <div className={styles.footerContainer}>
+    <footer className={styles.footerContainer}>
       <div className={styles.footerHeadContainer}>
         {data.footerHeadItems.map((item, index) => (
           <FooterHead headItem={item} key={index} />
@@ -16,7 +16,7 @@ const Footer = () => {
           <FooterItem label={item.label} labelLink={item.link} footerItem={item} key={index} />
         ))}
       </div>
-    </div>
+    </footer>
   );
 };
 
