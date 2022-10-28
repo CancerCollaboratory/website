@@ -1,9 +1,16 @@
 @import "../../styles/colors";
+@import "../../styles/imgPaths";
 
 .jumbotronContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid $color-light-x4-gray;
+    background-color: $color-light-x5-blue;
+    background-image: $preface-top;
+    background-size: auto 200px;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     padding: 22.5px 18.75px;
 
     .jumbotronTitle {
