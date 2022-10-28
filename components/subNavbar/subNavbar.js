@@ -31,7 +31,6 @@ const SubNavbar = () => {
         data.navbarItems[3].reducedSlug &&
         asPath !== data.navbarItems[4].link && (
           <ul className={styles.subNavbarContainer}>
-            {console.log(activeNavbarItemIndex)}
             {data.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
               <li key={index}>
                 <NavbarLink
