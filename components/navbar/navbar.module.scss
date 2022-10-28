@@ -13,7 +13,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $color-dark-x2-gray;
+        background-color: $color-dark-x3-gray;
         padding-left: 608px;
         height: 44.5px;
 
@@ -50,13 +50,13 @@
                     margin-left: 13px;
 
                     a {
-                        color: $color-light-x3-blue;
+                        color: $color-light-x4-blue;
                         text-decoration: none;
                     }
                 }
 
                 .itemBorderRight {
-                    border-right: 3px solid $color-light-x3-blue;
+                    border-right: 3px solid $color-light-x4-blue;
                     padding-right: 13px;
                 }
             }
@@ -97,7 +97,7 @@
 
                 a {
                     padding: 0px 8px 0px 5px;
-                    color: $color-dark-x2-gray;
+                    color: $color-dark-x3-gray;
                     border-left: 3px solid white;
                     text-decoration: none;
                     font-weight: 500;
@@ -113,9 +113,9 @@
                     font-weight: 500;
                     font-size: 14px;
                     font-family: "Open Sans", sans-serif;
-                    border: 1px solid $color-light-x2-gray;
-                    border-top: 2px solid $color-light-x4-gray;
-                    background-color: $color-light-x5-gray;
+                    border: 1px solid $color-light-x3-gray;
+                    border-top: 2px solid $color-light-x5-gray;
+                    background-color: $color-light-x6-gray;
                     background-image: $icon-search;
                     background-repeat: no-repeat;
                     background-size: 15.2px 15.2px;
@@ -135,7 +135,7 @@
                     margin-left: 10.5px;
                     list-style: none;
                     background-color: white;
-                    border: 1px solid $color-light-x3-gray;
+                    border: 1px solid $color-light-x4-gray;
 
                     a {
                         display: block;
@@ -155,7 +155,7 @@
                     }
 
                     .subMenuDivision {
-                        border-bottom: 1px solid $color-light-x6-gray;
+                        border-bottom: 1px solid $color-light-x7-gray;
                         margin-bottom: 5px;
                         width: 100%;
                     }
@@ -333,12 +333,12 @@
                 height: 32px;
                 margin: 0px 19.25px 2.5px 0px;
                 background-color: white;
-                border: 1px solid $color-light-x2-gray;
+                border: 1px solid $color-light-x3-gray;
                 border-radius: 4px;
                 cursor: pointer;
 
                 &:hover {
-                    background-color: $color-light-x2-gray;
+                    background-color: $color-light-x3-gray;
                 }
 
                 .iconBar {
@@ -350,7 +350,7 @@
             }
 
             .navbarToggler[aria-expanded="true"] {
-                background-color: $color-light-x2-gray;
+                background-color: $color-light-x3-gray;
             }
 
             .navbarItemsLine {
@@ -371,7 +371,7 @@
                 flex-direction: column;
                 align-items: flex-start;
                 list-style: none;
-                border-bottom: 1px solid $color-light-x3-gray;
+                border-bottom: 1px solid $color-light-x4-gray;
 
                 .extendSearchBar {
                     display: flex;
@@ -382,10 +382,10 @@
                         font-weight: 500;
                         font-size: 13.5px;
                         font-family: "Open Sans", sans-serif;
-                        border: 1px solid $color-light-x2-gray;
-                        border-top: 2px solid $color-light-x4-gray;
+                        border: 1px solid $color-light-x3-gray;
+                        border-top: 2px solid $color-light-x5-gray;
                         border-radius: 15px;
-                        background-color: $color-light-x5-gray;
+                        background-color: $color-light-x6-gray;
                         background-image: $icon-search;
                         background-repeat: no-repeat;
                         background-size: 15px 15px;
@@ -401,7 +401,7 @@
 
                     .expandedMenuItem {
                         border: none;
-                        border-top: 1px solid $color-light-x3-gray;
+                        border-top: 1px solid $color-light-x4-gray;
                         background-color: white;
                         text-align: left;
                         cursor: pointer;
@@ -410,13 +410,13 @@
                         &:hover {
                             .itemName {
                                 &:hover {
-                                    background-color: $color-light-x5-gray;
+                                    background-color: $color-light-x6-gray;
                                     color: $color-dark-red;
                                 }
                             }
 
                             .noSubMenu {
-                                background-color: $color-light-x5-gray;
+                                background-color: $color-light-x6-gray;
                                 color: $color-dark-red;
                             }
                         }
@@ -424,17 +424,17 @@
                         .expandedSubMenuItem {
                             display: flex;
                             flex-direction: column;
-                            border-top: 1px solid $color-light-x3-gray;
+                            border-top: 1px solid $color-light-x4-gray;
 
                             a {
                                 display: block;
-                                color: $color-dark-x1-gray;
+                                color: $color-dark-x2-gray;
                                 font-size: 13.5px;
                                 text-decoration: none;
                                 padding: 9px 28px;
 
                                 &:hover {
-                                    background-color: $color-light-x5-gray;
+                                    background-color: $color-light-x6-gray;
                                     color: $color-dark-red;
                                 }
                             }
@@ -450,13 +450,13 @@
                         }
 
                         .itemName {
-                            color: $color-dark-x1-gray;
+                            color: $color-dark-x2-gray;
                             font-size: 13.5px;
                             padding: 9px 15px;
                         }
 
                         .noSubMenu {
-                            color: $color-dark-x1-gray;
+                            color: $color-dark-x2-gray;
                             font-size: 13.5px;
                             padding: 9.5px 15px;
                         }

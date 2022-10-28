@@ -170,7 +170,7 @@
         ]
     },
     "websiteLogo": {
-        "srcPath": "/assets/navbar/svgs/logo-cancer-genome-collaboratory.svg",
+        "srcPath": "/assets/navbar/logo-cancer-genome-collaboratory.svg",
         "label": "Cancer Genome Collaboratory",
         "link": "/",
         "width": "275",

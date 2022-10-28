@@ -1,7 +1,6 @@
 {
-  "name": "next.js-demo",
-  "version": "0.1.0",
-  "private": true,
+  "name": "website-cancer-genome-collaboratory",
+  "version": "1.0.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

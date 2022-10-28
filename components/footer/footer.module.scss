@@ -1,17 +1,333 @@
 @import '../../styles/colors';
+@import '../../styles/mixins';
 
-.footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: $color-dark-blue;
-    padding: 5px 0;
-    margin-top: 14px;
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid $color-light-x4-gray;
 
-    p {
-        color: white;
-        text-align: center;
-        font-size: 15px;
+    .footerHeadContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footerLogoContainer {
+            margin: 17px 17px 17px 0px;
+
+            a {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .headItemContainer {
+            display: flex;
+            flex-direction: column;
+
+            .headItemLabel {
+                color: $color-dark-x1-gray;
+                margin-bottom: 2.3px;
+                font-size: 12.5px;
+            }
+
+            .headLinksContainer {
+                display: flex;
+                align-items: center;
+
+                a {
+                    color: $color-dark-x3-gray;
+                    text-decoration: none;
+                    font-size: 12.5px;
+
+                    &:hover {
+                        color: $color-light-x2-gray;
+                    }
+                }
+
+                .verticalLine {
+                    margin: 0px 7.8px;
+                    height: 12.8px;
+                    border-left: 1px solid $color-dark-x1-gray;
+                }
+            }
+        }
+    }
+
+    .footerTailContainer {
+        display: flex;
+        justify-content: center;
+        background-color: $color-dark-blue;
+        padding: 20px 0px;
+
+        .footerItemContainer {
+            display: flex;
+            flex-direction: column;
+            padding: 0px 18.75px;
+            font-size: 12.5px;
+
+            a {
+                display: block;
+                color: white;
+                text-decoration: none;
+                margin-bottom: 9.75px;
+                width: max-content;
+
+                &:hover {
+                    color: $color-light-x5-blue;
+                }
+            }
+
+            .resetInternalMargins {
+                margin-bottom: 0px;
+            }
+
+            .subItemsList {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+
+                .columnPadding {
+                    padding-right: 18.75px;
+                }
+            }
+
+            .subItemsGrid {
+                flex-direction: row;
+            }
+        }
+
+        .footerItemRightBorder {
+            border-right: 1px solid $color-light-x2-blue;
+        }
+    }
+}
+
+@include respond-to("large") {
+    .footerContainer {
+        .footerTailContainer {
+            .footerItemContainer {
+                .subItemsGrid {
+                    flex-direction: column;
+                }
+
+                .subItemsList {
+                    .columnPadding {
+                        padding: 0px 0px 9.75px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("medium") {
+    .footerContainer {
+        .footerHeadContainer {
+            .headItemContainer {
+                .headItemLabel {
+                    margin-bottom: 2.25px;
+                    font-size: 11px;
+                }
+
+                .headLinksContainer {
+                    a {
+                        font-size: 11px;
+                    }
+
+                    .verticalLine {
+                        margin: 0px 7.3px;
+                        height: 11.3px;
+                    }
+                }
+            }
+        }
+
+        .footerTailContainer {
+            .footerItemContainer {
+                padding: 0px 18.5px;
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .footerContainer {
+        .footerHeadContainer {
+            flex-direction: column;
+
+            .footerLogoContainer {
+                margin-right: 0px;
+            }
+
+            .headItemContainer {
+                align-items: center;
+                margin-bottom: 17px;
+
+                .headItemLabel {
+                    margin-bottom: 2.4px;
+                    font-size: 12.5px;
+                }
+
+                .headLinksContainer {
+                    a {
+                        font-size: 12.5px;
+                    }
+
+                    .verticalLine {
+                        margin: 0px 7.8px;
+                        height: 12.8px;
+                    }
+                }
+            }
+        }
+
+        .footerTailContainer {
+            flex-direction: column;
+            padding: 19.5px 0px 4.5px 0px;
+
+            .footerItemContainer {
+                align-items: center;
+                font-size: 12.5px;
+                margin-bottom: 24.2px;
+
+                a {
+                    margin-bottom: 9.2px;
+                }
+
+                .subItemsList {
+                    li {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .columnPadding {
+                        padding-bottom: 9.2px;
+                    }
+                }
+            }
+
+            .resetFooterItemMargin {
+                margin-bottom: 15px;
+            }
+
+            .footerItemRightBorder {
+                border-right: none;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .footerContainer {
+        .footerHeadContainer {
+            .footerLogoContainer {
+                margin: 14.5px 0px;
+
+                .footerLogo {
+                    width: 65px;
+                    height: auto;
+                }
+            }
+
+            .headItemContainer {
+                margin-bottom: 14.5px;
+
+                .headItemLabel {
+                    font-size: 10.5px;
+                }
+
+                .headLinksContainer {
+                    a {
+                        font-size: 10.5px;
+                    }
+
+                    .verticalLine {
+                        margin: 0px 7.1px;
+                        height: 11.1px;
+                    }
+                }
+            }
+        }
+
+        .footerTailContainer {
+            padding: 17.5px 0px 3.5px 0px;
+
+            .footerItemContainer {
+                font-size: 10.5px;
+                margin-bottom: 22.7px;
+
+                a {
+                    margin-bottom: 8.7px;
+                }
+
+                .subItemsList {
+                    .columnPadding {
+                        padding-bottom: 8.7px;
+                    }
+                }
+            }
+
+            .resetFooterItemMargin {
+                margin-bottom: 14px;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .footerContainer {
+        .footerHeadContainer {
+            .footerLogoContainer {
+                margin: 13.5px 0px;
+
+                .footerLogo {
+                    width: 60px;
+                }
+            }
+
+            .headItemContainer {
+                margin-bottom: 13.5px;
+
+                .headItemLabel {
+                    font-size: 9.5px;
+                }
+
+                .headLinksContainer {
+                    a {
+                        font-size: 9.5px;
+                    }
+
+                    .verticalLine {
+                        margin: 0px 6px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+
+        .footerTailContainer {
+            padding-top: 17px;
+
+            .footerItemContainer {
+                font-size: 9.5px;
+                margin-bottom: 21.7px;
+
+                a {
+                    margin-bottom: 8.2px;
+                }
+
+                .subItemsList {
+                    .columnPadding {
+                        padding-bottom: 8.2px;
+                    }
+                }
+            }
+
+            .resetFooterItemMargin {
+                margin-bottom: 13.5px;
+            }
+        }
     }
 }

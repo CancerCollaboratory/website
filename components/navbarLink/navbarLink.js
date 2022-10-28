@@ -4,9 +4,10 @@ import Image from "next/future/image";
 const NavbarLink = ({
   label,
   isLinkWrapped,
-  wrapStyle,
-  isExternalLink,
+  styleWrap,
+  isLinkExternal,
   link,
+  styleLink,
   isImageWrapped,
   imageSrcPath,
   styleImage,
@@ -18,9 +19,9 @@ const NavbarLink = ({
     <>
       {isLinkWrapped ? (
         isImageWrapped ? (
-          isExternalLink ? (
-            <a href={link} target="_blank">
-              <div className={wrapStyle}>
+          isLinkExternal ? (
+            <a href={link} target="_blank" rel="noreferrer">
+              <div className={styleWrap}>
                 <Image
                   src={imageSrcPath}
                   alt={label}
@@ -28,12 +29,13 @@ const NavbarLink = ({
                   className={styleImage}
                   width={imageWidth}
                   height={imageHeight}
+                  quality={100}
                 />
               </div>
             </a>
           ) : (
             <Link href={link}>
-              <div className={wrapStyle}>
+              <div className={styleWrap}>
                 <Image
                   src={imageSrcPath}
                   alt={label}
@@ -41,25 +43,54 @@ const NavbarLink = ({
                   className={styleImage}
                   width={imageWidth}
                   height={imageHeight}
+                  quality={100}
                 />
               </div>
             </Link>
           )
-        ) : isExternalLink ? (
-          <a href={link} target="_blank">
-            <div className={wrapStyle}>{label}</div>
+        ) : isLinkExternal ? (
+          <a href={link} target="_blank" rel="noreferrer">
+            <div className={styleWrap}>{label}</div>
           </a>
         ) : (
           <Link href={link}>
-            <div className={wrapStyle}>{label}</div>
+            <div className={styleWrap}>{label}</div>
           </Link>
         )
-      ) : isExternalLink ? (
-        <a href={link} target="_blank">
+      ) : isImageWrapped ? (
+        isLinkExternal ? (
+          <a href={link} target="_blank" rel="noreferrer">
+            <Image
+              src={imageSrcPath}
+              alt={label}
+              priority={isImageHighPriority}
+              className={styleImage}
+              width={imageWidth}
+              height={imageHeight}
+              quality={100}
+            />
+          </a>
+        ) : (
+          <Link href={link}>
+            <Image
+              src={imageSrcPath}
+              alt={label}
+              priority={isImageHighPriority}
+              className={styleImage}
+              width={imageWidth}
+              height={imageHeight}
+              quality={100}
+            />
+          </Link>
+        )
+      ) : isLinkExternal ? (
+        <a href={link} target="_blank" rel="noreferrer">
           {label}
         </a>
       ) : (
-        <Link href={link}>{label}</Link>
+        <Link href={link}>
+          <a className={styleLink}>{label}</a>
+        </Link>
       )}
     </>
   );
