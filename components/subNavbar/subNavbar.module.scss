@@ -23,6 +23,11 @@
                 border-left: 3px solid $color-dark-red;
             }
         }
+
+        .selectedSubNavbarItem {
+            color: $color-dark-red;
+            border-left: 3px solid $color-dark-red;
+        }
     }
 }
 
