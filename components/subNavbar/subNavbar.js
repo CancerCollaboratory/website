@@ -7,6 +7,8 @@ import React, { useEffect, useState } from "react";
 const SubNavbar = () => {
   const { asPath } = useRouter();
   const [activeNavbarItemIndex, setActiveNavbarItemIndex] = useState(0);
+  const researchSectionA = data.navbarItems[2].navbarSubMenuItems[0];
+  const researchSectionB = data.navbarItems[2].navbarSubMenuItems[1];
 
   function getNavbarItemIndex(route) {
     data.navbarItems.map((item, index) =>
@@ -18,23 +20,18 @@ const SubNavbar = () => {
   }
 
   useEffect(() => {
-    asPath !== data.navbarItems[3].link &&
+    asPath.slice(0, data.navbarItems[3].reducedSlug.length) !== data.navbarItems[3].reducedSlug &&
       asPath !== data.navbarItems[4].link &&
       getNavbarItemIndex(asPath);
   });
 
   return (
     <>
-      {asPath !== data.navbarItems[3].link &&
-        asPath !== data.navbarItems[3].navbarSubMenuItems[0].link &&
-        asPath !== data.navbarItems[3].navbarSubMenuItems[1].link &&
-        asPath !== data.navbarItems[3].navbarSubMenuItems[2].link &&
-        asPath !== data.navbarItems[3].navbarSubMenuItems[3].link &&
-        asPath !== data.navbarItems[3].navbarSubMenuItems[4].link &&
-        asPath !== data.navbarItems[3].navbarSubMenuItems[5].link &&
-        asPath !== data.navbarItems[3].navbarSubMenuItems[6].link &&
+      {asPath.slice(0, data.navbarItems[3].reducedSlug.length) !==
+        data.navbarItems[3].reducedSlug &&
         asPath !== data.navbarItems[4].link && (
           <ul className={styles.subNavbarContainer}>
+            {console.log(activeNavbarItemIndex)}
             {data.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
               <li key={index}>
                 <NavbarLink
@@ -42,23 +39,21 @@ const SubNavbar = () => {
                   link={item.link}
                   styleLink={
                     asPath === item.link ||
-                    ((asPath === data.navbarItems[2].link ||
-                      asPath === data.navbarItems[2].navbarSubMenuItems[0].link ||
-                      asPath === data.navbarItems[2].navbarSubMenuItems[1].link) &&
-                      item.link !== data.navbarItems[2].navbarSubMenuItems[2].link) ||
-                    ((asPath === data.navbarItems[2].navbarSubMenuItems[0].subMenuSection[0].link ||
-                      asPath === data.navbarItems[2].navbarSubMenuItems[0].subMenuSection[1].link ||
-                      asPath === data.navbarItems[2].navbarSubMenuItems[0].subMenuSection[2].link ||
-                      asPath ===
-                        data.navbarItems[2].navbarSubMenuItems[0].subMenuSection[3].link) &&
-                      item.link === data.navbarItems[2].navbarSubMenuItems[0].link) ||
-                    ((asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[0].link ||
-                      asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[1].link ||
-                      asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[2].link ||
-                      asPath === data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[3].link ||
-                      asPath ===
-                        data.navbarItems[2].navbarSubMenuItems[1].subMenuSection[4].link) &&
-                      item.link === data.navbarItems[2].navbarSubMenuItems[1].link)
+                    (item.link.length > asPath.length &&
+                      asPath + "#" === item.link.slice(0, asPath.length + 1)) ||
+                    asPath.slice(0, data.navbarItems[2].link.length + 1) ===
+                      item.link.slice(0, data.navbarItems[2].link.length) + "#" ||
+                    ((asPath === researchSectionA.subMenuSection[0].link ||
+                      asPath === researchSectionA.subMenuSection[1].link ||
+                      asPath === researchSectionA.subMenuSection[2].link ||
+                      asPath === researchSectionA.subMenuSection[3].link) &&
+                      item.link === researchSectionA.link) ||
+                    ((asPath === researchSectionB.subMenuSection[0].link ||
+                      asPath === researchSectionB.subMenuSection[1].link ||
+                      asPath === researchSectionB.subMenuSection[2].link ||
+                      asPath === researchSectionB.subMenuSection[3].link ||
+                      asPath === researchSectionB.subMenuSection[4].link) &&
+                      item.link === researchSectionB.link)
                       ? styles.selectedSubNavbarItem
                       : undefined
                   }
