@@ -54,9 +54,9 @@ const Navbar = () => {
             isImageWrapped={true}
             imageSrcPath={data.websiteLogo.srcPath}
             styleImage={styles.siteLogo}
+            imageHasPriority={true}
             imageWidth={275}
             imageHeight={112}
-            isImageHighPriority={true}
           />
           <div
             className={styles.navbarToggler}
