@@ -4,6 +4,7 @@ import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../navbar/navbar.module.scss";
 import NavbarMenu from "../navbarMenu/navbarMenu";
+import data from "../../content/components/navbarItems.json";
 
 const NavbarItem = ({
   itemLabel,
@@ -33,7 +34,19 @@ const NavbarItem = ({
           onMouseOver={() => setIsItemMenuExpanded(true)}
           onMouseLeave={() => setIsItemMenuExpanded(false)}
         >
-          <NavbarLink label={itemLabel} link={itemLink} />
+          <NavbarLink
+            label={itemLabel}
+            link={itemLink}
+            styleLink={
+              (asPath.slice(0, itemLink.length) === itemLink ||
+                itemLink.slice(0, data.navbarItems[0].reducedSlug.length) ===
+                  asPath.slice(0, data.navbarItems[0].reducedSlug.length)) &&
+              asPath !== data.navbarItems[2].navbarSubMenuItems[2].link &&
+              asPath !== data.navbarItems[3].link
+                ? styles.selectedNavbarItem
+                : undefined
+            }
+          />
           {isItemMenuExpanded && itemMenu && (
             <NavbarMenu
               styleMenu={styleItemMenu}
