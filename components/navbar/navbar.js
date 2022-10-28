@@ -79,7 +79,7 @@ const Navbar = () => {
                 itemLink={item.link}
                 styleItemMenu={styles.subMenuDropdown}
                 styleItemSubMenu={styles.innerSubMenu}
-                itemMenu={item?.navbarSubMenuItems}
+                itemMenu={item.navbarSubMenuItems}
                 key={index}
               />
             ))}
