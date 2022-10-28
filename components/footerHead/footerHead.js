@@ -4,7 +4,7 @@ import styles from "../footer/footer.module.scss";
 
 const FooterHead = ({ headItem }) => {
   function getCurrentYear() {
-    return <span>{new Date().getFullYear()}</span>;
+    return new Date().getFullYear();
   }
 
   return (
@@ -26,7 +26,7 @@ const FooterHead = ({ headItem }) => {
       ) : (
         <div className={styles.headItemContainer}>
           <p className={styles.headItemLabel}>
-            © {getCurrentYear()} {headItem.label}
+            © <span>{getCurrentYear()}</span> {headItem.label}
           </p>
           <div className={styles.headLinksContainer}>
             {headItem.links.map((linkItem, index) => (
