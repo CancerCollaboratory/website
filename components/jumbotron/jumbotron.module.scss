@@ -1,3 +1,5 @@
+@import "../../styles/colors";
+
 .jumbotronContainer {
     display: flex;
     flex-direction: column;
@@ -5,11 +7,13 @@
     padding: 22.5px 18.75px;
 
     .jumbotronTitle {
+        color: $color-dark-blue;
         font-size: 20px;
         margin-bottom: 8.2px;
     }
 
     .jumbotronBodyText {
+        color: $color-dark-x1-gray;
         text-align: center;
     }
 }
