@@ -1,10 +1,10 @@
 import styles from "./jumbotron.module.scss";
 
-const Jumbotron = () => {
+const Jumbotron = ({ data }) => {
   return (
     <div className={styles.jumbotronContainer}>
-      <h1 className={styles.jumbotronTitle}>About Us</h1>
-      <p className={styles.jumbotronBodyText}>This is temporary text.</p>
+      <h1 className={styles.jumbotronTitle}>{data.jumbotron.title}</h1>
+      <p className={styles.jumbotronBody}>{data.jumbotron.body}</p>
     </div>
   );
 };
