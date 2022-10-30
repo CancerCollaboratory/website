@@ -1,7 +1,7 @@
 import styles from "./footer.module.scss";
 import FooterHead from "../footerHead/footerHead";
 import FooterItem from "../footerItem/footerItem";
-import data from "../../content/components/footerItems.json";
+import data from "../../data/components/footer/footer.json";
 
 const Footer = () => {
   return (

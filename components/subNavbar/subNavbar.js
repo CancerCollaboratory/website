@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
-import NavbarLink from "../navbarLink/navbarLink";
-import data from "../../content/components/navbarItems.json";
-import styles from "./subNavbar.module.scss";
 import React, { useEffect, useState } from "react";
+import NavbarLink from "../navbarLink/navbarLink";
+import data from "../../data/components/navbar/navbar.json";
+import styles from "./subNavbar.module.scss";
 
 const SubNavbar = () => {
   const { asPath } = useRouter();
