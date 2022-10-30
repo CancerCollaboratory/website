@@ -1,0 +1,63 @@
+{
+    "sections": [
+        {
+            "about": [
+                {
+                    "slug": "about-collaboratory"
+                },
+                {
+                    "slug": "about-funders-collaborators"
+                },
+                {
+                    "slug": "about-team"
+                }
+            ]
+        },
+        {
+            "contact": [
+                {
+                    "slug": "contact-us"
+                }
+            ]
+        },
+        {
+            "home": [
+                {
+                    "slug": ""
+                }
+            ]
+        },
+        {
+            "privacy": [
+                {
+                    "slug": "privacy-policy"
+                }
+            ]
+        },
+        {
+            "research": [
+                {
+                    "technologyCores": [
+                        {
+                            "slug": ""
+                        }
+                    ]
+                },
+                {
+                    "modules": [
+                        {
+                            "slug": ""
+                        }
+                    ]
+                },
+                {
+                    "publications": [
+                        {
+                            "slug": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
