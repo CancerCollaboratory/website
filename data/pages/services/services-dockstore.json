@@ -1,0 +1,6 @@
+{
+    "jumbotron": {
+        "title": "Dockstore",
+        "body": "An open platform for sharing Docker-based tools described with the Common Workflow Language used by the GA4GH."
+    }
+}

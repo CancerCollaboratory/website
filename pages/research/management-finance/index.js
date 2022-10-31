@@ -1,5 +1,12 @@
+import pageData from "../../../data/pages/research/technologyCores/management-finance.json";
+import Jumbotron from "../../../components/jumbotron/jumbotron";
+
 const ManagementAndFinance = () => {
-  return <></>;
+  return (
+    <>
+      <Jumbotron data={pageData} />
+    </>
+  );
 };
 
 export default ManagementAndFinance;
