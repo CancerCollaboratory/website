@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/mixins.scss";
 @import "../../styles/imgPaths";
 
 .jumbotronContainer {
@@ -8,19 +9,122 @@
     border-bottom: 1px solid $color-light-x4-gray;
     background-color: $color-light-x5-blue;
     background-image: $preface-top;
-    background-size: auto 200px;
+    background-size: 1200px;
     background-repeat: no-repeat;
     background-position: center bottom;
-    padding: 22.5px 18.75px;
+    padding: 22.5px 0px;
 
     .jumbotronTitle {
         color: $color-dark-blue;
-        font-size: 20px;
-        margin-bottom: 8.2px;
+        margin-bottom: 8.4px;
+        font-size: 28px;
     }
 
     .jumbotronBody {
         color: $color-dark-x1-gray;
         text-align: center;
+        line-height: 150%;
+        font-size: 18px;
+        width: 720px;
+
+        a {
+            color: $color-dark-blue;
+            text-decoration: underline;
+
+            &:hover {
+                color: $color-light-x3-blue;
+            }
+        }
+    }
+}
+
+@include respond-to("large") {
+    .jumbotronContainer {
+        background-size: 1130px;
+        padding: 22px 0px;
+
+        .jumbotronTitle {
+            margin-bottom: 8.2px;
+            font-size: 26px;
+        }
+
+        .jumbotronBody {
+            font-size: 17.5px;
+            width: 650px;
+        }
+    }
+}
+
+@include respond-to("medium") {
+    .jumbotronContainer {
+        background-size: 1070px;
+        padding: 21px 0px;
+
+        .jumbotronTitle {
+            margin-bottom: 8px;
+            font-size: 24px;
+        }
+
+        .jumbotronBody {
+            font-size: 16.25px;
+            width: 600px;
+        }
+    }
+}
+
+@include respond-to("small") {
+    .jumbotronContainer {
+        background-size: 129.5%;
+        padding: 20px;
+
+        .jumbotronTitle {
+            margin-bottom: 7.8px;
+            font-size: 18.5px;
+            text-align: center;
+            width: 61%;
+        }
+
+        .jumbotronBody {
+            padding-left: 6.8%;
+            padding-right: 6.8%;
+            font-size: 15.5px;
+            width: 92%;
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .jumbotronContainer {
+        padding: 18px;
+
+        .jumbotronTitle {
+            margin-bottom: 7.4px;
+            font-size: 16px;
+            width: 53%;
+        }
+
+        .jumbotronBody {
+            padding-left: 7%;
+            padding-right: 7%;
+            font-size: 13px;
+            width: 90%;
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .jumbotronContainer {
+        padding: 16.5px;
+
+        .jumbotronTitle {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 7px;
+            font-size: 14px;
+        }
+
+        .jumbotronBody {
+            font-size: 11.5px;
+        }
     }
 }
