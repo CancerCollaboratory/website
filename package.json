@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "clsx": "^1.2.1",
-    "gray-matter": "^4.0.3",
     "html-react-parser": "^3.0.4",
     "micromark": "^3.0.10",
     "next": "12.3.1",
