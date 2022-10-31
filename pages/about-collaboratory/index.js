@@ -1,16 +1,8 @@
-import { getPageData } from "../../lib/pages";
 import Jumbotron from "../../components/jumbotron/jumbotron";
+import pageData from "../../data/pages/sections/about/about-collaboratory.json";
 
-export async function getStaticProps() {
-  const pageData = getPageData("about", "about-collaboratory");
-  return {
-    props: {
-      pageData,
-    },
-  };
-}
-
-const AboutCollaboratory = ({ pageData }) => {
+const AboutCollaboratory = () => {
+  console.log(pageData);
   return (
     <>
       <Jumbotron data={pageData} />
