@@ -1,5 +1,5 @@
+import pageData from "../../data/pages/about/about-collaboratory.json";
 import Jumbotron from "../../components/jumbotron/jumbotron";
-import pageData from "../../data/pages/sections/about/about-collaboratory.json";
 
 const AboutCollaboratory = () => {
   return (
