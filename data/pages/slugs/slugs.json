@@ -1,15 +1,112 @@
 {
     "sections": [
         {
+            "home": [
+                {
+                    "slug": ""
+                }
+            ]
+        },
+        {
             "about": [
                 {
                     "slug": "about-collaboratory"
                 },
                 {
-                    "slug": "about-funders-collaborators"
+                    "slug": "about-team"
                 },
                 {
-                    "slug": "about-team"
+                    "slug": "about-funders-collaborators"
+                }
+            ]
+        },
+        {
+            "services": [
+                {
+                    "slug": "services"
+                },
+                {
+                    "slug": "services-cloud-resources"
+                },
+                {
+                    "slug": "services-dockstore"
+                },
+                {
+                    "slug": "services-request-account"
+                }
+            ]
+        },
+        {
+            "research": [
+                {
+                    "technologyCores": [
+                        {
+                            "slug": "hardware-software-infrastructure"
+                        },
+                        {
+                            "slug": "benchmarking"
+                        },
+                        {
+                            "slug": "training-outreach"
+                        },
+                        {
+                            "slug": "management-finance"
+                        }
+                    ]
+                },
+                {
+                    "modules": [
+                        {
+                            "slug": "indexing-search-compression"
+                        },
+                        {
+                            "slug": "variant-identification-consequence"
+                        },
+                        {
+                            "slug": "tumour-heterogenity-evolution"
+                        },
+                        {
+                            "slug": "drug-target-identification"
+                        },
+                        {
+                            "slug": "bioethics-protection-phi"
+                        }
+                    ]
+                },
+                {
+                    "publications": [
+                        {
+                            "slug": "publications-presentations"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "support": [
+                {
+                    "slug": "overview"
+                },
+                {
+                    "slug": "getting-started"
+                },
+                {
+                    "slug": "best-practices"
+                },
+                {
+                    "slug": "user-guide"
+                },
+                {
+                    "slug": "glossary-terms"
+                },
+                {
+                    "slug": "workshops"
+                },
+                {
+                    "slug": "faqs"
+                },
+                {
+                    "slug": "system-status"
                 }
             ]
         },
@@ -21,41 +118,9 @@
             ]
         },
         {
-            "home": [
-                {
-                    "slug": ""
-                }
-            ]
-        },
-        {
             "privacy": [
                 {
                     "slug": "privacy-policy"
-                }
-            ]
-        },
-        {
-            "research": [
-                {
-                    "technologyCores": [
-                        {
-                            "slug": ""
-                        }
-                    ]
-                },
-                {
-                    "modules": [
-                        {
-                            "slug": ""
-                        }
-                    ]
-                },
-                {
-                    "publications": [
-                        {
-                            "slug": ""
-                        }
-                    ]
                 }
             ]
         }
