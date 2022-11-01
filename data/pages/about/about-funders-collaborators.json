@@ -1,6 +1,8 @@
 {
     "jumbotron": {
         "title": "Funders & Collaborators",
-        "body": "The Collaboratory is made up of national and international leaders in genomics, computer science, bioinformatics, medical law and ethics, patient privacy protection, and cancer biology."
+        "body": {
+            "text": "The Collaboratory is made up of national and international leaders in genomics, computer science, bioinformatics, medical law and ethics, patient privacy protection, and cancer biology."
+        }
     }
 }

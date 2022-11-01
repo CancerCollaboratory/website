@@ -11,23 +11,25 @@ const Jumbotron = ({ data }) => {
     <div
       className={clsx(
         styles.jumbotronContainer,
-        !data.jumbotron.body ? styles.stretchBackground : undefined
+        !data.jumbotron.body?.text ? styles.stretchBackground : undefined
       )}
     >
       <h1 className={styles.jumbotronTitle}>{data.jumbotron.title}</h1>
-      {data.jumbotron.body && (
+      {data.jumbotron.body?.text && (
         <>
           <div className={styles.jumbotronBody}>
             {parse(
-              micromark(data.jumbotron.body),
-              data.jumbotron.isLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
+              micromark(data.jumbotron.body.text),
+              data.jumbotron.body.isLinkExternal === "true"
+                ? insertLinkExternal
+                : insertLinkInternal
             )}
           </div>
-          {data.jumbotron.imageSrcPath && (
+          {data.jumbotron.image?.srcPath && (
             <div className={styles.jumbotronBottom}>
               <Image
-                src={data.jumbotron.imageSrcPath}
-                alt={data.jumbotron.imageLabel}
+                src={data.jumbotron.image.srcPath}
+                alt={data.jumbotron.image.label}
                 className={styles.jumbotronImage}
                 priority={false}
                 width={75}
@@ -35,11 +37,11 @@ const Jumbotron = ({ data }) => {
                 quality={100}
               />
               <NavbarLink
-                label={data.jumbotron.buttonLabel}
+                label={data.jumbotron.button.label}
                 isLinkWrapped={true}
                 styleWrap={styles.jumbotronButton}
-                isLinkExternal={data.jumbotron.isLinkExternal === "true"}
-                link={data.jumbotron.buttonLink}
+                isLinkExternal={data.jumbotron.button.isLinkExternal === "true"}
+                link={data.jumbotron.button.link}
               />
             </div>
           )}

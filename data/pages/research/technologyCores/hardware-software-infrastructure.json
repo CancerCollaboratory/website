@@ -1,6 +1,8 @@
 {
     "jumbotron": {
         "title": "Hardware & Software Infrastructure",
-        "body": "This core provides the essential hardware, data and software infrastructure on which the Collaboratory runs. Its design and implementation is driven by the needs of the other research and core modules."
+        "body": {
+            "text": "This core provides the essential hardware, data and software infrastructure on which the Collaboratory runs. Its design and implementation is driven by the needs of the other research and core modules."
+        }
     }
 }

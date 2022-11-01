@@ -1,6 +1,8 @@
 {
     "jumbotron": {
         "title": "Our Team",
-        "body": "The Collaboratory team is made up of an experienced and diverse group of leaders in cancer genomics and computational biology."
+        "body": {
+            "text": "The Collaboratory team is made up of an experienced and diverse group of leaders in cancer genomics and computational biology."
+        }
     }
 }

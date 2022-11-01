@@ -1,6 +1,8 @@
 {
     "jumbotron": {
         "title": "Drug Target Identification",
-        "body": "This module connects drugs, investigational compounds, natural products and other chemical tool compounds to the genes they modulate, allowing research questions that link cancer pharmacology to cancer genomics. Compounds are also linked to clinical trials and purchasing information, allowing investigators to see how these compounds have been used, and to use them for their own research."
+        "body": {
+            "text": "This module connects drugs, investigational compounds, natural products and other chemical tool compounds to the genes they modulate, allowing research questions that link cancer pharmacology to cancer genomics. Compounds are also linked to clinical trials and purchasing information, allowing investigators to see how these compounds have been used, and to use them for their own research."
+        }
     }
 }

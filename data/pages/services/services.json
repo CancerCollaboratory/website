@@ -1,8 +1,10 @@
 {
     "jumbotron": {
         "title": "Our Services",
-        "body": "The Cancer Genome Collaboratory is an academic research cloud built by the [Ontario Institute for Cancer Research (OICR)](https://oicr.on.ca).",
-        "isLinkExternal": "true"
+        "body": {
+            "text": "The Cancer Genome Collaboratory is an academic research cloud built by the [Ontario Institute for Cancer Research (OICR)](https://oicr.on.ca).",
+            "isLinkExternal": "true"
+        }
     },
     "lateralColumn": {
         "leftColumn": {
