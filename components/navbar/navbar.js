@@ -5,7 +5,7 @@ import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";
-import data from "../../content/components/navbarItems.json";
+import data from "../../data/components/navbarItems.json";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
