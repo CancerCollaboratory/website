@@ -30,11 +30,13 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdo
             label={itemLabel}
             link={itemLink}
             styleLink={
-              (asPath.slice(0, itemLink.length) === itemLink ||
-                itemLink.slice(0, data.navbarItems[0].reducedSlug.length) ===
-                  asPath.slice(0, data.navbarItems[0].reducedSlug.length)) &&
-              asPath !== data.navbarItems[2].navbarSubMenuItems[2].link &&
-              asPath !== data.navbarItems[3].link
+              asPath !== data.navbarItems[3].link &&
+              (itemLink === asPath ||
+                itemMenu?.find(
+                  item =>
+                    item.link === asPath ||
+                    item.subMenuSection?.find(subItem => subItem.link === asPath)
+                ))
                 ? styles.selectedNavbarItem
                 : undefined
             }
