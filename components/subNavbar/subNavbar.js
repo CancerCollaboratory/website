@@ -22,14 +22,18 @@ const SubNavbar = () => {
   useEffect(() => {
     asPath.slice(0, data.navbarItems[3].reducedSlug.length) !== data.navbarItems[3].reducedSlug &&
       asPath !== data.navbarItems[4].link &&
-      getNavbarItemIndex(asPath);
+      asPath !== "/" &&
+      asPath !== "/privacy-policy";
+    getNavbarItemIndex(asPath);
   });
 
   return (
     <>
       {asPath.slice(0, data.navbarItems[3].reducedSlug.length) !==
         data.navbarItems[3].reducedSlug &&
-        asPath !== data.navbarItems[4].link && (
+        asPath !== data.navbarItems[4].link &&
+        asPath !== "/" &&
+        asPath !== "/privacy-policy" && (
           <ul className={styles.subNavbarContainer}>
             {data.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
               <li key={index}>
