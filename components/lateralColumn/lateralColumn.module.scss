@@ -132,7 +132,7 @@
         }
 
         .rightColumnContainer {
-            padding: 25px 42px 25px 42px;
+            padding: 25px 42px;
             width: 100%;
 
             .rightColumnHeader {
@@ -161,7 +161,53 @@
 }
 
 // small: 767px
-@include respond-to("small") {}
+@include respond-to("small") {
+    .lateralColumnContainer {
+        .leftColumnContainer {
+            padding: 23px 41px 0px 41px;
+
+            .leftColumnHeader {
+                margin-bottom: 12px;
+
+                .leftColumnTitle {
+                    font-size: 16px;
+                }
+            }
+
+            .leftColumnBodyText {
+                font-size: 12px;
+            }
+
+            .subTextMarginBottom {
+                margin-bottom: 7px;
+            }
+        }
+
+        .rightColumnContainer {
+            padding: 23px 41px;
+
+            .rightColumnHeader {
+                .rightColumnTitle {
+                    margin-bottom: 9px;
+                    font-size: 15px;
+                }
+
+                .rightColumnSubTitle {
+                    margin-bottom: 12px;
+                    font-size: 14px;
+                }
+            }
+
+            .rightColumnBodyText {
+                font-size: 12px;
+            }
+
+            .subTextMarginBottom {
+                margin-bottom: 7px;
+            }
+        }
+    }
+}
 
 // extra-small: 388px
 @include respond-to("extra-small") {}
