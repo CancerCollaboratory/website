@@ -1,6 +1,11 @@
 {
     "jumbotron": {
         "title": "Dockstore",
-        "body": "An open platform for sharing Docker-based tools described with the Common Workflow Language used by the GA4GH."
+        "body": "An open platform for sharing Docker-based tools described with the Common Workflow Language used by the GA4GH.",
+        "imageSrcPath": "/assets/jumbotron/logo-dockstore.svg",
+        "imageLabel": "Dockstore",
+        "buttonLabel": "dockstore.org",
+        "buttonLink": "https://dockstore.org",
+        "isLinkExternal": "true"
     }
 }
