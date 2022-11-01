@@ -1,4 +1,5 @@
-@import "../../styles/mixins.scss";
+@import "../../styles/colors";
+@import "../../styles/mixins";
 
 .lateralColumnContainer {
     display: flex;
@@ -14,12 +15,14 @@
             margin-bottom: 15px;
 
             .leftColumnTitle {
+                color: $color-dark-x4-gray;
                 font-size: 22px;
             }
         }
 
         .leftColumnBodyText {
-            line-height: 160%;
+            color: $color-dark-x2-gray;
+            line-height: 170%;
             font-size: 14px;
         }
 
@@ -39,23 +42,27 @@
             flex-direction: column;
 
             .rightColumnTitle {
-                line-height: 160%;
+                color: $color-dark-x4-gray;
+                line-height: 170%;
                 text-align: center;
                 margin-bottom: 12px;
                 font-size: 19px;
             }
 
             .rightColumnSubTitle {
+                color: $color-dark-x2-gray;
                 text-align: center;
                 margin-bottom: 15px;
                 font-size: 16.5px;
+                font-weight: 600;
             }
         }
 
         .rightColumnBodyText {
             display: flex;
             justify-content: center;
-            line-height: 160%;
+            color: $color-dark-x2-gray;
+            line-height: 170%;
             font-size: 14px;
         }
 
@@ -69,7 +76,26 @@
 @include respond-to("large") {}
 
 // medium: 991px
-@include respond-to("medium") {}
+@include respond-to("medium") {
+    .lateralColumnContainer {
+        flex-direction: column;
+
+        .leftColumnContainer {
+            padding-bottom: 0px;
+            width: 100%;
+
+            .leftColumnHeader {
+                .leftColumnTitle {
+                    text-align: center;
+                }
+            }
+        }
+
+        .rightColumnContainer {
+            width: 100%;
+        }
+    }
+}
 
 // small: 767px
 @include respond-to("small") {}
