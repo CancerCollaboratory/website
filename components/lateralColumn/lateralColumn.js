@@ -51,7 +51,7 @@ const LateralColumn = ({ data }) => {
                 {data.lateralColumn.rightColumn.body.text?.map((item, index) => (
                   <p
                     className={clsx(
-                      styles.leftColumnBodyText,
+                      styles.rightColumnBodyText,
                       item.isLastSubText !== "true" ? styles.subTextMarginBottom : undefined
                     )}
                     key={index}
