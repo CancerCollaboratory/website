@@ -53,7 +53,7 @@
                 color: $color-dark-x2-gray;
                 text-align: center;
                 margin-bottom: 15px;
-                font-size: 16.5px;
+                font-size: 17px;
                 font-weight: 600;
             }
         }
@@ -67,13 +67,41 @@
         }
 
         .subTextMarginBottom {
-            margin: 10px 0px;
+            margin-bottom: 10px;
         }
     }
 }
 
 // large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .lateralColumnContainer {
+        .leftColumnContainer {
+            .leftColumnHeader {
+                margin-bottom: 14px;
+            }
+
+            .subTextMarginBottom {
+                margin-bottom: 9px;
+            }
+        }
+
+        .rightColumnContainer {
+            .rightColumnHeader {
+                .rightColumnTitle {
+                    margin-bottom: 11px;
+                }
+
+                .rightColumnSubTitle {
+                    margin-bottom: 14px;
+                }
+            }
+
+            .subTextMarginBottom {
+                margin-bottom: 9px;
+            }
+        }
+    }
+}
 
 // medium: 991px
 @include respond-to("medium") {
@@ -81,18 +109,53 @@
         flex-direction: column;
 
         .leftColumnContainer {
-            padding-bottom: 0px;
+            padding: 25px 42px 0px 42px;
             width: 100%;
 
             .leftColumnHeader {
+                margin-bottom: 13px;
+
                 .leftColumnTitle {
                     text-align: center;
+                    font-size: 21px;
                 }
+            }
+
+            .leftColumnBodyText {
+                line-height: 168%;
+                font-size: 13px;
+            }
+
+            .subTextMarginBottom {
+                margin-bottom: 8px;
             }
         }
 
         .rightColumnContainer {
+            padding: 25px 42px 25px 42px;
             width: 100%;
+
+            .rightColumnHeader {
+                .rightColumnTitle {
+                    line-height: 168%;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+
+                .rightColumnSubTitle {
+                    margin-bottom: 13px;
+                    font-size: 16px;
+                }
+            }
+
+            .rightColumnBodyText {
+                line-height: 168%;
+                font-size: 13px;
+            }
+
+            .subTextMarginBottom {
+                margin-bottom: 8px;
+            }
         }
     }
 }
