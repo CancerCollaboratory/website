@@ -1,10 +1,10 @@
-import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 import clsx from "clsx";
 import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 import data from "../../data/components/navbar/navbar.json";
 import styles from "./navbar.module.scss";
 

@@ -1,6 +1,6 @@
+import NavbarLink from "../navbarLink/navbarLink";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import NavbarLink from "../navbarLink/navbarLink";
 import navData from "../../data/components/navbar/navbar.json";
 import footerData from "../../data/components/footer/footer.json";
 import styles from "./subNavbar.module.scss";
