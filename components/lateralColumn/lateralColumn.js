@@ -59,11 +59,11 @@ const LateralColumn = ({ data, styleLeftColumnImage, children }) => {
                 ))}
               </div>
             ) : (
-              { children }
+              children
             )}
           </>
         ) : (
-          { children }
+          children
         )}
       </div>
     </div>
