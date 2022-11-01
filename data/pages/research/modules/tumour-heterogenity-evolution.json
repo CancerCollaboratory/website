@@ -1,6 +1,8 @@
 {
     "jumbotron": {
         "title": "Tumour Heterogenity & Evolution",
-        "body": "This module investigates the impact and association of clonal diversity and evolution on clinical correlates in cancer. Through development of robust statistical models of phylogenetic progression and population re-construction from next generation sequencing data, informative quantitative attributes of cancers relating to temporal and spatial dynamics can be computing. These will be applied in the context of the large scale resource of the collaboratory for investigation of the evolutionary determinants of clinical progression at scale."
+        "body": {
+            "text": "This module investigates the impact and association of clonal diversity and evolution on clinical correlates in cancer. Through development of robust statistical models of phylogenetic progression and population re-construction from next generation sequencing data, informative quantitative attributes of cancers relating to temporal and spatial dynamics can be computing. These will be applied in the context of the large scale resource of the collaboratory for investigation of the evolutionary determinants of clinical progression at scale."
+        }
     }
 }

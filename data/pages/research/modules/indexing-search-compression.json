@@ -1,6 +1,8 @@
 {
     "jumbotron": {
         "title": "Indexing, Search & Compression",
-        "body": "A key computer science challenge of this project is to enable sequence and metadata search across thousands of whole genomes using high performance distributed search indexes. Additional challenges specific to cancer genomes include the ability to search for particular patterns of variants."
+        "body": {
+            "text": "A key computer science challenge of this project is to enable sequence and metadata search across thousands of whole genomes using high performance distributed search indexes. Additional challenges specific to cancer genomes include the ability to search for particular patterns of variants."
+        }
     }
 }
