@@ -72,7 +72,6 @@
     }
 }
 
-// large: 1199px
 @include respond-to("large") {
     .lateralColumnContainer {
         .leftColumnContainer {
@@ -103,7 +102,6 @@
     }
 }
 
-// medium: 991px
 @include respond-to("medium") {
     .lateralColumnContainer {
         flex-direction: column;
@@ -160,7 +158,6 @@
     }
 }
 
-// small: 767px
 @include respond-to("small") {
     .lateralColumnContainer {
         .leftColumnContainer {
@@ -209,7 +206,6 @@
     }
 }
 
-// extra-small: 388px
 @include respond-to("extra-small") {
     .lateralColumnContainer {
         .leftColumnContainer {
@@ -238,7 +234,6 @@
     }
 }
 
-// extra-extra-small: 315px
 @include respond-to("extra-extra-small") {
     .lateralColumnContainer {
         .leftColumnContainer {
