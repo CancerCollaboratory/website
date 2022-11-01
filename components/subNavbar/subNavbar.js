@@ -46,7 +46,7 @@ const SubNavbar = () => {
                     asPath.slice(0, navData.navbarItems[activeNavbarItemIndex].link.length + 1) ===
                       item.link.slice(0, navData.navbarItems[activeNavbarItemIndex].link.length) +
                         "#" ||
-                    item.subMenuSection?.find(element => element.link === asPath)
+                    item.subMenuSection?.find(subItem => subItem.link === asPath)
                       ? styles.selectedSubNavbarItem
                       : undefined
                   }
