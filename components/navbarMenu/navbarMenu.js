@@ -13,7 +13,12 @@ const NavbarMenu = ({ styleMenu, styleSubMenu, menuItems, hasSubMenuDivison }) =
           <NavbarLink
             label={item.label}
             link={item.link}
-            styleLink={hasSubMenuDivison && item.link === asPath ? styles.activePage : undefined}
+            styleLink={
+              hasSubMenuDivison &&
+              (item.link === asPath || asPath + "#" === item.link.slice(0, asPath.length + 1))
+                ? styles.activePage
+                : undefined
+            }
           />
           <ul className={styleSubMenu}>
             {item.subMenuSection?.map((subItem, subIndex) => (
