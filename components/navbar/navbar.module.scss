@@ -1,5 +1,4 @@
 @import "../../styles/colors";
-@import "../../styles/svgs";
 @import "../../styles/mixins";
 
 .navbarContainer {
@@ -23,7 +22,6 @@
 
             .listColoredBlock {
                 display: flex;
-                list-style: none;
 
                 .itemColoredBlock {
                     margin-left: 13px;
@@ -33,7 +31,6 @@
                         color: white;
                         background-color: $color-dark-blue;
                         border-radius: 15px;
-                        text-decoration: none;
 
                         &:hover {
                             background-color: $color-light-x1-blue;
@@ -44,14 +41,12 @@
 
             .listBlock {
                 display: flex;
-                list-style: none;
 
                 .itemBlock {
                     margin-left: 13px;
 
                     a {
                         color: $color-light-x4-blue;
-                        text-decoration: none;
                     }
                 }
 
@@ -99,7 +94,6 @@
                     padding: 0px 8px 0px 5px;
                     color: $color-dark-x3-gray;
                     border-left: 3px solid white;
-                    text-decoration: none;
                     font-weight: 500;
                     font-size: 14px;
 
@@ -115,19 +109,12 @@
                 }
 
                 .searchBar {
-                    font-weight: 500;
-                    font-size: 14px;
-                    font-family: "Open Sans", sans-serif;
-                    border: 1px solid $color-light-x3-gray;
-                    border-top: 2px solid $color-light-x5-gray;
-                    background-color: $color-light-x7-gray;
-                    background-image: $icon-search;
-                    background-repeat: no-repeat;
                     background-size: 15.2px 15.2px;
-                    background-position: 7px;
-                    border-radius: 15px;
+                    background-position: 7.1px;
+                    border-radius: 17px;
                     margin: 0px 8px;
-                    padding: 4px 8px 4px 28px;
+                    padding: 4px 8px 4px 28.25px;
+                    font-size: 14px;
                     width: 185px;
                 }
 
@@ -136,9 +123,8 @@
                     flex-direction: column;
                     position: absolute;
                     top: 121px;
-                    padding-top: 7px;
                     margin-left: 10.5px;
-                    list-style: none;
+                    padding-top: 7px;
                     background-color: white;
                     border: 1px solid $color-light-x4-gray;
 
@@ -156,7 +142,6 @@
                         display: flex;
                         flex-direction: column;
                         padding-left: 12px;
-                        list-style: none;
                     }
 
                     .subMenuDivision {
@@ -198,9 +183,9 @@
                     }
 
                     .searchBar {
-                        font-size: 12px;
                         background-size: 15px 15px;
                         padding: 3.5px 7.5px 3.5px 27.5px;
+                        font-size: 12px;
                         width: 152px;
                     }
                 }
@@ -375,7 +360,6 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                list-style: none;
                 border-bottom: 1px solid $color-light-x4-gray;
 
                 .extendSearchBar {
@@ -384,19 +368,12 @@
                     width: 100%;
 
                     .expandedSearchBar {
-                        font-weight: 500;
-                        font-size: 13.5px;
-                        font-family: "Open Sans", sans-serif;
-                        border: 1px solid $color-light-x3-gray;
-                        border-top: 2px solid $color-light-x5-gray;
-                        border-radius: 15px;
-                        background-color: $color-light-x7-gray;
-                        background-image: $icon-search;
-                        background-repeat: no-repeat;
                         background-size: 15px 15px;
                         background-position: 7px;
-                        padding: 3.5px 7.5px 3.5px 27.5px;
+                        border-radius: 15px;
                         margin: 14px 15px;
+                        padding: 3.5px 7.5px 3.5px 27.5px;
+                        font-size: 13.5px;
                         width: 100%;
                     }
                 }
@@ -434,9 +411,8 @@
                             a {
                                 display: block;
                                 color: $color-dark-x2-gray;
-                                font-size: 13.5px;
-                                text-decoration: none;
                                 padding: 9px 28px;
+                                font-size: 13.5px;
 
                                 &:hover {
                                     background-color: $color-light-x7-gray;
@@ -456,14 +432,14 @@
 
                         .itemName {
                             color: $color-dark-x2-gray;
-                            font-size: 13.5px;
                             padding: 9px 15px;
+                            font-size: 13.5px;
                         }
 
                         .noSubMenu {
                             color: $color-dark-x2-gray;
-                            font-size: 13.5px;
                             padding: 9.5px 15px;
+                            font-size: 13.5px;
                         }
                     }
                 }
@@ -476,8 +452,8 @@
     .navbarContainer {
         .secondaryNavbarContainer {
             .secondaryNavbarBlock {
-                font-size: 10px;
                 margin: 13.7px 0px 9.7px 0px;
+                font-size: 10px;
 
                 .listColoredBlock {
                     margin: 0px 6px;
