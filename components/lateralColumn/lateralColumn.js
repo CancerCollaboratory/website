@@ -17,7 +17,7 @@ const LateralColumn = ({ data, styleLeftColumnImage, children }) => {
             <h1 className={styles.leftColumnTitle}>{data.lateralColumn.leftColumn.header.title}</h1>
           </div>
         )}
-        {data.lateralColumn.leftColumn.body.text?.map((item, index) => (
+        {data.lateralColumn.leftColumn.body?.text.map((item, index) => (
           <p
             className={clsx(
               styles.leftColumnBodyText,
@@ -46,7 +46,7 @@ const LateralColumn = ({ data, styleLeftColumnImage, children }) => {
             )}
             {data.lateralColumn.rightColumn.body?.text ? (
               <div className={styles.rightColumnBody}>
-                {data.lateralColumn.rightColumn.body.text?.map((item, index) => (
+                {data.lateralColumn.rightColumn.body.text.map((item, index) => (
                   <p
                     className={clsx(
                       styles.rightColumnBodyText,
