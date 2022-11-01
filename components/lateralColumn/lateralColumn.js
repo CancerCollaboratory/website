@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import styles from "./lateralColumn.module.scss";
 
-const LateralColumn = ({ data }) => {
+const LateralColumn = ({ data, styleLeftColumnImage, children }) => {
   return (
     <div className={styles.lateralColumnContainer}>
       <div className={styles.leftColumnContainer}>
@@ -10,7 +10,7 @@ const LateralColumn = ({ data }) => {
             className={clsx(
               styles.leftColumnHeader,
               data.lateralColumn.leftColumn.header.hasImage === "true"
-                ? styles.leftColumnHeaderImage
+                ? styleLeftColumnImage
                 : undefined
             )}
           >
@@ -30,23 +30,21 @@ const LateralColumn = ({ data }) => {
         ))}
       </div>
       <div className={styles.rightColumnContainer}>
-        {data.lateralColumn.rightColumn.header && (
-          <div className={styles.rightColumnHeader}>
-            {data.lateralColumn.rightColumn.header.title && (
-              <h1 className={styles.rightColumnTitle}>
-                {data.lateralColumn.rightColumn.header.title}
-              </h1>
-            )}
-            {data.lateralColumn.rightColumn.header.subTitle && (
-              <h2 className={styles.rightColumnSubTitle}>
-                {data.lateralColumn.rightColumn.header.subTitle}
-              </h2>
-            )}
-          </div>
-        )}
-        {data.lateralColumn.rightColumn.body && (
+        {data.lateralColumn.rightColumn.header ? (
           <>
-            {data.lateralColumn.rightColumn.body && (
+            {data.lateralColumn.rightColumn.header.title && (
+              <div className={styles.rightColumnHeader}>
+                <h1 className={styles.rightColumnTitle}>
+                  {data.lateralColumn.rightColumn.header.title}
+                </h1>
+                {data.lateralColumn.rightColumn.header.subTitle && (
+                  <h2 className={styles.rightColumnSubTitle}>
+                    {data.lateralColumn.rightColumn.header.subTitle}
+                  </h2>
+                )}
+              </div>
+            )}
+            {data.lateralColumn.rightColumn.body?.text ? (
               <div className={styles.rightColumnBody}>
                 {data.lateralColumn.rightColumn.body.text?.map((item, index) => (
                   <p
@@ -60,8 +58,12 @@ const LateralColumn = ({ data }) => {
                   </p>
                 ))}
               </div>
+            ) : (
+              { children }
             )}
           </>
+        ) : (
+          { children }
         )}
       </div>
     </div>
