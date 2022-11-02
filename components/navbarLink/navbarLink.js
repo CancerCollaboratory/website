@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/future/image";
 import { useRouter } from "next/router";
@@ -109,7 +110,7 @@ const NavbarLink = ({
         </a>
       ) : (
         <Link href={link}>
-          <a className={isItemActiveState ? styles.selectedNavbarItem : styleLink}>
+          <a className={clsx(isItemActiveState ? styles.selectedNavbarItem : undefined, styleLink)}>
             {menuItems ? label + " ▾" : label}
           </a>
         </Link>
