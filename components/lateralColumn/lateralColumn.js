@@ -5,19 +5,17 @@ const LateralColumn = ({ data, styleLeftColumnImage, children }) => {
   return (
     <div className={styles.lateralColumnContainer}>
       <div className={styles.leftColumnContainer}>
-        {data.lateralColumn.leftColumn.header.title && (
+        {data.leftColumn.header.title && (
           <div
             className={clsx(
               styles.leftColumnHeader,
-              data.lateralColumn.leftColumn.header.hasImage === "true"
-                ? styleLeftColumnImage
-                : undefined
+              data.leftColumn.header.hasImage === "true" ? styleLeftColumnImage : undefined
             )}
           >
-            <h1 className={styles.leftColumnTitle}>{data.lateralColumn.leftColumn.header.title}</h1>
+            <h1 className={styles.leftColumnTitle}>{data.leftColumn.header.title}</h1>
           </div>
         )}
-        {data.lateralColumn.leftColumn.body?.text.map((item, index) => (
+        {data.leftColumn.body?.text.map((item, index) => (
           <p
             className={clsx(
               styles.leftColumnBodyText,
@@ -30,23 +28,19 @@ const LateralColumn = ({ data, styleLeftColumnImage, children }) => {
         ))}
       </div>
       <div className={styles.rightColumnContainer}>
-        {data.lateralColumn.rightColumn.header ? (
+        {data.rightColumn.header ? (
           <>
-            {data.lateralColumn.rightColumn.header.title && (
+            {data.rightColumn.header.title && (
               <div className={styles.rightColumnHeader}>
-                <h1 className={styles.rightColumnTitle}>
-                  {data.lateralColumn.rightColumn.header.title}
-                </h1>
-                {data.lateralColumn.rightColumn.header.subTitle && (
-                  <h2 className={styles.rightColumnSubTitle}>
-                    {data.lateralColumn.rightColumn.header.subTitle}
-                  </h2>
+                <h1 className={styles.rightColumnTitle}>{data.rightColumn.header.title}</h1>
+                {data.rightColumn.header.subTitle && (
+                  <h2 className={styles.rightColumnSubTitle}>{data.rightColumn.header.subTitle}</h2>
                 )}
               </div>
             )}
-            {data.lateralColumn.rightColumn.body?.text ? (
+            {data.rightColumn.body?.text ? (
               <div className={styles.rightColumnBody}>
-                {data.lateralColumn.rightColumn.body.text.map((item, index) => (
+                {data.rightColumn.body.text.map((item, index) => (
                   <p
                     className={clsx(
                       styles.rightColumnBodyText,
