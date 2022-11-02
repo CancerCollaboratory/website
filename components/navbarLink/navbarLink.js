@@ -21,7 +21,7 @@ const NavbarLink = ({
   isImageHighPriority,
 }) => {
   const { asPath } = useRouter();
-  const [isActiveItemState, setIsActiveItemState] = useState(false);
+  const [isItemActiveState, setIsItemActiveState] = useState(false);
 
   useEffect(() => {
     (menuItems || asPath === data.navbarItems[4].link) &&
@@ -31,8 +31,8 @@ const NavbarLink = ({
         itemm =>
           itemm.link === asPath || itemm.subMenuSection?.find(subItem => subItem.link === asPath)
       ))
-      ? setIsActiveItemState(true)
-      : setIsActiveItemState(false);
+      ? setIsItemActiveState(true)
+      : setIsItemActiveState(false);
   });
 
   return (
@@ -109,7 +109,7 @@ const NavbarLink = ({
         </a>
       ) : (
         <Link href={link}>
-          <a className={isActiveItemState ? styles.selectedNavbarItem : styleLink}>
+          <a className={isItemActiveState ? styles.selectedNavbarItem : styleLink}>
             {menuItems ? label + " ▾" : label}
           </a>
         </Link>
