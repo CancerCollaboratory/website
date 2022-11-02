@@ -6,7 +6,7 @@
             "isLinkExternal": "true"
         }
     },
-    "lateralColumn": {
+    "lateralColumn1": {
         "leftColumn": {
             "header": {
                 "title": "Cloud Infrastructure",
@@ -36,6 +36,30 @@
                         "isLastSubText": "true"
                     }
                 ]
+            }
+        }
+    },
+    "lateralColumn2": {
+        "leftColumn": {
+            "header": {
+                "title": "Cloud Resources",
+                "hasImage": "true"
+            },
+            "body": {
+                "text": [
+                    {
+                        "subText": "Although most of the ICGC datasets are stored both in AWS S3 and Collaboratory, some research projects only allowed their collected data to be stored in non-commercial public cloud environments, so Collaboratory was a perfect place to store them."
+                    },
+                    {
+                        "subText": "Because Collaboratory was custom-built for cancer research, its physical nodes have generous amounts of local storage potentially offering better performing disk access as well as better CPU/memory ratios. The proximity to the object storage storing the large datasets means also fast downloads and decreased workflow runtimes.",
+                        "isLastSubText": "true"
+                    }
+                ]
+            }
+        },
+        "rightColumn": {
+            "header": {
+                "subTitle": "As of January 2019"
             }
         }
     }
