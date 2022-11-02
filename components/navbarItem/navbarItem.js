@@ -4,7 +4,6 @@ import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../navbar/navbar.module.scss";
 import NavbarMenu from "../navbarMenu/navbarMenu";
-import data from "../../data/components/navbarItems.json";
 
 const NavbarItem = ({
   itemLabel,
@@ -37,17 +36,7 @@ const NavbarItem = ({
           <NavbarLink
             label={itemMenu ? itemLabel + " ▾" : itemLabel}
             link={itemLink}
-            styleLink={
-              asPath !== data.navbarItems[3].link &&
-              (itemLink === asPath ||
-                itemMenu?.find(
-                  item =>
-                    item.link === asPath ||
-                    item.subMenuSection?.find(subItem => subItem.link === asPath)
-                ))
-                ? styles.selectedNavbarItem
-                : undefined
-            }
+            menuItems={itemMenu}
           />
           {isItemMenuExpanded && itemMenu && (
             <NavbarMenu
