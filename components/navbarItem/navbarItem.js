@@ -35,7 +35,7 @@ const NavbarItem = ({
           onMouseLeave={() => setIsItemMenuExpanded(false)}
         >
           <NavbarLink
-            label={itemLabel}
+            label={itemMenu ? itemLabel + " ▾" : itemLabel}
             link={itemLink}
             styleLink={
               asPath !== data.navbarItems[3].link &&
@@ -60,7 +60,7 @@ const NavbarItem = ({
         </div>
       ) : (
         <div className={styles.expandedMenuItem} onClick={() => expandSubMenu()}>
-          <p className={styles.itemName}>{itemLabel}</p>
+          <p className={styles.itemName}>{itemLabel + " ▾"}</p>
           {isItemMenuExpanded && (
             <NavbarMenu
               styleMenu={styleItemMenu}
