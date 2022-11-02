@@ -33,11 +33,7 @@ const NavbarItem = ({
           onMouseOver={() => setIsItemMenuExpanded(true)}
           onMouseLeave={() => setIsItemMenuExpanded(false)}
         >
-          <NavbarLink
-            label={itemMenu ? itemLabel + " ▾" : itemLabel}
-            link={itemLink}
-            menuItems={itemMenu}
-          />
+          <NavbarLink label={itemLabel} link={itemLink} menuItems={itemMenu} />
           {isItemMenuExpanded && itemMenu && (
             <NavbarMenu
               styleMenu={styleItemMenu}
