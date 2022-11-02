@@ -62,5 +62,43 @@
                 "subTitle": "As of"
             }
         }
-    }
+    },
+    "table1": [
+        {
+            "row": [
+                {
+                    "cellTitle": "CPU Cores",
+                    "cellBody": "3552"
+                },
+                {
+                    "cellTitle": "Memory",
+                    "cellBody": "22 TB"
+                }
+            ]
+        },
+        {
+            "row": [
+                {
+                    "cellTitle": "Local Disk",
+                    "cellBody": "435 TB"
+                },
+                {
+                    "cellTitle": "Object Storage (Raw)",
+                    "cellBody": "10 PB"
+                }
+            ]
+        },
+        {
+            "row": [
+                {
+                    "cellTitle": "Block Storage",
+                    "cellBody": "60 TB"
+                },
+                {
+                    "cellTitle": "Network (Shared)",
+                    "cellBody": "10 Gbps"
+                }
+            ]
+        }
+    ]
 }
