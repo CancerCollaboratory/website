@@ -24,7 +24,7 @@ const NavbarLink = ({
   const [isActiveItemState, setIsActiveItemState] = useState(false);
 
   useEffect(() => {
-    menuItems &&
+    (menuItems || asPath === data.navbarItems[4].link) &&
     asPath !== data.navbarItems[3].link &&
     (link === asPath ||
       menuItems?.find(
