@@ -1,5 +1,9 @@
 import Link from "next/link";
 import Image from "next/future/image";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import styles from "../navbar/navbar.module.scss";
+import data from "../../data/components/navbarItems.json";
 
 const NavbarLink = ({
   label,
@@ -8,6 +12,7 @@ const NavbarLink = ({
   isLinkExternal,
   link,
   styleLink,
+  menuItems,
   isImageWrapped,
   imageSrcPath,
   styleImage,
@@ -15,6 +20,21 @@ const NavbarLink = ({
   imageHeight,
   isImageHighPriority,
 }) => {
+  const { asPath } = useRouter();
+  const [isActiveItemState, setIsActiveItemState] = useState(false);
+
+  useEffect(() => {
+    menuItems &&
+    asPath !== data.navbarItems[3].link &&
+    (link === asPath ||
+      menuItems?.find(
+        itemm =>
+          itemm.link === asPath || itemm.subMenuSection?.find(subItem => subItem.link === asPath)
+      ))
+      ? setIsActiveItemState(true)
+      : setIsActiveItemState(false);
+  });
+
   return (
     <>
       {isLinkWrapped ? (
@@ -89,7 +109,9 @@ const NavbarLink = ({
         </a>
       ) : (
         <Link href={link}>
-          <a className={styleLink}>{label}</a>
+          <a className={isActiveItemState ? styles.selectedNavbarItem : styleLink}>
+            {menuItems ? label + " ▾" : label}
+          </a>
         </Link>
       )}
     </>
