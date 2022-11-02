@@ -175,6 +175,5 @@
         "srcPath": "/assets/navbar/logo-cancer-genome-collaboratory.svg",
         "label": "Cancer Genome Collaboratory",
         "link": "/"
-    },
-    "itemCaret": " ▾"
+    }
 }
