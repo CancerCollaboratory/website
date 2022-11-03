@@ -28,7 +28,7 @@ const LateralColumn = ({ data, styleLeftColumnImage, children }) => {
         ))}
       </div>
       <div className={styles.rightColumnContainer}>
-        {data.rightColumn.header ? (
+        {data.rightColumn?.header ? (
           <>
             {data.rightColumn.header.title && (
               <div className={styles.rightColumnHeader}>
