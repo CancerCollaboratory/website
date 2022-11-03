@@ -67,36 +67,48 @@
         {
             "row": [
                 {
-                    "cellTitle": "CPU Cores",
-                    "cellBody": "3552"
+                    "stats": {
+                        "cellTitle": "CPU Cores",
+                        "cellSubTitle": "3552"
+                    }
                 },
                 {
-                    "cellTitle": "Memory",
-                    "cellBody": "22 TB"
+                    "stats": {
+                        "cellTitle": "Memory",
+                        "cellSubTitle": "22 TB"
+                    }
                 }
             ]
         },
         {
             "row": [
                 {
-                    "cellTitle": "Local Disk",
-                    "cellBody": "435 TB"
+                    "stats": {
+                        "cellTitle": "Local Disk",
+                        "cellSubTitle": "435 TB"
+                    }
                 },
                 {
-                    "cellTitle": "Object Storage (Raw)",
-                    "cellBody": "10 PB"
+                    "stats": {
+                        "cellTitle": "Object Storage (Raw)",
+                        "cellSubTitle": "10 PB"
+                    }
                 }
             ]
         },
         {
             "row": [
                 {
-                    "cellTitle": "Block Storage",
-                    "cellBody": "60 TB"
+                    "stats": {
+                        "cellTitle": "Block Storage",
+                        "cellSubTitle": "60 TB"
+                    }
                 },
                 {
-                    "cellTitle": "Network (Shared)",
-                    "cellBody": "10 Gbps"
+                    "stats": {
+                        "cellTitle": "Network (Shared)",
+                        "cellSubTitle": "10 Gbps"
+                    }
                 }
             ]
         }
