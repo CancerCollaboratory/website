@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import styles from "./lateralColumn.module.scss";
 
-const LateralColumn = ({ data, styleLeftColumnImage, children }) => {
+const LateralColumn = ({ data, styleBackground, styleLeftColumnImage, children }) => {
   return (
-    <div className={styles.lateralColumnContainer}>
+    <div className={clsx(styles.lateralColumnContainer, styleBackground)}>
       <div className={styles.leftColumnContainer}>
         {data.leftColumn.header.title && (
           <div
