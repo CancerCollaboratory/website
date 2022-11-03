@@ -4,7 +4,7 @@
             "row": [
                 {
                     "cellHead": {
-                        "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters={&quot;file&quot;:{&quot;repoName&quot;:{&quot;is&quot;:[&quot;Collaboratory - Toronto&quot;]}}})",
+                        "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D)",
                         "isLinkExternal": "true"
                     }
                 },
@@ -29,7 +29,7 @@
             "row": [
                 {
                     "cellHead": {
-                        "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters={&quot;file&quot;:{&quot;repoName&quot;:{&quot;is&quot;:[&quot;PDC - Chicago&quot;]}}})",
+                        "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
                         "isLinkExternal": "true"
                     }
                 },
@@ -54,7 +54,7 @@
             "row": [
                 {
                     "cellHead": {
-                        "title": "[Total](https://dcc.icgc.org/repositories?filters={&quot;file&quot;:{&quot;repoName&quot;:{&quot;is&quot;:[&quot;Collaboratory - Toronto&quot;,&quot;PDC - Chicago&quot;]}}})",
+                        "title": "[Total](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22,%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
                         "isLinkExternal": "true"
                     }
                 },
