@@ -1,26 +1,90 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
+
+.tableTitle {
+    color: $color-dark-x3-gray;
+    margin-bottom: 1px;
+    font-weight: 600;
+    font-size: 14px;
+}
 
 .table {
     border-collapse: separate;
-    border-spacing: 0px 12px;
+    border-spacing: 0px 9px;
 
-    .tableRow {
+    .tableCell {
+        background-color: $color-light-x9-gray;
+        padding: 4px 13px;
+        font-size: 13px;
+
+        a {
+            color: $color-dark-blue;
+
+            &:hover {
+                color: $color-light-x3-blue;
+            }
+        }
+
+        .cellBodyContent {
+            text-align: right;
+            color: $color-dark-x2-gray;
+        }
+    }
+}
+
+@include respond-to("large") {
+    .tableTitle {
+        font-size: 13px;
+    }
+
+    .table {
         .tableCell {
-            background-color: $color-light-x9-gray;
-            padding: 3px 15px;
+            padding: 4px 12px;
+            font-size: 12px;
+        }
+    }
+}
 
-            a {
-                color: $color-dark-blue;
+@include respond-to("medium") {
+    .tableTitle {
+        font-size: 12px;
+    }
 
-                &:hover {
-                    color: $color-light-x3-blue;
-                }
-            }
+    .table {
+        .tableCell {
+            padding: 4px 11px;
+            font-size: 11px;
+        }
+    }
+}
 
-            .cellBodyContent {
-                text-align: right;
-                color: $color-dark-x2-gray;
-            }
+@include respond-to("small") {
+    .tableTitle {
+        margin-bottom: 0px;
+        font-size: 11.5px;
+    }
+
+    .table {
+        border-spacing: 0px 8px;
+
+        .tableCell {
+            padding: 4px 10.5px;
+            font-size: 10.5px;
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .tableTitle {
+        font-size: 11px;
+    }
+
+    .table {
+        border-spacing: 0px 7px;
+
+        .tableCell {
+            padding: 3px 10px;
+            font-size: 10px;
         }
     }
 }
