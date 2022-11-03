@@ -11,7 +11,6 @@ const Table = ({ data }) => {
           <tr className={styles.tableRow} key={index}>
             {item.row.map((subItem, subIndex) => (
               <td className={styles.tableCell} key={subIndex}>
-                {console.log(subItem)}
                 {subItem.cellHead &&
                   parse(
                     micromark(subItem.cellHead.title),
