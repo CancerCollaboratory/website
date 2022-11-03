@@ -4,11 +4,13 @@
 .lateralColumnContainer {
     display: flex;
     align-items: center;
+    border-bottom: 1px dotted $color-light-x4-gray;
+    margin: 0px 35px;
 
     .leftColumnContainer {
         display: flex;
         flex-direction: column;
-        padding: 25px 40px;
+        padding: 25px 40px 25px 5px;
         width: 50%;
 
         .leftColumnHeader {
@@ -34,7 +36,7 @@
     .rightColumnContainer {
         display: flex;
         flex-direction: column;
-        padding: 25px 40px;
+        padding: 25px 5px 25px 40px;
         width: 50%;
 
         .rightColumnHeader {
@@ -105,9 +107,10 @@
 @include respond-to("medium") {
     .lateralColumnContainer {
         flex-direction: column;
+        margin: 0px 38px;
 
         .leftColumnContainer {
-            padding: 25px 42px 0px 42px;
+            padding: 25px 42px 0px 4px;
             width: 100%;
 
             .leftColumnHeader {
@@ -130,7 +133,7 @@
         }
 
         .rightColumnContainer {
-            padding: 25px 42px;
+            padding: 25px 4px 25px 42px;
             width: 100%;
 
             .rightColumnHeader {
@@ -160,8 +163,10 @@
 
 @include respond-to("small") {
     .lateralColumnContainer {
+        margin: 0px 37px;
+
         .leftColumnContainer {
-            padding: 23px 41px 0px 41px;
+            padding: 23px 41px 0px 4px;
 
             .leftColumnHeader {
                 margin-bottom: 12px;
@@ -181,7 +186,7 @@
         }
 
         .rightColumnContainer {
-            padding: 23px 41px;
+            padding: 23px 4px 23px 41px;
 
             .rightColumnHeader {
                 .rightColumnTitle {
@@ -208,8 +213,10 @@
 
 @include respond-to("extra-small") {
     .lateralColumnContainer {
+        margin: 0px 40px;
+
         .leftColumnContainer {
-            padding: 22px 44px 0px 44px;
+            padding: 22px 44px 0px 4px;
 
             .leftColumnHeader {
                 .leftColumnTitle {
@@ -219,7 +226,7 @@
         }
 
         .rightColumnContainer {
-            padding: 22px 44px;
+            padding: 22px 4px 22px 44px;
 
             .rightColumnHeader {
                 .rightColumnTitle {
@@ -236,8 +243,10 @@
 
 @include respond-to("extra-extra-small") {
     .lateralColumnContainer {
+        margin: 0px 41px;
+
         .leftColumnContainer {
-            padding: 20px 45px 0px 45px;
+            padding: 20px 45px 0px 4px;
 
             .leftColumnHeader {
                 margin-bottom: 11px;
@@ -253,7 +262,7 @@
         }
 
         .rightColumnContainer {
-            padding: 20px 45px;
+            padding: 20px 4px 20px 45px;
 
             .rightColumnHeader {
                 .rightColumnTitle {
