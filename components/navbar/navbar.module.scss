@@ -126,7 +126,7 @@
                     margin-left: 10.5px;
                     padding-top: 7px;
                     background-color: white;
-                    border: 1px solid $color-light-x4-gray;
+                    border: 1px solid $color-light-x5-gray;
 
                     a {
                         display: block;
@@ -149,7 +149,7 @@
                     }
 
                     .subMenuDivision {
-                        border-bottom: 1px solid $color-light-x9-gray;
+                        border-bottom: 1px solid $color-light-x10-gray;
                         margin-bottom: 5px;
                         width: 100%;
                     }
@@ -364,7 +364,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                border-bottom: 1px solid $color-light-x4-gray;
+                border-bottom: 1px solid $color-light-x5-gray;
 
                 .extendSearchBar {
                     display: flex;
@@ -387,7 +387,7 @@
 
                     .expandedMenuItem {
                         border: none;
-                        border-top: 1px solid $color-light-x4-gray;
+                        border-top: 1px solid $color-light-x5-gray;
                         background-color: white;
                         text-align: left;
                         cursor: pointer;
@@ -396,13 +396,13 @@
                         &:hover {
                             .itemName {
                                 &:hover {
-                                    background-color: $color-light-x8-gray;
+                                    background-color: $color-light-x9-gray;
                                     color: $color-dark-red;
                                 }
                             }
 
                             .noSubMenu {
-                                background-color: $color-light-x8-gray;
+                                background-color: $color-light-x9-gray;
                                 color: $color-dark-red;
                             }
                         }
@@ -410,7 +410,7 @@
                         .expandedSubMenuItem {
                             display: flex;
                             flex-direction: column;
-                            border-top: 1px solid $color-light-x4-gray;
+                            border-top: 1px solid $color-light-x5-gray;
 
                             a {
                                 display: block;
@@ -419,7 +419,7 @@
                                 font-size: 13.5px;
 
                                 &:hover {
-                                    background-color: $color-light-x8-gray;
+                                    background-color: $color-light-x9-gray;
                                     color: $color-dark-red;
                                 }
                             }
