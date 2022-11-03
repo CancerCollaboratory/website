@@ -1,10 +1,12 @@
+@import "../../styles/colors";
+
 .tableContainer {
     border-collapse: separate;
     border-spacing: 6px;
 
     .tableRow {
         .tableCell {
-            border: 1px solid black;
+            border: 1px solid $color-light-x4-gray;
             width: 50%;
 
             .cellContainer {
@@ -22,6 +24,10 @@
                     font-size: 15px;
                     margin-bottom: 5px;
                 }
+            }
+
+            .cellBackground {
+                background-color: $color-light-x7-gray;
             }
         }
     }
