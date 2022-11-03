@@ -3,7 +3,7 @@ import parse from "html-react-parser";
 import Image from "next/future/image";
 import NavbarLink from "../navbarLink/navbarLink";
 import { micromark } from "micromark";
-import { insertLinkExternal, insertLinkInternal } from "../../lib/functions";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLinks";
 import styles from "./jumbotron.module.scss";
 
 const Jumbotron = ({ data }) => {
