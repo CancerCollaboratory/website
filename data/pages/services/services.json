@@ -56,64 +56,64 @@
                     }
                 ]
             }
-        },
-        "rightColumn": {
-            "header": {
-                "subTitle": "As of"
-            }
         }
     },
-    "table1": [
-        {
-            "row": [
-                {
-                    "stats": {
-                        "cellTitle": "CPU Cores",
-                        "cellSubTitle": "3552"
-                    }
-                },
-                {
-                    "stats": {
-                        "cellTitle": "Memory",
-                        "cellSubTitle": "22 TB",
-                        "hasBackgroundColor": "true"
-                    }
-                }
-            ]
+    "table1": {
+        "preTableContent": {
+            "title": "As of "
         },
-        {
-            "row": [
-                {
-                    "stats": {
-                        "cellTitle": "Local Disk",
-                        "cellSubTitle": "435 TB",
-                        "hasBackgroundColor": "true"
+        "tableContent": [
+            {
+                "row": [
+                    {
+                        "stats": {
+                            "cellTitle": "CPU Cores",
+                            "cellSubTitle": "3552"
+                        }
+                    },
+                    {
+                        "stats": {
+                            "cellTitle": "Memory",
+                            "cellSubTitle": "22 TB",
+                            "hasBackgroundColor": "true"
+                        }
                     }
-                },
-                {
-                    "stats": {
-                        "cellTitle": "Object Storage (Raw)",
-                        "cellSubTitle": "10 PB"
+                ]
+            },
+            {
+                "row": [
+                    {
+                        "stats": {
+                            "cellTitle": "Local Disk",
+                            "cellSubTitle": "435 TB",
+                            "hasBackgroundColor": "true"
+                        }
+                    },
+                    {
+                        "stats": {
+                            "cellTitle": "Object Storage (Raw)",
+                            "cellSubTitle": "10 PB"
+                        }
                     }
-                }
-            ]
-        },
-        {
-            "row": [
-                {
-                    "stats": {
-                        "cellTitle": "Block Storage",
-                        "cellSubTitle": "60 TB"
+                ]
+            },
+            {
+                "row": [
+                    {
+                        "stats": {
+                            "cellTitle": "Block Storage",
+                            "cellSubTitle": "60 TB"
+                        }
+                    },
+                    {
+                        "stats": {
+                            "cellTitle": "Network (Shared)",
+                            "cellSubTitle": "10 Gbps",
+                            "hasBackgroundColor": "true"
+                        }
                     }
-                },
-                {
-                    "stats": {
-                        "cellTitle": "Network (Shared)",
-                        "cellSubTitle": "10 Gbps",
-                        "hasBackgroundColor": "true"
-                    }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 }
