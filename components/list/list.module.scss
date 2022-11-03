@@ -1,0 +1,33 @@
+@import "../../styles/colors";
+
+.listContainer {
+    .preListContainer {
+        .preListTitle {
+            color: $color-dark-x2-gray;
+            font-size: 14px;
+        }
+    }
+
+    .listBlock {
+        display: flex;
+
+        .listItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .listItemTitle {
+                color: $color-dark-x4-gray;
+                margin: 5px 0px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+
+            .listItemSubTitle {
+                color: $color-dark-red;
+                margin-bottom: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+}
