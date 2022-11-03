@@ -1,48 +1,31 @@
 @import "../../styles/colors";
 
-.tableContainer {
-    padding: 4px;
+.table {
+    border-collapse: separate;
+    border-spacing: 6px;
 
-    .preTable {
-        width: max-content;
+    .tableRow {
+        .tableCell {
+            border: 1px solid $color-light-x5-gray;
+            width: 50%;
 
-        .preTableTitle {
-            color: $color-dark-x2-gray;
-            margin-bottom: 4px;
-            font-size: 14px;
-        }
-    }
+            .cellContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 3px;
 
-    .table {
-        border-collapse: separate;
-        border-spacing: 7px;
-
-        .tableRow {
-            .tableCell {
-                border: 1px solid $color-light-x5-gray;
-                width: 50%;
-
-                .cellContainer {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-
-                    .cellTitle {
-                        font-size: 15px;
-                        font-weight: 600;
-                        margin: 5px 0px;
-                    }
-
-                    .cellSubTitle {
-                        font-size: 15px;
-                        margin-bottom: 5px;
-                        color: $color-dark-red;
-                    }
+                .boardImage {
+                    margin: 3px;
                 }
 
-                .cellBackground {
-                    background-color: $color-light-x8-gray;
+                .boardLink {
+                    color: $color-dark-blue;
                 }
+            }
+
+            .cellBackground {
+                background-color: $color-light-x8-gray;
             }
         }
     }
