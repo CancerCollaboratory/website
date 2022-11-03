@@ -58,61 +58,49 @@
             }
         }
     },
-    "table1": {
-        "preTableContent": {
+    "list1": {
+        "preList": {
             "title": "As of "
         },
-        "tableContent": [
+        "list": [
             {
-                "row": [
-                    {
-                        "stats": {
-                            "cellTitle": "CPU Cores",
-                            "cellSubTitle": "3552"
-                        }
-                    },
-                    {
-                        "stats": {
-                            "cellTitle": "Memory",
-                            "cellSubTitle": "22 TB",
-                            "hasBackgroundColor": "true"
-                        }
-                    }
-                ]
+                "stats": {
+                    "listTitle": "CPU Cores",
+                    "listSubTitle": "3552"
+                }
             },
             {
-                "row": [
-                    {
-                        "stats": {
-                            "cellTitle": "Local Disk",
-                            "cellSubTitle": "435 TB",
-                            "hasBackgroundColor": "true"
-                        }
-                    },
-                    {
-                        "stats": {
-                            "cellTitle": "Object Storage (Raw)",
-                            "cellSubTitle": "10 PB"
-                        }
-                    }
-                ]
+                "stats": {
+                    "listTitle": "Memory",
+                    "listSubTitle": "22 TB",
+                    "hasBackgroundColor": "true"
+                }
             },
             {
-                "row": [
-                    {
-                        "stats": {
-                            "cellTitle": "Block Storage",
-                            "cellSubTitle": "60 TB"
-                        }
-                    },
-                    {
-                        "stats": {
-                            "cellTitle": "Network (Shared)",
-                            "cellSubTitle": "10 Gbps",
-                            "hasBackgroundColor": "true"
-                        }
-                    }
-                ]
+                "stats": {
+                    "cellTitle": "Local Disk",
+                    "cellSubTitle": "435 TB",
+                    "hasBackgroundColor": "true"
+                }
+            },
+            {
+                "stats": {
+                    "cellTitle": "Object Storage (Raw)",
+                    "cellSubTitle": "10 PB"
+                }
+            },
+            {
+                "stats": {
+                    "cellTitle": "Block Storage",
+                    "cellSubTitle": "60 TB"
+                }
+            },
+            {
+                "stats": {
+                    "cellTitle": "Network (Shared)",
+                    "cellSubTitle": "10 Gbps",
+                    "hasBackgroundColor": "true"
+                }
             }
         ]
     }
