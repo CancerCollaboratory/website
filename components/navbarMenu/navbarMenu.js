@@ -1,5 +1,5 @@
 import React from "react";
-import ItemLink from "../ItemLink/ItemLink";
+import ItemLink from "../itemLink/itemLink";
 import { useRouter } from "next/router";
 import styles from "../navbar/navbar.module.scss";
 

@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import EscapeOutside from "react-escape-outside";
-import ItemLink from "../ItemLink/ItemLink";
+import ItemLink from "../itemLink/itemLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";
 import { useRouter } from "next/router";

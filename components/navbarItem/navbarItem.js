@@ -1,5 +1,5 @@
 import EscapeOutside from "react-escape-outside";
-import ItemLink from "../ItemLink/ItemLink";
+import ItemLink from "../itemLink/itemLink";
 import NavbarMenu from "../navbarMenu/navbarMenu";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";

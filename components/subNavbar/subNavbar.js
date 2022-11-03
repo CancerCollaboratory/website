@@ -1,4 +1,4 @@
-import ItemLink from "../ItemLink/ItemLink";
+import ItemLink from "../itemLink/itemLink";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import navData from "../../data/components/navbar/navbar.json";
