@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import styles from "./table.module.scss";
 
 const Table = ({ data }) => {
@@ -9,7 +10,14 @@ const Table = ({ data }) => {
             {item.row.map((subItem, subIndex) => (
               <td className={styles.tableCell} key={subIndex}>
                 {subItem.stats && (
-                  <div className={styles.cellContainer}>
+                  <div
+                    className={clsx(
+                      styles.cellContainer,
+                      subItem.stats.hasBackgroundColor === "true"
+                        ? styles.cellBackground
+                        : undefined
+                    )}
+                  >
                     <h3 className={styles.cellTitle}>{subItem.stats.cellTitle}</h3>
                     <p className={styles.cellSubTitle}>{subItem.stats.cellSubTitle}</p>
                   </div>
