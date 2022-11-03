@@ -1,7 +1,7 @@
 import pageData from "../../data/pages/services/services.json";
 import Jumbotron from "../../components/jumbotron/jumbotron";
 import LateralColumn from "../../components/lateralColumn/lateralColumn";
-import Table from "../../components/table/table";
+import List from "../../components/list/list";
 import utilStyles from "../../styles/utils.module.scss";
 
 const Services = () => {
@@ -13,7 +13,7 @@ const Services = () => {
         data={pageData.lateralColumn2}
         styleBackground={utilStyles.sectionContainerBackground}
       >
-        <Table data={pageData.table1} />
+        <List data={pageData.list1} />
       </LateralColumn>
     </>
   );
