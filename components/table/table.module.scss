@@ -1,5 +1,28 @@
 .tableContainer {
+    border-collapse: separate;
+    border-spacing: 6px;
+
     .tableRow {
-        border: 1px solid black;
+        .tableCell {
+            border: 1px solid black;
+            width: 50%;
+
+            .cellContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .cellTitle {
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin: 5px 0px;
+                }
+
+                .cellSubTitle {
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
     }
 }
