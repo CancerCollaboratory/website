@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarLink from "../navbarLink/navbarLink";
+import ItemLink from "../ItemLink/ItemLink";
 import { useRouter } from "next/router";
 import styles from "../navbar/navbar.module.scss";
 
@@ -10,7 +10,7 @@ const NavbarMenu = ({ styleMenu, styleSubMenu, menuItems, hasSubMenuDivison }) =
     <div className={styleMenu}>
       {menuItems.map((item, index) => (
         <React.Fragment key={index}>
-          <NavbarLink
+          <ItemLink
             label={item.label}
             link={item.link}
             styleLink={
@@ -23,7 +23,7 @@ const NavbarMenu = ({ styleMenu, styleSubMenu, menuItems, hasSubMenuDivison }) =
           <ul className={styleSubMenu}>
             {item.subMenuSection?.map((subItem, subIndex) => (
               <li key={subIndex}>
-                <NavbarLink
+                <ItemLink
                   label={subItem.label}
                   link={subItem.link}
                   styleLink={

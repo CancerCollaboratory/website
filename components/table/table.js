@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import styles from "./table.module.scss";
-import NavbarLink from "../navbarLink/navbarLink";
+import ItemLink from "../itemLink/itemLink";
 
 const Table = ({ data }) => {
   return (
@@ -19,7 +19,7 @@ const Table = ({ data }) => {
                         : undefined
                     )}
                   >
-                    <NavbarLink
+                    <ItemLink
                       label={subItem.board.image.label}
                       link={subItem.board.image.link}
                       isImageWrapped={true}
@@ -28,7 +28,7 @@ const Table = ({ data }) => {
                       imageWidth={70}
                       imageHeight={70}
                     />
-                    <NavbarLink
+                    <ItemLink
                       label={subItem.board.body.label}
                       link={subItem.board.body.link}
                       styleLink={styles.boardLink}

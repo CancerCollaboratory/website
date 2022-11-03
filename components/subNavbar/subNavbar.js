@@ -1,4 +1,4 @@
-import NavbarLink from "../navbarLink/navbarLink";
+import ItemLink from "../ItemLink/ItemLink";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import navData from "../../data/components/navbar/navbar.json";
@@ -37,7 +37,7 @@ const SubNavbar = () => {
           <ul className={styles.subNavbarContainer}>
             {navData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
               <li key={index}>
-                <NavbarLink
+                <ItemLink
                   label={item.label}
                   link={item.link}
                   styleLink={

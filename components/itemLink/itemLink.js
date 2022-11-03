@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/future/image";
 
-const NavbarLink = ({
+const ItemLink = ({
   label,
   isLinkWrapped,
   styleWrap,
@@ -96,4 +96,4 @@ const NavbarLink = ({
   );
 };
 
-export default NavbarLink;
+export default ItemLink;

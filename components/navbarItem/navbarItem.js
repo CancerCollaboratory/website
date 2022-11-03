@@ -1,5 +1,5 @@
 import EscapeOutside from "react-escape-outside";
-import NavbarLink from "../navbarLink/navbarLink";
+import ItemLink from "../ItemLink/ItemLink";
 import NavbarMenu from "../navbarMenu/navbarMenu";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
@@ -26,7 +26,7 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdo
           onMouseOver={() => setIsItemMenuExpanded(true)}
           onMouseLeave={() => setIsItemMenuExpanded(false)}
         >
-          <NavbarLink
+          <ItemLink
             label={itemLabel}
             link={itemLink}
             styleLink={
