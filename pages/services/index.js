@@ -9,7 +9,7 @@ const Services = () => {
       <Jumbotron data={pageData} />
       <LateralColumn data={pageData.lateralColumn1} />
       <LateralColumn data={pageData.lateralColumn2}>
-        <Table />
+        <Table data={pageData.table1} />
       </LateralColumn>
     </>
   );
