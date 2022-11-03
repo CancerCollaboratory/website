@@ -1,38 +1,27 @@
-import clsx from "clsx";
+import parse from "html-react-parser";
+import { micromark } from "micromark";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLinks";
 import styles from "./table.module.scss";
-import ItemLink from "../itemLink/itemLink";
 
 const Table = ({ data }) => {
   return (
     <table className={styles.table}>
       <tbody>
-        {data.tableContent.map((item, index) => (
+        {data.map((item, index) => (
           <tr className={styles.tableRow} key={index}>
             {item.row.map((subItem, subIndex) => (
               <td className={styles.tableCell} key={subIndex}>
-                {subItem.board && (
-                  <div
-                    className={clsx(
-                      styles.cellContainer,
-                      subItem.stats.hasBackgroundColor === "true"
-                        ? styles.cellBackground
-                        : undefined
-                    )}
-                  >
-                    <ItemLink
-                      label={subItem.board.image.label}
-                      link={subItem.board.image.link}
-                      isImageWrapped={true}
-                      imageSrcPath={subItem.board.image.srcPath}
-                      styleImage={styles.boardImage}
-                      imageWidth={70}
-                      imageHeight={70}
-                    />
-                    <ItemLink
-                      label={subItem.board.body.label}
-                      link={subItem.board.body.link}
-                      styleLink={styles.boardLink}
-                    />
+                {console.log(subItem)}
+                {subItem.cellHead &&
+                  parse(
+                    micromark(subItem.cellHead.title),
+                    subItem.cellHead.isLinkExternal === "true"
+                      ? insertLinkExternal
+                      : insertLinkInternal
+                  )}
+                {subItem.cellBody && (
+                  <div className={styles.cellBodyContent}>
+                    {parse(micromark(subItem.cellBody.content))}
                   </div>
                 )}
               </td>
