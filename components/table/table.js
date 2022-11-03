@@ -7,7 +7,7 @@ const Table = ({ data }) => {
     <div className={styles.tableContainer}>
       {data.preTableContent && (
         <div className={styles.preTable}>
-          <p>
+          <p className={styles.preTableTitle}>
             {data.preTableContent.title}
             <span>
               {getNameOfMonth()} {getCurrentYear()}
