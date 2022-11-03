@@ -1,0 +1,79 @@
+{
+    "table": [
+        {
+            "row": [
+                {
+                    "cellHead": {
+                        "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters={&quot;file&quot;:{&quot;repoName&quot;:{&quot;is&quot;:[&quot;Collaboratory - Toronto&quot;]}}})",
+                        "isLinkExternal": "true"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "5,045 donors"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "121,467 files"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "1074.25 TB"
+                    }
+                }
+            ]
+        },
+        {
+            "row": [
+                {
+                    "cellHead": {
+                        "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters={&quot;file&quot;:{&quot;repoName&quot;:{&quot;is&quot;:[&quot;PDC - Chicago&quot;]}}})",
+                        "isLinkExternal": "true"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "886 donors"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "22,200 files"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "255.57 TB"
+                    }
+                }
+            ]
+        },
+        {
+            "row": [
+                {
+                    "cellHead": {
+                        "title": "[Total](https://dcc.icgc.org/repositories?filters={&quot;file&quot;:{&quot;repoName&quot;:{&quot;is&quot;:[&quot;Collaboratory - Toronto&quot;,&quot;PDC - Chicago&quot;]}}})",
+                        "isLinkExternal": "true"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "5,931 donors"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "143,667 files"
+                    }
+                },
+                {
+                    "cellBody": {
+                        "content": "1329.83 TB"
+                    }
+                }
+            ]
+        }
+    ]
+}
