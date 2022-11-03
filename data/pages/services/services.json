@@ -75,7 +75,8 @@
                 {
                     "stats": {
                         "cellTitle": "Memory",
-                        "cellSubTitle": "22 TB"
+                        "cellSubTitle": "22 TB",
+                        "hasBackgroundColor": "true"
                     }
                 }
             ]
@@ -85,7 +86,8 @@
                 {
                     "stats": {
                         "cellTitle": "Local Disk",
-                        "cellSubTitle": "435 TB"
+                        "cellSubTitle": "435 TB",
+                        "hasBackgroundColor": "true"
                     }
                 },
                 {
@@ -107,7 +109,8 @@
                 {
                     "stats": {
                         "cellTitle": "Network (Shared)",
-                        "cellSubTitle": "10 Gbps"
+                        "cellSubTitle": "10 Gbps",
+                        "hasBackgroundColor": "true"
                     }
                 }
             ]
