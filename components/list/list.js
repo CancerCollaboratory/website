@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { getCurrentNameOfMonth, getCurrentYear } from "../../lib/functions/timeValues";
 import styles from "./list.module.scss";
 
@@ -15,7 +16,19 @@ const List = ({ data }) => {
       {data.listBody && (
         <ul className={styles.listBlock}>
           {data.listBody.map((item, index) => (
-            <li className={styles.listItem} key={index}>
+            <li
+              className={clsx(
+                styles.listItem,
+                item.stats?.lastStatInSubBlock?.hasBackgroundColor
+                  ? styles.lastStatItemBackground
+                  : item.stats?.firstStatInSubBlock?.hasBackgroundColor
+                  ? styles.firstStatItemBackground
+                  : item.secondItemInSubBlock?.hasBackgroundColor
+                  ? styles.secondListItemBackground
+                  : undefined
+              )}
+              key={index}
+            >
               {item.stats && (
                 <>
                   <h3 className={styles.listItemTitle}>{item.stats.title}</h3>
