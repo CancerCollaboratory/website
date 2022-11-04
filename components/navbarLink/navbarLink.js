@@ -4,7 +4,6 @@ import Image from "next/future/image";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import styles from "../navbar/navbar.module.scss";
-import data from "../../data/components/navbarItems.json";
 
 const NavbarLink = ({
   label,
@@ -25,13 +24,10 @@ const NavbarLink = ({
   const [isItemActiveState, setIsItemActiveState] = useState(false);
 
   useEffect(() => {
-    (menuItems || asPath === data.navbarItems[4].link) &&
-    asPath !== data.navbarItems[3].link &&
-    (link === asPath ||
-      menuItems?.find(
-        itemm =>
-          itemm.link === asPath || itemm.subMenuSection?.find(subItem => subItem.link === asPath)
-      ))
+    link === asPath ||
+    menuItems?.find(
+      item => item.link === asPath || item.subMenuSection?.find(subItem => subItem.link === asPath)
+    )
       ? setIsItemActiveState(true)
       : setIsItemActiveState(false);
   });
