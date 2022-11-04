@@ -17,19 +17,8 @@ const NavbarLink = ({
   children,
 }) => {
   const { asPath } = useRouter();
-  const [isItemActiveState, setIsItemActiveState] = useState(false);
 
-  useEffect(() => {
-    (menuItems || asPath === data.navbarItems[4].link) &&
-    asPath !== data.navbarItems[3].link &&
-    (link === asPath ||
-      menuItems?.find(
-        itemm =>
-          itemm.link === asPath || itemm.subMenuSection?.find(subItem => subItem.link === asPath)
-      ))
-      ? setIsItemActiveState(true)
-      : setIsItemActiveState(false);
-  });
+  const isActive = true; // TODO, this can be derived directly from comparing current url with the link prop
 
   return (
     <>
