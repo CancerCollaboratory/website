@@ -8,13 +8,15 @@ const Services = () => {
   return (
     <>
       <Jumbotron data={pageData} />
-      <LateralColumn data={pageData.lateralColumn1} />
-      <LateralColumn
-        data={pageData.lateralColumn2}
-        styleBackground={utilStyles.sectionContainerBackground}
-      >
-        <List data={pageData.list1} />
-      </LateralColumn>
+      <div className={utilStyles.bodyContainer}>
+        <LateralColumn data={pageData.lateralColumn1} />
+        <LateralColumn
+          data={pageData.lateralColumn2}
+          styleBackground={utilStyles.sectionBackground}
+        >
+          <List data={pageData.list1} />
+        </LateralColumn>
+      </div>
     </>
   );
 };
