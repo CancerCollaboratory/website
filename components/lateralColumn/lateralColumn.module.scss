@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px dotted $color-light-x4-gray;
-    margin: 0px 35px;
+    width: 1170px;
 
     .leftColumnContainer {
         display: flex;
@@ -76,6 +76,8 @@
 
 @include respond-to("large") {
     .lateralColumnContainer {
+        width: 970px;
+
         .leftColumnContainer {
             .leftColumnHeader {
                 margin-bottom: 14px;
@@ -107,7 +109,7 @@
 @include respond-to("medium") {
     .lateralColumnContainer {
         flex-direction: column;
-        margin: 0px 38px;
+        width: 750px;
 
         .leftColumnContainer {
             padding: 25px 4px 0px 4px;
@@ -163,7 +165,9 @@
 
 @include respond-to("small") {
     .lateralColumnContainer {
-        margin: 0px 37px;
+        border: none;
+        padding: 0px 37px;
+        width: 100%;
 
         .leftColumnContainer {
             padding-top: 23px;
@@ -186,6 +190,7 @@
         }
 
         .rightColumnContainer {
+            border-bottom: 1px dotted $color-light-x4-gray;
             padding: 23px 4px;
 
             .rightColumnHeader {
@@ -213,7 +218,7 @@
 
 @include respond-to("extra-small") {
     .lateralColumnContainer {
-        margin: 0px 40px;
+        padding: 0px 40px;
 
         .leftColumnContainer {
             padding-top: 22px;
@@ -243,7 +248,7 @@
 
 @include respond-to("extra-extra-small") {
     .lateralColumnContainer {
-        margin: 0px 41px;
+        padding: 0px 41px;
 
         .leftColumnContainer {
             padding-top: 20px;
