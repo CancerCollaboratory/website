@@ -13,19 +13,19 @@ const NavbarLink = ({ label, isLinkExternal, link, menuItems, children }) => {
   /**
    * what are the different cases for navbarlink we have to consider?
    * - is the link internal or external?
-   * - does it have sub items ie. do we need to display the caret?
+   * - does it have sub items ie. do we need to display the caret? is it a menu?
    * - display some kind of item/child prop
    */
 
   if (isLinkExternal) {
     return (
       <a href={link} target="_blank" rel="noreferrer">
-        <div className={styleWrap}>{children}</div>
+        <div>{children}</div>
       </a>
     );
   } else {
     <Link href={link}>
-      <div className={styleWrap}>{children}</div>
+      <div>{children}</div>
     </Link>;
   }
 };
