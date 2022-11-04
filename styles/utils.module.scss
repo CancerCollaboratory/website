@@ -1,9 +1,15 @@
 @import "./colors";
 
-.itemLabel {
-    font-weight: bold;
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.sectionContainerBackground {
+.sectionBackground {
     background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 50%, white 100%);
+}
+
+.itemLabel {
+    font-weight: bold;
 }
