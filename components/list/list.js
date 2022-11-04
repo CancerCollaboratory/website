@@ -4,22 +4,28 @@ import styles from "./list.module.scss";
 const List = ({ data }) => {
   return (
     <div className={styles.listContainer}>
-      {data.preListContent && (
-        <div className={styles.preListContainer}>
-          <p className={styles.preListTitle}>
-            {data.preListContent.title}
-            <span>
-              {getCurrentNameOfMonth()} {getCurrentYear()}
-            </span>
-          </p>
-        </div>
+      {data.listHead?.title && (
+        <p className={styles.listHeadTitle}>
+          {data.listHead.title}
+          <span>
+            {getCurrentNameOfMonth()} {getCurrentYear()}
+          </span>
+        </p>
       )}
-      <ul className={styles.listBlock}>
-        <li className={styles.listItem}>
-          <h3 className={styles.listItemTitle}></h3>
-          <p className={styles.listItemSubTitle}></p>
-        </li>
-      </ul>
+      {data.listBody && (
+        <ul className={styles.listBlock}>
+          {data.listBody.map((item, index) => (
+            <li className={styles.listItem} key={index}>
+              {item.stats && (
+                <>
+                  <h3 className={styles.listItemTitle}>{item.stats.title}</h3>
+                  <p className={styles.listItemSubTitle}>{item.stats.subTitle}</p>
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
