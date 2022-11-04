@@ -6,12 +6,14 @@ const List = ({ data }) => {
   return (
     <div className={styles.listContainer}>
       {data.listHead?.title && (
-        <p className={styles.listHeadTitle}>
-          {data.listHead.title}
-          <span>
-            {getCurrentNameOfMonth()} {getCurrentYear()}
-          </span>
-        </p>
+        <div className={styles.listHeadContainer}>
+          <p className={styles.listHeadTitle}>
+            {data.listHead.title}
+            <span>
+              {getCurrentNameOfMonth()} {getCurrentYear()}
+            </span>
+          </p>
+        </div>
       )}
       {data.listBody && (
         <ul className={styles.listBlock}>
