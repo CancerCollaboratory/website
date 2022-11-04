@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import Link from "next/link";
-import Image from "next/future/image";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import styles from "../navbar/navbar.module.scss";
@@ -15,11 +14,7 @@ const NavbarLink = ({
   styleLink,
   menuItems,
   isImageWrapped,
-  imageSrcPath,
-  styleImage,
-  imageWidth,
-  imageHeight,
-  isImageHighPriority,
+  children,
 }) => {
   const { asPath } = useRouter();
   const [isItemActiveState, setIsItemActiveState] = useState(false);
@@ -42,31 +37,11 @@ const NavbarLink = ({
         isImageWrapped ? (
           isLinkExternal ? (
             <a href={link} target="_blank" rel="noreferrer">
-              <div className={styleWrap}>
-                <Image
-                  src={imageSrcPath}
-                  alt={label}
-                  priority={isImageHighPriority}
-                  className={styleImage}
-                  width={imageWidth}
-                  height={imageHeight}
-                  quality={100}
-                />
-              </div>
+              <div className={styleWrap}>{children}</div>
             </a>
           ) : (
             <Link href={link}>
-              <div className={styleWrap}>
-                <Image
-                  src={imageSrcPath}
-                  alt={label}
-                  priority={isImageHighPriority}
-                  className={styleImage}
-                  width={imageWidth}
-                  height={imageHeight}
-                  quality={100}
-                />
-              </div>
+              <div className={styleWrap}>{children}</div>
             </Link>
           )
         ) : isLinkExternal ? (
@@ -81,28 +56,10 @@ const NavbarLink = ({
       ) : isImageWrapped ? (
         isLinkExternal ? (
           <a href={link} target="_blank" rel="noreferrer">
-            <Image
-              src={imageSrcPath}
-              alt={label}
-              priority={isImageHighPriority}
-              className={styleImage}
-              width={imageWidth}
-              height={imageHeight}
-              quality={100}
-            />
+            {children}
           </a>
         ) : (
-          <Link href={link}>
-            <Image
-              src={imageSrcPath}
-              alt={label}
-              priority={isImageHighPriority}
-              className={styleImage}
-              width={imageWidth}
-              height={imageHeight}
-              quality={100}
-            />
-          </Link>
+          <Link href={link}>{children}</Link>
         )
       ) : isLinkExternal ? (
         <a href={link} target="_blank" rel="noreferrer">
