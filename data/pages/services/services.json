@@ -72,7 +72,9 @@
             {
                 "stats": {
                     "title": "Memory",
-                    "subTitle": "22 TB",
+                    "subTitle": "22 TB"
+                },
+                "secondItemInSubBlock": {
                     "hasBackgroundColor": "true"
                 }
             },
@@ -80,13 +82,21 @@
                 "stats": {
                     "title": "Local Disk",
                     "subTitle": "435 TB",
+                    "lastStatInSubBlock": {
+                        "hasBackgroundColor": "true"
+                    }
+                },
+                "secondItemInSubBlock": {
                     "hasBackgroundColor": "true"
                 }
             },
             {
                 "stats": {
                     "title": "Object Storage (Raw)",
-                    "subTitle": "10 PB"
+                    "subTitle": "10 PB",
+                    "firstStatInSubBlock": {
+                        "hasBackgroundColor": "true"
+                    }
                 }
             },
             {
@@ -98,7 +108,9 @@
             {
                 "stats": {
                     "title": "Network (Shared)",
-                    "subTitle": "10 Gbps",
+                    "subTitle": "10 Gbps"
+                },
+                "secondItemInSubBlock": {
                     "hasBackgroundColor": "true"
                 }
             }
