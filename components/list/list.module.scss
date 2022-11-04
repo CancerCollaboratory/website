@@ -17,6 +17,7 @@
             flex-direction: column;
             align-items: center;
             border: 1px solid $color-light-x5-gray;
+            background-color: white;
             margin: 0px 5px 10px 5px;
             padding: 9px;
             width: 31%;
@@ -34,11 +35,39 @@
                 font-size: 18px;
             }
         }
+
+        .firstStatItemBackground {
+            background-color: $color-light-x8-gray;
+        }
+
+        .lastStatItemBackground {
+            background-color: white;
+        }
+
+        .secondListItemBackground {
+            background-color: $color-light-x8-gray;
+        }
     }
 }
 
 //large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .listContainer {
+        .listBlock {
+            .listItem {
+                width: 32%;
+            }
+
+            .firstStatItemBackground {
+                background-color: white;
+            }
+
+            .lastStatItemBackground {
+                background-color: $color-light-x8-gray;
+            }
+        }
+    }
+}
 
 // medium: 991px
 @include respond-to("medium") {}
