@@ -17,23 +17,19 @@ const NavbarLink = ({
   children,
 }) => {
   const { asPath } = useRouter();
+  const [isItemActiveState, setIsItemActiveState] = useState(false);
 
-  const isActive = true; // TODO
-
-  if (isLinkWrapped) {
-    if (isImageWrapped) {
-      if (isLinkExternal) {
-        <a href={link} target="_blank" rel="noreferrer">
-          <div className={styleWrap}>{children}</div>
-        </a>;
-      } else {
-        <Link href={link}>
-          <div className={styleWrap}>{children}</div>
-        </Link>;
-      }
-    }
-  } else if (isImageWrapped) {
-  }
+  useEffect(() => {
+    (menuItems || asPath === data.navbarItems[4].link) &&
+    asPath !== data.navbarItems[3].link &&
+    (link === asPath ||
+      menuItems?.find(
+        itemm =>
+          itemm.link === asPath || itemm.subMenuSection?.find(subItem => subItem.link === asPath)
+      ))
+      ? setIsItemActiveState(true)
+      : setIsItemActiveState(false);
+  });
 
   return (
     <>
@@ -71,7 +67,7 @@ const NavbarLink = ({
         </a>
       ) : (
         <Link href={link}>
-          <a className={clsx(isActive ? styles.selectedNavbarItem : undefined, styleLink)}>
+          <a className={clsx(isItemActiveState ? styles.selectedNavbarItem : undefined, styleLink)}>
             {menuItems ? label + " ▾" : label}
           </a>
         </Link>
