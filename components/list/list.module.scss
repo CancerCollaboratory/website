@@ -1,33 +1,53 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .listContainer {
-    .preListContainer {
-        .preListTitle {
-            color: $color-dark-x2-gray;
-            font-size: 14px;
-        }
+    .listHeadTitle {
+        color: $color-dark-x2-gray;
+        margin: 0px 0px 10px 5px;
+        font-size: 14px;
     }
 
     .listBlock {
         display: flex;
+        flex-wrap: wrap;
 
         .listItem {
             display: flex;
             flex-direction: column;
             align-items: center;
+            border: 1px solid $color-light-x5-gray;
+            margin: 0px 5px 10px 5px;
+            padding: 9px;
+            width: 31%;
 
             .listItemTitle {
                 color: $color-dark-x4-gray;
-                margin: 5px 0px;
-                font-size: 15px;
+                margin-bottom: 5px;
                 font-weight: 600;
+                font-size: 14.5px;
             }
 
             .listItemSubTitle {
                 color: $color-dark-red;
-                margin-bottom: 5px;
-                font-size: 15px;
+                font-weight: 700;
+                font-size: 18px;
             }
         }
     }
 }
+
+//large: 1199px
+@include respond-to("large") {}
+
+// medium: 991px
+@include respond-to("medium") {}
+
+// small: 767px
+@include respond-to("small") {}
+
+// extra-small: 388px
+@include respond-to("extra-small") {}
+
+// extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
