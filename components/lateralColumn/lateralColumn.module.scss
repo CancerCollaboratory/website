@@ -4,286 +4,70 @@
 .lateralColumnContainer {
     display: flex;
     align-items: center;
-    border-bottom: 1px dotted $color-light-x4-gray;
-    width: 1170px;
 
     .leftColumnContainer {
         display: flex;
         flex-direction: column;
-        padding: 25px 40px 25px 5px;
+        padding: 25px 40px;
         width: 50%;
-
-        .leftColumnHeader {
-            margin-bottom: 15px;
-
-            .leftColumnTitle {
-                color: $color-dark-x4-gray;
-                font-size: 22px;
-            }
-        }
-
-        .leftColumnBodyText {
-            color: $color-dark-x2-gray;
-            line-height: 170%;
-            font-size: 14px;
-        }
-
-        .subTextMarginBottom {
-            margin-bottom: 10px;
-        }
     }
 
     .rightColumnContainer {
         display: flex;
         flex-direction: column;
-        padding: 25px 5px 25px 40px;
+        padding: 25px 40px;
         width: 50%;
-
-        .rightColumnHeader {
-            display: flex;
-            flex-direction: column;
-
-            .rightColumnTitle {
-                color: $color-dark-x4-gray;
-                line-height: 170%;
-                text-align: center;
-                margin-bottom: 12px;
-                font-size: 19px;
-            }
-
-            .rightColumnSubTitle {
-                color: $color-dark-x2-gray;
-                text-align: center;
-                margin-bottom: 15px;
-                font-size: 17px;
-                font-weight: 600;
-            }
-        }
-
-        .rightColumnBodyText {
-            display: flex;
-            justify-content: center;
-            color: $color-dark-x2-gray;
-            line-height: 170%;
-            font-size: 14px;
-        }
-
-        .subTextMarginBottom {
-            margin-bottom: 10px;
-        }
-    }
-}
-
-@include respond-to("large") {
-    .lateralColumnContainer {
-        width: 970px;
-
-        .leftColumnContainer {
-            .leftColumnHeader {
-                margin-bottom: 14px;
-            }
-
-            .subTextMarginBottom {
-                margin-bottom: 9px;
-            }
-        }
-
-        .rightColumnContainer {
-            .rightColumnHeader {
-                .rightColumnTitle {
-                    margin-bottom: 11px;
-                }
-
-                .rightColumnSubTitle {
-                    margin-bottom: 14px;
-                }
-            }
-
-            .subTextMarginBottom {
-                margin-bottom: 9px;
-            }
-        }
     }
 }
 
 @include respond-to("medium") {
     .lateralColumnContainer {
         flex-direction: column;
-        width: 750px;
 
         .leftColumnContainer {
-            padding: 25px 4px 0px 4px;
+            padding: 25px 42px 0px 42px;
             width: 100%;
-
-            .leftColumnHeader {
-                margin-bottom: 13px;
-
-                .leftColumnTitle {
-                    text-align: center;
-                    font-size: 21px;
-                }
-            }
-
-            .leftColumnBodyText {
-                line-height: 168%;
-                font-size: 13px;
-            }
-
-            .subTextMarginBottom {
-                margin-bottom: 8px;
-            }
         }
 
         .rightColumnContainer {
-            padding: 25px 4px;
+            padding: 25px 42px;
             width: 100%;
-
-            .rightColumnHeader {
-                .rightColumnTitle {
-                    line-height: 168%;
-                    margin-bottom: 10px;
-                    font-size: 18px;
-                }
-
-                .rightColumnSubTitle {
-                    margin-bottom: 13px;
-                    font-size: 16px;
-                }
-            }
-
-            .rightColumnBodyText {
-                line-height: 168%;
-                font-size: 13px;
-            }
-
-            .subTextMarginBottom {
-                margin-bottom: 8px;
-            }
         }
     }
 }
 
 @include respond-to("small") {
     .lateralColumnContainer {
-        border: none;
-        padding: 0px 37px;
-        width: 100%;
-
         .leftColumnContainer {
-            padding-top: 23px;
-
-            .leftColumnHeader {
-                margin-bottom: 12px;
-
-                .leftColumnTitle {
-                    font-size: 16px;
-                }
-            }
-
-            .leftColumnBodyText {
-                font-size: 12px;
-            }
-
-            .subTextMarginBottom {
-                margin-bottom: 7px;
-            }
+            padding: 23px 41px 0px 41px;
         }
 
         .rightColumnContainer {
-            border-bottom: 1px dotted $color-light-x4-gray;
-            padding: 23px 4px;
-
-            .rightColumnHeader {
-                .rightColumnTitle {
-                    margin-bottom: 9px;
-                    font-size: 15px;
-                }
-
-                .rightColumnSubTitle {
-                    margin-bottom: 12px;
-                    font-size: 14px;
-                }
-            }
-
-            .rightColumnBodyText {
-                font-size: 12px;
-            }
-
-            .subTextMarginBottom {
-                margin-bottom: 7px;
-            }
+            padding: 23px 41px;
         }
     }
 }
 
 @include respond-to("extra-small") {
     .lateralColumnContainer {
-        padding: 0px 40px;
-
         .leftColumnContainer {
-            padding-top: 22px;
-
-            .leftColumnHeader {
-                .leftColumnTitle {
-                    font-size: 15px;
-                }
-            }
+            padding: 22px 44px 0px 44px;
         }
 
         .rightColumnContainer {
-            padding: 22px 4px;
-
-            .rightColumnHeader {
-                .rightColumnTitle {
-                    font-size: 14px;
-                }
-
-                .rightColumnSubTitle {
-                    font-size: 13px;
-                }
-            }
+            padding: 22px 44px;
         }
     }
 }
 
 @include respond-to("extra-extra-small") {
     .lateralColumnContainer {
-        padding: 0px 41px;
-
         .leftColumnContainer {
-            padding-top: 20px;
-
-            .leftColumnHeader {
-                margin-bottom: 11px;
-
-                .leftColumnTitle {
-                    font-size: 14px;
-                }
-            }
-
-            .leftColumnBodyText {
-                font-size: 11px;
-            }
+            padding: 20px 45px 0px 45px;
         }
 
         .rightColumnContainer {
-            padding: 20px 4px;
-
-            .rightColumnHeader {
-                .rightColumnTitle {
-                    margin-bottom: 8px;
-                    font-size: 13px;
-                }
-
-                .rightColumnSubTitle {
-                    margin-bottom: 11px;
-                    font-size: 12px;
-                }
-            }
-
-            .rightColumnBodyText {
-                font-size: 11px;
-            }
+            padding: 20px 45px;
         }
     }
 }
