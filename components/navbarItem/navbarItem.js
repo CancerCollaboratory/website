@@ -1,10 +1,6 @@
 import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import NavbarMenu from "../navbarMenu/navbarMenu";
-import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
-import data from "../../data/components/navbar/navbar.json";
-import styles from "../navbar/navbar.module.scss";
 
 const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdownExpanded }) => {
   const { asPath } = useRouter();
@@ -26,21 +22,7 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdo
           onMouseOver={() => setIsItemMenuExpanded(true)}
           onMouseLeave={() => setIsItemMenuExpanded(false)}
         >
-          <NavbarLink
-            label={itemLabel}
-            link={itemLink}
-            styleLink={
-              asPath !== data.navbarItems[3].link &&
-              (itemLink === asPath ||
-                itemMenu?.find(
-                  item =>
-                    item.link === asPath ||
-                    item.subMenuSection?.find(subItem => subItem.link === asPath)
-                ))
-                ? styles.selectedNavbarItem
-                : undefined
-            }
-          />
+          <NavbarLink label={itemLabel} link={itemLink} menuItems={itemMenu} />
           {isItemMenuExpanded && itemMenu && (
             <NavbarMenu
               styleMenu={styles.subMenuDropdown}
@@ -52,7 +34,7 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdo
         </div>
       ) : (
         <div className={styles.expandedMenuItem} onClick={() => expandSubMenu()}>
-          <p className={styles.itemName}>{itemLabel}</p>
+          <p className={styles.itemName}>{itemLabel + " ▾"}</p>
           {isItemMenuExpanded && (
             <NavbarMenu
               styleMenu={styles.expandedSubMenuItem}

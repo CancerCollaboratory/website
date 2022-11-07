@@ -1,0 +1,40 @@
+{
+    "notActiveStatePaths": [
+        {
+            "pathName": "/"
+        },
+        {
+            "pathName": "/contact-us"
+        },
+        {
+            "pathName": "/privacy-policy"
+        },
+        {
+            "pathName": "/support/overview"
+        },
+        {
+            "pathName": "/support/getting-started"
+        },
+        {
+            "pathName": "/support/best-practices"
+        },
+        {
+            "pathName": "/support/user-guide"
+        },
+        {
+            "pathName": "/support/glossary-terms"
+        },
+        {
+            "pathName": "/support/workshops"
+        },
+        {
+            "pathName": "/support/faqs"
+        },
+        {
+            "pathName": "/support/system-status"
+        }
+    ],
+    "multiSubMenu": {
+        "pathFormat": "/research#"
+    }
+}
