@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 import NavbarLink from "../navbarLink/navbarLink";
 import { useRouter } from "next/router";
 import styles from "../navbar/navbar.module.scss";
