@@ -4,12 +4,8 @@ import styles from "./lateralColumn.module.scss";
 const LateralColumn = ({ leftColumn, rightColumn }) => {
   return (
     <div className={styles.lateralColumnContainer}>
-      <div className={styles.leftColumnContainer}>
-        <Column>{leftColumn}</Column>
-      </div>
-      <div className={styles.rightColumnContainer}>
-        <Column>{rightColumn}</Column>
-      </div>
+      <Column>{leftColumn}</Column>
+      <Column>{rightColumn}</Column>
     </div>
   );
 };
