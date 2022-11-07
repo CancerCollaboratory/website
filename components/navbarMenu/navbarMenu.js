@@ -1,6 +1,6 @@
 import React from "react";
-import ItemLink from "../itemLink/itemLink";
 import { useRouter } from "next/router";
+import ItemLink from "../navbarLink/navbarLink";
 import styles from "../navbar/navbar.module.scss";
 
 const NavbarMenu = ({ styleMenu, styleSubMenu, menuItems, hasSubMenuDivison }) => {
