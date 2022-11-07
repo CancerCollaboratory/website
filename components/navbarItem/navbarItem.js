@@ -1,6 +1,9 @@
 import EscapeOutside from "react-escape-outside";
 import ItemLink from "../itemLink/itemLink";
 import NavbarMenu from "../navbarMenu/navbarMenu";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import styles from "../navbar/navbar.module.scss";
 
 const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdownExpanded }) => {
   const { asPath } = useRouter();

@@ -1,8 +1,8 @@
 import ItemLink from "../itemLink/itemLink";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
-import mainNavbarData from "../../data/components/navbarItems.json";
-import subNavbarData from "../../data/components/subNavbar.json";
+import { useEffect, useState } from "react";
+import mainNavbarData from "../../data/components/navbar/navbar.json";
+import subNavbarData from "../../data/components/subNavbar/subNavbar.json";
 import styles from "./subNavbar.module.scss";
 
 const SubNavbar = () => {
