@@ -1,4 +1,4 @@
-import { getPageData } from "../lib/pages.js";
+import { getPageData } from "../lib/pages";
 import { attributesToProps } from "html-react-parser";
 
 const insertLink = {
