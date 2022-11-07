@@ -1,10 +1,15 @@
+import Column from "../column/column";
 import styles from "./lateralColumn.module.scss";
 
 const LateralColumn = ({ leftColumn, rightColumn }) => {
   return (
     <div className={styles.lateralColumnContainer}>
-      <div className={styles.leftColumnContainer}>{leftColumn}</div>
-      <div className={styles.rightColumnContainer}>{rightColumn}</div>
+      <div className={styles.leftColumnContainer}>
+        <Column>{leftColumn}</Column>
+      </div>
+      <div className={styles.rightColumnContainer}>
+        <Column>{rightColumn}</Column>
+      </div>
     </div>
   );
 };
