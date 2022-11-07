@@ -1,5 +1,5 @@
 import EscapeOutside from "react-escape-outside";
-import NavbarLink from "../navbarLink/navbarLink";
+import ItemLink from "../itemLink/itemLink";
 import NavbarMenu from "../navbarMenu/navbarMenu";
 
 const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdownExpanded }) => {
@@ -22,7 +22,7 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdo
           onMouseOver={() => setIsItemMenuExpanded(true)}
           onMouseLeave={() => setIsItemMenuExpanded(false)}
         >
-          <NavbarLink label={itemLabel} link={itemLink} menuItems={itemMenu} />
+          <ItemLink label={itemLabel} link={itemLink} menuItems={itemMenu} />
           {isItemMenuExpanded && itemMenu && (
             <NavbarMenu
               styleMenu={styles.subMenuDropdown}

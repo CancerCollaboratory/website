@@ -1,9 +1,9 @@
 import clsx from "clsx";
 import parse from "html-react-parser";
 import Image from "next/future/image";
-import NavbarLink from "../navbarLink/navbarLink";
+import ItemLink from "../itemLink/itemLink";
 import { micromark } from "micromark";
-import { insertLinkExternal, insertLinkInternal } from "../../lib/functions";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLinks";
 import styles from "./jumbotron.module.scss";
 
 const Jumbotron = ({ data }) => {
@@ -36,7 +36,7 @@ const Jumbotron = ({ data }) => {
                 height={52}
                 quality={100}
               />
-              <NavbarLink
+              <ItemLink
                 label={data.jumbotron.button.label}
                 isLinkWrapped={true}
                 styleWrap={styles.jumbotronButton}

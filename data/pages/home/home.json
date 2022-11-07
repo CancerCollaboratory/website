@@ -1,0 +1,84 @@
+{
+    "table": {
+        "tableHead": {
+            "title": "The Collaboratory data consists of:"
+        },
+        "tableBody": [
+            {
+                "row": [
+                    {
+                        "cellHead": {
+                            "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D)",
+                            "isLinkExternal": "true"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "5,045 donors"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "121,467 files"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "1074.25 TB"
+                        }
+                    }
+                ]
+            },
+            {
+                "row": [
+                    {
+                        "cellHead": {
+                            "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
+                            "isLinkExternal": "true"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "886 donors"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "22,200 files"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "255.57 TB"
+                        }
+                    }
+                ]
+            },
+            {
+                "row": [
+                    {
+                        "cellHead": {
+                            "title": "[Total](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22,%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
+                            "isLinkExternal": "true"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "5,931 donors"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "143,667 files"
+                        }
+                    },
+                    {
+                        "cellBody": {
+                            "content": "1329.83 TB"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

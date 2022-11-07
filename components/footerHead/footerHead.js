@@ -1,17 +1,14 @@
 import React from "react";
-import NavbarLink from "../navbarLink/navbarLink";
+import ItemLink from "../itemLink/itemLink";
+import { getCurrentYear } from "../../lib/functions/timeValues";
 import styles from "../footer/footer.module.scss";
 
 const FooterHead = ({ headItem }) => {
-  function getCurrentYear() {
-    return new Date().getFullYear();
-  }
-
   return (
     <>
       {headItem.logo ? (
         <div className={styles.footerLogoContainer}>
-          <NavbarLink
+          <ItemLink
             label={headItem.logo.label}
             isLinkExternal={true}
             link={headItem.logo.link}
@@ -31,7 +28,7 @@ const FooterHead = ({ headItem }) => {
           <div className={styles.headLinksContainer}>
             {headItem.links.map((linkItem, index) => (
               <React.Fragment key={index}>
-                <NavbarLink
+                <ItemLink
                   label={linkItem.label}
                   isLinkExternal={linkItem.isLinkExternal === "true"}
                   link={linkItem.link}

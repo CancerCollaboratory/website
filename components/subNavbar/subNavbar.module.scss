@@ -5,8 +5,8 @@
     display: flex;
     list-style: none;
     justify-content: center;
-    background-color: $color-light-x4-gray;
-    border-bottom: 1px solid $color-light-x6-gray;
+    background-color: $color-light-x5-gray;
+    border-bottom: 1px solid $color-light-x7-gray;
     padding: 10.1px 0px;
 
     li {
@@ -16,7 +16,7 @@
             display: block;
             color: $color-dark-x4-gray;
             text-decoration: none;
-            border-left: 3px solid $color-light-x4-gray;
+            border-left: 3px solid $color-light-x5-gray;
             padding-left: 9.25px;
             font-weight: 500;
             font-size: 13px;

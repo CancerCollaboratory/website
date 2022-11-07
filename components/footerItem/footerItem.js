@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import NavbarLink from "../navbarLink/navbarLink";
+import ItemLink from "../itemLink/itemLink";
 import styles from "../footer/footer.module.scss";
 import utilStyles from "../../styles/utils.module.scss";
 
@@ -11,7 +11,7 @@ const FooterItem = ({ label, labelLink, footerItem }) => {
         footerItem.subItems ? styles.footerItemRightBorder : styles.resetFooterItemMargin
       )}
     >
-      <NavbarLink
+      <ItemLink
         label={label}
         link={labelLink}
         styleLink={clsx(
@@ -29,7 +29,7 @@ const FooterItem = ({ label, labelLink, footerItem }) => {
           {footerItem.subItems?.map((subItem, subItemIndex) =>
             !subItem?.column ? (
               <li key={subItemIndex}>
-                <NavbarLink
+                <ItemLink
                   label={subItem.label}
                   link={subItem.link}
                   styleLink={subItem.lastSubItem && styles.resetInternalMargins}
@@ -42,7 +42,7 @@ const FooterItem = ({ label, labelLink, footerItem }) => {
               >
                 {subItem.column.map((columnItem, columnIndex) => (
                   <li key={columnIndex}>
-                    <NavbarLink
+                    <ItemLink
                       label={columnItem.label}
                       link={columnItem.link}
                       styleLink={columnItem.lastSubItem && styles.resetInternalMargins}

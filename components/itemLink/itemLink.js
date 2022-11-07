@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import styles from "../navbar/navbar.module.scss";
 
-const NavbarLink = ({
+const ItemLink = ({
   label,
   isLinkWrapped,
   styleWrap,
@@ -115,4 +115,4 @@ const NavbarLink = ({
   );
 };
 
-export default NavbarLink;
+export default ItemLink;
