@@ -4,70 +4,29 @@
 .lateralColumnContainer {
     display: flex;
     align-items: center;
-
-    .leftColumnContainer {
-        display: flex;
-        flex-direction: column;
-        padding: 25px 40px;
-        width: 50%;
-    }
-
-    .rightColumnContainer {
-        display: flex;
-        flex-direction: column;
-        padding: 25px 40px;
-        width: 50%;
-    }
 }
 
 @include respond-to("medium") {
     .lateralColumnContainer {
         flex-direction: column;
-
-        .leftColumnContainer {
-            padding: 25px 42px 0px 42px;
-            width: 100%;
-        }
-
-        .rightColumnContainer {
-            padding: 25px 42px;
-            width: 100%;
-        }
+        padding: 12.5px 0px;
     }
 }
 
 @include respond-to("small") {
     .lateralColumnContainer {
-        .leftColumnContainer {
-            padding: 23px 41px 0px 41px;
-        }
-
-        .rightColumnContainer {
-            padding: 23px 41px;
-        }
+        padding: 11.5px 0px;
     }
 }
 
 @include respond-to("extra-small") {
     .lateralColumnContainer {
-        .leftColumnContainer {
-            padding: 22px 44px 0px 44px;
-        }
-
-        .rightColumnContainer {
-            padding: 22px 44px;
-        }
+        padding: 11px 0px;
     }
 }
 
 @include respond-to("extra-extra-small") {
     .lateralColumnContainer {
-        .leftColumnContainer {
-            padding: 20px 45px 0px 45px;
-        }
-
-        .rightColumnContainer {
-            padding: 20px 45px;
-        }
+        padding: 10px 0px;
     }
 }
