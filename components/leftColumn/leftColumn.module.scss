@@ -1,3 +1,75 @@
-.leftColumnContainer {
-    display: flex;
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.header {
+    margin-bottom: 15px;
+
+    .title {
+        color: $color-dark-x4-gray;
+        font-size: 22px;
+    }
+}
+
+.bodyText {
+    color: $color-dark-x2-gray;
+    line-height: 170%;
+    font-size: 14px;
+}
+
+@include respond-to("large") {
+    .header {
+        margin-bottom: 14px;
+    }
+}
+
+@include respond-to("medium") {
+    .header {
+        margin-bottom: 13px;
+
+        .title {
+            text-align: center;
+            font-size: 21px;
+        }
+    }
+
+    .bodyText {
+        line-height: 168%;
+        font-size: 13px;
+    }
+}
+
+@include respond-to("small") {
+    .header {
+        margin-bottom: 12px;
+
+        .title {
+            font-size: 16px;
+        }
+    }
+
+    .bodyText {
+        font-size: 12px;
+    }
+}
+
+@include respond-to("extra-small") {
+    .header {
+        .title {
+            font-size: 15px;
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .header {
+        margin-bottom: 11px;
+
+        .title {
+            font-size: 14px;
+        }
+    }
+
+    .bodyText {
+        font-size: 11px;
+    }
 }
