@@ -6,10 +6,19 @@
     align-items: center;
 }
 
+.bottomBorder {
+    border-bottom: 1px dotted $color-light-x4-gray;
+    margin: 0px 35px;
+}
+
 @include respond-to("medium") {
     .lateralColumnContainer {
         flex-direction: column;
         padding: 12.5px 0px;
+    }
+
+    .bottomBorder {
+        margin: 0px 37px;
     }
 }
 
@@ -17,16 +26,28 @@
     .lateralColumnContainer {
         padding: 11.5px 0px;
     }
+
+    .bottomBorder {
+        margin: 0px 36px;
+    }
 }
 
 @include respond-to("extra-small") {
     .lateralColumnContainer {
         padding: 11px 0px;
     }
+
+    .bottomBorder {
+        margin: 0px 39px;
+    }
 }
 
 @include respond-to("extra-extra-small") {
     .lateralColumnContainer {
         padding: 10px 0px;
+    }
+
+    .bottomBorder {
+        margin: 0px 40px;
     }
 }
