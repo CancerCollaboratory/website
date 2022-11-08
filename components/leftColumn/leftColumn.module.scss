@@ -2,7 +2,7 @@
 @import "../../styles/mixins";
 
 .header {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 
     .title {
         color: $color-dark-x4-gray;
@@ -12,20 +12,19 @@
 
 .bodyText {
     color: $color-dark-x2-gray;
+    margin-top: 10px;
     line-height: 170%;
     font-size: 14px;
 }
 
 @include respond-to("large") {
-    .header {
-        margin-bottom: 14px;
+    .bodyText {
+        margin-top: 9px;
     }
 }
 
 @include respond-to("medium") {
     .header {
-        margin-bottom: 13px;
-
         .title {
             text-align: center;
             font-size: 21px;
@@ -33,6 +32,7 @@
     }
 
     .bodyText {
+        margin-top: 8px;
         line-height: 168%;
         font-size: 13px;
     }
@@ -40,14 +40,13 @@
 
 @include respond-to("small") {
     .header {
-        margin-bottom: 12px;
-
         .title {
             font-size: 16px;
         }
     }
 
     .bodyText {
+        margin-top: 7px;
         font-size: 12px;
     }
 }
