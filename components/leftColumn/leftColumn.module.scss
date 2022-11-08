@@ -1,13 +1,11 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-.header {
-    margin-bottom: 5px;
 
-    .title {
-        color: $color-dark-x4-gray;
-        font-size: 22px;
-    }
+.title {
+    margin-bottom: 5px;
+    color: $color-dark-x4-gray;
+    font-size: 22px;
 }
 
 .bodyText {
@@ -24,11 +22,9 @@
 }
 
 @include respond-to("medium") {
-    .header {
-        .title {
-            text-align: center;
-            font-size: 21px;
-        }
+    .title {
+        text-align: center;
+        font-size: 21px;
     }
 
     .bodyText {
@@ -39,10 +35,8 @@
 }
 
 @include respond-to("small") {
-    .header {
-        .title {
-            font-size: 16px;
-        }
+    .title {
+        font-size: 16px;
     }
 
     .bodyText {
@@ -52,20 +46,15 @@
 }
 
 @include respond-to("extra-small") {
-    .header {
-        .title {
-            font-size: 15px;
-        }
+    .title {
+        font-size: 15px;
     }
 }
 
 @include respond-to("extra-extra-small") {
-    .header {
-        margin-bottom: 11px;
-
-        .title {
-            font-size: 14px;
-        }
+    .title {
+        margin-bottom: 4px;
+        font-size: 14px;
     }
 
     .bodyText {
