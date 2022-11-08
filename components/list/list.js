@@ -2,39 +2,39 @@ import clsx from "clsx";
 import { getCurrentNameOfMonth, getCurrentYear } from "../../lib/functions/timeValues";
 import styles from "./list.module.scss";
 
-const List = ({ data }) => {
+const List = ({ title, body }) => {
   return (
     <div className={styles.listContainer}>
-      {data.listHead?.title && (
+      {title && (
         <div className={styles.listHeadContainer}>
           <p className={styles.listHeadTitle}>
-            {data.listHead.title}
+            {title}
             <span>
               {getCurrentNameOfMonth()} {getCurrentYear()}
             </span>
           </p>
         </div>
       )}
-      {data.listBody && (
+      {body && (
         <ul className={styles.listBlock}>
-          {data.listBody.map((item, index) => (
+          {body.map((item, index) => (
             <li
               className={clsx(
                 styles.listItem,
-                item.stats?.lastStatInSubBlock?.hasBackgroundColor
+                item.stat?.lastStatInSubBlock
                   ? styles.lastStatItemBackground
-                  : item.stats?.firstStatInSubBlock?.hasBackgroundColor
+                  : item.stat?.firstStatInSubBlock
                   ? styles.firstStatItemBackground
-                  : item.secondItemInSubBlock?.hasBackgroundColor
+                  : item.hasBackgroundColor
                   ? styles.secondListItemBackground
                   : undefined
               )}
               key={index}
             >
-              {item.stats && (
+              {item.stat && (
                 <>
-                  <h3 className={styles.listItemTitle}>{item.stats.title}</h3>
-                  <p className={styles.listItemSubTitle}>{item.stats.subTitle}</p>
+                  <h3 className={styles.listItemTitle}>{item.stat.title}</h3>
+                  <p className={styles.listItemSubTitle}>{item.stat.subTitle}</p>
                 </>
               )}
             </li>
