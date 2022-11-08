@@ -8,111 +8,77 @@
     },
     "lateralColumn1": {
         "leftColumn": {
-            "header": {
-                "title": "Cloud Infrastructure",
-                "hasImage": "true"
-            },
-            "body": {
-                "text": [
-                    {
-                        "subText": "The Collaboratory hosts ICGC BAM, VCF and other types of protected datasets, as well as compute capabilities and Docker-based analysis tools for use by its research community. One of them main goals of the Collaboratory project is to remove many of the barriers that prevent researchers from using the ICGC's vast genomic database, because the large size of the ICGC datasets means that they can take months to download and analyzing them requires computing power that many research groups do not have."
-                    },
-                    {
-                        "subText": "This will allow scientists to access and analyze ICGC datasets through Collaboratory’s cloud computing platform, enhancing collaboration and accelerating the development of new tools and treatments for cancer patients.",
-                        "isLastSubText": "true"
-                    }
-                ]
-            }
+            "title": "Cloud Infrastructure",
+            "body": [
+                {
+                    "text": "The Collaboratory hosts ICGC BAM, VCF and other types of protected datasets, as well as compute capabilities and Docker-based analysis tools for use by its research community. One of them main goals of the Collaboratory project is to remove many of the barriers that prevent researchers from using the ICGC's vast genomic database, because the large size of the ICGC datasets means that they can take months to download and analyzing them requires computing power that many research groups do not have."
+                },
+                {
+                    "text": "This will allow scientists to access and analyze ICGC datasets through Collaboratory’s cloud computing platform, enhancing collaboration and accelerating the development of new tools and treatments for cancer patients."
+                }
+            ]
         },
         "rightColumn": {
-            "header": {
-                "title": "Collaboratory Data Repository: Donor Distribution by Primary Site",
-                "subTitle": "39 projects and 17 primary sites"
-            },
-            "body": {
-                "text": [
-                    {
-                        "subText": "This is some temporary text.",
-                        "isLastSubText": "true"
-                    }
-                ]
-            }
+            "title": "Collaboratory Data Repository: Donor Distribution by Primary Site",
+            "subTitle": "39 projects and 17 primary sites"
         }
     },
     "lateralColumn2": {
         "leftColumn": {
-            "header": {
-                "title": "Cloud Resources",
-                "hasImage": "true"
-            },
-            "body": {
-                "text": [
-                    {
-                        "subText": "Although most of the ICGC datasets are stored both in AWS S3 and Collaboratory, some research projects only allowed their collected data to be stored in non-commercial public cloud environments, so Collaboratory was a perfect place to store them."
-                    },
-                    {
-                        "subText": "Because Collaboratory was custom-built for cancer research, its physical nodes have generous amounts of local storage potentially offering better performing disk access as well as better CPU/memory ratios. The proximity to the object storage storing the large datasets means also fast downloads and decreased workflow runtimes.",
-                        "isLastSubText": "true"
-                    }
-                ]
-            }
+            "title": "Cloud Resources",
+            "body": [
+                {
+                    "text": "Although most of the ICGC datasets are stored both in AWS S3 and Collaboratory, some research projects only allowed their collected data to be stored in non-commercial public cloud environments, so Collaboratory was a perfect place to store them."
+                },
+                {
+                    "text": "Because Collaboratory was custom-built for cancer research, its physical nodes have generous amounts of local storage potentially offering better performing disk access as well as better CPU/memory ratios. The proximity to the object storage storing the large datasets means also fast downloads and decreased workflow runtimes."
+                }
+            ]
         }
     },
-    "list1": {
-        "listHead": {
-            "title": "As of "
-        },
-        "listBody": [
+    "list": {
+        "title": "As of ",
+        "body": [
             {
-                "stats": {
+                "stat": {
                     "title": "CPU Cores",
                     "subTitle": "3552"
                 }
             },
             {
-                "stats": {
+                "stat": {
                     "title": "Memory",
                     "subTitle": "22 TB"
                 },
-                "secondItemInSubBlock": {
-                    "hasBackgroundColor": "true"
-                }
+                "hasBackgroundColor": "true"
             },
             {
-                "stats": {
+                "stat": {
                     "title": "Local Disk",
                     "subTitle": "435 TB",
-                    "lastStatInSubBlock": {
-                        "hasBackgroundColor": "true"
-                    }
+                    "lastStatInSubBlock": "true"
                 },
-                "secondItemInSubBlock": {
-                    "hasBackgroundColor": "true"
-                }
+                "hasBackgroundColor": "true"
             },
             {
-                "stats": {
+                "stat": {
                     "title": "Object Storage (Raw)",
                     "subTitle": "10 PB",
-                    "firstStatInSubBlock": {
-                        "hasBackgroundColor": "true"
-                    }
+                    "firstStatInSubBlock": "true"
                 }
             },
             {
-                "stats": {
+                "stat": {
                     "title": "Block Storage",
                     "subTitle": "60 TB"
                 }
             },
             {
-                "stats": {
+                "stat": {
                     "title": "Network (Shared)",
                     "subTitle": "10 Gbps"
                 },
-                "secondItemInSubBlock": {
-                    "hasBackgroundColor": "true"
-                }
+                "hasBackgroundColor": "true"
             }
         ]
     }
