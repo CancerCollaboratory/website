@@ -30,7 +30,6 @@ const SubNavbar = () => {
           {mainNavbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map(
             (item, index) => (
               <li key={index}>
-                {console.log(item.link)}
                 <NavbarLink
                   label={item.label}
                   link={item.link}
