@@ -145,7 +145,7 @@
                     }
 
                     .subMenuDivision {
-                        border-bottom: 1px solid $color-light-x8-gray;
+                        border-bottom: 1px solid $color-light-x9-gray;
                         margin-bottom: 5px;
                         width: 100%;
                     }
@@ -392,13 +392,13 @@
                         &:hover {
                             .itemName {
                                 &:hover {
-                                    background-color: $color-light-x7-gray;
+                                    background-color: $color-light-x8-gray;
                                     color: $color-dark-red;
                                 }
                             }
 
                             .noSubMenu {
-                                background-color: $color-light-x7-gray;
+                                background-color: $color-light-x8-gray;
                                 color: $color-dark-red;
                             }
                         }
@@ -415,7 +415,7 @@
                                 font-size: 13.5px;
 
                                 &:hover {
-                                    background-color: $color-light-x7-gray;
+                                    background-color: $color-light-x8-gray;
                                     color: $color-dark-red;
                                 }
                             }
