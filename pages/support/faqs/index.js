@@ -1,4 +1,4 @@
-import SupportNav from "../../../components/SupportNav/supportNav";
+import SupportNav from "../../../components/supportNav/supportNav";
 
 const FrequentlyAskedQuestions = () => {
   return <SupportNav />;
