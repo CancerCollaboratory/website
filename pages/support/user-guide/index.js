@@ -1,5 +1,7 @@
+import SupportNav from "../../../components/SupportNav/supportNav";
+
 const UserGuide = () => {
-  return <></>;
+  return <SupportNav />;
 };
 
 export default UserGuide;

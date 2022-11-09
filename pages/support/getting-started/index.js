@@ -1,5 +1,7 @@
+import SupportNav from "../../../components/SupportNav/supportNav";
+
 const GettingStarted = () => {
-  return <></>;
+  return <SupportNav />;
 };
 
 export default GettingStarted;

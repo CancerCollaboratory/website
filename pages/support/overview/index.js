@@ -1,5 +1,7 @@
+import SupportNav from "../../../components/SupportNav/supportNav";
+
 const SupportOverview = () => {
-  return <></>;
+  return <SupportNav />;
 };
 
 export default SupportOverview;
