@@ -1,5 +1,7 @@
+import SupportNav from "../../../components/supportNav/supportNav";
+
 const FrequentlyAskedQuestions = () => {
-  return <></>;
+  return <SupportNav />;
 };
 
 export default FrequentlyAskedQuestions;

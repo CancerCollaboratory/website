@@ -33,7 +33,7 @@ const NavbarItem = ({
           onMouseOver={() => setIsItemMenuExpanded(true)}
           onMouseLeave={() => setIsItemMenuExpanded(false)}
         >
-          <NavbarLink label={itemLabel} link={itemLink} />
+          <NavbarLink label={itemLabel} link={itemLink} menuItems={itemMenu} />
           {isItemMenuExpanded && itemMenu && (
             <NavbarMenu
               styleMenu={styleItemMenu}
@@ -45,7 +45,7 @@ const NavbarItem = ({
         </div>
       ) : (
         <div className={styles.expandedMenuItem} onClick={() => expandSubMenu()}>
-          <p className={styles.itemName}>{itemLabel}</p>
+          <p className={styles.itemName}>{itemLabel + " ▾"}</p>
           {isItemMenuExpanded && (
             <NavbarMenu
               styleMenu={styleItemMenu}

@@ -5,7 +5,7 @@ import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";
-import data from "../../content/components/navbarItems.json";
+import data from "../../data/components/navbarItems.json";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
@@ -54,8 +54,8 @@ const Navbar = () => {
             isImageWrapped={true}
             imageSrcPath={data.websiteLogo.srcPath}
             styleImage={styles.siteLogo}
-            imageWidth={data.websiteLogo.width}
-            imageHeight={data.websiteLogo.height}
+            imageWidth={275}
+            imageHeight={112}
             isImageHighPriority={true}
           />
           <div
@@ -68,14 +68,14 @@ const Navbar = () => {
             <span className={styles.iconBar}></span>
           </div>
           <div className={styles.navbarItemsLine}>
-            {data.mainNavbarItems.map((item, index) => (
+            {data.navbarItems.map((item, index) => (
               <NavbarItem
                 itemLabel={item.label}
                 isItemlLink={true}
                 itemLink={item.link}
                 styleItemMenu={styles.subMenuDropdown}
                 styleItemSubMenu={styles.innerSubMenu}
-                itemMenu={item?.navbarSubMenuItems}
+                itemMenu={item.navbarSubMenuItems}
                 key={index}
               />
             ))}
@@ -89,7 +89,7 @@ const Navbar = () => {
               styleInput={styles.expandedSearchBar}
             />
             <div className={styles.wrapExpandedMenu}>
-              {data.mainNavbarItems.map((item, index) =>
+              {data.navbarItems.map((item, index) =>
                 item.navbarSubMenuItems ? (
                   <NavbarItem
                     itemLabel={item.label}

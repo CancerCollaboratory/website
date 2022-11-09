@@ -1,5 +1,7 @@
+import SupportNav from "../../../components/supportNav/supportNav";
+
 const SystemStatus = () => {
-  return <></>;
+  return <SupportNav />;
 };
 
 export default SystemStatus;

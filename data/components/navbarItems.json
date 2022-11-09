@@ -1,9 +1,8 @@
 {
-    "mainNavbarItems": [
+    "navbarItems": [
         {
-            "label": "About Us ▾",
+            "label": "About Us",
             "link": "/about-collaboratory",
-            "subMenuId": "subMenuAbout",
             "navbarSubMenuItems": [
                 {
                     "label": "About the Collaboratory",
@@ -20,9 +19,8 @@
             ]
         },
         {
-            "label": "Our Services ▾",
+            "label": "Our Services",
             "link": "/services",
-            "subMenuId": "subMenuServices",
             "navbarSubMenuItems": [
                 {
                     "label": "Our Services",
@@ -43,9 +41,8 @@
             ]
         },
         {
-            "label": "Our Research ▾",
+            "label": "Our Research",
             "link": "/research",
-            "subMenuId": "subMenuResearch",
             "navbarSubMenuItems": [
                 {
                     "label": "Technology Development Cores",
@@ -102,9 +99,8 @@
             ]
         },
         {
-            "label": "Support ▾",
+            "label": "Support",
             "link": "/support/overview",
-            "subMenuId": "subMenuSupport",
             "navbarSubMenuItems": [
                 {
                     "label": "Getting Started",
@@ -172,8 +168,6 @@
     "websiteLogo": {
         "srcPath": "/assets/navbar/logo-cancer-genome-collaboratory.svg",
         "label": "Cancer Genome Collaboratory",
-        "link": "/",
-        "width": "275",
-        "height": "112"
+        "link": "/"
     }
 }
