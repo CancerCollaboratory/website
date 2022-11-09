@@ -1,0 +1,173 @@
+{
+    "navbarItems": [
+        {
+            "label": "About Us",
+            "link": "/about-collaboratory",
+            "navbarSubMenuItems": [
+                {
+                    "label": "About the Collaboratory",
+                    "link": "/about-collaboratory"
+                },
+                {
+                    "label": "Our Team",
+                    "link": "/about-team"
+                },
+                {
+                    "label": "Funders & Collaborators",
+                    "link": "/about-funders-collaborators"
+                }
+            ]
+        },
+        {
+            "label": "Our Services",
+            "link": "/services",
+            "navbarSubMenuItems": [
+                {
+                    "label": "Our Services",
+                    "link": "/services"
+                },
+                {
+                    "label": "Cloud Resources",
+                    "link": "/services-cloud-resources"
+                },
+                {
+                    "label": "Dockstore",
+                    "link": "/services-dockstore"
+                },
+                {
+                    "label": "Request an Account",
+                    "link": "/services-request-account"
+                }
+            ]
+        },
+        {
+            "label": "Our Research",
+            "link": "/research",
+            "navbarSubMenuItems": [
+                {
+                    "label": "Technology Development Cores",
+                    "link": "/research#technology_development_cores",
+                    "subMenuSection": [
+                        {
+                            "label": "Hardware & Software Infrastructure",
+                            "link": "/research/hardware-software-infrastructure"
+                        },
+                        {
+                            "label": "Benchmarking",
+                            "link": "/research/benchmarking"
+                        },
+                        {
+                            "label": "Training & Outreach",
+                            "link": "/research/training-outreach"
+                        },
+                        {
+                            "label": "Management & Finance",
+                            "link": "/research/management-finance"
+                        }
+                    ]
+                },
+                {
+                    "label": "Research Modules",
+                    "link": "/research#research_modules",
+                    "subMenuSection": [
+                        {
+                            "label": "Indexing, Search & Compression",
+                            "link": "/research/indexing-search-compression"
+                        },
+                        {
+                            "label": "Variant Identification & Consequence",
+                            "link": "/research/variant-identification-consequence"
+                        },
+                        {
+                            "label": "Tumour Heterogeneity & Evolution",
+                            "link": "/research/tumour-heterogenity-evolution"
+                        },
+                        {
+                            "label": "Drug Target Identification",
+                            "link": "/research/drug-target-identification"
+                        },
+                        {
+                            "label": "Bioethics & Protection of PHI",
+                            "link": "/research/bioethics-protection-phi"
+                        }
+                    ]
+                },
+                {
+                    "label": "Publications & Presentations",
+                    "link": "/publications-presentations"
+                }
+            ]
+        },
+        {
+            "label": "Support",
+            "link": "/support/overview",
+            "navbarSubMenuItems": [
+                {
+                    "label": "Getting Started",
+                    "link": "/support/getting-started"
+                },
+                {
+                    "label": "Best Practices",
+                    "link": "/support/best-practices"
+                },
+                {
+                    "label": "User Guide",
+                    "link": "/support/user-guide"
+                },
+                {
+                    "label": "Glossary of Terms",
+                    "link": "/support/glossary-terms"
+                },
+                {
+                    "label": "Workshops",
+                    "link": "/support/workshops"
+                },
+                {
+                    "label": "FAQs",
+                    "link": "/support/faqs"
+                },
+                {
+                    "label": "System Status",
+                    "link": "/support/system-status"
+                }
+            ]
+        },
+        {
+            "label": "Contact Us",
+            "link": "/contact-us"
+        }
+    ],
+    "headerList": {
+        "headerTop": [
+            {
+                "label": "Request an Account",
+                "link": "/services-request-account"
+            },
+            {
+                "label": "Getting Started",
+                "link": "/support/getting-started"
+            }
+        ],
+        "headerBottom": [
+            {
+                "label": "Console",
+                "link": "https://console.cancercollaboratory.org",
+                "hasBorder": "true"
+            },
+            {
+                "label": "Usage and Billing",
+                "link": "https://billing.cancercollaboratory.org",
+                "hasBorder": "true"
+            },
+            {
+                "label": "Repository",
+                "link": "https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D"
+            }
+        ]
+    },
+    "websiteLogo": {
+        "srcPath": "/assets/navbar/logo-cancer-genome-collaboratory.svg",
+        "label": "Cancer Genome Collaboratory",
+        "link": "/"
+    }
+}
