@@ -1,5 +1,7 @@
+import SupportNav from "../../../components/supportNav/supportNav";
+
 const Workshops = () => {
-  return <></>;
+  return <SupportNav />;
 };
 
 export default Workshops;

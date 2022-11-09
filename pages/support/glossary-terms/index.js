@@ -1,5 +1,7 @@
+import SupportNav from "../../../components/supportNav/supportNav";
+
 const GlossaryOfTerms = () => {
-  return <></>;
+  return <SupportNav />;
 };
 
 export default GlossaryOfTerms;

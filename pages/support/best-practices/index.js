@@ -1,5 +1,7 @@
+import SupportNav from "../../../components/supportNav/supportNav";
+
 const BestPractices = () => {
-  return <></>;
+  return <SupportNav />;
 };
 
 export default BestPractices;

@@ -1,0 +1,21 @@
+@import "../../styles/mixins";
+@import "../../styles/colors";
+
+.navContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 25px 0px 50px;
+    border-right: 1px solid $color-light-x4-gray;
+    background-image: linear-gradient(to right, white 0%, #f4f4f4 100%);
+    width: max-content;
+
+    a {
+        display: block;
+        color: $color-dark-x3-gray;
+        margin-bottom: 10px;
+
+        &:hover {
+            color: $color-dark-red;
+        }
+    }
+}

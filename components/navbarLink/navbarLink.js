@@ -1,5 +1,9 @@
+import clsx from "clsx";
 import Link from "next/link";
 import Image from "next/future/image";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import styles from "../navbar/navbar.module.scss";
 
 const NavbarLink = ({
   label,
@@ -8,6 +12,7 @@ const NavbarLink = ({
   isLinkExternal,
   link,
   styleLink,
+  menuItems,
   isImageWrapped,
   imageSrcPath,
   styleImage,
@@ -15,6 +20,18 @@ const NavbarLink = ({
   imageWidth,
   imageHeight,
 }) => {
+  const { asPath } = useRouter();
+  const [isItemActiveState, setIsItemActiveState] = useState(false);
+
+  useEffect(() => {
+    link === asPath ||
+    menuItems?.find(
+      item => item.link === asPath || item.subMenuSection?.find(subItem => subItem.link === asPath)
+    )
+      ? setIsItemActiveState(true)
+      : setIsItemActiveState(false);
+  }, [link, asPath, menuItems]);
+
   return (
     <>
       {isLinkWrapped ? (
@@ -89,7 +106,9 @@ const NavbarLink = ({
         </a>
       ) : (
         <Link href={link}>
-          <a className={styleLink}>{label}</a>
+          <a className={clsx(isItemActiveState ? styles.selectedNavbarItem : undefined, styleLink)}>
+            {menuItems ? label + " ▾" : label}
+          </a>
         </Link>
       )}
     </>
