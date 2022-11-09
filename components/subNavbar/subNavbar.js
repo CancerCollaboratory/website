@@ -1,51 +1,47 @@
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
 import NavbarLink from "../navbarLink/navbarLink";
-import mainNavbarData from "../../data/components/navbarItems.json";
-import subNavbarData from "../../data/components/subNavbar.json";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import navbarData from "../../data/components/navbarItems.json";
 import styles from "./subNavbar.module.scss";
 
 const SubNavbar = () => {
   const { asPath } = useRouter();
+  const [showSubNav, setShowSubNav] = useState(0);
   const [activeNavbarItemIndex, setActiveNavbarItemIndex] = useState(0);
+  const notActiveStatePaths = ["/", "/contact-us", "/privacy-policy"];
 
-  function getNavbarItemIndex(pagePath) {
-    mainNavbarData.navbarItems.map((item, index) =>
+  function getNavbarItemIndex(route) {
+    navbarData.navbarItems.map((item, index) =>
       item.navbarSubMenuItems?.map(
         subItem =>
-          (subItem.link === pagePath || item.link === pagePath) && setActiveNavbarItemIndex(index)
+          (subItem.link === route || item.link === route) && setActiveNavbarItemIndex(index)
       )
     );
   }
 
   useEffect(() => {
-    !subNavbarData.notActiveStatePaths.find(item => item.pathName === asPath) &&
-      getNavbarItemIndex(asPath);
+    setShowSubNav(!notActiveStatePaths.includes(asPath) && !asPath.includes("/support"));
+    showSubNav && getNavbarItemIndex(asPath);
   });
 
   return (
     <>
-      {!subNavbarData.notActiveStatePaths.find(item => item.pathName === asPath) && (
+      {showSubNav && (
         <ul className={styles.subNavbarContainer}>
-          {mainNavbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map(
-            (item, index) => (
-              <li key={index}>
-                <NavbarLink
-                  label={item.label}
-                  link={item.link}
-                  styleLink={
-                    item.link === asPath ||
-                    item.subMenuSection?.find(subItem => subItem.link === asPath) ||
-                    item.link.includes(asPath + "#") ||
-                    (asPath.includes(subNavbarData.multiSubMenu.pathFormat) &&
-                      item.link.includes(subNavbarData.multiSubMenu.pathFormat))
-                      ? styles.selectedSubNavbarItem
-                      : undefined
-                  }
-                />
-              </li>
-            )
-          )}
+          {navbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
+            <li key={index}>
+              <NavbarLink
+                label={item.label}
+                link={item.link}
+                styleLink={
+                  item.link === asPath ||
+                  item.subMenuSection?.find(subItem => subItem.link === asPath)
+                    ? styles.selectedSubNavbarItem
+                    : undefined
+                }
+              />
+            </li>
+          ))}
         </ul>
       )}
     </>
