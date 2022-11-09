@@ -30,7 +30,7 @@ const NavbarLink = ({
     )
       ? setIsItemActiveState(true)
       : setIsItemActiveState(false);
-  });
+  }, [link, asPath, menuItems]);
 
   return (
     <>
