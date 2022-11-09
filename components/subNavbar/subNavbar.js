@@ -6,27 +6,47 @@ import styles from "./subNavbar.module.scss";
 
 const SubNavbar = () => {
   const { asPath } = useRouter();
-  const [showSubNav, setShowSubNav] = useState(0);
-  const [activeNavbarItemIndex, setActiveNavbarItemIndex] = useState(0);
-  const notActiveStatePaths = ["/", "/contact-us", "/privacy-policy"];
+  const [activeNavbarItemIndex, setActiveNavbarItemIndex] = useState(-1);
 
   function getNavbarItemIndex(route) {
-    navbarData.navbarItems.map((item, index) =>
-      item.navbarSubMenuItems?.map(
-        subItem =>
-          (subItem.link === route || item.link === route) && setActiveNavbarItemIndex(index)
-      )
-    );
+    const navbarItems = navbarData.navbarItems;
+    setActiveNavbarItemIndex(-1);
+
+    for (let i = 0; i < navbarItems.length; i++) {
+      if (navbarItems[i].link === route) {
+        setActiveNavbarItemIndex(i);
+        break;
+      }
+      if (navbarItems[i].navbarSubMenuItems) {
+        for (let j = 0; j < navbarItems[i].navbarSubMenuItems.length; j++) {
+          if (navbarItems[i].navbarSubMenuItems[j].link === route) {
+            setActiveNavbarItemIndex(i);
+            break;
+          }
+          if (navbarItems[i].navbarSubMenuItems[j]?.subMenuSection) {
+            for (let k = 0; k < navbarItems[i].navbarSubMenuItems[j].subMenuSection.length; k++) {
+              if (navbarItems[i].navbarSubMenuItems[j].subMenuSection[k].link === route) {
+                setActiveNavbarItemIndex(i);
+                break;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  function doesActiveItemHaveSubMenu() {
+    return !!navbarData.navbarItems[activeNavbarItemIndex]?.navbarSubMenuItems;
   }
 
   useEffect(() => {
-    setShowSubNav(!notActiveStatePaths.includes(asPath) && !asPath.includes("/support"));
-    showSubNav && getNavbarItemIndex(asPath);
-  });
+    getNavbarItemIndex(asPath);
+  }, [asPath]);
 
   return (
     <>
-      {showSubNav && (
+      {doesActiveItemHaveSubMenu()  && (
         <ul className={styles.subNavbarContainer}>
           {navbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
             <li key={index}>
