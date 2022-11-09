@@ -46,7 +46,7 @@ const SubNavbar = () => {
 
   return (
     <>
-      {doesActiveItemHaveSubMenu()  && (
+      {doesActiveItemHaveSubMenu() && (
         <ul className={styles.subNavbarContainer}>
           {navbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
             <li key={index}>
