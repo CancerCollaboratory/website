@@ -9,7 +9,6 @@ const SupportNav = () => {
     <ul className={styles.navContainer}>
       {navData.navbarItems[supportItemIndex].navbarSubMenuItems.map((item, index) => (
         <li key={index}>
-          {console.log(item.label)}
           <NavbarLink label={item.label} link={item.link} />
         </li>
       ))}
