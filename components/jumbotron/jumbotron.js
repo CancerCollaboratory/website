@@ -6,30 +6,34 @@ import { micromark } from "micromark";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions";
 import styles from "./jumbotron.module.scss";
 
-const Jumbotron = ({ data }) => {
+const Jumbotron = ({
+  title,
+  bodyText,
+  isBodyLinkExternal,
+  imageSrcPath,
+  imageLabel,
+  buttonLabel,
+  buttonIsLinkExternal,
+  buttonLink,
+}) => {
   return (
     <div
-      className={clsx(
-        styles.jumbotronContainer,
-        !data.jumbotron.body?.text ? styles.stretchBackground : undefined
-      )}
+      className={clsx(styles.jumbotronContainer, !bodyText ? styles.stretchBackground : undefined)}
     >
-      <h1 className={styles.jumbotronTitle}>{data.jumbotron.title}</h1>
-      {data.jumbotron.body?.text && (
+      <h1 className={styles.jumbotronTitle}>{title}</h1>
+      {bodyText && (
         <>
           <div className={styles.jumbotronBody}>
             {parse(
-              micromark(data.jumbotron.body.text),
-              data.jumbotron.body.isLinkExternal === "true"
-                ? insertLinkExternal
-                : insertLinkInternal
+              micromark(bodyText),
+              isBodyLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
             )}
           </div>
-          {data.jumbotron.image?.srcPath && (
+          {imageSrcPath && (
             <div className={styles.jumbotronBottom}>
               <Image
-                src={data.jumbotron.image.srcPath}
-                alt={data.jumbotron.image.label}
+                src={imageSrcPath}
+                alt={imageLabel}
                 className={styles.jumbotronImage}
                 priority={false}
                 width={75}
@@ -37,11 +41,11 @@ const Jumbotron = ({ data }) => {
                 quality={100}
               />
               <NavbarLink
-                label={data.jumbotron.button.label}
+                label={buttonLabel}
                 isLinkWrapped={true}
                 styleWrap={styles.jumbotronButton}
-                isLinkExternal={data.jumbotron.button.isLinkExternal === "true"}
-                link={data.jumbotron.button.link}
+                isLinkExternal={buttonIsLinkExternal === "true"}
+                link={buttonLink}
               />
             </div>
           )}
