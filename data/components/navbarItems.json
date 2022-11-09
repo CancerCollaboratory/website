@@ -3,8 +3,6 @@
         {
             "label": "About Us",
             "link": "/about-collaboratory",
-            "reducedSlug": "/about",
-            "subMenuId": "subMenuAbout",
             "navbarSubMenuItems": [
                 {
                     "label": "About the Collaboratory",
@@ -23,7 +21,6 @@
         {
             "label": "Our Services",
             "link": "/services",
-            "subMenuId": "subMenuServices",
             "navbarSubMenuItems": [
                 {
                     "label": "Our Services",
@@ -46,7 +43,6 @@
         {
             "label": "Our Research",
             "link": "/research",
-            "subMenuId": "subMenuResearch",
             "navbarSubMenuItems": [
                 {
                     "label": "Technology Development Cores",
@@ -105,8 +101,6 @@
         {
             "label": "Support",
             "link": "/support/overview",
-            "reducedSlug": "/support",
-            "subMenuId": "subMenuSupport",
             "navbarSubMenuItems": [
                 {
                     "label": "Getting Started",
