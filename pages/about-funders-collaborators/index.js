@@ -2,7 +2,9 @@ import pageData from "../../data/pages/about/about-funders-collaborators.json";
 import Jumbotron from "../../components/jumbotron/jumbotron";
 
 const AboutFundersAndCollaborators = () => {
-  return <Jumbotron data={pageData} />;
+  const jumbotron = pageData.jumbotron;
+
+  return <Jumbotron title={jumbotron.title} bodyText={jumbotron.body.text} />;
 };
 
 export default AboutFundersAndCollaborators;

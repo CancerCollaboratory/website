@@ -2,7 +2,9 @@ import pageData from "../../data/pages/research/publications/publications-presen
 import Jumbotron from "../../components/jumbotron/jumbotron";
 
 const PublicationsAndPresentations = () => {
-  return <Jumbotron data={pageData} />;
+  const jumbotron = pageData.jumbotron;
+
+  return <Jumbotron title={jumbotron.title} />;
 };
 
 export default PublicationsAndPresentations;

@@ -2,7 +2,9 @@ import pageData from "../../../data/pages/research/modules/drug-target-identific
 import Jumbotron from "../../../components/jumbotron/jumbotron";
 
 const DrugTargetIdentification = () => {
-  return <Jumbotron data={pageData} />;
+  const jumbotron = pageData.jumbotron;
+
+  return <Jumbotron title={jumbotron.title} bodyText={jumbotron.body.text} />;
 };
 
 export default DrugTargetIdentification;

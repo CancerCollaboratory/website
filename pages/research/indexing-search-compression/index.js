@@ -2,7 +2,9 @@ import pageData from "../../../data/pages/research/modules/indexing-search-compr
 import Jumbotron from "../../../components/jumbotron/jumbotron";
 
 const IndexingSearchAndCompression = () => {
-  return <Jumbotron data={pageData} />;
+  const jumbotron = pageData.jumbotron;
+
+  return <Jumbotron title={jumbotron.title} bodyText={jumbotron.body.text} />;
 };
 
 export default IndexingSearchAndCompression;
