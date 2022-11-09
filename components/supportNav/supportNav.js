@@ -1,5 +1,5 @@
 import NavbarLink from "../../components/navbarLink/navbarLink";
-import navData from "../../data/components/navbarItems.json";
+import navData from "../../data/components/navbar/navbar.json";
 import styles from "./supportNav.module.scss";
 
 const SupportNav = () => {
