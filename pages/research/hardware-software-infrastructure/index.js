@@ -2,11 +2,7 @@ import pageData from "../../../data/pages/research/technologyCores/hardware-soft
 import Jumbotron from "../../../components/jumbotron/jumbotron";
 
 const HardwareAndSoftwareInfrastructure = () => {
-  return (
-    <>
-      <Jumbotron data={pageData} />
-    </>
-  );
+  return <Jumbotron data={pageData} />;
 };
 
 export default HardwareAndSoftwareInfrastructure;

@@ -2,11 +2,7 @@ import pageData from "../../../data/pages/research/technologyCores/training-outr
 import Jumbotron from "../../../components/jumbotron/jumbotron";
 
 const TrainingAndOutreach = () => {
-  return (
-    <>
-      <Jumbotron data={pageData} />
-    </>
-  );
+  return <Jumbotron data={pageData} />;
 };
 
 export default TrainingAndOutreach;

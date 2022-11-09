@@ -2,11 +2,7 @@ import pageData from "../../../data/pages/research/modules/tumour-heterogenity-e
 import Jumbotron from "../../../components/jumbotron/jumbotron";
 
 const TumourHeterogenityAndEvolution = () => {
-  return (
-    <>
-      <Jumbotron data={pageData} />
-    </>
-  );
+  return <Jumbotron data={pageData} />;
 };
 
 export default TumourHeterogenityAndEvolution;
