@@ -1,9 +1,8 @@
 import clsx from "clsx";
-import parse from "html-react-parser";
 import Image from "next/future/image";
 import NavbarLink from "../navbarLink/navbarLink";
-import { micromark } from "micromark";
-import { insertLinkExternal, insertLinkInternal } from "../../lib/functions";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
+import { renderData } from "../../lib/functions/renderData";
 import styles from "./jumbotron.module.scss";
 
 const Jumbotron = ({
@@ -24,8 +23,8 @@ const Jumbotron = ({
       {bodyText && (
         <>
           <div className={styles.jumbotronBody}>
-            {parse(
-              micromark(bodyText),
+            {renderData(
+              bodyText,
               isBodyLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
             )}
           </div>
