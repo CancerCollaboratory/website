@@ -2,7 +2,7 @@ import SupportLayout from "../../../components/supportLayout/supportLayout";
 import SupportNav from "../../../components/supportNav/supportNav";
 
 export default function BestPractices() {
-  return <></>;
+  return;
 }
 
 BestPractices.getLayout = function getLayout(page) {

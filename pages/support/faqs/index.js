@@ -2,7 +2,7 @@ import SupportLayout from "../../../components/supportLayout/supportLayout";
 import SupportNav from "../../../components/supportNav/supportNav";
 
 const FrequentlyAskedQuestions = () => {
-  return <SupportNav />;
+  return;
 };
 
 export default FrequentlyAskedQuestions;
