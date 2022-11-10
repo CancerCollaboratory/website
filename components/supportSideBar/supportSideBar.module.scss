@@ -1,10 +1,41 @@
+@import "../../styles/mixins";
 @import "../../styles/colors";
 
 .sideBarContainer {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to right, white 0%, #f4f4f4 100%);
+    background-image: linear-gradient(to right, white 0%, $color-light-x7-gray 100%);
     border-right: 1px solid $color-light-x4-gray;
-    padding: 40px 25px 25px 40px;
+    padding: 48px;
     width: max-content;
+}
+
+@include respond-to("large") {
+    .sideBarContainer {
+        padding: 40px;
+    }
+}
+
+@include respond-to("medium") {
+    .sideBarContainer {
+        padding: 42px;
+    }
+}
+
+@include respond-to("small") {
+    .sideBarContainer {
+        padding: 30px;
+    }
+}
+
+@include respond-to("extra-small") {
+    .sideBarContainer {
+        padding: 20px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .sideBarContainer {
+        padding: 18px;
+    }
 }
