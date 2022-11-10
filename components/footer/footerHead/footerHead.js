@@ -1,6 +1,6 @@
 import React from "react";
-import NavbarLink from "../navbarLink/navbarLink";
-import { getCurrentYear } from "../../lib/functions/timeValue";
+import NavbarLink from "../../navbarLink/navbarLink";
+import { getCurrentYear } from "../../../lib/functions/timeValue";
 import styles from "../footer/footer.module.scss";
 
 const FooterHead = ({ headItem }) => {
