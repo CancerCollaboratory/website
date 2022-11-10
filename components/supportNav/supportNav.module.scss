@@ -4,18 +4,27 @@
 .navContainer {
     display: flex;
     flex-direction: column;
-    padding: 50px 25px 0px 50px;
-    border-right: 1px solid $color-light-x4-gray;
-    background-image: linear-gradient(to right, white 0%, #f4f4f4 100%);
-    width: max-content;
+    border-bottom: 1px solid $color-light-x4-gray;
 
-    a {
-        display: block;
-        color: $color-dark-x3-gray;
-        margin-bottom: 10px;
+    li {
+        border-top: 1px solid $color-light-x4-gray;
+        padding: 10px 0px;
 
-        &:hover {
-            color: $color-dark-red;
+        a {
+            display: block;
+            border-left: 3px solid white;
+            color: $color-dark-x3-gray;
+            padding-left: 10px;
+
+            &:hover {
+                border-left-color: $color-dark-red;
+                color: $color-dark-red;
+            }
         }
+    }
+
+    .selectedSubItem {
+        border-left-color: $color-dark-red;
+        color: $color-dark-red;
     }
 }
