@@ -1,5 +1,5 @@
 import SupportLayout from "../../../components/supportLayout/supportLayout";
-import SupportNav from "../../../components/supportNav/supportNav";
+import SupportSection from "../../../components/supportSection/supportSection";
 
 const GettingStarted = () => {
   return;
@@ -10,7 +10,7 @@ export default GettingStarted;
 GettingStarted.getLayout = function getLayout(page) {
   return (
     <SupportLayout>
-      <SupportNav>{page}</SupportNav>
+      <SupportSection>{page}</SupportSection>
     </SupportLayout>
   );
 };
