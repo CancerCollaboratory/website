@@ -1,0 +1,9 @@
+{
+    "jumbotron": {
+        "title": "Cloud Resources",
+        "body": {
+            "text": "The Cancer Genome Collaboratory is a cloud computing infrastructure powered by [Openstack](http://www.openstack.org) and open source storage software [Ceph](http://www.ceph.com).",
+            "isLinkExternal": "true"
+        }
+    }
+}

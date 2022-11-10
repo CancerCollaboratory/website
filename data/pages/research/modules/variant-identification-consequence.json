@@ -1,0 +1,8 @@
+{
+    "jumbotron": {
+        "title": "Variant Identification & Consequence",
+        "body": {
+            "text": "Variant consequence prediction remains a challenge even for variants affecting protein-coding genes, and is essentially terra incognita for non-coding regions. Our work hence is relevant to both researchers in cancer genomics as well as anyone working on a disease whose risk is related to genetic variation."
+        }
+    }
+}

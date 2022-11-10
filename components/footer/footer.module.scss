@@ -26,7 +26,7 @@
             flex-direction: column;
 
             .headItemLabel {
-                color: $color-dark-x1-gray;
+                color: $color-dark-x2-gray;
                 margin-bottom: 2.3px;
                 font-size: 12.5px;
             }
@@ -36,7 +36,7 @@
                 align-items: center;
 
                 a {
-                    color: $color-dark-x3-gray;
+                    color: $color-dark-x4-gray;
                     font-size: 12.5px;
 
                     &:hover {
@@ -72,7 +72,7 @@
                 width: max-content;
 
                 &:hover {
-                    color: $color-light-x5-blue;
+                    color: $color-light-x6-blue;
                 }
             }
 

@@ -1,11 +1,11 @@
-import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
 import clsx from "clsx";
 import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";
-import data from "../../data/components/navbarItems.json";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+import data from "../../data/components/navbar/navbar.json";
 import styles from "./navbar.module.scss";
 
 const Navbar = () => {
@@ -54,9 +54,9 @@ const Navbar = () => {
             isImageWrapped={true}
             imageSrcPath={data.websiteLogo.srcPath}
             styleImage={styles.siteLogo}
+            imageHasPriority={true}
             imageWidth={275}
             imageHeight={112}
-            isImageHighPriority={true}
           />
           <div
             className={styles.navbarToggler}
@@ -73,8 +73,6 @@ const Navbar = () => {
                 itemLabel={item.label}
                 isItemlLink={true}
                 itemLink={item.link}
-                styleItemMenu={styles.subMenuDropdown}
-                styleItemSubMenu={styles.innerSubMenu}
                 itemMenu={item.navbarSubMenuItems}
                 key={index}
               />
@@ -94,8 +92,6 @@ const Navbar = () => {
                   <NavbarItem
                     itemLabel={item.label}
                     isItemlLink={false}
-                    styleItemMenu={styles.expandedSubMenuItem}
-                    styleItemSubMenu={styles.innerExpandedMenu}
                     itemMenu={item.navbarSubMenuItems}
                     isNavbarDropdownExpanded={isNavbarDropdownToggled}
                     key={index}

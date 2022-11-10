@@ -16,9 +16,9 @@ const NavbarLink = ({
   isImageWrapped,
   imageSrcPath,
   styleImage,
+  imageHasPriority,
   imageWidth,
   imageHeight,
-  isImageHighPriority,
 }) => {
   const { asPath } = useRouter();
   const [isItemActiveState, setIsItemActiveState] = useState(false);
@@ -42,7 +42,7 @@ const NavbarLink = ({
                 <Image
                   src={imageSrcPath}
                   alt={label}
-                  priority={isImageHighPriority}
+                  priority={imageHasPriority}
                   className={styleImage}
                   width={imageWidth}
                   height={imageHeight}
@@ -56,7 +56,7 @@ const NavbarLink = ({
                 <Image
                   src={imageSrcPath}
                   alt={label}
-                  priority={isImageHighPriority}
+                  priority={imageHasPriority}
                   className={styleImage}
                   width={imageWidth}
                   height={imageHeight}
@@ -80,7 +80,7 @@ const NavbarLink = ({
             <Image
               src={imageSrcPath}
               alt={label}
-              priority={isImageHighPriority}
+              priority={imageHasPriority}
               className={styleImage}
               width={imageWidth}
               height={imageHeight}
@@ -92,7 +92,7 @@ const NavbarLink = ({
             <Image
               src={imageSrcPath}
               alt={label}
-              priority={isImageHighPriority}
+              priority={imageHasPriority}
               className={styleImage}
               width={imageWidth}
               height={imageHeight}

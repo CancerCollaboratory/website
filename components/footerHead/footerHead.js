@@ -1,12 +1,9 @@
 import React from "react";
 import NavbarLink from "../navbarLink/navbarLink";
+import { getCurrentYear } from "../../lib/functions/timeValue";
 import styles from "../footer/footer.module.scss";
 
 const FooterHead = ({ headItem }) => {
-  function getCurrentYear() {
-    return new Date().getFullYear();
-  }
-
   return (
     <>
       {headItem.logo ? (
@@ -18,9 +15,9 @@ const FooterHead = ({ headItem }) => {
             isImageWrapped={true}
             imageSrcPath={headItem.logo.srcPath}
             styleImage={styles.footerLogo}
+            imageHasPriority={false}
             imageWidth={77}
             imageHeight={56}
-            isImageHighPriority={true}
           />
         </div>
       ) : (

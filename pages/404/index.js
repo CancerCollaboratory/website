@@ -1,11 +1,12 @@
 import Layout404 from "../../components/layout404/layout404";
+import pageData from "../../data/pages/404/404.json";
 import styles from "./404.module.scss";
 
 const Custom404 = () => {
   return (
     <>
-      <h1 className={styles.errorTextLarge}>404</h1>
-      <h2 className={styles.errorTextMedium}>Page Not Found</h2>
+      <h1 className={styles.errorTextLarge}>{pageData.error404.title}</h1>
+      <h2 className={styles.errorTextMedium}>{pageData.error404.message}</h2>
     </>
   );
 };

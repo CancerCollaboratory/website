@@ -1,0 +1,8 @@
+{
+    "jumbotron": {
+        "title": "Benchmarking",
+        "body": {
+            "text": "Benchmarking is a critical and unmet need for the bioinformatics and genomics communities. Users have no impartial guidance to indicate what tool will be best suited for their analyses, while algorithm developers lack a baseline to compare their approaches to others."
+        }
+    }
+}
