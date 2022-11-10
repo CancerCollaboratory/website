@@ -1,9 +1,9 @@
-import SupportNav from "../supportNav/supportNav";
+import SupportSideBar from "../supportSideBar/supportSideBar";
 
 const SupportSection = ({ children }) => {
   return (
     <>
-      <SupportNav />
+      <SupportSideBar />
       {children}
     </>
   );
