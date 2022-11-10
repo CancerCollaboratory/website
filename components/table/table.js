@@ -1,3 +1,4 @@
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import { renderData } from "../../lib/functions/renderData";
 import styles from "./table.module.scss";
 
@@ -14,9 +15,7 @@ const Table = ({ tableTitle, tableBody }) => {
                   {column.title &&
                     renderData(
                       column.title,
-                      column.cellHead.isLinkExternal === "true"
-                        ? insertLinkExternal
-                        : insertLinkInternal
+                      column.isLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
                     )}
                   {column.content && (
                     <div className={styles.tableCellContent}>{renderData(column.content)}</div>
