@@ -1,7 +1,16 @@
+import SupportLayout from "../../../components/supportLayout/supportLayout";
 import SupportNav from "../../../components/supportNav/supportNav";
 
 const Workshops = () => {
-  return <SupportNav />;
+  return;
 };
 
 export default Workshops;
+
+Workshops.getLayout = function getLayout(page) {
+  return (
+    <SupportLayout>
+      <SupportNav>{page}</SupportNav>
+    </SupportLayout>
+  );
+};
