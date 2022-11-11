@@ -106,3 +106,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+.gitignore
+next-env.d.ts
+tsconfig.json

@@ -1,4 +1,4 @@
-import NavbarLink from "../navbarLink/navbarLink";
+import NavbarLink from "../navbar/navbarLink/navbarLink";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import navbarData from "../../data/components/navbar/navbar.json";

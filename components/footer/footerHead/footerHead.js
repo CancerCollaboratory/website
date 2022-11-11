@@ -1,5 +1,5 @@
 import React from "react";
-import NavbarLink from "../../navbarLink/navbarLink";
+import NavbarLink from "../../navbar/navbarLink/navbarLink";
 import { getCurrentYear } from "../../../lib/functions/timeValue";
 import styles from "../footer/footer.module.scss";
 
