@@ -1,7 +1,8 @@
+import clsx from "clsx";
 import styles from "./column.module.scss";
 
-const Column = ({ children }) => {
-  return <div className={styles.columnContainer}>{children}</div>;
+const Column = ({ styleColumn, children }) => {
+  return <div className={clsx(styles.columnContainer, styleColumn)}>{children}</div>;
 };
 
 export default Column;
