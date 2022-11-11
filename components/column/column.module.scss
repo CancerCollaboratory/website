@@ -1,0 +1,34 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.columnContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 40px;
+    width: 50%;
+}
+
+@include respond-to("medium") {
+    .columnContainer {
+        padding: 12.5px 42px;
+        width: 100%;
+    }
+}
+
+@include respond-to("small") {
+    .columnContainer {
+        padding: 11.5px 41px;
+    }
+}
+
+@include respond-to("extra-small") {
+    .columnContainer {
+        padding: 11px 44px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .columnContainer {
+        padding: 10px 45px;
+    }
+}
