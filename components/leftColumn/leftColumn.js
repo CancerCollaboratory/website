@@ -5,11 +5,14 @@ const LeftColumn = ({ title, styleTitleImage, body, children }) => {
   return (
     <>
       {title && <h1 className={clsx(styles.title, styleTitleImage)}>{title}</h1>}
-      {body?.map((item, index) => (
-        <p className={styles.bodyText} key={index}>
-          {item.text}
-        </p>
-      ))}
+      {body?.map(
+        (item, index) =>
+          item.text && (
+            <p className={styles.bodyText} key={index}>
+              {item.text}
+            </p>
+          )
+      )}
       {children}
     </>
   );
