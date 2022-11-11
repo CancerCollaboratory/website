@@ -1,0 +1,62 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.title {
+    margin-bottom: 5px;
+    color: $color-dark-x4-gray;
+    font-size: 22px;
+}
+
+.bodyText {
+    color: $color-dark-x2-gray;
+    margin-top: 10px;
+    line-height: 170%;
+    font-size: 14px;
+}
+
+@include respond-to("large") {
+    .bodyText {
+        margin-top: 9px;
+    }
+}
+
+@include respond-to("medium") {
+    .title {
+        text-align: center;
+        font-size: 21px;
+    }
+
+    .bodyText {
+        margin-top: 8px;
+        line-height: 168%;
+        font-size: 13px;
+    }
+}
+
+@include respond-to("small") {
+    .title {
+        font-size: 16px;
+    }
+
+    .bodyText {
+        margin-top: 7px;
+        font-size: 12px;
+    }
+}
+
+@include respond-to("extra-small") {
+    .title {
+        font-size: 15px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .title {
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+
+    .bodyText {
+        font-size: 11px;
+    }
+}
