@@ -1,14 +1,11 @@
 import SupportLayout from "../../../components/supportLayout/supportLayout";
-import SupportSection from "../../../components/supportSection/supportSection";
 
-export default function BestPractices() {
+const BestPractices = () => {
   return;
-}
+};
+
+export default BestPractices;
 
 BestPractices.getLayout = function getLayout(page) {
-  return (
-    <SupportLayout>
-      <SupportSection>{page}</SupportSection>
-    </SupportLayout>
-  );
+  return <SupportLayout>{page}</SupportLayout>;
 };
