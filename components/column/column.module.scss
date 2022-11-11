@@ -4,31 +4,30 @@
 .columnContainer {
     display: flex;
     flex-direction: column;
-    padding: 25px 40px;
     width: 50%;
 }
 
 @include respond-to("medium") {
     .columnContainer {
-        padding: 12.5px 42px;
+        padding: 12.5px 4px;
         width: 100%;
     }
 }
 
 @include respond-to("small") {
     .columnContainer {
-        padding: 11.5px 41px;
+        padding: 11.5px 4px;
     }
 }
 
 @include respond-to("extra-small") {
     .columnContainer {
-        padding: 11px 44px;
+        padding: 11px 4px;
     }
 }
 
 @include respond-to("extra-extra-small") {
     .columnContainer {
-        padding: 10px 45px;
+        padding: 10px 4px;
     }
 }
