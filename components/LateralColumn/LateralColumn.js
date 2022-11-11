@@ -4,8 +4,8 @@ import styles from "./lateralColumn.module.scss";
 const LateralColumn = ({ leftColumn, rightColumn }) => {
   return (
     <div className={styles.lateralColumnContainer}>
-      <Column>{leftColumn}</Column>
-      <Column>{rightColumn}</Column>
+      {leftColumn && <Column>{leftColumn}</Column>}
+      {rightColumn && <Column>{rightColumn}</Column>}
     </div>
   );
 };
