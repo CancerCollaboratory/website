@@ -1,7 +1,11 @@
-import SupportNav from "../../../components/supportNav/supportNav";
+import SupportLayout from "../../../components/supportLayout/supportLayout";
 
 const UserGuide = () => {
-  return <SupportNav />;
+  return;
 };
 
 export default UserGuide;
+
+UserGuide.getLayout = function getLayout(page) {
+  return <SupportLayout>{page}</SupportLayout>;
+};
