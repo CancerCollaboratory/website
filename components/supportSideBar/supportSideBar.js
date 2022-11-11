@@ -1,5 +1,5 @@
 import SupportNav from "../supportNav/supportNav";
-import styles from "./supportSideBar.module.scss";
+import styles from "./supportSidebar.module.scss";
 
 const SupportSidebar = () => {
   return (
