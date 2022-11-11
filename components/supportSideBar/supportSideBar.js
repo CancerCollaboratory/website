@@ -1,7 +1,7 @@
 import SupportNav from "../supportNav/supportNav";
 import styles from "./supportSideBar.module.scss";
 
-const SupportSideBar = () => {
+const SupportSidebar = () => {
   return (
     <div className={styles.sideBarContainer}>
       <SupportNav />
@@ -9,4 +9,4 @@ const SupportSideBar = () => {
   );
 };
 
-export default SupportSideBar;
+export default SupportSidebar;
