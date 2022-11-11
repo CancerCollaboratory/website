@@ -5,14 +5,14 @@
     color: $color-dark-x4-gray;
     line-height: 170%;
     text-align: center;
-    margin-bottom: 12px;
+    margin-bottom: 5px;
     font-size: 19px;
 }
 
 .subTitle {
     color: $color-dark-x2-gray;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 17px;
     font-weight: 600;
 }
@@ -21,39 +21,29 @@
     display: flex;
     justify-content: center;
     color: $color-dark-x2-gray;
-    margin-bottom: 10px;
+    margin-top: 10px;
     line-height: 170%;
     font-size: 14px;
 }
 
 @include respond-to("large") {
-    .title {
-        margin-bottom: 11px;
-    }
-
-    .subTitle {
-        margin-bottom: 14px;
-    }
-
     .bodyText {
-        margin-bottom: 9px;
+        margin-top: 9px;
     }
 }
 
 @include respond-to("medium") {
     .title {
         line-height: 168%;
-        margin-bottom: 10px;
         font-size: 18px;
     }
 
     .subTitle {
-        margin-bottom: 13px;
         font-size: 16px;
     }
 
     .bodyText {
-        margin-bottom: 8px;
+        margin-top: 8px;
         line-height: 168%;
         font-size: 13px;
     }
@@ -61,17 +51,15 @@
 
 @include respond-to("small") {
     .title {
-        margin-bottom: 9px;
         font-size: 15px;
     }
 
     .subTitle {
-        margin-bottom: 12px;
         font-size: 14px;
     }
 
     .bodyText {
-        margin-bottom: 7px;
+        margin-top: 7px;
         font-size: 12px;
     }
 }
@@ -88,12 +76,12 @@
 
 @include respond-to("extra-extra-small") {
     .title {
-        margin-bottom: 8px;
+        margin-bottom: 4px;
         font-size: 13px;
     }
 
     .subTitle {
-        margin-bottom: 11px;
+        margin-bottom: 4px;
         font-size: 12px;
     }
 
