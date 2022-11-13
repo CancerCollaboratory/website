@@ -2,8 +2,11 @@
 @import "../../styles/mixins";
 
 .title {
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
     color: $color-dark-x4-gray;
+    margin-bottom: 5px;
+    padding-left: 92px;
     font-size: 22px;
 }
 
