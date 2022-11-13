@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import { getCurrentMonth, getCurrentYear } from "../../lib/functions/timeValue";
 import styles from "./statGrid.module.scss";
 
 const StatGrid = ({ statGridTitle, statGridBody }) => {
@@ -7,12 +6,7 @@ const StatGrid = ({ statGridTitle, statGridBody }) => {
     <div className={styles.statGridContainer}>
       {statGridTitle && (
         <div className={styles.statHeadContainer}>
-          <p className={styles.statGridTitle}>
-            {statGridTitle}
-            <span>
-              {getCurrentMonth()} {getCurrentYear()}
-            </span>
-          </p>
+          <p className={styles.statGridTitle}>{statGridTitle}</p>
         </div>
       )}
       {statGridBody && (
