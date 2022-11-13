@@ -3,6 +3,7 @@ import Jumbotron from "../../components/jumbotron/jumbotron";
 import LateralColumn from "../../components/LateralColumn/LateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
+import styles from "./services.module.scss";
 
 const Services = () => {
   const jumbotron = pageData.jumbotron;
@@ -18,13 +19,25 @@ const Services = () => {
         isBodyLinkExternal={jumbotron.body.isLinkExternal}
       />
       <LateralColumn
-        leftColumn={<LeftColumn title={latCol1LeftCol.title} body={latCol1LeftCol.body} />}
+        leftColumn={
+          <LeftColumn
+            title={latCol1LeftCol.title}
+            styleTitleImage={styles.iconCloudInfrastructure}
+            body={latCol1LeftCol.body}
+          />
+        }
         rightColumn={
           <RightColumn title={latCol1RightCol.title} subTitle={latCol1RightCol.subTitle} />
         }
       />
       <LateralColumn
-        leftColumn={<LeftColumn title={latCol2LeftCol.title} body={latCol2LeftCol.body} />}
+        leftColumn={
+          <LeftColumn
+            title={latCol2LeftCol.title}
+            styleTitleImage={styles.iconCloudResources}
+            body={latCol2LeftCol.body}
+          />
+        }
       />
     </>
   );
