@@ -1,6 +1,6 @@
 import pageData from "../../data/pages/services/services.json";
 import Jumbotron from "../../components/jumbotron/jumbotron";
-import LateralColumn from "../../components/LateralColumn/LateralColumn";
+import LateralColumn from "../../components/lateralColumn/lateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
 import StatGrid from "../../components/statGrid/statGrid";
