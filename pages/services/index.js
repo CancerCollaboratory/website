@@ -3,6 +3,7 @@ import Jumbotron from "../../components/jumbotron/jumbotron";
 import LateralColumn from "../../components/LateralColumn/LateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
+import StatGrid from "../../components/statGrid/statGrid";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./services.module.scss";
 
@@ -11,6 +12,7 @@ const Services = () => {
   const latCol1LeftCol = pageData.lateralColumnTop.leftColumn;
   const latCol1RightCol = pageData.lateralColumnTop.rightColumn;
   const latCol2LeftCol = pageData.lateralColumnBottom.leftColumn;
+  const statGrid = pageData.statGrid;
 
   return (
     <>
@@ -39,6 +41,7 @@ const Services = () => {
             body={latCol2LeftCol.body}
           />
         }
+        rightColumn={<StatGrid title={statGrid.title} body={statGrid.body} />}
         styleBackground={utilStyles.gradientBackgroundGray}
       />
     </>
