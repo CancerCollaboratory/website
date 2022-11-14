@@ -74,7 +74,7 @@
             }
         ]
     },
-    "itemResourceCards": [
+    "resourceCards": [
         {
             "title": "[Read about our Resources](/services-cloud-resources)",
             "bodyText": "Investigate the services we have available for your team."
