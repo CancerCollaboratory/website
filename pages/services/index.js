@@ -22,34 +22,36 @@ const Services = () => {
         bodyText={jumbotron.body.text}
         isBodyLinkExternal={jumbotron.body.isLinkExternal}
       />
-      <LateralColumn
-        leftColumn={
-          <LeftColumn
-            title={latCol1LeftCol.title}
-            styleTitleImage={styles.iconCloudInfrastructure}
-            body={latCol1LeftCol.body}
-          />
-        }
-        rightColumn={
-          <RightColumn title={latCol1RightCol.title} subTitle={latCol1RightCol.subTitle} />
-        }
-      />
-      <LateralColumn
-        leftColumn={
-          <LeftColumn
-            title={latCol2LeftCol.title}
-            styleTitleImage={styles.iconCloudResources}
-            body={latCol2LeftCol.body}
-          />
-        }
-        rightColumn={
-          <StatGrid
-            title={`${statGrid.title} ${getCurrentMonth()} ${getCurrentYear()}`}
-            body={statGrid.body}
-          />
-        }
-        styleBackground={utilStyles.gradientBackgroundGray}
-      />
+      <div className={utilStyles.pageBodyContainer}>
+        <LateralColumn
+          leftColumn={
+            <LeftColumn
+              title={latCol1LeftCol.title}
+              styleTitleImage={styles.iconCloudInfrastructure}
+              body={latCol1LeftCol.body}
+            />
+          }
+          rightColumn={
+            <RightColumn title={latCol1RightCol.title} subTitle={latCol1RightCol.subTitle} />
+          }
+        />
+        <LateralColumn
+          leftColumn={
+            <LeftColumn
+              title={latCol2LeftCol.title}
+              styleTitleImage={styles.iconCloudResources}
+              body={latCol2LeftCol.body}
+            />
+          }
+          rightColumn={
+            <StatGrid
+              title={`${statGrid.title} ${getCurrentMonth()} ${getCurrentYear()}`}
+              body={statGrid.body}
+            />
+          }
+          styleBackground={utilStyles.gradientBackgroundGray}
+        />
+      </div>
     </>
   );
 };
