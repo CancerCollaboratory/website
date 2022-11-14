@@ -6,6 +6,36 @@
             "isLinkExternal": "true"
         }
     },
+    "lateralColumnTop": {
+        "leftColumn": {
+            "title": "Cloud Infrastructure",
+            "body": [
+                {
+                    "text": "The Collaboratory hosts ICGC BAM, VCF and other types of protected datasets, as well as compute capabilities and Docker-based analysis tools for use by its research community. One of them main goals of the Collaboratory project is to remove many of the barriers that prevent researchers from using the ICGC's vast genomic database, because the large size of the ICGC datasets means that they can take months to download and analyzing them requires computing power that many research groups do not have."
+                },
+                {
+                    "text": "This will allow scientists to access and analyze ICGC datasets through Collaboratory’s cloud computing platform, enhancing collaboration and accelerating the development of new tools and treatments for cancer patients."
+                }
+            ]
+        },
+        "rightColumn": {
+            "title": "Collaboratory Data Repository: Donor Distribution by Primary Site",
+            "subTitle": "39 projects and 17 primary sites"
+        }
+    },
+    "lateralColumnBottom": {
+        "leftColumn": {
+            "title": "Cloud Resources",
+            "body": [
+                {
+                    "text": "Although most of the ICGC datasets are stored both in AWS S3 and Collaboratory, some research projects only allowed their collected data to be stored in non-commercial public cloud environments, so Collaboratory was a perfect place to store them."
+                },
+                {
+                    "text": "Because Collaboratory was custom-built for cancer research, its physical nodes have generous amounts of local storage potentially offering better performing disk access as well as better CPU/memory ratios. The proximity to the object storage storing the large datasets means also fast downloads and decreased workflow runtimes."
+                }
+            ]
+        }
+    },
     "statGrid": {
         "title": "As of ",
         "body": [

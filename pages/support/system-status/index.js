@@ -1,7 +1,11 @@
-import SupportNav from "../../../components/supportNav/supportNav";
+import SupportLayout from "../../../components/supportLayout/supportLayout";
 
 const SystemStatus = () => {
-  return <SupportNav />;
+  return;
 };
 
 export default SystemStatus;
+
+SystemStatus.getLayout = function getLayout(page) {
+  return <SupportLayout>{page}</SupportLayout>;
+};

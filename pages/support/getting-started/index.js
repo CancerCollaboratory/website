@@ -1,7 +1,11 @@
-import SupportNav from "../../../components/supportNav/supportNav";
+import SupportLayout from "../../../components/supportLayout/supportLayout";
 
 const GettingStarted = () => {
-  return <SupportNav />;
+  return;
 };
 
 export default GettingStarted;
+
+GettingStarted.getLayout = function getLayout(page) {
+  return <SupportLayout>{page}</SupportLayout>;
+};
