@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import NavbarLink from "../navbarLink/navbarLink";
-import styles from "../footer/footer.module.scss";
 import utilStyles from "../../styles/utils.module.scss";
+import styles from "../footer/footer.module.scss";
 
 const FooterItem = ({ label, labelLink, footerItem }) => {
   return (
