@@ -4,6 +4,7 @@ import LateralColumn from "../../components/LateralColumn/LateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
 import StatGrid from "../../components/statGrid/statGrid";
+import { getCurrentMonth, getCurrentYear } from "../../lib/functions/timeValue";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./services.module.scss";
 
@@ -41,7 +42,12 @@ const Services = () => {
             body={latCol2LeftCol.body}
           />
         }
-        rightColumn={<StatGrid title={statGrid.title} body={statGrid.body} />}
+        rightColumn={
+          <StatGrid
+            title={`${statGrid.title} ${getCurrentMonth()} ${getCurrentYear()}`}
+            body={statGrid.body}
+          />
+        }
         styleBackground={utilStyles.gradientBackgroundGray}
       />
     </>
