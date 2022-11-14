@@ -4,13 +4,22 @@
 .cardContainer {
     display: flex;
     align-items: center;
+    border: 1px solid $color-light-x4-gray;
+    border-radius: 10px;
+    height: 160px;
+    margin: 10px;
 
     .cardContent {
         display: flex;
         flex-direction: column;
 
         .title {
+            font-weight: 500;
+            font-size: 15px;
+            margin-bottom: 5px;
+
             a {
+                text-decoration: underline;
                 color: $color-dark-blue;
 
                 &:hover {
@@ -21,6 +30,7 @@
 
         .bodyText {
             color: $color-dark-x2-gray;
+            font-size: 14px;
         }
     }
 }
