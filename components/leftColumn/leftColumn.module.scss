@@ -2,8 +2,11 @@
 @import "../../styles/mixins";
 
 .title {
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
     color: $color-dark-x4-gray;
+    margin-bottom: 5px;
+    padding-left: 94px;
     font-size: 22px;
 }
 
@@ -23,6 +26,7 @@
 @include respond-to("medium") {
     .title {
         text-align: center;
+        padding-left: 92px;
         font-size: 21px;
     }
 
@@ -35,6 +39,7 @@
 
 @include respond-to("small") {
     .title {
+        padding-left: 79px;
         font-size: 16px;
     }
 
@@ -46,6 +51,7 @@
 
 @include respond-to("extra-small") {
     .title {
+        padding-left: 67px;
         font-size: 15px;
     }
 }
@@ -53,7 +59,8 @@
 @include respond-to("extra-extra-small") {
     .title {
         margin-bottom: 4px;
-        font-size: 14px;
+        padding-left: 49px;
+        font-size: 13px;
     }
 
     .bodyText {

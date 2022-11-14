@@ -1,3 +1,38 @@
+@import "./colors";
+@import "./mixins";
+
+.pageBodyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.componentContainer {
+    width: 1170px;
+}
+
 .itemLabel {
     font-weight: bold;
+}
+
+.gradientBackgroundGray {
+    background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 50%, white 100%);
+}
+
+@include respond-to("large") {
+    .componentContainer {
+        width: 970px;
+    }
+}
+
+@include respond-to("medium") {
+    .componentContainer {
+        width: 750px;
+    }
+}
+
+@include respond-to("small") {
+    .componentContainer {
+        width: 100%;
+    }
 }
