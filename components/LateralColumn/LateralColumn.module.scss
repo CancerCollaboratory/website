@@ -5,8 +5,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px dotted $color-light-x5-gray;
-    margin: 0px 36px;
-    padding: 25px 0px;
+    padding: 25px 36px;
 
     .leftColumn {
         margin: 0px 20px 0px 4px;
@@ -20,8 +19,7 @@
 @include respond-to("medium") {
     .lateralColumnContainer {
         flex-direction: column;
-        padding: 12.5px 0px;
-        margin: 0px 38px;
+        padding: 12.5px 38px;
 
         .leftColumn {
             margin: 0px;
@@ -35,21 +33,18 @@
 
 @include respond-to("small") {
     .lateralColumnContainer {
-        padding: 11.5px 0px;
-        margin: 0px 37px;
+        padding: 11.5px 37px;
     }
 }
 
 @include respond-to("extra-small") {
     .lateralColumnContainer {
-        padding: 11px 0px;
-        margin: 0px 40px;
+        padding: 11px 40px;
     }
 }
 
 @include respond-to("extra-extra-small") {
     .lateralColumnContainer {
-        padding: 10px 0px;
-        margin: 0px 41px;
+        padding: 10px 41px;
     }
 }
