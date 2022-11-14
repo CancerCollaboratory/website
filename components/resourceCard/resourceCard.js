@@ -1,12 +1,23 @@
 import clsx from "clsx";
-import NavbarLink from "../navbarLink/navbarLink";
+import Image from "next/future/image";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
 import styles from "./resourceCard.module.scss";
 
-const ResourceCard = ({ title, isTitleLinkExternal, bodyText }) => {
+const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imageAlt }) => {
   return (
     <div className={clsx(styles.cardContainer)}>
+      {imageSrcPath && (
+        <Image
+          src={imageSrcPath}
+          alt={imageAlt}
+          className={styles.image}
+          priority={false}
+          width={62}
+          height={62}
+          quality={100}
+        />
+      )}
       {(title || bodyText) && (
         <div className={styles.cardContent}>
           {title && (
