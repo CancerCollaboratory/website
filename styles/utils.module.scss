@@ -1,3 +1,9 @@
+@import "./colors";
+
 .itemLabel {
     font-weight: bold;
+}
+
+.gradientBackgroundGray {
+    background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 50%, white 100%);
 }
