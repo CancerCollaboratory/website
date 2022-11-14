@@ -1,0 +1,50 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.lateralColumnContainer {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted $color-light-x5-gray;
+    padding: 25px 36px;
+
+    .leftColumn {
+        margin: 0px 20px 0px 4px;
+    }
+
+    .rightColumn {
+        margin: 0px 4px 0px 20px;
+    }
+}
+
+@include respond-to("medium") {
+    .lateralColumnContainer {
+        flex-direction: column;
+        padding: 12.5px 38px;
+
+        .leftColumn {
+            margin: 0px;
+        }
+
+        .rightColumn {
+            margin: 0px;
+        }
+    }
+}
+
+@include respond-to("small") {
+    .lateralColumnContainer {
+        padding: 11.5px 37px;
+    }
+}
+
+@include respond-to("extra-small") {
+    .lateralColumnContainer {
+        padding: 11px 40px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .lateralColumnContainer {
+        padding: 10px 41px;
+    }
+}
