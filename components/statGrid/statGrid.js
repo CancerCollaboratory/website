@@ -1,17 +1,17 @@
 import clsx from "clsx";
 import styles from "./statGrid.module.scss";
 
-const StatGrid = ({ statGridTitle, statGridBody }) => {
+const StatGrid = ({ title, body }) => {
   return (
     <div className={styles.statGridContainer}>
-      {statGridTitle && (
+      {title && (
         <div className={styles.statHeadContainer}>
-          <p className={styles.statGridTitle}>{statGridTitle}</p>
+          <p className={styles.statGridTitle}>{title}</p>
         </div>
       )}
-      {statGridBody && (
+      {body && (
         <ul className={styles.statGridBlock}>
-          {statGridBody.map((item, index) => (
+          {body.map((item, index) => (
             <li
               className={clsx(
                 styles.statItem,
