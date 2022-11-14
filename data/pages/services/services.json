@@ -35,5 +35,43 @@
                 }
             ]
         }
+    },
+    "statGrid": {
+        "title": "As of ",
+        "body": [
+            {
+                "title": "CPU Cores",
+                "subTitle": "3552"
+            },
+            {
+                "title": "Memory",
+                "subTitle": "22 TB",
+                "hasBackground": "true"
+            },
+            {
+                "title": "Local Disk",
+                "subTitle": "435 TB",
+                "subBlockA": {
+                    "hasBackground": "true"
+                },
+                "hasBackground": "true"
+            },
+            {
+                "title": "Object Storage (Raw)",
+                "subTitle": "10 PB",
+                "subBlockB": {
+                    "hasBackground": "true"
+                }
+            },
+            {
+                "title": "Block Storage",
+                "subTitle": "60 TB"
+            },
+            {
+                "title": "Network (Shared)",
+                "subTitle": "10 Gbps",
+                "hasBackground": "true"
+            }
+        ]
     }
 }

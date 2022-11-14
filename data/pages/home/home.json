@@ -1,0 +1,58 @@
+{
+    "table": {
+        "title": "The Collaboratory data consists of:",
+        "body": [
+            {
+                "columns": [
+                    {
+                        "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D)",
+                        "isLinkExternal": "true"
+                    },
+                    {
+                        "content": "5,045 donors"
+                    },
+                    {
+                        "content": "121,467 files"
+                    },
+                    {
+                        "content": "1074.25 TB"
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
+                        "isLinkExternal": "true"
+                    },
+                    {
+                        "content": "886 donors"
+                    },
+                    {
+                        "content": "22,200 files"
+                    },
+                    {
+                        "content": "255.57 TB"
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "title": "[Total](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22,%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
+                        "isLinkExternal": "true"
+                    },
+                    {
+                        "content": "5,931 donors"
+                    },
+                    {
+                        "content": "143,667 files"
+                    },
+                    {
+                        "content": "1329.83 TB"
+                    }
+                ]
+            }
+        ]
+    }
+}

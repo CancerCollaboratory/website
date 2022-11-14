@@ -1,0 +1,212 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+@import "../../styles/imgPaths";
+
+.statGridContainer {
+    .statHeadContainer {
+        background-image: $background-collab-cloud;
+        background-repeat: no-repeat;
+        background-position: right 6px bottom -100px;
+        background-size: 280px;
+        padding: 97px 0px 8px 0px;
+
+        .statGridTitle {
+            color: $color-dark-x2-gray;
+            margin-left: 10px;
+            font-size: 14px;
+            width: max-content;
+        }
+    }
+
+    .statGridBlock {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .statItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid $color-light-x5-gray;
+            background-color: white;
+            margin: 0px 5px 10px 5px;
+            padding: 9px;
+            width: 31%;
+
+            .statTitle {
+                color: $color-dark-x4-gray;
+                margin-bottom: 5px;
+                font-weight: 600;
+                font-size: 14.5px;
+            }
+
+            .statSubTitle {
+                color: $color-dark-red;
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+
+        .backgroundStatB {
+            background-color: $color-light-x7-gray;
+        }
+
+        .backgroundStatA {
+            background-color: white;
+        }
+
+        .backgroundStat {
+            background-color: $color-light-x7-gray;
+        }
+    }
+}
+
+@include respond-to("large") {
+    .statGridContainer {
+        .statHeadContainer {
+            .statGridTitle {
+                font-size: 13.5px;
+            }
+        }
+
+        .statGridBlock {
+            .statItem {
+                margin: 0px 4px 8px 4px;
+                padding: 8.5px;
+                width: 47%;
+
+                .statTitle {
+                    font-size: 14px;
+                }
+
+                .statSubTitle {
+                    font-size: 17px;
+                }
+            }
+
+            .backgroundStatB {
+                background-color: white;
+            }
+
+            .backgroundStatA {
+                background-color: $color-light-x7-gray;
+            }
+        }
+    }
+}
+
+@include respond-to("medium") {
+    .statGridContainer {
+        .statHeadContainer {
+            background-position: right 53px bottom -100px;
+
+            .statGridTitle {
+                margin-left: 56px;
+                font-size: 13px;
+            }
+        }
+
+        .statGridBlock {
+            .statItem {
+                width: 42%;
+
+                .statTitle {
+                    font-size: 13.5px;
+                }
+
+                .statSubTitle {
+                    font-size: 16.5px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .statGridContainer {
+        .statHeadContainer {
+            background-position: right 4% bottom -45px;
+            background-size: 128px;
+            padding: 35px 0px 7px 0px;
+
+            .statGridTitle {
+                margin-left: 3.6%;
+                font-size: 11.5px;
+            }
+        }
+
+        .statGridBlock {
+            .statItem {
+                margin: 0px 3.5px 7px 3.5px;
+                padding: 8px;
+                width: 46%;
+
+                .statTitle {
+                    margin-bottom: 4px;
+                    font-size: 12px;
+                }
+
+                .statSubTitle {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .statGridContainer {
+        .statHeadContainer {
+            background-position: right 3.7% bottom -31.2px;
+            background-size: 88px;
+            padding: 21px 0px 6px 0px;
+
+            .statGridTitle {
+                margin-left: 3.4%;
+                font-size: 9px;
+            }
+        }
+
+        .statGridBlock {
+            .statItem {
+                margin: 0px 3px 6px 3px;
+                padding: 6px 3px;
+
+                .statTitle {
+                    margin-bottom: 2px;
+                    font-size: 9.5px;
+                }
+
+                .statSubTitle {
+                    font-size: 12.5px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .statGridContainer {
+        .statHeadContainer {
+            background-position: right 3.5% bottom -27px;
+            background-size: 76px;
+            padding: 18px 0px 5.5px 0px;
+
+            .statGridTitle {
+                font-size: 7.5px;
+            }
+        }
+
+        .statGridBlock {
+            .statItem {
+                .statTitle {
+                    font-size: 7.5px;
+                }
+
+                .statSubTitle {
+                    font-size: 10.5px;
+                }
+            }
+        }
+    }
+}
