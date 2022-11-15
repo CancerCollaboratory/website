@@ -13,7 +13,6 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
           src={imageSrcPath}
           alt={imageAlt}
           className={styles.mainImage}
-          priority={false}
           width={58}
           height={58}
           quality={100}
@@ -29,9 +28,8 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
               )}
               <Image
                 src={IconArrow}
-                alr={"Arrow Icon"}
+                alr={"Icon"}
                 className={styles.titleIcon}
-                priority={false}
                 width={13}
                 height={13}
                 quality={100}
