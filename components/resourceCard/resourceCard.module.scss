@@ -41,7 +41,30 @@
 }
 
 // large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .cardContainer {
+        height: 100px;
+        margin: 12px;
+
+        .image {
+            width: 49px;
+            height: auto;
+            margin: 0px 14px;
+        }
+
+        .cardContent {
+            margin-right: 14px;
+
+            .title {
+                font-size: 12px;
+            }
+
+            .bodyText {
+                font-size: 11.5px;
+            }
+        }
+    }
+}
 
 // medium: 991px
 @include respond-to("medium") {}
