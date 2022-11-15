@@ -40,7 +40,6 @@
     }
 }
 
-// large: 1199px
 @include respond-to("large") {
     .cardContainer {
         margin: 12px;
@@ -66,14 +65,104 @@
     }
 }
 
-// medium: 991px
-@include respond-to("medium") {}
+@include respond-to("medium") {
+    .cardContainer {
+        margin: 9px;
+        width: 436px;
+        height: 83px;
 
-// small: 767px
-@include respond-to("small") {}
+        .image {
+            margin: 0px 15px;
+            width: 43px;
+        }
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+        .cardContent {
+            margin-right: 15x;
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+            .title {
+                margin-bottom: 6.5px;
+                font-size: 12.5px;
+            }
+
+            .bodyText {
+                font-size: 11.5px;
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .cardContainer {
+        flex-direction: column;
+        justify-content: center;
+        margin: 11px 0px;
+        width: 60%;
+        height: 148px;
+
+        .image {
+            margin: 0px 0px 10px 0px;
+            width: 45px;
+        }
+
+        .cardContent {
+            margin: 0px;
+
+            .title {
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 12.5px;
+            }
+
+            .bodyText {
+                margin: 0px 29px;
+                text-align: center;
+                font-size: 11.5px;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .cardContainer {
+        margin: 10.5px 0px;
+        padding: 5% 0%;
+        height: 100%;
+
+        .image {
+            width: 44px;
+        }
+
+        .cardContent {
+            .title {
+                margin: 0px 16px 10px 16px;
+                line-height: 160%;
+            }
+
+            .bodyText {
+                line-height: 140%;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .cardContainer {
+        padding: 6% 0%;
+        width: 59.5%;
+
+        .image {
+            width: 43px;
+        }
+
+        .cardContent {
+            .title {
+                font-size: 12px;
+            }
+
+            .bodyText {
+                margin: 0px 22px;
+                font-size: 11px;
+            }
+        }
+    }
+}
