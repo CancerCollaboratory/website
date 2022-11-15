@@ -6,8 +6,8 @@
     align-items: center;
     border: 1px solid $color-light-x4-gray;
     border-radius: 10px;
-    height: 120px;
     margin: 14px;
+    height: 120px;
 
     .image {
         margin: 0px 20px;
@@ -19,9 +19,9 @@
         margin-right: 20px;
 
         .title {
+            margin-bottom: 7px;
             font-weight: 500;
             font-size: 14.5px;
-            margin-bottom: 7px;
 
             a {
                 text-decoration: underline;
@@ -43,13 +43,13 @@
 // large: 1199px
 @include respond-to("large") {
     .cardContainer {
-        height: 100px;
         margin: 12px;
+        height: 100px;
 
         .image {
+            margin: 0px 14px;
             width: 49px;
             height: auto;
-            margin: 0px 14px;
         }
 
         .cardContent {
