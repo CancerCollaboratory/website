@@ -19,6 +19,8 @@
         margin-right: 20px;
 
         .title {
+            display: flex;
+            align-items: center;
             margin-bottom: 7px;
             font-weight: 500;
             font-size: 14.5px;
@@ -30,6 +32,10 @@
                 &:hover {
                     color: $color-light-x3-blue;
                 }
+            }
+
+            .titleIcon {
+                margin-left: 9px;
             }
         }
 
@@ -56,6 +62,11 @@
 
             .title {
                 font-size: 12px;
+
+                .titleIcon {
+                    width: 11px;
+                    height: auto;
+                }
             }
 
             .bodyText {
@@ -82,6 +93,11 @@
             .title {
                 margin-bottom: 6.5px;
                 font-size: 12.5px;
+
+                .titleIcon {
+                    margin-left: 8.5px;
+                    width: 11.5px;
+                }
             }
 
             .bodyText {
@@ -96,7 +112,7 @@
         flex-direction: column;
         justify-content: center;
         margin: 11px 0px;
-        width: 60%;
+        width: 64%;
         height: 155px;
 
         .mainImage {
@@ -105,13 +121,18 @@
         }
 
         .cardContent {
+            align-items: center;
             margin: 0px;
 
             .title {
                 margin-bottom: 10px;
                 line-height: 150%;
-                text-align: center;
                 font-size: 13px;
+
+                .titleIcon {
+                    margin-left: 11px;
+                    width: 12px;
+                }
             }
 
             .bodyText {
@@ -128,6 +149,7 @@
     .cardContainer {
         margin: 10.5px 0px;
         padding: 5% 0%;
+        width: 76%;
         height: 100%;
 
         .mainImage {
@@ -138,7 +160,11 @@
             .title {
                 margin: 0px 16px 10px 16px;
                 line-height: 160%;
-                font-size: 12.5px;
+                font-size: 11.5px;
+
+                .titleIcon {
+                    width: 11px;
+                }
             }
 
             .bodyText {
@@ -152,7 +178,7 @@
 @include respond-to("extra-extra-small") {
     .cardContainer {
         padding: 6% 0%;
-        width: 59.5%;
+        width: 79%;
 
         .mainImage {
             width: 43px;
@@ -160,12 +186,16 @@
 
         .cardContent {
             .title {
-                font-size: 12px;
+                font-size: 11px;
+
+                .titleIcon {
+                    width: 10.5px;
+                }
             }
 
             .bodyText {
-                margin: 0px 22px;
-                font-size: 11px;
+                margin: 0px 26px;
+                font-size: 10.5px;
             }
         }
     }
