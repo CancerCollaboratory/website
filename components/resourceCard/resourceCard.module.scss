@@ -7,20 +7,20 @@
     border: 1px solid $color-light-x4-gray;
     border-radius: 10px;
     height: 120px;
-    margin: 13px;
+    margin: 14px;
 
     .image {
-        margin: 0px 22px;
+        margin: 0px 20px;
     }
 
     .cardContent {
         display: flex;
         flex-direction: column;
-        margin-right: 22px;
+        margin-right: 20px;
 
         .title {
             font-weight: 500;
-            font-size: 16px;
+            font-size: 15px;
             margin-bottom: 7px;
 
             a {
@@ -35,7 +35,7 @@
 
         .bodyText {
             color: $color-dark-x2-gray;
-            font-size: 14px;
+            font-size: 13px;
         }
     }
 }
