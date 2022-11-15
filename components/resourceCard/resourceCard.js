@@ -13,8 +13,8 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
           alt={imageAlt}
           className={styles.image}
           priority={false}
-          width={62}
-          height={62}
+          width={58}
+          height={58}
           quality={100}
         />
       )}
