@@ -3,12 +3,12 @@
 .cardLayout {
     display: flex;
     align-items: center;
-    padding: 14px 44px;
+    padding: 14px 22px;
 }
 
 @include respond-to("large") {
     .cardLayout {
-        padding: 12px 47px;
+        padding: 12px 25px;
     }
 }
 
