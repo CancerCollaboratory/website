@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import Image from "next/future/image";
+import IconArrow from "../../public/assets/resourceCard/icon-arrow-gray.svg";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
 import styles from "./resourceCard.module.scss";
@@ -11,7 +12,7 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
         <Image
           src={imageSrcPath}
           alt={imageAlt}
-          className={styles.image}
+          className={styles.mainImage}
           priority={false}
           width={58}
           height={58}
@@ -26,6 +27,15 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
                 title,
                 isTitleLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
               )}
+              <Image
+                src={IconArrow}
+                alr={"Arrow Icon"}
+                className={styles.titleIcon}
+                priority={false}
+                width={13}
+                height={13}
+                quality={100}
+              />
             </div>
           )}
           {bodyText && <p className={styles.bodyText}>{bodyText}</p>}
