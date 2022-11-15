@@ -1,5 +1,32 @@
+@import "../../styles/mixins";
+
 .cardLayout {
     display: flex;
     align-items: center;
     padding: 14px 44px;
+}
+
+@include respond-to("large") {
+    .cardLayout {
+        padding: 12px 47px;
+    }
+}
+
+@include respond-to("medium") {
+    .cardLayout {
+        flex-direction: column;
+        padding: 9px 0px;
+    }
+}
+
+@include respond-to("small") {
+    .cardLayout {
+        padding: 11px 0px;
+    }
+}
+
+@include respond-to("extra-small") {
+    .cardLayout {
+        padding: 10.5px 0px;
+    }
 }
