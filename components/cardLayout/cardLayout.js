@@ -5,7 +5,7 @@ import styles from "./cardLayout.module.scss";
 
 const CardLayout = ({ cards }) => {
   return (
-    <div className={clsx(styles.cardLayout, utilStyles.componentContainer)}>
+    <div className={clsx(styles.cardLayout, utilStyles.outerContainer)}>
       {cards.map((card, index) => (
         <ResourceCard
           title={card.title}
