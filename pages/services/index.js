@@ -53,13 +53,7 @@ const Services = () => {
           }
           styleBackground={utilStyles.gradientBackgroundGray}
         />
-        <ResourceSection
-          title={resourceSection.title}
-          cards={resourceSection.cards}
-          caption={resourceSection.caption}
-          isCaptionLinkExternal={resourceSection.isCaptionLinkExternal}
-          navLinks={resourceSection.navLinks}
-        />
+        <ResourceSection title={resourceSection.title} cards={resourceSection.cards} />
       </div>
     </>
   );
