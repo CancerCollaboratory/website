@@ -1,19 +1,23 @@
+import CardLayout from "../cardLayout/cardLayout";
+import NavLink from "../navLink/navLink";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
 import styles from "./resourceSection.module.scss";
 
-const ResourceSection = ({ title, bodyText, isBodyTextLinkExternal }) => {
+const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLinks }) => {
   return (
     <div className={styles.sectionContainer}>
-      {title && <h1>{title}</h1>}
-      {bodyText && (
-        <div>
+      {title && <h1 className={styles.title}>{title}</h1>}
+      {cards && <CardLayout cards={cards} />}
+      {caption && (
+        <div className={styles.caption}>
           {renderData(
-            bodyText,
-            isBodyTextLinkExternal === "ture" ? insertLinkExternal : insertLinkInternal
+            caption,
+            isCaptionLinkExternal === "ture" ? insertLinkExternal : insertLinkInternal
           )}
         </div>
       )}
+      {navLinks && <NavLink links={navLinks} />}
     </div>
   );
 };
