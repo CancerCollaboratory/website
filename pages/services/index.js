@@ -4,6 +4,7 @@ import LateralColumn from "../../components/lateralColumn/lateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
 import StatGrid from "../../components/statGrid/statGrid";
+import ResourceSection from "../../components/resourceSection/resourceSection";
 import { getCurrentMonth, getCurrentYear } from "../../lib/functions/timeValue";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./services.module.scss";
@@ -14,6 +15,7 @@ const Services = () => {
   const latCol1RightCol = pageData.lateralColumnTop.rightColumn;
   const latCol2LeftCol = pageData.lateralColumnBottom.leftColumn;
   const statGrid = pageData.statGrid;
+  const resourceSection = pageData.resourceSection;
 
   return (
     <>
@@ -50,6 +52,13 @@ const Services = () => {
             />
           }
           styleBackground={utilStyles.gradientBackgroundGray}
+        />
+        <ResourceSection
+          title={resourceSection.title}
+          cards={resourceSection.cards}
+          caption={resourceSection.caption}
+          isCaptionLinkExternal={resourceSection.isCaptionLinkExternal}
+          navLinks={resourceSection.navLinks}
         />
       </div>
     </>
