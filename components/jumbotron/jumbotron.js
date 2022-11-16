@@ -34,7 +34,6 @@ const Jumbotron = ({
                 src={imageSrcPath}
                 alt={imageLabel}
                 className={styles.jumbotronImage}
-                priority={false}
                 width={75}
                 height={52}
                 quality={100}
