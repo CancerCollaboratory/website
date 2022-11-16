@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.componentContainer {
+.outerContainer {
     width: 1170px;
 }
 
@@ -20,19 +20,19 @@
 }
 
 @include respond-to("large") {
-    .componentContainer {
+    .outerContainer {
         width: 970px;
     }
 }
 
 @include respond-to("medium") {
-    .componentContainer {
+    .outerContainer {
         width: 750px;
     }
 }
 
 @include respond-to("small") {
-    .componentContainer {
+    .outerContainer {
         width: 100%;
     }
 }
