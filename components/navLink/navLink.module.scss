@@ -1,0 +1,87 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+// 14, 14, 13, 12, 12, 11
+
+.container {
+    display: flex;
+    margin-bottom: 28px;
+
+    .label {
+        font-weight: 500;
+        font-size: 12.5px;
+
+        a {
+            color: $color-dark-red;
+
+            &:hover {
+                color: #ec1c23;
+            }
+        }
+    }
+
+    .borderRight {
+        border-right: 3px solid $color-dark-red;
+        padding-right: 14px;
+        margin-right: 14px;
+    }
+}
+
+// large: 1199px
+@include respond-to("large") {
+    .container {
+        margin-bottom: 24px;
+    }
+}
+
+// medium: 991px
+@include respond-to("medium") {
+    .container {
+        margin-bottom: 18px;
+
+        .label {
+            font-size: 11.5px;
+        }
+
+        .borderRight {
+            padding-right: 13px;
+            margin-right: 13px;
+        }
+    }
+}
+
+// small: 767px
+@include respond-to("small") {
+    .container {
+        margin-bottom: 22px;
+
+        .label {
+            font-size: 10.5px;
+        }
+
+        .borderRight {
+            padding-right: 12px;
+            margin-right: 12px;
+        }
+    }
+}
+
+// extra-small: 388px
+@include respond-to("extra-small") {
+    .container {
+        margin-bottom: 21px;
+    }
+}
+
+// extra-extra-small: 315px
+@include respond-to("extra-extra-small") {
+    .container {
+        .label {
+            font-size: 9.5px;
+        }
+
+        .borderRight {
+            padding-right: 11px;
+            margin-right: 11px;
+        }
+    }
+}
