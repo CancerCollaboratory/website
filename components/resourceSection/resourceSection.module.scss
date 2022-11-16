@@ -54,9 +54,7 @@
 
 @include respond-to ("medium") {
     .sectionContainer {
-        background-position: bottom -39px right 0px;
-        background-size: 109px;
-        width: 436px;
+        background: none;
 
         .title {
             margin-top: 18x;
@@ -74,10 +72,6 @@
 
 @include respond-to ("small") {
     .sectionContainer {
-        background-position: bottom -22px right 21%;
-        background-size: 63px;
-        width: 100%;
-
         .title {
             margin-top: 22px;
             font-size: 16px;
@@ -94,8 +88,6 @@
 
 @include respond-to ("extra-small") {
     .sectionContainer {
-        background-image: none;
-
         .title {
             margin-top: 21px;
             font-size: 15px;
