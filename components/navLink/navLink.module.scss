@@ -1,6 +1,5 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
-// 14, 14, 13, 12, 12, 11
 
 .container {
     display: flex;
@@ -14,7 +13,7 @@
             color: $color-dark-red;
 
             &:hover {
-                color: #ec1c23;
+                color: $color-light-red;
             }
         }
     }
