@@ -1,4 +1,122 @@
+@import "../../styles/colors";
+@import "../../styles/imgPaths";
+@import "../../styles/mixins";
+
 .sectionContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-image: $background-collab-cloud;
+    background-position: bottom -65px left 36px;
+    background-repeat: no-repeat;
+    background-size: 185px;
+
+    .title {
+        color: $color-dark-x4-gray;
+        margin-top: 28px;
+        font-size: 22px;
+    }
+
+    .caption {
+        color: $color-dark-x2-gray;
+        margin-bottom: 28px;
+        text-align: center;
+        line-height: 170%;
+        font-size: 14px;
+        width: 700px;
+
+        a {
+            text-decoration: underline;
+            color: $color-dark-blue;
+
+            &:hover {
+                color: $color-light-x3-blue;
+            }
+        }
+    }
+}
+
+@include respond-to ("large") {
+    .sectionContainer {
+        background-position: bottom -63px left 37px;
+        background-size: 178px;
+
+        .title {
+            margin-top: 24x;
+        }
+
+        .caption {
+            margin-bottom: 24px;
+            width: 600px;
+        }
+    }
+}
+
+@include respond-to ("medium") {
+    .sectionContainer {
+        background-position: bottom -39px right 0px;
+        background-size: 109px;
+        width: 436px;
+
+        .title {
+            margin-top: 18x;
+            font-size: 21px;
+        }
+
+        .caption {
+            margin-bottom: 18px;
+            line-height: 168%;
+            font-size: 13px;
+            width: 310px;
+        }
+    }
+}
+
+@include respond-to ("small") {
+    .sectionContainer {
+        background-position: bottom -22px right 21%;
+        background-size: 63px;
+        width: 100%;
+
+        .title {
+            margin-top: 22px;
+            font-size: 16px;
+        }
+
+        .caption {
+            margin-bottom: 22px;
+            line-height: 168%;
+            font-size: 12px;
+            width: 54%;
+        }
+    }
+}
+
+@include respond-to ("extra-small") {
+    .sectionContainer {
+        background-image: none;
+
+        .title {
+            margin-top: 21px;
+            font-size: 15px;
+        }
+
+        .caption {
+            margin-bottom: 21px;
+            width: 67%;
+        }
+    }
+}
+
+@include respond-to ("extra-extra-small") {
+    .sectionContainer {
+        .title {
+            font-size: 13px;
+        }
+
+        .caption {
+            font-size: 11px;
+            width: 68%;
+        }
+    }
 }
