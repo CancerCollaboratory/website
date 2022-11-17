@@ -9,13 +9,13 @@
 
     .title {
         color: $color-dark-x4-gray;
-        margin-top: 26px;
+        margin-top: 28px;
         font-size: 22px;
     }
 
     .caption {
         color: $color-dark-x2-gray;
-        margin-bottom: 26px;
+        margin-bottom: 28px;
         text-align: center;
         line-height: 170%;
         font-size: 14px;
@@ -42,11 +42,11 @@
 @include respond-to ("large") {
     .sectionContainer {
         .title {
-            margin-top: 20px;
+            margin-top: 24px;
         }
 
         .caption {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             width: 600px;
         }
     }
@@ -88,7 +88,7 @@
             margin-bottom: 22px;
             line-height: 168%;
             font-size: 12px;
-            width: 54%;
+            width: 64.5%;
         }
     }
 }
@@ -102,7 +102,7 @@
 
         .caption {
             margin-bottom: 21px;
-            width: 67%;
+            width: 80%;
         }
     }
 }
@@ -115,7 +115,7 @@
 
         .caption {
             font-size: 11px;
-            width: 68%;
+            width: 81%;
         }
     }
 }
