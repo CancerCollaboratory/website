@@ -8,7 +8,12 @@
 }
 
 .outerContainer {
-    width: 1170px;
+    width: 1098px;
+}
+
+.bottomBorder {
+    border-bottom: 1px dotted $color-light-x5-gray;
+    margin: 0px 4px;
 }
 
 .itemLabel {
@@ -21,18 +26,22 @@
 
 @include respond-to("large") {
     .outerContainer {
-        width: 970px;
+        width: 898px;
     }
 }
 
 @include respond-to("medium") {
     .outerContainer {
-        width: 750px;
+        width: 674px;
     }
 }
 
 @include respond-to("small") {
     .outerContainer {
-        width: 100%;
+        width: 90%;
+    }
+
+    .bottomBorder {
+        margin: 0px 4px;
     }
 }
