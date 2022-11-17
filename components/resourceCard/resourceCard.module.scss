@@ -112,7 +112,7 @@
         flex-direction: column;
         justify-content: center;
         margin: 11px 0px;
-        width: 64%;
+        width: 76%;
         height: 155px;
 
         .mainImage {
@@ -149,7 +149,7 @@
     .cardContainer {
         margin: 10.5px 0px;
         padding: 5% 0%;
-        width: 76%;
+        width: 88%;
         height: 100%;
 
         .mainImage {
@@ -178,7 +178,7 @@
 @include respond-to("extra-extra-small") {
     .cardContainer {
         padding: 6% 0%;
-        width: 79%;
+        width: 94%;
 
         .mainImage {
             width: 43px;
