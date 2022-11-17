@@ -79,8 +79,6 @@
 
 @include respond-to ("small") {
     .sectionContainer {
-        width: 100%;
-
         .title {
             margin-top: 22px;
             font-size: 16px;
