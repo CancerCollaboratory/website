@@ -6,10 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: $background-collab-cloud;
-    background-position: bottom -65px left 36px;
-    background-repeat: no-repeat;
-    background-size: 185px;
 
     .title {
         color: $color-dark-x4-gray;
@@ -36,13 +32,17 @@
     }
 }
 
+.background {
+    background-image: $background-collab-cloud;
+    background-position: bottom -65px left 36px;
+    background-repeat: no-repeat;
+    background-size: 185px;
+}
+
 @include respond-to ("large") {
     .sectionContainer {
-        background-position: bottom -63px left 37px;
-        background-size: 178px;
-
         .title {
-            margin-top: 24x;
+            margin-top: 24px;
         }
 
         .caption {
@@ -50,14 +50,17 @@
             width: 600px;
         }
     }
+
+    .background {
+        background-position: bottom -63px left 37px;
+        background-size: 178px;
+    }
 }
 
 @include respond-to ("medium") {
     .sectionContainer {
-        background: none;
-
         .title {
-            margin-top: 18x;
+            margin-top: 18px;
             font-size: 21px;
         }
 
@@ -67,6 +70,10 @@
             font-size: 13px;
             width: 310px;
         }
+    }
+
+    .background {
+        background: none;
     }
 }
 
