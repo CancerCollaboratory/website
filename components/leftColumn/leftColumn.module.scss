@@ -7,7 +7,7 @@
     color: $color-dark-x4-gray;
     margin-bottom: 5px;
     padding-left: 94px;
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .bodyText {
@@ -18,6 +18,10 @@
 }
 
 @include respond-to("large") {
+    .title {
+        font-size: 20px;
+    }
+
     .bodyText {
         margin-top: 9px;
     }
@@ -27,7 +31,7 @@
     .title {
         text-align: center;
         padding-left: 92px;
-        font-size: 21px;
+        font-size: 19px;
     }
 
     .bodyText {
