@@ -1,11 +1,9 @@
-import clsx from "clsx";
 import ResourceCard from "../resourceCard/resourceCard";
-import utilStyles from "../../styles/utils.module.scss";
 import styles from "./cardLayout.module.scss";
 
 const CardLayout = ({ cards }) => {
   return (
-    <div className={clsx(styles.cardLayout, utilStyles.outerContainer)}>
+    <div className={styles.cardLayout}>
       {cards.map((card, index) => (
         <ResourceCard
           title={card.title}
