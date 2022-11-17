@@ -4,7 +4,7 @@ import styles from "./leftColumn.module.scss";
 const LeftColumn = ({ title, styleTitleImage, body, children }) => {
   return (
     <>
-      {title && <h1 className={clsx(styles.title, styleTitleImage)}>{title}</h1>}
+      {title && <h2 className={clsx(styles.title, styleTitleImage)}>{title}</h2>}
       {body?.map(
         (item, index) =>
           item.text && (
