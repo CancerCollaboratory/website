@@ -30,8 +30,8 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
                 src={IconArrow}
                 alt={"Icon"}
                 className={styles.titleIcon}
-                width={13}
-                height={13}
+                width={12}
+                height={12}
                 quality={100}
               />
             </div>
