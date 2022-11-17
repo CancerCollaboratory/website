@@ -6,7 +6,7 @@
     align-items: center;
     border: 1px solid $color-light-x4-gray;
     border-radius: 10px;
-    margin: 13px;
+    margin: 14px;
     height: 120px;
 
     .mainImage {
@@ -23,7 +23,7 @@
             align-items: center;
             margin-bottom: 7px;
             font-weight: 500;
-            font-size: 13.5px;
+            font-size: 14.5px;
 
             a {
                 text-decoration: underline;
@@ -48,12 +48,12 @@
 
 @include respond-to("large") {
     .cardContainer {
-        margin: 10px;
+        margin: 12px;
         height: 100px;
 
         .mainImage {
             margin: 0px 14px;
-            width: 47px;
+            width: 49px;
             height: auto;
         }
 
@@ -61,16 +61,16 @@
             margin-right: 14px;
 
             .title {
-                font-size: 11.5px;
+                font-size: 12px;
 
                 .titleIcon {
-                    width: 10px;
+                    width: 11px;
                     height: auto;
                 }
             }
 
             .bodyText {
-                font-size: 11px;
+                font-size: 11.5px;
             }
         }
     }
@@ -112,7 +112,7 @@
         flex-direction: column;
         justify-content: center;
         margin: 11px 0px;
-        width: 76%;
+        width: 64%;
         height: 155px;
 
         .mainImage {
@@ -149,7 +149,7 @@
     .cardContainer {
         margin: 10.5px 0px;
         padding: 5% 0%;
-        width: 88%;
+        width: 76%;
         height: 100%;
 
         .mainImage {
@@ -178,7 +178,7 @@
 @include respond-to("extra-extra-small") {
     .cardContainer {
         padding: 6% 0%;
-        width: 94%;
+        width: 79%;
 
         .mainImage {
             width: 43px;
