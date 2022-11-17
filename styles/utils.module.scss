@@ -8,12 +8,8 @@
 }
 
 .outerContainer {
-    width: 1098px;
-}
-
-.bottomBorder {
     border-bottom: 1px dotted $color-light-x5-gray;
-    margin: 0px 4px;
+    width: 1098px;
 }
 
 .itemLabel {
@@ -39,9 +35,5 @@
 @include respond-to("small") {
     .outerContainer {
         width: 90%;
-    }
-
-    .bottomBorder {
-        margin: 0px 4px;
     }
 }
