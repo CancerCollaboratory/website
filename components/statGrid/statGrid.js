@@ -25,7 +25,7 @@ const StatGrid = ({ title, body }) => {
               )}
               key={index}
             >
-              {item.title && <h3 className={styles.statTitle}>{item.title}</h3>}
+              {item.title && <p className={styles.statTitle}>{item.title}</p>}
               {item.subTitle && <p className={styles.statSubTitle}>{item.subTitle}</p>}
             </li>
           ))}

@@ -6,7 +6,7 @@
     align-items: center;
     border: 1px solid $color-light-x4-gray;
     border-radius: 10px;
-    margin: 14px;
+    margin: 13px;
     height: 120px;
 
     .mainImage {
@@ -22,15 +22,18 @@
             display: flex;
             align-items: center;
             margin-bottom: 7px;
-            font-weight: 500;
-            font-size: 14.5px;
 
-            a {
-                text-decoration: underline;
-                color: $color-dark-blue;
+            h3 {
+                font-weight: 500;
+                font-size: 14.5px;
 
-                &:hover {
-                    color: $color-light-x3-blue;
+                a {
+                    text-decoration: underline;
+                    color: $color-dark-blue;
+
+                    &:hover {
+                        color: $color-light-x3-blue;
+                    }
                 }
             }
 
@@ -48,7 +51,8 @@
 
 @include respond-to("large") {
     .cardContainer {
-        margin: 12px;
+        border-radius: 14px;
+        margin: 11px;
         height: 100px;
 
         .mainImage {
@@ -61,7 +65,9 @@
             margin-right: 14px;
 
             .title {
-                font-size: 12px;
+                h3 {
+                    font-size: 12px;
+                }
 
                 .titleIcon {
                     width: 11px;
@@ -78,6 +84,7 @@
 
 @include respond-to("medium") {
     .cardContainer {
+        border-radius: 15px;
         margin: 9px;
         width: 436px;
         height: 83px;
@@ -92,7 +99,10 @@
 
             .title {
                 margin-bottom: 6.5px;
-                font-size: 12.5px;
+
+                h3 {
+                    font-size: 12.5px;
+                }
 
                 .titleIcon {
                     margin-left: 8.5px;
@@ -111,6 +121,7 @@
     .cardContainer {
         flex-direction: column;
         justify-content: center;
+        border-radius: 20px;
         margin: 11px 0px;
         width: 64%;
         height: 155px;
@@ -127,7 +138,10 @@
             .title {
                 margin-bottom: 10px;
                 line-height: 150%;
-                font-size: 13px;
+
+                h3 {
+                    font-size: 13px;
+                }
 
                 .titleIcon {
                     margin-left: 11px;
@@ -147,6 +161,7 @@
 
 @include respond-to("extra-small") {
     .cardContainer {
+        border-radius: 22px;
         margin: 10.5px 0px;
         padding: 5% 0%;
         width: 76%;
@@ -160,7 +175,10 @@
             .title {
                 margin: 0px 16px 10px 16px;
                 line-height: 160%;
-                font-size: 11.5px;
+
+                h3 {
+                    font-size: 11.5px;
+                }
 
                 .titleIcon {
                     width: 11px;
@@ -177,6 +195,7 @@
 
 @include respond-to("extra-extra-small") {
     .cardContainer {
+        border-radius: 24px;
         padding: 6% 0%;
         width: 79%;
 
@@ -186,7 +205,9 @@
 
         .cardContent {
             .title {
-                font-size: 11px;
+                h3 {
+                    font-size: 11px;
+                }
 
                 .titleIcon {
                     width: 10.5px;

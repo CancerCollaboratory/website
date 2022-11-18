@@ -1,0 +1,105 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+    margin-bottom: 28px;
+
+    .label {
+        font-weight: 500;
+        font-size: 12.5px;
+
+        .iconArrow {
+            margin-left: 6px;
+        }
+
+        a {
+            color: $color-dark-red;
+
+            &:hover {
+                color: $color-light-red;
+            }
+        }
+    }
+
+    .borderRight {
+        border-right: 3px solid $color-dark-red;
+        padding-right: 15px;
+        margin-right: 15px;
+    }
+}
+
+@include respond-to("large") {
+    .container {
+        margin-bottom: 24px;
+    }
+}
+
+@include respond-to("medium") {
+    .container {
+        margin-bottom: 18px;
+
+        .label {
+            font-size: 11.5px;
+
+            .iconArrow {
+                width: 10px;
+                height: auto;
+            }
+
+            .borderRight {
+                padding-right: 14px;
+                margin-right: 14px;
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 22px;
+
+        .label {
+            font-size: 10.5px;
+
+            .iconArrow {
+                width: 9.5px;
+            }
+        }
+
+        .borderRight {
+            border-right: none;
+            padding-right: 0px;
+            margin-right: 0px;
+        }
+
+        .marginBottom {
+            margin-bottom: 10.5px;
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        margin-bottom: 21px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        .label {
+            font-size: 9.5px;
+
+            .iconArrow {
+                margin-left: 5.5px;
+                width: 9px;
+            }
+        }
+
+        .marginBottom {
+            margin-bottom: 9.5px;
+        }
+    }
+}

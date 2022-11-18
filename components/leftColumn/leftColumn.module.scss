@@ -6,8 +6,8 @@
     align-items: center;
     color: $color-dark-x4-gray;
     margin-bottom: 5px;
-    padding-left: 94px;
-    font-size: 22px;
+    padding-left: 89px;
+    font-size: 21px;
 }
 
 .bodyText {
@@ -18,6 +18,11 @@
 }
 
 @include respond-to("large") {
+    .title {
+        padding-left: 85px;
+        font-size: 20px;
+    }
+
     .bodyText {
         margin-top: 9px;
     }
@@ -26,8 +31,8 @@
 @include respond-to("medium") {
     .title {
         text-align: center;
-        padding-left: 92px;
-        font-size: 21px;
+        padding-left: 80px;
+        font-size: 19px;
     }
 
     .bodyText {
@@ -39,7 +44,7 @@
 
 @include respond-to("small") {
     .title {
-        padding-left: 79px;
+        padding-left: 69px;
         font-size: 16px;
     }
 
@@ -51,7 +56,7 @@
 
 @include respond-to("extra-small") {
     .title {
-        padding-left: 67px;
+        padding-left: 59px;
         font-size: 15px;
     }
 }
@@ -59,7 +64,7 @@
 @include respond-to("extra-extra-small") {
     .title {
         margin-bottom: 4px;
-        padding-left: 49px;
+        padding-left: 48.5px;
         font-size: 13px;
     }
 

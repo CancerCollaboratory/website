@@ -74,26 +74,29 @@
             }
         ]
     },
-    "resourceCards": [
-        {
-            "title": "[Read about our Resources](/services-cloud-resources)",
-            "bodyText": "Investigate the services we have available for your team.",
-            "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
-            "imageAlt": "Cloud Resources"
-        },
-        {
-            "title": "[Request an Account](/services-request-account)",
-            "bodyText": "Register your research project or a user with the Collaboratory.",
-            "imageSrcPath": "/assets/resourceCard/icon-circle-registration.svg",
-            "imageAlt": "Registration"
-        },
-        {
-            "title": "[Getting Started Documentation](/support/getting-started)",
-            "bodyText": "How to get started with running your analysis on the ICGC data.",
-            "imageSrcPath": "/assets/resourceCard/icon-circle-documentation.svg",
-            "imageAlt": "Documentation"
-        }
-    ],
+    "resourceSection": {
+        "title": "Get Started",
+        "cards": [
+            {
+                "title": "### [Read about our Resources](/services-cloud-resources)",
+                "bodyText": "Investigate the services we have available for your team.",
+                "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
+                "imageAlt": "Cloud Resources"
+            },
+            {
+                "title": "### [Request an Account](/services-request-account)",
+                "bodyText": "Register your research project or a user with the Collaboratory.",
+                "imageSrcPath": "/assets/resourceCard/icon-circle-registration.svg",
+                "imageAlt": "Registration"
+            },
+            {
+                "title": "### [Getting Started Documentation](/support/getting-started)",
+                "bodyText": "How to get started with running your analysis on the ICGC data.",
+                "imageSrcPath": "/assets/resourceCard/icon-circle-documentation.svg",
+                "imageAlt": "Documentation"
+            }
+        ]
+    },
     "callToAction": {
         "title": "For Technical Assistance",
         "bodyText": "If you can't find what you are looking for, please contact our support team. We are working hard to get back to you within 1-2 business days.",
