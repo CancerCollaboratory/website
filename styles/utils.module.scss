@@ -8,6 +8,11 @@
 }
 
 .outerContainer {
+    border-bottom: 1px dotted $color-light-x5-gray;
+    width: 1098px;
+}
+
+.defaultContainerWidth {
     width: 1170px;
 }
 
@@ -21,18 +26,30 @@
 
 @include respond-to("large") {
     .outerContainer {
+        width: 898px;
+    }
+
+    .defaultContainerWidth {
         width: 970px;
     }
 }
 
 @include respond-to("medium") {
     .outerContainer {
+        width: 674px;
+    }
+
+    .defaultContainerWidth {
         width: 750px;
     }
 }
 
 @include respond-to("small") {
     .outerContainer {
+        width: 84%;
+    }
+
+    .defaultContainerWidth {
         width: 100%;
     }
 }
