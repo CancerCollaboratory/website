@@ -7,6 +7,7 @@
     border-radius: 30px;
     background-color: $color-dark-red;
     padding: 3.5px 9px;
+    margin: 3px 0px;
 
     &:hover {
         background-color: $color-light-red;
@@ -26,10 +27,29 @@
 }
 
 // large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .innerContainer {
+        border-radius: 40px;
+        padding: 3.5px 8.5px;
+        margin: 4px 0px;
+
+        .label {
+            font-size: 10px;
+        }
+
+        .iconArrow {
+            width: 10px;
+            height: auto;
+        }
+    }
+}
 
 // medium: 991px
-@include respond-to("medium") {}
+@include respond-to("medium") {
+    .innerContainer {
+        margin: 5.5px 0px;
+    }
+}
 
 // small: 767px
 @include respond-to("small") {}
