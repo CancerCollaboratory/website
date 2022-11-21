@@ -5,6 +5,7 @@ import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
 import StatGrid from "../../components/statGrid/statGrid";
 import ResourceSection from "../../components/resourceSection/resourceSection";
+import CallToAction from "../../components/callToAction/callToAction";
 import { getCurrentMonth, getCurrentYear } from "../../lib/functions/timeValue";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./services.module.scss";
@@ -16,6 +17,7 @@ const Services = () => {
   const latCol2LeftCol = pageData.lateralColumnBottom.leftColumn;
   const statGrid = pageData.statGrid;
   const resourceSection = pageData.resourceSection;
+  const callToAction = pageData.callToAction;
 
   return (
     <>
@@ -54,6 +56,14 @@ const Services = () => {
           styleBackground={utilStyles.gradientBackgroundGray}
         />
         <ResourceSection title={resourceSection.title} cards={resourceSection.cards} />
+        <CallToAction
+          title={callToAction.title}
+          imageSrcPath={callToAction.imageSrcPath}
+          imageAlt={callToAction.imageAlt}
+          description={callToAction.description}
+          buttonData={callToAction.buttonData}
+          styleBackground={utilStyles.gradientBackgroundGray}
+        />
       </div>
     </>
   );
