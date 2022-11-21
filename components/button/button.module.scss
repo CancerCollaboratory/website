@@ -1,0 +1,89 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    background-color: $color-dark-red;
+    padding: 3.5px 9px;
+    margin: 3px 0px;
+
+    &:hover {
+        background-color: $color-light-red;
+        cursor: pointer;
+    }
+
+    .label {
+        color: white;
+        letter-spacing: 0.5px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .iconArrow {
+        margin-left: 6px;
+    }
+}
+
+@include respond-to("large") {
+    .container {
+        border-radius: 40px;
+        padding: 3.5px 8.5px;
+        margin: 4px 0px;
+
+        .label {
+            font-size: 10px;
+        }
+
+        .iconArrow {
+            width: 10px;
+            height: auto;
+        }
+    }
+}
+
+@include respond-to("medium") {
+    .container {
+        margin: 5.5px 0px;
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        border-radius: 50px;
+        padding: 3.5px 8px;
+
+        .label {
+            font-size: 9.5px;
+        }
+
+        .iconArrow {
+            margin-left: 5.5px;
+            width: 9.5px;
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        margin: 5px 0px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        margin: 4.5px 0px;
+        border-radius: 65px;
+        padding: 3.5px 7.5px;
+
+        .label {
+            font-size: 8.5px;
+        }
+
+        .iconArrow {
+            margin-left: 5px;
+            width: 8px;
+        }
+    }
+}

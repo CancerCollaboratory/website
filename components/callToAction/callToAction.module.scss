@@ -1,0 +1,211 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0px;
+
+    .titleContainer {
+        display: flex;
+        align-items: center;
+        margin: 0px 20.5px;
+
+        .image {
+            margin-right: 11.5px;
+        }
+
+        .title {
+            color: $color-dark-x4-gray;
+            white-space: nowrap;
+            font-size: 18px;
+        }
+    }
+
+    .bodyContainer {
+        display: flex;
+
+        .description {
+            display: flex;
+            align-items: center;
+            color: $color-dark-x2-gray;
+            margin: 0px 20.5px;
+            line-height: 150%;
+            font-size: 13px;
+            width: 450px;
+
+            a {
+                color: $color-dark-blue;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $color-light-x3-blue;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .isolateText {
+            text-align: center;
+            width: 700px;
+        }
+
+        .actionContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 20.5px;
+        }
+    }
+}
+
+@include respond-to("large") {
+    .container {
+        padding: 21px 0px;
+
+        .titleContainer {
+            margin: 0px 19px;
+
+            .image {
+                width: 24px;
+                height: auto;
+                margin-right: 11px;
+            }
+
+            .title {
+                font-size: 17px;
+            }
+        }
+
+        .bodyContainer {
+            flex-direction: column;
+
+            .description {
+                margin: 4px 19px;
+                font-size: 12.5px;
+                width: 430px;
+            }
+
+            .isolateText {
+                width: 630px;
+            }
+
+            .actionContainer {
+                margin: 0px 19px;
+                width: max-content;
+            }
+        }
+    }
+}
+
+@include respond-to("medium") {
+    .container {
+        flex-direction: column;
+        padding: 19.5px 0px;
+
+        .titleContainer {
+            margin: 5.5px 0px;
+
+            .image {
+                margin-right: 11.5px;
+            }
+
+            .title {
+                text-align: center;
+            }
+        }
+
+        .bodyContainer {
+            align-items: center;
+
+            .description {
+                margin: 5.5px 0px;
+                text-align: center;
+                width: 350px;
+            }
+
+            .actionContainer {
+                margin: 0px;
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        padding: 17.5px 0px;
+        width: 100%;
+
+        .titleContainer {
+            .image {
+                margin-right: 11px;
+                width: 21px;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+        }
+
+        .bodyContainer {
+            .description {
+                font-size: 12px;
+                width: 54%;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        padding: 17px 0px;
+
+        .titleContainer {
+            margin: 5px 0px;
+
+            .image {
+                margin-right: 10px;
+                width: 20px;
+            }
+
+            .title {
+                font-size: 15px;
+            }
+        }
+
+        .bodyContainer {
+            .description {
+                margin: 5px 0px;
+                width: 66%;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        padding: 15.5px 0px;
+
+        .titleContainer {
+            margin: 4.5px 0px;
+
+            .image {
+                margin-right: 7px;
+                width: 17px;
+            }
+
+            .title {
+                font-size: 12px;
+            }
+        }
+
+        .bodyContainer {
+            .description {
+                margin: 4.5px 0px;
+                font-size: 11px;
+                width: 63%;
+            }
+        }
+    }
+}
