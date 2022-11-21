@@ -5,7 +5,7 @@ import styles from "./button.module.scss";
 
 const Button = ({ label, link, isLinkExternal }) => {
   const buttonContent = (
-    <div className={styles.innerContainer}>
+    <div className={styles.container}>
       <p className={styles.label}>{label}</p>
       <Image
         src={IconArrow}

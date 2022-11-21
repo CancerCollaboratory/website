@@ -35,7 +35,7 @@ const CallToAction = ({ title, imageSrcPath, imageAlt, bodyText, buttonData, sty
             </p>
           )}
           {buttonData && (
-            <div className={styles.buttonContainer}>
+            <div className={styles.actionContainer}>
               {buttonData.map((button, index) => (
                 <Button
                   label={button.label}
