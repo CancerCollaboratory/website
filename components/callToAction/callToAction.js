@@ -1,10 +1,20 @@
 import clsx from "clsx";
 import Button from "../button/button";
 import Image from "next/future/image";
+import { renderData } from "../../lib/functions/renderData";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./callToAction.module.scss";
 
-const CallToAction = ({ title, imageSrcPath, imageAlt, bodyText, buttonData, styleBackground }) => {
+const CallToAction = ({
+  title,
+  imageSrcPath,
+  imageAlt,
+  description,
+  isDescriptionLinkExternal,
+  buttonData,
+  styleBackground,
+}) => {
   return (
     <div className={clsx(styles.container, styleBackground, utilStyles.outerContainer)}>
       {title && (
@@ -22,17 +32,20 @@ const CallToAction = ({ title, imageSrcPath, imageAlt, bodyText, buttonData, sty
           <h2 className={styles.title}>{title}</h2>
         </div>
       )}
-      {(bodyText || buttonData) && (
+      {(description || buttonData) && (
         <div className={styles.bodyContainer}>
-          {bodyText && (
-            <p
+          {description && (
+            <div
               className={clsx(
-                styles.bodyText,
+                styles.description,
                 !title && !buttonData ? styles.isolateText : undefined
               )}
             >
-              {bodyText}
-            </p>
+              {renderData(
+                description,
+                isDescriptionLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
+              )}
+            </div>
           )}
           {buttonData && (
             <div className={styles.actionContainer}>
