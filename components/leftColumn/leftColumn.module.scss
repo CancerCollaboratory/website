@@ -1,13 +1,19 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-.title {
+.head {
     display: flex;
     align-items: center;
-    color: $color-dark-x4-gray;
     margin-bottom: 5px;
-    padding-left: 89px;
-    font-size: 21px;
+
+    .image {
+        margin-right: 21px;
+    }
+
+    .title {
+        color: $color-dark-x4-gray;
+        font-size: 21px;
+    }
 }
 
 .bodyText {
@@ -18,9 +24,16 @@
 }
 
 @include respond-to("large") {
-    .title {
-        padding-left: 85px;
-        font-size: 20px;
+    .head {
+        .image {
+            margin-right: 19px;
+            width: 58px;
+            height: auto;
+        }
+
+        .title {
+            font-size: 20px;
+        }
     }
 
     .bodyText {
@@ -29,10 +42,17 @@
 }
 
 @include respond-to("medium") {
-    .title {
-        text-align: center;
-        padding-left: 80px;
-        font-size: 19px;
+    .head {
+        justify-content: center;
+
+        .image {
+            margin-right: 18px;
+            width: 54px;
+        }
+
+        .title {
+            font-size: 19px;
+        }
     }
 
     .bodyText {
@@ -43,9 +63,15 @@
 }
 
 @include respond-to("small") {
-    .title {
-        padding-left: 69px;
-        font-size: 16px;
+    .head {
+        .image {
+            margin-right: 16px;
+            width: 48px;
+        }
+
+        .title {
+            font-size: 16px;
+        }
     }
 
     .bodyText {
@@ -55,17 +81,30 @@
 }
 
 @include respond-to("extra-small") {
-    .title {
-        padding-left: 59px;
-        font-size: 15px;
+    .head {
+        .image {
+            margin-right: 14px;
+            width: 40px;
+        }
+
+        .title {
+            font-size: 15px;
+        }
     }
 }
 
 @include respond-to("extra-extra-small") {
-    .title {
+    .head {
         margin-bottom: 4px;
-        padding-left: 48.5px;
-        font-size: 13px;
+
+        .image {
+            margin-right: 12px;
+            width: 34px;
+        }
+
+        .title {
+            font-size: 13px;
+        }
     }
 
     .bodyText {
