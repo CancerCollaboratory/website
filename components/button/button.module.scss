@@ -1,7 +1,7 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-.innerContainer {
+.container {
     display: flex;
     align-items: center;
     border-radius: 30px;
@@ -26,9 +26,8 @@
     }
 }
 
-// large: 1199px
 @include respond-to("large") {
-    .innerContainer {
+    .container {
         border-radius: 40px;
         padding: 3.5px 8.5px;
         margin: 4px 0px;
@@ -44,18 +43,47 @@
     }
 }
 
-// medium: 991px
 @include respond-to("medium") {
-    .innerContainer {
+    .container {
         margin: 5.5px 0px;
     }
 }
 
-// small: 767px
-@include respond-to("small") {}
+@include respond-to("small") {
+    .container {
+        border-radius: 50px;
+        padding: 3.5px 8px;
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+        .label {
+            font-size: 9.5px;
+        }
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+        .iconArrow {
+            margin-left: 5.5px;
+            width: 9.5px;
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        margin: 5px 0px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        margin: 4.5px 0px;
+        border-radius: 65px;
+        padding: 3.5px 7.5px;
+
+        .label {
+            font-size: 8.5px;
+        }
+
+        .iconArrow {
+            margin-left: 5px;
+            width: 8px;
+        }
+    }
+}
