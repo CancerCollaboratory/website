@@ -41,7 +41,7 @@
             width: 700px;
         }
 
-        .buttonContainer {
+        .actionContainer {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -50,7 +50,6 @@
     }
 }
 
-// large: 1199px
 @include respond-to("large") {
     .container {
         padding: 21px 0px;
@@ -82,7 +81,7 @@
                 width: 630px;
             }
 
-            .buttonContainer {
+            .actionContainer {
                 margin: 0px 19px;
                 width: max-content;
             }
@@ -90,7 +89,6 @@
     }
 }
 
-// medium: 991px
 @include respond-to("medium") {
     .container {
         flex-direction: column;
@@ -112,23 +110,92 @@
             align-items: center;
 
             .bodyText {
-                text-align: center;
                 margin: 5.5px 0px;
+                text-align: center;
                 width: 350px;
             }
 
-            .buttonContainer {
+            .actionContainer {
                 margin: 0px;
             }
         }
     }
 }
 
-// small: 767px
-@include respond-to("small") {}
+@include respond-to("small") {
+    .container {
+        padding: 17.5px 0px;
+        width: 100%;
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+        .titleContainer {
+            .image {
+                margin-right: 11px;
+                width: 21px;
+            }
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+            .title {
+                font-size: 16px;
+            }
+        }
+
+        .bodyContainer {
+            .bodyText {
+                font-size: 12px;
+                width: 54%;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        padding: 17px 0px;
+
+        .titleContainer {
+            margin: 5px 0px;
+
+            .image {
+                margin-right: 10px;
+                width: 20px;
+            }
+
+            .title {
+                font-size: 15px;
+            }
+        }
+
+        .bodyContainer {
+            .bodyText {
+                margin: 5px 0px;
+                width: 66%;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        padding: 15.5px 0px;
+
+        .titleContainer {
+            margin: 4.5px 0px;
+
+            .image {
+                margin-right: 7px;
+                width: 17px;
+            }
+
+            .title {
+                font-size: 12px;
+            }
+        }
+
+        .bodyContainer {
+            .bodyText {
+                margin: 4.5px 0px;
+                font-size: 11px;
+                width: 63%;
+            }
+        }
+    }
+}
