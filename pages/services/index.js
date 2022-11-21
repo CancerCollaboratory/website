@@ -8,13 +8,11 @@ import ResourceSection from "../../components/resourceSection/resourceSection";
 import CallToAction from "../../components/callToAction/callToAction";
 import { getCurrentMonth, getCurrentYear } from "../../lib/functions/timeValue";
 import utilStyles from "../../styles/utils.module.scss";
-import styles from "./services.module.scss";
 
 const Services = () => {
   const jumbotron = pageData.jumbotron;
-  const latCol1LeftCol = pageData.lateralColumnTop.leftColumn;
-  const latCol1RightCol = pageData.lateralColumnTop.rightColumn;
-  const latCol2LeftCol = pageData.lateralColumnBottom.leftColumn;
+  const lateralColumn1 = pageData.lateralColumn1;
+  const lateralColumn2 = pageData.lateralColumn2;
   const statGrid = pageData.statGrid;
   const resourceSection = pageData.resourceSection;
   const callToAction = pageData.callToAction;
@@ -30,21 +28,26 @@ const Services = () => {
         <LateralColumn
           leftColumn={
             <LeftColumn
-              title={latCol1LeftCol.title}
-              styleTitleImage={styles.iconCloudInfrastructure}
-              body={latCol1LeftCol.body}
+              title={lateralColumn1.leftColumn.title}
+              imageSrcPath={lateralColumn1.leftColumn.imageSrcPath}
+              imageAlt={lateralColumn1.leftColumn.imageAlt}
+              body={lateralColumn1.leftColumn.body}
             />
           }
           rightColumn={
-            <RightColumn title={latCol1RightCol.title} subTitle={latCol1RightCol.subTitle} />
+            <RightColumn
+              title={lateralColumn1.rightColumn.title}
+              subTitle={lateralColumn1.rightColumn.subTitle}
+            />
           }
         />
         <LateralColumn
           leftColumn={
             <LeftColumn
-              title={latCol2LeftCol.title}
-              styleTitleImage={styles.iconCloudResources}
-              body={latCol2LeftCol.body}
+              title={lateralColumn2.leftColumn.title}
+              imageSrcPath={lateralColumn2.leftColumn.imageSrcPath}
+              imageAlt={lateralColumn2.leftColumn.imageAlt}
+              body={lateralColumn2.leftColumn.body}
             />
           }
           rightColumn={
