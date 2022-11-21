@@ -26,7 +26,7 @@
     .bodyContainer {
         display: flex;
 
-        .bodyText {
+        .description {
             display: flex;
             align-items: center;
             color: $color-dark-x2-gray;
@@ -34,6 +34,16 @@
             line-height: 150%;
             font-size: 13px;
             width: 450px;
+
+            a {
+                color: $color-dark-blue;
+                text-decoration: underline;
+
+                &:hover {
+                    color: $color-light-x3-blue;
+                    text-decoration: none;
+                }
+            }
         }
 
         .isolateText {
@@ -71,7 +81,7 @@
         .bodyContainer {
             flex-direction: column;
 
-            .bodyText {
+            .description {
                 margin: 4px 19px;
                 font-size: 12.5px;
                 width: 430px;
@@ -109,7 +119,7 @@
         .bodyContainer {
             align-items: center;
 
-            .bodyText {
+            .description {
                 margin: 5.5px 0px;
                 text-align: center;
                 width: 350px;
@@ -139,7 +149,7 @@
         }
 
         .bodyContainer {
-            .bodyText {
+            .description {
                 font-size: 12px;
                 width: 54%;
             }
@@ -165,7 +175,7 @@
         }
 
         .bodyContainer {
-            .bodyText {
+            .description {
                 margin: 5px 0px;
                 width: 66%;
             }
@@ -191,7 +201,7 @@
         }
 
         .bodyContainer {
-            .bodyText {
+            .description {
                 margin: 4.5px 0px;
                 font-size: 11px;
                 width: 63%;
