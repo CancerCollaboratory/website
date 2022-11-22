@@ -9,7 +9,9 @@ const ImageLink = ({ link, isLinkExternal, children }) => {
         {children}
       </a>
     ) : (
-      <Link href={link}>{children}</Link>
+      <Link href={link}>
+        <a>{children}</a>
+      </Link>
     ))
   );
 };
