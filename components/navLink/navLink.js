@@ -20,9 +20,9 @@ const NavLink = ({ links }) => {
             src={IconArrow}
             alt={"Icon"}
             className={styles.iconArrow}
+            quality={100}
             width={11}
             height={11}
-            quality={100}
           />
         </li>
       ))}

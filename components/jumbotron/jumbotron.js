@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Image from "next/future/image";
-import NavbarLink from "../navbarLink/navbarLink";
+import LabelLink from "../labelLink/labelLink";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import { renderData } from "../../lib/functions/renderData";
 import styles from "./jumbotron.module.scss";
@@ -34,16 +34,15 @@ const Jumbotron = ({
                 src={imageSrcPath}
                 alt={imageLabel}
                 className={styles.jumbotronImage}
+                quality={100}
                 width={75}
                 height={52}
-                quality={100}
               />
-              <NavbarLink
+              <LabelLink
                 label={buttonLabel}
-                isLinkWrapped={true}
-                styleWrap={styles.jumbotronButton}
-                isLinkExternal={buttonIsLinkExternal === "true"}
                 link={buttonLink}
+                isLinkExternal={buttonIsLinkExternal}
+                styleWrap={styles.jumbotronButton}
               />
             </div>
           )}

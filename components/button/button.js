@@ -13,9 +13,9 @@ const Button = ({ label, link, isLinkExternal, hasIcon }) => {
           alt={"Icon"}
           link={link}
           className={styles.iconArrow}
+          quality={100}
           width={12}
           height={12}
-          quality={100}
         />
       )}
     </div>

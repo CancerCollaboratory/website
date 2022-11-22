@@ -13,9 +13,9 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
           src={imageSrcPath}
           alt={imageAlt}
           className={styles.mainImage}
+          quality={100}
           width={58}
           height={58}
-          quality={100}
         />
       )}
       {(title || bodyText) && (
@@ -30,9 +30,9 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
                 src={IconArrow}
                 alt={"Icon"}
                 className={styles.titleIcon}
+                quality={100}
                 width={13}
                 height={13}
-                quality={100}
               />
             </div>
           )}

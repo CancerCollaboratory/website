@@ -24,9 +24,9 @@ const CallToAction = ({
               src={imageSrcPath}
               alt={imageAlt}
               className={styles.image}
+              quality={100}
               width={25}
               height={25}
-              quality={100}
             />
           )}
           <h2 className={styles.title}>{title}</h2>
