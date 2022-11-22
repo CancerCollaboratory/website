@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import Link from "next/link";
 import Image from "next/future/image";
+import LabelLink from "../labelLink/labelLink";
 import IconArrow from "../../public/assets/navLink/icon-arrow-red.svg";
 import styles from "./navLink.module.scss";
 
@@ -15,7 +15,7 @@ const NavLink = ({ links }) => {
           )}
           key={index}
         >
-          {item.label && item.link && <Link href={item.link}>{item.label}</Link>}
+          {item.label && item.link && <LabelLink label={item.label} link={item.link} />}
           <Image
             src={IconArrow}
             alt={"Icon"}
