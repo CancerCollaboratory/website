@@ -1,10 +1,10 @@
 import clsx from "clsx";
 import Image from "next/future/image";
 import LabelLink from "../labelLink/labelLink";
-import IconArrow from "../../public/assets/navLink/icon-arrow-red.svg";
-import styles from "./navLink.module.scss";
+import IconArrow from "../../public/assets/navLine/icon-arrow-red.svg";
+import styles from "./navLine.module.scss";
 
-const NavLink = ({ links }) => {
+const NavLine = ({ links }) => {
   return (
     <ul className={styles.container}>
       {links.map((item, index) => (
@@ -30,4 +30,4 @@ const NavLink = ({ links }) => {
   );
 };
 
-export default NavLink;
+export default NavLine;
