@@ -30,7 +30,7 @@ const Navbar = () => {
             <ul className={styles.listColoredBlock}>
               {data.headerList.headerTop.map((item, index) => (
                 <li className={styles.itemColoredBlock} key={index}>
-                  <LabelLink label={item.label} link={item.link} isLinkExternal={false} />
+                  <LabelLink label={item.label} link={item.link} />
                 </li>
               ))}
             </ul>
@@ -40,14 +40,14 @@ const Navbar = () => {
                   className={clsx(styles.itemBlock, item?.hasBorder && styles.itemBorderRight)}
                   key={index}
                 >
-                  <LabelLink label={item.label} link={item.link} isLinkExternal={true} />
+                  <LabelLink label={item.label} link={item.link} isLinkExternal={"true"} />
                 </li>
               ))}
             </ul>
           </div>
         </nav>
         <div className={styles.mainNavbar}>
-          <ImageLink link={data.websiteLogo.link} isLinkExternal={false}>
+          <ImageLink link={data.websiteLogo.link}>
             <div className={styles.imageContainer}>
               <Image
                 src={data.websiteLogo.srcPath}
@@ -100,12 +100,7 @@ const Navbar = () => {
                   />
                 ) : (
                   <div className={styles.expandedMenuItem} key={index}>
-                    <LabelLink
-                      label={item.label}
-                      link={item.link}
-                      isLinkExternal={false}
-                      styleWrap={styles.noSubMenu}
-                    />
+                    <LabelLink label={item.label} link={item.link} styleWrap={styles.noSubMenu} />
                   </div>
                 )
               )}

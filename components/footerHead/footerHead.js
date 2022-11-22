@@ -10,7 +10,7 @@ const FooterHead = ({ headItem }) => {
     <>
       {headItem.logo ? (
         <div className={styles.footerLogoContainer}>
-          <ImageLink link={headItem.logo.link} isLinkExternal={true}>
+          <ImageLink link={headItem.logo.link} isLinkExternal={"true"}>
             <Image
               src={headItem.logo.srcPath}
               alt={headItem.logo.label}
