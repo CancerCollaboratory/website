@@ -109,7 +109,8 @@
         "buttonData": [
             {
                 "label": "CONTACT US",
-                "link": "/contact-us"
+                "link": "/contact-us",
+                "hasIcon": "true"
             }
         ]
     }

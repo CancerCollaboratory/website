@@ -54,6 +54,7 @@ const CallToAction = ({
                   label={button.label}
                   link={button.link}
                   isLinkExternal={button.isLinkExternal}
+                  hasIcon={button.hasIcon}
                   key={index}
                 />
               ))}
