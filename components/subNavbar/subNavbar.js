@@ -1,6 +1,6 @@
-import LabelLink from "../labelLink/labelLink";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import CustomLink from "../customLink/customLink";
 import navbarData from "../../data/components/navbar/navbar.json";
 import styles from "./subNavbar.module.scss";
 
@@ -49,7 +49,7 @@ const SubNavbar = () => {
       <ul className={styles.subNavbarContainer}>
         {navbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
           <li key={index}>
-            <LabelLink
+            <CustomLink
               label={item.label}
               link={item.link}
               styleLabel={

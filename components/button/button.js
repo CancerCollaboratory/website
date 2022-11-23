@@ -7,7 +7,7 @@ const Button = ({ label, link, isLinkExternal, hasIcon }) => {
   const buttonContent = (
     <div className={styles.container}>
       <p className={styles.label}>{label}</p>
-      {hasIcon === "true" && (
+      {hasIcon && (
         <Image
           src={IconArrow}
           alt={"Icon"}
@@ -21,7 +21,7 @@ const Button = ({ label, link, isLinkExternal, hasIcon }) => {
     </div>
   );
 
-  return isLinkExternal === "true" ? (
+  return isLinkExternal ? (
     <a href={link} target="_blank" rel="noreferrer">
       {buttonContent}
     </a>

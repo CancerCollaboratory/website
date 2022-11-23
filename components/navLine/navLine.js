@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import Image from "next/future/image";
-import LabelLink from "../labelLink/labelLink";
+import CustomLink from "../customLink/customLink";
 import IconArrow from "../../public/assets/navLine/icon-arrow-red.svg";
 import styles from "./navLine.module.scss";
 
@@ -11,11 +11,11 @@ const NavLine = ({ links }) => {
         <li
           className={clsx(
             styles.label,
-            item.isLastLink !== "true" ? clsx(styles.borderRight, styles.marginBottom) : undefined
+            !item.isLastLink ? clsx(styles.borderRight, styles.marginBottom) : undefined
           )}
           key={index}
         >
-          {item.label && item.link && <LabelLink label={item.label} link={item.link} />}
+          {item.label && item.link && <CustomLink label={item.label} link={item.link} />}
           <Image
             src={IconArrow}
             alt={"Icon"}

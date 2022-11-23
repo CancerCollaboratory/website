@@ -1,5 +1,5 @@
-import LabelLink from "../../components/labelLink/labelLink";
 import { useRouter } from "next/router";
+import CustomLink from "../../components/customLink/customLink";
 import navData from "../../data/components/navbar/navbar.json";
 import styles from "./supportNav.module.scss";
 
@@ -11,7 +11,7 @@ const SupportNav = () => {
   return (
     <ul className={styles.navContainer}>
       <li>
-        <LabelLink
+        <CustomLink
           label={supportItem.altLabel}
           link={supportItem.link}
           styleLabel={supportItem.link === asPath ? styles.selectedSubItem : undefined}
@@ -19,7 +19,7 @@ const SupportNav = () => {
       </li>
       {supportItem.navbarSubMenuItems.map((item, index) => (
         <li key={index}>
-          <LabelLink
+          <CustomLink
             label={item.label}
             link={item.link}
             styleLabel={item.link === asPath ? styles.selectedSubItem : undefined}

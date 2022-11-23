@@ -43,7 +43,7 @@ const CallToAction = ({
             >
               {renderData(
                 description,
-                isDescriptionLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
+                isDescriptionLinkExternal ? insertLinkExternal : insertLinkInternal
               )}
             </div>
           )}

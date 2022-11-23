@@ -22,10 +22,7 @@ const ResourceCard = ({ title, isTitleLinkExternal, bodyText, imageSrcPath, imag
         <div className={styles.cardContent}>
           {title && (
             <div className={styles.title}>
-              {renderData(
-                title,
-                isTitleLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
-              )}
+              {renderData(title, isTitleLinkExternal ? insertLinkExternal : insertLinkInternal)}
               <Image
                 src={IconArrow}
                 alt={"Icon"}

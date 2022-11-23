@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/future/image";
-import ImageLink from "../imageLink/imageLink";
-import LabelLink from "../labelLink/labelLink";
+import CustomLink from "../customLink/customLink";
 import { getCurrentYear } from "../../lib/functions/timeValue";
 import styles from "../footer/footer.module.scss";
 
 const FooterHead = ({ headItem }) => {
   return headItem.logo ? (
     <div className={styles.footerLogoContainer}>
-      <ImageLink link={headItem.logo.link} isLinkExternal={"true"}>
+      <CustomLink link={headItem.logo.link} isLinkExternal={true}>
         <Image
           src={headItem.logo.srcPath}
           alt={headItem.logo.label}
@@ -17,7 +16,7 @@ const FooterHead = ({ headItem }) => {
           width={77}
           height={56}
         />
-      </ImageLink>
+      </CustomLink>
     </div>
   ) : (
     <div className={styles.headItemContainer}>
@@ -27,7 +26,7 @@ const FooterHead = ({ headItem }) => {
       <div className={styles.headLinksContainer}>
         {headItem.links.map((linkItem, index) => (
           <React.Fragment key={index}>
-            <LabelLink
+            <CustomLink
               label={linkItem.label}
               link={linkItem.link}
               isLinkExternal={linkItem.isLinkExternal}

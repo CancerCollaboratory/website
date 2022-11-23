@@ -1,8 +1,7 @@
 import clsx from "clsx";
 import EscapeOutside from "react-escape-outside";
 import Image from "next/future/image";
-import LabelLink from "../labelLink/labelLink";
-import ImageLink from "../imageLink/imageLink";
+import CustomLink from "../customLink/customLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";
 import { useRouter } from "next/router";
@@ -30,7 +29,7 @@ const Navbar = () => {
             <ul className={styles.listColoredBlock}>
               {data.headerList.headerTop.map((item, index) => (
                 <li className={styles.itemColoredBlock} key={index}>
-                  <LabelLink label={item.label} link={item.link} />
+                  <CustomLink label={item.label} link={item.link} />
                 </li>
               ))}
             </ul>
@@ -40,14 +39,14 @@ const Navbar = () => {
                   className={clsx(styles.itemBlock, item?.hasBorder && styles.itemBorderRight)}
                   key={index}
                 >
-                  <LabelLink label={item.label} link={item.link} isLinkExternal={"true"} />
+                  <CustomLink label={item.label} link={item.link} isLinkExternal={true} />
                 </li>
               ))}
             </ul>
           </div>
         </nav>
         <div className={styles.mainNavbar}>
-          <ImageLink link={data.websiteLogo.link}>
+          <CustomLink link={data.websiteLogo.link}>
             <div className={styles.imageContainer}>
               <Image
                 src={data.websiteLogo.srcPath}
@@ -59,7 +58,7 @@ const Navbar = () => {
                 height={112}
               />
             </div>
-          </ImageLink>
+          </CustomLink>
           <div
             className={styles.navbarToggler}
             onClick={expandNavMenu}
@@ -100,7 +99,7 @@ const Navbar = () => {
                   />
                 ) : (
                   <div className={styles.expandedMenuItem} key={index}>
-                    <LabelLink label={item.label} link={item.link} styleWrap={styles.noSubMenu} />
+                    <CustomLink label={item.label} link={item.link} styleWrap={styles.noSubMenu} />
                   </div>
                 )
               )}
