@@ -11,7 +11,8 @@ const NavbarLink = ({ label, link, styleLink, menuItems }) => {
   useEffect(() => {
     link === asPath ||
     menuItems?.find(
-      item => item.link === asPath || item.subMenuSection?.find(subItem => subItem.link === asPath)
+      (item) =>
+        item.link === asPath || item.subMenuSection?.find((subItem) => subItem.link === asPath)
     )
       ? setIsItemActiveState(true)
       : setIsItemActiveState(false);

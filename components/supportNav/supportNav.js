@@ -5,7 +5,7 @@ import styles from "./supportNav.module.scss";
 
 const SupportNav = () => {
   const { asPath } = useRouter();
-  const supportItemIndex = navData.navbarItems.findIndex(item => item.link.includes("/support"));
+  const supportItemIndex = navData.navbarItems.findIndex((item) => item.link.includes("/support"));
   const supportItem = navData.navbarItems[supportItemIndex];
 
   return (

@@ -54,7 +54,7 @@ const SubNavbar = () => {
               link={item.link}
               styleLabel={
                 item.link === asPath ||
-                item.subMenuSection?.find(subItem => subItem.link === asPath)
+                item.subMenuSection?.find((subItem) => subItem.link === asPath)
                   ? styles.selectedSubNavbarItem
                   : undefined
               }
