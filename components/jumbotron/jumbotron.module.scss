@@ -14,11 +14,6 @@
     background-position: center bottom;
     padding: 22.5px 0px;
 
-    .jumbotronTitle {
-        color: $color-dark-blue;
-        font-size: 28px;
-    }
-
     .jumbotronBody {
         color: $color-dark-x1-gray;
         text-align: center;
@@ -75,10 +70,6 @@
         background-size: 1130px;
         padding: 22px 0px;
 
-        .jumbotronTitle {
-            font-size: 26px;
-        }
-
         .jumbotronBody {
             margin-top: 8.2px;
             font-size: 17.5px;
@@ -110,10 +101,6 @@
         background-size: 1070px;
         padding: 21px 0px;
 
-        .jumbotronTitle {
-            font-size: 24px;
-        }
-
         .jumbotronBody {
             margin-top: 8px;
             font-size: 16.25px;
@@ -142,7 +129,6 @@
         padding: 20px;
 
         .jumbotronTitle {
-            font-size: 18.5px;
             text-align: center;
             width: 61%;
         }
@@ -179,7 +165,6 @@
         padding: 18px;
 
         .jumbotronTitle {
-            font-size: 16px;
             width: 53%;
         }
 
@@ -213,7 +198,6 @@
         .jumbotronTitle {
             overflow: hidden;
             text-overflow: ellipsis;
-            font-size: 14px;
         }
 
         .jumbotronBody {
