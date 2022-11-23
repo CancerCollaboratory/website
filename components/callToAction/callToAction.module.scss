@@ -32,8 +32,11 @@
             color: $color-dark-x2-gray;
             margin: 0px 20.5px;
             line-height: 150%;
-            font-size: 13px;
             width: 450px;
+
+            p {
+                font-size: 13px;
+            }
 
             a {
                 color: $color-dark-blue;
@@ -83,8 +86,11 @@
 
             .description {
                 margin: 4px 19px;
-                font-size: 12.5px;
                 width: 430px;
+
+                p {
+                    font-size: 12.5px;
+                }
             }
 
             .isolateText {
@@ -150,8 +156,11 @@
 
         .bodyContainer {
             .description {
-                font-size: 12px;
                 width: 54%;
+
+                p {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -203,8 +212,11 @@
         .bodyContainer {
             .description {
                 margin: 4.5px 0px;
-                font-size: 11px;
                 width: 63%;
+
+                p {
+                    font-size: 11px;
+                }
             }
         }
     }
