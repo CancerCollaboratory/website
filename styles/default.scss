@@ -22,10 +22,19 @@ h1 {
     font-size: 28px;
 }
 
+h2 {
+    color: $color-dark-x4-gray;
+    font-size: 21px;
+}
+
 // large: 1199px
 @include respond-to("large") {
     h1 {
         font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
     }
 }
 
@@ -34,12 +43,20 @@ h1 {
     h1 {
         font-size: 24px;
     }
+
+    h2 {
+        font-size: 19px;
+    }
 }
 
 // small: 767px
 @include respond-to("small") {
     h1 {
-        font-size: 18.5px;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
     }
 }
 
@@ -48,11 +65,19 @@ h1 {
     h1 {
         font-size: 16px;
     }
+
+    h2 {
+        font-size: 15px;
+    }
 }
 
 // extra-extra-small: 315px
 @include respond-to("extra-extra-small") {
     h1 {
         font-size: 14px;
+    }
+
+    h2 {
+        font-size: 13px;
     }
 }
