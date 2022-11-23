@@ -19,8 +19,11 @@
         text-align: center;
         line-height: 158%;
         margin-top: 8.4px;
-        font-size: 18px;
         width: 720px;
+
+        p {
+            font-size: 18px;
+        }
 
         a {
             text-decoration: underline;
@@ -67,8 +70,11 @@
 
         .jumbotronBody {
             margin-top: 8.2px;
-            font-size: 17.5px;
             width: 650px;
+
+            p {
+                font-size: 17.5px;
+            }
         }
 
         .jumbotronBottom {
@@ -98,8 +104,11 @@
 
         .jumbotronBody {
             margin-top: 8px;
-            font-size: 16.25px;
             width: 600px;
+
+            p {
+                font-size: 16.25px;
+            }
         }
 
         .jumbotronBottom {
@@ -131,8 +140,11 @@
         .jumbotronBody {
             margin-top: 7.8px;
             padding: 0% 6.8%;
-            font-size: 15.5px;
             width: 92%;
+
+            p {
+                font-size: 15.5px;
+            }
         }
 
         .jumbotronBottom {
@@ -166,8 +178,11 @@
         .jumbotronBody {
             margin-top: 7.4px;
             padding: 0% 7%;
-            font-size: 13px;
             width: 90%;
+
+            p {
+                font-size: 13px;
+            }
         }
 
         .jumbotronBottom {
@@ -197,7 +212,10 @@
 
         .jumbotronBody {
             margin-top: 7px;
-            font-size: 11.5px;
+
+            p {
+                font-size: 11.5px;
+            }
         }
 
         .jumbotronBottom {
