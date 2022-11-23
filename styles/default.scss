@@ -36,7 +36,6 @@ a {
     }
 }
 
-// large: 1199px
 @include respond-to("large") {
     h1 {
         font-size: 26px;
@@ -47,7 +46,6 @@ a {
     }
 }
 
-// medium: 991px
 @include respond-to("medium") {
     h1 {
         font-size: 24px;
@@ -58,7 +56,6 @@ a {
     }
 }
 
-// small: 767px
 @include respond-to("small") {
     h1 {
         font-size: 18px;
@@ -69,7 +66,6 @@ a {
     }
 }
 
-// extra-small: 388px
 @include respond-to("extra-small") {
     h1 {
         font-size: 16px;
@@ -80,7 +76,6 @@ a {
     }
 }
 
-// extra-extra-small: 315px
 @include respond-to("extra-extra-small") {
     h1 {
         font-size: 14px;
