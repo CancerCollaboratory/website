@@ -13,13 +13,13 @@
                 {
                     "label": "Terms & Conditions",
                     "link": "https://oicr.on.ca/terms-and-conditions",
-                    "isLinkExternal": "true"
+                    "isLinkExternal": true
                 },
                 {
                     "label": "Privacy",
                     "link": "/privacy-policy",
-                    "isLinkExternal": "false",
-                    "lastLink": "true"
+                    "isLinkExternal": false,
+                    "lastLink": true
                 }
             ]
         }
@@ -40,7 +40,7 @@
                 {
                     "label": "Funders & Collaborators",
                     "link": "/about-funders-collaborators",
-                    "lastSubItem": "true"
+                    "lastSubItem": true
                 }
             ]
         },
@@ -63,7 +63,7 @@
                 {
                     "label": "Request an Account",
                     "link": "/services-request-account",
-                    "lastSubItem": "true"
+                    "lastSubItem": true
                 }
             ]
         },
@@ -82,7 +82,7 @@
                 {
                     "label": "Publications & Presentations",
                     "link": "/publications-presentations",
-                    "lastSubItem": "true"
+                    "lastSubItem": true
                 }
             ]
         },
@@ -107,7 +107,7 @@
                         {
                             "label": "System Status",
                             "link": "/support/system-status",
-                            "lastSubItem": "true"
+                            "lastSubItem": true
                         }
                     ]
                 },
@@ -124,7 +124,7 @@
                         {
                             "label": "FAQs",
                             "link": "/support/faqs",
-                            "lastSubItem": "true"
+                            "lastSubItem": true
                         }
                     ]
                 }

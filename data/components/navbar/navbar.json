@@ -153,12 +153,12 @@
             {
                 "label": "Console",
                 "link": "https://console.cancercollaboratory.org",
-                "hasBorder": "true"
+                "hasBorder": true
             },
             {
                 "label": "Usage and Billing",
                 "link": "https://billing.cancercollaboratory.org",
-                "hasBorder": "true"
+                "hasBorder": true
             },
             {
                 "label": "Repository",
