@@ -3,8 +3,8 @@ import CardLayout from "../cardLayout/cardLayout";
 import NavLine from "../navLine/navLine";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
-import styles from "./resourceSection.module.scss";
 import utilStyles from "../../styles/utils.module.scss";
+import styles from "./resourceSection.module.scss";
 
 const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLinks }) => {
   return (

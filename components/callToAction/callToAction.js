@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import Button from "../button/button";
 import Image from "next/future/image";
+import Button from "../button/button";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import utilStyles from "../../styles/utils.module.scss";

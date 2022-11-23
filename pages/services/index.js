@@ -1,4 +1,3 @@
-import pageData from "../../data/pages/services/services.json";
 import Jumbotron from "../../components/jumbotron/jumbotron";
 import LateralColumn from "../../components/lateralColumn/lateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
@@ -7,6 +6,7 @@ import StatGrid from "../../components/statGrid/statGrid";
 import ResourceSection from "../../components/resourceSection/resourceSection";
 import CallToAction from "../../components/callToAction/callToAction";
 import { getCurrentMonth, getCurrentYear } from "../../lib/functions/timeValue";
+import pageData from "../../data/pages/services/services.json";
 import utilStyles from "../../styles/utils.module.scss";
 
 const Services = () => {

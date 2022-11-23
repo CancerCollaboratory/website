@@ -1,5 +1,5 @@
-import pageData from "../../../data/pages/research/technologyCores/management-finance.json";
 import Jumbotron from "../../../components/jumbotron/jumbotron";
+import pageData from "../../../data/pages/research/technologyCores/management-finance.json";
 
 const ManagementAndFinance = () => {
   const jumbotron = pageData.jumbotron;

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import ResourceCard from "../resourceCard/resourceCard";
-import styles from "./cardLayout.module.scss";
 import utilStyles from "../../styles/utils.module.scss";
+import styles from "./cardLayout.module.scss";
 
 const CardLayout = ({ cards }) => {
   return (

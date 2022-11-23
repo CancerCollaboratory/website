@@ -1,5 +1,5 @@
-import pageData from "../../../data/pages/research/technologyCores/hardware-software-infrastructure.json";
 import Jumbotron from "../../../components/jumbotron/jumbotron";
+import pageData from "../../../data/pages/research/technologyCores/hardware-software-infrastructure.json";
 
 const HardwareAndSoftwareInfrastructure = () => {
   const jumbotron = pageData.jumbotron;

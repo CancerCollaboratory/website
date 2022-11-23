@@ -1,5 +1,5 @@
-import { useRouter } from "next/router";
 import CustomLink from "../../components/customLink/customLink";
+import { useRouter } from "next/router";
 import navData from "../../data/components/navbar/navbar.json";
 import styles from "./supportNav.module.scss";
 

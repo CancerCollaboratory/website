@@ -1,6 +1,6 @@
+import CustomLink from "../customLink/customLink";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import CustomLink from "../customLink/customLink";
 import navbarData from "../../data/components/navbar/navbar.json";
 import styles from "./subNavbar.module.scss";
 

@@ -1,5 +1,5 @@
-import pageData from "../../data/pages/services/services-cloud-resources.json";
 import Jumbotron from "../../components/jumbotron/jumbotron";
+import pageData from "../../data/pages/services/services-cloud-resources.json";
 
 const CloudResources = () => {
   const jumbotron = pageData.jumbotron;

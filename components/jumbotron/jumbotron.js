@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import Image from "next/future/image";
 import CustomLink from "../customLink/customLink";
-import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import { renderData } from "../../lib/functions/renderData";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import styles from "./jumbotron.module.scss";
 
 const Jumbotron = ({
@@ -12,7 +12,7 @@ const Jumbotron = ({
   imageSrcPath,
   imageLabel,
   buttonLabel,
-  buttonIsLinkExternal,
+  isButtonLinkExternal,
   buttonLink,
 }) => {
   return (
@@ -38,7 +38,7 @@ const Jumbotron = ({
               <CustomLink
                 label={buttonLabel}
                 link={buttonLink}
-                isLinkExternal={buttonIsLinkExternal}
+                isLinkExternal={isButtonLinkExternal}
                 styleWrap={styles.jumbotronButton}
               />
             </div>
