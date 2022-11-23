@@ -27,6 +27,15 @@ h2 {
     font-size: 21px;
 }
 
+a {
+    color: $color-dark-blue;
+    text-decoration: underline;
+
+    &:hover {
+        color: $color-light-x3-blue;
+    }
+}
+
 // large: 1199px
 @include respond-to("large") {
     h1 {
