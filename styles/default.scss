@@ -27,6 +27,11 @@ h2 {
     font-size: 21px;
 }
 
+p {
+    color: $color-dark-x2-gray;
+    font-size: 14px;
+}
+
 a {
     color: $color-dark-blue;
 
@@ -53,6 +58,10 @@ a {
     h2 {
         font-size: 19px;
     }
+
+    p {
+        font-size: 13px;
+    }
 }
 
 @include respond-to("small") {
@@ -62,6 +71,10 @@ a {
 
     h2 {
         font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
     }
 }
 
@@ -82,5 +95,9 @@ a {
 
     h2 {
         font-size: 13px;
+    }
+
+    p {
+        font-size: 11px;
     }
 }
