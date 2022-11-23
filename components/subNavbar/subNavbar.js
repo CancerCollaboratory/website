@@ -1,4 +1,4 @@
-import NavbarLink from "../navbarLink/navbarLink";
+import CustomLink from "../customLink/customLink";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import navbarData from "../../data/components/navbar/navbar.json";
@@ -45,26 +45,24 @@ const SubNavbar = () => {
   }, [asPath]);
 
   return (
-    <>
-      {doesActiveItemHaveSubMenu() && (
-        <ul className={styles.subNavbarContainer}>
-          {navbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
-            <li key={index}>
-              <NavbarLink
-                label={item.label}
-                link={item.link}
-                styleLink={
-                  item.link === asPath ||
-                  item.subMenuSection?.find(subItem => subItem.link === asPath)
-                    ? styles.selectedSubNavbarItem
-                    : undefined
-                }
-              />
-            </li>
-          ))}
-        </ul>
-      )}
-    </>
+    doesActiveItemHaveSubMenu() && (
+      <ul className={styles.subNavbarContainer}>
+        {navbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
+          <li key={index}>
+            <CustomLink
+              label={item.label}
+              link={item.link}
+              styleLabel={
+                item.link === asPath ||
+                item.subMenuSection?.find((subItem) => subItem.link === asPath)
+                  ? styles.selectedSubNavbarItem
+                  : undefined
+              }
+            />
+          </li>
+        ))}
+      </ul>
+    )
   );
 };
 

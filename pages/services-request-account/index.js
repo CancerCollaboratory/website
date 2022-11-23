@@ -1,5 +1,5 @@
-import pageData from "../../data/pages/services/services-request-account.json";
 import Jumbotron from "../../components/jumbotron/jumbotron";
+import pageData from "../../data/pages/services/services-request-account.json";
 
 const RequestAccount = () => {
   const jumbotron = pageData.jumbotron;

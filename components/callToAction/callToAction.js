@@ -1,6 +1,6 @@
 import clsx from "clsx";
-import Button from "../button/button";
 import Image from "next/future/image";
+import Button from "../button/button";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import utilStyles from "../../styles/utils.module.scss";
@@ -24,9 +24,9 @@ const CallToAction = ({
               src={imageSrcPath}
               alt={imageAlt}
               className={styles.image}
+              quality={100}
               width={25}
               height={25}
-              quality={100}
             />
           )}
           <h2 className={styles.title}>{title}</h2>
@@ -43,7 +43,7 @@ const CallToAction = ({
             >
               {renderData(
                 description,
-                isDescriptionLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
+                isDescriptionLinkExternal ? insertLinkExternal : insertLinkInternal
               )}
             </div>
           )}
@@ -54,6 +54,7 @@ const CallToAction = ({
                   label={button.label}
                   link={button.link}
                   isLinkExternal={button.isLinkExternal}
+                  hasIcon={button.hasIcon}
                   key={index}
                 />
               ))}

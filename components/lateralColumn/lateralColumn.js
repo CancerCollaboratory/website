@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Column from "../column/column";
-import styles from "./lateralColumn.module.scss";
 import utilStyles from "../../styles/utils.module.scss";
+import styles from "./lateralColumn.module.scss";
 
 const LateralColumn = ({ leftColumn, rightColumn, styleBackground }) => {
   return (

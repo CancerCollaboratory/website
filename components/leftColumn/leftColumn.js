@@ -11,9 +11,9 @@ const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
               src={imageSrcPath}
               alt={imageAlt}
               className={styles.image}
+              quality={100}
               width={62}
               height={62}
-              quality={100}
             />
           )}
           {title && <h2 className={styles.title}>{title}</h2>}

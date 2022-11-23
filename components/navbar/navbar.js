@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import EscapeOutside from "react-escape-outside";
-import NavbarLink from "../navbarLink/navbarLink";
+import Image from "next/future/image";
+import CustomLink from "../customLink/customLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";
 import { useRouter } from "next/router";
@@ -28,7 +29,7 @@ const Navbar = () => {
             <ul className={styles.listColoredBlock}>
               {data.headerList.headerTop.map((item, index) => (
                 <li className={styles.itemColoredBlock} key={index}>
-                  <NavbarLink label={item.label} isLinkExternal={false} link={item.link} />
+                  <CustomLink label={item.label} link={item.link} />
                 </li>
               ))}
             </ul>
@@ -38,26 +39,26 @@ const Navbar = () => {
                   className={clsx(styles.itemBlock, item?.hasBorder && styles.itemBorderRight)}
                   key={index}
                 >
-                  <NavbarLink label={item.label} isLinkExternal={true} link={item.link} />
+                  <CustomLink label={item.label} link={item.link} isLinkExternal={true} />
                 </li>
               ))}
             </ul>
           </div>
         </nav>
         <div className={styles.mainNavbar}>
-          <NavbarLink
-            label={data.websiteLogo.label}
-            isLinkWrapped={true}
-            styleWrap={styles.imageContainer}
-            isLinkExternal={false}
-            link={data.websiteLogo.link}
-            isImageWrapped={true}
-            imageSrcPath={data.websiteLogo.srcPath}
-            styleImage={styles.siteLogo}
-            imageHasPriority={true}
-            imageWidth={275}
-            imageHeight={112}
-          />
+          <CustomLink link={data.websiteLogo.link}>
+            <div className={styles.imageContainer}>
+              <Image
+                src={data.websiteLogo.srcPath}
+                alt={data.websiteLogo.label}
+                className={styles.siteLogo}
+                priority={true}
+                quality={100}
+                width={275}
+                height={112}
+              />
+            </div>
+          </CustomLink>
           <div
             className={styles.navbarToggler}
             onClick={expandNavMenu}
@@ -98,13 +99,7 @@ const Navbar = () => {
                   />
                 ) : (
                   <div className={styles.expandedMenuItem} key={index}>
-                    <NavbarLink
-                      label={item.label}
-                      isLinkWrapped={true}
-                      styleWrap={styles.noSubMenu}
-                      isLinkExternal={false}
-                      link={item.link}
-                    />
+                    <CustomLink label={item.label} link={item.link} styleWrap={styles.noSubMenu} />
                   </div>
                 )
               )}

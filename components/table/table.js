@@ -14,7 +14,7 @@ const Table = ({ title, body }) => {
                 {column.title &&
                   renderData(
                     column.title,
-                    column.isLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
+                    column.isLinkExternal ? insertLinkExternal : insertLinkInternal
                   )}
                 {column.content && (
                   <div className={styles.cellContent}>{renderData(column.content)}</div>

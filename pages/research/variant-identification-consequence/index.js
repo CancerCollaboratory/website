@@ -1,5 +1,5 @@
-import pageData from "../../../data/pages/research/modules/variant-identification-consequence.json";
 import Jumbotron from "../../../components/jumbotron/jumbotron";
+import pageData from "../../../data/pages/research/modules/variant-identification-consequence.json";
 
 const VariantIdentificationAndConsequence = () => {
   const jumbotron = pageData.jumbotron;

@@ -11,7 +11,7 @@
         "button": {
             "label": "dockstore.org",
             "link": "https://dockstore.org",
-            "isLinkExternal": "true"
+            "isLinkExternal": true
         }
     }
 }

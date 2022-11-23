@@ -1,8 +1,8 @@
 import clsx from "clsx";
 import Image from "next/future/image";
-import NavbarLink from "../navbarLink/navbarLink";
-import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
+import CustomLink from "../customLink/customLink";
 import { renderData } from "../../lib/functions/renderData";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import styles from "./jumbotron.module.scss";
 
 const Jumbotron = ({
@@ -12,7 +12,7 @@ const Jumbotron = ({
   imageSrcPath,
   imageLabel,
   buttonLabel,
-  buttonIsLinkExternal,
+  isButtonLinkExternal,
   buttonLink,
 }) => {
   return (
@@ -23,10 +23,7 @@ const Jumbotron = ({
       {bodyText && (
         <>
           <div className={styles.jumbotronBody}>
-            {renderData(
-              bodyText,
-              isBodyLinkExternal === "true" ? insertLinkExternal : insertLinkInternal
-            )}
+            {renderData(bodyText, isBodyLinkExternal ? insertLinkExternal : insertLinkInternal)}
           </div>
           {imageSrcPath && (
             <div className={styles.jumbotronBottom}>
@@ -34,16 +31,15 @@ const Jumbotron = ({
                 src={imageSrcPath}
                 alt={imageLabel}
                 className={styles.jumbotronImage}
+                quality={100}
                 width={75}
                 height={52}
-                quality={100}
               />
-              <NavbarLink
+              <CustomLink
                 label={buttonLabel}
-                isLinkWrapped={true}
-                styleWrap={styles.jumbotronButton}
-                isLinkExternal={buttonIsLinkExternal === "true"}
                 link={buttonLink}
+                isLinkExternal={isButtonLinkExternal}
+                styleWrap={styles.jumbotronButton}
               />
             </div>
           )}

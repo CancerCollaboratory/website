@@ -1,5 +1,5 @@
-import pageData from "../../data/pages/services/services-dockstore.json";
 import Jumbotron from "../../components/jumbotron/jumbotron";
+import pageData from "../../data/pages/services/services-dockstore.json";
 
 const Dockstore = () => {
   const jumbotron = pageData.jumbotron;
@@ -11,7 +11,7 @@ const Dockstore = () => {
       imageSrcPath={jumbotron.image.srcPath}
       imageLabel={jumbotron.image.label}
       buttonLabel={jumbotron.button.label}
-      buttonIsLinkExternal={jumbotron.button.isLinkExternal}
+      isButtonLinkExternal={jumbotron.button.isLinkExternal}
       buttonLink={jumbotron.button.link}
     />
   );

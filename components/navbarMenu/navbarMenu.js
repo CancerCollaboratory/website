@@ -1,6 +1,6 @@
 import React from "react";
+import CustomLink from "../customLink/customLink";
 import { useRouter } from "next/router";
-import NavbarLink from "../navbarLink/navbarLink";
 import styles from "../navbar/navbar.module.scss";
 
 const NavbarMenu = ({ styleMenu, styleSubMenu, menuItems, hasSubMenuDivison }) => {
@@ -10,10 +10,10 @@ const NavbarMenu = ({ styleMenu, styleSubMenu, menuItems, hasSubMenuDivison }) =
     <div className={styleMenu}>
       {menuItems.map((item, index) => (
         <React.Fragment key={index}>
-          <NavbarLink
+          <CustomLink
             label={item.label}
             link={item.link}
-            styleLink={
+            styleLabel={
               hasSubMenuDivison &&
               (item.link === asPath || asPath + "#" === item.link.slice(0, asPath.length + 1))
                 ? styles.activePage
@@ -23,10 +23,10 @@ const NavbarMenu = ({ styleMenu, styleSubMenu, menuItems, hasSubMenuDivison }) =
           <ul className={styleSubMenu}>
             {item.subMenuSection?.map((subItem, subIndex) => (
               <li key={subIndex}>
-                <NavbarLink
+                <CustomLink
                   label={subItem.label}
                   link={subItem.link}
-                  styleLink={
+                  styleLabel={
                     hasSubMenuDivison && subItem.link === asPath ? styles.activePage : undefined
                   }
                 />
