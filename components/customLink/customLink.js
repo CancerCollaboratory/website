@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-// To use CustomLink, pass either the label prop OR children prop but not both
+// Must pass a link prop and either a label prop OR children prop but not both
 const CustomLink = ({ label, link, isLinkExternal, styleLabel, styleWrap, children }) => {
   if (!link || (!children && !label) || (children && label)) {
     return null;
