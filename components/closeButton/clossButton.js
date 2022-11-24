@@ -1,7 +1,7 @@
 import styles from "./closeButton.module.scss";
 
-const CloseButton = () => {
-  return <div className={styles.cross}></div>;
+const CloseButton = ({ onClick }) => {
+  return <div className={styles.cross} onClick={onClick}></div>;
 };
 
 export default CloseButton;
