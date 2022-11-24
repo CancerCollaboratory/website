@@ -1,10 +1,11 @@
 {
     "banner": {
-        "title": "A temporary title.",
-        "description": "A temporary [description](/).",
+        "isActive": false,
+        "title": "Enter a title here.",
+        "description": "Enter a description here.",
         "isDescriptionLinkExternal": false,
-        "linkLabel": "A temporary link.",
-        "linkTarget": "/",
+        "linkLabel": "Enter a label for a link here.",
+        "linkTarget": "Replace this text with a URL.",
         "isLinkTargetExternal": false
     }
 }
