@@ -19,15 +19,15 @@
             font-weight: 500;
 
             &:hover {
-                border-left-color: $color-dark-red;
-                color: $color-dark-red;
+                border-left-color: $color-dark-x2-red;
+                color: $color-dark-x2-red;
             }
         }
     }
 
     .selectedSubItem {
-        border-left-color: $color-dark-red;
-        color: $color-dark-red;
+        border-left-color: $color-dark-x2-red;
+        color: $color-dark-x2-red;
     }
 }
 

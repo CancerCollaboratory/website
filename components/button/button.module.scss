@@ -5,12 +5,12 @@
     display: flex;
     align-items: center;
     border-radius: 30px;
-    background-color: $color-dark-red;
+    background-color: $color-dark-x2-red;
     padding: 5px 16px;
     margin: 3px 0px;
 
     &:hover {
-        background-color: $color-light-red;
+        background-color: $color-light-x1-red;
         cursor: pointer;
     }
 

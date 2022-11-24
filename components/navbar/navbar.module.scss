@@ -29,7 +29,7 @@
                     a {
                         padding: 4.7px 9.7px;
                         color: white;
-                        background-color: $color-dark-blue;
+                        background-color: $color-dark-x1-blue;
                         border-radius: 15px;
 
                         &:hover {
@@ -46,12 +46,12 @@
                     margin-left: 13px;
 
                     a {
-                        color: $color-light-x4-blue;
+                        color: $color-light-x5-blue;
                     }
                 }
 
                 .itemBorderRight {
-                    border-right: 3px solid $color-light-x4-blue;
+                    border-right: 3px solid $color-light-x5-blue;
                     padding-right: 13px;
                 }
             }
@@ -98,14 +98,14 @@
                     font-size: 14px;
 
                     &:hover {
-                        color: $color-dark-red;
-                        border-left: 3px solid $color-dark-red;
+                        color: $color-dark-x2-red;
+                        border-left: 3px solid $color-dark-x2-red;
                     }
                 }
 
                 .selectNavbarItem {
-                    color: $color-dark-red;
-                    border-left: 3px solid $color-dark-red;
+                    color: $color-dark-x2-red;
+                    border-left: 3px solid $color-dark-x2-red;
                 }
 
                 .searchBar {
@@ -134,7 +134,7 @@
                         padding: 3.5px 14px 12px 14px;
 
                         &:hover {
-                            color: $color-dark-red;
+                            color: $color-dark-x2-red;
                         }
                     }
 
@@ -145,7 +145,7 @@
                     }
 
                     .activePage {
-                        color: $color-dark-red;
+                        color: $color-dark-x2-red;
                     }
 
                     .subMenuDivision {
@@ -397,13 +397,13 @@
                             .itemName {
                                 &:hover {
                                     background-color: $color-light-x9-gray;
-                                    color: $color-dark-red;
+                                    color: $color-dark-x2-red;
                                 }
                             }
 
                             .noSubMenu {
                                 background-color: $color-light-x9-gray;
-                                color: $color-dark-red;
+                                color: $color-dark-x2-red;
                             }
                         }
 
@@ -420,7 +420,7 @@
 
                                 &:hover {
                                     background-color: $color-light-x9-gray;
-                                    color: $color-dark-red;
+                                    color: $color-dark-x2-red;
                                 }
                             }
 

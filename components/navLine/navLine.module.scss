@@ -14,16 +14,16 @@
         }
 
         a {
-            color: $color-dark-red;
+            color: $color-dark-x2-red;
 
             &:hover {
-                color: $color-light-red;
+                color: $color-light-x1-red;
             }
         }
     }
 
     .borderRight {
-        border-right: 3px solid $color-dark-red;
+        border-right: 3px solid $color-dark-x2-red;
         padding-right: 15px;
         margin-right: 15px;
     }
