@@ -1,11 +1,32 @@
 @import "../../styles/colors";
 
-.container {
+.cross {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $color-dark-x1-blue;
+    border-radius: 100%;
     width: 22px;
     height: 22px;
 
     &:hover {
         background-color: $color-light-x4-blue;
     }
+}
+
+.cross:before,
+.cross:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 14px;
+    width: 2px;
+}
+
+.cross:before {
+    transform: rotate(-45deg);
+}
+
+.cross:after {
+    transform: rotate(45deg);
 }
