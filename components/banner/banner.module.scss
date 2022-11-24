@@ -1,0 +1,34 @@
+@import "../../styles/colors";
+
+.outerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, $color-light-x7-blue, $color-light-x11-gray);
+    padding: 14.5px 20px;
+
+    .content {
+        .title {
+            font-size: 16px;
+            margin: 5.5px 0px;
+        }
+
+        .innerContainer {
+            display: flex;
+            align-items: center;
+            margin: 5.5px 0px;
+
+            p {
+                margin-right: 4px;
+                font-weight: 600;
+                font-size: 13px;
+            }
+
+            a {
+                color: $color-dark-x1-red;
+                font-weight: 600;
+                font-size: 13px;
+            }
+        }
+    }
+}
