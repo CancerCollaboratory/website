@@ -2,7 +2,6 @@
 @import "../../styles/mixins";
 
 .title {
-    color: $color-dark-x4-gray;
     line-height: 170%;
     text-align: center;
     margin-bottom: 5px;
@@ -20,10 +19,8 @@
 .bodyText {
     display: flex;
     justify-content: center;
-    color: $color-dark-x2-gray;
     margin-top: 10px;
     line-height: 170%;
-    font-size: 14px;
 }
 
 @include respond-to("large") {
@@ -45,7 +42,6 @@
     .bodyText {
         margin-top: 8px;
         line-height: 168%;
-        font-size: 13px;
     }
 }
 
@@ -60,7 +56,6 @@
 
     .bodyText {
         margin-top: 7px;
-        font-size: 12px;
     }
 }
 
@@ -83,9 +78,5 @@
     .subTitle {
         margin-bottom: 4px;
         font-size: 12px;
-    }
-
-    .bodyText {
-        font-size: 11px;
     }
 }
