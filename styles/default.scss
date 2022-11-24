@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import "./colors";
+@import "./mixins";
 @import "./imgPaths";
 
 body,
@@ -14,4 +15,93 @@ input {
     background-image: $icon-search;
     background-repeat: no-repeat;
     font-weight: 500;
+}
+
+h1 {
+    color: $color-dark-blue;
+    font-size: 28px;
+}
+
+h2 {
+    color: $color-dark-x4-gray;
+    font-size: 21px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p {
+    color: $color-dark-x2-gray;
+    font-size: 14px;
+}
+
+a {
+    color: $color-dark-blue;
+
+    &:hover {
+        color: $color-light-x3-blue;
+    }
+}
+
+@include respond-to("large") {
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@include respond-to("medium") {
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+@include respond-to("small") {
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@include respond-to("extra-small") {
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    h1 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 13px;
+    }
+
+    p {
+        font-size: 11px;
+    }
 }

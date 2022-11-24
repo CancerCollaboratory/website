@@ -14,26 +14,19 @@
     background-position: center bottom;
     padding: 22.5px 0px;
 
-    .jumbotronTitle {
-        color: $color-dark-blue;
-        font-size: 28px;
-    }
-
     .jumbotronBody {
         color: $color-dark-x1-gray;
         text-align: center;
         line-height: 158%;
         margin-top: 8.4px;
-        font-size: 18px;
         width: 720px;
 
-        a {
-            color: $color-dark-blue;
-            text-decoration: underline;
+        p {
+            font-size: 18px;
+        }
 
-            &:hover {
-                color: $color-light-x3-blue;
-            }
+        a {
+            text-decoration: underline;
         }
     }
 
@@ -75,14 +68,13 @@
         background-size: 1130px;
         padding: 22px 0px;
 
-        .jumbotronTitle {
-            font-size: 26px;
-        }
-
         .jumbotronBody {
             margin-top: 8.2px;
-            font-size: 17.5px;
             width: 650px;
+
+            p {
+                font-size: 17.5px;
+            }
         }
 
         .jumbotronBottom {
@@ -110,14 +102,13 @@
         background-size: 1070px;
         padding: 21px 0px;
 
-        .jumbotronTitle {
-            font-size: 24px;
-        }
-
         .jumbotronBody {
             margin-top: 8px;
-            font-size: 16.25px;
             width: 600px;
+
+            p {
+                font-size: 16.25px;
+            }
         }
 
         .jumbotronBottom {
@@ -142,7 +133,6 @@
         padding: 20px;
 
         .jumbotronTitle {
-            font-size: 18.5px;
             text-align: center;
             width: 61%;
         }
@@ -150,8 +140,11 @@
         .jumbotronBody {
             margin-top: 7.8px;
             padding: 0% 6.8%;
-            font-size: 15.5px;
             width: 92%;
+
+            p {
+                font-size: 15.5px;
+            }
         }
 
         .jumbotronBottom {
@@ -179,15 +172,17 @@
         padding: 18px;
 
         .jumbotronTitle {
-            font-size: 16px;
             width: 53%;
         }
 
         .jumbotronBody {
             margin-top: 7.4px;
             padding: 0% 7%;
-            font-size: 13px;
             width: 90%;
+
+            p {
+                font-size: 13px;
+            }
         }
 
         .jumbotronBottom {
@@ -213,12 +208,14 @@
         .jumbotronTitle {
             overflow: hidden;
             text-overflow: ellipsis;
-            font-size: 14px;
         }
 
         .jumbotronBody {
             margin-top: 7px;
-            font-size: 11.5px;
+
+            p {
+                font-size: 11.5px;
+            }
         }
 
         .jumbotronBottom {
