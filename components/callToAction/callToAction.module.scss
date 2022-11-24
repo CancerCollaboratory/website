@@ -39,11 +39,9 @@
             }
 
             a {
-                color: $color-dark-x1-blue;
                 text-decoration: underline;
 
                 &:hover {
-                    color: $color-light-x3-blue;
                     text-decoration: none;
                 }
             }
