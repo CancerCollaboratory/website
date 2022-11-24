@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .cross {
     display: flex;
@@ -19,7 +20,8 @@
     content: '';
     position: absolute;
     background-color: white;
-    height: 14px;
+    border-radius: 5px;
+    height: 12px;
     width: 2px;
 }
 
@@ -30,3 +32,18 @@
 .cross:after {
     transform: rotate(45deg);
 }
+
+//large: 1199px
+@include respond-to("large") {}
+
+//medium: 991px
+@include respond-to("medium") {}
+
+//small: 767px
+@include respond-to("small") {}
+
+//extra-small: 388px
+@include respond-to("extra-small") {}
+
+//extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
