@@ -1,0 +1,10 @@
+{
+    "banner": {
+        "title": "A temporary title.",
+        "description": "A temporary [description](/).",
+        "isDescriptionLinkExternal": false,
+        "linkLabel": "A temporary link.",
+        "linkTarget": "/",
+        "isLinkTargetExternal": false
+    }
+}
