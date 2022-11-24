@@ -33,17 +33,26 @@
     transform: rotate(45deg);
 }
 
-//large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .cross {
+        width: 21px;
+        height: 21px;
+    }
 
-//medium: 991px
-@include respond-to("medium") {}
+    .cross:before,
+    .cross:after {
+        height: 11px;
+    }
+}
 
-//small: 767px
-@include respond-to("small") {}
+@include respond-to("extra-small") {
+    .cross {
+        width: 20px;
+        height: 20px;
+    }
 
-//extra-small: 388px
-@include respond-to("extra-small") {}
-
-//extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+    .cross:before,
+    .cross:after {
+        height: 10px;
+    }
+}
