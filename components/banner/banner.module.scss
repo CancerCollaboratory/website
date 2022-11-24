@@ -1,34 +1,55 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
-.outerContainer {
+.container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-image: linear-gradient(to right, $color-light-x7-blue, $color-light-x11-gray);
-    padding: 14.5px 20px;
 
-    .content {
-        .title {
-            font-size: 16px;
-            margin: 5.5px 0px;
-        }
+    .wrapContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14.5px 20px;
 
-        .innerContainer {
-            display: flex;
-            align-items: center;
-            margin: 5.5px 0px;
-
-            p {
-                margin-right: 4px;
-                font-weight: 600;
-                font-size: 13px;
+        .content {
+            .title {
+                font-size: 16px;
+                margin: 5.5px 0px;
             }
 
-            a {
-                color: $color-dark-x1-red;
-                font-weight: 600;
-                font-size: 13px;
+            .block {
+                display: flex;
+                align-items: center;
+                margin: 5.5px 0px;
+
+                p {
+                    margin-right: 4px;
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+
+                a {
+                    color: $color-dark-x1-red;
+                    font-weight: 600;
+                    font-size: 13px;
+                }
             }
         }
     }
 }
+
+//large: 1199px
+@include respond-to("large") {}
+
+//medium: 991px
+@include respond-to("medium") {}
+
+//small: 767px
+@include respond-to("small") {}
+
+//extra-small: 388px
+@include respond-to("extra-small") {}
+
+//extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
