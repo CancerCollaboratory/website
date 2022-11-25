@@ -12,7 +12,7 @@ const LogoBlock = ({ block }) => {
         <Image
           src={logo.srcPath}
           alt={logo.alt}
-          className={styles.logo}
+          className={!logo.adjustStyling ? styles.logo : styles.adjustLogo}
           quality={100}
           width={90}
           height={70}
