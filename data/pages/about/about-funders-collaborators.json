@@ -21,7 +21,8 @@
                     "alt": "Canada Foundation For Innovation",
                     "link": "https://www.innovation.ca",
                     "isLinkExternal": true
-                }
+                },
+                "hasBackground": true
             },
             {
                 "logo": {
@@ -29,7 +30,8 @@
                     "alt": "Genome Canada",
                     "link": "https://www.genomecanada.ca",
                     "isLinkExternal": true
-                }
+                },
+                "hasBackground": true
             },
             {
                 "logo": {
@@ -53,7 +55,8 @@
                     "alt": "Ontario Institute for Cancer Research",
                     "link": "http://oicr.on.ca",
                     "isLinkExternal": true
-                }
+                },
+                "hasBackground": true
             }
         ]
     }
