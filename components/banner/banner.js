@@ -1,0 +1,34 @@
+import clsx from "clsx";
+import CloseButton from "../closeButton/closeButton";
+import { useState } from "react";
+import { renderData } from "../../lib/functions/renderData";
+import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
+import utilStyles from "../../styles/utils.module.scss";
+import styles from "./banner.module.scss";
+
+const Banner = ({ title, description, isDescriptionLinkExternal, children }) => {
+  const [showBanner, setShowBanner] = useState(true);
+
+  return (
+    showBanner && (
+      <div className={styles.container}>
+        <div className={clsx(styles.wrapContent, utilStyles.defaultContainerWidth)}>
+          <div className={styles.content}>
+            {title && <h1 className={styles.title}>{title}</h1>}
+            <div className={styles.block}>
+              {description &&
+                renderData(
+                  description,
+                  isDescriptionLinkExternal ? insertLinkExternal : insertLinkInternal
+                )}
+              {children}
+            </div>
+          </div>
+          <CloseButton onClick={() => setShowBanner(false)} />
+        </div>
+      </div>
+    )
+  );
+};
+
+export default Banner;

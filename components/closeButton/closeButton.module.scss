@@ -1,0 +1,59 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.cross {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $color-dark-x1-blue;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+
+    &:hover {
+        background-color: $color-light-x4-blue;
+        cursor: pointer;
+    }
+}
+
+.cross:before,
+.cross:after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    height: 12px;
+    width: 2px;
+}
+
+.cross:before {
+    transform: rotate(-45deg);
+}
+
+.cross:after {
+    transform: rotate(45deg);
+}
+
+@include respond-to("large") {
+    .cross {
+        width: 21px;
+        height: 21px;
+    }
+
+    .cross:before,
+    .cross:after {
+        height: 11px;
+    }
+}
+
+@include respond-to("extra-small") {
+    .cross {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cross:before,
+    .cross:after {
+        height: 10px;
+    }
+}

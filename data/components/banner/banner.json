@@ -1,0 +1,11 @@
+{
+    "banner": {
+        "isActive": false,
+        "title": "Enter a title here.",
+        "description": "Enter a description here.",
+        "isDescriptionLinkExternal": false,
+        "linkLabel": "Enter a label for a link here.",
+        "linkTarget": "Replace this text with a URL.",
+        "isLinkTargetExternal": false
+    }
+}

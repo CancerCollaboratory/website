@@ -56,7 +56,7 @@
     .footerTailContainer {
         display: flex;
         justify-content: center;
-        background-color: $color-dark-blue;
+        background-color: $color-dark-x1-blue;
         padding: 20px 0px;
 
         .footerItemContainer {
@@ -72,7 +72,7 @@
                 width: max-content;
 
                 &:hover {
-                    color: $color-light-x6-blue;
+                    color: $color-light-x8-blue;
                 }
             }
 

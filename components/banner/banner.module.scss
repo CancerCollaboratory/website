@@ -1,0 +1,162 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right, $color-light-x7-blue, $color-light-x11-gray);
+
+    .wrapContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14.5px 20px;
+
+        .content {
+            width: 66%;
+
+            .title,
+            .block {
+                margin: 5.5px 0px;
+            }
+
+            .title {
+                font-size: 16px;
+            }
+
+            .block {
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin-right: 4px;
+                    line-height: 150%;
+                }
+
+                a {
+                    color: $color-dark-x1-red;
+                    white-space: nowrap;
+                }
+
+                p,
+                a {
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("large") {
+    .container {
+        .wrapContent {
+            padding: 14px 0px;
+
+            .content {
+
+                .title,
+                .block {
+                    margin: 5px 0px;
+                }
+
+                .title {
+                    font-size: 15px;
+                }
+
+                .block {
+
+                    p,
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("medium") {
+    .container {
+        .wrapContent {
+            padding: 13.5px 18.5px;
+
+            .content {
+                .title {
+                    font-size: 14.5px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        .wrapContent {
+            .content {
+                .title {
+                    font-size: 14px;
+                }
+
+                .block {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin: 3px 0px;
+
+                    p {
+                        margin-right: 0px;
+                    }
+
+                    p,
+                    a {
+                        margin: 2px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        .wrapContent {
+            .content {
+                .title {
+                    margin: 4.5px 0px;
+                    font-size: 13.5px;
+                }
+
+                .block {
+                    margin: 2.5px 0px;
+
+                    p,
+                    a {
+                        font-size: 11.5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        .wrapContent {
+            .content {
+                .title {
+                    margin: 4px 0px;
+                    font-size: 13px;
+                }
+
+                .block {
+                    margin: 2px 0px;
+
+                    p,
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+}

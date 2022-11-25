@@ -18,14 +18,6 @@
         padding: 4px 13px;
         font-size: 13px;
 
-        a {
-            color: $color-dark-blue;
-
-            &:hover {
-                color: $color-light-x3-blue;
-            }
-        }
-
         .cellContent {
             text-align: right;
             color: $color-dark-x2-gray;

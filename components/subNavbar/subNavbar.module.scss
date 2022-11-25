@@ -22,14 +22,14 @@
             font-size: 13px;
 
             &:hover {
-                color: $color-dark-red;
-                border-left: 3px solid $color-dark-red;
+                color: $color-dark-x2-red;
+                border-left: 3px solid $color-dark-x2-red;
             }
         }
 
         .selectedSubNavbarItem {
-            color: $color-dark-red;
-            border-left: 3px solid $color-dark-red;
+            color: $color-dark-x2-red;
+            border-left: 3px solid $color-dark-x2-red;
         }
     }
 }
