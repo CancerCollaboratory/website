@@ -5,5 +5,26 @@
             "text": "The Cancer Genome Collaboratory is a cloud computing infrastructure powered by [Openstack](http://www.openstack.org) and open source storage software [Ceph](http://www.ceph.com).",
             "isLinkExternal": true
         }
+    },
+    "logoBlockList": {
+        "logoBlocks": [
+            {
+                "logo": {
+                    "srcPath": "/assets/logoBlockList/logo-openstack.png",
+                    "alt": "OpenStack",
+                    "link": "http://www.openstack.org",
+                    "isLinkExternal": true
+                }
+            },
+            {
+                "logo": {
+                    "srcPath": "/assets/logoBlockList/logo-ceph.png",
+                    "alt": "Ceph",
+                    "link": "https://ceph.io",
+                    "isLinkExternal": true
+                },
+                "hasBackground": true
+            }
+        ]
     }
 }

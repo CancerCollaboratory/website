@@ -1,0 +1,61 @@
+@import "../../styles/mixins.scss";
+
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+.adjustLogo {
+    width: 87px;
+    height: auto;
+}
+
+@include respond-to("large") {
+    .logo {
+        width: 128px;
+    }
+
+    .adjustLogo {
+        width: 85px;
+    }
+}
+
+@include respond-to("medium") {
+    .logo {
+        width: 127px;
+    }
+
+    .adjustLogo {
+        width: 84px;
+    }
+}
+
+@include respond-to("small") {
+    .logo {
+        width: 47%;
+    }
+
+    .adjustLogo {
+        width: 31%;
+    }
+}
+
+@include respond-to("extra-small") {
+    .logo {
+        width: 48%;
+    }
+
+    .adjustLogo {
+        width: 32%;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .logo {
+        width: 60%;
+    }
+
+    .adjustLogo {
+        width: 41%;
+    }
+}
