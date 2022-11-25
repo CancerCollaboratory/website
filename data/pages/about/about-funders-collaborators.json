@@ -4,5 +4,57 @@
         "body": {
             "text": "The Collaboratory is made up of national and international leaders in genomics, computer science, bioinformatics, medical law and ethics, patient privacy protection, and cancer biology."
         }
+    },
+    "logoBlockList": {
+        "logoBlocks": [
+            {
+                "logo": {
+                    "srcPath": "/assets/logoBlockList/logo-cihr.png",
+                    "alt": "Canadian Institutes of Health Research",
+                    "link": "http://www.cihr-irsc.gc.ca/e/193.html",
+                    "isLinkExternal": true
+                }
+            },
+            {
+                "logo": {
+                    "srcPath": "/assets/logoBlockList/logo-cfi.png",
+                    "alt": "Canada Foundation For Innovation",
+                    "link": "https://www.innovation.ca",
+                    "isLinkExternal": true
+                }
+            },
+            {
+                "logo": {
+                    "srcPath": "/assets/logoBlockList/logo-genome-canada.png",
+                    "alt": "Genome Canada",
+                    "link": "https://www.genomecanada.ca",
+                    "isLinkExternal": true
+                }
+            },
+            {
+                "logo": {
+                    "srcPath": "/assets/logoBlockList/logo-nserc.png",
+                    "alt": "Natural Sciences and Engineering Research Council of Canada",
+                    "link": "http://www.nserc-crsng.gc.ca/index_eng.asp",
+                    "isLinkExternal": true
+                }
+            },
+            {
+                "logo": {
+                    "srcPath": "/assets/logoBlockList/logo-gov-ontario.png",
+                    "alt": "Government of Ontario",
+                    "link": "https://www.ontario.ca/page/government-ontario",
+                    "isLinkExternal": true
+                }
+            },
+            {
+                "logo": {
+                    "srcPath": "/assets/common/logo-oicr.png",
+                    "alt": "Ontario Institute for Cancer Research",
+                    "link": "http://oicr.on.ca",
+                    "isLinkExternal": true
+                }
+            }
+        ]
     }
 }
