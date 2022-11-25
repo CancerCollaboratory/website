@@ -1,0 +1,26 @@
+@import "../../styles/colors";
+
+.listContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .blockContainer {
+        display: flex;
+        justify-content: center;
+        border: 1px solid $color-light-x4-gray;
+        border-radius: 5px;
+        margin: 5px;
+        width: 44%;
+        height: 113px;
+
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .blockBackground {
+        background-color: $color-light-x8-gray;
+    }
+}
