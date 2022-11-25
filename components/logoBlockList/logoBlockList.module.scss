@@ -1,4 +1,5 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .listContainer {
     display: flex;
@@ -9,10 +10,10 @@
         display: flex;
         justify-content: center;
         border: 1px solid $color-light-x4-gray;
-        border-radius: 5px;
+        border-radius: 10px;
         margin: 5px;
-        width: 44%;
-        height: 113px;
+        width: 38%;
+        height: 116px;
 
         a {
             display: flex;
@@ -22,5 +23,63 @@
 
     .blockBackground {
         background-color: $color-light-x8-gray;
+    }
+}
+
+@include respond-to("large") {
+    .listContainer {
+        .blockContainer {
+            width: 42%;
+            height: 114px;
+        }
+    }
+}
+
+@include respond-to("medium") {
+    .listContainer {
+        .blockContainer {
+            border-radius: 15px;
+            width: 32%;
+            height: 112px;
+        }
+    }
+}
+
+@include respond-to("small") {
+    .listContainer {
+        .blockContainer {
+            border-radius: 16px;
+            margin: 1.5% 0%;
+            padding: 13% 0%;
+            width: 63%;
+            height: 0px;
+        }
+
+        .blockBackground {
+            background-color: white;
+        }
+
+        .addBlockBackground {
+            background-color: $color-light-x8-gray;
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .listContainer {
+        .blockContainer {
+            margin: 4px 0px;
+            padding: 15% 0%;
+            width: 72%;
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .listContainer {
+        .blockContainer {
+            padding: 17% 0%;
+            width: 68%;
+        }
     }
 }
