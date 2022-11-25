@@ -9,30 +9,26 @@ import styles from "./banner.module.scss";
 const Banner = ({ title, description, isDescriptionLinkExternal, children }) => {
   const [showBanner, setShowBanner] = useState(true);
 
-  if ((!title && !description) || (title && !description && !children)) {
-    return null;
-  } else {
-    return (
-      showBanner && (
-        <div className={styles.container}>
-          <div className={clsx(styles.wrapContent, utilStyles.defaultContainerWidth)}>
-            <div className={styles.content}>
-              {title && <h1 className={styles.title}>{title}</h1>}
-              <div className={styles.block}>
-                {description &&
-                  renderData(
-                    description,
-                    isDescriptionLinkExternal ? insertLinkExternal : insertLinkInternal
-                  )}
-                {children}
-              </div>
+  return (
+    showBanner && (
+      <div className={styles.container}>
+        <div className={clsx(styles.wrapContent, utilStyles.defaultContainerWidth)}>
+          <div className={styles.content}>
+            {title && <h1 className={styles.title}>{title}</h1>}
+            <div className={styles.block}>
+              {description &&
+                renderData(
+                  description,
+                  isDescriptionLinkExternal ? insertLinkExternal : insertLinkInternal
+                )}
+              {children}
             </div>
-            <CloseButton onClick={() => setShowBanner(false)} />
           </div>
+          <CloseButton onClick={() => setShowBanner(false)} />
         </div>
-      )
-    );
-  }
+      </div>
+    )
+  );
 };
 
 export default Banner;
