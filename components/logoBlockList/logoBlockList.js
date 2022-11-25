@@ -12,7 +12,8 @@ const LogoBlockList = ({ logoBlocks }) => {
           <li
             className={clsx(
               styles.blockContainer,
-              block.hasBackground ? styles.blockBackground : undefined
+              block.hasBackground ? styles.blockBackground : undefined,
+              index % 2 !== 0 ? styles.addBlockBackground : undefined
             )}
             key={index}
           >
