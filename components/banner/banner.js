@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import CloseButton from "../closeButton/clossButton";
+import CloseButton from "../closeButton/closeButton";
 import { useState } from "react";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
