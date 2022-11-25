@@ -2,7 +2,7 @@
     "footerHeadItems": [
         {
             "logo": {
-                "srcPath": "/assets/footer/logo-oicr.png",
+                "srcPath": "/assets/common/logo-oicr.png",
                 "label": "Ontario Institute for Cancer Research",
                 "link": "https://oicr.on.ca"
             }
