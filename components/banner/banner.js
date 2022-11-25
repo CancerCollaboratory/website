@@ -7,11 +7,11 @@ import utilStyles from "../../styles/utils.module.scss";
 import styles from "./banner.module.scss";
 
 const Banner = ({ title, description, isDescriptionLinkExternal, children }) => {
+  const [showBanner, setShowBanner] = useState(true);
+
   if ((!title && !description) || (title && !description && !children)) {
     return null;
   } else {
-    const [showBanner, setShowBanner] = useState(true);
-
     return (
       showBanner && (
         <div className={styles.container}>
