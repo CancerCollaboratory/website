@@ -1,0 +1,54 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    .head {
+        display: flex;
+        margin-bottom: 9px;
+        font-weight: 500;
+
+        .date {
+            border-right: 3px solid $color-dark-x2-gray;
+            padding-right: 13px;
+        }
+
+        .shortUrl {
+            margin-left: 13px;
+        }
+    }
+
+    .articleTitle {
+        display: block;
+        margin-bottom: 9px;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    p,
+    .articleTitle {
+        font-size: 13px;
+        line-height: 150%;
+    }
+
+    .description {
+        margin-bottom: 9px;
+    }
+}
+
+// large: 1199px
+@include respond-to("large") {}
+
+// medium: 991px
+@include respond-to("medium") {}
+
+// small: 767px
+@include respond-to("small") {}
+
+// extra-small: 388px
+@include respond-to("extra-small") {}
+
+// extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
