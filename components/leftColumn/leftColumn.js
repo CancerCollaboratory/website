@@ -3,7 +3,7 @@ import styles from "./leftColumn.module.scss";
 
 const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
   return (
-    <>
+    <div className={styles.container}>
       {(title || imageSrcPath) && (
         <div className={styles.head}>
           {imageSrcPath && (
@@ -28,7 +28,7 @@ const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
           )
       )}
       {children}
-    </>
+    </div>
   );
 };
 
