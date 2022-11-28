@@ -10,7 +10,7 @@
             {
                 "logo": {
                     "srcPath": "/assets/logoBlockList/logo-cihr.png",
-                    "alt": "Canadian Institutes of Health Research",
+                    "alt": "Logo - Canadian Institutes of Health Research",
                     "link": "http://www.cihr-irsc.gc.ca/e/193.html",
                     "isLinkExternal": true
                 }
@@ -18,7 +18,7 @@
             {
                 "logo": {
                     "srcPath": "/assets/logoBlockList/logo-cfi.png",
-                    "alt": "Canada Foundation For Innovation",
+                    "alt": "Logo - Canada Foundation For Innovation",
                     "link": "https://www.innovation.ca",
                     "isLinkExternal": true
                 },
@@ -27,7 +27,7 @@
             {
                 "logo": {
                     "srcPath": "/assets/logoBlockList/logo-genome-canada.png",
-                    "alt": "Genome Canada",
+                    "alt": "Logo - Genome Canada",
                     "link": "https://www.genomecanada.ca",
                     "isLinkExternal": true
                 },
@@ -36,7 +36,7 @@
             {
                 "logo": {
                     "srcPath": "/assets/logoBlockList/logo-nserc.png",
-                    "alt": "Natural Sciences and Engineering Research Council of Canada",
+                    "alt": "Logo - Natural Sciences and Engineering Research Council of Canada",
                     "link": "http://www.nserc-crsng.gc.ca/index_eng.asp",
                     "isLinkExternal": true
                 }
@@ -44,7 +44,7 @@
             {
                 "logo": {
                     "srcPath": "/assets/logoBlockList/logo-gov-ontario.png",
-                    "alt": "Government of Ontario",
+                    "alt": "Logo - Government of Ontario",
                     "link": "https://www.ontario.ca/page/government-ontario",
                     "isLinkExternal": true
                 }
@@ -52,7 +52,7 @@
             {
                 "logo": {
                     "srcPath": "/assets/common/logo-oicr.png",
-                    "alt": "Ontario Institute for Cancer Research",
+                    "alt": "Logo - Ontario Institute for Cancer Research",
                     "link": "http://oicr.on.ca",
                     "isLinkExternal": true,
                     "adjustStyling": true
@@ -60,5 +60,67 @@
                 "hasBackground": true
             }
         ]
-    }
+    },
+    "collaboratorCardSets": [
+        {
+            "leftCard": {
+                "logo": {
+                    "srcPath": "/assets/collaboratorCard/logo-ga4gh.png",
+                    "alt": "Logo - Global Alliance for Genomics and Health",
+                    "isLinkExternal": true
+                },
+                "title": "Global Alliance for Genomics & Health",
+                "description": "A description will go here.",
+                "buttonItem": {
+                    "label": "ga4gh.org",
+                    "link": "https://www.ga4gh.org",
+                    "isLinkExternal": true
+                }
+            },
+            "rightCard": {
+                "logo": {
+                    "srcPath": "/assets/collaboratorCard/logo-uoft.png",
+                    "alt": "Logo - University of Toronto",
+                    "isLinkExternal": true
+                },
+                "title": "University of Toronto",
+                "description": "A description will go here.",
+                "buttonItem": {
+                    "label": "utoronto.ca",
+                    "link": "https://www.utoronto.ca",
+                    "isLinkExternal": true
+                }
+            }
+        },
+        {
+            "leftCard": {
+                "logo": {
+                    "srcPath": "/assets/collaboratorCard/logo-icgc.png",
+                    "alt": "Logo - International Cancer Genome Consortium",
+                    "isLinkExternal": true
+                },
+                "title": "International Cancer Genome Consortium",
+                "description": "A description will go here.",
+                "buttonItem": {
+                    "label": "dcc.icgc.org",
+                    "link": "https://dcc.icgc.org",
+                    "isLinkExternal": true
+                }
+            },
+            "rightCard": {
+                "logo": {
+                    "srcPath": "/assets/common/logo-dockstore.png",
+                    "alt": "Logo - Dockstore",
+                    "isLinkExternal": true
+                },
+                "title": "Dockstore",
+                "description": "A description will go here.",
+                "buttonItem": {
+                    "label": "dockstore.org",
+                    "link": "https://dockstore.org",
+                    "isLinkExternal": true
+                }
+            }
+        }
+    ]
 }
