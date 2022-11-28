@@ -4,7 +4,6 @@
 .container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 28px;
 
     .label {
         font-weight: 500;
@@ -24,16 +23,8 @@
     }
 }
 
-@include respond-to("large") {
-    .container {
-        margin-bottom: 24px;
-    }
-}
-
 @include respond-to("medium") {
     .container {
-        margin-bottom: 18px;
-
         .label {
             font-size: 11.5px;
 
@@ -47,8 +38,6 @@
 
 @include respond-to("small") {
     .container {
-        margin-bottom: 22px;
-
         .label {
             font-size: 10.5px;
 
@@ -56,12 +45,6 @@
                 width: 9.5px;
             }
         }
-    }
-}
-
-@include respond-to("extra-small") {
-    .container {
-        margin-bottom: 21px;
     }
 }
 
