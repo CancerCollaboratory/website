@@ -71,11 +71,13 @@
                 },
                 "title": "Global Alliance for Genomics & Health",
                 "description": "A description will go here.",
-                "buttonItem": {
-                    "label": "ga4gh.org",
-                    "link": "https://www.ga4gh.org",
-                    "isLinkExternal": true
-                }
+                "buttonItems": [
+                    {
+                        "label": "ga4gh.org",
+                        "link": "https://www.ga4gh.org",
+                        "isLinkExternal": true
+                    }
+                ]
             },
             "rightCard": {
                 "logo": {
@@ -85,11 +87,13 @@
                 },
                 "title": "University of Toronto",
                 "description": "A description will go here.",
-                "buttonItem": {
-                    "label": "utoronto.ca",
-                    "link": "https://www.utoronto.ca",
-                    "isLinkExternal": true
-                }
+                "buttonItems": [
+                    {
+                        "label": "utoronto.ca",
+                        "link": "https://www.utoronto.ca",
+                        "isLinkExternal": true
+                    }
+                ]
             }
         },
         {
@@ -101,11 +105,13 @@
                 },
                 "title": "International Cancer Genome Consortium",
                 "description": "A description will go here.",
-                "buttonItem": {
-                    "label": "dcc.icgc.org",
-                    "link": "https://dcc.icgc.org",
-                    "isLinkExternal": true
-                }
+                "buttonItems": [
+                    {
+                        "label": "dcc.icgc.org",
+                        "link": "https://dcc.icgc.org",
+                        "isLinkExternal": true
+                    }
+                ]
             },
             "rightCard": {
                 "logo": {
@@ -115,11 +121,13 @@
                 },
                 "title": "Dockstore",
                 "description": "A description will go here.",
-                "buttonItem": {
-                    "label": "dockstore.org",
-                    "link": "https://dockstore.org",
-                    "isLinkExternal": true
-                }
+                "buttonItems": [
+                    {
+                        "label": "dockstore.org",
+                        "link": "https://dockstore.org",
+                        "isLinkExternal": true
+                    }
+                ]
             }
         }
     ]
