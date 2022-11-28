@@ -4,22 +4,20 @@
 .container {
     .head {
         display: flex;
-        margin-bottom: 9px;
         font-weight: 500;
 
         .date {
             border-right: 3px solid $color-dark-x2-gray;
-            padding-right: 13px;
+            padding-right: 12.5px;
         }
 
         .shortUrl {
-            margin-left: 13px;
+            margin-left: 12.5px;
         }
     }
 
     .articleTitle {
         display: block;
-        margin-bottom: 9px;
         text-decoration: underline;
 
         &:hover {
@@ -33,22 +31,114 @@
         line-height: 150%;
     }
 
+    .head,
+    .articleTitle,
     .description {
         margin-bottom: 9px;
     }
 }
 
-// large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .container {
 
-// medium: 991px
-@include respond-to("medium") {}
+        .head,
+        .articleTitle,
+        .description {
+            margin-bottom: 8.5px;
+        }
+    }
+}
 
-// small: 767px
-@include respond-to("small") {}
+@include respond-to("medium") {
+    .container {
+        .head {
+            .date {
+                padding-right: 12px;
+            }
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+            .shortUrl {
+                margin-left: 12px;
+            }
+        }
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+        p,
+        .articleTitle {
+            font-size: 12.5px;
+        }
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        .head {
+            .date {
+                padding-right: 11.5px;
+            }
+
+            .shortUrl {
+                margin-left: 11.5px;
+            }
+        }
+
+        p,
+        .articleTitle {
+            font-size: 12px;
+        }
+
+        .head,
+        .articleTitle,
+        .description {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        .head {
+            .date {
+                padding-right: 11px;
+            }
+
+            .shortUrl {
+                margin-left: 11px;
+            }
+        }
+
+        p,
+        .articleTitle {
+            font-size: 11.5px;
+        }
+
+        .head,
+        .articleTitle,
+        .description {
+            margin-bottom: 7.5px;
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        .head {
+            .date {
+                padding-right: 10.5px;
+            }
+
+            .shortUrl {
+                margin-left: 10.5px;
+            }
+        }
+
+        p,
+        .articleTitle {
+            font-size: 11px;
+        }
+
+        .head,
+        .articleTitle,
+        .description {
+            margin-bottom: 7px;
+        }
+    }
+}
