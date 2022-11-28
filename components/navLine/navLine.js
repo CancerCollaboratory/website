@@ -1,21 +1,16 @@
-import clsx from "clsx";
 import Image from "next/future/image";
 import CustomLink from "../customLink/customLink";
 import IconArrow from "../../public/assets/navLine/icon-arrow-red.svg";
 import styles from "./navLine.module.scss";
 
-const NavLine = ({ links }) => {
+const NavLine = ({ navItems }) => {
   return (
     <ul className={styles.container}>
-      {links.map((item, index) => (
-        <li
-          className={clsx(
-            styles.label,
-            !item.isLastLink ? clsx(styles.borderRight, styles.marginBottom) : undefined
+      {navItems.map((item, index) => (
+        <li className={styles.label} key={index}>
+          {item.label && item.link && (
+            <CustomLink label={item.label} link={item.link} isLinkExternal={item.isLinkExternal} />
           )}
-          key={index}
-        >
-          {item.label && item.link && <CustomLink label={item.label} link={item.link} />}
           <Image
             src={IconArrow}
             alt={"Icon"}
