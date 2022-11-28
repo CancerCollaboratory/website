@@ -12,7 +12,12 @@ const PressRelease = ({ date, shortUrl, articleUrl, articleTitle, description, b
           <p className={styles.date}>{date}</p>
           <p className={styles.shortUrl}>{shortUrl}</p>
         </div>
-        <CustomLink label={articleTitle} link={articleUrl} isLinkExternal={true} />
+        <CustomLink
+          label={articleTitle}
+          link={articleUrl}
+          isLinkExternal={true}
+          styleLabel={styles.articleTitle}
+        />
         <p className={styles.description}>{description}</p>
         <NavLine navItems={buttonItems} />
       </div>
