@@ -14,6 +14,7 @@ const CollabCardLayout = ({ title, description, buttonItems, logoData }) => {
           src={logoData.srcPath}
           alt={logoData.alt}
           className={styles.logo}
+          priority={logoData.isLCP}
           quality={100}
           width={286}
           height={63}
