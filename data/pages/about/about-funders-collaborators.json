@@ -63,6 +63,7 @@
     },
     "collabCardSets": [
         {
+            "title": "Collaborators",
             "leftCard": {
                 "logo": {
                     "srcPath": "/assets/collabCard/logo-ga4gh.png",
@@ -94,7 +95,8 @@
                         "isLinkExternal": true
                     }
                 ]
-            }
+            },
+            "hasBackground": true
         },
         {
             "leftCard": {
