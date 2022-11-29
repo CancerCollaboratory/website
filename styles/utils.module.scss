@@ -16,6 +16,10 @@
     width: 1170px;
 }
 
+.columnBorder {
+    border-right: 1px solid $color-light-x4-gray;
+}
+
 .itemLabel {
     font-weight: bold;
 }
@@ -41,6 +45,11 @@
 
     .defaultContainerWidth {
         width: 750px;
+    }
+
+    .columnBorder {
+        border-right: none;
+        border-bottom: 1px dotted $color-light-x5-gray;
     }
 }
 
