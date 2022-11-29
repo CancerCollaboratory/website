@@ -2,20 +2,35 @@
 
 .logo {
     width: auto;
-    height: 54px;
+    height: 52px;
 }
 
-// large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .logo {
+        height: 50px;
+    }
+}
 
-// medium: 991px
-@include respond-to("medium") {}
+@include respond-to("medium") {
+    .logo {
+        height: 48px;
+    }
+}
 
-// small: 767px
-@include respond-to("small") {}
+@include respond-to("small") {
+    .logo {
+        height: 44px;
+    }
+}
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+@include respond-to("extra-small") {
+    .logo {
+        height: 42px;
+    }
+}
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+@include respond-to("extra-extra-small") {
+    .logo {
+        height: 36px;
+    }
+}
