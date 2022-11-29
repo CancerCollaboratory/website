@@ -1,9 +1,10 @@
+import clsx from "clsx";
 import Image from "next/future/image";
 import styles from "./leftColumn.module.scss";
 
-const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
+const LeftColumn = ({ title, imageSrcPath, imageAlt, body, styleColumn, children }) => {
   return (
-    <div className={styles.container}>
+    <div className={clsx(styles.container, styleColumn)}>
       {(title || imageSrcPath) && (
         <div className={styles.head}>
           {imageSrcPath && (
