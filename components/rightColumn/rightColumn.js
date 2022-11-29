@@ -1,8 +1,9 @@
+import clsx from "clsx";
 import styles from "./rightColumn.module.scss";
 
-const RightColumn = ({ title, subTitle, body, children }) => {
+const RightColumn = ({ title, subTitle, body, styleColumn, children }) => {
   return (
-    <div className={styles.container}>
+    <div className={clsx(styles.container, styleColumn)}>
       {title && <h2 className={styles.title}>{title}</h2>}
       {subTitle && <p className={styles.subTitle}>{subTitle}</p>}
       {body?.map(
