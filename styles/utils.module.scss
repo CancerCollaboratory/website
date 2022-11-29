@@ -20,14 +20,6 @@
     border-right: 1px solid $color-light-x4-gray;
 }
 
-.defaultLeftColumn {
-    padding: 0px 20px 0px 4px;
-}
-
-.defaultRightColumn {
-    padding: 0px 4px 0px 20px;
-}
-
 .itemLabel {
     font-weight: bold;
 }
@@ -58,11 +50,6 @@
     .columnBorder {
         border-right: none;
         border-bottom: 1px dotted $color-light-x5-gray;
-    }
-
-    .defaultLeftColumn,
-    .defaultRightColumn {
-        padding: 0px;
     }
 }
 
