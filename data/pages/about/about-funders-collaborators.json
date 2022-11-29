@@ -87,7 +87,7 @@
                     "isLinkExternal": true
                 },
                 "title": "University of Toronto",
-                "description": "A description will go here.",
+                "description": "Enter a description here.",
                 "buttonItems": [
                     {
                         "label": "utoronto.ca",
@@ -107,7 +107,7 @@
                     "isLCP": true
                 },
                 "title": "International Cancer Genome Consortium",
-                "description": "A description will go here.",
+                "description": "Enter a description here.",
                 "buttonItems": [
                     {
                         "label": "dcc.icgc.org",
@@ -123,7 +123,7 @@
                     "isLinkExternal": true
                 },
                 "title": "Dockstore",
-                "description": "A description will go here.",
+                "description": "Enter a description here.",
                 "buttonItems": [
                     {
                         "label": "dockstore.org",
