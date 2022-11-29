@@ -1,8 +1,8 @@
 import styles from "./rightColumn.module.scss";
 
-const RightColumn = ({ title, subTitle, body, styleColumn, children }) => {
+const RightColumn = ({ title, subTitle, body, children }) => {
   return (
-    <div className={styleColumn}>
+    <div className={styles.container}>
       {title && <h2 className={styles.title}>{title}</h2>}
       {subTitle && <p className={styles.subTitle}>{subTitle}</p>}
       {body?.map(

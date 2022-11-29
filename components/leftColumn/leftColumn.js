@@ -1,9 +1,9 @@
 import Image from "next/future/image";
 import styles from "./leftColumn.module.scss";
 
-const LeftColumn = ({ title, imageSrcPath, imageAlt, body, styleColumn, children }) => {
+const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
   return (
-    <div className={styleColumn}>
+    <div className={styles.container}>
       {(title || imageSrcPath) && (
         <div className={styles.head}>
           {imageSrcPath && (
