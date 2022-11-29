@@ -65,7 +65,7 @@
         {
             "leftCard": {
                 "logo": {
-                    "srcPath": "/assets/collaboratorCard/logo-ga4gh.png",
+                    "srcPath": "/assets/collabCard/logo-ga4gh.png",
                     "alt": "Logo - Global Alliance for Genomics and Health",
                     "isLinkExternal": true
                 },
@@ -81,7 +81,7 @@
             },
             "rightCard": {
                 "logo": {
-                    "srcPath": "/assets/collaboratorCard/logo-uoft.png",
+                    "srcPath": "/assets/collabCard/logo-uoft.png",
                     "alt": "Logo - University of Toronto",
                     "isLinkExternal": true
                 },
@@ -99,7 +99,7 @@
         {
             "leftCard": {
                 "logo": {
-                    "srcPath": "/assets/collaboratorCard/logo-icgc.png",
+                    "srcPath": "/assets/collabCard/logo-icgc.png",
                     "alt": "Logo - International Cancer Genome Consortium",
                     "isLinkExternal": true
                 },
