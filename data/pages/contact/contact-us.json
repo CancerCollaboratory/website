@@ -60,7 +60,8 @@
                 "link": "mailto:help@cancercollaboratory.org",
                 "isLinkExternal": true,
                 "hasIcon": true
-            }
+            },
+            "hasBackground": true
         }
     }
 }
