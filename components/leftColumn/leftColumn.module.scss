@@ -38,6 +38,9 @@
 
 @include respond-to("medium") {
     .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 0px;
 
         .head {

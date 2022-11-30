@@ -11,7 +11,7 @@
             {
                 "logo": {
                     "srcPath": "/assets/logoBlockList/logo-openstack.png",
-                    "alt": "OpenStack",
+                    "alt": "Logo - OpenStack",
                     "link": "http://www.openstack.org",
                     "isLinkExternal": true
                 }
@@ -19,7 +19,7 @@
             {
                 "logo": {
                     "srcPath": "/assets/logoBlockList/logo-ceph.png",
-                    "alt": "Ceph",
+                    "alt": "Logo - Ceph",
                     "link": "https://ceph.io",
                     "isLinkExternal": true
                 },

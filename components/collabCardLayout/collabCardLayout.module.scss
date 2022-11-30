@@ -1,0 +1,36 @@
+@import "../../styles/mixins";
+
+.logo {
+    width: auto;
+    height: 52px;
+}
+
+@include respond-to("large") {
+    .logo {
+        height: 50px;
+    }
+}
+
+@include respond-to("medium") {
+    .logo {
+        height: 48px;
+    }
+}
+
+@include respond-to("small") {
+    .logo {
+        height: 44px;
+    }
+}
+
+@include respond-to("extra-small") {
+    .logo {
+        height: 42px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .logo {
+        height: 36px;
+    }
+}
