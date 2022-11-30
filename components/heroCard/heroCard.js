@@ -8,20 +8,19 @@ const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, hasBackground }
     return null;
   } else {
     return (
-      <div className={styles.container}>
+      <div className={clsx(!body.description ? styles.container : styles.customContainer)}>
         <Image
           src={imageSrcPath}
           alt={imageAlt}
           className={styles.image}
           quality={100}
-          width={76}
-          height={76}
+          width={74}
+          height={74}
         />
         <div
           className={clsx(
-            styles.card,
-            hasBackground ? styles.background : undefined,
-            body.description ? styles.customContainer : undefined
+            !body.description ? styles.card : styles.customCard,
+            hasBackground ? styles.background : undefined
           )}
         >
           <h2 className={styles.title}>{title}</h2>
