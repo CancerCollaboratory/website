@@ -3,12 +3,12 @@ import Image from "next/future/image";
 import IconArrow from "../../public/assets/common/icon-arrow-white.svg";
 import styles from "./button.module.scss";
 
-const Button = ({ label, link, isLinkExternal, hasIcon }) => {
+const Button = ({ tag, label, link, isLinkExternal, hasIcon }) => {
   if (!label || !link) {
     return null;
   } else {
     const buttonContent = (
-      <div className={styles.container}>
+      <div className={styles.innerContainer}>
         <p className={styles.label}>{label}</p>
         {hasIcon && (
           <Image
@@ -24,13 +24,21 @@ const Button = ({ label, link, isLinkExternal, hasIcon }) => {
       </div>
     );
 
-    return isLinkExternal ? (
-      <a href={link} target="_blank" rel="noreferrer">
-        {buttonContent}
-      </a>
-    ) : (
-      <Link href={link}>{buttonContent}</Link>
-    );
+    if (!isLinkExternal) {
+      <div className={styles.container}>
+        {tag && <p className={styles.tag}>{tag}</p>}
+        <Link href={link}>{buttonContent}</Link>
+      </div>;
+    } else {
+      return (
+        <div className={styles.container}>
+          {tag && <p className={styles.tag}>{tag}</p>}
+          <a href={link} target="_blank" rel="noreferrer">
+            {buttonContent}
+          </a>
+        </div>
+      );
+    }
   }
 };
 
