@@ -4,5 +4,18 @@
         "body": {
             "text": "The cloud is now open to a broader community of researchers. To read about the features we offer, visit our [Cloud Resources](/services-cloud-resources) page."
         }
+    },
+    "heroCard": {
+        "title": "Register your Projects and Users",
+        "image": {
+            "srcPath": "/assets/heroCard/icon-register-project.svg",
+            "alt": "Icon - Register Project"
+        },
+        "button": {
+            "label": "ENROLMENT APP",
+            "link": "https://enrolment.cancercollaboratory.org",
+            "isLinkExternal": true,
+            "hasIcon": true
+        }
     }
 }
