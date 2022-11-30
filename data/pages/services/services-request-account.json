@@ -11,6 +11,9 @@
             "srcPath": "/assets/heroCard/icon-register-project.svg",
             "alt": "Icon - Register Project"
         },
+        "body": {
+            "description": "Using our Enrolment app, you can create and manage your Collaboratory projects. You can also register and manage users for your existing Collaboratory projects."
+        },
         "button": {
             "label": "ENROLMENT APP",
             "link": "https://enrolment.cancercollaboratory.org",
