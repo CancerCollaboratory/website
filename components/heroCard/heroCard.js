@@ -21,7 +21,7 @@ const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, hasBackground }
           <h2 className={styles.title}>{title}</h2>
           {body.description && <p className={styles.description}>{body.description}</p>}
           {body.list?.items && (
-            <ul className={clsx(styles.list, body.list.hasBullets ? styles.addBullets : undefined)}>
+            <ul className={clsx(styles.list, body.list.hasBullets ? styles.bullet : undefined)}>
               {body.list.items.map((item, index) => (
                 <li key={index}>{item.value}</li>
               ))}
