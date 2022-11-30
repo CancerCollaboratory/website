@@ -20,8 +20,6 @@ const Button = ({ tag, label, link, isLinkExternal, hasIcon }) => {
                 link={link}
                 className={styles.iconArrow}
                 quality={100}
-                width={12}
-                height={12}
               />
             )}
           </div>
