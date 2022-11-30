@@ -4,7 +4,7 @@ import Button from "../button/button";
 import styles from "./heroCard.module.scss";
 
 const HeroCard = ({ title, imageSrcPath, imageAlt, button, styleBackground, children }) => {
-  if (!title || !imageSrcPath || !button || !children) {
+  if (!title || !imageSrcPath || !children) {
     return null;
   } else {
     return (
@@ -20,13 +20,15 @@ const HeroCard = ({ title, imageSrcPath, imageAlt, button, styleBackground, chil
         <div className={clsx(styles.card, styleBackground)}>
           <h2 className={styles.title}>{title}</h2>
           {children}
-          <Button
-            tag={button.tag}
-            label={button.label}
-            link={button.link}
-            isLinkExternal={button.isLinkExternal}
-            hasIcon={button.hasIcon}
-          />
+          {button && (
+            <Button
+              tag={button.tag}
+              label={button.label}
+              link={button.link}
+              isLinkExternal={button.isLinkExternal}
+              hasIcon={button.hasIcon}
+            />
+          )}
         </div>
       </div>
     );
