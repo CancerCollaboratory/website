@@ -21,10 +21,10 @@ const HeroCard = ({ title, imageSrcPath, imageAlt, button, styleBackground, chil
           <h2 className={styles.title}>{title}</h2>
           {children}
           <Button
+            tag={button.tag}
             label={button.label}
             link={button.link}
             isLinkExternal={button.isLinkExternal}
-            sideNote={button.sideNote}
             hasIcon={button.hasIcon}
           />
         </div>
