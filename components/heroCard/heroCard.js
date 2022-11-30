@@ -3,7 +3,7 @@ import Image from "next/future/image";
 import Button from "../button/button";
 import styles from "./heroCard.module.scss";
 
-const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, styleBackground }) => {
+const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, hasBackground }) => {
   if (!title || !imageSrcPath || !body) {
     return null;
   } else {
@@ -17,7 +17,7 @@ const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, styleBackground
           width={76}
           height={76}
         />
-        <div className={clsx(styles.card, styleBackground)}>
+        <div className={clsx(styles.card, hasBackground ? styles.background : undefined)}>
           <h2 className={styles.title}>{title}</h2>
           {body.description && <p className={styles.description}>{body.description}</p>}
           {body.list?.items && (
