@@ -17,7 +17,13 @@ const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, hasBackground }
           width={76}
           height={76}
         />
-        <div className={clsx(styles.card, hasBackground ? styles.background : undefined)}>
+        <div
+          className={clsx(
+            styles.card,
+            hasBackground ? styles.background : undefined,
+            body.description ? styles.customContainer : undefined
+          )}
+        >
           <h2 className={styles.title}>{title}</h2>
           {body.description && <p className={styles.description}>{body.description}</p>}
           {body.list?.items && (
