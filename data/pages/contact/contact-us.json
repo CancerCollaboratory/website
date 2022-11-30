@@ -14,19 +14,19 @@
                     "hasBullets": false,
                     "items": [
                         {
-                            "item": "Ontario Institute for Cancer Research"
+                            "value": "Ontario Institute for Cancer Research"
                         },
                         {
-                            "item": "MaRS Centre"
+                            "value": "MaRS Centre"
                         },
                         {
-                            "item": "661 University Avenue, Suite 510"
+                            "value": "661 University Avenue, Suite 510"
                         },
                         {
-                            "item": "Toronto, Ontario"
+                            "value": "Toronto, Ontario"
                         },
                         {
-                            "item": "Canada, M5G 0A3"
+                            "value": "Canada, M5G 0A3"
                         }
                     ]
                 }
@@ -43,13 +43,13 @@
                     "hasBullets": true,
                     "items": [
                         {
-                            "item": "For technical assistance"
+                            "value": "For technical assistance"
                         },
                         {
-                            "item": "For general questions about the Collaboratory"
+                            "value": "For general questions about the Collaboratory"
                         },
                         {
-                            "item": "To get involved with the Collaboratory"
+                            "value": "To get involved with the Collaboratory"
                         }
                     ]
                 }
