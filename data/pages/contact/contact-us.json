@@ -1,5 +1,66 @@
 {
     "jumbotron": {
         "title": "Contact Us"
+    },
+    "heroCardSet": {
+        "leftCard": {
+            "title": "Our Address",
+            "image": {
+                "srcPath": "/assets/heroCard/icon-contact-address.svg",
+                "alt": "Icon - Address"
+            },
+            "body": {
+                "list": {
+                    "hasBullets": false,
+                    "items": [
+                        {
+                            "item": "Ontario Institute for Cancer Research"
+                        },
+                        {
+                            "item": "MaRS Centre"
+                        },
+                        {
+                            "item": "661 University Avenue, Suite 510"
+                        },
+                        {
+                            "item": "Toronto, Ontario"
+                        },
+                        {
+                            "item": "Canada, M5G 0A3"
+                        }
+                    ]
+                }
+            }
+        },
+        "rightCard": {
+            "title": "Keep in touch",
+            "image": {
+                "srcPath": "/assets/heroCard/icon-contact-email.svg",
+                "alt": "Icon - Email"
+            },
+            "body": {
+                "list": {
+                    "hasBullets": true,
+                    "items": [
+                        {
+                            "item": "For technical assistance"
+                        },
+                        {
+                            "item": "For general questions about the Collaboratory"
+                        },
+                        {
+                            "item": "To get involved with the Collaboratory"
+                        }
+                    ]
+                }
+            },
+            "button": {
+                "tag": "Email us:",
+                "label": "help@cancercollaboratory.org",
+                "link": "mailto:help@cancercollaboratory.org",
+                "isLinkExternal": true,
+                "hasIcon": true
+            }
+        }
     }
 }
