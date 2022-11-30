@@ -1,0 +1,33 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    .image {}
+
+    .card {
+        .title {}
+
+        .description {}
+
+        .list {}
+
+        .bullet {}
+    }
+
+    .background {}
+}
+
+// large: 1199px
+@include respond-to("large") {}
+
+// medium: 991px
+@include respond-to("medium") {}
+
+// small: 767px
+@include respond-to("small") {}
+
+// extra-small: 388px
+@include respond-to("extra-small") {}
+
+// extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
