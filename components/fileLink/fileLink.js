@@ -1,5 +1,7 @@
+import clsx from "clsx";
 import Image from "next/future/image";
 import CustomLink from "../customLink/customLink";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./fileLink.module.scss";
 
 const FileLink = ({ links }) => {
@@ -7,7 +9,7 @@ const FileLink = ({ links }) => {
     return null;
   } else {
     return (
-      <ul className={styles.container}>
+      <ul className={clsx(styles.container, utilStyles.defaultContainerWidth)}>
         {links.map(
           (item, index) =>
             item.icon?.srcPath &&
