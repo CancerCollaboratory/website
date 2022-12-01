@@ -60,6 +60,8 @@
 
 @include respond-to("small") {
     .container {
+        align-items: center;
+
         .title {
             font-size: 15px;
         }

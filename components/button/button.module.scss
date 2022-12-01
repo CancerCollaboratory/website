@@ -4,87 +4,129 @@
 .container {
     display: flex;
     align-items: center;
-    border-radius: 30px;
-    background-color: $color-dark-x2-red;
-    padding: 5px 16px;
-    margin: 3px 0px;
 
-    &:hover {
-        background-color: $color-light-x1-red;
-        cursor: pointer;
+    .tag {
+        margin-right: 12px;
+        font-size: 14.5px;
     }
 
-    .label {
-        color: white;
-        letter-spacing: 0.5px;
-        font-weight: 500;
-        font-size: 12px;
-    }
+    .innerContainer {
+        display: flex;
+        align-items: center;
+        border-radius: 30px;
+        background-color: $color-dark-x2-red;
+        padding: 5px 16px;
+        margin: 3px 0px;
 
-    .iconArrow {
-        margin-left: 6px;
+        &:hover {
+            background-color: $color-light-x1-red;
+            cursor: pointer;
+        }
+
+        .label {
+            color: white;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        .iconArrow {
+            margin-left: 6px;
+            width: 12px;
+            height: 12px;
+        }
     }
 }
 
 @include respond-to("large") {
     .container {
-        border-radius: 40px;
-        padding: 5px 15.5px;
-        margin: 4px 0px;
+        .innerContainer {
+            border-radius: 40px;
+            padding: 5px 15.5px;
+            margin: 4px 0px;
 
-        .label {
-            font-size: 10px;
-        }
+            .label {
+                font-size: 10px;
+            }
 
-        .iconArrow {
-            width: 10px;
-            height: auto;
+            .iconArrow {
+                width: 10px;
+                height: auto;
+            }
         }
     }
 }
 
 @include respond-to("medium") {
     .container {
-        margin: 5.5px 0px;
+        .tag {
+            margin-right: 11.5px;
+            font-size: 14px;
+        }
+
+        .innerContainer {
+            margin: 5.5px 0px;
+        }
     }
 }
 
 @include respond-to("small") {
     .container {
-        border-radius: 50px;
-        padding: 5px 15px;
+        flex-direction: column;
 
-        .label {
-            font-size: 9.5px;
+        .tag {
+            margin: 0px 0px 4.5px 0px;
+            font-size: 13.5px;
         }
 
-        .iconArrow {
-            margin-left: 5.5px;
-            width: 9.5px;
+        .innerContainer {
+            border-radius: 50px;
+            padding: 5px 15px;
+
+            .label {
+                font-size: 9.5px;
+            }
+
+            .iconArrow {
+                margin-left: 5.5px;
+                width: 9.5px;
+            }
         }
     }
 }
 
 @include respond-to("extra-small") {
     .container {
-        margin: 5px 0px;
-        padding: 5px 14.5px;
+        .tag {
+            font-size: 13px;
+        }
+
+        .innerContainer {
+            margin: 5px 0px;
+            padding: 5px 14.5px;
+        }
     }
 }
 
 @include respond-to("extra-extra-small") {
     .container {
-        margin: 4.5px 0px;
-        border-radius: 65px;
-        padding: 4.5px 13.5px;
-
-        .label {
-            font-size: 8.5px;
+        .tag {
+            font-size: 12.5px;
         }
 
-        .iconArrow {
-            margin-left: 5px;
-            width: 8px;
+        .innerContainer {
+            margin: 4.5px 0px;
+            border-radius: 65px;
+            padding: 4.5px 13.5px;
+
+            .label {
+                font-size: 8.5px;
+            }
+
+            .iconArrow {
+                margin-left: 5px;
+                width: 8px;
+            }
         }
     }
 }
