@@ -4,7 +4,7 @@
     },
     "heroCardSet": {
         "leftCard": {
-            "title": "Our Address",
+            "title": "Our address",
             "image": {
                 "srcPath": "/assets/heroCard/icon-contact-address.svg",
                 "alt": "Icon - Address"
