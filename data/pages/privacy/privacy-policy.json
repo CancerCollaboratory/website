@@ -1,5 +1,17 @@
 {
     "jumbotron": {
         "title": "Privacy Policy"
+    },
+    "fileLink": {
+        "links": [
+            {
+                "icon": {
+                    "srcPath": "/assets/fileLink/icon-pdf.png",
+                    "alt": "Icon - PDF"
+                },
+                "label": "Cancer Genome Collaboratory Cloud Privacy Policy (June 2018)",
+                "link": "/assets/fileLink/collaboratory-privacy-policy-june-2018.pdf"
+            }
+        ]
     }
 }
