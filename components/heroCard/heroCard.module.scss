@@ -2,35 +2,33 @@
 @import "../../styles/mixins";
 
 .container,
-.customContainer {
+.customContainer,
+.card,
+.customCard {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.container,
+.customContainer {
     .image {
-        margin-bottom: -38px;
+        margin-bottom: -37px;
         z-index: 1;
     }
 }
 
 .card,
 .customCard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     border: 1px solid $color-light-x4-gray;
     border-radius: 10px;
-
-    .title {
-        text-align: center;
-    }
 }
 
 .container {
     .card {
-        padding: 46px 50px 19px 50px;
+        padding: 46px 51px 20px 51px;
         width: 450px;
-        min-height: 240px;
+        min-height: 260px;
 
         .title {
             margin-bottom: 14px;
@@ -58,28 +56,108 @@
 }
 
 .customContainer {
+    margin: 25px 0px;
+
     .customCard {
-        padding: 51px 55px 23px 55px;
+        padding: 51px 54px 22px 54px;
         width: 720px;
 
-        .title {
-            margin-bottom: 19px;
+        .description {
+            text-align: center;
+            line-height: 195%;
+            font-size: 15px;
         }
 
+        .title,
         .description {
             margin-bottom: 19px;
-            text-align: center;
-            line-height: 200%;
-            font-size: 15px;
         }
     }
 }
 
-// large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .container {
+        .card {
+            width: 400px;
+            min-height: 285px;
 
-// medium: 991px
-@include respond-to("medium") {}
+            .list {
+                margin-bottom: 9.5px;
+                width: 285px;
+
+                li {
+                    line-height: 190%;
+                    margin-bottom: 4.5px;
+                }
+            }
+        }
+    }
+
+    .customContainer {
+        .customCard {
+            width: 690px;
+        }
+    }
+}
+
+@include respond-to("medium") {
+
+    .container,
+    .customContainer {
+        .image {
+            margin-bottom: -35px;
+            width: 70px;
+            height: auto;
+        }
+    }
+
+    .card,
+    .customCard {
+        border-radius: 14px;
+    }
+
+    .container {
+        .card {
+            align-items: flex-start;
+            padding: 44px 49px 18px 49px;
+            width: 500px;
+            min-height: 274px;
+
+            .title {
+                margin-bottom: 13.5px;
+                text-align: center;
+                width: 100%;
+            }
+
+            .list {
+                margin-bottom: 9px;
+                width: 314px;
+
+                li {
+                    font-size: 14.5px;
+                }
+            }
+        }
+    }
+
+    .customContainer {
+        margin: 24px 0px;
+
+        .customCard {
+            padding: 50px 53px 21px 53px;
+            width: 570px;
+
+            .description {
+                font-size: 14.5px;
+            }
+
+            .title,
+            .description {
+                margin-bottom: 18px;
+            }
+        }
+    }
+}
 
 // small: 767px
 @include respond-to("small") {}
