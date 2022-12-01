@@ -9,7 +9,7 @@ const FileLink = ({ links }) => {
     return null;
   } else {
     return (
-      <ul className={clsx(styles.container, utilStyles.defaultContainerWidth)}>
+      <ul className={clsx(styles.container, utilStyles.outerContainer)}>
         {links.map(
           (item, index) =>
             item.icon?.srcPath &&
