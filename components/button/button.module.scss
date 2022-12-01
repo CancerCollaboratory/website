@@ -7,7 +7,7 @@
 
     .tag {
         margin-right: 12px;
-        font-size: 14px;
+        font-size: 14.5px;
     }
 
     .innerContainer {
@@ -61,7 +61,7 @@
     .container {
         .tag {
             margin-right: 11.5px;
-            font-size: 13.5px;
+            font-size: 14px;
         }
 
         .innerContainer {
@@ -75,8 +75,8 @@
         flex-direction: column;
 
         .tag {
-            margin-right: 0px;
-            font-size: 13px;
+            margin: 0px 0px 4.5px 0px;
+            font-size: 13.5px;
         }
 
         .innerContainer {
@@ -98,7 +98,7 @@
 @include respond-to("extra-small") {
     .container {
         .tag {
-            font-size: 12.5px;
+            font-size: 13px;
         }
 
         .innerContainer {
@@ -111,7 +111,7 @@
 @include respond-to("extra-extra-small") {
     .container {
         .tag {
-            font-size: 12px;
+            font-size: 12.5px;
         }
 
         .innerContainer {
