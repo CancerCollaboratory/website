@@ -13,7 +13,7 @@ const CustomLink = ({ label, link, isLinkExternal, styleLabel, styleWrap, childr
         {content}
       </a>
     ) : (
-      <Link href={link}>
+      <Link href={link} legacyBehavior>
         <a className={styleLabel}>{content}</a>
       </Link>
     );
