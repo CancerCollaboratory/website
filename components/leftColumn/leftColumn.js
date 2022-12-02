@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import styles from "./leftColumn.module.scss";
 
 const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {

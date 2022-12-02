@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import Image from "next/future/image";
+import Image from "next/image";
 import Button from "../button/button";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";

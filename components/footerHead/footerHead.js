@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/future/image";
+import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import { getCurrentYear } from "../../lib/functions/timeValue";
 import styles from "../footer/footer.module.scss";

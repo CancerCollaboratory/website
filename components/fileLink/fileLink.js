@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import Image from "next/future/image";
+import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./fileLink.module.scss";

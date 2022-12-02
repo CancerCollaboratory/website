@@ -1,5 +1,5 @@
 import CustomLink from "../customLink/customLink";
-import Image from "next/future/image";
+import Image from "next/image";
 import styles from "./logoBlock.module.scss";
 
 const LogoBlock = ({ block }) => {
