@@ -10,25 +10,27 @@ const FileLink = ({ links }) => {
   } else {
     return (
       <ul className={clsx(styles.container, utilStyles.outerContainer)}>
-        {links.map(
-          (item, index) =>
-            item.icon?.srcPath &&
-            item.icon?.alt &&
-            item.label &&
-            item.link && (
+        {links.map((item, index) => {
+          if (!item.icon?.srcPath || !item.icon?.alt || !item.label || !item.link) {
+            return null;
+          } else {
+            return (
               <li key={index}>
-                <Image
-                  src={item.icon.srcPath}
-                  alt={item.icon.alt}
-                  className={styles.icon}
-                  quality={100}
-                  width={16}
-                  height={16}
-                />
-                <CustomLink label={item.label} link={item.link} isLinkExternal={true} />
+                <div className={styles.content}>
+                  <Image
+                    src={item.icon.srcPath}
+                    alt={item.icon.alt}
+                    className={styles.icon}
+                    quality={100}
+                    width={18}
+                    height={18}
+                  />
+                  <CustomLink label={item.label} link={item.link} isLinkExternal={true} />
+                </div>
               </li>
-            )
-        )}
+            );
+          }
+        })}
       </ul>
     );
   }
