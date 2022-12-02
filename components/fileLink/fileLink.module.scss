@@ -77,9 +77,16 @@
 
 @include respond-to("small") {
     .container {
-        .content {
-            a {
-                font-size: 14px;
+        li {
+            .content {
+                .icon {
+                    width: auto;
+                    height: 17px;
+                }
+
+                a {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -117,6 +124,7 @@
             .content {
                 .icon {
                     margin-right: 14px;
+                    height: 16px;
                 }
 
                 a {
