@@ -1,3 +1,4 @@
+@import "../../styles/colors";
 @import "../../styles/mixins";
 
 .container {
@@ -11,6 +12,10 @@
         margin: 8px 0px 8px 24px;
         padding-left: 5px;
         line-height: 160%;
+
+        &::marker {
+            color: $color-dark-x4-gray;
+        }
 
         .content {
             display: flex;
