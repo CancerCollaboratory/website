@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import EscapeOutside from "react-escape-outside";
-import Image from "next/future/image";
+import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import NavbarItem from "../navbarItem/navbarItem";
 import SearchBar from "../searchBar/searchBar";

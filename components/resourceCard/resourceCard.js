@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import Image from "next/future/image";
+import Image from "next/image";
 import IconArrow from "../../public/assets/resourceCard/icon-arrow-gray.svg";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";

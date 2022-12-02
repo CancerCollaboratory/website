@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import IconArrow from "../../public/assets/navLine/icon-arrow-red.svg";
 import styles from "./navLine.module.scss";
