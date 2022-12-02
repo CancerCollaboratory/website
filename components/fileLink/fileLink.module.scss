@@ -7,20 +7,26 @@
     margin: 16px 0px;
 
     li {
-        margin: 8px 0px 8px 24px;
-        padding-left: 4px;
         list-style-type: disc;
+        margin: 8px 0px 8px 24px;
+        padding-left: 5px;
+        line-height: 160%;
 
-        .icon {
-            margin-right: 8px;
-        }
+        .content {
+            display: flex;
+            align-items: center;
 
-        a {
-            text-decoration: underline;
-            font-size: 15px;
+            .icon {
+                margin-right: 16px;
+            }
 
-            &:hover {
-                text-decoration: none;
+            a {
+                text-decoration: underline;
+                font-size: 15px;
+
+                &:hover {
+                    text-decoration: none;
+                }
             }
         }
     }
