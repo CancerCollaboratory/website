@@ -32,17 +32,92 @@
     }
 }
 
-// large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .container {
+        margin: 15px 0px;
 
-// medium: 991px
-@include respond-to("medium") {}
+        li {
+            margin: 7.5px 0px 7.5px 22.5px;
+            padding-left: 4.5px;
 
-// small: 767px
-@include respond-to("small") {}
+            .content {
+                .icon {
+                    margin-right: 15.5px;
+                }
+            }
+        }
+    }
+}
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+@include respond-to("medium") {
+    .container {
+        margin: 14px 0px;
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+        li {
+            margin: 7px 0px 7px 21px;
+            padding-left: 4px;
+
+            .content {
+                .icon {
+                    margin-right: 15px;
+                }
+
+                a {
+                    font-size: 14.5px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        .content {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        margin: 13px 0px;
+
+        li {
+            margin: 6.5px 0px 6.5px 19.5px;
+            padding-left: 3.5px;
+
+            .content {
+                .icon {
+                    margin-right: 14.5px;
+                }
+
+                a {
+                    font-size: 13.5px;
+                }
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        margin: 12px 0px;
+
+        li {
+            margin: 6px 0px 6px 18px;
+            padding-left: 3px;
+
+            .content {
+                .icon {
+                    margin-right: 14px;
+                }
+
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
