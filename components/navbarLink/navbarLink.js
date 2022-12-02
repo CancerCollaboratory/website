@@ -21,7 +21,7 @@ const NavbarLink = ({ label, link, styleLink, menuItems }) => {
   return (
     label &&
     link && (
-      <Link href={link}>
+      <Link href={link} legacyBehavior>
         <a className={clsx(isItemActiveState ? styles.selectNavbarItem : undefined, styleLink)}>
           {menuItems ? label + " ▾" : label}
         </a>

@@ -1,6 +1,6 @@
 import CollabCard from "../collabCard/collabCard";
 import CustomLink from "../customLink/customLink";
-import Image from "next/future/image";
+import Image from "next/image";
 import styles from "./collabCardLayout.module.scss";
 
 const CollabCardLayout = ({ title, description, buttonItems, logoData }) => {

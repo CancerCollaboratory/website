@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import Image from "next/future/image";
+import Image from "next/image";
 import Button from "../button/button";
 import styles from "./heroCard.module.scss";
 

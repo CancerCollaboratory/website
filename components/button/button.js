@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import IconArrow from "../../public/assets/common/icon-arrow-white.svg";
 import styles from "./button.module.scss";
