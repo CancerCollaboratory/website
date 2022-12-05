@@ -5,6 +5,24 @@
             "text": "The Cancer Genome Collaboratory is an academic research cloud that contains the raw and interpreted data from the International Cancer Genome Consortium, an international project that aims to sequence the genomes of 25,000 tumours and matching normal tissues."
         }
     },
+    "lateralColumn": {
+        "title": "Benefits to Cancer Research",
+        "leftColumn": {
+            "body": [
+                {
+                    "text": "Cancer is the leading cause of morbidity and mortality, responsible for over 70,000 deaths per year in Canada and over 8 million worldwide. Cancer is a disease of the genome in which an accumulation of genomic alterations leads to unregulated cell growth. Researchers need a comprehensive catalogue of the molecular alterations that arise during the formation of malignant tumours, and models of how these alterations interact to give rise to tumour phenotype."
+                }
+            ]
+        },
+        "rightColumn": {
+            "body": [
+                {
+                    "text": "[The International Cancer Genome Consortium (ICGC)](http://icgc.org) is the largest worlwide coordinated effort to produce this catalogue. The ICGC already represents the world's largest collection of genomes and the Collaboratory currently contains a growing repository of ICGC alignment and variant data allowing researchers to test important ideas about the role of genomics in cancer.",
+                    "isLinkExternal": true
+                }
+            ]
+        }
+    },
     "pressReleaseLeft": {
         "date": "May 30, 2018",
         "shortUrl": "computerweekly.com",
