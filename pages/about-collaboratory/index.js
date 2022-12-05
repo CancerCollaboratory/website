@@ -9,18 +9,20 @@ import utilStyles from "../../styles/utils.module.scss";
 
 const AboutCollaboratory = () => {
   const jumbotron = pageData.jumbotron;
-  const lateralColumn = pageData.lateralColumn;
-  const pressReleaseLeft = pageData.pressReleaseLeft;
-  const pressReleaseRight = pageData.pressReleaseRight;
+  const lateralColumn1 = pageData.lateralColumn1;
+  const lateralColumn2 = pageData.lateralColumn2;
+  const pressReleaseLeft = lateralColumn2?.pressReleaseLeft;
+  const pressReleaseRight = lateralColumn2?.pressReleaseRight;
 
   return (
     <>
       <Jumbotron title={jumbotron.title} bodyText={jumbotron.body.text} />
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn
-          title={lateralColumn.title}
-          leftColumn={<LeftColumn body={lateralColumn.leftColumn.body} />}
-          rightColumn={<RightColumn body={lateralColumn.rightColumn.body} />}
+          title={lateralColumn1.title}
+          leftColumn={<LeftColumn body={lateralColumn1.leftColumn.body} />}
+          rightColumn={<RightColumn body={lateralColumn1.rightColumn.body} />}
+          hasBorderBottom={lateralColumn1.hasBorderBottom}
         />
         <LateralColumn
           leftColumn={
