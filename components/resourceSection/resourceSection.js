@@ -12,6 +12,7 @@ const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLink
       className={clsx(
         styles.sectionContainer,
         utilStyles.outerContainer,
+        utilStyles.containerBorderBottom,
         caption && styles.background
       )}
     >
