@@ -5,7 +5,7 @@
             "text": "The Cancer Genome Collaboratory is an academic research cloud that contains the raw and interpreted data from the International Cancer Genome Consortium, an international project that aims to sequence the genomes of 25,000 tumours and matching normal tissues."
         }
     },
-    "lateralColumn": {
+    "lateralColumn1": {
         "title": "Benefits to Cancer Research",
         "leftColumn": {
             "body": [
@@ -23,37 +23,40 @@
                     "isLastText": true
                 }
             ]
+        },
+        "hasBorderBottom": true
+    },
+    "lateralColumn2": {
+        "pressReleaseLeft": {
+            "date": "May 30, 2018",
+            "shortUrl": "computerweekly.com",
+            "articleTitle": "Ontario Institute for Cancer Research uses open source clouds to aid cancer research",
+            "description": "Canadian cancer researchers claim that by combining open source software with commodity hardware, they can give academics in the field...",
+            "buttonItems": [
+                {
+                    "label": "READ THE ARTICLE",
+                    "link": "https://www.computerweekly.com/news/252442112/Ontario-Institute-for-Cancer-Research-uses-open-source-clouds-to-aid-cancer-research",
+                    "isLinkExternal": true
+                }
+            ]
+        },
+        "pressReleaseRight": {
+            "date": "May 23, 2018",
+            "shortUrl": "oicr.on.ca",
+            "articleTitle": "OICR's Cancer Genome Collaboratory wins 2018 OpenStack Superuser award for contributions to the community",
+            "description": "Based on popular vote and review by the Superuser Editorial Advisory Board, OICR’s Cancer Genome Collaboratory team...",
+            "buttonItems": [
+                {
+                    "label": "READ THE ARTICLE",
+                    "link": "https://news.oicr.on.ca/2018/05/oicrs-cancer-genome-collaboratory-wins-2018-openstack-superuser-award-for-contributions-to-the-cancer-research-community/",
+                    "isLinkExternal": true
+                },
+                {
+                    "label": "WATCH THE VIDEO",
+                    "link": "https://www.youtube.com/watch?v=vtqm3RzGkwc",
+                    "isLinkExternal": true
+                }
+            ]
         }
-    },
-    "pressReleaseLeft": {
-        "date": "May 30, 2018",
-        "shortUrl": "computerweekly.com",
-        "articleTitle": "Ontario Institute for Cancer Research uses open source clouds to aid cancer research",
-        "description": "Canadian cancer researchers claim that by combining open source software with commodity hardware, they can give academics in the field...",
-        "buttonItems": [
-            {
-                "label": "READ THE ARTICLE",
-                "link": "https://www.computerweekly.com/news/252442112/Ontario-Institute-for-Cancer-Research-uses-open-source-clouds-to-aid-cancer-research",
-                "isLinkExternal": true
-            }
-        ]
-    },
-    "pressReleaseRight": {
-        "date": "May 23, 2018",
-        "shortUrl": "oicr.on.ca",
-        "articleTitle": "OICR's Cancer Genome Collaboratory wins 2018 OpenStack Superuser award for contributions to the community",
-        "description": "Based on popular vote and review by the Superuser Editorial Advisory Board, OICR’s Cancer Genome Collaboratory team...",
-        "buttonItems": [
-            {
-                "label": "READ THE ARTICLE",
-                "link": "https://news.oicr.on.ca/2018/05/oicrs-cancer-genome-collaboratory-wins-2018-openstack-superuser-award-for-contributions-to-the-cancer-research-community/",
-                "isLinkExternal": true
-            },
-            {
-                "label": "WATCH THE VIDEO",
-                "link": "https://www.youtube.com/watch?v=vtqm3RzGkwc",
-                "isLinkExternal": true
-            }
-        ]
     }
 }
