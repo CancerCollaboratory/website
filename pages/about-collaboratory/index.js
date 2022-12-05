@@ -3,6 +3,7 @@ import LateralColumn from "../../components/lateralColumn/lateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
 import PressRelease from "../../components/pressRelease/pressRelease";
+import { findLink } from "../../lib/functions/findLink";
 import pageData from "../../data/pages/about/about-collaboratory.json";
 import utilStyles from "../../styles/utils.module.scss";
 
@@ -27,7 +28,7 @@ const AboutCollaboratory = () => {
               <PressRelease
                 date={pressReleaseLeft.date}
                 shortUrl={pressReleaseLeft.shortUrl}
-                articleUrl={pressReleaseLeft.buttonItems.find((item) => item.link).link}
+                articleUrl={findLink(pressReleaseLeft.buttonItems)}
                 articleTitle={pressReleaseLeft.articleTitle}
                 description={pressReleaseLeft.description}
                 buttonItems={pressReleaseLeft.buttonItems}
@@ -39,7 +40,7 @@ const AboutCollaboratory = () => {
               <PressRelease
                 date={pressReleaseRight.date}
                 shortUrl={pressReleaseRight.shortUrl}
-                articleUrl={pressReleaseRight.buttonItems.find((item) => item.link).link}
+                articleUrl={findLink(pressReleaseRight.buttonItems)}
                 articleTitle={pressReleaseRight.articleTitle}
                 description={pressReleaseRight.description}
                 buttonItems={pressReleaseRight.buttonItems}
