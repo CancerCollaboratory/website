@@ -1,3 +1,5 @@
+import { renderData } from "../../lib/functions/renderData";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import Image from "next/image";
 import styles from "./leftColumn.module.scss";
 
@@ -22,9 +24,9 @@ const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
       {body?.map(
         (item, index) =>
           item.text && (
-            <p className={styles.bodyText} key={index}>
-              {item.text}
-            </p>
+            <div className={styles.bodyText} key={index}>
+              {renderData(item.text, item.isLinkExternal ? insertLinkExternal : insertLinkInternal)}
+            </div>
           )
       )}
       {children}
