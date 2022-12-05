@@ -16,7 +16,10 @@
 
     .bodyText {
         margin-top: 10px;
-        line-height: 170%;
+
+        p {
+            line-height: 170%;
+        }
     }
 }
 
@@ -54,7 +57,10 @@
 
         .bodyText {
             margin-top: 8px;
-            line-height: 168%;
+
+            p {
+                line-height: 168%;
+            }
         }
     }
 }
