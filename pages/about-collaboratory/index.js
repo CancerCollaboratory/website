@@ -16,36 +16,36 @@ const AboutCollaboratory = () => {
 
   return (
     <>
-      <Jumbotron title={jumbotron.title} bodyText={jumbotron.body.text} />
+      <Jumbotron title={jumbotron?.title} bodyText={jumbotron?.body?.text} />
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn
-          title={lateralColumn1.title}
-          leftColumn={<LeftColumn body={lateralColumn1.leftColumn.body} />}
-          rightColumn={<RightColumn body={lateralColumn1.rightColumn.body} />}
-          hasBorderBottom={lateralColumn1.hasBorderBottom}
+          title={lateralColumn1?.title}
+          leftColumn={<LeftColumn body={lateralColumn1?.leftColumn.body} />}
+          rightColumn={<RightColumn body={lateralColumn1?.rightColumn.body} />}
+          hasBorderBottom={lateralColumn1?.hasBorderBottom}
         />
         <LateralColumn
           leftColumn={
             <LeftColumn>
               <PressRelease
-                date={pressReleaseLeft.date}
-                shortUrl={pressReleaseLeft.shortUrl}
-                articleUrl={findLink(pressReleaseLeft.buttonItems)}
-                articleTitle={pressReleaseLeft.articleTitle}
-                description={pressReleaseLeft.description}
-                buttonItems={pressReleaseLeft.buttonItems}
+                date={pressReleaseLeft?.date}
+                shortUrl={pressReleaseLeft?.shortUrl}
+                articleUrl={findLink(pressReleaseLeft?.buttonItems)}
+                articleTitle={pressReleaseLeft?.articleTitle}
+                description={pressReleaseLeft?.description}
+                buttonItems={pressReleaseLeft?.buttonItems}
               />
             </LeftColumn>
           }
           rightColumn={
             <RightColumn>
               <PressRelease
-                date={pressReleaseRight.date}
-                shortUrl={pressReleaseRight.shortUrl}
-                articleUrl={findLink(pressReleaseRight.buttonItems)}
-                articleTitle={pressReleaseRight.articleTitle}
-                description={pressReleaseRight.description}
-                buttonItems={pressReleaseRight.buttonItems}
+                date={pressReleaseRight?.date}
+                shortUrl={pressReleaseRight?.shortUrl}
+                articleUrl={findLink(pressReleaseRight?.buttonItems)}
+                articleTitle={pressReleaseRight?.articleTitle}
+                description={pressReleaseRight?.description}
+                buttonItems={pressReleaseRight?.buttonItems}
               />
             </RightColumn>
           }
