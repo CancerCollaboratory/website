@@ -1,3 +1,5 @@
+import { renderData } from "../../lib/functions/renderData";
+import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import styles from "./rightColumn.module.scss";
 
 const RightColumn = ({ title, subTitle, body, children }) => {
@@ -8,9 +10,9 @@ const RightColumn = ({ title, subTitle, body, children }) => {
       {body?.map(
         (item, index) =>
           item.text && (
-            <p className={styles.bodyText} key={index}>
-              {item.text}
-            </p>
+            <div className={styles.bodyText} key={index}>
+              {renderData(item.text, item.isLinkExternal ? insertLinkExternal : insertLinkInternal)}
+            </div>
           )
       )}
       {children}
