@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import Image from "next/image";
@@ -24,7 +25,10 @@ const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
       {body?.map(
         (item, index) =>
           item.text && (
-            <div className={styles.bodyText} key={index}>
+            <div
+              className={clsx(!item.isLastText ? styles.bodyText : styles.lastBodyText)}
+              key={index}
+            >
               {renderData(item.text, item.isLinkExternal ? insertLinkExternal : insertLinkInternal)}
             </div>
           )
