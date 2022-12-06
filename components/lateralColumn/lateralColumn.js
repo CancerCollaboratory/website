@@ -26,12 +26,14 @@ const LateralColumn = ({
         {title && <h2 className={styles.title}>{title}</h2>}
         <div className={styles.innerContainer}>
           {leftColumn && (
-            <Column styleColumn={(styleColumn, !rightColumn ? styles.resetLeftColumn : undefined)}>
+            <Column
+              styleColumn={clsx(styleColumn, !rightColumn ? styles.resetLeftColumn : undefined)}
+            >
               {leftColumn}
             </Column>
           )}
           {rightColumn && (
-            <Column styleColumn={clsx(!leftColumn ? styles.resetRightColumn : undefined)}>
+            <Column styleColumn={!leftColumn ? styles.resetRightColumn : undefined}>
               {rightColumn}
             </Column>
           )}
