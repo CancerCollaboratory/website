@@ -2,7 +2,7 @@
     "jumbotron": {
         "title": "About the Collaboratory",
         "body": {
-            "text": "The Cancer Genome Collaboratory is an academic research cloud. It is open to all researchers in need of cloud compute resources for their big data analyses."
+            "text": "The Cancer Genome Collaboratory is an academic research cloud built by the [Ontario Institute for Cancer Research (OICR)](https://oicr.on.ca). It is open to all researchers in need of cloud compute resources for their big data analyses."
         }
     },
     "lateralColumn1": {
@@ -10,7 +10,7 @@
             "title": "Available Data Sets",
             "body": [
                 {
-                    "text": "The Cancer Genome Collaboratory hosts the raw and interpreted data from the [International Cancer Genome Consortium (ICGC)](http://icgc.org), an international project which has sequenced the genomes of 25,000 tumours and matching normal tissues from 50 major cancer types.",
+                    "text": "The Cancer Genome Collaboratory (or simply the Collaboratory) hosts the raw and interpreted data from the [International Cancer Genome Consortium (ICGC)](http://icgc.org), an international project which has sequenced the genomes of 25,000 tumours and matching normal tissues from 50 major cancer types.",
                     "isLinkExternal": true,
                     "isLastText": true
                 }
@@ -19,10 +19,6 @@
         "rightColumn": {
             "title": "Research Benefits",
             "body": [
-                {
-                    "text": "The Cancer Genome Collaboratory (or simply the Collaboratory) is an academic research cloud built by the [Ontario Institute for Cancer Research (OICR)](https://oicr.on.ca).",
-                    "isLinkExternal": true
-                },
                 {
                     "text": "Using the Collaboratory’s resources, researchers can run complex data mining and analysis operations across either their own imported datasets or across the available ICGC dataset. Users of the Collaboratory have fast and easy access to this unique data set using their ICGC access credentials.",
                     "isLastText": true
