@@ -27,25 +27,16 @@ const LateralColumn = ({
         <div className={styles.innerContainer}>
           {leftColumn && (
             <Column
-              stylePadding={clsx(
+              styleColumn={clsx(
+                styleColumnBorder,
                 !rightColumn ? styles.resetLeftColumn : undefined,
                 styles.leftColumn
               )}
-              styleBorder={styleColumnBorder}
             >
               {leftColumn}
             </Column>
           )}
-          {rightColumn && (
-            <Column
-              stylePadding={clsx(
-                !leftColumn ? styles.resetRightColumn : undefined,
-                styles.rightColumn
-              )}
-            >
-              {rightColumn}
-            </Column>
-          )}
+          {rightColumn && <Column styleColumn={styles.rightColumn}>{rightColumn}</Column>}
         </div>
       </div>
     );
