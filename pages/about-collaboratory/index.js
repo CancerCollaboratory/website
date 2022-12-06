@@ -11,18 +11,28 @@ const AboutCollaboratory = () => {
   const jumbotron = pageData.jumbotron;
   const lateralColumn1 = pageData.lateralColumn1;
   const lateralColumn2 = pageData.lateralColumn2;
-  const pressReleaseLeft = lateralColumn2?.pressReleaseLeft;
-  const pressReleaseRight = lateralColumn2?.pressReleaseRight;
+  const lateralColumn3 = pageData.lateralColumn3;
+  const pressReleaseLeft = lateralColumn3?.pressReleaseLeft;
+  const pressReleaseRight = lateralColumn3?.pressReleaseRight;
 
   return (
     <>
       <Jumbotron title={jumbotron?.title} bodyText={jumbotron?.body?.text} />
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn
-          title={lateralColumn1?.title}
-          leftColumn={<LeftColumn body={lateralColumn1?.leftColumn.body} />}
-          rightColumn={<RightColumn body={lateralColumn1?.rightColumn.body} />}
+          leftColumn={
+            <LeftColumn
+              title={lateralColumn1?.leftColumn?.title}
+              body={lateralColumn1?.leftColumn?.body}
+            />
+          }
           hasBorderBottom={lateralColumn1?.hasBorderBottom}
+        />
+        <LateralColumn
+          title={lateralColumn2?.title}
+          leftColumn={<LeftColumn body={lateralColumn2?.leftColumn?.body} />}
+          rightColumn={<RightColumn body={lateralColumn2?.rightColumn?.body} />}
+          hasBorderBottom={lateralColumn2?.hasBorderBottom}
         />
         <LateralColumn
           leftColumn={
@@ -49,7 +59,7 @@ const AboutCollaboratory = () => {
               />
             </RightColumn>
           }
-          styleColumnBorder={utilStyles.columnBorder}
+          styleColumn={utilStyles.columnBorder}
         />
       </div>
     </>
