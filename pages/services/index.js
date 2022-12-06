@@ -40,6 +40,7 @@ const Services = () => {
               subTitle={lateralColumn1?.rightColumn?.subTitle}
             />
           }
+          styleColumnAlignment={utilStyles.verticallyCenterItem}
         />
         <LateralColumn
           leftColumn={
@@ -57,6 +58,7 @@ const Services = () => {
             />
           }
           styleBackground={utilStyles.gradientBackgroundGray}
+          styleColumnAlignment={utilStyles.verticallyCenterItem}
         />
         <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards} />
         <CallToAction
