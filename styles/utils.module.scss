@@ -31,14 +31,6 @@
     border-bottom: 1px dotted $color-light-x5-gray;
 }
 
-.resetLeftColumn {
-    padding: 0px 4px 0px 20px;
-}
-
-.resetRightColumn {
-    padding: 0px 20px 0px 4px;
-}
-
 @include respond-to("large") {
     .outerContainer {
         width: 898px;
