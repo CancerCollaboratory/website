@@ -14,22 +14,6 @@
     .innerContainer {
         display: flex;
         align-items: center;
-        justify-content: center;
-
-        .resetLeftColumn {
-            padding: 0px 4px 0px 20px;
-            width: 84%;
-        }
-    }
-}
-
-@include respond-to("large") {
-    .container {
-        .innerContainer {
-            .resetLeftColumn {
-                width: 88%;
-            }
-        }
     }
 }
 
@@ -43,16 +27,6 @@
 
         .innerContainer {
             flex-direction: column;
-
-            .resetLeftColumn {
-                width: 100%;
-            }
-
-            .leftColumn,
-            .rightColumn {
-                padding: 12.5px 4px;
-                width: 100%;
-            }
         }
     }
 }
@@ -67,11 +41,6 @@
 
         .innerContainer {
             width: 100%;
-
-            .leftColumn,
-            .rightColumn {
-                padding: 11.5px 4px;
-            }
         }
     }
 }
@@ -83,14 +52,6 @@
         .title {
             padding: 11px 0px;
         }
-
-        .innerContainer {
-
-            .leftColumn,
-            .rightColumn {
-                padding: 11px 4px;
-            }
-        }
     }
 }
 
@@ -100,14 +61,6 @@
 
         .title {
             padding: 10px 0px;
-        }
-
-        .innerContainer {
-
-            .leftColumn,
-            .rightColumn {
-                padding: 10px 4px;
-            }
         }
     }
 }
