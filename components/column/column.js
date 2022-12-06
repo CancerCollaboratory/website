@@ -1,11 +1,11 @@
 import clsx from "clsx";
 import styles from "./column.module.scss";
 
-const Column = ({ stylePadding, styleBorder, children }) => {
+const Column = ({ styleColumn, children }) => {
   if (!children) {
     return null;
   } else {
-    return <div className={clsx(styles.container, stylePadding, styleBorder)}>{children}</div>;
+    return <div className={clsx(styles.container, styleColumn)}>{children}</div>;
   }
 };
 
