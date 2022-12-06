@@ -59,7 +59,7 @@ const AboutCollaboratory = () => {
               />
             </RightColumn>
           }
-          styleColumn={utilStyles.columnBorder}
+          styleColumnBorder={utilStyles.columnBorder}
         />
       </div>
     </>
