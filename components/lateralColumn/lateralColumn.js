@@ -9,7 +9,7 @@ const LateralColumn = ({
   rightColumn,
   styleBackground,
   hasBorderBottom,
-  styleColumn,
+  styleColumnBorder,
 }) => {
   if (!leftColumn && !rightColumn) {
     return null;
@@ -27,13 +27,22 @@ const LateralColumn = ({
         <div className={styles.innerContainer}>
           {leftColumn && (
             <Column
-              styleColumn={clsx(styleColumn, !rightColumn ? styles.resetLeftColumn : undefined)}
+              stylePadding={clsx(
+                !rightColumn ? styles.resetLeftColumn : undefined,
+                styles.leftColumn
+              )}
+              styleBorder={styleColumnBorder}
             >
               {leftColumn}
             </Column>
           )}
           {rightColumn && (
-            <Column styleColumn={!leftColumn ? styles.resetRightColumn : undefined}>
+            <Column
+              stylePadding={clsx(
+                !leftColumn ? styles.resetRightColumn : undefined,
+                styles.rightColumn
+              )}
+            >
               {rightColumn}
             </Column>
           )}
