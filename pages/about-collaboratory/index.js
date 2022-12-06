@@ -16,7 +16,11 @@ const AboutCollaboratory = () => {
 
   return (
     <>
-      <Jumbotron title={jumbotron?.title} bodyText={jumbotron?.body?.text} />
+      <Jumbotron
+        title={jumbotron?.title}
+        bodyText={jumbotron?.body?.text}
+        isBodyLinkExternal={jumbotron?.body?.isLinkExternal}
+      />
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn
           leftColumn={
