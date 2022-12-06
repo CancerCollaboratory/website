@@ -31,6 +31,10 @@
     border-bottom: 1px dotted $color-light-x5-gray;
 }
 
+.verticallyCenterItem {
+    align-items: center;
+}
+
 @include respond-to("large") {
     .outerContainer {
         width: 898px;
