@@ -20,12 +20,9 @@ const AboutCollaboratory = () => {
       <Jumbotron title={jumbotron?.title} bodyText={jumbotron?.body?.text} />
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn
-          leftColumn={
-            <LeftColumn
-              title={lateralColumn1?.leftColumn?.title}
-              body={lateralColumn1?.leftColumn?.body}
-            />
-          }
+          title={lateralColumn1?.title}
+          leftColumn={<LeftColumn body={lateralColumn1?.leftColumn?.body} />}
+          rightColumn={<RightColumn body={lateralColumn1?.rightColumn?.body} />}
           hasBorderBottom={lateralColumn1?.hasBorderBottom}
         />
         <LateralColumn
