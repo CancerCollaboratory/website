@@ -8,7 +8,7 @@ const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
   return (
     <div className={styles.container}>
       {(title || imageSrcPath) && (
-        <div className={styles.head}>
+        <div className={clsx(styles.head, !imageSrcPath ? styles.title : undefined)}>
           {imageSrcPath && (
             <Image
               src={imageSrcPath}
@@ -19,7 +19,7 @@ const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
               height={62}
             />
           )}
-          {title && <h2 className={styles.title}>{title}</h2>}
+          {title && <h2>{title}</h2>}
         </div>
       )}
       {body?.map(
