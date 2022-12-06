@@ -4,5 +4,31 @@
         "body": {
             "text": "The Collaboratory team is made up of an experienced and diverse group of leaders in cancer genomics and computational biology."
         }
+    },
+    "lateralColumn": {
+        "title": "Principal Investigator",
+        "leftColumn": {
+            "imageSrcPath": "/assets/bio/lincoln-stein.png",
+            "imageAlt": "Lincoln Stein's Bio Image",
+            "name": "Lincoln Stein",
+            "body": [
+                {
+                    "text": "Senior Principal Investigator & Head, Adaptive Oncology, OICR"
+                },
+                {
+                    "text": "Professor, Department of Molecular Genomics, University of Toronto"
+                }
+            ]
+        },
+        "rightColumn": {
+            "imageSrcPath": "/assets/bio/melanie-courtot.png",
+            "imageAlt": "Melanie Courtot's Bio Image",
+            "name": "Melanie Courtot",
+            "body": [
+                {
+                    "text": "Principal Investigator & Director, Genome Informatics, OICR"
+                }
+            ]
+        }
     }
 }
