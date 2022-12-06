@@ -18,10 +18,17 @@
 
         .resetLeftColumn {
             padding: 0px 4px 0px 20px;
+            width: 84%;
         }
+    }
+}
 
-        .resetRightColumn {
-            padding: 0px 20px 0px 4px;
+@include respond-to("large") {
+    .container {
+        .innerContainer {
+            .resetLeftColumn {
+                width: 88%;
+            }
         }
     }
 }
@@ -36,6 +43,10 @@
 
         .innerContainer {
             flex-direction: column;
+
+            .resetLeftColumn {
+                width: 100%;
+            }
 
             .leftColumn,
             .rightColumn {
