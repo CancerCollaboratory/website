@@ -1,0 +1,57 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+    border: 1px solid $color-light-x4-gray;
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+
+    .image {
+        border-radius: 10px;
+        margin-right: 20px;
+    }
+
+    .innerContainer {
+        display: flex;
+        flex-direction: column;
+
+        .name,
+        .description {
+            color: $color-dark-x2-gray;
+        }
+
+        .name {
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .description {
+            list-style-type: disc;
+            margin-left: 16px;
+            font-size: 14px;
+
+            li {
+                margin-top: 5px;
+                line-height: 160%;
+            }
+        }
+    }
+}
+
+// large: 1199px
+@include respond-to("large") {}
+
+// medium: 991px
+@include respond-to("medium") {}
+
+// small: 767px
+@include respond-to("small") {}
+
+// extra-small: 388px
+@include respond-to("extra-small") {}
+
+// extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
