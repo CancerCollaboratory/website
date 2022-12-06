@@ -9,24 +9,11 @@ const LateralColumn = ({
   rightColumn,
   styleBackground,
   hasBorderBottom,
-  styleColumnBorder,
-  children,
+  styleColumn,
 }) => {
-  if ((!leftColumn || !rightColumn) && !children) {
+  if (!leftColumn && !rightColumn) {
     return null;
   } else {
-    const lateralContent = !children && (
-      <>
-        {title && <h2 className={styles.title}>{title}</h2>}
-        <div className={styles.innerContainer}>
-          <Column styleColumn={styleColumnBorder}>{leftColumn}</Column>
-          <Column>{rightColumn}</Column>
-        </div>
-      </>
-    );
-
-    const content = children || lateralContent;
-
     return (
       <div
         className={clsx(
@@ -36,7 +23,11 @@ const LateralColumn = ({
           styleBackground
         )}
       >
-        {content}
+        {title && <h2 className={styles.title}>{title}</h2>}
+        <div className={styles.innerContainer}>
+          {leftColumn && <Column styleColumn={styleColumn}>{leftColumn}</Column>}
+          {rightColumn && <Column>{rightColumn}</Column>}
+        </div>
       </div>
     );
   }
