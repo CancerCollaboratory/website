@@ -6,16 +6,21 @@
         }
     },
     "lateralColumn1": {
+        "title": "Background",
         "leftColumn": {
-            "title": "Background",
             "body": [
                 {
                     "text": "The Cancer Genome Collaboratory (or simply the Collaboratory) is an academic research cloud being built by the [Ontario Institute for Cancer Research (OICR)](https://oicr.on.ca). This unique compute cloud-based resource enables research on the world’s largest and most comprehensive cancer genome dataset.",
                     "isLinkExternal": true
                 },
                 {
-                    "text": "Cancer is the leading cause of morbidity and mortality, responsible for over 70,000 deaths per year in Canada and over 8 million worldwide. Cancer is a disease of the genome in which an accumulation of genomic alterations leads to unregulated cell growth. Researchers need a comprehensive catalogue of the molecular alterations that arise during the formation of malignant tumours, and models of how these alterations interact to give rise to tumour phenotype."
-                },
+                    "text": "Cancer is the leading cause of morbidity and mortality, responsible for over 70,000 deaths per year in Canada and over 8 million worldwide. Cancer is a disease of the genome in which an accumulation of genomic alterations leads to unregulated cell growth. Researchers need a comprehensive catalogue of the molecular alterations that arise during the formation of malignant tumours, and models of how these alterations interact to give rise to tumour phenotype.",
+                    "isLastText": true
+                }
+            ]
+        },
+        "rightColumn": {
+            "body": [
                 {
                     "text": "The Collaboratory is home to the data holdings of the [International Cancer Genome Consortium](https://dcc.icgc.org), a global collaboration involving more than 70 projects and 40 countries/jurisdictions to sequence the genomes of 25,000 tumours and their matched normal tissues across 50 major cancer types. Users of the Collaboratory have fast and easy access to this unique data set.",
                     "isLinkExternal": true,
