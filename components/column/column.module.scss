@@ -9,25 +9,6 @@
 
 @include respond-to("medium") {
     .container {
-        padding: 12.5px 4px;
         width: 100%;
-    }
-}
-
-@include respond-to("small") {
-    .container {
-        padding: 11.5px 4px;
-    }
-}
-
-@include respond-to("extra-small") {
-    .container {
-        padding: 11px 4px;
-    }
-}
-
-@include respond-to("extra-extra-small") {
-    .container {
-        padding: 10px 4px;
     }
 }
