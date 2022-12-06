@@ -15,6 +15,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        .resetLeftColumn {
+            padding: 0px 4px 0px 20px;
+        }
+
+        .resetRightColumn {
+            padding: 0px 20px 0px 4px;
+        }
     }
 }
 
