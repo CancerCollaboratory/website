@@ -34,6 +34,7 @@ const AboutCollaboratory = () => {
           hasBorderBottom={lateralColumn1?.hasBorderBottom}
         />
         <LateralColumn
+          title={lateralColumn2?.title}
           leftColumn={
             <LeftColumn>
               <PressRelease
