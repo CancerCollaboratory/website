@@ -20,51 +20,53 @@ const Services = () => {
   return (
     <>
       <Jumbotron
-        title={jumbotron.title}
-        bodyText={jumbotron.body.text}
-        isBodyLinkExternal={jumbotron.body.isLinkExternal}
+        title={jumbotron?.title}
+        bodyText={jumbotron?.body?.text}
+        isBodyLinkExternal={jumbotron?.body?.isLinkExternal}
       />
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn
           leftColumn={
             <LeftColumn
-              title={lateralColumn1.leftColumn.title}
-              imageSrcPath={lateralColumn1.leftColumn.imageSrcPath}
-              imageAlt={lateralColumn1.leftColumn.imageAlt}
-              body={lateralColumn1.leftColumn.body}
+              title={lateralColumn1?.leftColumn?.title}
+              imageSrcPath={lateralColumn1?.leftColumn?.imageSrcPath}
+              imageAlt={lateralColumn1?.leftColumn?.imageAlt}
+              body={lateralColumn1?.leftColumn?.body}
             />
           }
           rightColumn={
             <RightColumn
-              title={lateralColumn1.rightColumn.title}
-              subTitle={lateralColumn1.rightColumn.subTitle}
+              title={lateralColumn1?.rightColumn?.title}
+              subTitle={lateralColumn1?.rightColumn?.subTitle}
             />
           }
+          styleColumnAlignment={utilStyles.verticallyCenterItem}
         />
         <LateralColumn
           leftColumn={
             <LeftColumn
-              title={lateralColumn2.leftColumn.title}
-              imageSrcPath={lateralColumn2.leftColumn.imageSrcPath}
-              imageAlt={lateralColumn2.leftColumn.imageAlt}
-              body={lateralColumn2.leftColumn.body}
+              title={lateralColumn2?.leftColumn?.title}
+              imageSrcPath={lateralColumn2?.leftColumn?.imageSrcPath}
+              imageAlt={lateralColumn2?.leftColumn?.imageAlt}
+              body={lateralColumn2?.leftColumn?.body}
             />
           }
           rightColumn={
             <StatGrid
-              title={`${statGrid.title} ${getCurrentMonth()} ${getCurrentYear()}`}
-              body={statGrid.body}
+              title={`${statGrid?.title} ${getCurrentMonth()} ${getCurrentYear()}`}
+              body={statGrid?.body}
             />
           }
           styleBackground={utilStyles.gradientBackgroundGray}
+          styleColumnAlignment={utilStyles.verticallyCenterItem}
         />
-        <ResourceSection title={resourceSection.title} cards={resourceSection.cards} />
+        <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards} />
         <CallToAction
-          title={callToAction.title}
-          imageSrcPath={callToAction.imageSrcPath}
-          imageAlt={callToAction.imageAlt}
-          description={callToAction.description}
-          buttonData={callToAction.buttonData}
+          title={callToAction?.title}
+          imageSrcPath={callToAction?.imageSrcPath}
+          imageAlt={callToAction?.imageAlt}
+          description={callToAction?.description}
+          buttonData={callToAction?.buttonData}
           styleBackground={utilStyles.gradientBackgroundGray}
         />
       </div>

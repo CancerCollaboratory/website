@@ -1,15 +1,13 @@
 import CollabCard from "../collabCard/collabCard";
 import CustomLink from "../customLink/customLink";
 import Image from "next/image";
+import { findLink } from "../../lib/functions/findLink";
 import styles from "./collabCardLayout.module.scss";
 
 const CollabCardLayout = ({ title, description, buttonItems, logoData }) => {
   return (
     <CollabCard title={title} description={description} buttonItems={buttonItems}>
-      <CustomLink
-        link={buttonItems.find((item) => item.link).link}
-        isLinkExternal={logoData.isLinkExternal}
-      >
+      <CustomLink link={findLink(buttonItems)} isLinkExternal={logoData.isLinkExternal}>
         <Image
           src={logoData.srcPath}
           alt={logoData.alt}

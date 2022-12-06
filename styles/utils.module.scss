@@ -8,7 +8,6 @@
 }
 
 .outerContainer {
-    border-bottom: 1px dotted $color-light-x5-gray;
     width: 1098px;
 }
 
@@ -26,6 +25,14 @@
 
 .gradientBackgroundGray {
     background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 50%, white 100%);
+}
+
+.containerBorderBottom {
+    border-bottom: 1px dotted $color-light-x5-gray;
+}
+
+.verticallyCenterItem {
+    align-items: center;
 }
 
 @include respond-to("large") {
