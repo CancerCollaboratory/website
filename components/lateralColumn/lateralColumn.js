@@ -25,7 +25,7 @@ const LateralColumn = ({
       >
         {title && <h2 className={styles.title}>{title}</h2>}
         <div className={styles.innerContainer}>
-          <Column styleColumn={styleColumnBorder}>{leftColumn}</Column>
+          <Column styleBorder={styleColumnBorder}>{leftColumn}</Column>
           <Column>{rightColumn}</Column>
         </div>
       </div>
