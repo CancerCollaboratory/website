@@ -6,11 +6,11 @@
         }
     },
     "lateralColumn1": {
-        "column": {
+        "leftColumn": {
             "title": "Background",
             "body": [
                 {
-                    "text": "The Cancer Genome Collaboratory (or simply the Collaboratory) is an academic research cloud being built by the [Ontario Institute for Cancer Research (OICR)] (https://oicr.on.ca). This unique compute cloud-based resource enables research on the world’s largest and most comprehensive cancer genome dataset.",
+                    "text": "The Cancer Genome Collaboratory (or simply the Collaboratory) is an academic research cloud being built by the [Ontario Institute for Cancer Research (OICR)](https://oicr.on.ca). This unique compute cloud-based resource enables research on the world’s largest and most comprehensive cancer genome dataset.",
                     "isLinkExternal": true
                 },
                 {
