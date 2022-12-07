@@ -104,7 +104,8 @@
                 "title": "### [Getting Started Documentation](/support/getting-started)",
                 "bodyText": "How to get started with running your analysis on the ICGC data.",
                 "imageSrcPath": "/assets/resourceCard/icon-circle-documentation.svg",
-                "imageAlt": "Documentation"
+                "imageAlt": "Documentation",
+                "isLastCard": true
             }
         ]
     },
