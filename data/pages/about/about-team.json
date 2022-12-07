@@ -5,7 +5,7 @@
             "text": "The Collaboratory team is made up of an experienced and diverse group of leaders in cancer genomics and computational biology."
         }
     },
-    "lateralColumn": {
+    "lateralColumn1": {
         "title": "Principal Investigator",
         "leftColumn": {
             "imageSrcPath": "/assets/bio/lincoln-stein.png",
@@ -27,6 +27,92 @@
             "body": [
                 {
                     "text": "Principal Investigator & Director, Genome Informatics, OICR"
+                }
+            ]
+        }
+    },
+    "lateralColumn2": {
+        "title": "Hardware & Software Infrastructure",
+        "leftColumn": {
+            "list": [
+                {
+                    "value": "**Melanie Courtot**, Director & Principal Investigator"
+                },
+                {
+                    "value": "**Brandon Chan**, Senior Technical Business Analyst"
+                },
+                {
+                    "value": "**Sifa Vahora**, Senior Technical Business Analyst"
+                },
+                {
+                    "value": "**Patrick Dos Santos**, Senior UI/UX Designer"
+                },
+                {
+                    "value": "**Mitchell Shiell**, Outreach Lead"
+                },
+                {
+                    "value": "**Jon Eubank**, Software Architect"
+                },
+                {
+                    "value": "**Justin Richardsson**, Software Architect"
+                },
+                {
+                    "value": "**Henrich Feher**, Cloud Systems Architect"
+                },
+                {
+                    "value": "**Jared Baker**, Cloud Architect"
+                },
+                {
+                    "value": "**Yelizar Alturmessov**, Devops"
+                },
+                {
+                    "value": "**Ann Catton**, Software Developer"
+                },
+                {
+                    "value": "**Leonardo Rivera**, Software Developer"
+                },
+                {
+                    "value": "**Ummulkiram Rangwala**, Software Developer"
+                }
+            ]
+        },
+        "rightColumn": {
+            "list": [
+                {
+                    "value": "**Robin Haw**, Program Manager"
+                },
+                {
+                    "value": "**Puneet Bajwa**, Senior Technical Project Manager"
+                },
+                {
+                    "value": "**Hardeep Nahal-Bose**, Senior Bioinformatics Data Manager"
+                },
+                {
+                    "value": "**Edmund Su**, Bioinformatician"
+                },
+                {
+                    "value": "**Linda Xiang**, Data Scientist"
+                },
+                {
+                    "value": "**Alexis Li**, Software Developer"
+                },
+                {
+                    "value": "**Ciaran Schutte**, Software Developer"
+                },
+                {
+                    "value": "**Daniel DeMaria**, Software Developer"
+                },
+                {
+                    "value": "**Samantha Rich**, Software Developer"
+                },
+                {
+                    "value": "**Rakesh Mistry**, Software Developer"
+                },
+                {
+                    "value": "**Daniel Lu**, Software Developer"
+                },
+                {
+                    "value": "**Dhyey Patel**, Co-op Student"
                 }
             ]
         }
