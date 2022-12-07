@@ -6,7 +6,6 @@
     align-items: center;
     border: 1px solid $color-light-x4-gray;
     border-radius: 10px;
-    margin: 13px;
     height: 120px;
 
     .mainImage {
@@ -33,6 +32,8 @@
 
             .titleIcon {
                 margin-left: 9px;
+                width: 13px;
+                height: 13px;
             }
         }
 
@@ -43,10 +44,13 @@
     }
 }
 
+.cardMargin {
+    margin-right: 25px;
+}
+
 @include respond-to("large") {
     .cardContainer {
         border-radius: 14px;
-        margin: 11px;
         height: 100px;
 
         .mainImage {
@@ -79,7 +83,6 @@
 @include respond-to("medium") {
     .cardContainer {
         border-radius: 15px;
-        margin: 9px;
         width: 436px;
         height: 83px;
 
@@ -109,6 +112,10 @@
             }
         }
     }
+
+    .cardMargin {
+        margin: 0px 0px 25px 0px;
+    }
 }
 
 @include respond-to("small") {
@@ -116,7 +123,6 @@
         flex-direction: column;
         justify-content: center;
         border-radius: 20px;
-        margin: 11px 0px;
         width: 64%;
         height: 155px;
 
@@ -151,12 +157,15 @@
             }
         }
     }
+
+    .cardMargin {
+        margin: 0px 0px 23px 0px;
+    }
 }
 
 @include respond-to("extra-small") {
     .cardContainer {
         border-radius: 22px;
-        margin: 10.5px 0px;
         padding: 5% 0%;
         width: 76%;
         height: 100%;
@@ -184,6 +193,10 @@
                 font-size: 11.5px;
             }
         }
+    }
+
+    .cardMargin {
+        margin-bottom: 22px;
     }
 }
 
@@ -213,5 +226,9 @@
                 font-size: 10.5px;
             }
         }
+    }
+
+    .cardMargin {
+        margin-bottom: 20px;
     }
 }
