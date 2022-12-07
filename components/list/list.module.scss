@@ -1,0 +1,45 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    color: $color-dark-x2-gray;
+    margin-left: 16px;
+    font-size: 14px;
+
+    li {
+        margin-top: 4px;
+        line-height: 160%;
+    }
+}
+
+@include respond-to("medium") {
+    .container {
+        font-size: 13.5px;
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        align-items: center;
+        list-style-position: inside;
+        margin-left: 0px;
+        text-align: center;
+        font-size: 13px;
+        width: 100%;
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        font-size: 12.5px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        font-size: 12px;
+    }
+}
