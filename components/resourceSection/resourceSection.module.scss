@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px 0px;
+    padding: 25px 4px;
 
     .caption {
         color: $color-dark-x2-gray;
@@ -57,7 +57,7 @@
 
 @include respond-to ("small") {
     .sectionContainer {
-        padding: 23px 0px;
+        padding: 23px 4px;
 
         .caption {
             line-height: 168%;
@@ -69,7 +69,7 @@
 
 @include respond-to ("extra-small") {
     .sectionContainer {
-        padding: 22px 0px;
+        padding: 22px 4px;
 
         .caption {
             width: 80%;
@@ -79,7 +79,7 @@
 
 @include respond-to ("extra-extra-small") {
     .sectionContainer {
-        padding: 20px 0px;
+        padding: 20px 4px;
 
         .caption {
             font-size: 11px;
