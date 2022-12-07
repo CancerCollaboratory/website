@@ -3,31 +3,29 @@
 .cardLayout {
     display: flex;
     align-items: center;
-    padding: 13px 25px;
-}
-
-@include respond-to("large") {
-    .cardLayout {
-        padding: 11px 28px;
-    }
+    padding-top: 25px;
 }
 
 @include respond-to("medium") {
     .cardLayout {
         flex-direction: column;
-        padding: 9px 0px;
     }
 }
 
 @include respond-to("small") {
     .cardLayout {
-        padding: 11px 0px;
-        width: 119%;
+        padding-top: 23px;
     }
 }
 
 @include respond-to("extra-small") {
     .cardLayout {
-        padding: 10.5px 0px;
+        padding-top: 22px;
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .cardLayout {
+        padding-top: 20px;
     }
 }
