@@ -9,7 +9,6 @@
 
     .title {
         margin-top: 26px;
-        font-size: 21px;
     }
 
     .caption {
@@ -37,7 +36,6 @@
     .sectionContainer {
         .title {
             margin-top: 22px;
-            font-size: 18px;
         }
 
         .caption {
@@ -56,7 +54,6 @@
     .sectionContainer {
         .title {
             margin-top: 18px;
-            font-size: 18.5px;
         }
 
         .caption {
@@ -76,7 +73,6 @@
     .sectionContainer {
         .title {
             margin-top: 22px;
-            font-size: 16px;
         }
 
         .caption {
@@ -92,7 +88,6 @@
     .sectionContainer {
         .title {
             margin-top: 21px;
-            font-size: 15px;
         }
 
         .caption {
@@ -104,10 +99,6 @@
 
 @include respond-to ("extra-extra-small") {
     .sectionContainer {
-        .title {
-            font-size: 13px;
-        }
-
         .caption {
             font-size: 11px;
             width: 81%;
