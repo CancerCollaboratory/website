@@ -13,7 +13,7 @@ const Services = () => {
   const jumbotron = pageData.jumbotron;
   const lateralColumn1 = pageData.lateralColumn1;
   const lateralColumn2 = pageData.lateralColumn2;
-  const statGrid = pageData.statGrid;
+  const statGrid = lateralColumn2?.rightColumn?.statGrid;
   const resourceSection = pageData.resourceSection;
   const callToAction = pageData.callToAction;
 
@@ -26,21 +26,12 @@ const Services = () => {
       />
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn
-          leftColumn={
-            <LeftColumn
-              title={lateralColumn1?.leftColumn?.title}
-              imageSrcPath={lateralColumn1?.leftColumn?.imageSrcPath}
-              imageAlt={lateralColumn1?.leftColumn?.imageAlt}
-              body={lateralColumn1?.leftColumn?.body}
-            />
-          }
-          rightColumn={
-            <RightColumn
-              title={lateralColumn1?.rightColumn?.title}
-              subTitle={lateralColumn1?.rightColumn?.subTitle}
-            />
-          }
-          styleColumnAlignment={utilStyles.verticallyCenterItem}
+          title={lateralColumn1?.title}
+          imageSrcPath={lateralColumn1?.imageSrcPath}
+          imageAlt={lateralColumn1?.imageAlt}
+          leftColumn={<LeftColumn body={lateralColumn1?.leftColumn?.body} />}
+          rightColumn={<RightColumn body={lateralColumn1?.rightColumn?.body} />}
+          hasBorderBottom={lateralColumn1?.hasBorderBottom}
         />
         <LateralColumn
           leftColumn={
@@ -58,6 +49,7 @@ const Services = () => {
             />
           }
           styleBackground={utilStyles.gradientBackgroundGray}
+          hasBorderBottom={lateralColumn2?.hasBorderBottom}
           styleColumnAlignment={utilStyles.verticallyCenterItem}
         />
         <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards} />
