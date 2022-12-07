@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 25px 0px;
 
     .caption {
         color: $color-dark-x2-gray;
@@ -56,6 +57,8 @@
 
 @include respond-to ("small") {
     .sectionContainer {
+        margin: 23px 0px;
+
         .caption {
             line-height: 168%;
             font-size: 12px;
@@ -66,6 +69,8 @@
 
 @include respond-to ("extra-small") {
     .sectionContainer {
+        margin: 22px 0px;
+
         .caption {
             width: 80%;
         }
@@ -74,6 +79,8 @@
 
 @include respond-to ("extra-extra-small") {
     .sectionContainer {
+        margin: 20px 0px;
+
         .caption {
             font-size: 11px;
             width: 81%;
