@@ -23,7 +23,7 @@
             margin-bottom: 7px;
 
             h3 {
-                font-size: 14.5px;
+                font-size: 14px;
 
                 a {
                     text-decoration: underline;
@@ -32,13 +32,14 @@
 
             .titleIcon {
                 margin-left: 9px;
-                width: 13px;
-                height: 13px;
+                width: 12.5px;
+                height: auto;
             }
         }
 
         .bodyText {
             color: $color-dark-x2-gray;
+            line-height: 160%;
             font-size: 13px;
         }
     }
@@ -55,7 +56,7 @@
 
         .mainImage {
             margin: 0px 14px;
-            width: 49px;
+            width: 39px;
             height: auto;
         }
 
@@ -64,12 +65,11 @@
 
             .title {
                 h3 {
-                    font-size: 12px;
+                    font-size: 12.5px;
                 }
 
                 .titleIcon {
                     width: 11px;
-                    height: auto;
                 }
             }
 
@@ -83,22 +83,22 @@
 @include respond-to("medium") {
     .cardContainer {
         border-radius: 15px;
-        width: 436px;
-        height: 83px;
+        width: 460px;
+        height: 85px;
 
         .mainImage {
-            margin: 0px 15px;
-            width: 43px;
+            margin: 0px 16px;
+            width: 42px;
         }
 
         .cardContent {
-            margin-right: 15x;
+            margin-right: 16x;
 
             .title {
                 margin-bottom: 6.5px;
 
                 h3 {
-                    font-size: 12.5px;
+                    font-size: 13px;
                 }
 
                 .titleIcon {
@@ -108,7 +108,7 @@
             }
 
             .bodyText {
-                font-size: 11.5px;
+                font-size: 12px;
             }
         }
     }
@@ -123,12 +123,12 @@
         flex-direction: column;
         justify-content: center;
         border-radius: 20px;
-        width: 64%;
+        width: 76%;
         height: 155px;
 
         .mainImage {
             margin: 0px 0px 10px 0px;
-            width: 46px;
+            width: 45px;
         }
 
         .cardContent {
@@ -137,23 +137,21 @@
 
             .title {
                 margin-bottom: 10px;
-                line-height: 150%;
 
                 h3 {
-                    font-size: 13px;
+                    font-size: 12.5px;
                 }
 
                 .titleIcon {
                     margin-left: 11px;
-                    width: 12px;
+                    width: 11px;
                 }
             }
 
             .bodyText {
                 margin: 0px 25px;
-                line-height: 150%;
                 text-align: center;
-                font-size: 12px;
+                font-size: 11.5px;
             }
         }
     }
@@ -166,8 +164,8 @@
 @include respond-to("extra-small") {
     .cardContainer {
         border-radius: 22px;
-        padding: 5% 0%;
-        width: 76%;
+        padding: 6% 0%;
+        width: 90%;
         height: 100%;
 
         .mainImage {
@@ -176,21 +174,16 @@
 
         .cardContent {
             .title {
-                margin: 0px 16px 10px 16px;
-                line-height: 160%;
+                margin: 0px 14px 10px 14px;
 
                 h3 {
-                    font-size: 11.5px;
-                }
-
-                .titleIcon {
-                    width: 11px;
+                    font-size: 12px;
                 }
             }
 
             .bodyText {
                 margin: 0px 28px;
-                font-size: 11.5px;
+                font-size: 11px;
             }
         }
     }
@@ -203,27 +196,29 @@
 @include respond-to("extra-extra-small") {
     .cardContainer {
         border-radius: 24px;
-        padding: 6% 0%;
-        width: 79%;
+        padding: 7% 0%;
+        width: 92%;
 
         .mainImage {
-            width: 43px;
+            width: 42px;
         }
 
         .cardContent {
             .title {
+                margin: 0px 0px 10px 0px;
+
                 h3 {
                     font-size: 11px;
                 }
 
                 .titleIcon {
-                    width: 10.5px;
+                    width: 10px;
                 }
             }
 
             .bodyText {
                 margin: 0px 26px;
-                font-size: 10.5px;
+                font-size: 10px;
             }
         }
     }
