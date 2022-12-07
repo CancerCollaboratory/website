@@ -36,83 +36,83 @@
         "leftColumn": {
             "list": [
                 {
-                    "value": "Yelizar Alturmessov, Devops"
+                    "value": "**Melanie Courtot**, Director & Principal Investigator"
                 },
                 {
-                    "value": "Jared Baker, Cloud Architect"
+                    "value": "**Brandon Chan**, Senior Technical Business Analyst"
                 },
                 {
-                    "value": "Puneet Bajwa, Senior Technical Project Manager"
+                    "value": "**Sifa Vahora**, Senior Technical Business Analyst"
                 },
                 {
-                    "value": "Ann Catton, Software Developer"
+                    "value": "**Patrick Dos Santos**, Senior UI/UX Designer"
                 },
                 {
-                    "value": "Brandon Chan, Senior Technical Business Analyst"
+                    "value": "**Mitchell Shiell**, Outreach Lead"
                 },
                 {
-                    "value": "Melanie Courtot, Director & Principal Investigator"
+                    "value": "**Jon Eubank**, Software Architect"
                 },
                 {
-                    "value": "Daniel DeMaria, Software Developer"
+                    "value": "**Justin Richardsson**, Software Architect"
                 },
                 {
-                    "value": "Patrick Dos Santos, Senior UI/UX Designer"
+                    "value": "**Henrich Feher**, Cloud Systems Architect"
                 },
                 {
-                    "value": "Jon Eubank, Software Architect"
+                    "value": "**Jared Baker**, Cloud Architect"
                 },
                 {
-                    "value": "Henrich Feher, Cloud Systems Architect"
+                    "value": "**Yelizar Alturmessov**, Devops"
                 },
                 {
-                    "value": "Robin Haw, Program Manager"
+                    "value": "**Ann Catton**, Software Developer"
                 },
                 {
-                    "value": "Alexis Li, Software Developer"
+                    "value": "**Leonardo Rivera**, Software Developer"
                 },
                 {
-                    "value": "Daniel Lu, Software Developer"
+                    "value": "**Ummulkiram Rangwala**, Software Developer"
                 }
             ]
         },
         "rightColumn": {
             "list": [
                 {
-                    "value": "Rakesh Mistry, Software Developer"
+                    "value": "**Robin Haw**, Program Manager"
                 },
                 {
-                    "value": "Hardeep Nahal-Bose, Senior Bioinformatics Data Manager"
+                    "value": "**Puneet Bajwa**, Senior Technical Project Manager"
                 },
                 {
-                    "value": "Dhyey Patel, Co-op Student"
+                    "value": "**Hardeep Nahal-Bose**, Senior Bioinformatics Data Manager"
                 },
                 {
-                    "value": "Ummulkiram Rangwala, Software Developer"
+                    "value": "**Edmund Su**, Bioinformatician"
                 },
                 {
-                    "value": "Samantha Rich, Software Developer"
+                    "value": "**Linda Xiang**, Data Scientist"
                 },
                 {
-                    "value": "Justin Richardsson, Software Architect"
+                    "value": "**Alexis Li**, Software Developer"
                 },
                 {
-                    "value": "Leonardo Rivera, Software Developer"
+                    "value": "**Ciaran Schutte**, Software Developer"
                 },
                 {
-                    "value": "Ciaran Schutte, Software Developer"
+                    "value": "**Daniel DeMaria**, Software Developer"
                 },
                 {
-                    "value": "Mitchell Shiell, Outreach Lead"
+                    "value": "**Samantha Rich**, Software Developer"
                 },
                 {
-                    "value": "Edmund Su, Bioinformatician"
+                    "value": "**Rakesh Mistry**, Software Developer"
                 },
                 {
-                    "value": "Sifa Vahora, Senior Technical Business Analyst"
+                    "value": "**Daniel Lu**, Software Developer"
                 },
                 {
-                    "value": "Linda Xiang, Data Scientist"
+                    "value": "**Dhyey Patel**, Co-op Student"
                 }
             ]
         }
