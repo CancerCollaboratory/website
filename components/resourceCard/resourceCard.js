@@ -21,8 +21,8 @@ const ResourceCard = ({
           alt={imageAlt}
           className={styles.mainImage}
           quality={100}
-          width={58}
-          height={58}
+          width={57}
+          height={57}
         />
       )}
       {(title || bodyText) && (
