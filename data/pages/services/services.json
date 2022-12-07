@@ -7,30 +7,32 @@
         }
     },
     "lateralColumn1": {
+        "title": "Cloud Infrastructure",
+        "imageSrcPath": "/assets/leftColumn/icon-cloud-infrastructure.svg",
+        "imageAlt": "Icon - Cloud Infrastructure",
         "leftColumn": {
-            "title": "Cloud Infrastructure",
-            "imageSrcPath": "/assets/leftColumn/icon-cloud-infrastructure.svg",
-            "imageAlt": "Cloud Infrastructure Icon",
             "body": [
                 {
-                    "text": "The Collaboratory hosts ICGC BAM, VCF and other types of protected datasets, as well as compute capabilities and Docker-based analysis tools for use by its research community. One of them main goals of the Collaboratory project is to remove many of the barriers that prevent researchers from using the ICGC's vast genomic database, because the large size of the ICGC datasets means that they can take months to download and analyzing them requires computing power that many research groups do not have."
-                },
-                {
-                    "text": "This will allow scientists to access and analyze ICGC datasets through Collaboratory’s cloud computing platform, enhancing collaboration and accelerating the development of new tools and treatments for cancer patients.",
+                    "text": "The Collaboratory hosts ICGC BAM, VCF and other types of protected datasets, as well as compute capabilities and Docker-based analysis tools for use by its research community. One of them main goals of the Collaboratory project is to remove many of the barriers that prevent researchers from using the ICGC's vast genomic database such as the large sizes of ICGC datasets.",
                     "isLastText": true
                 }
             ]
         },
         "rightColumn": {
-            "title": "Collaboratory Data Repository: Donor Distribution by Primary Site",
-            "subTitle": "39 projects and 17 primary sites"
-        }
+            "body": [
+                {
+                    "text": "Many research groups do not have the required computing power to analyze ICGC datasets that can take months to download. The Collaboratory project will allow scientists to access and analyze ICGC datasets through Collaboratory’s cloud computing platform, enhancing collaboration and accelerating the development of new tools and treatments for cancer patients.",
+                    "isLastText": true
+                }
+            ]
+        },
+        "hasBorderBottom": true
     },
     "lateralColumn2": {
         "leftColumn": {
             "title": "Cloud Resources",
             "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
-            "imageAlt": "Cloud Resources Icon",
+            "imageAlt": "Icon - Cloud Resources",
             "body": [
                 {
                     "text": "Although most of the ICGC datasets are stored both in AWS S3 and Collaboratory, some research projects only allowed their collected data to be stored in non-commercial public cloud environments, so Collaboratory was a perfect place to store them."
@@ -40,45 +42,48 @@
                     "isLastText": true
                 }
             ]
-        }
-    },
-    "statGrid": {
-        "title": "As of ",
-        "body": [
-            {
-                "title": "CPU Cores",
-                "subTitle": "3552"
-            },
-            {
-                "title": "Memory",
-                "subTitle": "22 TB",
-                "hasBackground": true
-            },
-            {
-                "title": "Local Disk",
-                "subTitle": "435 TB",
-                "subBlockA": {
-                    "hasBackground": true
-                },
-                "hasBackground": true
-            },
-            {
-                "title": "Object Storage (Raw)",
-                "subTitle": "10 PB",
-                "subBlockB": {
-                    "hasBackground": true
-                }
-            },
-            {
-                "title": "Block Storage",
-                "subTitle": "60 TB"
-            },
-            {
-                "title": "Network (Shared)",
-                "subTitle": "10 Gbps",
-                "hasBackground": true
+        },
+        "rightColumn": {
+            "statGrid": {
+                "title": "As of ",
+                "body": [
+                    {
+                        "title": "CPU Cores",
+                        "subTitle": "3552"
+                    },
+                    {
+                        "title": "Memory",
+                        "subTitle": "22 TB",
+                        "hasBackground": true
+                    },
+                    {
+                        "title": "Local Disk",
+                        "subTitle": "435 TB",
+                        "subBlockA": {
+                            "hasBackground": true
+                        },
+                        "hasBackground": true
+                    },
+                    {
+                        "title": "Object Storage (Raw)",
+                        "subTitle": "10 PB",
+                        "subBlockB": {
+                            "hasBackground": true
+                        }
+                    },
+                    {
+                        "title": "Block Storage",
+                        "subTitle": "60 TB"
+                    },
+                    {
+                        "title": "Network (Shared)",
+                        "subTitle": "10 Gbps",
+                        "hasBackground": true
+                    }
+                ]
             }
-        ]
+        },
+        "hasBorderBottom": true
     },
     "resourceSection": {
         "title": "Get Started",
