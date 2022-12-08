@@ -4,6 +4,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  i18n: {
+    locales: ["en"],
+    defaultLocale: "en",
+  },
   webpack: (config, { webpack }) => {
     config.plugins = [
       ...config.plugins,
