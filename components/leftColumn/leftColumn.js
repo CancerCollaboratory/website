@@ -9,7 +9,9 @@ const LeftColumn = ({ title, centerTitle, imageSrcPath, imageAlt, body, children
   return (
     <div className={styles.container}>
       {(title || (imageSrcPath && imageAlt)) && (
-        <div className={clsx(styles.head, centerTitle ? utilStyles.centerItem : undefined)}>
+        <div
+          className={clsx(styles.head, centerTitle ? utilStyles.horizontallyCenterItem : undefined)}
+        >
           {imageSrcPath && imageAlt && (
             <Image
               src={imageSrcPath}
