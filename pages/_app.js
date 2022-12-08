@@ -4,7 +4,7 @@ import Layout from "../components/layout/layout";
 import "../styles/reset.scss";
 import "../styles/default.scss";
 
-export default function MyApp({ Component, pageProps }) {
+const WebApp = ({ Component, pageProps }) => {
   const getLayout = Component.getLayout || ((page) => page);
 
   if (Component.getLayout) {
@@ -24,4 +24,6 @@ export default function MyApp({ Component, pageProps }) {
       </BannerLayout>
     );
   }
-}
+};
+
+export default WebApp;
