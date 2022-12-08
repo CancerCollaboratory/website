@@ -8,16 +8,17 @@
     .title,
     .subTitle {
         text-align: center;
-        margin-bottom: 9px;
     }
 
     .title {
+        margin-bottom: 12.5px;
         line-height: 170%;
         font-size: 19px;
     }
 
-    .titleMargin {
-        margin-bottom: 15px;
+    .titleMargin,
+    .subTitle {
+        margin-bottom: 25px;
     }
 
     .subTitle {
@@ -45,29 +46,7 @@
     }
 
     .bodyText {
-        margin-bottom: 10px;
-    }
-
-    .lastBodyText {
-        margin-bottom: 0px;
-    }
-}
-
-@include respond-to("large") {
-    .container {
-
-        .title,
-        .subTitle {
-            margin-bottom: 8px;
-        }
-
-        .titleMargin {
-            margin-bottom: 14px;
-        }
-
-        .bodyText {
-            margin-bottom: 9px;
-        }
+        margin-bottom: 25px;
     }
 }
 
@@ -78,18 +57,9 @@
         justify-content: center;
         padding: 0px;
 
-        .title,
-        .subTitle {
-            margin-bottom: 7px;
-        }
-
         .title {
             line-height: 168%;
             font-size: 18px;
-        }
-
-        .titleMargin {
-            margin-bottom: 13px;
         }
 
         .subTitle {
@@ -102,10 +72,6 @@
                 line-height: 168%;
             }
         }
-
-        .bodyText {
-            margin-bottom: 8px;
-        }
     }
 }
 
@@ -113,17 +79,14 @@
     .container {
         align-items: center;
 
-        .title,
-        .subTitle {
-            margin-bottom: 6px;
-        }
-
         .title {
+            margin-bottom: 11.5px;
             font-size: 15px;
         }
 
-        .titleMargin {
-            margin-bottom: 12px;
+        .titleMargin,
+        .subTitle {
+            margin-bottom: 23px;
         }
 
         .subTitle {
@@ -131,7 +94,7 @@
         }
 
         .bodyText {
-            margin-bottom: 7px;
+            margin-bottom: 23px;
         }
     }
 }
@@ -139,33 +102,43 @@
 @include respond-to("extra-small") {
     .container {
         .title {
+            margin-bottom: 11px;
             font-size: 14px;
+        }
+
+        .titleMargin,
+        .subTitle {
+            margin-bottom: 22px;
         }
 
         .subTitle {
             font-size: 13px;
+        }
+
+        .bodyText {
+            margin-bottom: 22px;
         }
     }
 }
 
 @include respond-to("extra-extra-small") {
     .container {
-
-        .title,
-        .subTitle {
-            margin-bottom: 5px;
-        }
-
         .title {
+            margin-bottom: 10px;
             font-size: 13px;
         }
 
-        .titleMargin {
-            margin-bottom: 11px;
+        .titleMargin,
+        .subTitle {
+            margin-bottom: 20px;
         }
 
         .subTitle {
             font-size: 12px;
+        }
+
+        .bodyText {
+            margin-bottom: 20px;
         }
     }
 }
