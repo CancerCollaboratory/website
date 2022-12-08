@@ -26,6 +26,7 @@ const AboutCollaboratory = () => {
           leftColumn={
             <LeftColumn
               title={lateralColumn1?.leftColumn?.title}
+              centerTitle={lateralColumn1?.leftColumn?.centerTitle}
               body={lateralColumn1?.leftColumn?.body}
             />
           }
