@@ -8,9 +8,9 @@ import styles from "./leftColumn.module.scss";
 const LeftColumn = ({ title, centerTitle, imageSrcPath, imageAlt, body, children }) => {
   return (
     <div className={styles.container}>
-      {(title || imageSrcPath) && (
+      {(title || (imageSrcPath && imageAlt)) && (
         <div className={clsx(styles.head, centerTitle ? utilStyles.centerItem : undefined)}>
-          {imageSrcPath && (
+          {imageSrcPath && imageAlt && (
             <Image
               src={imageSrcPath}
               alt={imageAlt}
