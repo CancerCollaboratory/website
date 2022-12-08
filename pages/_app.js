@@ -1,5 +1,5 @@
 import BannerLayout from "../components/bannerLayout/bannerLayout";
-import Favicon from "../components/favicon/favicon";
+import CommonHead from "../components/commonHead/commonHead";
 import Layout from "../components/layout/layout";
 import "../styles/reset.scss";
 import "../styles/default.scss";
@@ -10,14 +10,14 @@ export default function MyApp({ Component, pageProps }) {
   if (Component.getLayout) {
     return (
       <BannerLayout>
-        <Favicon />
+        <CommonHead />
         {getLayout(<Component {...pageProps} />)}
       </BannerLayout>
     );
   } else {
     return (
       <BannerLayout>
-        <Favicon />
+        <CommonHead />
         <Layout>
           <Component {...pageProps} />
         </Layout>
