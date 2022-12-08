@@ -59,8 +59,7 @@
                             "link": "http://oicr.on.ca",
                             "isLinkExternal": true,
                             "adjustStyling": true
-                        },
-                        "hasBackground": true
+                        }
                     },
                     {
                         "logo": {
@@ -68,7 +67,8 @@
                             "alt": "Logo - Government of Ontario",
                             "link": "https://www.ontario.ca/page/government-ontario",
                             "isLinkExternal": true
-                        }
+                        },
+                        "hasBackground": true
                     }
                 ]
             }
