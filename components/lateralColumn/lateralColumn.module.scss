@@ -7,9 +7,16 @@
     align-items: center;
     padding: 25px 0px;
 
-    .title {
-        text-align: center;
+    .head {
+        display: flex;
+        align-items: center;
         padding-bottom: 25px;
+        width: 100%;
+
+        .titleImage {
+            margin-right: 21px;
+            height: max-content;
+        }
     }
 
     .innerContainer {
@@ -17,12 +24,30 @@
     }
 }
 
+@include respond-to("large") {
+    .container {
+        .head {
+            .titleImage {
+                margin-right: 19px;
+                width: 58px;
+                height: auto;
+            }
+        }
+    }
+}
+
 @include respond-to("medium") {
     .container {
         padding: 12.5px 0px;
 
-        .title {
+        .head {
+            justify-content: center;
             padding: 12.5px 0px;
+
+            .titleImage {
+                margin-right: 18px;
+                width: 54px;
+            }
         }
 
         .innerContainer {
@@ -35,8 +60,13 @@
     .container {
         padding: 11.5px 0px;
 
-        .title {
+        .head {
             padding: 11.5px 0px;
+
+            .titleImage {
+                margin-right: 16px;
+                width: 48px;
+            }
         }
 
         .innerContainer {
@@ -49,8 +79,13 @@
     .container {
         padding: 11px 0px;
 
-        .title {
+        .head {
             padding: 11px 0px;
+
+            .titleImage {
+                margin-right: 13.5px;
+                width: 40px;
+            }
         }
     }
 }
@@ -59,8 +94,13 @@
     .container {
         padding: 10px 0px;
 
-        .title {
+        .head {
             padding: 10px 0px;
+
+            .titleImage {
+                margin-right: 11.5px;
+                width: 34px;
+            }
         }
     }
 }

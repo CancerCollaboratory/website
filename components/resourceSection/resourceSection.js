@@ -16,7 +16,7 @@ const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLink
         caption && styles.background
       )}
     >
-      {title && <h2 className={styles.title}>{title}</h2>}
+      {title && <h2>{title}</h2>}
       {cards && <CardLayout cards={cards} />}
       {caption && (
         <div className={styles.caption}>

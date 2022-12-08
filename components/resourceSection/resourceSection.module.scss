@@ -6,15 +6,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .title {
-        margin-top: 26px;
-        font-size: 21px;
-    }
+    padding: 25px 4px;
 
     .caption {
         color: $color-dark-x2-gray;
-        margin-bottom: 26px;
         text-align: center;
         line-height: 170%;
         font-size: 14px;
@@ -35,13 +30,7 @@
 
 @include respond-to ("large") {
     .sectionContainer {
-        .title {
-            margin-top: 22px;
-            font-size: 18px;
-        }
-
         .caption {
-            margin-bottom: 22px;
             width: 600px;
         }
     }
@@ -54,13 +43,7 @@
 
 @include respond-to ("medium") {
     .sectionContainer {
-        .title {
-            margin-top: 18px;
-            font-size: 18.5px;
-        }
-
         .caption {
-            margin-bottom: 18px;
             line-height: 168%;
             font-size: 13px;
             width: 310px;
@@ -74,13 +57,9 @@
 
 @include respond-to ("small") {
     .sectionContainer {
-        .title {
-            margin-top: 22px;
-            font-size: 16px;
-        }
+        padding: 23px 4px;
 
         .caption {
-            margin-bottom: 22px;
             line-height: 168%;
             font-size: 12px;
             width: 64.5%;
@@ -90,13 +69,9 @@
 
 @include respond-to ("extra-small") {
     .sectionContainer {
-        .title {
-            margin-top: 21px;
-            font-size: 15px;
-        }
+        padding: 22px 4px;
 
         .caption {
-            margin-bottom: 21px;
             width: 80%;
         }
     }
@@ -104,9 +79,7 @@
 
 @include respond-to ("extra-extra-small") {
     .sectionContainer {
-        .title {
-            font-size: 13px;
-        }
+        padding: 20px 4px;
 
         .caption {
             font-size: 11px;

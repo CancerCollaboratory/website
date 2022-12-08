@@ -9,7 +9,7 @@
     border: 1px solid $color-light-x4-gray;
     border-radius: 10px;
     width: 518px;
-    min-height: 290px;
+    min-height: 418px;
     padding: 16px;
 
     .cardBody {
@@ -37,7 +37,7 @@
 @include respond-to("large") {
     .container {
         width: 415px;
-        min-height: 310px;
+        min-height: 460px;
     }
 }
 
@@ -45,7 +45,7 @@
     .container {
         border-radius: 12px;
         width: 665px;
-        min-height: 250px;
+        min-height: 200px;
 
         .cardBody {
 
@@ -61,7 +61,6 @@
     .container {
         border-radius: 16px;
         width: 96%;
-        min-height: 245px;
     }
 }
 
@@ -69,7 +68,6 @@
     .container {
         border-radius: 18px;
         width: 94%;
-        min-height: 250px;
         padding: 15.5px;
 
         .cardBody {
