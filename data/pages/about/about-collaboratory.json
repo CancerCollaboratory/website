@@ -9,6 +9,7 @@
     "lateralColumn1": {
         "leftColumn": {
             "title": "Available Data Sets",
+            "centerTitle": true,
             "body": [
                 {
                     "text": "The Cancer Genome Collaboratory (or simply the Collaboratory) hosts the raw and interpreted data from the [International Cancer Genome Consortium (ICGC)](http://icgc.org), an international project which has sequenced the genomes of 25,000 tumours and matching normal tissues from 50 major cancer types.",
