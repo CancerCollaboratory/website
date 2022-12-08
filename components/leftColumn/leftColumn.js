@@ -2,13 +2,14 @@ import clsx from "clsx";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import Image from "next/image";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./leftColumn.module.scss";
 
-const LeftColumn = ({ title, imageSrcPath, imageAlt, body, children }) => {
+const LeftColumn = ({ title, centerTitle, imageSrcPath, imageAlt, body, children }) => {
   return (
     <div className={styles.container}>
       {(title || imageSrcPath) && (
-        <div className={clsx(styles.head, !imageSrcPath ? styles.title : undefined)}>
+        <div className={clsx(styles.head, centerTitle ? utilStyles.centerItem : undefined)}>
           {imageSrcPath && (
             <Image
               src={imageSrcPath}

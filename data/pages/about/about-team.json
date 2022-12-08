@@ -29,7 +29,8 @@
                     "text": "Principal Investigator & Director, Genome Informatics, OICR"
                 }
             ]
-        }
+        },
+        "hasBorderBottom": true
     },
     "lateralColumn2": {
         "title": "Hardware & Software Infrastructure",

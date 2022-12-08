@@ -2,69 +2,83 @@
     "jumbotron": {
         "title": "Funders & Collaborators",
         "body": {
-            "text": "The Collaboratory is made up of national and international leaders in genomics, computer science, bioinformatics, medical law and ethics, patient privacy protection, and cancer biology."
+            "text": "The Collaboratory is made up of national and international leaders in genomics, computer science, bioinformatics, medical law and ethics, patient privacy protection and cancer biology."
         }
     },
-    "logoBlockList": {
-        "logoBlocks": [
-            {
-                "logo": {
-                    "srcPath": "/assets/logoBlockList/logo-cihr.png",
-                    "alt": "Logo - Canadian Institutes of Health Research",
-                    "link": "http://www.cihr-irsc.gc.ca/e/193.html",
-                    "isLinkExternal": true
+    "lateralColumn1": {
+        "leftColumn": {
+            "title": "Funders",
+            "body": [
+                {
+                    "text": "The Cancer Genome Collaboratory was built with funding from the National Science and Engineering Research Council, Genome Canada, the Canada Foundation for Innovation, the Canadian Institutes of Health Research, the Ontario Institute for Cancer Research and the Ontario Research Fund.",
+                    "isLastText": true
                 }
-            },
-            {
-                "logo": {
-                    "srcPath": "/assets/logoBlockList/logo-cfi.png",
-                    "alt": "Logo - Canada Foundation For Innovation",
-                    "link": "https://www.innovation.ca",
-                    "isLinkExternal": true
-                },
-                "hasBackground": true
-            },
-            {
-                "logo": {
-                    "srcPath": "/assets/logoBlockList/logo-genome-canada.png",
-                    "alt": "Logo - Genome Canada",
-                    "link": "https://www.genomecanada.ca",
-                    "isLinkExternal": true
-                },
-                "hasBackground": true
-            },
-            {
-                "logo": {
-                    "srcPath": "/assets/logoBlockList/logo-nserc.png",
-                    "alt": "Logo - Natural Sciences and Engineering Research Council of Canada",
-                    "link": "http://www.nserc-crsng.gc.ca/index_eng.asp",
-                    "isLinkExternal": true
-                }
-            },
-            {
-                "logo": {
-                    "srcPath": "/assets/logoBlockList/logo-gov-ontario.png",
-                    "alt": "Logo - Government of Ontario",
-                    "link": "https://www.ontario.ca/page/government-ontario",
-                    "isLinkExternal": true
-                }
-            },
-            {
-                "logo": {
-                    "srcPath": "/assets/common/logo-oicr.png",
-                    "alt": "Logo - Ontario Institute for Cancer Research",
-                    "link": "http://oicr.on.ca",
-                    "isLinkExternal": true,
-                    "adjustStyling": true
-                },
-                "hasBackground": true
+            ]
+        },
+        "rightColumn": {
+            "logoBlockList": {
+                "logoBlocks": [
+                    {
+                        "logo": {
+                            "srcPath": "/assets/logoBlockList/logo-nserc.png",
+                            "alt": "Logo - Natural Sciences and Engineering Research Council of Canada",
+                            "link": "http://www.nserc-crsng.gc.ca/index_eng.asp",
+                            "isLinkExternal": true
+                        }
+                    },
+                    {
+                        "logo": {
+                            "srcPath": "/assets/logoBlockList/logo-genome-canada.png",
+                            "alt": "Logo - Genome Canada",
+                            "link": "https://www.genomecanada.ca",
+                            "isLinkExternal": true
+                        },
+                        "hasBackground": true
+                    },
+                    {
+                        "logo": {
+                            "srcPath": "/assets/logoBlockList/logo-cfi.png",
+                            "alt": "Logo - Canada Foundation For Innovation",
+                            "link": "https://www.innovation.ca",
+                            "isLinkExternal": true
+                        },
+                        "hasBackground": true
+                    },
+                    {
+                        "logo": {
+                            "srcPath": "/assets/logoBlockList/logo-cihr.png",
+                            "alt": "Logo - Canadian Institutes of Health Research",
+                            "link": "http://www.cihr-irsc.gc.ca/e/193.html",
+                            "isLinkExternal": true
+                        }
+                    },
+                    {
+                        "logo": {
+                            "srcPath": "/assets/common/logo-oicr.png",
+                            "alt": "Logo - Ontario Institute for Cancer Research",
+                            "link": "http://oicr.on.ca",
+                            "isLinkExternal": true,
+                            "adjustStyling": true
+                        }
+                    },
+                    {
+                        "logo": {
+                            "srcPath": "/assets/logoBlockList/logo-gov-ontario.png",
+                            "alt": "Logo - Government of Ontario",
+                            "link": "https://www.ontario.ca/page/government-ontario",
+                            "isLinkExternal": true
+                        },
+                        "hasBackground": true
+                    }
+                ]
             }
-        ]
+        },
+        "hasBorderBottom": true
     },
-    "collabCardSets": [
-        {
-            "title": "Collaborators",
-            "leftCard": {
+    "lateralColumn2": {
+        "title": "Collaborators",
+        "leftColumn": {
+            "collabCard": {
                 "logo": {
                     "srcPath": "/assets/collabCard/logo-ga4gh.png",
                     "alt": "Logo - Global Alliance for Genomics and Health",
@@ -79,8 +93,10 @@
                         "isLinkExternal": true
                     }
                 ]
-            },
-            "rightCard": {
+            }
+        },
+        "rightColumn": {
+            "collabCard": {
                 "logo": {
                     "srcPath": "/assets/collabCard/logo-uoft.png",
                     "alt": "Logo - University of Toronto",
@@ -95,11 +111,14 @@
                         "isLinkExternal": true
                     }
                 ]
-            },
-            "hasBackground": true
+            }
         },
-        {
-            "leftCard": {
+        "hasBackground": true,
+        "hasBorderBottom": true
+    },
+    "lateralColumn3": {
+        "leftColumn": {
+            "collabCard": {
                 "logo": {
                     "srcPath": "/assets/collabCard/logo-icgc.png",
                     "alt": "Logo - International Cancer Genome Consortium",
@@ -115,8 +134,10 @@
                         "isLinkExternal": true
                     }
                 ]
-            },
-            "rightCard": {
+            }
+        },
+        "rightColumn": {
+            "collabCard": {
                 "logo": {
                     "srcPath": "/assets/collabCard/logo-dockstore.png",
                     "alt": "Logo - Dockstore",
@@ -133,5 +154,5 @@
                 ]
             }
         }
-    ]
+    }
 }

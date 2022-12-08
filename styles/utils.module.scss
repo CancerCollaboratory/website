@@ -35,6 +35,10 @@
     align-items: center;
 }
 
+.centerItem {
+    justify-content: center;
+}
+
 @include respond-to("large") {
     .outerContainer {
         width: 898px;
