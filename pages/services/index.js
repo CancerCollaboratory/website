@@ -27,8 +27,8 @@ const Services = () => {
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn
           title={lateralColumn1?.title}
-          imageSrcPath={lateralColumn1?.imageSrcPath}
-          imageAlt={lateralColumn1?.imageAlt}
+          titleImageSrcPath={lateralColumn1?.imageSrcPath}
+          titleImageAlt={lateralColumn1?.imageAlt}
           leftColumn={<LeftColumn body={lateralColumn1?.leftColumn?.body} />}
           rightColumn={<RightColumn body={lateralColumn1?.rightColumn?.body} />}
           hasBorderBottom={lateralColumn1?.hasBorderBottom}
