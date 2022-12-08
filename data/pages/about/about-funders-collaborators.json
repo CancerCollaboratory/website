@@ -103,7 +103,7 @@
                     "isLinkExternal": true
                 },
                 "title": "University of Toronto",
-                "description": "Enter a description here.",
+                "description": "SciNet is host to the Cancer Genome Collaboratory. SciNet is the supercomputer centre at the University of Toronto, hosting Niagara, one of the fastest supercomputers in Canada, plus a range of other systems. SciNet provides Canadian researchers with computational resources and expertise necessary to perform their research on scales not previously possible in Canada. We help power work from the biomedical sciences and aerospace engineering to astrophysics and climate science. Our free education and training program for students and users helps them obtain advanced computing skills and knowledge needed in their research and in the workplace. SciNet provides resources for the Digital Research Alliance of Canada and SOSCIP.",
                 "buttonItems": [
                     {
                         "label": "utoronto.ca",
@@ -126,7 +126,7 @@
                     "isLCP": true
                 },
                 "title": "International Cancer Genome Consortium",
-                "description": "Enter a description here.",
+                "description": "The International Cancer Genome Consortium (ICGC) is a voluntary scientific organization that provides a forum for collaboration among the world's leading cancer and genomic researchers. The ICGC was launched in 2008 to coordinate large-scale cancer genome studies in tumours from 50 cancer types and/or subtypes that are of main importance across the globe. The ARGO project is a new phase of the ICGC. Launched in 2019 after 10 successful years of the ICGC mapping genomic alterations that characterise over 50 cancer types. Analysis of ICGC and ICGC-ARGO genomic data is performed using the Cancer Genome Collaboratory.",
                 "buttonItems": [
                     {
                         "label": "dcc.icgc.org",
@@ -144,7 +144,7 @@
                     "isLinkExternal": true
                 },
                 "title": "Dockstore",
-                "description": "Enter a description here.",
+                "description": "Dockstore is a free and open source platform for sharing reusable and scalable analytical tools and workflows. It is developed by the Cancer Genome Collaboratory and used by the GA4GH.",
                 "buttonItems": [
                     {
                         "label": "dockstore.org",
