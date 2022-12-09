@@ -2,66 +2,84 @@
     "jumbotron": {
         "title": "Contact Us"
     },
-    "heroCardSet": {
-        "leftCard": {
-            "title": "Our address",
-            "image": {
-                "srcPath": "/assets/heroCard/icon-contact-address.svg",
-                "alt": "Icon - Address"
-            },
-            "body": {
-                "list": {
-                    "hasBullets": false,
-                    "items": [
-                        {
-                            "value": "Ontario Institute for Cancer Research"
-                        },
-                        {
-                            "value": "MaRS Centre"
-                        },
-                        {
-                            "value": "661 University Avenue, Suite 510"
-                        },
-                        {
-                            "value": "Toronto, Ontario"
-                        },
-                        {
-                            "value": "Canada, M5G 0A3"
-                        }
-                    ]
+    "lateralColumn": {
+        "leftColumn": {
+            "heroCard": {
+                "title": "Our address",
+                "image": {
+                    "srcPath": "/assets/heroCard/icon-contact-address.svg",
+                    "alt": "Icon - Address"
+                },
+                "body": {
+                    "list": {
+                        "hasBullets": false,
+                        "items": [
+                            {
+                                "value": "Ontario Institute for Cancer Research"
+                            },
+                            {
+                                "value": "MaRS Centre"
+                            },
+                            {
+                                "value": "661 University Avenue, Suite 510"
+                            },
+                            {
+                                "value": "Toronto, Ontario"
+                            },
+                            {
+                                "value": "Canada, M5G 0A3"
+                            }
+                        ]
+                    }
                 }
             }
         },
-        "rightCard": {
-            "title": "Keep in touch",
-            "image": {
-                "srcPath": "/assets/heroCard/icon-contact-email.svg",
-                "alt": "Icon - Email"
-            },
-            "body": {
-                "list": {
-                    "hasBullets": true,
-                    "items": [
-                        {
-                            "value": "For technical assistance"
-                        },
-                        {
-                            "value": "For general questions about the Collaboratory"
-                        },
-                        {
-                            "value": "To get involved with the Collaboratory"
-                        }
-                    ]
-                }
-            },
-            "button": {
-                "tag": "Email us:",
-                "label": "help@cancercollaboratory.org",
-                "link": "mailto:help@cancercollaboratory.org",
-                "isLinkExternal": true,
+        "rightColumn": {
+            "heroCard": {
+                "title": "Keep in touch",
+                "image": {
+                    "srcPath": "/assets/heroCard/icon-contact-email.svg",
+                    "alt": "Icon - Email"
+                },
+                "body": {
+                    "list": {
+                        "hasBullets": true,
+                        "items": [
+                            {
+                                "value": "For technical assistance"
+                            },
+                            {
+                                "value": "For general questions about the Collaboratory"
+                            },
+                            {
+                                "value": "To get involved with the Collaboratory"
+                            }
+                        ]
+                    }
+                },
+                "button": {
+                    "tag": "Email us:",
+                    "label": "help@cancercollaboratory.org",
+                    "link": "mailto:help@cancercollaboratory.org",
+                    "isLinkExternal": true,
+                    "hasIcon": true
+                },
+                "hasBackground": true
+            }
+        },
+        "hasBorderBottom": true
+    },
+    "callToAction": {
+        "title": "Join the Collaboratory",
+        "imageSrcPath": "/assets/callToAction/icon-join-the-collaboratory.svg",
+        "imageAlt": "Icon - Join the Collaboratory",
+        "description": "The Collaboratory is now open to a broader community of researchers. Join the team today and start using our resources.",
+        "buttonData": [
+            {
+                "label": "REQUEST AN ACCOUNT",
+                "link": "/services-request-account",
                 "hasIcon": true
-            },
-            "hasBackground": true
-        }
+            }
+        ]
     }
 }
