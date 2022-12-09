@@ -1,4 +1,8 @@
 {
+    "barChart": {
+        "srcPath": "/assets/barChart/barChart.svg",
+        "alt": "SVG - Donor Distribution Bar Chart"
+    },
     "table": {
         "title": "The Collaboratory data consists of:",
         "body": [

@@ -1,0 +1,12 @@
+@import "../../styles/mixins";
+
+.chart {
+    max-width: 100%;
+    height: auto;
+}
+
+@include respond-to("small") {
+    .chart {
+        max-width: 101%;
+    }
+}

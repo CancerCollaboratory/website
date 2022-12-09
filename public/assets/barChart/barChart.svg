@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 547 327" preserveAspectRatio="xMidYMid"><defs><style type="text/css"><![CDATA[
+    .axis_label {
+        font-size: 0.75rem;
+        font-weight: 400;
+        color: hsl(0, 0%, 20%)
+    }
+
+    .axis {
+        shape-rendering: crispEdges;
+    }
+
+    .axis line {
+        stroke: #666;
+        stroke-width: 1px;
+    }
+
+    .axis .domain {
+        opacity: 0.5;
+    }
+
+    .axis .tick line {
+        stroke: #666;
+        stroke-width: 1px;
+    }
+
+    .axis .tick text {
+        font-size: 0.75rem;
+    }
+
+    .graph_interactive {
+        cursor: pointer;
+    }
+
+
+    .graph_title {
+        font-size: 1.25rem;
+        font-weight: 300;
+        stroke: none;
+        fill: hsl(0, 0%, 20%);
+        text-anchor: middle;
+    }
+
+    .graph_subtitle {
+        font-size: 0.8rem;
+        font-weight: 300;
+        stroke: none;
+        fill: #666666;
+    }
+
+    /* Stacked bar chart style */
+    .stacked.y.axis path,
+    .stacked.y.axis line {
+        fill: none;
+        stroke: gray;
+        sharp-rengering: crispEdges;
+    }
+
+    .stacked.y.axis.major line {
+        fill: none;
+        stroke: hotpink;
+        sharp-rengering: crispEdges;
+    }
+
+    .stacked.bar {
+        fill: gray;
+    }
+
+    .stacked.x.axis path,
+    .stackedarea.x.axis.labels path {
+        display: none;
+    }
+
+    .stackedsubtitle {
+        font-weight: normal;
+        color: #999999;
+        font-size: 13px;
+    }
+
+    .stackedareahint,
+    .stackedareahinthighlight,
+    .stackedarea.x.axis,
+    .stackedarea.y.axis {
+        pointer-events: none;
+    }
+
+    .wide.omega {
+        text-align: right;
+        margin-right: 30px;
+        min-width: 500px;
+    }
+
+    #svgcontainer {
+        min-width: 500px;
+    }
+
+    .venn-count {
+        fill: #111;
+    }
+
+    .tick line {
+        opacity: 0.1;
+    }
+]]></style></defs><g transform="translate(50,5)"><g class="stacked x axis" transform="translate(0,250)"><g class="tick" transform="translate(17.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Prostate</text></g><g class="tick" transform="translate(46.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Liver</text></g><g class="tick" transform="translate(75.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Pancreas</text></g><g class="tick" transform="translate(104.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Blood</text></g><g class="tick" transform="translate(133.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Kidney</text></g><g class="tick" transform="translate(162.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Esophagus</text></g><g class="tick" transform="translate(191.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Brain</text></g><g class="tick" transform="translate(220.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Head and neck</text></g><g class="tick" transform="translate(249.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Breast</text></g><g class="tick" transform="translate(278.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Gall Bladder</text></g><g class="tick" transform="translate(307.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Lung</text></g><g class="tick" transform="translate(336.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Bone</text></g><g class="tick" transform="translate(365.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Skin</text></g><g class="tick" transform="translate(394.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Ovary</text></g><g class="tick" transform="translate(423.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Mesenchymal</text></g><g class="tick" transform="translate(452.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Stomach</text></g><g class="tick" transform="translate(481.5,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text dy=".15em" y="9" x="0" dx="-.8em" transform="rotate(-65)" style='text-anchor: end; font-size: 9px; font-family: "Lucida Grande"; fill: gray;'>Uterus</text></g><path class="domain" d="M0,6V0H500V6"></path></g><g class="stacked y axis" transform="translate(-5,0)" style="fill: gray; font-size: 10px;"><g class="tick" transform="translate(0,250)" style="opacity: 1;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-size: 8px;">0</text></g><g class="tick" transform="translate(0,171)" style="opacity: 1;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-size: 8px;">200</text></g><g class="tick" transform="translate(0,91)" style="opacity: 1;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-size: 8px;">400</text></g><g class="tick" transform="translate(0,12)" style="opacity: 1;"><line x2="-6" y2="0"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-size: 8px;">600</text></g><path class="domain" d="M-6,0H0V250H-6"></path><text transform="rotate(-90)" y="-45" x="-125" dy="1em" style="text-anchor: middle;">Donors</text></g><line class="horizontalGrid" x1="-5" x2="500" y1="250" y2="250" fill="none" shape-rendering="crispEdges" stroke="#DDD" stroke-width="0px"></line><line class="horizontalGrid" x1="-5" x2="500" y1="171" y2="171" fill="none" shape-rendering="crispEdges" stroke="#DDD" stroke-width="1px"></line><line class="horizontalGrid" x1="-5" x2="500" y1="91" y2="91" fill="none" shape-rendering="crispEdges" stroke="#DDD" stroke-width="1px"></line><line class="horizontalGrid" x1="-5" x2="500" y1="12" y2="12" fill="none" shape-rendering="crispEdges" stroke="#DDD" stroke-width="1px"></line><g class="stacked g"><rect class="stack" width="23" x="6" y="165" height="85" style="fill: rgb(30, 153, 0);"></rect><rect class="stack" width="23" x="6" y="85" height="80" style="fill: rgb(33, 170, 0);"></rect><rect class="stack" width="23" x="6" y="36" height="49" style="fill: rgb(30, 153, 0);"></rect><rect class="stack" width="23" x="6" y="10" height="26" style="fill: rgb(33, 170, 0);"></rect><rect class="stack" width="23" x="6" y="0" height="10" style="fill: rgb(30, 153, 0);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="35" y="150" height="100" style="fill: rgb(30, 147, 192);"></rect><rect class="stack" width="23" x="35" y="61" height="89" style="fill: rgb(33, 163, 213);"></rect><rect class="stack" width="23" x="35" y="42" height="19" style="fill: rgb(30, 147, 192);"></rect><rect class="stack" width="23" x="35" y="30" height="12" style="fill: rgb(33, 163, 213);"></rect><rect class="stack" width="23" x="35" y="28" height="2" style="fill: rgb(30, 147, 192);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="64" y="134" height="116" style="fill: rgb(233, 147, 30);"></rect><rect class="stack" width="23" x="64" y="72" height="62" style="fill: rgb(255, 163, 33);"></rect><rect class="stack" width="23" x="64" y="53" height="19" style="fill: rgb(233, 147, 30);"></rect><rect class="stack" width="23" x="64" y="38" height="15" style="fill: rgb(255, 163, 33);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="93" y="169" height="81" style="fill: rgb(206, 101, 30);"></rect><rect class="stack" width="23" x="93" y="123" height="46" style="fill: rgb(229, 112, 33);"></rect><rect class="stack" width="23" x="93" y="77" height="46" style="fill: rgb(206, 101, 30);"></rect><rect class="stack" width="23" x="93" y="58" height="19" style="fill: rgb(229, 112, 33);"></rect><rect class="stack" width="23" x="93" y="49" height="9" style="fill: rgb(206, 101, 30);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="122" y="72" height="178" style="fill: rgb(30, 106, 162);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="151" y="88" height="162" style="fill: rgb(34, 204, 0);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="180" y="140" height="110" style="fill: rgb(109, 114, 197);"></rect><rect class="stack" width="23" x="180" y="96" height="44" style="fill: rgb(121, 126, 219);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="209" y="154" height="96" style="fill: rgb(211, 54, 130);"></rect><rect class="stack" width="23" x="209" y="115" height="39" style="fill: rgb(234, 60, 144);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="238" y="194" height="56" style="fill: rgb(220, 96, 156);"></rect><rect class="stack" width="23" x="238" y="163" height="31" style="fill: rgb(244, 106, 173);"></rect><rect class="stack" width="23" x="238" y="135" height="28" style="fill: rgb(220, 96, 156);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="267" y="155" height="95" style="fill: rgb(30, 147, 192);"></rect><rect class="stack" width="23" x="267" y="150" height="5" style="fill: rgb(33, 163, 213);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="296" y="184" height="66" style="fill: rgb(237, 169, 74);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="325" y="211" height="39" style="fill: rgb(30, 106, 162);"></rect><rect class="stack" width="23" x="325" y="185" height="26" style="fill: rgb(33, 117, 180);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="354" y="220" height="30" style="fill: rgb(30, 147, 192);"></rect><rect class="stack" width="23" x="354" y="192" height="28" style="fill: rgb(33, 163, 213);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="383" y="213" height="37" style="fill: rgb(36, 178, 229);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="412" y="223" height="27" style="fill: rgb(109, 114, 197);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="441" y="235" height="15" style="fill: rgb(251, 126, 30);"></rect></g><g class="stacked g"><rect class="stack" width="23" x="470" y="244" height="6" style="fill: rgb(146, 149, 211);"></rect></g></g></svg>
