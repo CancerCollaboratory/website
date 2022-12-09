@@ -19,7 +19,7 @@ const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLink
       {title && <h2>{title}</h2>}
       {cards && <CardLayout cards={cards} />}
       {caption && (
-        <div className={styles.caption}>
+        <div className={clsx(styles.caption, utilStyles.commonAnchor)}>
           {renderData(
             caption,
             isCaptionLinkExternal === "ture" ? insertLinkExternal : insertLinkInternal

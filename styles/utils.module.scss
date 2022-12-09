@@ -39,6 +39,16 @@
     justify-content: center;
 }
 
+.commonAnchor {
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
 @include respond-to("large") {
     .outerContainer {
         width: 898px;

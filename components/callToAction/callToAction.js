@@ -43,7 +43,8 @@ const CallToAction = ({
             <div
               className={clsx(
                 styles.description,
-                !title && !buttonData ? styles.isolateText : undefined
+                !title && !buttonData ? styles.isolateText : undefined,
+                utilStyles.commonAnchor
               )}
             >
               {renderData(
