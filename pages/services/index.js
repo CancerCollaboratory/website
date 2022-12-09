@@ -59,7 +59,6 @@ const Services = () => {
           imageAlt={callToAction?.imageAlt}
           description={callToAction?.description}
           buttonData={callToAction?.buttonData}
-          styleBackground={utilStyles.gradientBackgroundGray}
         />
       </div>
     </>

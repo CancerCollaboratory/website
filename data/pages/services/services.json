@@ -112,7 +112,7 @@
     "callToAction": {
         "title": "For Technical Assistance",
         "imageSrcPath": "/assets/callToAction/icon-tech-assistance.svg",
-        "imageAlt": "Technical Assistance",
+        "imageAlt": "Icon - Technical Assistance",
         "description": "If you can't find what you are looking for, please contact our support team. We are working hard to get back to you within 1-2 business days.",
         "buttonData": [
             {
