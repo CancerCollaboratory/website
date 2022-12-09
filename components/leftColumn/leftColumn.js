@@ -29,7 +29,10 @@ const LeftColumn = ({ title, centerTitle, imageSrcPath, imageAlt, body, children
         (item, index) =>
           item.text && (
             <div
-              className={clsx(!item.isLastText ? styles.bodyText : styles.lastBodyText)}
+              className={clsx(
+                !item.isLastText ? styles.bodyText : styles.lastBodyText,
+                utilStyles.commonAnchor
+              )}
               key={index}
             >
               {renderData(item.text, item.isLinkExternal ? insertLinkExternal : insertLinkInternal)}
