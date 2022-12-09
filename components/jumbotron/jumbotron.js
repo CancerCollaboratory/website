@@ -3,6 +3,7 @@ import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./jumbotron.module.scss";
 
 const Jumbotron = ({
@@ -22,7 +23,7 @@ const Jumbotron = ({
       <h1 className={styles.jumbotronTitle}>{title}</h1>
       {bodyText && (
         <>
-          <div className={styles.jumbotronBody}>
+          <div className={clsx(styles.jumbotronBody, utilStyles.commonAnchor)}>
             {renderData(bodyText, isBodyLinkExternal ? insertLinkExternal : insertLinkInternal)}
           </div>
           {imageSrcPath && (
