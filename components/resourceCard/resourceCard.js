@@ -3,6 +3,7 @@ import Image from "next/image";
 import IconArrow from "../../public/assets/resourceCard/icon-arrow-gray.svg";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./resourceCard.module.scss";
 
 const ResourceCard = ({
@@ -28,7 +29,7 @@ const ResourceCard = ({
       {(title || bodyText) && (
         <div className={styles.cardContent}>
           {title && (
-            <div className={styles.title}>
+            <div className={clsx(styles.title, utilStyles.commonAnchor)}>
               {renderData(title, isTitleLinkExternal ? insertLinkExternal : insertLinkInternal)}
               <Image src={IconArrow} alt={"Icon"} className={styles.titleIcon} quality={100} />
             </div>
