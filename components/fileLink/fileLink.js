@@ -16,7 +16,7 @@ const FileLink = ({ links }) => {
           } else {
             return (
               <li key={index}>
-                <div className={styles.content}>
+                <div className={clsx(styles.content, utilStyles.commonAnchor)}>
                   <Image
                     src={item.icon.srcPath}
                     alt={item.icon.alt}
