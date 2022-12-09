@@ -13,10 +13,15 @@ const CallToAction = ({
   description,
   isDescriptionLinkExternal,
   buttonData,
-  styleBackground,
 }) => {
   return (
-    <div className={clsx(styles.container, styleBackground, utilStyles.outerContainer)}>
+    <div
+      className={clsx(
+        styles.container,
+        utilStyles.gradientBackgroundGray,
+        utilStyles.outerContainer
+      )}
+    >
       {title && (
         <div className={styles.titleContainer}>
           {imageSrcPath && (
