@@ -105,8 +105,69 @@
         "hasBorderBottom": true
     },
     "lateralColumn2": {
-        "leftColumn": {},
-        "rightColumn": {}
+        "leftColumn": {
+            "title": "Cloud Infrastructure",
+            "imageSrcPath": "/assets/leftColumn/icon-cloud-infrastructure.svg",
+            "imageAlt": "Icon - Cloud Infrastructure",
+            "body": [
+                {
+                    "text": "The Collaboratory hosts an **OpenStack** cloud with more than **2592 CPU cores and over 4.4 PB of storage**, offering resources such as:",
+                    "isLastText": true
+                }
+            ],
+            "listLine": {
+                "hasBullets": true,
+                "items": [
+                    {
+                        "label": "Compute",
+                        "link": "/services-cloud-resources",
+                        "isLinkExternal": false
+                    },
+                    {
+                        "label": "Storage",
+                        "link": "/services-cloud-resources",
+                        "isLinkExternal": false
+                    },
+                    {
+                        "label": "Networking",
+                        "link": "/services-cloud-resources",
+                        "isLinkExternal": false
+                    }
+                ]
+            },
+            "navLine": {
+                "items": [
+                    {
+                        "label": "ABOUT OUR RESOURCES AND FEES",
+                        "link": "/services",
+                        "isLinkExternal": false
+                    }
+                ]
+            }
+        },
+        "rightColumn": {
+            "title": "Researcher Sharing Tools",
+            "imageSrcPath": "/assets/rightColumn/icon-dockstore.svg",
+            "imageAlt": "Icon - Dockstore",
+            "body": [
+                {
+                    "text": "The Collaboratory offers multiple ways for researchers to share their tools including VM sharing through the OpenStack Console, and Docker container sharing through the [Dockstore](https://dockstore.org) based on a [GA4GH-compliant](http://www.commonwl.org) tool descriptor.",
+                    "isLinkExternal": true,
+                    "isLastText": true
+                }
+            ],
+            "navLine": {
+                "items": [
+                    {
+                        "label": "ABOUT DOCKSTORE",
+                        "link": "/services-dockstore",
+                        "isLinkExternal": false
+                    }
+                ]
+            },
+            "hasBackground": true
+        },
+        "hasBorderBottom": true
     },
     "lateralColumn3": {
         "leftColumn": {},
