@@ -1,71 +1,115 @@
 {
-    "publication": {
-        "imageSrcPath": "/assets/publication/pcawg-nature-cover.png",
-        "imageAlt": "PCAWG Nature Cover",
-        "title": "Pan-cancer Analysis of Whole Genomes Published!",
-        "titleLink": "https://www.nature.com/collections/afdejfafdb",
-        "isTitleLinkExternal": true,
-        "caption": "Read about the ICGC/TCGA analysis of >2,600 whole cancer genomes across 38 tumour types in 23 papers published in [Nature and other Nature journals](https://www.nature.com/collections/afdejfafdb). *Photo credit: Nik Spencer/Nature.*",
-        "isCaptionLinkExternal": true
-    },
-    "barChart": {
-        "srcPath": "/assets/barChart/barChart.svg",
-        "alt": "SVG - Donor Distribution Bar Chart"
-    },
-    "table": {
-        "title": "The Collaboratory data consists of:",
-        "body": [
-            {
-                "columns": [
-                    {
-                        "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D)",
-                        "isLinkExternal": true
-                    },
-                    {
-                        "content": "5,045 donors"
-                    },
-                    {
-                        "content": "121,467 files"
-                    },
-                    {
-                        "content": "1074.25 TB"
-                    }
-                ]
+    "lateralColumn1": {
+        "leftColumn": {
+            "megaTitle": [
+                {
+                    "subTitle": "Cloud Computing for "
+                },
+                {
+                    "subTitle": "BIG DATA ",
+                    "isMainSubTitle": true
+                },
+                {
+                    "subTitle": "Genomics"
+                }
+            ],
+            "body": [
+                {
+                    "text": "Welcome to the **Cancer Genome Collaboratory**, an academic compute cloud resource that allows researchers to run complex analysis operations across large [ICGC cancer genome data sets](https://dcc.icgc.org).",
+                    "isLinkExternal": true,
+                    "isLastText": true
+                }
+            ],
+            "button": {
+                "label": "ABOUT OUR SERVICES",
+                "link": "/services-cloud-resources",
+                "isLinkExternal": false,
+                "hasIcon": true
             },
-            {
-                "columns": [
-                    {
-                        "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
-                        "isLinkExternal": true
-                    },
-                    {
-                        "content": "886 donors"
-                    },
-                    {
-                        "content": "22,200 files"
-                    },
-                    {
-                        "content": "255.57 TB"
-                    }
-                ]
-            },
-            {
-                "columns": [
-                    {
-                        "title": "[Total](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22,%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
-                        "isLinkExternal": true
-                    },
-                    {
-                        "content": "5,931 donors"
-                    },
-                    {
-                        "content": "143,667 files"
-                    },
-                    {
-                        "content": "1329.83 TB"
-                    }
-                ]
+            "publication": {
+                "imageSrcPath": "/assets/publication/pcawg-nature-cover.png",
+                "imageAlt": "PCAWG Nature Cover",
+                "title": "Pan-cancer Analysis of Whole Genomes Published!",
+                "titleLink": "https://www.nature.com/collections/afdejfafdb",
+                "isTitleLinkExternal": true,
+                "caption": "Read about the ICGC/TCGA analysis of >2,600 whole cancer genomes across 38 tumour types in 23 papers published in [Nature and other Nature journals](https://www.nature.com/collections/afdejfafdb). *Photo credit: Nik Spencer/Nature.*",
+                "isCaptionLinkExternal": true
             }
-        ]
+        },
+        "rightColumn": {
+            "title": "Collaboratory Data Repository: Donor Distribution by Primary Site",
+            "subTitle": "39 projects and 17 primary sites",
+            "barChart": {
+                "srcPath": "/assets/barChart/barChart.svg",
+                "alt": "SVG - Donor Distribution Bar Chart"
+            },
+            "table": {
+                "title": "The Collaboratory data consists of:",
+                "body": {
+                    "rows": [
+                        {
+                            "cells": [
+                                {
+                                    "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D)",
+                                    "isLinkExternal": true
+                                },
+                                {
+                                    "stat": "5,045 donors"
+                                },
+                                {
+                                    "stat": "121,467 files"
+                                },
+                                {
+                                    "stat": "1074.25 TB"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
+                                    "isLinkExternal": true
+                                },
+                                {
+                                    "stat": "886 donors"
+                                },
+                                {
+                                    "stat": "22,200 files"
+                                },
+                                {
+                                    "stat": "255.57 TB"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "title": "[Total](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22,%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
+                                    "isLinkExternal": true
+                                },
+                                {
+                                    "stat": "5,931 donors"
+                                },
+                                {
+                                    "stat": "143,667 files"
+                                },
+                                {
+                                    "stat": "1329.83 TB"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "hasBorderBottom": true
+    },
+    "lateralColumn2": {
+        "leftColumn": {},
+        "rightColumn": {}
+    },
+    "lateralColumn3": {
+        "leftColumn": {},
+        "rightColumn": {}
     }
 }
