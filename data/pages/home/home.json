@@ -195,5 +195,24 @@
             ]
         },
         "hasBorderBottom": true
+    },
+    "callToAction": {
+        "title": "Interested in using our resources?",
+        "buttonData": [
+            {
+                "label": "**NEW USERS:** REQUEST AN ACCOUNT",
+                "link": "/services-request-account",
+                "isLinkExternal": false,
+                "hasIcon": true
+            },
+            {
+                "label": "**RETURNING USERS:** COLLABORATORY CONSOLE",
+                "link": "https://console.cancercollaboratory.org",
+                "isLinkExternal": true,
+                "hasBlueBackground": true,
+                "hasIcon": true
+            }
+        ],
+        "hasBorderBottom": true
     }
 }
