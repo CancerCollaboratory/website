@@ -170,7 +170,30 @@
         "hasBorderBottom": true
     },
     "lateralColumn3": {
-        "leftColumn": {},
-        "rightColumn": {}
+        "title": "The Collaboratory and Cancer Genomic Research",
+        "leftColumn": {
+            "body": [
+                {
+                    "text": "This project uses the power of cloud computing to open up the study of cancer genomics to researchers around the world. The Collaboratory is made up of an experienced team of PIs with the common goal of encouraging collaboration and accelerating the development of new tools for the diagnosis, treatment, and management of cancer patients.",
+                    "isLastText": true
+                }
+            ],
+            "buttonItems": [
+                {
+                    "label": "ABOUT OUR RESEARCH",
+                    "link": "/research",
+                    "isLinkExternal": false
+                }
+            ]
+        },
+        "rightColumn": {
+            "body": [
+                {
+                    "text": "There are now over 140 publications by researchers who have benefited from the Collaboratory's co-location of data and compute code. The range of research includes the study of tumour evolution, the impact of non-coding mutations on cancer phenotypes, the interaction of germline and somatic mutations, the heterogeneity of tumours discovered through single cell sequencing, the effect of somatic mutations on the transcriptome, and the development of new algorithms for genome processing and analysis.",
+                    "isLastText": true
+                }
+            ]
+        },
+        "hasBorderBottom": true
     }
 }
