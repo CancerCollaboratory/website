@@ -92,19 +92,19 @@
                 "title": "### [Read about our Resources](/services-cloud-resources)",
                 "bodyText": "Investigate the services we have available for your team.",
                 "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
-                "imageAlt": "Cloud Resources"
+                "imageAlt": "Icon - Cloud Resources"
             },
             {
                 "title": "### [Request an Account](/services-request-account)",
                 "bodyText": "Register your research project or a user with the Collaboratory.",
-                "imageSrcPath": "/assets/resourceCard/icon-circle-registration.svg",
-                "imageAlt": "Registration"
+                "imageSrcPath": "/assets/resourceCard/icon-registration.svg",
+                "imageAlt": "Icon - Registration"
             },
             {
                 "title": "### [Getting Started Documentation](/support/getting-started)",
                 "bodyText": "How to get started with running your analysis on the ICGC data.",
-                "imageSrcPath": "/assets/resourceCard/icon-circle-documentation.svg",
-                "imageAlt": "Documentation",
+                "imageSrcPath": "/assets/resourceCard/icon-documentation.svg",
+                "imageAlt": "Icon - Documentation",
                 "isLastCard": true
             }
         ]
