@@ -116,7 +116,7 @@
                 }
             ],
             "listLine": {
-                "hasBullets": true,
+                "isVertical": false,
                 "items": [
                     {
                         "label": "Compute",
@@ -178,13 +178,15 @@
                     "isLastText": true
                 }
             ],
-            "buttonItems": [
-                {
-                    "label": "ABOUT OUR RESEARCH",
-                    "link": "/research",
-                    "isLinkExternal": false
-                }
-            ]
+            "navLine": {
+                "items": [
+                    {
+                        "label": "ABOUT OUR RESEARCH",
+                        "link": "/research",
+                        "isLinkExternal": false
+                    }
+                ]
+            }
         },
         "rightColumn": {
             "body": [
@@ -214,5 +216,75 @@
             }
         ],
         "hasBorderBottom": true
+    },
+    "resourceSection": {
+        "title": "Support Resources",
+        "cards": [
+            {
+                "title": "### Explore our Documentation",
+                "listLine": {
+                    "isVertical": true,
+                    "items": [
+                        {
+                            "label": "Getting Started",
+                            "link": "/support/getting-started",
+                            "isLinkExternal": false
+                        },
+                        {
+                            "label": "User Guide",
+                            "link": "/support/user-guide",
+                            "isLinkExternal": false
+                        }
+                    ]
+                },
+                "imageSrcPath": "/assets/resourceCard/icon-documentation.svg",
+                "imageAlt": "Icon - Documentation"
+            },
+            {
+                "title": "### Tips for Cloud Computing",
+                "listLine": {
+                    "isVertical": true,
+                    "items": [
+                        {
+                            "label": "Best Practices",
+                            "link": "/support/best-practices",
+                            "isLinkExternal": false
+                        },
+                        {
+                            "label": "FAQs",
+                            "link": "/support/faqs",
+                            "isLinkExternal": false
+                        }
+                    ]
+                },
+                "imageSrcPath": "/assets/resourceCard/icon-lightbulb.svg",
+                "imageAlt": "Icon - Lightbulb"
+            },
+            {
+                "title": "### Training Opportunities",
+                "listLine": {
+                    "isVertical": true,
+                    "items": [
+                        {
+                            "label": "Workshops",
+                            "link": "/support/workshops",
+                            "isLinkExternal": false
+                        }
+                    ]
+                },
+                "imageSrcPath": "/assets/resourceCard/icon-training.svg",
+                "imageAlt": "Icon - Training",
+                "isLastCard": true
+            }
+        ],
+        "navLine": {
+            "items": [
+                {
+                    "label": "MORE SUPPORT RESOURCES",
+                    "link": "/support/overview",
+                    "isLinkExternal": false
+                }
+            ]
+        }
     }
 }
