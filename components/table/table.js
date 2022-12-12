@@ -7,18 +7,16 @@ const Table = ({ title, body }) => {
     <table className={styles.table}>
       {title && <caption className={styles.title}>{title}</caption>}
       <tbody>
-        {body.map((item, index) => (
+        {body?.rows?.map((item, index) => (
           <tr key={index}>
-            {item.columns.map((column, subIndex) => (
+            {item.cells?.map((cell, subIndex) => (
               <td className={styles.cell} key={subIndex}>
-                {column.title &&
+                {cell.title &&
                   renderData(
-                    column.title,
-                    column.isLinkExternal ? insertLinkExternal : insertLinkInternal
+                    cell.title,
+                    cell.isLinkExternal ? insertLinkExternal : insertLinkInternal
                   )}
-                {column.content && (
-                  <div className={styles.cellContent}>{renderData(column.content)}</div>
-                )}
+                {cell.stat && <div className={styles.cellContent}>{renderData(cell.stat)}</div>}
               </td>
             ))}
           </tr>
