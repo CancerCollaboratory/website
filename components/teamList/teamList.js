@@ -1,7 +1,7 @@
 import { renderData } from "../../lib/functions/renderData";
-import styles from "./list.module.scss";
+import styles from "./teamList.module.scss";
 
-const List = ({ list }) => {
+const TeamList = ({ list }) => {
   if (!list) {
     return null;
   } else {
@@ -15,4 +15,4 @@ const List = ({ list }) => {
   }
 };
 
-export default List;
+export default TeamList;
