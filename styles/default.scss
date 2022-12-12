@@ -31,9 +31,16 @@ h3 {
     font-weight: 500;
 }
 
+p {
+    color: $color-dark-x2-gray;
+}
+
+caption {
+    color: $color-dark-x3-gray;
+}
+
 p,
 caption {
-    color: $color-dark-x2-gray;
     font-size: 14px;
 }
 
