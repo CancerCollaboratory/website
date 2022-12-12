@@ -3,7 +3,7 @@ import styles from "./resourceCardLayout.module.scss";
 
 const ResourceCardLayout = ({ cards }) => {
   return (
-    <div className={styles.cardLayout}>
+    <div className={styles.container}>
       {cards.map((card, index) => (
         <ResourceCard
           title={card.title}
