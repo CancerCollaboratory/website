@@ -14,11 +14,6 @@
         margin-bottom: 12.5px;
     }
 
-    .titleMargin,
-    .subTitle {
-        margin-bottom: 25px;
-    }
-
     .subTitle {
         color: $color-dark-x2-gray;
         font-size: 17px;
@@ -35,6 +30,8 @@
         }
     }
 
+    .titleMargin,
+    .subTitle,
     .bodyText {
         margin-bottom: 25px;
     }
@@ -68,15 +65,12 @@
             margin-bottom: 11.5px;
         }
 
-        .titleMargin,
-        .subTitle {
-            margin-bottom: 23px;
-        }
-
         .subTitle {
             font-size: 14px;
         }
 
+        .titleMargin,
+        .subTitle,
         .bodyText {
             margin-bottom: 23px;
         }
@@ -89,15 +83,12 @@
             margin-bottom: 11px;
         }
 
-        .titleMargin,
-        .subTitle {
-            margin-bottom: 22px;
-        }
-
         .subTitle {
             font-size: 13px;
         }
 
+        .titleMargin,
+        .subTitle,
         .bodyText {
             margin-bottom: 22px;
         }
@@ -110,15 +101,12 @@
             margin-bottom: 10px;
         }
 
-        .titleMargin,
-        .subTitle {
-            margin-bottom: 20px;
-        }
-
         .subTitle {
             font-size: 12px;
         }
 
+        .titleMargin,
+        .subTitle,
         .bodyText {
             margin-bottom: 20px;
         }
