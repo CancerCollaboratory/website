@@ -5,9 +5,18 @@ import Image from "next/image";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./leftColumn.module.scss";
 
-const LeftColumn = ({ title, centerTitle, imageSrcPath, imageAlt, body, children }) => {
+const LeftColumn = ({ megaTitle, title, centerTitle, imageSrcPath, imageAlt, body, children }) => {
   return (
     <div className={styles.container}>
+      {megaTitle && (
+        <h1 className={styles.megaTitle}>
+          {megaTitle.map((item, index) => (
+            <span className={item.isMainSubTitle ? styles.mainSubTitle : undefined} key={index}>
+              {item.subTitle}
+            </span>
+          ))}
+        </h1>
+      )}
       {(title || (imageSrcPath && imageAlt)) && (
         <div
           className={clsx(styles.head, centerTitle ? utilStyles.horizontallyCenterItem : undefined)}
