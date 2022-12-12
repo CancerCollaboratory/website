@@ -1,31 +1,31 @@
 @import "../../styles/mixins";
 
-.cardLayout {
+.container {
     display: flex;
     align-items: center;
     padding-top: 25px;
 }
 
 @include respond-to("medium") {
-    .cardLayout {
+    .container {
         flex-direction: column;
     }
 }
 
 @include respond-to("small") {
-    .cardLayout {
+    .container {
         padding-top: 23px;
     }
 }
 
 @include respond-to("extra-small") {
-    .cardLayout {
+    .container {
         padding-top: 22px;
     }
 }
 
 @include respond-to("extra-extra-small") {
-    .cardLayout {
+    .container {
         padding-top: 20px;
     }
 }
