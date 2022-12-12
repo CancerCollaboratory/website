@@ -7,6 +7,8 @@ import BarChart from "../components/barChart/barChart";
 import Table from "../components/table/table";
 import ListLine from "../components/listLine/listLine";
 import NavLine from "../components/navLine/navLine";
+import CallToAction from "../components/callToAction/callToAction";
+import ResourceSection from "../components/resourceSection/resourceSection";
 import pageData from "../data/pages/home/home.json";
 import utilStyles from "../styles/utils.module.scss";
 
@@ -14,6 +16,8 @@ const Home = () => {
   const lateralColumn1 = pageData.lateralColumn1;
   const lateralColumn2 = pageData.lateralColumn2;
   const lateralColumn3 = pageData.lateralColumn3;
+  const callToAction = pageData.callToAction;
+  const resourceSection = pageData.resourceSection;
 
   return (
     <div className={utilStyles.pageBodyContainer}>
@@ -96,6 +100,14 @@ const Home = () => {
         rightColumn={<RightColumn body={lateralColumn3?.rightColumn?.body} />}
         hasBorderBottom={lateralColumn3?.hasBorderBottom}
       />
+      <CallToAction
+        title={callToAction?.title}
+        buttonData={callToAction?.buttonData}
+        hasBorderBottom={callToAction?.hasBorderBottom}
+      />
+      <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards}>
+        <NavLine navItems={resourceSection?.navLine?.items} />
+      </ResourceSection>
     </div>
   );
 };
