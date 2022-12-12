@@ -10,6 +10,7 @@
         margin-bottom: 1px;
         text-align: left;
         font-weight: 600;
+        font-size: 14px;
     }
 
     .cell {
@@ -36,6 +37,10 @@
 
 @include respond-to("medium") {
     .table {
+        .title {
+            font-size: 13px;
+        }
+
         .cell {
             padding: 4px 11px;
 
@@ -52,6 +57,7 @@
 
         .title {
             margin-bottom: 0px;
+            font-size: 12px;
         }
 
         .cell {
@@ -76,6 +82,10 @@
 
 @include respond-to("extra-extra-small") {
     .table {
+        .title {
+            font-size: 11px;
+        }
+
         .cell {
             p {
                 font-size: 10px;
