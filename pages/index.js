@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import LateralColumn from "../components/lateralColumn/lateralColumn";
 import LeftColumn from "../components/leftColumn/leftColumn";
 import RightColumn from "../components/rightColumn/rightColumn";
@@ -35,7 +36,7 @@ const Home = () => {
                 hasIcon={lateralColumn1?.leftColumn?.button?.hasIcon}
               />
             </div>
-            <div className={utilStyles.onlyChildContainer}>
+            <div className={utilStyles.childContainer}>
               <Publication
                 imageSrcPath={lateralColumn1?.leftColumn?.publication?.imageSrcPath}
                 imageAlt={lateralColumn1?.leftColumn?.publication?.imageAlt}
@@ -61,7 +62,7 @@ const Home = () => {
                 alt={lateralColumn1?.rightColumn?.barChart?.alt}
               />
             </div>
-            <div className={utilStyles.onlyChildContainer}>
+            <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
               <Table
                 title={lateralColumn1?.rightColumn?.table?.title}
                 body={lateralColumn1?.rightColumn?.table?.body}
@@ -85,7 +86,7 @@ const Home = () => {
                 items={lateralColumn2?.leftColumn?.listLine?.items}
               />
             </div>
-            <div className={utilStyles.onlyChildContainer}>
+            <div className={utilStyles.childContainer}>
               <NavLine navItems={lateralColumn2?.leftColumn?.navLine?.items} />
             </div>
           </LeftColumn>
@@ -98,7 +99,7 @@ const Home = () => {
             body={lateralColumn2?.rightColumn?.body}
             hasBackground={lateralColumn2?.rightColumn?.hasBackground}
           >
-            <div className={utilStyles.onlyChildContainer}>
+            <div className={utilStyles.childContainer}>
               <NavLine navItems={lateralColumn2?.rightColumn?.navLine?.items} />
             </div>
           </RightColumn>
@@ -110,7 +111,7 @@ const Home = () => {
         title={lateralColumn3?.title}
         leftColumn={
           <LeftColumn body={lateralColumn3?.leftColumn?.body}>
-            <div className={utilStyles.onlyChildContainer}>
+            <div className={utilStyles.childContainer}>
               <NavLine navItems={lateralColumn3?.leftColumn?.navLine?.items} />
             </div>
           </LeftColumn>
@@ -124,7 +125,7 @@ const Home = () => {
         hasBorderBottom={callToAction?.hasBorderBottom}
       />
       <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards}>
-        <div className={utilStyles.onlyChildContainer}>
+        <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
           <NavLine navItems={resourceSection?.navLine?.items} />
         </div>
       </ResourceSection>
