@@ -3,7 +3,7 @@ import LateralColumn from "../../components/lateralColumn/lateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
 import Bio from "../../components/bio/bio";
-import List from "../../components/list/list";
+import TeamList from "../../components/teamList/teamList";
 import pageData from "../../data/pages/about/about-team.json";
 import utilStyles from "../../styles/utils.module.scss";
 
@@ -44,12 +44,12 @@ const AboutTeam = () => {
           title={lateralColumn2?.title}
           leftColumn={
             <LeftColumn>
-              <List list={lateralColumn2?.leftColumn?.list} />
+              <TeamList list={lateralColumn2?.leftColumn?.list} />
             </LeftColumn>
           }
           rightColumn={
             <RightColumn>
-              <List list={lateralColumn2?.rightColumn?.list} />
+              <TeamList list={lateralColumn2?.rightColumn?.list} />
             </RightColumn>
           }
         />
