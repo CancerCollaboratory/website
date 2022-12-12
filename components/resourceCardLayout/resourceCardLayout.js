@@ -1,7 +1,7 @@
 import ResourceCard from "../resourceCard/resourceCard";
-import styles from "./cardLayout.module.scss";
+import styles from "./resourceCardLayout.module.scss";
 
-const CardLayout = ({ cards }) => {
+const ResourceCardLayout = ({ cards }) => {
   return (
     <div className={styles.cardLayout}>
       {cards.map((card, index) => (
@@ -19,4 +19,4 @@ const CardLayout = ({ cards }) => {
   );
 };
 
-export default CardLayout;
+export default ResourceCardLayout;
