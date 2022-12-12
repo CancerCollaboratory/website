@@ -53,9 +53,7 @@ const AboutFundersAndCollaborators = () => {
               />
             </RightColumn>
           }
-          styleBackground={
-            lateralColumn2?.hasBackground ? utilStyles.gradientBackgroundGray : undefined
-          }
+          hasBackground={lateralColumn2?.hasBackground}
           hasBorderBottom={lateralColumn2?.hasBorderBottom}
         />
         <LateralColumn
