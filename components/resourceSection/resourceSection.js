@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import CardLayout from "../cardLayout/cardLayout";
+import ResourceCardLayout from "../resourceCardLayout/resourceCardLayout";
 import NavLine from "../navLine/navLine";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
@@ -17,7 +17,7 @@ const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLink
       )}
     >
       {title && <h2>{title}</h2>}
-      {cards && <CardLayout cards={cards} />}
+      {cards && <ResourceCardLayout cards={cards} />}
       {caption && (
         <div className={clsx(styles.caption, utilStyles.commonAnchor)}>
           {renderData(
