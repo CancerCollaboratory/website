@@ -10,10 +10,10 @@ const LateralColumn = ({
   titleImageAlt,
   leftColumn,
   rightColumn,
-  styleBackground,
+  hasBackground,
   hasBorderBottom,
-  styleColumnBorder,
-  styleColumnAlignment,
+  hasColumnBorder,
+  hasColumnAlignment,
 }) => {
   if (!leftColumn || !rightColumn) {
     return null;
@@ -23,8 +23,8 @@ const LateralColumn = ({
         className={clsx(
           styles.container,
           utilStyles.outerContainer,
-          hasBorderBottom ? utilStyles.containerBorderBottom : undefined,
-          styleBackground
+          hasBackground ? utilStyles.gradientBackgroundGray : undefined,
+          hasBorderBottom ? utilStyles.containerBorderBottom : undefined
         )}
       >
         {(title || (titleImageSrcPath && titleImageAlt)) && (
@@ -47,8 +47,15 @@ const LateralColumn = ({
             {title && <h2>{title}</h2>}
           </div>
         )}
-        <div className={clsx(styles.innerContainer, styleColumnAlignment)}>
-          <Column styleBorder={styleColumnBorder}>{leftColumn}</Column>
+        <div
+          className={clsx(
+            styles.innerContainer,
+            hasColumnAlignment ? utilStyles.verticallyCenterItem : undefined
+          )}
+        >
+          <Column styleBorder={clsx(hasColumnBorder ? utilStyles.columnBorder : undefined)}>
+            {leftColumn}
+          </Column>
           <Column>{rightColumn}</Column>
         </div>
       </div>
