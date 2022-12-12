@@ -64,7 +64,7 @@ const AboutCollaboratory = () => {
               />
             </RightColumn>
           }
-          styleColumnBorder={utilStyles.columnBorder}
+          hasColumnBorder={lateralColumn2?.hasColumnBorder}
         />
       </div>
     </>
