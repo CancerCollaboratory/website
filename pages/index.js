@@ -27,21 +27,27 @@ const Home = () => {
             megaTitle={lateralColumn1?.leftColumn?.megaTitle}
             body={lateralColumn1?.leftColumn?.body}
           >
-            <Button
-              label={lateralColumn1?.leftColumn?.button?.label}
-              link={lateralColumn1?.leftColumn?.button?.link}
-              isLinkExternal={lateralColumn1?.leftColumn?.button?.isLinkExternal}
-              hasIcon={lateralColumn1?.leftColumn?.button?.hasIcon}
-            />
-            <Publication
-              imageSrcPath={lateralColumn1?.leftColumn?.publication?.imageSrcPath}
-              imageAlt={lateralColumn1?.leftColumn?.publication?.imageAlt}
-              title={lateralColumn1?.leftColumn?.publication?.title}
-              titleLink={lateralColumn1?.leftColumn?.publication?.titleLink}
-              isTitleLinkExternal={lateralColumn1?.leftColumn?.publication?.isTitleLinkExternal}
-              caption={lateralColumn1?.leftColumn?.publication?.caption}
-              isCaptionLinkExternal={lateralColumn1?.leftColumn?.publication?.isCaptionLinkExternal}
-            />
+            <div className={utilStyles.childContainer}>
+              <Button
+                label={lateralColumn1?.leftColumn?.button?.label}
+                link={lateralColumn1?.leftColumn?.button?.link}
+                isLinkExternal={lateralColumn1?.leftColumn?.button?.isLinkExternal}
+                hasIcon={lateralColumn1?.leftColumn?.button?.hasIcon}
+              />
+            </div>
+            <div className={utilStyles.onlyChildContainer}>
+              <Publication
+                imageSrcPath={lateralColumn1?.leftColumn?.publication?.imageSrcPath}
+                imageAlt={lateralColumn1?.leftColumn?.publication?.imageAlt}
+                title={lateralColumn1?.leftColumn?.publication?.title}
+                titleLink={lateralColumn1?.leftColumn?.publication?.titleLink}
+                isTitleLinkExternal={lateralColumn1?.leftColumn?.publication?.isTitleLinkExternal}
+                caption={lateralColumn1?.leftColumn?.publication?.caption}
+                isCaptionLinkExternal={
+                  lateralColumn1?.leftColumn?.publication?.isCaptionLinkExternal
+                }
+              />
+            </div>
           </LeftColumn>
         }
         rightColumn={
@@ -49,14 +55,18 @@ const Home = () => {
             title={lateralColumn1?.rightColumn?.title}
             subTitle={lateralColumn1?.rightColumn?.subTitle}
           >
-            <BarChart
-              srcPath={lateralColumn1?.rightColumn?.barChart?.srcPath}
-              alt={lateralColumn1?.rightColumn?.barChart?.alt}
-            />
-            <Table
-              title={lateralColumn1?.rightColumn?.table?.title}
-              body={lateralColumn1?.rightColumn?.table?.body}
-            />
+            <div className={utilStyles.childContainer}>
+              <BarChart
+                srcPath={lateralColumn1?.rightColumn?.barChart?.srcPath}
+                alt={lateralColumn1?.rightColumn?.barChart?.alt}
+              />
+            </div>
+            <div className={utilStyles.onlyChildContainer}>
+              <Table
+                title={lateralColumn1?.rightColumn?.table?.title}
+                body={lateralColumn1?.rightColumn?.table?.body}
+              />
+            </div>
           </RightColumn>
         }
         hasBorderBottom={lateralColumn1?.hasBorderBottom}
@@ -69,11 +79,15 @@ const Home = () => {
             imageAlt={lateralColumn2?.leftColumn?.imageAlt}
             body={lateralColumn2?.leftColumn?.body}
           >
-            <ListLine
-              isVertical={lateralColumn2?.leftColumn?.listLine?.isVertical}
-              items={lateralColumn2?.leftColumn?.listLine?.items}
-            />
-            <NavLine navItems={lateralColumn2?.leftColumn?.navLine?.items} />
+            <div className={utilStyles.childContainer}>
+              <ListLine
+                isVertical={lateralColumn2?.leftColumn?.listLine?.isVertical}
+                items={lateralColumn2?.leftColumn?.listLine?.items}
+              />
+            </div>
+            <div className={utilStyles.onlyChildContainer}>
+              <NavLine navItems={lateralColumn2?.leftColumn?.navLine?.items} />
+            </div>
           </LeftColumn>
         }
         rightColumn={
@@ -84,7 +98,9 @@ const Home = () => {
             body={lateralColumn2?.rightColumn?.body}
             hasBackground={lateralColumn2?.rightColumn?.hasBackground}
           >
-            <NavLine navItems={lateralColumn2?.rightColumn?.navLine?.items} />
+            <div className={utilStyles.onlyChildContainer}>
+              <NavLine navItems={lateralColumn2?.rightColumn?.navLine?.items} />
+            </div>
           </RightColumn>
         }
         hasBorderBottom={lateralColumn2?.hasBorderBottom}
@@ -94,7 +110,9 @@ const Home = () => {
         title={lateralColumn3?.title}
         leftColumn={
           <LeftColumn body={lateralColumn3?.leftColumn?.body}>
-            <NavLine navItems={lateralColumn3?.leftColumn?.navLine?.items} />
+            <div className={utilStyles.onlyChildContainer}>
+              <NavLine navItems={lateralColumn3?.leftColumn?.navLine?.items} />
+            </div>
           </LeftColumn>
         }
         rightColumn={<RightColumn body={lateralColumn3?.rightColumn?.body} />}
@@ -106,7 +124,9 @@ const Home = () => {
         hasBorderBottom={callToAction?.hasBorderBottom}
       />
       <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards}>
-        <NavLine navItems={resourceSection?.navLine?.items} />
+        <div className={utilStyles.onlyChildContainer}>
+          <NavLine navItems={resourceSection?.navLine?.items} />
+        </div>
       </ResourceSection>
     </div>
   );
