@@ -61,6 +61,7 @@
                     "isLinkExternal": true
                 }
             ]
-        }
+        },
+        "hasColumnBorder": "true"
     }
 }

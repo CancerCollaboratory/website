@@ -83,7 +83,9 @@
                 ]
             }
         },
-        "hasBorderBottom": true
+        "hasBackground": true,
+        "hasBorderBottom": true,
+        "hasColumnAlignment": true
     },
     "resourceSection": {
         "title": "Get Started",
