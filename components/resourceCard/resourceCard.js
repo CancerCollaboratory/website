@@ -36,7 +36,13 @@ const ResourceCard = ({
       {(title || bodyText || children) && (
         <div className={styles.cardContent}>
           {title && (
-            <div className={clsx(styles.title, utilStyles.commonAnchor)}>
+            <div
+              className={clsx(
+                styles.title,
+                children ? styles.titleFont : undefined,
+                utilStyles.commonAnchor
+              )}
+            >
               {renderData(title, isTitleLinkExternal ? insertLinkExternal : insertLinkInternal)}
               <Image src={IconArrow} alt={"Icon"} className={styles.titleIcon} quality={100} />
             </div>
