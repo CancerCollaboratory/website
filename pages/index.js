@@ -62,7 +62,7 @@ const Home = () => {
                 alt={lateralColumn1?.rightColumn?.barChart?.alt}
               />
             </div>
-            <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
+            <div className={utilStyles.childContainer}>
               <Table
                 title={lateralColumn1?.rightColumn?.table?.title}
                 body={lateralColumn1?.rightColumn?.table?.body}
@@ -125,7 +125,7 @@ const Home = () => {
         hasBorderBottom={callToAction?.hasBorderBottom}
       />
       <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards}>
-        <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
+        <div className={utilStyles.childContainer}>
           <NavLine navItems={resourceSection?.navLine?.items} />
         </div>
       </ResourceSection>
