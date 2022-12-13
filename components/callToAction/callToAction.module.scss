@@ -131,7 +131,6 @@
 @include respond-to("small") {
     .container {
         padding: 16.5px 0px 17.5px 0px;
-        width: 100%;
 
         .titleContainer {
             margin: 6.5px 0px;
@@ -156,6 +155,10 @@
                 }
             }
         }
+    }
+
+    .altContainer {
+        width: 100%;
     }
 }
 
