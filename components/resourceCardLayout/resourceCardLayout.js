@@ -28,7 +28,7 @@ const ResourceCardLayout = ({ cards }) => {
               isLastCard={card.isLastCard}
               key={index}
             >
-              <ListLine isVertical={card.listLine.isVertical} items={card.listLine.items} />
+              <ListLine isVertical={card.listLine?.isVertical} items={card.listLine?.items} />
             </ResourceCard>
           );
         }
