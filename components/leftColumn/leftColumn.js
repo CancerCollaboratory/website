@@ -1,7 +1,7 @@
 import clsx from "clsx";
+import Image from "next/image";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
-import Image from "next/image";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./leftColumn.module.scss";
 
