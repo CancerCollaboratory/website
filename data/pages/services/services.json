@@ -109,7 +109,8 @@
                 "imageAlt": "Icon - Documentation",
                 "isLastCard": true
             }
-        ]
+        ],
+        "hasBorderBottom": true
     },
     "callToAction": {
         "title": "For Technical Assistance",
