@@ -24,6 +24,7 @@
             margin-bottom: 7px;
 
             h3 {
+                color: $color-dark-x4-gray;
                 font-size: 14px;
             }
 
@@ -31,6 +32,12 @@
                 margin-left: 9px;
                 width: 12.5px;
                 height: auto;
+            }
+        }
+
+        .titleFont {
+            h3 {
+                font-weight: 600;
             }
         }
 
@@ -45,6 +52,7 @@
                 line-height: 150%;
 
                 a {
+                    font-weight: 500;
                     font-size: 13px;
                 }
             }
