@@ -13,5 +13,35 @@
             "link": "https://dockstore.org",
             "isLinkExternal": true
         }
+    },
+    "featureBoard": {
+        "boards": [
+            {
+                "title": "DELLY",
+                "titleLink": "https://dockstore.org/containers/quay.io/pancancer/pcawg_delly_workflow",
+                "isTitleLinkExternal": true,
+                "caption": "structural variation"
+            },
+            {
+                "title": "Sanger",
+                "titleLink": "https://dockstore.org/containers/quay.io/pancancer/pcawg-sanger-cgp-workflow",
+                "isTitleLinkExternal": true,
+                "caption": "somatic calling",
+                "hasBackground": true
+            },
+            {
+                "title": "DKFZ",
+                "titleLink": "https://dockstore.org/containers/quay.io/pancancer/pcawg-dkfz-workflow",
+                "isTitleLinkExternal": true,
+                "caption": "SNVs, indels, copy number",
+                "hasBackground": true
+            },
+            {
+                "title": "BWA-mem",
+                "titleLink": "https://dockstore.org/containers/quay.io/pancancer/pcawg-bwa-mem-workflow",
+                "isTitleLinkExternal": true,
+                "caption": "bam alignment"
+            }
+        ]
     }
 }
