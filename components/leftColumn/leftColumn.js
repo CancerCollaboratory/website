@@ -5,7 +5,7 @@ import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/inse
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./leftColumn.module.scss";
 
-const LeftColumn = ({ megaTitle, title, centerTitle, imageSrcPath, imageAlt, body, children }) => {
+const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body, children }) => {
   return (
     <div className={styles.container}>
       {megaTitle && (
@@ -19,7 +19,7 @@ const LeftColumn = ({ megaTitle, title, centerTitle, imageSrcPath, imageAlt, bod
       )}
       {(title || (imageSrcPath && imageAlt)) && (
         <div
-          className={clsx(styles.head, centerTitle ? utilStyles.horizontallyCenterItem : undefined)}
+          className={clsx(styles.head, centerHead ? utilStyles.horizontallyCenterItem : undefined)}
         >
           {imageSrcPath && imageAlt && (
             <Image
