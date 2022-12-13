@@ -24,10 +24,15 @@
         }
 
         .label {
-            color: white;
-            letter-spacing: 0.5px;
-            font-weight: 500;
-            font-size: 12px;
+            p {
+                color: white;
+                letter-spacing: 0.5px;
+                font-size: 12px;
+
+                strong {
+                    font-weight: 500;
+                }
+            }
         }
 
         .iconArrow {
@@ -46,7 +51,9 @@
             margin: 4px 0px;
 
             .label {
-                font-size: 10px;
+                p {
+                    font-size: 10px;
+                }
             }
 
             .iconArrow {
@@ -84,7 +91,9 @@
             padding: 5px 15px;
 
             .label {
-                font-size: 9.5px;
+                p {
+                    font-size: 9.5px;
+                }
             }
 
             .iconArrow {
@@ -120,7 +129,9 @@
             padding: 4.5px 13.5px;
 
             .label {
-                font-size: 8.5px;
+                p {
+                    font-size: 8.5px;
+                }
             }
 
             .iconArrow {
