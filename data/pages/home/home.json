@@ -120,17 +120,17 @@
                 "items": [
                     {
                         "label": "Compute",
-                        "link": "/services-cloud-resources",
+                        "link": "/services-cloud-resources#compute",
                         "isLinkExternal": false
                     },
                     {
                         "label": "Storage",
-                        "link": "/services-cloud-resources",
+                        "link": "/services-cloud-resources#storage",
                         "isLinkExternal": false
                     },
                     {
                         "label": "Networking",
-                        "link": "/services-cloud-resources",
+                        "link": "/services-cloud-resources#networking",
                         "isLinkExternal": false
                     }
                 ]
