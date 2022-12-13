@@ -28,7 +28,7 @@ const Home = () => {
             megaTitle={lateralColumn1?.leftColumn?.megaTitle}
             body={lateralColumn1?.leftColumn?.body}
           >
-            <div className={utilStyles.childContainer}>
+            <div className={utilStyles.altChildContainer}>
               <Button
                 label={lateralColumn1?.leftColumn?.button?.label}
                 link={lateralColumn1?.leftColumn?.button?.link}
