@@ -3,17 +3,16 @@
 
 .table {
     border-collapse: separate;
-    border-spacing: 0px 9px;
+    border-spacing: 0px 12.5px;
 
     .title {
-        margin-bottom: 1px;
         text-align: left;
         font-weight: 600;
     }
 
     .cell {
         background-color: $color-light-x9-gray;
-        padding: 4px 13px;
+        padding: 4px 12.5px;
 
         .cellContent {
             text-align: right;
@@ -48,10 +47,6 @@
 @include respond-to("small") {
     .table {
         border-spacing: 0px 8px;
-
-        .title {
-            margin-bottom: 0px;
-        }
 
         .cell {
             padding: 4px 10.5px;
