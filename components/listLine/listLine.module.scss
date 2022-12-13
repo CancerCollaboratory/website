@@ -1,3 +1,44 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
 .container {
     display: flex;
+
+    li {
+        list-style-type: disc;
+        list-style-position: inside;
+        margin-right: 22px;
+
+        &::marker {
+            color: $color-dark-x1-blue;
+        }
+
+        a {
+            margin-left: -4px;
+            font-size: 14px;
+        }
+    }
 }
+
+.verticalList {
+    flex-direction: column;
+
+    li {
+        line-height: 160%;
+    }
+}
+
+// large: 1199px
+@include respond-to("large") {}
+
+// medium: 991px
+@include respond-to("medium") {}
+
+// small: 767px
+@include respond-to("small") {}
+
+// extra-small: 388px
+@include respond-to("extra-small") {}
+
+// extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
