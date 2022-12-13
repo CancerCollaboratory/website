@@ -28,17 +28,51 @@
     }
 }
 
-// large: 1199px
-@include respond-to("large") {}
+@include respond-to("medium") {
+    .container {
+        li {
+            a {
+                font-size: 13px;
+            }
+        }
+    }
 
-// medium: 991px
-@include respond-to("medium") {}
+    .verticalList {
+        li {
+            list-style-type: none;
+            margin-right: 0px;
+            text-align: center;
 
-// small: 767px
-@include respond-to("small") {}
+            a {
+                margin-left: 0px;
+            }
+        }
+    }
+}
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+@include respond-to("small") {
+    .container {
+        flex-direction: column;
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+        li {
+            margin-right: 0px;
+            line-height: 160%;
+
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        li {
+            line-height: 158%;
+
+            a {
+                font-size: 11px;
+            }
+        }
+    }
+}
