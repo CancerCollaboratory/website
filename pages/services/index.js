@@ -52,7 +52,11 @@ const Services = () => {
           hasBorderBottom={lateralColumn2?.hasBorderBottom}
           hasColumnAlignment={lateralColumn2?.hasColumnAlignment}
         />
-        <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards} />
+        <ResourceSection
+          title={resourceSection?.title}
+          cards={resourceSection?.cards}
+          hasBorderBottom={resourceSection?.hasBorderBottom}
+        />
         <CallToAction
           title={callToAction?.title}
           imageSrcPath={callToAction?.imageSrcPath}
