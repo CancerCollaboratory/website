@@ -5,20 +5,28 @@
     padding: 0px 4px 0px 20px;
     height: 100%;
 
-    .title,
-    .subTitle {
-        text-align: center;
-        line-height: 170%;
-    }
-
-    .title {
+    .head {
+        display: flex;
+        align-items: center;
         margin-bottom: 12.5px;
+
+        .image {
+            margin-right: 21px;
+            height: max-content;
+        }
+
+        .title {
+            text-align: center;
+            line-height: 170%;
+        }
     }
 
     .subTitle {
         color: $color-dark-x2-gray;
-        font-size: 17px;
+        text-align: center;
+        line-height: 170%;
         font-weight: 600;
+        font-size: 17px;
     }
 
     .bodyText,
@@ -31,10 +39,22 @@
         }
     }
 
-    .titleMargin,
+    .headMargin,
     .subTitle,
     .bodyText {
         margin-bottom: 25px;
+    }
+}
+
+@include respond-to("large") {
+    .container {
+        .head {
+            .image {
+                margin-right: 19px;
+                width: 58px;
+                height: auto;
+            }
+        }
     }
 }
 
@@ -45,12 +65,21 @@
         justify-content: center;
         padding: 0px;
 
-        .title,
-        .subTitle {
-            line-height: 168%;
+        .head {
+            justify-content: center;
+
+            .image {
+                margin-right: 18px;
+                width: 54px;
+            }
+
+            .title {
+                line-height: 168%;
+            }
         }
 
         .subTitle {
+            line-height: 168%;
             font-size: 16px;
         }
 
@@ -67,15 +96,20 @@
     .container {
         align-items: center;
 
-        .title {
+        .head {
             margin-bottom: 11.5px;
+
+            .image {
+                margin-right: 16px;
+                width: 48px;
+            }
         }
 
         .subTitle {
             font-size: 14px;
         }
 
-        .titleMargin,
+        .headMargin,
         .subTitle,
         .bodyText {
             margin-bottom: 23px;
@@ -85,15 +119,20 @@
 
 @include respond-to("extra-small") {
     .container {
-        .title {
+        .head {
             margin-bottom: 11px;
+
+            .image {
+                margin-right: 13.5px;
+                width: 40px;
+            }
         }
 
         .subTitle {
             font-size: 13px;
         }
 
-        .titleMargin,
+        .headMargin,
         .subTitle,
         .bodyText {
             margin-bottom: 22px;
@@ -103,15 +142,20 @@
 
 @include respond-to("extra-extra-small") {
     .container {
-        .title {
+        .head {
             margin-bottom: 10px;
+
+            .image {
+                margin-right: 11.5px;
+                width: 34px;
+            }
         }
 
         .subTitle {
             font-size: 12px;
         }
 
-        .titleMargin,
+        .headMargin,
         .subTitle,
         .bodyText {
             margin-bottom: 20px;
