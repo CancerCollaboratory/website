@@ -97,7 +97,6 @@ const Home = () => {
             imageSrcPath={lateralColumn2?.rightColumn?.imageSrcPath}
             imageAlt={lateralColumn2?.rightColumn?.imageAlt}
             body={lateralColumn2?.rightColumn?.body}
-            hasBackground={lateralColumn2?.rightColumn?.hasBackground}
           >
             <div className={utilStyles.childContainer}>
               <NavLine navItems={lateralColumn2?.rightColumn?.navLine?.items} />
@@ -105,7 +104,6 @@ const Home = () => {
           </RightColumn>
         }
         hasBorderBottom={lateralColumn2?.hasBorderBottom}
-        hasColumnBorder={lateralColumn2?.hasColumnBorder}
       />
       <LateralColumn
         title={lateralColumn3?.title}
