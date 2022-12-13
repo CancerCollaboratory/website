@@ -46,7 +46,7 @@
 
 @include respond-to("small") {
     .table {
-        border-spacing: 0px 8px;
+        border-spacing: 0px 11.5px;
 
         .cell {
             padding: 4px 10.5px;
@@ -60,7 +60,7 @@
 
 @include respond-to("extra-small") {
     .table {
-        border-spacing: 0px 7px;
+        border-spacing: 0px 11px;
 
         .cell {
             padding: 3px 10px;
@@ -70,6 +70,8 @@
 
 @include respond-to("extra-extra-small") {
     .table {
+        border-spacing: 0px 10px;
+
         .cell {
             p {
                 font-size: 10px;
