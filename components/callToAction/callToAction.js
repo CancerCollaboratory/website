@@ -13,13 +13,15 @@ const CallToAction = ({
   description,
   isDescriptionLinkExternal,
   buttonData,
+  hasBorderBottom,
 }) => {
   return (
     <div
       className={clsx(
         styles.container,
         utilStyles.gradientBackgroundGray,
-        utilStyles.outerContainer
+        utilStyles.outerContainer,
+        hasBorderBottom ? utilStyles.containerBorderBottom : undefined
       )}
     >
       {title && (
