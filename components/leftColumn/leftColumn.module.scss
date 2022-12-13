@@ -6,6 +6,9 @@
     height: 100%;
 
     .megaTitle {
+        line-height: 170%;
+        font-size: 36px;
+
         .mainSubTitle {
             color: $color-light-x4-blue;
         }
@@ -18,6 +21,10 @@
         .image {
             margin-right: 21px;
             height: max-content;
+        }
+
+        .title {
+            line-height: 170%;
         }
     }
 
@@ -37,6 +44,10 @@
 
 @include respond-to("large") {
     .container {
+        .megaTitle {
+            font-size: 33.5px;
+        }
+
         .head {
             .image {
                 margin-right: 19px;
@@ -56,6 +67,8 @@
 
         .megaTitle {
             text-align: center;
+            line-height: 168%;
+            font-size: 31px;
         }
 
         .head {
@@ -64,6 +77,10 @@
             .image {
                 margin-right: 18px;
                 width: 54px;
+            }
+
+            .title {
+                line-height: 168%;
             }
         }
 
@@ -79,6 +96,10 @@
 @include respond-to("small") {
     .container {
         align-items: center;
+
+        .megaTitle {
+            font-size: 23px;
+        }
 
         .head {
             .image {
@@ -97,6 +118,10 @@
 
 @include respond-to("extra-small") {
     .container {
+        .megaTitle {
+            font-size: 20.5px;
+        }
+
         .head {
             .image {
                 margin-right: 13.5px;
@@ -114,6 +139,10 @@
 
 @include respond-to("extra-extra-small") {
     .container {
+        .megaTitle {
+            font-size: 18px;
+        }
+
         .head {
             .image {
                 margin-right: 11.5px;
