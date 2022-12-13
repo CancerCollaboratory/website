@@ -55,7 +55,7 @@
 
 @include respond-to("large") {
     .container {
-        padding: 21px 0px;
+        padding: 19px 0px;
 
         .titleContainer {
             margin: 0px 19px;
@@ -75,7 +75,7 @@
             flex-direction: column;
 
             .description {
-                margin: 4px 19px;
+                margin: 6px 19px;
                 width: 430px;
 
                 p {
@@ -98,7 +98,7 @@
 @include respond-to("medium") {
     .container {
         flex-direction: column;
-        padding: 19.5px 0px;
+        padding: 18px 0px 19px 0px;
 
         .titleContainer {
             margin: 7px 0px;
@@ -130,7 +130,7 @@
 
 @include respond-to("small") {
     .container {
-        padding: 17.5px 0px;
+        padding: 16.5px 0px 17.5px 0px;
         width: 100%;
 
         .titleContainer {
@@ -161,7 +161,7 @@
 
 @include respond-to("extra-small") {
     .container {
-        padding: 17px 0px;
+        padding: 15.5px 0px 16.5px 0px;
 
         .titleContainer {
             .image {
@@ -184,7 +184,7 @@
 
 @include respond-to("extra-extra-small") {
     .container {
-        padding: 15.5px 0px;
+        padding: 14px 0px 15px 0px;
 
         .titleContainer {
             margin: 6px 0px;
