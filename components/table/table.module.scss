@@ -2,43 +2,53 @@
 @import "../../styles/mixins";
 
 .table {
-    border-collapse: separate;
-    border-spacing: 0px 12.5px;
-
     .title {
         text-align: left;
         font-weight: 600;
     }
 
-    .cell {
-        background-color: $color-light-x9-gray;
-        padding: 4px 12.5px;
+    tbody {
+        tr {
+            .cell {
+                background-color: $color-light-x9-gray;
+                border-top: 12.5px solid white;
+                padding: 4px 12.5px;
 
-        .cellContent {
-            text-align: right;
-        }
+                .cellContent {
+                    text-align: right;
+                }
 
-        p {
-            font-size: 13px;
+                p {
+                    font-size: 13px;
+                }
+            }
         }
     }
 }
 
 @include respond-to("large") {
     .table {
-        .cell {
-            padding: 4px 12px;
+        tbody {
+            tr {
+                .cell {
+                    padding: 4px 12px;
+                }
+            }
         }
     }
 }
 
 @include respond-to("medium") {
     .table {
-        .cell {
-            padding: 4px 11px;
+        tbody {
+            tr {
+                .cell {
+                    padding: 4px 11px;
 
-            p {
-                font-size: 12px;
+                    p {
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }
@@ -46,13 +56,16 @@
 
 @include respond-to("small") {
     .table {
-        border-spacing: 0px 11.5px;
+        tbody {
+            tr {
+                .cell {
+                    border-top-width: 11.5px;
+                    padding: 4px 10.5px;
 
-        .cell {
-            padding: 4px 10.5px;
-
-            p {
-                font-size: 11px;
+                    p {
+                        font-size: 11px;
+                    }
+                }
             }
         }
     }
@@ -60,21 +73,28 @@
 
 @include respond-to("extra-small") {
     .table {
-        border-spacing: 0px 11px;
-
-        .cell {
-            padding: 3px 10px;
+        tbody {
+            tr {
+                .cell {
+                    border-top-width: 11px;
+                    padding: 3px 10px;
+                }
+            }
         }
     }
 }
 
 @include respond-to("extra-extra-small") {
     .table {
-        border-spacing: 0px 10px;
+        tbody {
+            tr {
+                .cell {
+                    border-top-width: 10px;
 
-        .cell {
-            p {
-                font-size: 10px;
+                    p {
+                        font-size: 10px;
+                    }
+                }
             }
         }
     }
