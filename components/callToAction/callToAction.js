@@ -19,8 +19,9 @@ const CallToAction = ({
     <div
       className={clsx(
         styles.container,
-        utilStyles.gradientBackgroundGray,
         utilStyles.outerContainer,
+        utilStyles.gradientBackgroundGray,
+        description ? styles.altContainer : undefined,
         hasBorderBottom ? utilStyles.containerBorderBottom : undefined
       )}
     >
