@@ -15,7 +15,8 @@
     .cardContent {
         display: flex;
         flex-direction: column;
-        margin-right: 20px;
+        padding: 20px 20px 0px 0px;
+        height: 100%;
 
         .title {
             display: flex;
@@ -38,6 +39,16 @@
             line-height: 160%;
             font-size: 13px;
         }
+
+        ul {
+            li {
+                line-height: 150%;
+
+                a {
+                    font-size: 13px;
+                }
+            }
+        }
     }
 }
 
@@ -57,7 +68,7 @@
         }
 
         .cardContent {
-            margin-right: 14px;
+            padding: 14px 14px 0px 0px;
 
             .title {
                 h3 {
@@ -71,6 +82,14 @@
 
             .bodyText {
                 font-size: 11.5px;
+            }
+
+            ul {
+                li {
+                    a {
+                        font-size: 11.5px;
+                    }
+                }
             }
         }
     }
@@ -88,7 +107,8 @@
         }
 
         .cardContent {
-            margin-right: 16x;
+            padding: 0px 16px 0px 0px;
+            height: max-content;
 
             .title {
                 margin-bottom: 6.5px;
@@ -105,6 +125,20 @@
 
             .bodyText {
                 font-size: 12px;
+            }
+
+            ul {
+                flex-direction: row;
+
+                li {
+                    list-style-type: disc;
+                    margin-right: 17px;
+
+                    a {
+                        margin-left: -4px;
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }
@@ -129,7 +163,7 @@
 
         .cardContent {
             align-items: center;
-            margin: 0px;
+            padding: 0px;
 
             .title {
                 margin-bottom: 10px;
@@ -149,7 +183,26 @@
                 text-align: center;
                 font-size: 11.5px;
             }
+
+            ul {
+                flex-direction: column;
+
+                li {
+                    list-style-type: none;
+                    margin-right: 0px;
+
+                    a {
+                        margin-left: 0px;
+                        font-size: 11.5px;
+                    }
+                }
+            }
         }
+    }
+
+    .altCard {
+        width: 158%;
+        height: 172px;
     }
 
     .cardMargin {
@@ -181,7 +234,19 @@
                 margin: 0px 28px;
                 font-size: 11px;
             }
+
+            ul {
+                li {
+                    a {
+                        font-size: 11px;
+                    }
+                }
+            }
         }
+    }
+
+    .altCard {
+        width: 111%;
     }
 
     .cardMargin {
@@ -216,7 +281,20 @@
                 margin: 0px 26px;
                 font-size: 10px;
             }
+
+            ul {
+                li {
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
+    }
+
+    .altCard {
+        width: 126%;
+        height: 170px;
     }
 
     .cardMargin {
