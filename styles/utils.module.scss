@@ -15,9 +15,17 @@
     width: 1170px;
 }
 
-.childContainer {
+.childContainer,
+.altChildContainer {
     display: flex;
+}
+
+.childContainer {
     margin-top: 25px;
+}
+
+.altChildContainer {
+    margin-top: 16.5px;
 }
 
 .columnBorder {
@@ -73,7 +81,8 @@
         width: 750px;
     }
 
-    .childContainer {
+    .childContainer,
+    .altChildContainer {
         flex-direction: column;
         align-items: center;
     }
@@ -96,16 +105,28 @@
     .childContainer {
         margin-top: 23px;
     }
+
+    .altChildContainer {
+        margin-top: 15.5px;
+    }
 }
 
 @include respond-to("extra-small") {
     .childContainer {
         margin-top: 22px;
     }
+
+    .altChildContainer {
+        margin-top: 14.5px;
+    }
 }
 
 @include respond-to("extra-extra-small") {
     .childContainer {
         margin-top: 20px;
+    }
+
+    .altChildContainer {
+        margin-top: 13.5px;
     }
 }
