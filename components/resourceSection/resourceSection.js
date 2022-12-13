@@ -5,13 +5,20 @@ import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/inse
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./resourceSection.module.scss";
 
-const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, children }) => {
+const ResourceSection = ({
+  title,
+  cards,
+  caption,
+  isCaptionLinkExternal,
+  hasBorderBottom,
+  children,
+}) => {
   return (
     <div
       className={clsx(
         styles.sectionContainer,
         utilStyles.outerContainer,
-        utilStyles.containerBorderBottom,
+        hasBorderBottom ? utilStyles.containerBorderBottom : undefined,
         caption && styles.background
       )}
     >
