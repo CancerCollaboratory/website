@@ -56,13 +56,13 @@ const Home = () => {
             title={lateralColumn1?.rightColumn?.title}
             subTitle={lateralColumn1?.rightColumn?.subTitle}
           >
-            <div className={utilStyles.childContainer}>
+            <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
               <BarChart
                 srcPath={lateralColumn1?.rightColumn?.barChart?.srcPath}
                 alt={lateralColumn1?.rightColumn?.barChart?.alt}
               />
             </div>
-            <div className={utilStyles.childContainer}>
+            <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
               <Table
                 title={lateralColumn1?.rightColumn?.table?.title}
                 body={lateralColumn1?.rightColumn?.table?.body}
