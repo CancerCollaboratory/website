@@ -1,12 +1,11 @@
 import clsx from "clsx";
 import ResourceCardLayout from "../resourceCardLayout/resourceCardLayout";
-import NavLine from "../navLine/navLine";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./resourceSection.module.scss";
 
-const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLinks }) => {
+const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, children }) => {
   return (
     <div
       className={clsx(
@@ -26,7 +25,7 @@ const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLink
           )}
         </div>
       )}
-      {navLinks && <NavLine links={navLinks} />}
+      {children}
     </div>
   );
 };
