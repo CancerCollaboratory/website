@@ -122,11 +122,7 @@ const Home = () => {
         buttonData={callToAction?.buttonData}
         hasBorderBottom={callToAction?.hasBorderBottom}
       />
-      <ResourceSection
-        title={resourceSection?.title}
-        cards={resourceSection?.cards}
-        hasBorderBottom={resourceSection?.hasBorderBottom}
-      >
+      <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards}>
         <div className={utilStyles.childContainer}>
           <NavLine navItems={resourceSection?.navLine?.items} />
         </div>
