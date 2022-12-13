@@ -80,7 +80,7 @@ const Home = () => {
             imageAlt={lateralColumn2?.leftColumn?.imageAlt}
             body={lateralColumn2?.leftColumn?.body}
           >
-            <div className={utilStyles.childContainer}>
+            <div className={utilStyles.altChildContainer}>
               <ListLine
                 isVertical={lateralColumn2?.leftColumn?.listLine?.isVertical}
                 items={lateralColumn2?.leftColumn?.listLine?.items}
