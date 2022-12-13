@@ -164,11 +164,9 @@
                         "isLinkExternal": false
                     }
                 ]
-            },
-            "hasBackground": true
+            }
         },
-        "hasBorderBottom": true,
-        "hasColumnBorder": true
+        "hasBorderBottom": true
     },
     "lateralColumn3": {
         "title": "The Collaboratory and Cancer Genomic Research",
