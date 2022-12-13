@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import CustomLink from "../customLink/customLink";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./featureBoard.module.scss";
 
 const FeatureBoard = ({ boards }) => {
@@ -14,7 +15,8 @@ const FeatureBoard = ({ boards }) => {
               className={clsx(
                 styles.innerContainer,
                 board.hasBackground ? styles.background : undefined,
-                index % 2 !== 0 ? styles.addBackground : undefined
+                index % 2 !== 0 ? styles.addBackground : undefined,
+                board.titleLink ? utilStyles.commonAnchor : undefined
               )}
               key={index}
             >
