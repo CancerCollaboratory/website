@@ -60,6 +60,7 @@ const CallToAction = ({
                   label={button.label}
                   link={button.link}
                   isLinkExternal={button.isLinkExternal}
+                  hasBlueBackground={button.hasBlueBackground}
                   hasIcon={button.hasIcon}
                   key={index}
                 />
