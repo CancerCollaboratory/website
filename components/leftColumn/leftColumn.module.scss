@@ -28,6 +28,13 @@
         }
     }
 
+    .introBody,
+    .lastIntroBody {
+        font-weight: lighter;
+        line-height: 38px;
+        font-size: 17px;
+    }
+
     .bodyText,
     .lastBodyText {
         p {
@@ -37,6 +44,7 @@
 
     .megaTitle,
     .head,
+    .introBody,
     .bodyText {
         margin-bottom: 25px;
     }
@@ -110,8 +118,14 @@
             }
         }
 
+        .introBody,
+        .lastIntroBody {
+            line-height: 28px;
+        }
+
         .megaTitle,
         .head,
+        .introBody,
         .bodyText {
             margin-bottom: 23px;
         }
@@ -134,6 +148,7 @@
 
         .megaTitle,
         .head,
+        .introBody,
         .bodyText {
             margin-bottom: 22px;
         }
@@ -156,6 +171,7 @@
 
         .megaTitle,
         .head,
+        .introBody,
         .bodyText {
             margin-bottom: 20px;
         }

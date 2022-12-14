@@ -39,7 +39,13 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
           item.text && (
             <div
               className={clsx(
-                !item.isLastText ? styles.bodyText : styles.lastBodyText,
+                !item.isLastText
+                  ? megaTitle
+                    ? styles.introBody
+                    : styles.bodyText
+                  : megaTitle
+                  ? styles.lastIntroBody
+                  : styles.lastBodyText,
                 utilStyles.commonAnchor
               )}
               key={index}
