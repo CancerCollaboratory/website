@@ -22,7 +22,8 @@ const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children
               height={62}
             />
           )}
-          {title && <h2 className={styles.title}>{title}</h2>}
+          {title && !children && <h2 className={styles.title}>{title}</h2>}
+          {title && children && <h3>{title}</h3>}
         </div>
       )}
       {body?.map(
