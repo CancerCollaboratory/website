@@ -13,7 +13,7 @@ const LateralColumn = ({
   hasBackground,
   hasBorderBottom,
   hasColumnBorder,
-  hasColumnAlignment,
+  styleColumnAlignment,
 }) => {
   if (!leftColumn || !rightColumn) {
     return null;
@@ -47,12 +47,7 @@ const LateralColumn = ({
             {title && <h2 className={styles.title}>{title}</h2>}
           </div>
         )}
-        <div
-          className={clsx(
-            styles.innerContainer,
-            hasColumnAlignment ? utilStyles.verticallyCenterItem : undefined
-          )}
-        >
+        <div className={clsx(styles.innerContainer, styleColumnAlignment)}>
           <Column styleBorder={clsx(hasColumnBorder ? utilStyles.columnBorder : undefined)}>
             {leftColumn}
           </Column>

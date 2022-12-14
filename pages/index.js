@@ -71,6 +71,7 @@ const Home = () => {
           </RightColumn>
         }
         hasBorderBottom={lateralColumn1?.hasBorderBottom}
+        styleColumnAlignment={utilStyles.reverseVerticalAlignment}
       />
       <LateralColumn
         leftColumn={

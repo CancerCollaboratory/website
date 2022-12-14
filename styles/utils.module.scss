@@ -52,6 +52,10 @@
     justify-content: center;
 }
 
+.reverseVerticalAlignment {
+    align-items: flex-end;
+}
+
 .commonAnchor {
     a {
         text-decoration: underline;

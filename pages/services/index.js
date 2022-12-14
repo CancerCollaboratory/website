@@ -50,7 +50,7 @@ const Services = () => {
           }
           hasBackground={lateralColumn2?.hasBackground}
           hasBorderBottom={lateralColumn2?.hasBorderBottom}
-          hasColumnAlignment={lateralColumn2?.hasColumnAlignment}
+          styleColumnAlignment={utilStyles.verticallyCenterItem}
         />
         <ResourceSection
           title={resourceSection?.title}
