@@ -59,7 +59,7 @@ const Home = () => {
               srcPath={lateralColumn1?.rightColumn?.barChart?.srcPath}
               alt={lateralColumn1?.rightColumn?.barChart?.alt}
             />
-            <div className={utilStyles.childContainer}>
+            <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
               <Table
                 title={lateralColumn1?.rightColumn?.table?.title}
                 body={lateralColumn1?.rightColumn?.table?.body}
