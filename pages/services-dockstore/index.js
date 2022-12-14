@@ -4,12 +4,14 @@ import LateralColumn from "../../components/lateralColumn/lateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
 import FeatureBoard from "../../components/featureBoard/featureBoard";
+import ResourceSection from "../../components/resourceSection/resourceSection";
 import pageData from "../../data/pages/services/services-dockstore.json";
 import utilStyles from "../../styles/utils.module.scss";
 
 const Dockstore = () => {
   const jumbotron = pageData.jumbotron;
   const lateralColumn = pageData.lateralColumn;
+  const resourceSection = pageData.resourceSection;
 
   return (
     <>
@@ -45,6 +47,11 @@ const Dockstore = () => {
             </RightColumn>
           }
           hasBorderBottom={lateralColumn?.hasBorderBottom}
+        />
+        <ResourceSection
+          title={resourceSection?.title}
+          cards={resourceSection?.cards}
+          hasBackground={resourceSection?.hasBackground}
         />
       </div>
     </>
