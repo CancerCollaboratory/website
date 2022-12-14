@@ -102,7 +102,6 @@
     }
 }
 
-// extra-small: 388px
 @include respond-to("extra-small") {
     .container {
         width: 80%;
