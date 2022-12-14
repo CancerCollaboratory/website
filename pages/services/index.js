@@ -48,11 +48,15 @@ const Services = () => {
               body={statGrid?.body}
             />
           }
-          styleBackground={utilStyles.gradientBackgroundGray}
+          hasBackground={lateralColumn2?.hasBackground}
           hasBorderBottom={lateralColumn2?.hasBorderBottom}
           styleColumnAlignment={utilStyles.verticallyCenterItem}
         />
-        <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards} />
+        <ResourceSection
+          title={resourceSection?.title}
+          cards={resourceSection?.cards}
+          hasBorderBottom={resourceSection?.hasBorderBottom}
+        />
         <CallToAction
           title={callToAction?.title}
           imageSrcPath={callToAction?.imageSrcPath}

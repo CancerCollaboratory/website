@@ -55,7 +55,7 @@
 
 @include respond-to("large") {
     .container {
-        padding: 21px 0px;
+        padding: 19px 0px;
 
         .titleContainer {
             margin: 0px 19px;
@@ -75,7 +75,7 @@
             flex-direction: column;
 
             .description {
-                margin: 4px 19px;
+                margin: 6px 19px;
                 width: 430px;
 
                 p {
@@ -98,10 +98,10 @@
 @include respond-to("medium") {
     .container {
         flex-direction: column;
-        padding: 19.5px 0px;
+        padding: 18px 0px 19px 0px;
 
         .titleContainer {
-            margin: 5.5px 0px;
+            margin: 7px 0px;
 
             .image {
                 margin-right: 11.5px;
@@ -116,7 +116,7 @@
             align-items: center;
 
             .description {
-                margin: 5.5px 0px;
+                margin: 7px 0px;
                 text-align: center;
                 width: 350px;
             }
@@ -130,10 +130,11 @@
 
 @include respond-to("small") {
     .container {
-        padding: 17.5px 0px;
-        width: 100%;
+        padding: 16.5px 0px 17.5px 0px;
 
         .titleContainer {
+            margin: 6.5px 0px;
+
             .image {
                 margin-right: 11px;
                 width: 21px;
@@ -146,6 +147,7 @@
 
         .bodyContainer {
             .description {
+                margin: 6.5px 0px;
                 width: 54%;
 
                 p {
@@ -154,15 +156,17 @@
             }
         }
     }
+
+    .altContainer {
+        width: 100%;
+    }
 }
 
 @include respond-to("extra-small") {
     .container {
-        padding: 17px 0px;
+        padding: 15.5px 0px 16.5px 0px;
 
         .titleContainer {
-            margin: 5px 0px;
-
             .image {
                 margin-right: 10px;
                 width: 20px;
@@ -175,7 +179,6 @@
 
         .bodyContainer {
             .description {
-                margin: 5px 0px;
                 width: 66%;
             }
         }
@@ -184,10 +187,10 @@
 
 @include respond-to("extra-extra-small") {
     .container {
-        padding: 15.5px 0px;
+        padding: 14px 0px 15px 0px;
 
         .titleContainer {
-            margin: 4.5px 0px;
+            margin: 6px 0px;
 
             .image {
                 margin-right: 7px;
@@ -201,7 +204,7 @@
 
         .bodyContainer {
             .description {
-                margin: 4.5px 0px;
+                margin: 6px 0px;
                 width: 63%;
 
                 p {

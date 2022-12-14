@@ -1,17 +1,21 @@
 import Image from "next/image";
 import styles from "./barChart.module.scss";
 
-const BarChart = ({ srcPath, alt }) => {
+const BarChart = ({ title, subTitle, srcPath, alt }) => {
   return (
-    <Image
-      src={srcPath}
-      alt={alt}
-      priority={true}
-      className={styles.chart}
-      quality={100}
-      width={550}
-      height={550}
-    />
+    <div className={styles.container}>
+      <h2 className={styles.title}>{title}</h2>
+      <p className={styles.subTitle}>{subTitle}</p>
+      <Image
+        src={srcPath}
+        alt={alt}
+        priority={true}
+        className={styles.chart}
+        quality={100}
+        width={550}
+        height={550}
+      />
+    </div>
   );
 };
 

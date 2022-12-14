@@ -1,23 +1,29 @@
 import clsx from "clsx";
-import CardLayout from "../cardLayout/cardLayout";
-import NavLine from "../navLine/navLine";
+import ResourceCardLayout from "../resourceCardLayout/resourceCardLayout";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkInternal, insertLinkExternal } from "../../lib/functions/insertLink";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./resourceSection.module.scss";
 
-const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLinks }) => {
+const ResourceSection = ({
+  title,
+  cards,
+  caption,
+  isCaptionLinkExternal,
+  hasBorderBottom,
+  children,
+}) => {
   return (
     <div
       className={clsx(
         styles.sectionContainer,
         utilStyles.outerContainer,
-        utilStyles.containerBorderBottom,
+        hasBorderBottom ? utilStyles.containerBorderBottom : undefined,
         caption && styles.background
       )}
     >
       {title && <h2>{title}</h2>}
-      {cards && <CardLayout cards={cards} />}
+      {cards && <ResourceCardLayout cards={cards} />}
       {caption && (
         <div className={clsx(styles.caption, utilStyles.commonAnchor)}>
           {renderData(
@@ -26,7 +32,7 @@ const ResourceSection = ({ title, cards, caption, isCaptionLinkExternal, navLink
           )}
         </div>
       )}
-      {navLinks && <NavLine links={navLinks} />}
+      {children}
     </div>
   );
 };

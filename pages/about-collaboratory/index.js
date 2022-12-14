@@ -26,13 +26,14 @@ const AboutCollaboratory = () => {
           leftColumn={
             <LeftColumn
               title={lateralColumn1?.leftColumn?.title}
-              centerTitle={lateralColumn1?.leftColumn?.centerTitle}
+              centerHead={lateralColumn1?.leftColumn?.centerHead}
               body={lateralColumn1?.leftColumn?.body}
             />
           }
           rightColumn={
             <RightColumn
               title={lateralColumn1?.rightColumn?.title}
+              centerHead={lateralColumn1?.rightColumn?.centerHead}
               body={lateralColumn1?.rightColumn?.body}
             />
           }
@@ -64,7 +65,7 @@ const AboutCollaboratory = () => {
               />
             </RightColumn>
           }
-          styleColumnBorder={utilStyles.columnBorder}
+          hasColumnBorder={lateralColumn2?.hasColumnBorder}
         />
       </div>
     </>

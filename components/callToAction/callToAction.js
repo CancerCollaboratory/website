@@ -13,13 +13,16 @@ const CallToAction = ({
   description,
   isDescriptionLinkExternal,
   buttonData,
+  hasBorderBottom,
 }) => {
   return (
     <div
       className={clsx(
         styles.container,
+        utilStyles.outerContainer,
         utilStyles.gradientBackgroundGray,
-        utilStyles.outerContainer
+        description ? styles.altContainer : undefined,
+        hasBorderBottom ? utilStyles.containerBorderBottom : undefined
       )}
     >
       {title && (
@@ -60,6 +63,7 @@ const CallToAction = ({
                   label={button.label}
                   link={button.link}
                   isLinkExternal={button.isLinkExternal}
+                  hasBlueBackground={button.hasBlueBackground}
                   hasIcon={button.hasIcon}
                   key={index}
                 />

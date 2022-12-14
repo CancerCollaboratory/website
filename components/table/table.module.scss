@@ -2,82 +2,102 @@
 @import "../../styles/mixins";
 
 .table {
-    border-collapse: separate;
-    border-spacing: 0px 9px;
-
     .title {
-        color: $color-dark-x3-gray;
-        margin-bottom: 1px;
         text-align: left;
         font-weight: 600;
-        font-size: 14px;
     }
 
-    .cell {
-        background-color: $color-light-x9-gray;
-        padding: 4px 13px;
-        font-size: 13px;
+    tbody {
+        tr {
+            .cell {
+                background-color: $color-light-x9-gray;
+                border-top: 12.5px solid white;
+                padding: 4px 12.5px;
 
-        .cellContent {
-            text-align: right;
-            color: $color-dark-x2-gray;
+                .cellContent {
+                    text-align: right;
+                }
+
+                p {
+                    line-height: 170%;
+                    font-size: 13px;
+                }
+            }
         }
     }
 }
 
 @include respond-to("large") {
     .table {
-        .title {
-            font-size: 13px;
-        }
-
-        .cell {
-            padding: 4px 12px;
-            font-size: 12px;
+        tbody {
+            tr {
+                .cell {
+                    padding: 4px 12px;
+                }
+            }
         }
     }
 }
 
 @include respond-to("medium") {
     .table {
-        .title {
-            font-size: 12px;
-        }
+        tbody {
+            tr {
+                .cell {
+                    padding: 4px 11px;
 
-        .cell {
-            padding: 4px 11px;
-            font-size: 11px;
+                    p {
+                        line-height: 168%;
+                        font-size: 12px;
+                    }
+                }
+            }
         }
     }
 }
 
 @include respond-to("small") {
     .table {
-        border-spacing: 0px 8px;
+        tbody {
+            tr {
+                .cell {
+                    border-top-width: 11.5px;
+                    padding: 4px 10.5px;
 
-        .title {
-            margin-bottom: 0px;
-            font-size: 11.5px;
-        }
-
-        .cell {
-            padding: 4px 10.5px;
-            font-size: 10.5px;
+                    p {
+                        font-size: 11px;
+                    }
+                }
+            }
         }
     }
 }
 
 @include respond-to("extra-small") {
     .table {
-        border-spacing: 0px 7px;
-
-        .title {
-            font-size: 11px;
+        tbody {
+            tr {
+                .cell {
+                    border-top-width: 11px;
+                    padding: 3px 10px;
+                }
+            }
         }
+    }
+}
 
-        .cell {
-            padding: 3px 10px;
-            font-size: 10px;
+@include respond-to("extra-extra-small") {
+    .table {
+        tbody {
+            tr {
+                .cell {
+                    border-top-width: 10px;
+
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
         }
     }
 }
