@@ -5,16 +5,12 @@ import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/inse
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./rightColumn.module.scss";
 
-const RightColumn = ({ title, subTitle, centerHead, imageSrcPath, imageAlt, body, children }) => {
+const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children }) => {
   return (
     <div className={styles.container}>
       {(title || (imageSrcPath && imageAlt)) && (
         <div
-          className={clsx(
-            styles.head,
-            centerHead ? utilStyles.horizontallyCenterItem : undefined,
-            !subTitle ? styles.headMargin : undefined
-          )}
+          className={clsx(styles.head, centerHead ? utilStyles.horizontallyCenterItem : undefined)}
         >
           {imageSrcPath && imageAlt && (
             <Image
@@ -29,7 +25,6 @@ const RightColumn = ({ title, subTitle, centerHead, imageSrcPath, imageAlt, body
           {title && <h2 className={styles.title}>{title}</h2>}
         </div>
       )}
-      {subTitle && <p className={styles.subTitle}>{subTitle}</p>}
       {body?.map(
         (item, index) =>
           item.text && (

@@ -37,9 +37,9 @@
             }
         },
         "rightColumn": {
-            "title": "Collaboratory Data Repository: Donor Distribution by Primary Site",
-            "subTitle": "39 projects and 17 primary sites",
             "barChart": {
+                "title": "Collaboratory Data Repository: Donor Distribution by Primary Site",
+                "subTitle": "39 projects and 17 primary sites",
                 "srcPath": "/assets/barChart/bar-chart.svg",
                 "alt": "SVG - Donor Distribution Bar Chart"
             },
