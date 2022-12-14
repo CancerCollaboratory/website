@@ -39,6 +39,7 @@ const Dockstore = () => {
               <FeatureBoard boards={lateralColumn?.rightColumn?.featureBoard?.boards} />
             </RightColumn>
           }
+          hasBorderBottom={lateralColumn?.hasBorderBottom}
         />
       </div>
     </>
