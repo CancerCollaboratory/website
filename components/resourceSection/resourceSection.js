@@ -11,6 +11,7 @@ const ResourceSection = ({
   caption,
   isCaptionLinkExternal,
   hasBorderBottom,
+  hasBackground,
   children,
 }) => {
   return (
@@ -18,6 +19,7 @@ const ResourceSection = ({
       className={clsx(
         styles.sectionContainer,
         utilStyles.outerContainer,
+        hasBackground ? utilStyles.gradientBackgroundGray : undefined,
         hasBorderBottom ? utilStyles.containerBorderBottom : undefined,
         caption && styles.background
       )}
