@@ -42,7 +42,7 @@
         },
         {
             "label": "Our Research",
-            "link": "/research",
+            "link": "/research/software",
             "navbarSubMenuItems": [
                 {
                     "label": "Software for Your Research",
