@@ -21,7 +21,7 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdo
     <EscapeOutside onEscapeOutside={() => setIsItemMenuExpanded(false)}>
       {isItemlLink ? (
         <div
-          className={styles.navbarItem}
+          className={styles.itemContainer}
           onMouseOver={() => setIsItemMenuExpanded(true)}
           onMouseLeave={() => setIsItemMenuExpanded(false)}
         >
@@ -35,7 +35,7 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdo
           )}
         </div>
       ) : (
-        <div className={styles.expandedMenuItem} onClick={() => expandSubMenu()}>
+        <div className={styles.expandedItemContainer} onClick={() => expandSubMenu()}>
           <p className={styles.itemName}>{itemLabel + " ▾"}</p>
           {isItemMenuExpanded && (
             <NavbarMenu
