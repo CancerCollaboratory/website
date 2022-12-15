@@ -42,13 +42,13 @@ const Navbar = () => {
             </ul>
           </div>
         </nav>
-        <div className={styles.mainNavbar}>
+        <div className={styles.mainContainer}>
           <CustomLink link={data.websiteLogo.link}>
             <div className={styles.imageContainer}>
               <Image
                 src={data.websiteLogo.srcPath}
                 alt={data.websiteLogo.label}
-                className={styles.siteLogo}
+                className={styles.logo}
                 priority={true}
                 quality={100}
                 width={275}
@@ -57,15 +57,15 @@ const Navbar = () => {
             </div>
           </CustomLink>
           <div
-            className={styles.navbarToggler}
+            className={styles.toggler}
             onClick={expandNavMenu}
             aria-expanded={isNavbarDropdownToggled.toString()}
           >
-            <span className={styles.iconBar}></span>
-            <span className={styles.iconBar}></span>
-            <span className={styles.iconBar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
           </div>
-          <div className={styles.navbarItemsLine}>
+          <div className={styles.itemLine}>
             {data.navbarItems.map((item, index) => (
               <NavbarItem
                 itemLabel={item.label}
@@ -75,14 +75,14 @@ const Navbar = () => {
                 key={index}
               />
             ))}
-            <SearchBar styleContainer={styles.navbarItem} styleInput={styles.searchBar} />
+            <SearchBar styleContainer={styles.itemContainer} styleInput={styles.searchBarInput} />
           </div>
         </div>
-        <div className={styles.navDropdown} aria-expanded={isNavbarDropdownToggled.toString()}>
+        <div className={styles.dropdown} aria-expanded={isNavbarDropdownToggled.toString()}>
           <div className={styles.expandedMenuContainer}>
             <SearchBar
-              styleContainer={styles.extendSearchBar}
-              styleInput={styles.expandedSearchBar}
+              styleContainer={styles.expandedSearchBarContainer}
+              styleInput={styles.expandedSearchBarInput}
             />
             <div className={styles.wrapExpandedMenu}>
               {data.navbarItems.map((item, index) =>
@@ -95,7 +95,7 @@ const Navbar = () => {
                     key={index}
                   />
                 ) : (
-                  <div className={styles.expandedMenuItem} key={index}>
+                  <div className={styles.expandedItemContainer} key={index}>
                     <CustomLink label={item.label} link={item.link} styleWrap={styles.noSubMenu} />
                   </div>
                 )
