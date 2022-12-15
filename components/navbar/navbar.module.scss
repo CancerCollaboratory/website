@@ -103,7 +103,7 @@
                     }
                 }
 
-                .selectNavbarItem {
+                .selectedNavbarItem {
                     border-left: 3px solid $color-dark-x2-red;
                     color: $color-dark-x2-red;
                 }
@@ -118,7 +118,7 @@
                     width: 185px;
                 }
 
-                .subMenuDropdown {
+                .dropdown {
                     display: flex;
                     flex-direction: column;
                     position: absolute;
@@ -146,8 +146,8 @@
         }
     }
 
-    .dropdown {
-        .expandedMenuContainer {
+    .outerExpandedDropdownContainer {
+        .expandedDropdownContainer {
             display: none;
         }
     }
@@ -250,7 +250,7 @@
                         width: 168px;
                     }
 
-                    .subMenuDropdown {
+                    .dropdown {
                         top: 153px;
                     }
                 }
@@ -340,15 +340,15 @@
             }
         }
 
-        .dropdown[aria-expanded="false"] {
+        .outerExpandedDropdownContainer[aria-expanded="false"] {
             display: none;
         }
 
-        .dropdown[aria-expanded="true"] {
+        .outerExpandedDropdownContainer[aria-expanded="true"] {
             height: max-content;
             margin-top: 4px;
 
-            .expandedMenuContainer {
+            .expandedDropdownContainer {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
@@ -370,7 +370,7 @@
                     }
                 }
 
-                .wrapExpandedMenu {
+                .wrapExpandedDropdown {
                     width: 100%;
 
                     .expandedItemContainer {
@@ -389,13 +389,13 @@
                                 }
                             }
 
-                            .noSubMenu {
+                            .noDropdown {
                                 background-color: $color-light-x9-gray;
                                 color: $color-dark-x2-red;
                             }
                         }
 
-                        .expandedSubMenuItem {
+                        .expandedSubDropdown {
                             display: flex;
                             flex-direction: column;
                             border-top: 1px solid $color-light-x4-gray;
@@ -417,12 +417,12 @@
                             padding: 9px 15px;
                         }
 
-                        .noSubMenu {
+                        .noDropdown {
                             padding: 9.5px 15px;
                         }
 
                         .itemName,
-                        .noSubMenu {
+                        .noDropdown {
                             color: $color-dark-x3-gray;
                             font-size: 13.5px;
                         }
