@@ -27,14 +27,22 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdo
         >
           <NavbarLink label={itemLabel} link={itemLink} menuItems={itemMenu} />
           {isItemMenuExpanded && itemMenu && (
-            <NavbarMenu styleMenu={styles.subMenuDropdown} menuItems={itemMenu} />
+            <NavbarMenu
+              styleMenu={styles.subMenuDropdown}
+              menuItems={itemMenu}
+              showActivePage={isItemlLink}
+            />
           )}
         </div>
       ) : (
         <div className={styles.expandedMenuItem} onClick={() => expandSubMenu()}>
           <p className={styles.itemName}>{itemLabel + " ▾"}</p>
           {isItemMenuExpanded && (
-            <NavbarMenu styleMenu={styles.expandedSubMenuItem} menuItems={itemMenu} />
+            <NavbarMenu
+              styleMenu={styles.expandedSubMenuItem}
+              menuItems={itemMenu}
+              showActivePage={isItemlLink}
+            />
           )}
         </div>
       )}
