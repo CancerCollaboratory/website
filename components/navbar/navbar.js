@@ -23,22 +23,19 @@ const Navbar = () => {
 
   return (
     <EscapeOutside onEscapeOutside={() => setIsNavbarDropdownToggled(false)}>
-      <div className={styles.navbarContainer}>
-        <nav className={styles.secondaryNavbarContainer}>
-          <div className={styles.secondaryNavbarBlock}>
-            <ul className={styles.listColoredBlock}>
+      <div className={styles.container}>
+        <nav className={styles.secondaryContainer}>
+          <div className={styles.secondaryBlock}>
+            <ul className={styles.coloredBlock}>
               {data.headerList.headerTop.map((item, index) => (
-                <li className={styles.itemColoredBlock} key={index}>
+                <li key={index}>
                   <CustomLink label={item.label} link={item.link} />
                 </li>
               ))}
             </ul>
-            <ul className={styles.listBlock}>
+            <ul className={styles.uncoloredBlock}>
               {data.headerList.headerBottom.map((item, index) => (
-                <li
-                  className={clsx(styles.itemBlock, item?.hasBorder && styles.itemBorderRight)}
-                  key={index}
-                >
+                <li className={clsx(item?.hasBorder ? styles.borderRight : undefined)} key={index}>
                   <CustomLink label={item.label} link={item.link} isLinkExternal={true} />
                 </li>
               ))}
