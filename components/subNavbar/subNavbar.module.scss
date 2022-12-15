@@ -1,7 +1,7 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-.subNavbarContainer {
+.container {
     display: flex;
     list-style: none;
     justify-content: center;
@@ -35,7 +35,7 @@
 }
 
 @include respond-to("large") {
-    .subNavbarContainer {
+    .container {
         padding: 9.8px 0px;
 
         li {
@@ -50,7 +50,7 @@
 }
 
 @include respond-to("medium") {
-    .subNavbarContainer {
+    .container {
         padding: 9.5px 0px;
 
         li {
@@ -65,7 +65,7 @@
 }
 
 @include respond-to("small") {
-    .subNavbarContainer {
+    .container {
         display: none;
     }
 }
