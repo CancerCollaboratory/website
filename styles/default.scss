@@ -22,13 +22,17 @@ h1 {
     font-size: 28px;
 }
 
-h2 {
+h2,
+h3 {
     color: $color-dark-x4-gray;
+}
+
+h2 {
     font-size: 21px;
 }
 
 h3 {
-    font-weight: 500;
+    font-size: 17px;
 }
 
 p {
@@ -60,6 +64,10 @@ a {
     h2 {
         font-size: 20px;
     }
+
+    h3 {
+        font-size: 16px;
+    }
 }
 
 @include respond-to("medium") {
@@ -69,6 +77,10 @@ a {
 
     h2 {
         font-size: 19px;
+    }
+
+    h3 {
+        font-size: 15px;
     }
 
     p,
@@ -86,6 +98,10 @@ a {
         font-size: 16px;
     }
 
+    h3 {
+        font-size: 13px;
+    }
+
     p,
     caption {
         font-size: 12px;
@@ -99,6 +115,10 @@ a {
 
     h2 {
         font-size: 15px;
+    }
+
+    h3 {
+        font-size: 12px;
     }
 }
 

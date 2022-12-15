@@ -67,5 +67,26 @@
             }
         },
         "hasBorderBottom": true
+    },
+    "resourceSection": {
+        "title": "Dockstore Resources",
+        "cards": [
+            {
+                "title": "### [Tutorial: Getting Started](https://dockstore.org/docs/getting-started)",
+                "isTitleLinkExternal": true,
+                "bodyText": "Our most recent tutorial for getting started with Dockstore.",
+                "imageSrcPath": "/assets/resourceCard/icon-documentation.svg",
+                "imageAlt": "Icon - Documentation"
+            },
+            {
+                "title": "### [Tutorial: Video](https://www.youtube.com/watch?v=-JuKsSQja3g)",
+                "isTitleLinkExternal": true,
+                "bodyText": "A video tutorial for a slightly older build of Dockstore.",
+                "imageSrcPath": "/assets/resourceCard/icon-video.svg",
+                "imageAlt": "Icon - Video",
+                "isLastCard": true
+            }
+        ],
+        "hasBackground": true
     }
 }
