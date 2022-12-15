@@ -2,14 +2,14 @@ import clsx from "clsx";
 import styles from "./statGrid.module.scss";
 
 const StatGrid = ({ title, body }) => {
-  return (
-    <div className={styles.statGridContainer}>
-      {title && (
+  if (!title || !body) {
+    return null;
+  } else {
+    return (
+      <div className={styles.statGridContainer}>
         <div className={styles.statHeadContainer}>
           <p className={styles.statGridTitle}>{title}</p>
         </div>
-      )}
-      {body && (
         <ul className={styles.statGridBlock}>
           {body.map((item, index) => (
             <li
@@ -30,9 +30,9 @@ const StatGrid = ({ title, body }) => {
             </li>
           ))}
         </ul>
-      )}
-    </div>
-  );
+      </div>
+    );
+  }
 };
 
 export default StatGrid;
