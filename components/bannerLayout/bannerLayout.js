@@ -5,21 +5,21 @@ import bannerData from "../../data/components/banner/banner.json";
 const BannerLayout = ({ children }) => {
   const banner = bannerData.banner;
 
-  if (banner.isActive !== true) {
+  if (banner?.isActive !== true) {
     return children;
   } else {
     return (
       <>
         <Banner
-          title={banner.title}
-          description={banner.description}
-          isDescriptionLinkExternal={banner.isDescriptionLinkExternal}
+          title={banner?.title}
+          description={banner?.description}
+          isDescriptionLinkExternal={banner?.isDescriptionLinkExternal}
         >
-          {banner.linkLabel && banner.linkTarget && (
+          {banner?.linkLabel && banner?.linkTarget && (
             <CustomLink
-              label={banner.linkLabel}
-              link={banner.linkTarget}
-              isLinkExternal={banner.isLinkTargetExternal}
+              label={banner?.linkLabel}
+              link={banner?.linkTarget}
+              isLinkExternal={banner?.isLinkTargetExternal}
             />
           )}
         </Banner>
