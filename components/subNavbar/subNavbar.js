@@ -52,12 +52,7 @@ const SubNavbar = () => {
             <CustomLink
               label={item.label}
               link={item.link}
-              styleLabel={
-                item.link === asPath ||
-                item.subMenuSection?.find((subItem) => subItem.link === asPath)
-                  ? styles.selectedSubNavbarItem
-                  : undefined
-              }
+              styleLabel={item.link === asPath ? styles.selectedSubNavbarItem : undefined}
             />
           </li>
         ))}
