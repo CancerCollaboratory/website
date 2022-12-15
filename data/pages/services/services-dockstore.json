@@ -6,7 +6,7 @@
         },
         "image": {
             "srcPath": "/assets/jumbotron/logo-dockstore.svg",
-            "label": "Dockstore"
+            "alt": "Dockstore"
         },
         "buttonData": {
             "label": "dockstore.org",
