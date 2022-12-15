@@ -1,18 +1,18 @@
 @import '../../styles/colors';
 @import '../../styles/mixins';
 
-.footerContainer {
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-top: 1px solid $color-light-x4-gray;
 
-    .footerHeadContainer {
+    .headContainer {
         display: flex;
         justify-content: center;
         align-items: center;
 
-        .footerLogoContainer {
+        .logoContainer {
             margin: 17px 17px 17px 0px;
 
             a {
@@ -53,13 +53,13 @@
         }
     }
 
-    .footerTailContainer {
+    .tailContainer {
         display: flex;
         justify-content: center;
         background-color: $color-dark-x1-blue;
         padding: 20px 0px;
 
-        .footerItemContainer {
+        .tailItemContainer {
             display: flex;
             flex-direction: column;
             padding: 0px 19px;
@@ -94,16 +94,16 @@
             }
         }
 
-        .footerItemRightBorder {
+        .tailItemRightBorder {
             border-right: 1px solid $color-light-x2-blue;
         }
     }
 }
 
 @include respond-to("large") {
-    .footerContainer {
-        .footerTailContainer {
-            .footerItemContainer {
+    .container {
+        .tailContainer {
+            .tailItemContainer {
                 .subItemsList {
                     .columnPadding {
                         padding: 0px 0px 10px 0px;
@@ -119,8 +119,8 @@
 }
 
 @include respond-to("medium") {
-    .footerContainer {
-        .footerHeadContainer {
+    .container {
+        .headContainer {
             .headItemContainer {
                 .headItemLabel {
                     margin-bottom: 2px;
@@ -140,8 +140,8 @@
             }
         }
 
-        .footerTailContainer {
-            .footerItemContainer {
+        .tailContainer {
+            .tailItemContainer {
                 padding: 0px 18.5px;
                 font-size: 11px;
             }
@@ -150,11 +150,11 @@
 }
 
 @include respond-to("small") {
-    .footerContainer {
-        .footerHeadContainer {
+    .container {
+        .headContainer {
             flex-direction: column;
 
-            .footerLogoContainer {
+            .logoContainer {
                 margin-right: 0px;
             }
 
@@ -180,11 +180,11 @@
             }
         }
 
-        .footerTailContainer {
+        .tailContainer {
             flex-direction: column;
             padding: 19.5px 0px 4.5px 0px;
 
-            .footerItemContainer {
+            .tailItemContainer {
                 align-items: center;
                 margin-bottom: 24px;
                 font-size: 12.5px;
@@ -205,11 +205,11 @@
                 }
             }
 
-            .resetFooterItemMargin {
+            .resetTailItemMargins {
                 margin-bottom: 15px;
             }
 
-            .footerItemRightBorder {
+            .tailItemRightBorder {
                 border-right: none;
             }
         }
@@ -217,12 +217,12 @@
 }
 
 @include respond-to("extra-small") {
-    .footerContainer {
-        .footerHeadContainer {
-            .footerLogoContainer {
+    .container {
+        .headContainer {
+            .logoContainer {
                 margin: 14.5px 0px;
 
-                .footerLogo {
+                .logo {
                     width: 65px;
                     height: auto;
                 }
@@ -248,10 +248,10 @@
             }
         }
 
-        .footerTailContainer {
+        .tailContainer {
             padding: 17.5px 0px 3.5px 0px;
 
-            .footerItemContainer {
+            .tailItemContainer {
                 margin-bottom: 22.5px;
                 font-size: 10.5px;
 
@@ -266,7 +266,7 @@
                 }
             }
 
-            .resetFooterItemMargin {
+            .resetTailItemMargins {
                 margin-bottom: 14px;
             }
         }
@@ -274,12 +274,12 @@
 }
 
 @include respond-to("extra-extra-small") {
-    .footerContainer {
-        .footerHeadContainer {
-            .footerLogoContainer {
+    .container {
+        .headContainer {
+            .logoContainer {
                 margin: 13.5px 0px;
 
-                .footerLogo {
+                .logo {
                     width: 60px;
                 }
             }
@@ -304,10 +304,10 @@
             }
         }
 
-        .footerTailContainer {
+        .tailContainer {
             padding-top: 17px;
 
-            .footerItemContainer {
+            .tailItemContainer {
                 margin-bottom: 21.5px;
                 font-size: 9.5px;
 
@@ -322,7 +322,7 @@
                 }
             }
 
-            .resetFooterItemMargin {
+            .resetTailItemMargins {
                 margin-bottom: 13.5px;
             }
         }
