@@ -6,12 +6,12 @@ import styles from "../footer/footer.module.scss";
 
 const FooterHead = ({ headItem }) => {
   return headItem.logo ? (
-    <div className={styles.footerLogoContainer}>
+    <div className={styles.logoContainer}>
       <CustomLink link={headItem.logo.link} isLinkExternal={true}>
         <Image
           src={headItem.logo.srcPath}
           alt={headItem.logo.label}
-          className={styles.footerLogo}
+          className={styles.logo}
           quality={100}
           width={77}
           height={56}
