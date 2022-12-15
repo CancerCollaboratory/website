@@ -3,30 +3,22 @@ import CustomLink from "../customLink/customLink";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "../footer/footer.module.scss";
 
-const FooterItem = ({ label, labelLink, footerItem }) => {
+const FooterTail = ({ label, labelLink, subItems }) => {
   return (
     <div
       className={clsx(
-        styles.footerItemContainer,
-        footerItem.subItems ? styles.footerItemRightBorder : styles.resetFooterItemMargin
+        styles.tailItemContainer,
+        subItems ? styles.tailItemRightBorder : styles.resetTailItemMargins
       )}
     >
       <CustomLink
         label={label}
         link={labelLink}
-        styleLabel={clsx(
-          utilStyles.itemLabel,
-          !footerItem.subItems ? styles.resetInternalMargins : undefined
-        )}
+        styleLabel={clsx(utilStyles.itemLabel, !subItems ? styles.resetInternalMargins : undefined)}
       />
-      {footerItem.subItems && (
-        <ul
-          className={clsx(
-            styles.subItemsList,
-            footerItem.subItems[0].column && styles.subItemsGrid
-          )}
-        >
-          {footerItem.subItems?.map((subItem, subItemIndex) =>
+      {subItems && (
+        <ul className={clsx(styles.subItemsList, subItems[0].column && styles.subItemsGrid)}>
+          {subItems?.map((subItem, subItemIndex) =>
             !subItem?.column ? (
               <li key={subItemIndex}>
                 <CustomLink
@@ -58,4 +50,4 @@ const FooterItem = ({ label, labelLink, footerItem }) => {
   );
 };
 
-export default FooterItem;
+export default FooterTail;
