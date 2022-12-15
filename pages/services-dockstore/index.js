@@ -19,7 +19,7 @@ const Dockstore = () => {
         title={jumbotron?.title}
         bodyText={jumbotron?.body?.text}
         imageSrcPath={jumbotron?.image?.srcPath}
-        imageAlt={jumbotron?.image?.label}
+        imageAlt={jumbotron?.image?.alt}
         buttonData={jumbotron?.buttonData}
       />
       <div className={utilStyles.pageBodyContainer}>
