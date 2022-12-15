@@ -8,10 +8,12 @@
             "srcPath": "/assets/jumbotron/logo-dockstore.svg",
             "label": "Dockstore"
         },
-        "button": {
+        "buttonData": {
             "label": "dockstore.org",
             "link": "https://dockstore.org",
-            "isLinkExternal": true
+            "isLinkExternal": true,
+            "hasBlueBackground": true,
+            "hasIcon": true
         }
     },
     "lateralColumn": {
