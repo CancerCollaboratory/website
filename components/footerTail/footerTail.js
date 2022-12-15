@@ -43,7 +43,7 @@ const FooterTail = ({ label, labelLink, subItems }) => {
                   className={subItemIndex === 0 ? styles.columnPadding : undefined}
                   key={subItemIndex}
                 >
-                  {subItem.column?.map((columnItem, columnIndex) => (
+                  {subItem.column.map((columnItem, columnIndex) => (
                     <li key={columnIndex}>
                       <CustomLink
                         label={columnItem.label}
