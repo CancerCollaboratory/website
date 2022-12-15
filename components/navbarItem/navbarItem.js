@@ -31,8 +31,8 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemDropdown, isDropdown
             <NavbarLink label={itemLabel} link={itemLink} dropdownItems={itemDropdown} />
             {isItemDropdownVisible && itemDropdown && (
               <NavbarDropdown
-                styleDropdown={styles.dropdown}
                 dropdownItems={itemDropdown}
+                styleDropdown={styles.dropdown}
                 showActivePage={isItemlLink}
               />
             )}
@@ -42,8 +42,8 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemDropdown, isDropdown
             <p className={styles.itemName}>{itemLabel + " ▾"}</p>
             {isItemDropdownVisible && (
               <NavbarDropdown
-                styleDropdown={styles.expandedSubDropdown}
                 dropdownItems={itemDropdown}
+                styleDropdown={styles.expandedSubDropdown}
                 showActivePage={isItemlLink}
               />
             )}
