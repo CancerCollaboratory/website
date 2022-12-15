@@ -14,7 +14,7 @@ const NavbarLink = ({ label, link, dropdownItems }) => {
       : setIsItemActiveState(false);
   }, [link, asPath, dropdownItems]);
 
-  if (!label && !link) {
+  if (!label || !link) {
     return null;
   } else {
     return (
