@@ -138,20 +138,8 @@
                         }
                     }
 
-                    .innerSubMenu {
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 12px;
-                    }
-
                     .activePage {
                         color: $color-dark-x2-red;
-                    }
-
-                    .subMenuDivision {
-                        border-bottom: 1px solid $color-light-x10-gray;
-                        margin-bottom: 5px;
-                        width: 100%;
                     }
                 }
             }
@@ -421,15 +409,6 @@
                                 &:hover {
                                     background-color: $color-light-x9-gray;
                                     color: $color-dark-x2-red;
-                                }
-                            }
-
-                            .innerExpandedMenu {
-                                display: flex;
-                                flex-direction: column;
-
-                                a {
-                                    padding-left: 44.5px;
                                 }
                             }
                         }
