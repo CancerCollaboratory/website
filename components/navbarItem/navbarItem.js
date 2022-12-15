@@ -1,49 +1,47 @@
 import EscapeOutside from "react-escape-outside";
 import NavbarLink from "../navbarLink/navbarLink";
-import NavbarMenu from "../navbarMenu/navbarMenu";
+import NavbarDropdown from "../navbarDropdown/navbarDropdown";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import styles from "../navbar/navbar.module.scss";
 
-const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemMenu, isNavbarDropdownExpanded }) => {
+const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemDropdown, isDropdownExpanded }) => {
   const { asPath } = useRouter();
-  const [isItemMenuExpanded, setIsItemMenuExpanded] = useState(false);
+  const [isItemDropdownVisible, setIsItemDropdownVisible] = useState(false);
 
   useEffect(() => {
-    setIsItemMenuExpanded(false);
-  }, [asPath, isNavbarDropdownExpanded]);
+    setIsItemDropdownVisible(false);
+  }, [asPath, isDropdownExpanded]);
 
-  function expandSubMenu() {
-    !isItemMenuExpanded ? setIsItemMenuExpanded(true) : setIsItemMenuExpanded(false);
+  function expandSubDropdown() {
+    !isItemDropdownVisible ? setIsItemDropdownVisible(true) : setIsItemDropdownVisible(false);
   }
 
   return (
-    <EscapeOutside onEscapeOutside={() => setIsItemMenuExpanded(false)}>
+    <EscapeOutside onEscapeOutside={() => setIsItemDropdownVisible(false)}>
       {isItemlLink ? (
         <div
-          className={styles.navbarItem}
-          onMouseOver={() => setIsItemMenuExpanded(true)}
-          onMouseLeave={() => setIsItemMenuExpanded(false)}
+          className={styles.itemContainer}
+          onMouseOver={() => setIsItemDropdownVisible(true)}
+          onMouseLeave={() => setIsItemDropdownVisible(false)}
         >
-          <NavbarLink label={itemLabel} link={itemLink} menuItems={itemMenu} />
-          {isItemMenuExpanded && itemMenu && (
-            <NavbarMenu
-              styleMenu={styles.subMenuDropdown}
-              styleSubMenu={styles.innerSubMenu}
-              menuItems={itemMenu}
-              hasSubMenuDivison={isItemlLink}
+          <NavbarLink label={itemLabel} link={itemLink} dropdownItems={itemDropdown} />
+          {isItemDropdownVisible && itemDropdown && (
+            <NavbarDropdown
+              styleDropdown={styles.dropdown}
+              dropdownItems={itemDropdown}
+              showActivePage={isItemlLink}
             />
           )}
         </div>
       ) : (
-        <div className={styles.expandedMenuItem} onClick={() => expandSubMenu()}>
+        <div className={styles.expandedItemContainer} onClick={() => expandSubDropdown()}>
           <p className={styles.itemName}>{itemLabel + " ▾"}</p>
-          {isItemMenuExpanded && (
-            <NavbarMenu
-              styleMenu={styles.expandedSubMenuItem}
-              styleSubMenu={styles.innerExpandedMenu}
-              menuItems={itemMenu}
-              hasSubMenuDivison={isItemlLink}
+          {isItemDropdownVisible && (
+            <NavbarDropdown
+              styleDropdown={styles.expandedSubDropdown}
+              dropdownItems={itemDropdown}
+              showActivePage={isItemlLink}
             />
           )}
         </div>

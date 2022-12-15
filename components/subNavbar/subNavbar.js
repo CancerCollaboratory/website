@@ -17,27 +17,19 @@ const SubNavbar = () => {
         setActiveNavbarItemIndex(i);
         break;
       }
-      if (navbarItems[i].navbarSubMenuItems) {
-        for (let j = 0; j < navbarItems[i].navbarSubMenuItems.length; j++) {
-          if (navbarItems[i].navbarSubMenuItems[j].link === route) {
+      if (navbarItems[i].dropdownItems) {
+        for (let j = 0; j < navbarItems[i].dropdownItems.length; j++) {
+          if (navbarItems[i].dropdownItems[j].link === route) {
             setActiveNavbarItemIndex(i);
             break;
-          }
-          if (navbarItems[i].navbarSubMenuItems[j]?.subMenuSection) {
-            for (let k = 0; k < navbarItems[i].navbarSubMenuItems[j].subMenuSection.length; k++) {
-              if (navbarItems[i].navbarSubMenuItems[j].subMenuSection[k].link === route) {
-                setActiveNavbarItemIndex(i);
-                break;
-              }
-            }
           }
         }
       }
     }
   }
 
-  function doesActiveItemHaveSubMenu() {
-    return !!navbarData.navbarItems[activeNavbarItemIndex]?.navbarSubMenuItems;
+  function doesActiveItemHaveDropdown() {
+    return !!navbarData.navbarItems[activeNavbarItemIndex]?.dropdownItems;
   }
 
   useEffect(() => {
@@ -45,19 +37,14 @@ const SubNavbar = () => {
   }, [asPath]);
 
   return (
-    doesActiveItemHaveSubMenu() && (
-      <ul className={styles.subNavbarContainer}>
-        {navbarData.navbarItems[activeNavbarItemIndex].navbarSubMenuItems?.map((item, index) => (
+    doesActiveItemHaveDropdown() && (
+      <ul className={styles.container}>
+        {navbarData.navbarItems[activeNavbarItemIndex].dropdownItems?.map((item, index) => (
           <li key={index}>
             <CustomLink
               label={item.label}
               link={item.link}
-              styleLabel={
-                item.link === asPath ||
-                item.subMenuSection?.find((subItem) => subItem.link === asPath)
-                  ? styles.selectedSubNavbarItem
-                  : undefined
-              }
+              styleLabel={item.link === asPath ? styles.selectedSubNavbarItem : undefined}
             />
           </li>
         ))}

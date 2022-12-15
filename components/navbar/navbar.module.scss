@@ -1,14 +1,14 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
-.navbarContainer {
+.container {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
     width: 100%;
 
-    .secondaryNavbarContainer {
+    .secondaryContainer {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -16,14 +16,14 @@
         padding-left: 608px;
         height: 44.5px;
 
-        .secondaryNavbarBlock {
+        .secondaryBlock {
             display: flex;
             font-size: 12px;
 
-            .listColoredBlock {
+            .coloredBlock {
                 display: flex;
 
-                .itemColoredBlock {
+                li {
                     margin-left: 13px;
 
                     a {
@@ -39,10 +39,10 @@
                 }
             }
 
-            .listBlock {
+            .uncoloredBlock {
                 display: flex;
 
-                .itemBlock {
+                li {
                     margin-left: 13px;
 
                     a {
@@ -50,7 +50,7 @@
                     }
                 }
 
-                .itemBorderRight {
+                .borderRight {
                     border-right: 3px solid $color-light-x5-blue;
                     padding-right: 13px;
                 }
@@ -58,7 +58,7 @@
         }
     }
 
-    .mainNavbar {
+    .mainContainer {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
@@ -70,22 +70,22 @@
         .imageContainer {
             margin: -35px 106px 0px 11.5px;
 
-            .siteLogo {
+            .logo {
                 &:hover {
                     cursor: pointer;
                 }
             }
         }
 
-        .navbarToggler {
+        .toggler {
             display: none;
         }
 
-        .navbarItemsLine {
+        .itemLine {
             display: flex;
             align-items: center;
 
-            .navbarItem {
+            .itemContainer {
                 display: flex;
                 margin: 0px 6px;
                 height: max-content;
@@ -103,12 +103,12 @@
                     }
                 }
 
-                .selectNavbarItem {
+                .selectedNavbarItem {
                     border-left: 3px solid $color-dark-x2-red;
                     color: $color-dark-x2-red;
                 }
 
-                .searchBar {
+                .searchBarInput {
                     background-size: 15px 15px;
                     background-position: 7px;
                     border-radius: 17px;
@@ -118,7 +118,7 @@
                     width: 185px;
                 }
 
-                .subMenuDropdown {
+                .dropdown {
                     display: flex;
                     flex-direction: column;
                     position: absolute;
@@ -138,55 +138,43 @@
                         }
                     }
 
-                    .innerSubMenu {
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 12px;
-                    }
-
                     .activePage {
                         color: $color-dark-x2-red;
-                    }
-
-                    .subMenuDivision {
-                        border-bottom: 1px solid $color-light-x10-gray;
-                        margin-bottom: 5px;
-                        width: 100%;
                     }
                 }
             }
         }
     }
 
-    .navDropdown {
-        .expandedMenuContainer {
+    .outerExpandedDropdownContainer {
+        .expandedDropdownContainer {
             display: none;
         }
     }
 }
 
 @include respond-to("large") {
-    .navbarContainer {
-        .secondaryNavbarContainer {
+    .container {
+        .secondaryContainer {
             padding-left: 436px;
         }
 
-        .mainNavbar {
+        .mainContainer {
             padding: 0px 7px 13px 7px;
 
             .imageContainer {
                 margin: -35px 48px 0px 9.5px;
             }
 
-            .navbarItemsLine {
-                .navbarItem {
+            .itemLine {
+                .itemContainer {
                     margin: 0px 3.5px;
 
                     a {
                         font-size: 12px;
                     }
 
-                    .searchBar {
+                    .searchBarInput {
                         padding: 3.5px 7.5px 3.5px 27.5px;
                         font-size: 12px;
                         width: 152px;
@@ -198,17 +186,17 @@
 }
 
 @include respond-to("medium") {
-    .navbarContainer {
-        .secondaryNavbarContainer {
+    .container {
+        .secondaryContainer {
             padding-left: 203px;
             position: relative;
             z-index: 1;
 
-            .secondaryNavbarBlock {
+            .secondaryBlock {
                 font-size: 11.5px;
 
-                .listColoredBlock {
-                    .itemColoredBlock {
+                .coloredBlock {
+                    li {
                         margin-left: 12px;
 
                         a {
@@ -217,19 +205,19 @@
                     }
                 }
 
-                .listBlock {
-                    .itemBlock {
+                .uncoloredBlock {
+                    li {
                         margin-left: 12px;
                     }
 
-                    .itemBorderRight {
+                    .borderRight {
                         padding-right: 12px;
                     }
                 }
             }
         }
 
-        .mainNavbar {
+        .mainContainer {
             flex-direction: column;
             align-items: center;
 
@@ -239,30 +227,30 @@
                 margin: -35px 0px 0px 0px;
                 padding-right: 442px;
 
-                .siteLogo {
+                .logo {
                     z-index: 1;
                 }
             }
 
-            .navbarItemsLine {
+            .itemLine {
                 justify-content: center;
                 margin: 9px 0px 1px 0px;
                 padding-left: 35px;
                 width: 100%;
 
-                .navbarItem {
+                .itemContainer {
                     margin: 0px 4px;
 
                     a {
                         font-size: 12.5px;
                     }
 
-                    .searchBar {
+                    .searchBarInput {
                         font-size: 12.5px;
                         width: 168px;
                     }
 
-                    .subMenuDropdown {
+                    .dropdown {
                         top: 153px;
                     }
                 }
@@ -272,34 +260,34 @@
 }
 
 @include respond-to("small") {
-    .navbarContainer {
-        .secondaryNavbarContainer {
+    .container {
+        .secondaryContainer {
             justify-content: flex-end;
             height: max-content;
             padding-left: 0px;
 
-            .secondaryNavbarBlock {
+            .secondaryBlock {
                 flex-direction: column;
                 margin: 15px 0px 10.5px 0px;
                 font-size: 11px;
 
-                .listColoredBlock {
+                .coloredBlock {
                     margin: 0px 8px;
 
-                    .itemColoredBlock {
+                    li {
                         margin: 0px 6px;
                     }
                 }
 
-                .listBlock {
+                .uncoloredBlock {
                     justify-content: center;
                     margin: 12px 8px 0px 8px;
 
-                    .itemBlock {
+                    li {
                         margin: 0px 6px;
                     }
 
-                    .itemBorderRight {
+                    .borderRight {
                         border-right: none;
                         padding-right: 0px;
                     }
@@ -307,7 +295,7 @@
             }
         }
 
-        .mainNavbar {
+        .mainContainer {
             flex-direction: row;
             align-items: flex-end;
             justify-content: space-between;
@@ -318,7 +306,7 @@
                 padding-right: 0px;
             }
 
-            .navbarToggler {
+            .toggler {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -335,7 +323,7 @@
                     background-color: $color-light-x3-gray;
                 }
 
-                .iconBar {
+                .bar {
                     width: 17px;
                     margin: 2px 0px;
                     border-radius: 1px;
@@ -343,35 +331,35 @@
                 }
             }
 
-            .navbarToggler[aria-expanded="true"] {
+            .toggler[aria-expanded="true"] {
                 background-color: $color-light-x3-gray;
             }
 
-            .navbarItemsLine {
+            .itemLine {
                 display: none;
             }
         }
 
-        .navDropdown[aria-expanded="false"] {
+        .outerExpandedDropdownContainer[aria-expanded="false"] {
             display: none;
         }
 
-        .navDropdown[aria-expanded="true"] {
+        .outerExpandedDropdownContainer[aria-expanded="true"] {
             height: max-content;
             margin-top: 4px;
 
-            .expandedMenuContainer {
+            .expandedDropdownContainer {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 border-bottom: 1px solid $color-light-x4-gray;
 
-                .extendSearchBar {
+                .expandedSearchBarContainer {
                     display: flex;
                     justify-content: center;
                     width: 100%;
 
-                    .expandedSearchBar {
+                    .expandedSearchBarInput {
                         background-size: 15px 15px;
                         background-position: 7px;
                         border-radius: 15px;
@@ -382,10 +370,10 @@
                     }
                 }
 
-                .wrapExpandedMenu {
+                .wrapExpandedDropdown {
                     width: 100%;
 
-                    .expandedMenuItem {
+                    .expandedItemContainer {
                         border: none;
                         border-top: 1px solid $color-light-x4-gray;
                         background-color: white;
@@ -401,13 +389,13 @@
                                 }
                             }
 
-                            .noSubMenu {
+                            .noDropdown {
                                 background-color: $color-light-x9-gray;
                                 color: $color-dark-x2-red;
                             }
                         }
 
-                        .expandedSubMenuItem {
+                        .expandedSubDropdown {
                             display: flex;
                             flex-direction: column;
                             border-top: 1px solid $color-light-x4-gray;
@@ -423,27 +411,18 @@
                                     color: $color-dark-x2-red;
                                 }
                             }
-
-                            .innerExpandedMenu {
-                                display: flex;
-                                flex-direction: column;
-
-                                a {
-                                    padding-left: 44.5px;
-                                }
-                            }
                         }
 
                         .itemName {
                             padding: 9px 15px;
                         }
 
-                        .noSubMenu {
+                        .noDropdown {
                             padding: 9.5px 15px;
                         }
 
                         .itemName,
-                        .noSubMenu {
+                        .noDropdown {
                             color: $color-dark-x3-gray;
                             font-size: 13.5px;
                         }
@@ -455,16 +434,16 @@
 }
 
 @include respond-to("extra-small") {
-    .navbarContainer {
-        .secondaryNavbarContainer {
-            .secondaryNavbarBlock {
+    .container {
+        .secondaryContainer {
+            .secondaryBlock {
                 margin: 13.7px 0px 9.7px 0px;
                 font-size: 10px;
 
-                .listColoredBlock {
+                .coloredBlock {
                     margin: 0px 6px;
 
-                    .itemColoredBlock {
+                    li {
                         margin: 0px 5.5px;
 
                         a {
@@ -473,32 +452,32 @@
                     }
                 }
 
-                .listBlock {
+                .uncoloredBlock {
                     margin: 11.5px 6px 0px 6px;
 
-                    .itemBlock {
+                    li {
                         margin: 0px 5.5px;
                     }
                 }
             }
         }
 
-        .mainNavbar {
+        .mainContainer {
             .imageContainer {
                 margin: -23px 0px 0px 14px;
 
-                .siteLogo {
+                .logo {
                     width: 178px;
                     height: auto;
                 }
             }
 
-            .navbarToggler {
+            .toggler {
                 margin: 0px 17px 2px 0px;
                 width: 27px;
                 height: 26px;
 
-                .iconBar {
+                .bar {
                     width: 13px;
                     margin: 1.5px 0px;
                 }
@@ -508,44 +487,44 @@
 }
 
 @include respond-to("extra-extra-small") {
-    .navbarContainer {
-        .secondaryNavbarContainer {
-            .secondaryNavbarBlock {
+    .container {
+        .secondaryContainer {
+            .secondaryBlock {
                 font-size: 9px;
 
-                .listColoredBlock {
+                .coloredBlock {
                     margin: 0px 5px;
 
-                    .itemColoredBlock {
+                    li {
                         margin: 0px 5px;
                     }
                 }
 
-                .listBlock {
+                .uncoloredBlock {
                     margin: 11px 5px 0px 5px;
 
-                    .itemBlock {
+                    li {
                         margin: 0px 5px;
                     }
                 }
             }
         }
 
-        .mainNavbar {
+        .mainContainer {
             .imageContainer {
                 margin: -19px 0px 0px 13px;
 
-                .siteLogo {
+                .logo {
                     width: 148px;
                 }
             }
 
-            .navbarToggler {
+            .toggler {
                 margin-right: 15.5px;
                 width: 26px;
                 height: 25px;
 
-                .iconBar {
+                .bar {
                     width: 13px;
                 }
             }

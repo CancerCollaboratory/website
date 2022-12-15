@@ -1,5 +1,5 @@
 {
-    "footerHeadItems": [
+    "headItems": [
         {
             "logo": {
                 "srcPath": "/assets/common/logo-oicr.png",
@@ -23,7 +23,7 @@
             ]
         }
     ],
-    "footerTailItems": [
+    "tailItems": [
         {
             "label": "About Us",
             "link": "/about-collaboratory",
@@ -68,20 +68,15 @@
         },
         {
             "label": "Our Research",
-            "link": "/research",
+            "link": "/research/software",
             "subItems": [
                 {
-                    "label": "Technology Development Cores",
-                    "link": "/research#technology_development_cores"
+                    "label": "Software for Your Research",
+                    "link": "/research/software"
                 },
                 {
-                    "label": "Research Modules",
-                    "link": "/research#research_modules"
-                },
-                {
-                    "label": "Publications & Presentations",
-                    "link": "/publications-presentations",
-                    "lastSubItem": true
+                    "label": "Research Outputs from Collaboratory",
+                    "link": "/research/outputs"
                 }
             ]
         },
