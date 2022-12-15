@@ -1,6 +1,6 @@
 {
-    "error404": {
+    "custom404": {
         "title": "404",
-        "message": "Page Not Found"
+        "subTitle": "Page Not Found"
     }
 }
