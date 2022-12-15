@@ -3,12 +3,12 @@ import CustomLink from "../customLink/customLink";
 import { useRouter } from "next/router";
 import styles from "../navbar/navbar.module.scss";
 
-const NavbarMenu = ({ styleMenu, menuItems, showActivePage }) => {
+const NavbarDropdown = ({ styleDropdown, dropdownItems, showActivePage }) => {
   const { asPath } = useRouter();
 
   return (
-    <div className={styleMenu}>
-      {menuItems.map((item, index) => (
+    <div className={styleDropdown}>
+      {dropdownItems.map((item, index) => (
         <ul key={index}>
           <li>
             <CustomLink
@@ -23,4 +23,4 @@ const NavbarMenu = ({ styleMenu, menuItems, showActivePage }) => {
   );
 };
 
-export default NavbarMenu;
+export default NavbarDropdown;
