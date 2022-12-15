@@ -39,7 +39,7 @@ const SubNavbar = () => {
   return (
     doesActiveItemHaveDropdown() && (
       <ul className={styles.container}>
-        {navbarData.navbarItems[activeNavbarItemIndex].dropdownItems?.map((item, index) => (
+        {navbarData.navbarItems[activeNavbarItemIndex].dropdownItems.map((item, index) => (
           <li key={index}>
             <CustomLink
               label={item.label}
