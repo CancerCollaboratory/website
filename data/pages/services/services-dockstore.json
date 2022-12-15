@@ -13,5 +13,80 @@
             "link": "https://dockstore.org",
             "isLinkExternal": true
         }
+    },
+    "lateralColumn": {
+        "leftColumn": {
+            "title": "Researchers Sharing Tools",
+            "imageSrcPath": "/assets/leftColumn/icon-cloud-resources.svg",
+            "imageAlt": "Icon - Cloud Resources",
+            "body": [
+                {
+                    "text": "[Dockstore](https://dockstore.org) is an open-source project that aims at allowing researchers to package and share bioinfomatics tools and workflows. What makes Dockstrore unique if that it combines Docker for tool compatibility with descriptors wuch as Common Workflow Language (CWL) or Workflow Descriptor Language (WDL). former allows for reusable tools that can run on a variety of cloud computing environments including Cancer Genome Collaboratory while the latter allows researchers to describe their tools with metadata, allowing for others to index and search for their tools while also being able to assemble them into larger workflows.",
+                    "isLinkExternal": true,
+                    "isLastText": true
+                }
+            ]
+        },
+        "rightColumn": {
+            "title": "Featured Workflows",
+            "body": [
+                {
+                    "text": "Dockstore is also the home for the workflows used for the **PanCancer Analysis of Whole Genomes (PCAWG) project**. These workflows have been released and validated with CWL 1.0:",
+                    "isLastText": true
+                }
+            ],
+            "featureBoard": {
+                "boards": [
+                    {
+                        "title": "DELLY",
+                        "titleLink": "https://dockstore.org/containers/quay.io/pancancer/pcawg_delly_workflow",
+                        "isTitleLinkExternal": true,
+                        "caption": "structural variation"
+                    },
+                    {
+                        "title": "Sanger",
+                        "titleLink": "https://dockstore.org/containers/quay.io/pancancer/pcawg-sanger-cgp-workflow",
+                        "isTitleLinkExternal": true,
+                        "caption": "somatic calling",
+                        "hasBackground": true
+                    },
+                    {
+                        "title": "DKFZ",
+                        "titleLink": "https://dockstore.org/containers/quay.io/pancancer/pcawg-dkfz-workflow",
+                        "isTitleLinkExternal": true,
+                        "caption": "SNVs, indels, copy number",
+                        "hasBackground": true
+                    },
+                    {
+                        "title": "BWA-mem",
+                        "titleLink": "https://dockstore.org/containers/quay.io/pancancer/pcawg-bwa-mem-workflow",
+                        "isTitleLinkExternal": true,
+                        "caption": "bam alignment"
+                    }
+                ]
+            }
+        },
+        "hasBorderBottom": true
+    },
+    "resourceSection": {
+        "title": "Dockstore Resources",
+        "cards": [
+            {
+                "title": "### [Tutorial: Getting Started](https://dockstore.org/docs/getting-started)",
+                "isTitleLinkExternal": true,
+                "bodyText": "Our most recent tutorial for getting started with Dockstore.",
+                "imageSrcPath": "/assets/resourceCard/icon-documentation.svg",
+                "imageAlt": "Icon - Documentation"
+            },
+            {
+                "title": "### [Tutorial: Video](https://www.youtube.com/watch?v=-JuKsSQja3g)",
+                "isTitleLinkExternal": true,
+                "bodyText": "A video tutorial for a slightly older build of Dockstore.",
+                "imageSrcPath": "/assets/resourceCard/icon-video.svg",
+                "imageAlt": "Icon - Video",
+                "isLastCard": true
+            }
+        ],
+        "hasBackground": true
     }
 }

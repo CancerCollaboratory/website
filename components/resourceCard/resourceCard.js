@@ -13,10 +13,17 @@ const ResourceCard = ({
   imageSrcPath,
   imageAlt,
   isLastCard,
+  children,
 }) => {
   return (
-    <div className={clsx(styles.cardContainer, !isLastCard ? styles.cardMargin : undefined)}>
-      {imageSrcPath && (
+    <div
+      className={clsx(
+        styles.cardContainer,
+        children ? styles.altCard : undefined,
+        !isLastCard ? styles.cardMargin : undefined
+      )}
+    >
+      {imageSrcPath && imageAlt && (
         <Image
           src={imageSrcPath}
           alt={imageAlt}
@@ -26,15 +33,22 @@ const ResourceCard = ({
           height={57}
         />
       )}
-      {(title || bodyText) && (
+      {(title || bodyText || children) && (
         <div className={styles.cardContent}>
           {title && (
-            <div className={clsx(styles.title, utilStyles.commonAnchor)}>
+            <div
+              className={clsx(
+                styles.title,
+                children ? styles.titleFont : undefined,
+                utilStyles.commonAnchor
+              )}
+            >
               {renderData(title, isTitleLinkExternal ? insertLinkExternal : insertLinkInternal)}
               <Image src={IconArrow} alt={"Icon"} className={styles.titleIcon} quality={100} />
             </div>
           )}
           {bodyText && <p className={styles.bodyText}>{bodyText}</p>}
+          {children}
         </div>
       )}
     </div>

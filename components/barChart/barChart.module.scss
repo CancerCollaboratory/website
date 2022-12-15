@@ -1,12 +1,66 @@
 @import "../../styles/mixins";
 
-.chart {
-    max-width: 100%;
-    height: auto;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+        margin-bottom: 12.5px;
+    }
+
+    .subTitle {
+        margin-bottom: 25px;
+    }
+
+    .title,
+    .subTitle {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .chart {
+        max-width: 90%;
+        height: auto;
+    }
 }
 
 @include respond-to("small") {
-    .chart {
-        max-width: 101%;
+    .container {
+        .title {
+            margin-bottom: 11.5px;
+        }
+
+        .subTitle {
+            margin-bottom: 23px;
+        }
+
+        .chart {
+            max-width: 100%;
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        .title {
+            margin-bottom: 11px;
+        }
+
+        .subTitle {
+            margin-bottom: 22px;
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        .title {
+            margin-bottom: 10px;
+        }
+
+        .subTitle {
+            margin-bottom: 20px;
+        }
     }
 }

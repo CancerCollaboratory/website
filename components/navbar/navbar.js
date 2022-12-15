@@ -11,47 +11,44 @@ import styles from "./navbar.module.scss";
 
 const Navbar = () => {
   const { asPath } = useRouter();
-  const [isNavbarDropdownToggled, setIsNavbarDropdownToggled] = useState(false);
+  const [isDropdownToggled, setIsDropdownToggled] = useState(false);
 
   useEffect(() => {
-    setIsNavbarDropdownToggled(false);
+    setIsDropdownToggled(false);
   }, [asPath]);
 
-  function expandNavMenu() {
-    !isNavbarDropdownToggled ? setIsNavbarDropdownToggled(true) : setIsNavbarDropdownToggled(false);
+  function expandDropdown() {
+    !isDropdownToggled ? setIsDropdownToggled(true) : setIsDropdownToggled(false);
   }
 
   return (
-    <EscapeOutside onEscapeOutside={() => setIsNavbarDropdownToggled(false)}>
-      <div className={styles.navbarContainer}>
-        <nav className={styles.secondaryNavbarContainer}>
-          <div className={styles.secondaryNavbarBlock}>
-            <ul className={styles.listColoredBlock}>
+    <EscapeOutside onEscapeOutside={() => setIsDropdownToggled(false)}>
+      <div className={styles.container}>
+        <nav className={styles.secondaryContainer}>
+          <div className={styles.secondaryBlock}>
+            <ul className={styles.coloredBlock}>
               {data.headerList.headerTop.map((item, index) => (
-                <li className={styles.itemColoredBlock} key={index}>
+                <li key={index}>
                   <CustomLink label={item.label} link={item.link} />
                 </li>
               ))}
             </ul>
-            <ul className={styles.listBlock}>
+            <ul className={styles.uncoloredBlock}>
               {data.headerList.headerBottom.map((item, index) => (
-                <li
-                  className={clsx(styles.itemBlock, item?.hasBorder && styles.itemBorderRight)}
-                  key={index}
-                >
+                <li className={clsx(item?.hasBorder ? styles.borderRight : undefined)} key={index}>
                   <CustomLink label={item.label} link={item.link} isLinkExternal={true} />
                 </li>
               ))}
             </ul>
           </div>
         </nav>
-        <div className={styles.mainNavbar}>
+        <div className={styles.mainContainer}>
           <CustomLink link={data.websiteLogo.link}>
             <div className={styles.imageContainer}>
               <Image
                 src={data.websiteLogo.srcPath}
                 alt={data.websiteLogo.label}
-                className={styles.siteLogo}
+                className={styles.logo}
                 priority={true}
                 quality={100}
                 width={275}
@@ -60,46 +57,49 @@ const Navbar = () => {
             </div>
           </CustomLink>
           <div
-            className={styles.navbarToggler}
-            onClick={expandNavMenu}
-            aria-expanded={isNavbarDropdownToggled.toString()}
+            className={styles.toggler}
+            onClick={expandDropdown}
+            aria-expanded={isDropdownToggled.toString()}
           >
-            <span className={styles.iconBar}></span>
-            <span className={styles.iconBar}></span>
-            <span className={styles.iconBar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
+            <span className={styles.bar}></span>
           </div>
-          <div className={styles.navbarItemsLine}>
+          <div className={styles.itemLine}>
             {data.navbarItems.map((item, index) => (
               <NavbarItem
                 itemLabel={item.label}
                 isItemlLink={true}
                 itemLink={item.link}
-                itemMenu={item.navbarSubMenuItems}
+                itemDropdown={item.dropdownItems}
                 key={index}
               />
             ))}
-            <SearchBar styleContainer={styles.navbarItem} styleInput={styles.searchBar} />
+            <SearchBar styleContainer={styles.itemContainer} styleInput={styles.searchBarInput} />
           </div>
         </div>
-        <div className={styles.navDropdown} aria-expanded={isNavbarDropdownToggled.toString()}>
-          <div className={styles.expandedMenuContainer}>
+        <div
+          className={styles.outerExpandedDropdownContainer}
+          aria-expanded={isDropdownToggled.toString()}
+        >
+          <div className={styles.expandedDropdownContainer}>
             <SearchBar
-              styleContainer={styles.extendSearchBar}
-              styleInput={styles.expandedSearchBar}
+              styleContainer={styles.expandedSearchBarContainer}
+              styleInput={styles.expandedSearchBarInput}
             />
-            <div className={styles.wrapExpandedMenu}>
+            <div className={styles.wrapExpandedDropdown}>
               {data.navbarItems.map((item, index) =>
-                item.navbarSubMenuItems ? (
+                item.dropdownItems ? (
                   <NavbarItem
                     itemLabel={item.label}
                     isItemlLink={false}
-                    itemMenu={item.navbarSubMenuItems}
-                    isNavbarDropdownExpanded={isNavbarDropdownToggled}
+                    itemDropdown={item.dropdownItems}
+                    isDropdownExpanded={isDropdownToggled}
                     key={index}
                   />
                 ) : (
-                  <div className={styles.expandedMenuItem} key={index}>
-                    <CustomLink label={item.label} link={item.link} styleWrap={styles.noSubMenu} />
+                  <div className={styles.expandedItemContainer} key={index}>
+                    <CustomLink label={item.label} link={item.link} styleWrap={styles.noDropdown} />
                   </div>
                 )
               )}

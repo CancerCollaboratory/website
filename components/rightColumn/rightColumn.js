@@ -1,16 +1,31 @@
 import clsx from "clsx";
+import Image from "next/image";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./rightColumn.module.scss";
 
-const RightColumn = ({ title, subTitle, body, children }) => {
+const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children }) => {
   return (
     <div className={styles.container}>
-      {title && (
-        <h2 className={clsx(styles.title, !subTitle ? styles.titleMargin : undefined)}>{title}</h2>
+      {(title || (imageSrcPath && imageAlt)) && (
+        <div
+          className={clsx(styles.head, centerHead ? utilStyles.horizontallyCenterItem : undefined)}
+        >
+          {imageSrcPath && imageAlt && (
+            <Image
+              src={imageSrcPath}
+              alt={imageAlt}
+              className={styles.image}
+              quality={100}
+              width={62}
+              height={62}
+            />
+          )}
+          {title && !children && <h2 className={styles.title}>{title}</h2>}
+          {title && children && <h3>{title}</h3>}
+        </div>
       )}
-      {subTitle && <p className={styles.subTitle}>{subTitle}</p>}
       {body?.map(
         (item, index) =>
           item.text && (

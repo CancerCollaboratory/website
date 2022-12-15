@@ -4,26 +4,22 @@ import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import styles from "../navbar/navbar.module.scss";
 
-const NavbarLink = ({ label, link, styleLink, menuItems }) => {
+const NavbarLink = ({ label, link, dropdownItems }) => {
   const { asPath } = useRouter();
   const [isItemActiveState, setIsItemActiveState] = useState(false);
 
   useEffect(() => {
-    link === asPath ||
-    menuItems?.find(
-      (item) =>
-        item.link === asPath || item.subMenuSection?.find((subItem) => subItem.link === asPath)
-    )
+    link === asPath || dropdownItems?.find((item) => item.link === asPath)
       ? setIsItemActiveState(true)
       : setIsItemActiveState(false);
-  }, [link, asPath, menuItems]);
+  }, [link, asPath, dropdownItems]);
 
   return (
     label &&
     link && (
       <Link href={link} legacyBehavior>
-        <a className={clsx(isItemActiveState ? styles.selectNavbarItem : undefined, styleLink)}>
-          {menuItems ? label + " ▾" : label}
+        <a className={clsx(isItemActiveState ? styles.selectedNavbarItem : undefined)}>
+          {dropdownItems ? label + " ▾" : label}
         </a>
       </Link>
     )

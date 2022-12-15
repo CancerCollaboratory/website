@@ -1,16 +1,25 @@
 import clsx from "clsx";
+import Image from "next/image";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
-import Image from "next/image";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./leftColumn.module.scss";
 
-const LeftColumn = ({ title, centerTitle, imageSrcPath, imageAlt, body, children }) => {
+const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body, children }) => {
   return (
     <div className={styles.container}>
+      {megaTitle && (
+        <h1 className={styles.megaTitle}>
+          {megaTitle.map((item, index) => (
+            <span className={item.isMainSubTitle ? styles.mainSubTitle : undefined} key={index}>
+              {item.subTitle}
+            </span>
+          ))}
+        </h1>
+      )}
       {(title || (imageSrcPath && imageAlt)) && (
         <div
-          className={clsx(styles.head, centerTitle ? utilStyles.horizontallyCenterItem : undefined)}
+          className={clsx(styles.head, centerHead ? utilStyles.horizontallyCenterItem : undefined)}
         >
           {imageSrcPath && imageAlt && (
             <Image
@@ -22,7 +31,7 @@ const LeftColumn = ({ title, centerTitle, imageSrcPath, imageAlt, body, children
               height={62}
             />
           )}
-          {title && <h2>{title}</h2>}
+          {title && <h2 className={styles.title}>{title}</h2>}
         </div>
       )}
       {body?.map(
@@ -30,7 +39,13 @@ const LeftColumn = ({ title, centerTitle, imageSrcPath, imageAlt, body, children
           item.text && (
             <div
               className={clsx(
-                !item.isLastText ? styles.bodyText : styles.lastBodyText,
+                !item.isLastText
+                  ? megaTitle
+                    ? styles.introBody
+                    : styles.bodyText
+                  : megaTitle
+                  ? styles.lastIntroBody
+                  : styles.lastBodyText,
                 utilStyles.commonAnchor
               )}
               key={index}

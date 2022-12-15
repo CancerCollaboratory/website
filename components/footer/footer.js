@@ -1,19 +1,24 @@
-import styles from "./footer.module.scss";
 import FooterHead from "../footerHead/footerHead";
-import FooterItem from "../footerItem/footerItem";
+import FooterTail from "../footerTail/footerTail";
 import data from "../../data/components/footer/footer.json";
+import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (
-    <footer className={styles.footerContainer}>
-      <div className={styles.footerHeadContainer}>
-        {data.footerHeadItems.map((item, index) => (
+    <footer className={styles.container}>
+      <div className={styles.headContainer}>
+        {data.headItems.map((item, index) => (
           <FooterHead headItem={item} key={index} />
         ))}
       </div>
-      <div className={styles.footerTailContainer}>
-        {data.footerTailItems.map((item, index) => (
-          <FooterItem label={item.label} labelLink={item.link} footerItem={item} key={index} />
+      <div className={styles.tailContainer}>
+        {data.tailItems.map((item, index) => (
+          <FooterTail
+            label={item.label}
+            labelLink={item.link}
+            subItems={item.subItems}
+            key={index}
+          />
         ))}
       </div>
     </footer>

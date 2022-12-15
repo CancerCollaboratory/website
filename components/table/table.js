@@ -1,5 +1,7 @@
+import clsx from "clsx";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./table.module.scss";
 
 const Table = ({ title, body }) => {
@@ -7,18 +9,16 @@ const Table = ({ title, body }) => {
     <table className={styles.table}>
       {title && <caption className={styles.title}>{title}</caption>}
       <tbody>
-        {body.map((item, index) => (
+        {body?.rows?.map((item, index) => (
           <tr key={index}>
-            {item.columns.map((column, subIndex) => (
-              <td className={styles.cell} key={subIndex}>
-                {column.title &&
+            {item.cells?.map((cell, subIndex) => (
+              <td className={clsx(styles.cell, utilStyles.commonAnchor)} key={subIndex}>
+                {cell.title &&
                   renderData(
-                    column.title,
-                    column.isLinkExternal ? insertLinkExternal : insertLinkInternal
+                    cell.title,
+                    cell.isLinkExternal ? insertLinkExternal : insertLinkInternal
                   )}
-                {column.content && (
-                  <div className={styles.cellContent}>{renderData(column.content)}</div>
-                )}
+                {cell.stat && <div className={styles.cellContent}>{renderData(cell.stat)}</div>}
               </td>
             ))}
           </tr>

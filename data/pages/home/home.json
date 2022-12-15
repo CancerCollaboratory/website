@@ -1,71 +1,289 @@
 {
-    "publication": {
-        "imageSrcPath": "/assets/publication/pcawg-nature-cover.png",
-        "imageAlt": "PCAWG Nature Cover",
-        "title": "Pan-cancer Analysis of Whole Genomes Published!",
-        "titleLink": "https://www.nature.com/collections/afdejfafdb",
-        "isTitleLinkExternal": true,
-        "caption": "Read about the ICGC/TCGA analysis of >2,600 whole cancer genomes across 38 tumour types in 23 papers published in [Nature and other Nature journals](https://www.nature.com/collections/afdejfafdb). *Photo credit: Nik Spencer/Nature.*",
-        "isCaptionLinkExternal": true
+    "lateralColumn1": {
+        "leftColumn": {
+            "megaTitle": [
+                {
+                    "subTitle": "Cloud Computing for "
+                },
+                {
+                    "subTitle": "BIG DATA ",
+                    "isMainSubTitle": true
+                },
+                {
+                    "subTitle": "Genomics"
+                }
+            ],
+            "body": [
+                {
+                    "text": "Welcome to the **Cancer Genome Collaboratory**, an academic compute cloud resource that allows researchers to run complex analysis operations across large [ICGC cancer genome data sets](https://dcc.icgc.org).",
+                    "isLinkExternal": true,
+                    "isLastText": true
+                }
+            ],
+            "button": {
+                "label": "ABOUT OUR SERVICES",
+                "link": "/services-cloud-resources",
+                "isLinkExternal": false,
+                "hasIcon": true
+            },
+            "publication": {
+                "imageSrcPath": "/assets/publication/pcawg-nature-cover.png",
+                "imageAlt": "PCAWG Nature Cover",
+                "title": "Pan-cancer Analysis of Whole Genomes Published!",
+                "titleLink": "https://www.nature.com/collections/afdejfafdb",
+                "isTitleLinkExternal": true,
+                "caption": "Read about the ICGC/TCGA analysis of >2,600 whole cancer genomes across 38 tumour types in 23 papers published in [Nature and other Nature journals](https://www.nature.com/collections/afdejfafdb). *Photo credit: Nik Spencer/Nature.*",
+                "isCaptionLinkExternal": true
+            }
+        },
+        "rightColumn": {
+            "barChart": {
+                "title": "Collaboratory Data Repository: Donor Distribution by Primary Site",
+                "subTitle": "39 projects and 17 primary sites",
+                "srcPath": "/assets/barChart/bar-chart.svg",
+                "alt": "SVG - Donor Distribution Bar Chart"
+            },
+            "table": {
+                "title": "The Collaboratory data consists of:",
+                "body": {
+                    "rows": [
+                        {
+                            "cells": [
+                                {
+                                    "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D)",
+                                    "isLinkExternal": true
+                                },
+                                {
+                                    "stat": "5,045 donors"
+                                },
+                                {
+                                    "stat": "121,467 files"
+                                },
+                                {
+                                    "stat": "1074.25 TB"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
+                                    "isLinkExternal": true
+                                },
+                                {
+                                    "stat": "886 donors"
+                                },
+                                {
+                                    "stat": "22,200 files"
+                                },
+                                {
+                                    "stat": "255.57 TB"
+                                }
+                            ]
+                        },
+                        {
+                            "cells": [
+                                {
+                                    "title": "[Total](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22,%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
+                                    "isLinkExternal": true
+                                },
+                                {
+                                    "stat": "5,931 donors"
+                                },
+                                {
+                                    "stat": "143,667 files"
+                                },
+                                {
+                                    "stat": "1329.83 TB"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "hasBorderBottom": true
     },
-    "barChart": {
-        "srcPath": "/assets/barChart/barChart.svg",
-        "alt": "SVG - Donor Distribution Bar Chart"
-    },
-    "table": {
-        "title": "The Collaboratory data consists of:",
-        "body": [
-            {
-                "columns": [
+    "lateralColumn2": {
+        "leftColumn": {
+            "title": "Cloud Infrastructure",
+            "imageSrcPath": "/assets/leftColumn/icon-cloud-infrastructure.svg",
+            "imageAlt": "Icon - Cloud Infrastructure",
+            "body": [
+                {
+                    "text": "The Collaboratory hosts an **OpenStack** cloud with more than **2592 CPU cores and over 4.4 PB of storage**, offering resources such as:",
+                    "isLastText": true
+                }
+            ],
+            "listLine": {
+                "isVertical": false,
+                "items": [
                     {
-                        "title": "[Collaboratory - Toronto](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22%5D%7D%7D%7D)",
-                        "isLinkExternal": true
+                        "label": "Compute",
+                        "link": "/services-cloud-resources#compute",
+                        "isLinkExternal": false
                     },
                     {
-                        "content": "5,045 donors"
+                        "label": "Storage",
+                        "link": "/services-cloud-resources#storage",
+                        "isLinkExternal": false
                     },
                     {
-                        "content": "121,467 files"
-                    },
-                    {
-                        "content": "1074.25 TB"
+                        "label": "Networking",
+                        "link": "/services-cloud-resources#networking",
+                        "isLinkExternal": false
                     }
                 ]
             },
-            {
-                "columns": [
+            "navLine": {
+                "items": [
                     {
-                        "title": "[PDC - Chicago](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
-                        "isLinkExternal": true
-                    },
-                    {
-                        "content": "886 donors"
-                    },
-                    {
-                        "content": "22,200 files"
-                    },
-                    {
-                        "content": "255.57 TB"
-                    }
-                ]
-            },
-            {
-                "columns": [
-                    {
-                        "title": "[Total](https://dcc.icgc.org/repositories?filters=%7B%22file%22:%7B%22repoName%22:%7B%22is%22:%5B%22Collaboratory%20-%20Toronto%22,%22PDC%20-%20Chicago%22%5D%7D%7D%7D)",
-                        "isLinkExternal": true
-                    },
-                    {
-                        "content": "5,931 donors"
-                    },
-                    {
-                        "content": "143,667 files"
-                    },
-                    {
-                        "content": "1329.83 TB"
+                        "label": "ABOUT OUR RESOURCES AND FEES",
+                        "link": "/services",
+                        "isLinkExternal": false
                     }
                 ]
             }
-        ]
+        },
+        "rightColumn": {
+            "title": "Researcher Sharing Tools",
+            "imageSrcPath": "/assets/rightColumn/icon-dockstore.svg",
+            "imageAlt": "Icon - Dockstore",
+            "body": [
+                {
+                    "text": "The Collaboratory offers multiple ways for researchers to share their tools including VM sharing through the OpenStack Console, and Docker container sharing through the [Dockstore](https://dockstore.org) based on a [GA4GH-compliant](http://www.commonwl.org) tool descriptor.",
+                    "isLinkExternal": true,
+                    "isLastText": true
+                }
+            ],
+            "navLine": {
+                "items": [
+                    {
+                        "label": "ABOUT DOCKSTORE",
+                        "link": "/services-dockstore",
+                        "isLinkExternal": false
+                    }
+                ]
+            }
+        },
+        "hasBorderBottom": true
+    },
+    "lateralColumn3": {
+        "title": "The Collaboratory and Cancer Genomic Research",
+        "leftColumn": {
+            "body": [
+                {
+                    "text": "This project uses the power of cloud computing to open up the study of cancer genomics to researchers around the world. The Collaboratory is made up of an experienced team of PIs with the common goal of encouraging collaboration and accelerating the development of new tools for the diagnosis, treatment, and management of cancer patients.",
+                    "isLastText": true
+                }
+            ],
+            "navLine": {
+                "items": [
+                    {
+                        "label": "ABOUT OUR RESEARCH",
+                        "link": "/research",
+                        "isLinkExternal": false
+                    }
+                ]
+            }
+        },
+        "rightColumn": {
+            "body": [
+                {
+                    "text": "There are now over 140 publications by researchers who have benefited from the Collaboratory's co-location of data and compute code. The range of research includes the study of tumour evolution, the impact of non-coding mutations on cancer phenotypes, the interaction of germline and somatic mutations, the heterogeneity of tumours discovered through single cell sequencing, the effect of somatic mutations on the transcriptome, and the development of new algorithms for genome processing and analysis.",
+                    "isLastText": true
+                }
+            ]
+        },
+        "hasBorderBottom": true
+    },
+    "callToAction": {
+        "title": "Interested in using our resources?",
+        "buttonData": [
+            {
+                "label": "**NEW USERS:** REQUEST AN ACCOUNT",
+                "link": "/services-request-account",
+                "isLinkExternal": false,
+                "hasIcon": true
+            },
+            {
+                "label": "**RETURNING USERS:** COLLABORATORY CONSOLE",
+                "link": "https://console.cancercollaboratory.org",
+                "isLinkExternal": true,
+                "hasBlueBackground": true,
+                "hasIcon": true
+            }
+        ],
+        "hasBorderBottom": true
+    },
+    "resourceSection": {
+        "title": "Support Resources",
+        "cards": [
+            {
+                "title": "### Explore our Documentation",
+                "listLine": {
+                    "isVertical": true,
+                    "items": [
+                        {
+                            "label": "Getting Started",
+                            "link": "/support/getting-started",
+                            "isLinkExternal": false
+                        },
+                        {
+                            "label": "User Guide",
+                            "link": "/support/user-guide",
+                            "isLinkExternal": false
+                        }
+                    ]
+                },
+                "imageSrcPath": "/assets/resourceCard/icon-documentation.svg",
+                "imageAlt": "Icon - Documentation"
+            },
+            {
+                "title": "### Tips for Cloud Computing",
+                "listLine": {
+                    "isVertical": true,
+                    "items": [
+                        {
+                            "label": "Best Practices",
+                            "link": "/support/best-practices",
+                            "isLinkExternal": false
+                        },
+                        {
+                            "label": "FAQs",
+                            "link": "/support/faqs",
+                            "isLinkExternal": false
+                        }
+                    ]
+                },
+                "imageSrcPath": "/assets/resourceCard/icon-lightbulb.svg",
+                "imageAlt": "Icon - Lightbulb"
+            },
+            {
+                "title": "### Training Opportunities",
+                "listLine": {
+                    "isVertical": true,
+                    "items": [
+                        {
+                            "label": "Workshops",
+                            "link": "/support/workshops",
+                            "isLinkExternal": false
+                        }
+                    ]
+                },
+                "imageSrcPath": "/assets/resourceCard/icon-training.svg",
+                "imageAlt": "Icon - Training",
+                "isLastCard": true
+            }
+        ],
+        "navLine": {
+            "items": [
+                {
+                    "label": "MORE SUPPORT RESOURCES",
+                    "link": "/support/overview",
+                    "isLinkExternal": false
+                }
+            ]
+        }
     }
 }

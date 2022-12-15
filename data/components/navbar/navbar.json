@@ -3,7 +3,7 @@
         {
             "label": "About Us",
             "link": "/about-collaboratory",
-            "navbarSubMenuItems": [
+            "dropdownItems": [
                 {
                     "label": "About the Collaboratory",
                     "link": "/about-collaboratory"
@@ -21,7 +21,7 @@
         {
             "label": "Our Services",
             "link": "/services",
-            "navbarSubMenuItems": [
+            "dropdownItems": [
                 {
                     "label": "Our Services",
                     "link": "/services"
@@ -42,59 +42,15 @@
         },
         {
             "label": "Our Research",
-            "link": "/research",
-            "navbarSubMenuItems": [
+            "link": "/research/software",
+            "dropdownItems": [
                 {
-                    "label": "Technology Development Cores",
-                    "link": "/research#technology_development_cores",
-                    "subMenuSection": [
-                        {
-                            "label": "Hardware & Software Infrastructure",
-                            "link": "/research/hardware-software-infrastructure"
-                        },
-                        {
-                            "label": "Benchmarking",
-                            "link": "/research/benchmarking"
-                        },
-                        {
-                            "label": "Training & Outreach",
-                            "link": "/research/training-outreach"
-                        },
-                        {
-                            "label": "Management & Finance",
-                            "link": "/research/management-finance"
-                        }
-                    ]
+                    "label": "Software for Your Research",
+                    "link": "/research/software"
                 },
                 {
-                    "label": "Research Modules",
-                    "link": "/research#research_modules",
-                    "subMenuSection": [
-                        {
-                            "label": "Indexing, Search & Compression",
-                            "link": "/research/indexing-search-compression"
-                        },
-                        {
-                            "label": "Variant Identification & Consequence",
-                            "link": "/research/variant-identification-consequence"
-                        },
-                        {
-                            "label": "Tumour Heterogeneity & Evolution",
-                            "link": "/research/tumour-heterogenity-evolution"
-                        },
-                        {
-                            "label": "Drug Target Identification",
-                            "link": "/research/drug-target-identification"
-                        },
-                        {
-                            "label": "Bioethics & Protection of PHI",
-                            "link": "/research/bioethics-protection-phi"
-                        }
-                    ]
-                },
-                {
-                    "label": "Publications & Presentations",
-                    "link": "/publications-presentations"
+                    "label": "Research Outputs from Collaboratory",
+                    "link": "/research/outputs"
                 }
             ]
         },
@@ -102,7 +58,7 @@
             "label": "Support",
             "altLabel": "Overview",
             "link": "/support/overview",
-            "navbarSubMenuItems": [
+            "dropdownItems": [
                 {
                     "label": "Getting Started",
                     "link": "/support/getting-started"

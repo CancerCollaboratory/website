@@ -1,9 +1,11 @@
+import clsx from "clsx";
 import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import IconArrow from "../../public/assets/common/icon-arrow-white.svg";
+import { renderData } from "../../lib/functions/renderData";
 import styles from "./button.module.scss";
 
-const Button = ({ tag, label, link, isLinkExternal, hasIcon }) => {
+const Button = ({ tag, label, link, isLinkExternal, hasBlueBackground, hasIcon }) => {
   if (!label || !link) {
     return null;
   } else {
@@ -11,8 +13,13 @@ const Button = ({ tag, label, link, isLinkExternal, hasIcon }) => {
       <div className={styles.container}>
         {tag && <p className={styles.tag}>{tag}</p>}
         <CustomLink link={link} isLinkExternal={isLinkExternal}>
-          <div className={styles.innerContainer}>
-            <p className={styles.label}>{label}</p>
+          <div
+            className={clsx(
+              styles.innerContainer,
+              hasBlueBackground ? styles.blueBackground : undefined
+            )}
+          >
+            <div className={styles.label}>{renderData(label)}</div>
             {hasIcon && (
               <Image
                 src={IconArrow}
