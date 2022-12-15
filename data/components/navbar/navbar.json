@@ -3,7 +3,7 @@
         {
             "label": "About Us",
             "link": "/about-collaboratory",
-            "navbarSubMenuItems": [
+            "dropdownItems": [
                 {
                     "label": "About the Collaboratory",
                     "link": "/about-collaboratory"
@@ -21,7 +21,7 @@
         {
             "label": "Our Services",
             "link": "/services",
-            "navbarSubMenuItems": [
+            "dropdownItems": [
                 {
                     "label": "Our Services",
                     "link": "/services"
@@ -43,7 +43,7 @@
         {
             "label": "Our Research",
             "link": "/research/software",
-            "navbarSubMenuItems": [
+            "dropdownItems": [
                 {
                     "label": "Software for Your Research",
                     "link": "/research/software"
@@ -58,7 +58,7 @@
             "label": "Support",
             "altLabel": "Overview",
             "link": "/support/overview",
-            "navbarSubMenuItems": [
+            "dropdownItems": [
                 {
                     "label": "Getting Started",
                     "link": "/support/getting-started"
