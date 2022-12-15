@@ -22,7 +22,7 @@ const SupportNav = () => {
             styleLabel={supportItem.link === asPath ? styles.selectedSubItem : undefined}
           />
         </li>
-        {supportItem.dropdownItems.map((item, index) => (
+        {supportItem.dropdownItems?.map((item, index) => (
           <li key={index}>
             <CustomLink
               label={item.label}
