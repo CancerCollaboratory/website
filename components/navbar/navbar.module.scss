@@ -58,7 +58,7 @@
         }
     }
 
-    .mainNavbar {
+    .mainContainer {
         display: flex;
         flex-direction: row;
         align-items: flex-end;
@@ -70,22 +70,22 @@
         .imageContainer {
             margin: -35px 106px 0px 11.5px;
 
-            .siteLogo {
+            .logo {
                 &:hover {
                     cursor: pointer;
                 }
             }
         }
 
-        .navbarToggler {
+        .toggler {
             display: none;
         }
 
-        .navbarItemsLine {
+        .itemLine {
             display: flex;
             align-items: center;
 
-            .navbarItem {
+            .itemContainer {
                 display: flex;
                 margin: 0px 6px;
                 height: max-content;
@@ -108,7 +108,7 @@
                     color: $color-dark-x2-red;
                 }
 
-                .searchBar {
+                .searchBarInput {
                     background-size: 15px 15px;
                     background-position: 7px;
                     border-radius: 17px;
@@ -146,7 +146,7 @@
         }
     }
 
-    .navDropdown {
+    .dropdown {
         .expandedMenuContainer {
             display: none;
         }
@@ -159,22 +159,22 @@
             padding-left: 436px;
         }
 
-        .mainNavbar {
+        .mainContainer {
             padding: 0px 7px 13px 7px;
 
             .imageContainer {
                 margin: -35px 48px 0px 9.5px;
             }
 
-            .navbarItemsLine {
-                .navbarItem {
+            .itemLine {
+                .itemContainer {
                     margin: 0px 3.5px;
 
                     a {
                         font-size: 12px;
                     }
 
-                    .searchBar {
+                    .searchBarInput {
                         padding: 3.5px 7.5px 3.5px 27.5px;
                         font-size: 12px;
                         width: 152px;
@@ -217,7 +217,7 @@
             }
         }
 
-        .mainNavbar {
+        .mainContainer {
             flex-direction: column;
             align-items: center;
 
@@ -227,25 +227,25 @@
                 margin: -35px 0px 0px 0px;
                 padding-right: 442px;
 
-                .siteLogo {
+                .logo {
                     z-index: 1;
                 }
             }
 
-            .navbarItemsLine {
+            .itemLine {
                 justify-content: center;
                 margin: 9px 0px 1px 0px;
                 padding-left: 35px;
                 width: 100%;
 
-                .navbarItem {
+                .itemContainer {
                     margin: 0px 4px;
 
                     a {
                         font-size: 12.5px;
                     }
 
-                    .searchBar {
+                    .searchBarInput {
                         font-size: 12.5px;
                         width: 168px;
                     }
@@ -295,7 +295,7 @@
             }
         }
 
-        .mainNavbar {
+        .mainContainer {
             flex-direction: row;
             align-items: flex-end;
             justify-content: space-between;
@@ -306,7 +306,7 @@
                 padding-right: 0px;
             }
 
-            .navbarToggler {
+            .toggler {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -323,7 +323,7 @@
                     background-color: $color-light-x3-gray;
                 }
 
-                .iconBar {
+                .bar {
                     width: 17px;
                     margin: 2px 0px;
                     border-radius: 1px;
@@ -331,20 +331,20 @@
                 }
             }
 
-            .navbarToggler[aria-expanded="true"] {
+            .toggler[aria-expanded="true"] {
                 background-color: $color-light-x3-gray;
             }
 
-            .navbarItemsLine {
+            .itemLine {
                 display: none;
             }
         }
 
-        .navDropdown[aria-expanded="false"] {
+        .dropdown[aria-expanded="false"] {
             display: none;
         }
 
-        .navDropdown[aria-expanded="true"] {
+        .dropdown[aria-expanded="true"] {
             height: max-content;
             margin-top: 4px;
 
@@ -354,12 +354,12 @@
                 align-items: flex-start;
                 border-bottom: 1px solid $color-light-x4-gray;
 
-                .extendSearchBar {
+                .expandedSearchBarContainer {
                     display: flex;
                     justify-content: center;
                     width: 100%;
 
-                    .expandedSearchBar {
+                    .expandedSearchBarInput {
                         background-size: 15px 15px;
                         background-position: 7px;
                         border-radius: 15px;
@@ -373,7 +373,7 @@
                 .wrapExpandedMenu {
                     width: 100%;
 
-                    .expandedMenuItem {
+                    .expandedItemContainer {
                         border: none;
                         border-top: 1px solid $color-light-x4-gray;
                         background-color: white;
@@ -462,22 +462,22 @@
             }
         }
 
-        .mainNavbar {
+        .mainContainer {
             .imageContainer {
                 margin: -23px 0px 0px 14px;
 
-                .siteLogo {
+                .logo {
                     width: 178px;
                     height: auto;
                 }
             }
 
-            .navbarToggler {
+            .toggler {
                 margin: 0px 17px 2px 0px;
                 width: 27px;
                 height: 26px;
 
-                .iconBar {
+                .bar {
                     width: 13px;
                     margin: 1.5px 0px;
                 }
@@ -510,21 +510,21 @@
             }
         }
 
-        .mainNavbar {
+        .mainContainer {
             .imageContainer {
                 margin: -19px 0px 0px 13px;
 
-                .siteLogo {
+                .logo {
                     width: 148px;
                 }
             }
 
-            .navbarToggler {
+            .toggler {
                 margin-right: 15.5px;
                 width: 26px;
                 height: 25px;
 
-                .iconBar {
+                .bar {
                     width: 13px;
                 }
             }
