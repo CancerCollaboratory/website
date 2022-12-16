@@ -1,0 +1,12 @@
+@import "../../styles/colors";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .innerContainer {
+        border: 1px solid $light-x4-gray;
+        width: 100%;
+    }
+}
