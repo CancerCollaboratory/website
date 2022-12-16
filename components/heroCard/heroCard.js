@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Image from "next/image";
 import Button from "../button/button";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./heroCard.module.scss";
 
 const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, hasBackground }) => {
@@ -8,7 +9,17 @@ const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, hasBackground }
     return null;
   } else {
     return (
-      <div className={clsx(!body.description ? styles.container : styles.customContainer)}>
+      <div
+        className={clsx(
+          !body.description
+            ? styles.container
+            : clsx(
+                styles.customContainer,
+                utilStyles.outerContainer,
+                utilStyles.containerBorderBottom
+              )
+        )}
+      >
         <Image
           src={imageSrcPath}
           alt={imageAlt}

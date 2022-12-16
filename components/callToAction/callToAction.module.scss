@@ -32,13 +32,11 @@
             margin: 0px 20.5px;
             line-height: 150%;
             width: 450px;
-
-            p {
-                font-size: 13px;
-            }
         }
 
         .isolateText {
+            display: flex;
+            justify-content: center;
             text-align: center;
             width: 700px;
         }
@@ -77,10 +75,6 @@
             .description {
                 margin: 6px 19px;
                 width: 430px;
-
-                p {
-                    font-size: 12.5px;
-                }
             }
 
             .isolateText {
@@ -149,10 +143,6 @@
             .description {
                 margin: 6.5px 0px;
                 width: 54%;
-
-                p {
-                    font-size: 12px;
-                }
             }
         }
     }
@@ -206,10 +196,6 @@
             .description {
                 margin: 6px 0px;
                 width: 63%;
-
-                p {
-                    font-size: 11px;
-                }
             }
         }
     }
