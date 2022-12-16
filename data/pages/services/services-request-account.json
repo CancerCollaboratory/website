@@ -20,5 +20,9 @@
             "isLinkExternal": true,
             "hasIcon": true
         }
+    },
+    "callToAction": {
+        "description": "Already a Collaboratory user? [Login to the Collaboratory Console](https://console.cancercollaboratory.org) and get started with running your analysis.",
+        "isDescriptionLinkExternal": true
     }
 }
