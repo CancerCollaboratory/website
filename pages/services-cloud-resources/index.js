@@ -1,7 +1,12 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Jumbotron from "../../components/jumbotron/jumbotron";
+import LateralColumn from "../../components/lateralColumn/lateralColumn";
+import LeftColumn from "../../components/leftColumn/leftColumn";
+import RightColumn from "../../components/rightColumn/rightColumn";
+import TabSection from "../../components/tabSection/tabSection";
 import pageData from "../../data/pages/services/services-cloud-resources.json";
+import utilStyles from "../../styles/utils.module.scss";
 
 const CloudResources = () => {
   const { asPath } = useRouter();
@@ -18,11 +23,22 @@ const CloudResources = () => {
   }, [asPath]);
 
   return (
-    <Jumbotron
-      title={jumbotron?.title}
-      bodyText={jumbotron?.body?.text}
-      isBodyLinkExternal={jumbotron?.body?.isLinkExternal}
-    />
+    <>
+      <Jumbotron
+        title={jumbotron?.title}
+        bodyText={jumbotron?.body?.text}
+        isBodyLinkExternal={jumbotron?.body?.isLinkExternal}
+      />
+      <div className={utilStyles.pageBodyContainer}>
+        <TabSection>
+          <LateralColumn
+            title={tabSection?.tabLayout?.tabs[activeTabIndex]?.content?.lateralColumn?.title}
+            leftColumn={<LeftColumn />}
+            rightColumn={<RightColumn />}
+          />
+        </TabSection>
+      </div>
+    </>
   );
 };
 
