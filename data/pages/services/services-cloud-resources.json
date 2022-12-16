@@ -27,21 +27,23 @@
             }
         ]
     },
-    "tabLayout": {
+    "tabSection": {
         "mainPageUrl": "/services-cloud-resources",
-        "tabs": [
-            {
-                "label": "Compute",
-                "link": "/services-cloud-resources#compute"
-            },
-            {
-                "label": "Storage",
-                "link": "/services-cloud-resources#storage"
-            },
-            {
-                "label": "Networking",
-                "link": "/services-cloud-resources#networking"
-            }
-        ]
+        "tabLayout": {
+            "tabs": [
+                {
+                    "label": "Compute",
+                    "link": "/services-cloud-resources#compute"
+                },
+                {
+                    "label": "Storage",
+                    "link": "/services-cloud-resources#storage"
+                },
+                {
+                    "label": "Networking",
+                    "link": "/services-cloud-resources#networking"
+                }
+            ]
+        }
     }
 }
