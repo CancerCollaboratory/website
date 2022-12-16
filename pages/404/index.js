@@ -1,15 +1,10 @@
+import Jumbotron from "../../components/jumbotron/jumbotron";
 import pageData from "../../data/pages/404/404.json";
-import utilStyles from "../../styles/utils.module.scss";
 
 const Custom404 = () => {
-  const custom404 = pageData.custom404;
+  const jumbotron = pageData.jumbotron;
 
-  return (
-    <div className={utilStyles.pageBodyContainer}>
-      <h1>{custom404?.title}</h1>
-      <h2>{custom404?.subTitle}</h2>
-    </div>
-  );
+  return <Jumbotron title={jumbotron?.title} />;
 };
 
 export default Custom404;
