@@ -1,12 +1,50 @@
 @import "../../styles/colors";
+@import "../../styles/mixins";
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    margin-bottom: -1px;
 
-    .innerContainer {
-        border: 1px solid $light-x4-gray;
-        width: 100%;
+    li {
+        margin-right: 12px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            border: 1px solid $light-x4-gray;
+            border-radius: 15px 15px 0px 0px;
+            background-color: $light-x8-gray;
+            width: 198px;
+            padding: 10px 15px;
+
+            &:hover {
+                background-color: $white;
+            }
+        }
+    }
+
+    .activeTab {
+        a {
+            position: relative;
+            border-bottom-color: $white;
+            background-color: $white;
+            text-decoration: none;
+            color: $dark-x3-gray;
+        }
     }
 }
+
+// large: 1199px
+@include respond-to("large") {}
+
+// medium: 991px
+@include respond-to("medium") {}
+
+// small: 767px
+@include respond-to("small") {}
+
+// extra-small: 388px
+@include respond-to("extra-small") {}
+
+// extra-extra-small: 315px
+@include respond-to("extra-extra-small") {}
