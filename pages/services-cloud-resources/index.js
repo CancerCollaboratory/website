@@ -1,9 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Jumbotron from "../../components/jumbotron/jumbotron";
-import TabLayout from "../../components/tabLayout/tabLayout";
 import pageData from "../../data/pages/services/services-cloud-resources.json";
-import utilStyles from "../../styles/utils.module.scss";
 
 const CloudResources = () => {
   const { asPath } = useRouter();
