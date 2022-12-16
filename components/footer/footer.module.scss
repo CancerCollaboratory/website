@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: 1px solid $color-light-x4-gray;
+    border-top: 1px solid $light-x4-gray;
 
     .headContainer {
         display: flex;
@@ -26,7 +26,7 @@
             flex-direction: column;
 
             .headItemLabel {
-                color: $color-dark-x2-gray;
+                color: $dark-x2-gray;
                 margin-bottom: 2.5px;
                 font-size: 12.5px;
             }
@@ -36,16 +36,16 @@
                 align-items: center;
 
                 a {
-                    color: $color-dark-x4-gray;
+                    color: $dark-x4-gray;
                     font-size: 12.5px;
 
                     &:hover {
-                        color: $color-light-x2-gray;
+                        color: $light-x2-gray;
                     }
                 }
 
                 .verticalLine {
-                    border-left: 1px solid $color-dark-x1-gray;
+                    border-left: 1px solid $dark-x1-gray;
                     margin: 0px 8px;
                     height: 13px;
                 }
@@ -56,7 +56,7 @@
     .tailContainer {
         display: flex;
         justify-content: center;
-        background-color: $color-dark-x1-blue;
+        background-color: $dark-x1-blue;
         padding: 20px 0px;
 
         .tailItemContainer {
@@ -67,12 +67,12 @@
 
             a {
                 display: block;
-                color: $color-white;
+                color: $white;
                 margin-bottom: 10px;
                 width: max-content;
 
                 &:hover {
-                    color: $color-light-x8-blue;
+                    color: $light-x8-blue;
                 }
             }
 
@@ -95,7 +95,7 @@
         }
 
         .tailItemRightBorder {
-            border-right: 1px solid $color-light-x2-blue;
+            border-right: 1px solid $light-x2-blue;
         }
     }
 }

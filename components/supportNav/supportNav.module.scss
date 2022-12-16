@@ -4,30 +4,30 @@
 .navContainer {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid $color-light-x4-gray;
+    border-bottom: 1px solid $light-x4-gray;
 
     li {
-        border-top: 1px solid $color-light-x4-gray;
+        border-top: 1px solid $light-x4-gray;
         padding: 10px 0px;
 
         a {
             display: block;
             border-left: 3px solid white;
-            color: $color-dark-x3-gray;
+            color: $dark-x3-gray;
             padding-left: 9px;
             font-size: 14px;
             font-weight: 500;
 
             &:hover {
-                border-left-color: $color-dark-x2-red;
-                color: $color-dark-x2-red;
+                border-left-color: $dark-x2-red;
+                color: $dark-x2-red;
             }
         }
     }
 
     .selectedSubItem {
-        border-left-color: $color-dark-x2-red;
-        color: $color-dark-x2-red;
+        border-left-color: $dark-x2-red;
+        color: $dark-x2-red;
     }
 }
 

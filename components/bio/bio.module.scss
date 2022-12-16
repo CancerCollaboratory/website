@@ -3,7 +3,7 @@
 
 .container {
     display: flex;
-    border: 1px solid $color-light-x4-gray;
+    border: 1px solid $light-x4-gray;
     border-radius: 15px;
     padding: 20px;
     height: 100%;
@@ -19,7 +19,7 @@
 
         .name,
         .description {
-            color: $color-dark-x2-gray;
+            color: $dark-x2-gray;
         }
 
         .name {
