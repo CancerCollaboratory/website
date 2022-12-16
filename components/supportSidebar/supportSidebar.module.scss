@@ -1,7 +1,7 @@
 @import "../../styles/mixins";
 @import "../../styles/colors";
 
-.sideBarContainer {
+.container {
     background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 100%);
     border-right: 1px solid $color-light-x4-gray;
     padding: 48px;
@@ -9,31 +9,31 @@
 }
 
 @include respond-to("large") {
-    .sideBarContainer {
+    .container {
         padding: 40px;
     }
 }
 
 @include respond-to("medium") {
-    .sideBarContainer {
+    .container {
         padding: 42px;
     }
 }
 
 @include respond-to("small") {
-    .sideBarContainer {
+    .container {
         padding: 30px;
     }
 }
 
 @include respond-to("extra-small") {
-    .sideBarContainer {
+    .container {
         padding: 20px;
     }
 }
 
 @include respond-to("extra-extra-small") {
-    .sideBarContainer {
+    .container {
         padding: 18px;
     }
 }
