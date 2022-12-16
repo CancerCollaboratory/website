@@ -18,13 +18,11 @@ const CloudResources = () => {
   }, [asPath]);
 
   return (
-    <>
-      <Jumbotron
-        title={jumbotron?.title}
-        bodyText={jumbotron?.body?.text}
-        isBodyLinkExternal={jumbotron?.body?.isLinkExternal}
-      />
-    </>
+    <Jumbotron
+      title={jumbotron?.title}
+      bodyText={jumbotron?.body?.text}
+      isBodyLinkExternal={jumbotron?.body?.isLinkExternal}
+    />
   );
 };
 
