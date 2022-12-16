@@ -7,10 +7,10 @@ const CloudResources = () => {
   const { asPath } = useRouter();
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const jumbotron = pageData.jumbotron;
-  const tabLayout = pageData.tabLayout;
+  const tabSection = pageData.tabSection;
 
   function getActiveTabIndex(pagePath) {
-    return tabLayout?.tabs?.findIndex((tab) => tab.link === pagePath);
+    return tabSection?.tabLayout?.tabs?.findIndex((tab) => tab.link === pagePath);
   }
 
   useEffect(() => {
