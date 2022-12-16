@@ -9,8 +9,8 @@ const CloudResources = () => {
   const jumbotron = pageData.jumbotron;
   const tabLayout = pageData.tabLayout;
 
-  function getActiveTabIndex(currentPath) {
-    return tabLayout?.tabs?.findIndex((tab) => tab.link === currentPath);
+  function getActiveTabIndex(pagePath) {
+    return tabLayout?.tabs?.findIndex((tab) => tab.link === pagePath);
   }
 
   useEffect(() => {
