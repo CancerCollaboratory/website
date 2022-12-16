@@ -1,6 +1,7 @@
 {
     "custom404": {
-        "title": "404",
-        "subTitle": "Page Not Found"
+        "jumbotron": {
+            "title": "404 | Page not found"
+        }
     }
 }
