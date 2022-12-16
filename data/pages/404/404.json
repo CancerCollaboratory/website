@@ -1,7 +1,5 @@
 {
-    "custom404": {
-        "jumbotron": {
-            "title": "404 | Page not found"
-        }
+    "jumbotron": {
+        "title": "404 | Page not found"
     }
 }
