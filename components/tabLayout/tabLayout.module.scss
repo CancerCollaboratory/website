@@ -15,7 +15,9 @@
             border-radius: 15px 15px 0px 0px;
             background-color: $light-x8-gray;
             width: 198px;
-            padding: 10px 15px;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 0px;
 
             &:hover {
                 background-color: $white;
@@ -34,17 +36,73 @@
     }
 }
 
-// large: 1199px
-@include respond-to("large") {}
+@include respond-to("large") {
+    .container {
+        li {
+            a {
+                border-radius: 16px 16px 0px 0px;
+                width: 168px;
+            }
+        }
+    }
+}
 
-// medium: 991px
-@include respond-to("medium") {}
+@include respond-to("medium") {
+    .container {
+        li {
+            margin-right: 11.5px;
 
-// small: 767px
-@include respond-to("small") {}
+            a {
+                width: 130px;
+                font-size: 13px;
+                padding: 9.5px 0px;
+            }
+        }
+    }
+}
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+@include respond-to("small") {
+    .container {
+        width: 100%;
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+        li {
+            margin-right: 11px;
+            width: 27%;
+
+            a {
+                border-radius: 17px 17px 0px 0px;
+                width: 100%;
+                font-size: 12px;
+                padding: 9px 0px;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        li {
+            margin-right: 7px;
+            width: 30%;
+
+            a {
+                font-size: 11.5px;
+                padding: 8px 0px;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        li {
+            margin-right: 6px;
+            width: 31%;
+
+            a {
+                font-size: 10.5px;
+                padding: 7.5px 0px;
+            }
+        }
+    }
+}
