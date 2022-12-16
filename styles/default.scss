@@ -3,8 +3,13 @@
 @import "./mixins";
 @import "./imgPaths";
 
+html {
+    background-color: $color-dark-x6-gray;
+}
+
 body,
 input {
+    background-color: $color-white;
     font-family: 'Open Sans', sans-serif;
 }
 

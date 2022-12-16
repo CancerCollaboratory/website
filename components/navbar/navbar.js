@@ -27,15 +27,15 @@ const Navbar = () => {
         <nav className={styles.secondaryContainer}>
           <div className={styles.secondaryBlock}>
             <ul className={styles.coloredBlock}>
-              {data.headerList.headerTop.map((item, index) => (
+              {data.headerList?.headerTop?.map((item, index) => (
                 <li key={index}>
                   <CustomLink label={item.label} link={item.link} />
                 </li>
               ))}
             </ul>
             <ul className={styles.uncoloredBlock}>
-              {data.headerList.headerBottom.map((item, index) => (
-                <li className={clsx(item?.hasBorder ? styles.borderRight : undefined)} key={index}>
+              {data.headerList?.headerBottom?.map((item, index) => (
+                <li className={clsx(item.hasBorder ? styles.borderRight : undefined)} key={index}>
                   <CustomLink label={item.label} link={item.link} isLinkExternal={true} />
                 </li>
               ))}
@@ -43,11 +43,11 @@ const Navbar = () => {
           </div>
         </nav>
         <div className={styles.mainContainer}>
-          <CustomLink link={data.websiteLogo.link}>
+          <CustomLink link={data.websiteLogo?.link}>
             <div className={styles.imageContainer}>
               <Image
-                src={data.websiteLogo.srcPath}
-                alt={data.websiteLogo.label}
+                src={data.websiteLogo?.srcPath}
+                alt={data.websiteLogo?.label}
                 className={styles.logo}
                 priority={true}
                 quality={100}
@@ -66,7 +66,7 @@ const Navbar = () => {
             <span className={styles.bar}></span>
           </div>
           <div className={styles.itemLine}>
-            {data.navbarItems.map((item, index) => (
+            {data.navbarItems?.map((item, index) => (
               <NavbarItem
                 itemLabel={item.label}
                 isItemlLink={true}
@@ -88,7 +88,7 @@ const Navbar = () => {
               styleInput={styles.expandedSearchBarInput}
             />
             <div className={styles.wrapExpandedDropdown}>
-              {data.navbarItems.map((item, index) =>
+              {data.navbarItems?.map((item, index) =>
                 item.dropdownItems ? (
                   <NavbarItem
                     itemLabel={item.label}

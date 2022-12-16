@@ -19,10 +19,8 @@ const Dockstore = () => {
         title={jumbotron?.title}
         bodyText={jumbotron?.body?.text}
         imageSrcPath={jumbotron?.image?.srcPath}
-        imageLabel={jumbotron?.image?.label}
-        buttonLabel={jumbotron?.button?.label}
-        isButtonLinkExternal={jumbotron?.button?.isLinkExternal}
-        buttonLink={jumbotron?.button?.link}
+        imageAlt={jumbotron?.image?.alt}
+        buttonData={jumbotron?.buttonData}
       />
       <div className={utilStyles.pageBodyContainer}>
         <LateralColumn

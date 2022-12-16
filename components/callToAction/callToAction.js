@@ -27,7 +27,7 @@ const CallToAction = ({
     >
       {title && (
         <div className={styles.titleContainer}>
-          {imageSrcPath && (
+          {imageSrcPath && imageAlt && (
             <Image
               src={imageSrcPath}
               alt={imageAlt}

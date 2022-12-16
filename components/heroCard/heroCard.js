@@ -5,7 +5,7 @@ import utilStyles from "../../styles/utils.module.scss";
 import styles from "./heroCard.module.scss";
 
 const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, hasBackground }) => {
-  if (!title || !imageSrcPath || !body) {
+  if (!title || !imageSrcPath || !imageAlt || !body) {
     return null;
   } else {
     return (

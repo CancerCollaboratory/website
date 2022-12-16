@@ -14,29 +14,30 @@ const ResourceSection = ({
   hasBackground,
   children,
 }) => {
-  return (
-    <div
-      className={clsx(
-        styles.sectionContainer,
-        utilStyles.outerContainer,
-        hasBackground ? utilStyles.gradientBackgroundGray : undefined,
-        hasBorderBottom ? utilStyles.containerBorderBottom : undefined,
-        caption && styles.background
-      )}
-    >
-      {title && <h2>{title}</h2>}
-      {cards && <ResourceCardLayout cards={cards} />}
-      {caption && (
-        <div className={clsx(styles.caption, utilStyles.commonAnchor)}>
-          {renderData(
-            caption,
-            isCaptionLinkExternal === "ture" ? insertLinkExternal : insertLinkInternal
-          )}
-        </div>
-      )}
-      {children}
-    </div>
-  );
+  if (!title || !cards) {
+    return null;
+  } else {
+    return (
+      <div
+        className={clsx(
+          styles.sectionContainer,
+          utilStyles.outerContainer,
+          hasBackground ? utilStyles.gradientBackgroundGray : undefined,
+          hasBorderBottom ? utilStyles.containerBorderBottom : undefined,
+          caption ? styles.background : undefined
+        )}
+      >
+        <h2>{title}</h2>
+        <ResourceCardLayout cards={cards} />
+        {caption && (
+          <div className={clsx(styles.caption, utilStyles.commonAnchor)}>
+            {renderData(caption, isCaptionLinkExternal ? insertLinkExternal : insertLinkInternal)}
+          </div>
+        )}
+        {children}
+      </div>
+    );
+  }
 };
 
 export default ResourceSection;

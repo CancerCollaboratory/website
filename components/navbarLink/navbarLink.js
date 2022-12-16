@@ -14,16 +14,17 @@ const NavbarLink = ({ label, link, dropdownItems }) => {
       : setIsItemActiveState(false);
   }, [link, asPath, dropdownItems]);
 
-  return (
-    label &&
-    link && (
+  if (!label || !link) {
+    return null;
+  } else {
+    return (
       <Link href={link} legacyBehavior>
         <a className={clsx(isItemActiveState ? styles.selectedNavbarItem : undefined)}>
           {dropdownItems ? label + " ▾" : label}
         </a>
       </Link>
-    )
-  );
+    );
+  }
 };
 
 export default NavbarLink;

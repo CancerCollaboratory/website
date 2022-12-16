@@ -17,37 +17,41 @@ const NavbarItem = ({ itemLabel, isItemlLink, itemLink, itemDropdown, isDropdown
     !isItemDropdownVisible ? setIsItemDropdownVisible(true) : setIsItemDropdownVisible(false);
   }
 
-  return (
-    <EscapeOutside onEscapeOutside={() => setIsItemDropdownVisible(false)}>
-      {isItemlLink ? (
-        <div
-          className={styles.itemContainer}
-          onMouseOver={() => setIsItemDropdownVisible(true)}
-          onMouseLeave={() => setIsItemDropdownVisible(false)}
-        >
-          <NavbarLink label={itemLabel} link={itemLink} dropdownItems={itemDropdown} />
-          {isItemDropdownVisible && itemDropdown && (
-            <NavbarDropdown
-              styleDropdown={styles.dropdown}
-              dropdownItems={itemDropdown}
-              showActivePage={isItemlLink}
-            />
-          )}
-        </div>
-      ) : (
-        <div className={styles.expandedItemContainer} onClick={() => expandSubDropdown()}>
-          <p className={styles.itemName}>{itemLabel + " ▾"}</p>
-          {isItemDropdownVisible && (
-            <NavbarDropdown
-              styleDropdown={styles.expandedSubDropdown}
-              dropdownItems={itemDropdown}
-              showActivePage={isItemlLink}
-            />
-          )}
-        </div>
-      )}
-    </EscapeOutside>
-  );
+  if (!itemLabel) {
+    return null;
+  } else {
+    return (
+      <EscapeOutside onEscapeOutside={() => setIsItemDropdownVisible(false)}>
+        {isItemlLink ? (
+          <div
+            className={styles.itemContainer}
+            onMouseOver={() => setIsItemDropdownVisible(true)}
+            onMouseLeave={() => setIsItemDropdownVisible(false)}
+          >
+            <NavbarLink label={itemLabel} link={itemLink} dropdownItems={itemDropdown} />
+            {isItemDropdownVisible && itemDropdown && (
+              <NavbarDropdown
+                dropdownItems={itemDropdown}
+                styleDropdown={styles.dropdown}
+                showActivePage={isItemlLink}
+              />
+            )}
+          </div>
+        ) : (
+          <div className={styles.expandedItemContainer} onClick={() => expandSubDropdown()}>
+            <p className={styles.itemName}>{itemLabel + " ▾"}</p>
+            {isItemDropdownVisible && (
+              <NavbarDropdown
+                dropdownItems={itemDropdown}
+                styleDropdown={styles.expandedSubDropdown}
+                showActivePage={isItemlLink}
+              />
+            )}
+          </div>
+        )}
+      </EscapeOutside>
+    );
+  }
 };
 
 export default NavbarItem;

@@ -1,0 +1,18 @@
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+}
+
+@include respond-to("medium") {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        width: 100%;
+    }
+}
