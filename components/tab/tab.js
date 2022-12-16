@@ -1,28 +1,25 @@
+import clsx from "clsx";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import styles from "../tabLayout/tabLayout.module.scss";
 import CustomLink from "../customLink/customLink";
-import data from "../../data/pages/services/services-cloud-resources.json";
 import utilStyles from "../../styles/utils.module.scss";
-import styles from "./tab.module.scss";
 
-const Tab = () => {
+const Tab = ({ label, link }) => {
   const { asPath } = useRouter();
-  const tabLayout = data.tabLayout;
+  const [isTabActive, setIsTabActive] = useState(false);
 
-  if (!asPath.includes(tabLayout?.mainPageUrl)) {
+  useEffect(() => {
+    link === asPath ? setIsTabActive(true) : setIsTabActive(false);
+  }, [asPath]);
+
+  if (!label || !link) {
     return null;
   } else {
     return (
-      <ul className={styles.container}>
-        {tabLayout?.tabs?.map(
-          (item, index) =>
-            item.label &&
-            item.link && (
-              <li className={utilStyles.commonAnchor} key={index}>
-                <CustomLink label={item.label} link={item.link} />
-              </li>
-            )
-        )}
-      </ul>
+      <li className={clsx(isTabActive ? styles.activeTab : undefined, utilStyles.commonAnchor)}>
+        <CustomLink label={label} link={link} />
+      </li>
     );
   }
 };
