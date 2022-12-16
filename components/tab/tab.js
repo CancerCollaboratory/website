@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { useRouter } from "next/router";
 import CustomLink from "../customLink/customLink";
 import data from "../../data/components/tab/tab.json";
@@ -17,7 +16,7 @@ const Tab = () => {
         {tab?.CloudResources?.map(
           (item, index)(
             item.label && item.linkedPage && (
-              <li className={clsx(styles.tab, utilStyles.commonAnchor)} key={index}>
+              <li className={utilStyles.commonAnchor} key={index}>
                 <CustomLink label={item.label} link={item.linkedPage} />
               </li>
             )
