@@ -2,10 +2,8 @@
 @import "../../styles/colors";
 
 .container {
-    background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 100%);
     border-right: 1px solid $color-light-x4-gray;
     padding: 48px;
-    width: max-content;
 }
 
 @include respond-to("large") {
@@ -16,24 +14,26 @@
 
 @include respond-to("medium") {
     .container {
-        padding: 42px;
+        border-top: 1px solid $color-light-x4-gray;
+        border-right: none;
+        width: 100%;
     }
 }
 
 @include respond-to("small") {
     .container {
-        padding: 30px;
+        padding: 38px;
     }
 }
 
 @include respond-to("extra-small") {
     .container {
-        padding: 20px;
+        padding: 26px;
     }
 }
 
 @include respond-to("extra-extra-small") {
     .container {
-        padding: 18px;
+        padding: 24px;
     }
 }
