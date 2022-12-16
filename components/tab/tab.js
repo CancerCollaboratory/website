@@ -1,26 +1,26 @@
 import { useRouter } from "next/router";
 import CustomLink from "../customLink/customLink";
-import data from "../../data/components/tab/tab.json";
+import data from "../../data/pages/services/services-cloud-resources.json";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./tab.module.scss";
 
 const Tab = () => {
   const { asPath } = useRouter();
-  const tab = data.tab;
+  const tabLayout = data.tabLayout;
 
-  if (!asPath.includes(tab?.CloudResources?.mainPageUrl)) {
+  if (!asPath.includes(tabLayout?.mainPageUrl)) {
     return null;
   } else {
     return (
       <ul className={styles.container}>
-        {tab?.CloudResources?.map(
-          (item, index)(
-            item.label && item.linkedPage && (
+        {tabLayout?.tabs?.map(
+          (item, index) =>
+            item.label &&
+            item.link && (
               <li className={utilStyles.commonAnchor} key={index}>
-                <CustomLink label={item.label} link={item.linkedPage} />
+                <CustomLink label={item.label} link={item.link} />
               </li>
             )
-          )
         )}
       </ul>
     );
