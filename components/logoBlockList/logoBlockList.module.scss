@@ -9,7 +9,7 @@
     .blockContainer {
         display: flex;
         justify-content: center;
-        border: 1px solid $color-light-x4-gray;
+        border: 1px solid $light-x4-gray;
         border-radius: 10px;
         margin: 5px;
         width: 38%;
@@ -22,7 +22,7 @@
     }
 
     .blockBackground {
-        background-color: $color-light-x8-gray;
+        background-color: $light-x8-gray;
     }
 }
 
@@ -61,11 +61,11 @@
         }
 
         .blockBackground {
-            background-color: $color-white;
+            background-color: $white;
         }
 
         .addBlockBackground {
-            background-color: $color-light-x8-gray;
+            background-color: $light-x8-gray;
         }
     }
 }

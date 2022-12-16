@@ -34,7 +34,7 @@
 }
 
 .columnBorder {
-    border-right: 1px solid $color-light-x4-gray;
+    border-right: 1px solid $light-x4-gray;
 }
 
 .itemLabel {
@@ -42,15 +42,15 @@
 }
 
 .gradientBackgroundGray {
-    background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 50%, white 100%);
+    background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
 }
 
 .altGradientBackgroundGray {
-    background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 100%);
+    background-image: linear-gradient(to right, white 0%, $light-x8-gray 100%);
 }
 
 .containerBorderBottom {
-    border-bottom: 1px dotted $color-light-x5-gray;
+    border-bottom: 1px dotted $light-x5-gray;
 }
 
 .verticallyCenterItem {
@@ -102,11 +102,11 @@
 
     .columnBorder {
         border-right: none;
-        border-bottom: 1px dotted $color-light-x5-gray;
+        border-bottom: 1px dotted $light-x5-gray;
     }
 
     .altGradientBackgroundGray {
-        background-image: linear-gradient(to right, white 0%, $color-light-x8-gray 50%, white 100%);
+        background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
     }
 }
 

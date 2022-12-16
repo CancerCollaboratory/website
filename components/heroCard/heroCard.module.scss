@@ -20,7 +20,7 @@
 
 .card,
 .customCard {
-    border: 1px solid $color-light-x4-gray;
+    border: 1px solid $light-x4-gray;
     border-radius: 10px;
 }
 
@@ -39,7 +39,7 @@
             width: 300px;
 
             li {
-                color: $color-dark-x2-gray;
+                color: $dark-x2-gray;
                 margin-bottom: 8px;
                 font-size: 15px;
             }
@@ -51,7 +51,7 @@
     }
 
     .background {
-        background-color: $color-light-x8-gray;
+        background-color: $light-x8-gray;
     }
 }
 

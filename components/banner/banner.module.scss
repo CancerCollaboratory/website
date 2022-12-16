@@ -4,7 +4,7 @@
 .container {
     display: flex;
     justify-content: center;
-    background-image: linear-gradient(to right, $color-light-x7-blue, $color-light-x11-gray);
+    background-image: linear-gradient(to right, $light-x7-blue, $light-x11-gray);
 
     .wrapContent {
         display: flex;
@@ -34,7 +34,7 @@
                 }
 
                 a {
-                    color: $color-dark-x1-red;
+                    color: $dark-x1-red;
                     white-space: nowrap;
                 }
 

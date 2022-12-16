@@ -12,7 +12,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: $color-dark-x4-gray;
+        background-color: $dark-x4-gray;
         padding-left: 608px;
         height: 44.5px;
 
@@ -27,13 +27,13 @@
                     margin-left: 13px;
 
                     a {
-                        background-color: $color-dark-x1-blue;
+                        background-color: $dark-x1-blue;
                         border-radius: 15px;
                         padding: 5px 10px;
-                        color: $color-white;
+                        color: $white;
 
                         &:hover {
-                            background-color: $color-light-x1-blue;
+                            background-color: $light-x1-blue;
                         }
                     }
                 }
@@ -46,12 +46,12 @@
                     margin-left: 13px;
 
                     a {
-                        color: $color-light-x5-blue;
+                        color: $light-x5-blue;
                     }
                 }
 
                 .borderRight {
-                    border-right: 3px solid $color-light-x5-blue;
+                    border-right: 3px solid $light-x5-blue;
                     padding-right: 13px;
                 }
             }
@@ -63,8 +63,8 @@
         flex-direction: row;
         align-items: flex-end;
         justify-content: center;
-        background-color: $color-white;
-        box-shadow: 0px 5px 10px 0px $color-dark-x5-gray;
+        background-color: $white;
+        box-shadow: 0px 5px 10px 0px $dark-x5-gray;
         padding-bottom: 13px;
 
         .imageContainer {
@@ -93,19 +93,19 @@
                 a {
                     border-left: 3px solid white;
                     padding: 0px 8px 0px 5px;
-                    color: $color-dark-x4-gray;
+                    color: $dark-x4-gray;
                     font-weight: 500;
                     font-size: 14px;
 
                     &:hover {
-                        border-left: 3px solid $color-dark-x2-red;
-                        color: $color-dark-x2-red;
+                        border-left: 3px solid $dark-x2-red;
+                        color: $dark-x2-red;
                     }
                 }
 
                 .selectedNavbarItem {
-                    border-left: 3px solid $color-dark-x2-red;
-                    color: $color-dark-x2-red;
+                    border-left: 3px solid $dark-x2-red;
+                    color: $dark-x2-red;
                 }
 
                 .searchBarInput {
@@ -125,8 +125,8 @@
                     top: 121px;
                     margin-left: 10.5px;
                     padding-top: 7px;
-                    background-color: $color-white;
-                    border: 1px solid $color-light-x4-gray;
+                    background-color: $white;
+                    border: 1px solid $light-x4-gray;
 
                     a {
                         display: block;
@@ -134,12 +134,12 @@
                         padding: 3.5px 14px 12px 14px;
 
                         &:hover {
-                            color: $color-dark-x2-red;
+                            color: $dark-x2-red;
                         }
                     }
 
                     .activePage {
-                        color: $color-dark-x2-red;
+                        color: $dark-x2-red;
                     }
                 }
             }
@@ -311,8 +311,8 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                border: 1px solid $color-light-x3-gray;
-                background-color: $color-white;
+                border: 1px solid $light-x3-gray;
+                background-color: $white;
                 border-radius: 4px;
                 margin: 0px 19px 2.5px 0px;
                 cursor: pointer;
@@ -320,19 +320,19 @@
                 height: 32px;
 
                 &:hover {
-                    background-color: $color-light-x3-gray;
+                    background-color: $light-x3-gray;
                 }
 
                 .bar {
                     width: 17px;
                     margin: 2px 0px;
                     border-radius: 1px;
-                    border-bottom: 2px solid $color-light-x1-gray;
+                    border-bottom: 2px solid $light-x1-gray;
                 }
             }
 
             .toggler[aria-expanded="true"] {
-                background-color: $color-light-x3-gray;
+                background-color: $light-x3-gray;
             }
 
             .itemLine {
@@ -352,7 +352,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                border-bottom: 1px solid $color-light-x4-gray;
+                border-bottom: 1px solid $light-x4-gray;
 
                 .expandedSearchBarContainer {
                     display: flex;
@@ -375,8 +375,8 @@
 
                     .expandedItemContainer {
                         border: none;
-                        border-top: 1px solid $color-light-x4-gray;
-                        background-color: $color-white;
+                        border-top: 1px solid $light-x4-gray;
+                        background-color: $white;
                         text-align: left;
                         cursor: pointer;
                         width: 100%;
@@ -384,31 +384,31 @@
                         &:hover {
                             .itemName {
                                 &:hover {
-                                    background-color: $color-light-x9-gray;
-                                    color: $color-dark-x2-red;
+                                    background-color: $light-x9-gray;
+                                    color: $dark-x2-red;
                                 }
                             }
 
                             .noDropdown {
-                                background-color: $color-light-x9-gray;
-                                color: $color-dark-x2-red;
+                                background-color: $light-x9-gray;
+                                color: $dark-x2-red;
                             }
                         }
 
                         .expandedSubDropdown {
                             display: flex;
                             flex-direction: column;
-                            border-top: 1px solid $color-light-x4-gray;
+                            border-top: 1px solid $light-x4-gray;
 
                             a {
                                 display: block;
-                                color: $color-dark-x3-gray;
+                                color: $dark-x3-gray;
                                 padding: 9px 28px;
                                 font-size: 13.5px;
 
                                 &:hover {
-                                    background-color: $color-light-x9-gray;
-                                    color: $color-dark-x2-red;
+                                    background-color: $light-x9-gray;
+                                    color: $dark-x2-red;
                                 }
                             }
                         }
@@ -423,7 +423,7 @@
 
                         .itemName,
                         .noDropdown {
-                            color: $color-dark-x3-gray;
+                            color: $dark-x3-gray;
                             font-size: 13.5px;
                         }
                     }

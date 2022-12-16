@@ -2,7 +2,7 @@
 @import "../../styles/colors";
 
 .container {
-    border-right: 1px solid $color-light-x4-gray;
+    border-right: 1px solid $light-x4-gray;
     padding: 48px;
 }
 
@@ -14,7 +14,7 @@
 
 @include respond-to("medium") {
     .container {
-        border-top: 1px solid $color-light-x4-gray;
+        border-top: 1px solid $light-x4-gray;
         border-right: none;
         width: 100%;
     }

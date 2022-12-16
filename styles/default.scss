@@ -4,32 +4,32 @@
 @import "./imgPaths";
 
 html {
-    background-color: $color-dark-x6-gray;
+    background-color: $dark-x6-gray;
 }
 
 body,
 input {
-    background-color: $color-white;
+    background-color: $white;
     font-family: 'Open Sans', sans-serif;
 }
 
 input {
-    border: 1px solid $color-light-x3-gray;
-    border-top: 2px solid $color-light-x6-gray;
-    background-color: $color-light-x9-gray;
+    border: 1px solid $light-x3-gray;
+    border-top: 2px solid $light-x6-gray;
+    background-color: $light-x9-gray;
     background-image: $icon-search;
     background-repeat: no-repeat;
     font-weight: 500;
 }
 
 h1 {
-    color: $color-dark-x1-blue;
+    color: $dark-x1-blue;
     font-size: 28px;
 }
 
 h2,
 h3 {
-    color: $color-dark-x4-gray;
+    color: $dark-x4-gray;
 }
 
 h2 {
@@ -41,11 +41,11 @@ h3 {
 }
 
 p {
-    color: $color-dark-x2-gray;
+    color: $dark-x2-gray;
 }
 
 caption {
-    color: $color-dark-x3-gray;
+    color: $dark-x3-gray;
 }
 
 p,
@@ -54,10 +54,10 @@ caption {
 }
 
 a {
-    color: $color-dark-x1-blue;
+    color: $dark-x1-blue;
 
     &:hover {
-        color: $color-light-x3-blue;
+        color: $light-x3-blue;
     }
 }
 

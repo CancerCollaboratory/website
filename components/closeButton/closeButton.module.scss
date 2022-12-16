@@ -5,13 +5,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $color-dark-x1-blue;
+    background-color: $dark-x1-blue;
     border-radius: 100%;
     width: 22px;
     height: 22px;
 
     &:hover {
-        background-color: $color-light-x4-blue;
+        background-color: $light-x4-blue;
         cursor: pointer;
     }
 }
@@ -20,7 +20,7 @@
 .cross:after {
     content: '';
     position: absolute;
-    background-color: $color-white;
+    background-color: $white;
     border-radius: 5px;
     height: 12px;
     width: 2px;

@@ -5,8 +5,8 @@
     display: flex;
     list-style: none;
     justify-content: center;
-    background-color: $color-light-x4-gray;
-    border-bottom: 1px solid $color-light-x7-gray;
+    background-color: $light-x4-gray;
+    border-bottom: 1px solid $light-x7-gray;
     padding: 10.1px 0px;
 
     li {
@@ -14,22 +14,22 @@
 
         a {
             display: block;
-            color: $color-dark-x4-gray;
+            color: $dark-x4-gray;
             text-decoration: none;
-            border-left: 3px solid $color-light-x4-gray;
+            border-left: 3px solid $light-x4-gray;
             padding-left: 9.25px;
             font-weight: 500;
             font-size: 13px;
 
             &:hover {
-                color: $color-dark-x2-red;
-                border-left: 3px solid $color-dark-x2-red;
+                color: $dark-x2-red;
+                border-left: 3px solid $dark-x2-red;
             }
         }
 
         .selectedSubNavbarItem {
-            color: $color-dark-x2-red;
-            border-left: 3px solid $color-dark-x2-red;
+            color: $dark-x2-red;
+            border-left: 3px solid $dark-x2-red;
         }
     }
 }
