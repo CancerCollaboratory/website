@@ -1,6 +1,8 @@
+import clsx from "clsx";
 import Navbar from "../navbar/navbar";
 import SupportSidebar from "../supportSidebar/supportSidebar";
 import Footer from "../footer/footer";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./supportLayout.module.scss";
 
 const SupportLayout = ({ children }) => {
@@ -10,9 +12,11 @@ const SupportLayout = ({ children }) => {
     return (
       <>
         <Navbar />
-        <div className={styles.container}>
-          <SupportSidebar />
-          {children}
+        <div className={utilStyles.pageBodyContainer}>
+          <div className={clsx(styles.container, utilStyles.outerContainer)}>
+            <SupportSidebar />
+            {children}
+          </div>
         </div>
         <Footer />
       </>
