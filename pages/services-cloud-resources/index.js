@@ -6,9 +6,9 @@ const CloudResources = () => {
 
   return (
     <Jumbotron
-      title={jumbotron.title}
-      bodyText={jumbotron.body.text}
-      isBodyLinkExternal={jumbotron.body.isLinkExternal}
+      title={jumbotron?.title}
+      bodyText={jumbotron?.body?.text}
+      isBodyLinkExternal={jumbotron?.body?.isLinkExternal}
     />
   );
 };
