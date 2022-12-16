@@ -19,7 +19,10 @@ const SubNavbar = () => {
       }
       if (navbarItems[i].dropdownItems) {
         for (let j = 0; j < navbarItems[i].dropdownItems.length; j++) {
-          if (navbarItems[i].dropdownItems[j].link === route) {
+          if (
+            navbarItems[i].dropdownItems[j].link === route ||
+            route.includes(navbarItems[i].dropdownItems[j].link + "#")
+          ) {
             setActiveNavbarItemIndex(i);
             break;
           }
@@ -44,7 +47,11 @@ const SubNavbar = () => {
             <CustomLink
               label={item.label}
               link={item.link}
-              styleLabel={item.link === asPath ? styles.selectedSubNavbarItem : undefined}
+              styleLabel={
+                item.link === asPath || asPath.includes(item.link + "#")
+                  ? styles.selectedSubNavbarItem
+                  : undefined
+              }
             />
           </li>
         ))}
