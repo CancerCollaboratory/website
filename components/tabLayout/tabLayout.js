@@ -4,14 +4,18 @@ import utilStyles from "../../styles/utils.module.scss";
 import styles from "./tabLayout.module.scss";
 
 const TabLayout = ({ children }) => {
-  return (
-    <div className={clsx(styles.container, utilStyles.outerContainer)}>
-      <div className={utilStyles.onlyChildContainer}>
-        <Tab />
+  if (!children) {
+    return null;
+  } else {
+    return (
+      <div className={clsx(styles.container, utilStyles.outerContainer)}>
+        <div className={utilStyles.onlyChildContainer}>
+          <Tab />
+        </div>
+        <div className={styles.innerContainer}>{children}</div>
       </div>
-      <div className={styles.innerContainer}>{children}</div>
-    </div>
-  );
+    );
+  }
 };
 
 export default TabLayout;
