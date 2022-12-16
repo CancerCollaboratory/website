@@ -1,0 +1,21 @@
+{
+    "tab": {
+        "CloudResources": {
+            "mainPageUrl": "/services-cloud-resources",
+            "items": [
+                {
+                    "label": "Compute",
+                    "linkedPage": "/services-cloud-resources#compute"
+                },
+                {
+                    "label": "Storage",
+                    "linkedPage": "/services-cloud-resources#storage"
+                },
+                {
+                    "label": "Networking",
+                    "linkedPage": "/services-cloud-resources#networking"
+                }
+            ]
+        }
+    }
+}
