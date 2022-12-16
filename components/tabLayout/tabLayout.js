@@ -1,19 +1,21 @@
-import clsx from "clsx";
-import Tab from "../../components/tab/tab";
-import utilStyles from "../../styles/utils.module.scss";
+import { useRouter } from "next/router";
+import Tab from "../tab/tab";
+import data from "../../data/pages/services/services-cloud-resources.json";
 import styles from "./tabLayout.module.scss";
 
-const TabLayout = ({ children }) => {
-  if (!children) {
+const TabLayout = () => {
+  const { asPath } = useRouter();
+  const tabSection = data.tabSection;
+
+  if (!asPath.includes(tabSection?.mainPageUrl)) {
     return null;
   } else {
     return (
-      <div className={clsx(styles.container, utilStyles.outerContainer)}>
-        <div className={utilStyles.onlyChildContainer}>
-          <Tab />
-        </div>
-        <div className={styles.innerContainer}>{children}</div>
-      </div>
+      <ul className={styles.container}>
+        {tabSection?.tabLayout?.tabs?.map((tab, index) => (
+          <Tab label={tab.label} link={tab.link} key={index} />
+        ))}
+      </ul>
     );
   }
 };
