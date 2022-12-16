@@ -8,20 +8,20 @@ const SubNavbar = () => {
   const { asPath } = useRouter();
   const [activeNavbarItemIndex, setActiveNavbarItemIndex] = useState(-1);
 
-  function getNavbarItemIndex(route) {
+  function getNavbarItemIndex(pagePath) {
     const navbarItems = navbarData.navbarItems;
     setActiveNavbarItemIndex(-1);
 
     for (let i = 0; i < navbarItems.length; i++) {
-      if (navbarItems[i].link === route) {
+      if (navbarItems[i].link === pagePath) {
         setActiveNavbarItemIndex(i);
         break;
       }
       if (navbarItems[i].dropdownItems) {
         for (let j = 0; j < navbarItems[i].dropdownItems.length; j++) {
           if (
-            navbarItems[i].dropdownItems[j].link === route ||
-            route.includes(navbarItems[i].dropdownItems[j].link + "#")
+            navbarItems[i].dropdownItems[j].link === pagePath ||
+            pagePath.includes(navbarItems[i].dropdownItems[j].link + "#")
           ) {
             setActiveNavbarItemIndex(i);
             break;
