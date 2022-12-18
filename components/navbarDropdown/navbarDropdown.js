@@ -17,7 +17,11 @@ const NavbarDropdown = ({ dropdownItems, styleDropdown, showActivePage }) => {
               <CustomLink
                 label={item.label}
                 link={item.link}
-                styleLabel={showActivePage && item.link === asPath ? styles.activePage : undefined}
+                styleLabel={
+                  showActivePage && (item.link === asPath || asPath.includes(item.link + "#"))
+                    ? styles.activePage
+                    : undefined
+                }
               />
             </li>
           </ul>
