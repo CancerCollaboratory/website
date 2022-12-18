@@ -1,8 +1,6 @@
 @import "../../styles/mixins";
 
 .container {
-    margin: 25px 0px;
-
     p {
         line-height: 170%;
     }
@@ -13,23 +11,5 @@
         p {
             line-height: 168%;
         }
-    }
-}
-
-@include respond-to("small") {
-    .container {
-        margin: 23px 0px;
-    }
-}
-
-@include respond-to("extra-small") {
-    .container {
-        margin: 22px 0px;
-    }
-}
-
-@include respond-to("extra-extra-small") {
-    .container {
-        margin: 20px 0px;
     }
 }
