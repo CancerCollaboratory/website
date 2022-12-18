@@ -16,6 +16,7 @@ const HeroCard = ({ title, imageSrcPath, imageAlt, body, button, hasBackground }
             : clsx(
                 styles.customContainer,
                 utilStyles.outerContainerWidth,
+                utilStyles.outerContainerPadding,
                 utilStyles.containerBorderBottom
               )
         )}
