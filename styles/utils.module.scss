@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.outerContainer {
+.outerContainerWidth {
     width: 1098px;
 }
 
@@ -76,7 +76,7 @@
 }
 
 @include respond-to("large") {
-    .outerContainer {
+    .outerContainerWidth {
         width: 898px;
     }
 
@@ -86,7 +86,7 @@
 }
 
 @include respond-to("medium") {
-    .outerContainer {
+    .outerContainerWidth {
         width: 674px;
     }
 
@@ -111,7 +111,7 @@
 }
 
 @include respond-to("small") {
-    .outerContainer {
+    .outerContainerWidth {
         width: 84%;
     }
 

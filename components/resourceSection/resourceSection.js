@@ -21,7 +21,7 @@ const ResourceSection = ({
       <div
         className={clsx(
           styles.sectionContainer,
-          utilStyles.outerContainer,
+          utilStyles.outerContainerWidth,
           hasBackground ? utilStyles.gradientBackgroundGray : undefined,
           hasBorderBottom ? utilStyles.containerBorderBottom : undefined,
           caption ? styles.background : undefined

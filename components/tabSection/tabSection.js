@@ -8,7 +8,7 @@ const TabSection = ({ children }) => {
     return null;
   } else {
     return (
-      <div className={clsx(styles.container, utilStyles.outerContainer)}>
+      <div className={clsx(styles.container, utilStyles.outerContainerWidth)}>
         <div className={utilStyles.onlyChildContainer}>
           <TabLayout />
         </div>
