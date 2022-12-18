@@ -11,6 +11,10 @@
     width: 1098px;
 }
 
+.outerContainerPadding {
+    padding: 25px 0px;
+}
+
 .defaultContainerWidth {
     width: 1170px;
 }
@@ -115,6 +119,10 @@
         width: 84%;
     }
 
+    .outerContainerPadding {
+        padding: 23px 0px;
+    }
+
     .defaultContainerWidth {
         width: 100%;
     }
@@ -129,6 +137,10 @@
 }
 
 @include respond-to("extra-small") {
+    .outerContainerPadding {
+        padding: 22px 0px;
+    }
+
     .childContainer {
         margin-top: 22px;
     }
@@ -139,6 +151,10 @@
 }
 
 @include respond-to("extra-extra-small") {
+    .outerContainerPadding {
+        padding: 20px 0px;
+    }
+
     .childContainer {
         margin-top: 20px;
     }
