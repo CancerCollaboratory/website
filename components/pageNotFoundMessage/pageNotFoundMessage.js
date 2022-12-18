@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import data from "../../data/pages/404/404.json";
 import utilStyles from "../../styles/utils.module.scss";
-import styles from "./pageNotFoundMessage.module.scss";
 
 const PageNotFoundMessage = () => {
   const { asPath } = useRouter();
@@ -13,14 +12,8 @@ const PageNotFoundMessage = () => {
   useEffect(() => setPagePath(asPath), [asPath]);
 
   return (
-    <div
-      className={clsx(
-        styles.container,
-        utilStyles.outerContainerWidth,
-        utilStyles.outerContainerPadding
-      )}
-    >
-      <p>
+    <div className={clsx(utilStyles.outerContainerWidth, utilStyles.outerContainerPadding)}>
+      <p className={utilStyles.defaultElementLineHeight}>
         {data.pageNotFoundMessage.map((item, index) => (
           <React.Fragment key={index}>
             {item.value && <span>{item.value}</span>}
