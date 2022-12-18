@@ -69,6 +69,16 @@
     align-items: flex-end;
 }
 
+.defaultElementLineHeight {
+    line-height: 170%;
+}
+
+.embeddedParagraphLineHeight {
+    p {
+        line-height: 170%;
+    }
+}
+
 .commonAnchor {
     a {
         text-decoration: underline;
@@ -111,6 +121,16 @@
 
     .altGradientBackgroundGray {
         background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
+    }
+
+    .defaultElementLineHeight {
+        line-height: 168%;
+    }
+
+    .embeddedParagraphLineHeight {
+        p {
+            line-height: 168%;
+        }
     }
 }
 
