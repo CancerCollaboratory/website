@@ -13,7 +13,13 @@ const PageNotFoundMessage = () => {
   useEffect(() => setPagePath(asPath), [asPath]);
 
   return (
-    <div className={clsx(styles.container, utilStyles.outerContainerWidth)}>
+    <div
+      className={clsx(
+        styles.container,
+        utilStyles.outerContainerWidth,
+        utilStyles.outerContainerPadding
+      )}
+    >
       <p>
         {data.pageNotFoundMessage.map((item, index) => (
           <React.Fragment key={index}>
