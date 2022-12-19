@@ -69,6 +69,17 @@
     align-items: flex-end;
 }
 
+.titleIcon {
+    margin-right: 21px;
+    height: max-content;
+}
+
+.smallTitleIcon {
+    margin-right: 13px;
+    width: 28px;
+    height: auto;
+}
+
 .defaultElementMarginBottom {
     margin-bottom: 25px;
 }
@@ -93,6 +104,10 @@
     }
 }
 
+.smallh2 {
+    font-size: 18px;
+}
+
 @include respond-to("large") {
     .outerContainerWidth {
         width: 898px;
@@ -100,6 +115,21 @@
 
     .defaultContainerWidth {
         width: 970px;
+    }
+
+    .titleIcon {
+        margin-right: 19px;
+        width: 58px;
+        height: auto;
+    }
+
+    .smallTitleIcon {
+        margin-right: 12.5px;
+        width: 27px;
+    }
+
+    .smallh2 {
+        font-size: 17px;
     }
 }
 
@@ -127,6 +157,15 @@
         background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
     }
 
+    .titleIcon {
+        margin-right: 18px;
+        width: 54px;
+    }
+
+    .smallTitleIcon {
+        width: 26px;
+    }
+
     .defaultElementLineHeight {
         line-height: 168%;
     }
@@ -135,6 +174,10 @@
         p {
             line-height: 168%;
         }
+    }
+
+    .smallh2 {
+        font-size: 16px;
     }
 }
 
@@ -159,8 +202,22 @@
         margin-top: 15.5px;
     }
 
+    .titleIcon {
+        margin-right: 16px;
+        width: 48px;
+    }
+
+    .smallTitleIcon {
+        margin-right: 11.5px;
+        width: 24px;
+    }
+
     .defaultElementMarginBottom {
         margin-bottom: 23px;
+    }
+
+    .smallh2 {
+        font-size: 14px;
     }
 }
 
@@ -177,8 +234,22 @@
         margin-top: 14.5px;
     }
 
+    .titleIcon {
+        margin-right: 13.5px;
+        width: 40px;
+    }
+
+    .smallTitleIcon {
+        margin-right: 11px;
+        width: 23px;
+    }
+
     .defaultElementMarginBottom {
         margin-bottom: 22px;
+    }
+
+    .smallh2 {
+        font-size: 13px;
     }
 }
 
@@ -193,6 +264,15 @@
 
     .altChildContainer {
         margin-top: 13.5px;
+    }
+
+    .titleIcon {
+        margin-right: 11.5px;
+        width: 34px;
+    }
+
+    .smallTitleIcon {
+        margin-right: 10.5px;
     }
 
     .defaultElementMarginBottom {

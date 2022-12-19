@@ -12,27 +12,10 @@
         align-items: center;
         padding-bottom: 25px;
         width: 100%;
-
-        .titleImage {
-            margin-right: 21px;
-            height: max-content;
-        }
     }
 
     .innerContainer {
         display: flex;
-    }
-}
-
-@include respond-to("large") {
-    .container {
-        .head {
-            .titleImage {
-                margin-right: 19px;
-                width: 58px;
-                height: auto;
-            }
-        }
     }
 }
 
@@ -43,11 +26,6 @@
         .head {
             justify-content: center;
             padding: 12.5px 0px;
-
-            .titleImage {
-                margin-right: 18px;
-                width: 54px;
-            }
         }
 
         .innerContainer {
@@ -62,11 +40,6 @@
 
         .head {
             padding: 11.5px 0px;
-
-            .titleImage {
-                margin-right: 16px;
-                width: 48px;
-            }
         }
 
         .innerContainer {
@@ -81,11 +54,6 @@
 
         .head {
             padding: 11px 0px;
-
-            .titleImage {
-                margin-right: 13.5px;
-                width: 40px;
-            }
         }
     }
 }
@@ -96,11 +64,6 @@
 
         .head {
             padding: 10px 0px;
-
-            .titleImage {
-                margin-right: 11.5px;
-                width: 34px;
-            }
         }
     }
 }
