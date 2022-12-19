@@ -6,6 +6,7 @@ import styles from "./lateralColumn.module.scss";
 
 const LateralColumn = ({
   title,
+  isSmallTitle,
   titleImageSrcPath,
   titleImageAlt,
   leftColumn,
@@ -44,7 +45,16 @@ const LateralColumn = ({
                 height={62}
               />
             )}
-            {title && <h2 className={utilStyles.defaultElementLineHeight}>{title}</h2>}
+            {title && (
+              <h2
+                className={clsx(
+                  utilStyles.defaultElementLineHeight,
+                  isSmallTitle ? utilStyles.smallh2 : undefined
+                )}
+              >
+                {title}
+              </h2>
+            )}
           </div>
         )}
         <div className={clsx(styles.innerContainer, styleColumnAlignment)}>
