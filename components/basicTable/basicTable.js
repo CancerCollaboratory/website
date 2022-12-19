@@ -11,7 +11,7 @@ const BasicTable = ({ headRow, body }) => {
         </thead>
         <tbody>
           {body.map((row, index) => (
-            <tr className={row.hasBackground ? styles.rowBackground : undefined} key={index}>
+            <tr className={index % 2 !== 0 ? styles.rowBackground : undefined} key={index}>
               {row.map((cell, subIndex) => cell.value && <td key={subIndex}>{cell.value}</td>)}
             </tr>
           ))}
