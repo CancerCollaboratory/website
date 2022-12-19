@@ -12,7 +12,7 @@ const BasicTable = ({ headRow, body }) => {
             {headRow.map(
               (cell, index) =>
                 cell.value && (
-                  <th className={utilStyles.shortenText} key={index}>
+                  <th className={utilStyles.textOverflow} key={index}>
                     {cell.value}
                   </th>
                 )
@@ -25,7 +25,7 @@ const BasicTable = ({ headRow, body }) => {
               {row.map(
                 (cell, subIndex) =>
                   cell.value && (
-                    <td className={utilStyles.shortenText} key={subIndex}>
+                    <td className={utilStyles.textOverflow} key={subIndex}>
                       {cell.value}
                     </td>
                   )
