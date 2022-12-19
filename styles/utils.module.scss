@@ -69,6 +69,10 @@
     align-items: flex-end;
 }
 
+.defaultElementMarginBottom {
+    margin-bottom: 25px;
+}
+
 .defaultElementLineHeight {
     line-height: 170%;
 }
@@ -154,6 +158,10 @@
     .altChildContainer {
         margin-top: 15.5px;
     }
+
+    .defaultElementMarginBottom {
+        margin-bottom: 23px;
+    }
 }
 
 @include respond-to("extra-small") {
@@ -168,6 +176,10 @@
     .altChildContainer {
         margin-top: 14.5px;
     }
+
+    .defaultElementMarginBottom {
+        margin-bottom: 22px;
+    }
 }
 
 @include respond-to("extra-extra-small") {
@@ -181,5 +193,9 @@
 
     .altChildContainer {
         margin-top: 13.5px;
+    }
+
+    .defaultElementMarginBottom {
+        margin-bottom: 20px;
     }
 }
