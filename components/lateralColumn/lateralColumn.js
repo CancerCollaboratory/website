@@ -39,7 +39,7 @@ const LateralColumn = ({
               <Image
                 src={titleImageSrcPath}
                 alt={titleImageAlt}
-                className={utilStyles.titleIcon}
+                className={!isSmallTitle ? utilStyles.titleIcon : utilStyles.smallTitleIcon}
                 quality={100}
                 width={62}
                 height={62}
