@@ -384,13 +384,13 @@
                         &:hover {
                             .itemName {
                                 &:hover {
-                                    background-color: $light-x9-gray;
+                                    background-color: $light-x11-gray;
                                     color: $dark-x2-red;
                                 }
                             }
 
                             .noDropdown {
-                                background-color: $light-x9-gray;
+                                background-color: $light-x11-gray;
                                 color: $dark-x2-red;
                             }
                         }
@@ -407,7 +407,7 @@
                                 font-size: 13.5px;
 
                                 &:hover {
-                                    background-color: $light-x9-gray;
+                                    background-color: $light-x11-gray;
                                     color: $dark-x2-red;
                                 }
                             }

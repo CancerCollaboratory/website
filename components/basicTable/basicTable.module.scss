@@ -9,7 +9,7 @@
             text-align: left;
 
             th {
-                border: 1px solid #c7c7c7;
+                border: 1px solid $light-x6-gray;
                 padding: 6px 12.5px;
             }
         }
@@ -18,13 +18,13 @@
     tbody {
         tr {
             td {
-                border: 1px solid #c7c7c7;
+                border: 1px solid $light-x6-gray;
                 padding: 6px 12.5px;
             }
         }
 
         .rowBackground {
-            background-color: #f8f8f8;
+            background-color: $light-x11-gray;
         }
     }
 }

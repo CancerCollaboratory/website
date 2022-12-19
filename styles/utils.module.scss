@@ -46,11 +46,11 @@
 }
 
 .gradientBackgroundGray {
-    background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
+    background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
 }
 
 .altGradientBackgroundGray {
-    background-image: linear-gradient(to right, white 0%, $light-x8-gray 100%);
+    background-image: linear-gradient(to right, white 0%, $light-x9-gray 100%);
 }
 
 .containerBorderBottom {
@@ -124,7 +124,7 @@
     }
 
     .altGradientBackgroundGray {
-        background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
+        background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
     }
 
     .defaultElementLineHeight {
