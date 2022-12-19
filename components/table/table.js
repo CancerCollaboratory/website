@@ -18,8 +18,8 @@ const Table = ({ title, body }) => {
                 <td
                   className={clsx(
                     styles.cell,
-                    utilStyles.commonAnchor,
-                    utilStyles.embeddedParagraphLineHeight
+                    utilStyles.embeddedParagraphLineHeight,
+                    cell.isLinkExternal ? utilStyles.commonAnchor : undefined
                   )}
                   key={subIndex}
                 >
