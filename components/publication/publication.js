@@ -31,8 +31,8 @@ const Publication = ({
         <div
           className={clsx(
             styles.block,
-            utilStyles.commonAnchor,
-            utilStyles.embeddedParagraphLineHeight
+            utilStyles.embeddedParagraphLineHeight,
+            isTitleLinkExternal || isCaptionLinkExternal ? utilStyles.commonAnchor : undefined
           )}
         >
           <CustomLink
