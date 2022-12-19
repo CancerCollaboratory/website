@@ -2,15 +2,15 @@
 @import "../../styles/mixins";
 
 .table {
+    table-layout: fixed;
     width: 90%;
 
     thead {
         tr {
-            text-align: left;
-
             th {
                 border: 1px solid $light-x6-gray;
                 padding: 6px 12.5px;
+                text-align: left;
             }
         }
     }
@@ -29,17 +29,67 @@
     }
 }
 
-// large: 1199px
-@include respond-to("large") {}
+@include respond-to("medium") {
+    .table {
+        tbody {
+            tr {
+                td {
+                    padding: 6px 0px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
 
-// medium: 991px
-@include respond-to("medium") {}
+@include respond-to("small") {
+    .table {
+        thead {
+            tr {
+                th {
+                    padding: 6px 11.5px;
+                }
+            }
+        }
+    }
+}
 
-// small: 767px
-@include respond-to("small") {}
+@include respond-to("extra-small") {
+    .table {
+        thead {
+            tr {
+                th {
+                    padding: 5.5px 11px;
+                }
+            }
+        }
 
-// extra-small: 388px
-@include respond-to("extra-small") {}
+        tbody {
+            tr {
+                td {
+                    padding: 5.5px 0px;
+                }
+            }
+        }
+    }
+}
 
-// extra-extra-small: 315px
-@include respond-to("extra-extra-small") {}
+@include respond-to("extra-extra-small") {
+    .table {
+        thead {
+            tr {
+                th {
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                td {
+                    padding: 5px 0px;
+                }
+            }
+        }
+    }
+}
