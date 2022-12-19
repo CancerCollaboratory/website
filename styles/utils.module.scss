@@ -75,6 +75,10 @@
     }
 }
 
+.smallh2 {
+    font-size: 18px;
+}
+
 @include respond-to("large") {
     .outerContainer {
         width: 898px;
@@ -82,6 +86,10 @@
 
     .defaultContainerWidth {
         width: 970px;
+    }
+
+    .smallh2 {
+        font-size: 17px;
     }
 }
 
@@ -108,6 +116,10 @@
     .altGradientBackgroundGray {
         background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
     }
+
+    .smallh2 {
+        font-size: 16px;
+    }
 }
 
 @include respond-to("small") {
@@ -126,6 +138,10 @@
     .altChildContainer {
         margin-top: 15.5px;
     }
+
+    .smallh2 {
+        font-size: 14px;
+    }
 }
 
 @include respond-to("extra-small") {
@@ -135,6 +151,10 @@
 
     .altChildContainer {
         margin-top: 14.5px;
+    }
+
+    .smallh2 {
+        font-size: 13px;
     }
 }
 
