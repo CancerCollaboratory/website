@@ -34,86 +34,17 @@
                 {
                     "label": "Compute",
                     "link": "/services-cloud-resources#compute",
-                    "content": {
-                        "lateralColumn": {
-                            "leftColumn": {
-                                "body": [
-                                    {
-                                        "text": "The compute infrastructure provides you with access to a large set of CPU & RAM and are provisioned on a per Instance basis. Instances are virtual machines and are available to be provisioned in several different flavours. Choosing the right flavour depends on your workflow. Use the chart below to find one that suits your needs. When provisioning instances you have the option to deploy using the Dashboard (see below) or by using the API. Many instances can be deployed at once. Amazon AWS Equivalent: EC2 / Elastic Compute Cloud.",
-                                        "isLastText": true
-                                    }
-                                ]
-                            },
-                            "rightColumn": {
-                                "body": [
-                                    {
-                                        "text": "Collaboratory c1 flavour types are based on Intel Xeon E5-2630 v3 2.4Ghz CPU with DDR4 2133Mhz RAM and 10k SAS HDD for local storage.",
-                                        "isLastText": true
-                                    }
-                                ],
-                                "basicTable": {
-                                    "headRow": [
-                                        {
-                                            "value": "Flavour"
-                                        },
-                                        {
-                                            "value": "Cores"
-                                        },
-                                        {
-                                            "value": "RAM"
-                                        },
-                                        {
-                                            "value": "Disk"
-                                        }
-                                    ],
-                                    "body": [
-                                        [
-                                            {
-                                                "value": "c1.micro"
-                                            },
-                                            {
-                                                "value": "1"
-                                            },
-                                            {
-                                                "value": "8GB"
-                                            },
-                                            {
-                                                "value": "162GB"
-                                            }
-                                        ],
-                                        [
-                                            {
-                                                "value": "c1.small"
-                                            },
-                                            {
-                                                "value": "2"
-                                            },
-                                            {
-                                                "value": "16GB"
-                                            },
-                                            {
-                                                "value": "325GB"
-                                            }
-                                        ]
-                                    ]
-                                }
-                            }
-                        }
-                    }
+                    "content": {}
                 },
                 {
                     "label": "Storage",
                     "link": "/services-cloud-resources#storage",
-                    "content": {
-                        "lateralColumn": {}
-                    }
+                    "content": {}
                 },
                 {
                     "label": "Networking",
                     "link": "/services-cloud-resources#networking",
-                    "content": {
-                        "lateralColumn": {}
-                    }
+                    "content": {}
                 }
             ]
         }
