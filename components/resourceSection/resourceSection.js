@@ -33,8 +33,8 @@ const ResourceSection = ({
           <div
             className={clsx(
               styles.caption,
-              utilStyles.commonAnchor,
-              utilStyles.embeddedParagraphLineHeight
+              utilStyles.embeddedParagraphLineHeight,
+              isCaptionLinkExternal ? utilStyles.commonAnchor : undefined
             )}
           >
             {renderData(caption, isCaptionLinkExternal ? insertLinkExternal : insertLinkInternal)}
