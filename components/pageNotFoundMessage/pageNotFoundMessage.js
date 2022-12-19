@@ -9,21 +9,23 @@ import styles from "./pageNotFoundMessage.module.scss";
 const PageNotFoundMessage = () => {
   const { asPath } = useRouter();
   const [pagePath, setPagePath] = useState("");
+  const errorMessage = data.pageNotFoundMessage;
 
   useEffect(() => setPagePath(asPath), []);
 
-  return (
-    <div className={clsx(styles.container, utilStyles.outerContainer)}>
-      <p>
-        {data.pageNotFoundMessage.map((item, index) => (
-          <React.Fragment key={index}>
-            {item.value && <span>{item.value}</span>}
-            {item.insertPagePath && <span>{`"${pagePath}"`}</span>}
-          </React.Fragment>
-        ))}
-      </p>
-    </div>
-  );
+  if (!errorMessage?.part1 || !errorMessage?.part2) {
+    return null;
+  } else {
+    return (
+      <div className={clsx(styles.container, utilStyles.outerContainer)}>
+        <p>
+          <span>{errorMessage.part1}</span>
+          {errorMessage?.insertPagePath && <span>{`"${pagePath}"`}</span>}
+          <span>{errorMessage.part2}</span>
+        </p>
+      </div>
+    );
+  }
 };
 
 export default PageNotFoundMessage;
