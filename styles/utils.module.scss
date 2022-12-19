@@ -69,6 +69,11 @@
     align-items: flex-end;
 }
 
+.titleIcon {
+    margin-right: 21px;
+    height: max-content;
+}
+
 .defaultElementMarginBottom {
     margin-bottom: 25px;
 }
@@ -106,6 +111,12 @@
         width: 970px;
     }
 
+    .titleIcon {
+        margin-right: 19px;
+        width: 58px;
+        height: auto;
+    }
+
     .smallh2 {
         font-size: 17px;
     }
@@ -133,6 +144,11 @@
 
     .altGradientBackgroundGray {
         background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
+    }
+
+    .titleIcon {
+        margin-right: 18px;
+        width: 54px;
     }
 
     .defaultElementLineHeight {
@@ -171,6 +187,11 @@
         margin-top: 15.5px;
     }
 
+    .titleIcon {
+        margin-right: 16px;
+        width: 48px;
+    }
+
     .defaultElementMarginBottom {
         margin-bottom: 23px;
     }
@@ -193,6 +214,11 @@
         margin-top: 14.5px;
     }
 
+    .titleIcon {
+        margin-right: 13.5px;
+        width: 40px;
+    }
+
     .defaultElementMarginBottom {
         margin-bottom: 22px;
     }
@@ -213,6 +239,11 @@
 
     .altChildContainer {
         margin-top: 13.5px;
+    }
+
+    .titleIcon {
+        margin-right: 11.5px;
+        width: 34px;
     }
 
     .defaultElementMarginBottom {
