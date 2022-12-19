@@ -2,9 +2,9 @@ import clsx from "clsx";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import utilStyles from "../../styles/utils.module.scss";
-import styles from "./table.module.scss";
+import styles from "./graphTable.module.scss";
 
-const Table = ({ title, body }) => {
+const GraphTable = ({ title, body }) => {
   if (!title || !body) {
     return null;
   } else {
@@ -39,4 +39,4 @@ const Table = ({ title, body }) => {
   }
 };
 
-export default Table;
+export default GraphTable;

@@ -46,11 +46,11 @@
 }
 
 .gradientBackgroundGray {
-    background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
+    background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
 }
 
 .altGradientBackgroundGray {
-    background-image: linear-gradient(to right, white 0%, $light-x8-gray 100%);
+    background-image: linear-gradient(to right, white 0%, $light-x9-gray 100%);
 }
 
 .containerBorderBottom {
@@ -108,6 +108,12 @@
     font-size: 18px;
 }
 
+.textOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @include respond-to("large") {
     .outerContainerWidth {
         width: 898px;
@@ -154,7 +160,7 @@
     }
 
     .altGradientBackgroundGray {
-        background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
+        background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
     }
 
     .titleIcon {
