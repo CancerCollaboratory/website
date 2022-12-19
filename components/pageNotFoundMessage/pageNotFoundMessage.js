@@ -20,7 +20,7 @@ const PageNotFoundMessage = () => {
       <div className={clsx(styles.container, utilStyles.outerContainer)}>
         <p>
           <span>{errorMessage.part1}</span>
-          {errorMessage?.insertPagePath && <span>{`"${pagePath}"`}</span>}
+          {errorMessage?.insertPagePath && <span>{` "${pagePath}" `}</span>}
           <span>{errorMessage.part2}</span>
         </p>
       </div>
