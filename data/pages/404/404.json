@@ -3,8 +3,8 @@
         "title": "404 | Page not found"
     },
     "pageNotFoundMessage": {
-        "part1": "The requested page ",
+        "part1": "The requested page",
         "insertPagePath": true,
-        "part2": " could not be found."
+        "part2": "could not be found."
     }
 }
