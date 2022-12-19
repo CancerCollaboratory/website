@@ -105,18 +105,14 @@
                     "label": "Storage",
                     "link": "/services-cloud-resources#storage",
                     "content": {
-                        "lateralColumn": {
-                            "title": "Enter title2 here."
-                        }
+                        "lateralColumn": {}
                     }
                 },
                 {
                     "label": "Networking",
                     "link": "/services-cloud-resources#networking",
                     "content": {
-                        "lateralColumn": {
-                            "title": "Enter title3 here."
-                        }
+                        "lateralColumn": {}
                     }
                 }
             ]
