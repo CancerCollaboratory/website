@@ -12,12 +12,11 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 1200px;
-    padding: 22.5px 0px;
+    padding: 23px 0px;
 
     .bodyBlock {
         color: $dark-x1-gray;
         text-align: center;
-        line-height: 165%;
         margin-top: 8.5px;
         width: 720px;
 
@@ -150,7 +149,7 @@
 
 @include respond-to("extra-extra-small") {
     .container {
-        padding: 16.5px;
+        padding: 16px;
 
         .title {
             overflow: hidden;

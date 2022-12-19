@@ -9,7 +9,7 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
   return (
     <div className={styles.container}>
       {megaTitle && (
-        <h1 className={styles.megaTitle}>
+        <h1 className={clsx(styles.megaTitle, utilStyles.defaultElementMarginBottom)}>
           {megaTitle.map((item, index) => (
             <span className={item.isMainSubTitle ? styles.mainSubTitle : undefined} key={index}>
               {item.subTitle}
@@ -19,7 +19,11 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
       )}
       {(title || (imageSrcPath && imageAlt)) && (
         <div
-          className={clsx(styles.head, centerHead ? utilStyles.horizontallyCenterItem : undefined)}
+          className={clsx(
+            styles.head,
+            utilStyles.defaultElementMarginBottom,
+            centerHead ? utilStyles.horizontallyCenterItem : undefined
+          )}
         >
           {imageSrcPath && imageAlt && (
             <Image
@@ -31,7 +35,7 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
               height={62}
             />
           )}
-          {title && <h2 className={styles.title}>{title}</h2>}
+          {title && <h2 className={utilStyles.defaultElementLineHeight}>{title}</h2>}
         </div>
       )}
       {body?.map(
@@ -41,12 +45,15 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
               className={clsx(
                 !item.isLastText
                   ? megaTitle
-                    ? styles.introBody
-                    : styles.bodyText
+                    ? clsx(styles.introBody, utilStyles.defaultElementMarginBottom)
+                    : clsx(
+                        utilStyles.defaultElementMarginBottom,
+                        utilStyles.embeddedParagraphLineHeight
+                      )
                   : megaTitle
-                  ? styles.lastIntroBody
-                  : styles.lastBodyText,
-                utilStyles.commonAnchor
+                  ? styles.introBody
+                  : utilStyles.embeddedParagraphLineHeight,
+                item.isLinkExternal ? utilStyles.commonAnchor : undefined
               )}
               key={index}
             >

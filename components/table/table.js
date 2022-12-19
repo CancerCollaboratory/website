@@ -15,7 +15,14 @@ const Table = ({ title, body }) => {
           {body.rows?.map((item, index) => (
             <tr key={index}>
               {item.cells?.map((cell, subIndex) => (
-                <td className={clsx(styles.cell, utilStyles.commonAnchor)} key={subIndex}>
+                <td
+                  className={clsx(
+                    styles.cell,
+                    utilStyles.embeddedParagraphLineHeight,
+                    cell.isLinkExternal ? utilStyles.commonAnchor : undefined
+                  )}
+                  key={subIndex}
+                >
                   {cell.title &&
                     renderData(
                       cell.title,

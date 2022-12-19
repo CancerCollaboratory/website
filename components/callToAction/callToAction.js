@@ -19,7 +19,7 @@ const CallToAction = ({
     <div
       className={clsx(
         styles.container,
-        utilStyles.outerContainer,
+        utilStyles.outerContainerWidth,
         utilStyles.gradientBackgroundGray,
         description ? styles.altContainer : undefined,
         hasBorderBottom ? utilStyles.containerBorderBottom : undefined
@@ -47,7 +47,7 @@ const CallToAction = ({
               className={clsx(
                 styles.description,
                 !title && !buttonData ? styles.isolateText : undefined,
-                utilStyles.commonAnchor
+                isDescriptionLinkExternal ? utilStyles.commonAnchor : undefined
               )}
             >
               {renderData(

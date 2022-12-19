@@ -28,12 +28,18 @@ const Publication = ({
           width={100}
           height={115}
         />
-        <div className={clsx(styles.block, utilStyles.commonAnchor)}>
+        <div
+          className={clsx(
+            styles.block,
+            utilStyles.embeddedParagraphLineHeight,
+            isTitleLinkExternal || isCaptionLinkExternal ? utilStyles.commonAnchor : undefined
+          )}
+        >
           <CustomLink
             label={title}
             link={titleLink}
             isLinkExternal={isTitleLinkExternal}
-            styleLabel={styles.title}
+            styleLabel={clsx(styles.title, utilStyles.defaultElementLineHeight)}
           />
           {renderData(caption, isCaptionLinkExternal ? insertLinkExternal : insertLinkInternal)}
         </div>

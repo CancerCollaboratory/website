@@ -40,7 +40,7 @@ const ResourceCard = ({
               className={clsx(
                 styles.title,
                 children ? styles.titleFont : undefined,
-                utilStyles.commonAnchor
+                isTitleLinkExternal ? utilStyles.commonAnchor : undefined
               )}
             >
               {renderData(title, isTitleLinkExternal ? insertLinkExternal : insertLinkInternal)}

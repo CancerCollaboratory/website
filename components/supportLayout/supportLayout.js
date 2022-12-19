@@ -13,7 +13,7 @@ const SupportLayout = ({ children }) => {
       <>
         <Navbar />
         <div className={utilStyles.pageBodyContainer}>
-          <div className={clsx(styles.container, utilStyles.outerContainer)}>
+          <div className={clsx(styles.container, utilStyles.outerContainerWidth)}>
             <SupportSidebar />
             {children}
           </div>

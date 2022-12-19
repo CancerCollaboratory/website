@@ -16,20 +16,7 @@
 
         .title {
             text-align: center;
-            line-height: 170%;
         }
-    }
-
-    .bodyText,
-    .lastBodyText {
-        p {
-            line-height: 170%;
-        }
-    }
-
-    .head,
-    .bodyText {
-        margin-bottom: 25px;
     }
 }
 
@@ -59,17 +46,6 @@
                 margin-right: 18px;
                 width: 54px;
             }
-
-            .title {
-                line-height: 168%;
-            }
-        }
-
-        .bodyText,
-        .lastBodyText {
-            p {
-                line-height: 168%;
-            }
         }
     }
 }
@@ -84,11 +60,6 @@
                 width: 48px;
             }
         }
-
-        .head,
-        .bodyText {
-            margin-bottom: 23px;
-        }
     }
 }
 
@@ -100,11 +71,6 @@
                 width: 40px;
             }
         }
-
-        .head,
-        .bodyText {
-            margin-bottom: 22px;
-        }
     }
 }
 
@@ -115,11 +81,6 @@
                 margin-right: 11.5px;
                 width: 34px;
             }
-        }
-
-        .head,
-        .bodyText {
-            margin-bottom: 20px;
         }
     }
 }
