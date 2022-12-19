@@ -4,7 +4,7 @@
 @import "./imgPaths";
 
 html {
-    background-color: $dark-x6-gray;
+    background-color: $dark-x7-gray;
 }
 
 body,
@@ -46,11 +46,11 @@ td {
 }
 
 caption {
-    color: $dark-x3-gray;
+    color: $dark-x6-gray;
 }
 
 th {
-    color: #4f4f4f;
+    color: $dark-x3-gray;
     font-weight: 600;
 }
 
