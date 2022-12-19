@@ -10,7 +10,7 @@ const PageNotFoundMessage = () => {
   const { asPath } = useRouter();
   const [pagePath, setPagePath] = useState("");
 
-  useEffect(() => setPagePath(asPath), [asPath]);
+  useEffect(() => setPagePath(asPath), []);
 
   return (
     <div className={clsx(styles.container, utilStyles.outerContainer)}>
