@@ -10,7 +10,10 @@ const ListLine = ({ isVertical, items }) => {
     return (
       <ul className={clsx(styles.container, isVertical ? styles.verticalList : undefined)}>
         {items.map((item, index) => (
-          <li className={utilStyles.commonAnchor} key={index}>
+          <li
+            className={clsx(utilStyles.commonAnchor, utilStyles.defaultElementLineHeight)}
+            key={index}
+          >
             <CustomLink label={item.label} link={item.link} isLinkExternal={item.isLinkExternal} />
           </li>
         ))}
