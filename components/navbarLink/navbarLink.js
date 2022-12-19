@@ -9,7 +9,8 @@ const NavbarLink = ({ label, link, dropdownItems }) => {
   const [isItemActiveState, setIsItemActiveState] = useState(false);
 
   useEffect(() => {
-    link === asPath || dropdownItems?.find((item) => item.link === asPath)
+    link === asPath ||
+    dropdownItems?.find((item) => item.link === asPath || asPath.includes(item.link + "#"))
       ? setIsItemActiveState(true)
       : setIsItemActiveState(false);
   }, [link, asPath, dropdownItems]);
