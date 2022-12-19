@@ -44,9 +44,7 @@ const LateralColumn = ({
                 height={62}
               />
             )}
-            {title && (
-              <h2 className={clsx(styles.title, utilStyles.defaultElementLineHeight)}>{title}</h2>
-            )}
+            {title && <h2 className={utilStyles.defaultElementLineHeight}>{title}</h2>}
           </div>
         )}
         <div className={clsx(styles.innerContainer, styleColumnAlignment)}>
