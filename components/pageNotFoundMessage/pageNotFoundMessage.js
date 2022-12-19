@@ -3,7 +3,6 @@ import React from "react";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import utilStyles from "../../styles/utils.module.scss";
-import styles from "./pageNotFoundMessage.module.scss";
 
 const PageNotFoundMessage = () => {
   const { asPath } = useRouter();
@@ -11,13 +10,7 @@ const PageNotFoundMessage = () => {
 
   useEffect(() => setPagePath(asPath), []);
   return (
-    <div
-      className={clsx(
-        styles.container,
-        utilStyles.outerContainer,
-        utilStyles.outerContainerPadding
-      )}
-    >
+    <div className={clsx(utilStyles.outerContainer, utilStyles.outerContainerPadding)}>
       <p
         className={utilStyles.defaultElementLineHeight}
       >{`The requested page "${pagePath}" could not be found.`}</p>
