@@ -10,7 +10,11 @@ const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children
     <div className={styles.container}>
       {(title || (imageSrcPath && imageAlt)) && (
         <div
-          className={clsx(styles.head, centerHead ? utilStyles.horizontallyCenterItem : undefined)}
+          className={clsx(
+            styles.head,
+            utilStyles.defaultElementMarginBottom,
+            centerHead ? utilStyles.horizontallyCenterItem : undefined
+          )}
         >
           {imageSrcPath && imageAlt && (
             <Image
@@ -22,7 +26,9 @@ const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children
               height={62}
             />
           )}
-          {title && !children && <h2 className={styles.title}>{title}</h2>}
+          {title && !children && (
+            <h2 className={clsx(styles.title, utilStyles.defaultElementLineHeight)}>{title}</h2>
+          )}
           {title && children && <h3>{title}</h3>}
         </div>
       )}
@@ -31,8 +37,13 @@ const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children
           item.text && (
             <div
               className={clsx(
-                !item.isLastText ? styles.bodyText : styles.lastBodyText,
-                utilStyles.commonAnchor
+                !item.isLastText
+                  ? clsx(
+                      utilStyles.defaultElementMarginBottom,
+                      utilStyles.embeddedParagraphLineHeight
+                    )
+                  : utilStyles.embeddedParagraphLineHeight,
+                item.isLinkExternal ? utilStyles.commonAnchor : undefined
               )}
               key={index}
             >

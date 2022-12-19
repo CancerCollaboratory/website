@@ -21,7 +21,7 @@ const ResourceSection = ({
       <div
         className={clsx(
           styles.sectionContainer,
-          utilStyles.outerContainer,
+          utilStyles.outerContainerWidth,
           hasBackground ? utilStyles.gradientBackgroundGray : undefined,
           hasBorderBottom ? utilStyles.containerBorderBottom : undefined,
           caption ? styles.background : undefined
@@ -30,7 +30,13 @@ const ResourceSection = ({
         <h2>{title}</h2>
         <ResourceCardLayout cards={cards} />
         {caption && (
-          <div className={clsx(styles.caption, utilStyles.commonAnchor)}>
+          <div
+            className={clsx(
+              styles.caption,
+              utilStyles.embeddedParagraphLineHeight,
+              isCaptionLinkExternal ? utilStyles.commonAnchor : undefined
+            )}
+          >
             {renderData(caption, isCaptionLinkExternal ? insertLinkExternal : insertLinkInternal)}
           </div>
         )}

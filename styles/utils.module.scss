@@ -7,8 +7,12 @@
     align-items: center;
 }
 
-.outerContainer {
+.outerContainerWidth {
     width: 1098px;
+}
+
+.outerContainerPadding {
+    padding: 25px 0px;
 }
 
 .defaultContainerWidth {
@@ -65,6 +69,20 @@
     align-items: flex-end;
 }
 
+.defaultElementMarginBottom {
+    margin-bottom: 25px;
+}
+
+.defaultElementLineHeight {
+    line-height: 170%;
+}
+
+.embeddedParagraphLineHeight {
+    p {
+        line-height: 170%;
+    }
+}
+
 .commonAnchor {
     a {
         text-decoration: underline;
@@ -80,7 +98,7 @@
 }
 
 @include respond-to("large") {
-    .outerContainer {
+    .outerContainerWidth {
         width: 898px;
     }
 
@@ -94,7 +112,7 @@
 }
 
 @include respond-to("medium") {
-    .outerContainer {
+    .outerContainerWidth {
         width: 674px;
     }
 
@@ -117,14 +135,28 @@
         background-image: linear-gradient(to right, white 0%, $light-x8-gray 50%, white 100%);
     }
 
+    .defaultElementLineHeight {
+        line-height: 168%;
+    }
+
+    .embeddedParagraphLineHeight {
+        p {
+            line-height: 168%;
+        }
+    }
+
     .smallh2 {
         font-size: 16px;
     }
 }
 
 @include respond-to("small") {
-    .outerContainer {
+    .outerContainerWidth {
         width: 84%;
+    }
+
+    .outerContainerPadding {
+        padding: 23px 0px;
     }
 
     .defaultContainerWidth {
@@ -139,12 +171,20 @@
         margin-top: 15.5px;
     }
 
+    .defaultElementMarginBottom {
+        margin-bottom: 23px;
+    }
+
     .smallh2 {
         font-size: 14px;
     }
 }
 
 @include respond-to("extra-small") {
+    .outerContainerPadding {
+        padding: 22px 0px;
+    }
+
     .childContainer {
         margin-top: 22px;
     }
@@ -153,17 +193,29 @@
         margin-top: 14.5px;
     }
 
+    .defaultElementMarginBottom {
+        margin-bottom: 22px;
+    }
+
     .smallh2 {
         font-size: 13px;
     }
 }
 
 @include respond-to("extra-extra-small") {
+    .outerContainerPadding {
+        padding: 20px 0px;
+    }
+
     .childContainer {
         margin-top: 20px;
     }
 
     .altChildContainer {
         margin-top: 13.5px;
+    }
+
+    .defaultElementMarginBottom {
+        margin-bottom: 20px;
     }
 }

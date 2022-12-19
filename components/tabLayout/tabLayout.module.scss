@@ -1,0 +1,108 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+    margin-bottom: -1px;
+
+    li {
+        margin-right: 12px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            border: 1px solid $light-x4-gray;
+            border-radius: 15px 15px 0px 0px;
+            background-color: $light-x8-gray;
+            width: 198px;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 0px;
+
+            &:hover {
+                background-color: $white;
+            }
+        }
+    }
+
+    .activeTab {
+        a {
+            position: relative;
+            border-bottom-color: $white;
+            background-color: $white;
+            text-decoration: none;
+            color: $dark-x3-gray;
+        }
+    }
+}
+
+@include respond-to("large") {
+    .container {
+        li {
+            a {
+                border-radius: 16px 16px 0px 0px;
+                width: 168px;
+            }
+        }
+    }
+}
+
+@include respond-to("medium") {
+    .container {
+        li {
+            margin-right: 11.5px;
+
+            a {
+                width: 130px;
+                font-size: 13px;
+                padding: 9.5px 0px;
+            }
+        }
+    }
+}
+
+@include respond-to("small") {
+    .container {
+        width: 100%;
+
+        li {
+            margin-right: 11px;
+            width: 27%;
+
+            a {
+                border-radius: 17px 17px 0px 0px;
+                width: 100%;
+                font-size: 12px;
+                padding: 9px 0px;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-small") {
+    .container {
+        li {
+            margin-right: 7px;
+            width: 30%;
+
+            a {
+                font-size: 11.5px;
+                padding: 8px 0px;
+            }
+        }
+    }
+}
+
+@include respond-to("extra-extra-small") {
+    .container {
+        li {
+            margin-right: 6px;
+            width: 31%;
+
+            a {
+                font-size: 10.5px;
+                padding: 7.5px 0px;
+            }
+        }
+    }
+}

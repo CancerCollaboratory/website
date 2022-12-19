@@ -8,7 +8,6 @@
         list-style-type: disc;
         list-style-position: inside;
         margin-right: 22px;
-        line-height: 170%;
 
         &::marker {
             color: $dark-x1-blue;
@@ -28,8 +27,6 @@
 @include respond-to("medium") {
     .container {
         li {
-            line-height: 168%;
-
             a {
                 font-size: 13px;
             }
