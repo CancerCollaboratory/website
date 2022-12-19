@@ -40,7 +40,8 @@ h3 {
     font-size: 17px;
 }
 
-p {
+p,
+td {
     color: $dark-x2-gray;
 }
 
@@ -48,8 +49,14 @@ caption {
     color: $dark-x3-gray;
 }
 
+th {
+    color: #4f4f4f;
+}
+
 p,
-caption {
+caption,
+th,
+td {
     font-size: 14px;
 }
 
@@ -89,7 +96,9 @@ a {
     }
 
     p,
-    caption {
+    caption,
+    th,
+    td {
         font-size: 13px;
     }
 }
@@ -108,7 +117,9 @@ a {
     }
 
     p,
-    caption {
+    caption,
+    th,
+    td {
         font-size: 12px;
     }
 }
@@ -137,7 +148,9 @@ a {
     }
 
     p,
-    caption {
+    caption,
+    th,
+    td {
         font-size: 11px;
     }
 }
