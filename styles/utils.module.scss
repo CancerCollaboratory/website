@@ -108,6 +108,12 @@
     font-size: 18px;
 }
 
+.shortenText {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @include respond-to("large") {
     .outerContainerWidth {
         width: 898px;
