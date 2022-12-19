@@ -43,7 +43,7 @@ const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children
                       utilStyles.embeddedParagraphLineHeight
                     )
                   : utilStyles.embeddedParagraphLineHeight,
-                utilStyles.commonAnchor
+                item.isLinkExternal ? utilStyles.commonAnchor : undefined
               )}
               key={index}
             >
