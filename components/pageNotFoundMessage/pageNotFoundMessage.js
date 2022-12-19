@@ -10,7 +10,7 @@ const PageNotFoundMessage = () => {
 
   useEffect(() => setPagePath(asPath), []);
   return (
-    <div className={clsx(utilStyles.outerContainer, utilStyles.outerContainerPadding)}>
+    <div className={clsx(utilStyles.outerContainerWidth, utilStyles.outerContainerPadding)}>
       <p
         className={utilStyles.defaultElementLineHeight}
       >{`The requested page "${pagePath}" could not be found.`}</p>
