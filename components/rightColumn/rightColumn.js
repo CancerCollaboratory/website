@@ -20,7 +20,7 @@ const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children
             <Image
               src={imageSrcPath}
               alt={imageAlt}
-              className={styles.image}
+              className={utilStyles.titleIcon}
               quality={100}
               width={62}
               height={62}

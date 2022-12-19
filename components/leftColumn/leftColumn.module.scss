@@ -17,11 +17,6 @@
     .head {
         display: flex;
         align-items: center;
-
-        .image {
-            margin-right: 21px;
-            height: max-content;
-        }
     }
 
     .introBody {
@@ -36,14 +31,6 @@
         .megaTitle {
             line-height: 46.5px;
             font-size: 41px;
-        }
-
-        .head {
-            .image {
-                margin-right: 19px;
-                width: 58px;
-                height: auto;
-            }
         }
     }
 }
@@ -63,11 +50,6 @@
 
         .head {
             justify-content: center;
-
-            .image {
-                margin-right: 18px;
-                width: 54px;
-            }
         }
     }
 }
@@ -79,13 +61,6 @@
         .megaTitle {
             line-height: 39px;
             font-size: 32px;
-        }
-
-        .head {
-            .image {
-                margin-right: 16px;
-                width: 48px;
-            }
         }
 
         .introBody {
@@ -100,13 +75,6 @@
             line-height: 34.5px;
             font-size: 28.5px;
         }
-
-        .head {
-            .image {
-                margin-right: 13.5px;
-                width: 40px;
-            }
-        }
     }
 }
 
@@ -115,13 +83,6 @@
         .megaTitle {
             line-height: 30.5px;
             font-size: 25px;
-        }
-
-        .head {
-            .image {
-                margin-right: 11.5px;
-                width: 34px;
-            }
         }
     }
 }
