@@ -474,7 +474,59 @@
                 {
                     "label": "Storage",
                     "link": "/services-cloud-resources#storage",
-                    "content": {}
+                    "content": {
+                        "textbox": {
+                            "title": "Storage",
+                            "titleImageSrcPath": "/assets/common/icon-fees.svg",
+                            "titleImageAlt": "Icon - Fees",
+                            "body": [
+                                {
+                                    "text": "The Cancer Genome Collaboratory leverages Block & Object storage functionality based on the open source software 'Ceph'. Ceph provides a scalable and highly available storage solution across many commodity servers. Although Ceph is not part of the Openstack project, it is often used as part of a cloud solution with Openstack to provide storage functionality. Local storage is also provided to virtual machines using the hypervisors' local disks where the virtual machines are running.",
+                                    "isLastText": true
+                                }
+                            ],
+                            "hasBorderBottom": true
+                        },
+                        "lateralColumn1": {
+                            "title": "Block Storage - Volumes",
+                            "isSmallTitle": true,
+                            "leftColumn": {
+                                "body": [
+                                    {
+                                        "text": "Block storage or 'Volumes' are logical block devices that can be attached to an instance and mounted from within the OS. Volumes can be used as permanent storage as they are decoupled from Instances. This allows volumes to be re-attached or re-used to different instances (typically one instance at a time), and the data remains on the volume. Amazon Equivalent of Elastic Block Store (EBS)",
+                                        "isLastText": true
+                                    }
+                                ]
+                            },
+                            "rightColumn": {
+                                "image": {
+                                    "srcPath": "/assets/tabSection/storage/volumes.png",
+                                    "alt": "Storage - Volumes"
+                                }
+                            },
+                            "isAChild": true,
+                            "hasBorderBottom": true
+                        },
+                        "lateralColumn2": {
+                            "title": "Object Storage",
+                            "isSmallTitle": true,
+                            "leftColumn": {
+                                "body": [
+                                    {
+                                        "text": "Object storage stores data in the form of objects instead of files and blocks. Object storage uses RESTful API's to interface with clients. Ceph object storage is compatible with S3 and Swift API's.",
+                                        "isLastText": true
+                                    }
+                                ]
+                            },
+                            "rightColumn": {
+                                "image": {
+                                    "srcPath": "/assets/tabSection/storage/containers.png",
+                                    "alt": "Storage - Containers"
+                                }
+                            },
+                            "isAChild": true
+                        }
+                    }
                 },
                 {
                     "label": "Networking",
