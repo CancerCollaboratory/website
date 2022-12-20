@@ -607,5 +607,18 @@
                 }
             ]
         }
+    },
+    "callToAction": {
+        "title": "Join the Collaboratory",
+        "imageSrcPath": "/assets/callToAction/icon-join-the-collaboratory.svg",
+        "imageAlt": "Icon - Join the Collaboratory",
+        "description": "The Collaboratory is now open to a broader community of researchers. Join the team today and start using our resources.",
+        "buttonData": [
+            {
+                "label": "REQUEST AN ACCOUNT",
+                "link": "/services-request-account",
+                "hasIcon": true
+            }
+        ]
     }
 }
