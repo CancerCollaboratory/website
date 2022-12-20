@@ -13,6 +13,7 @@ const LeftColumn = ({
   imageSrcPath,
   imageAlt,
   body,
+  styleBodyAlignment,
   children,
 }) => {
   return (
@@ -70,7 +71,8 @@ const LeftColumn = ({
                       )
                   : megaTitle
                   ? styles.introBody
-                  : utilStyles.embeddedParagraphLineHeight
+                  : utilStyles.embeddedParagraphLineHeight,
+                styleBodyAlignment
               )}
               key={index}
             >
