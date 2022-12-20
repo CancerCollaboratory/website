@@ -13,6 +13,7 @@ const CloudResources = () => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const jumbotron = pageData.jumbotron;
   const lateralColumn1 = pageData.lateralColumn1;
+  const lateralColumn2 = pageData.lateralColumn2;
   const tabSection = pageData.tabSection;
   const tabContent = tabSection?.tabLayout?.tabs[activeTabIndex]?.content;
 
@@ -50,7 +51,20 @@ const CloudResources = () => {
               </div>
             </RightColumn>
           }
+          hasBorderBottom={lateralColumn1?.hasBorderBottom}
           styleColumnAlignment={utilStyles.verticallyCenterItem}
+        />
+        <LateralColumn
+          leftColumn={
+            <LeftColumn
+              title={lateralColumn2?.leftColumn?.title}
+              iSmallTitle={lateralColumn2?.leftColumn?.isSmallTitle}
+              imageSrcPath={lateralColumn2?.leftColumn?.imageSrcPath}
+              imageAlt={lateralColumn2?.leftColumn?.imageAlt}
+            />
+          }
+          rightColumn={<RightColumn body={lateralColumn2?.rightColumn?.body} />}
+          hasBackground={lateralColumn2?.hasBackground}
         />
       </div>
     </>
