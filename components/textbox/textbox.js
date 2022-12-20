@@ -5,9 +5,26 @@ import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/inse
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./textbox.module.scss";
 
-const Textbox = ({ title, titleImageSrcPath, titleImageAlt, body, children }) => {
+const Textbox = ({
+  title,
+  titleImageSrcPath,
+  titleImageAlt,
+  body,
+  isInLateralColumn,
+  children,
+}) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={clsx(
+        styles.container,
+        !isInLateralColumn
+          ? clsx(
+              utilStyles.outerContainerVerticalPadding,
+              utilStyles.innerContainerHorizontalPadding
+            )
+          : undefined
+      )}
+    >
       {(title || (titleImageSrcPath && titleImageAlt)) && (
         <div className={clsx(styles.head, utilStyles.defaultElementMarginBottom)}>
           {titleImageSrcPath && titleImageAlt && (
