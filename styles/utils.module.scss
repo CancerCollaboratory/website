@@ -11,7 +11,7 @@
     width: 1098px;
 }
 
-.outerContainerPadding {
+.outerContainerVerticalPadding {
     padding: 25px 0px;
 }
 
@@ -192,7 +192,7 @@
         width: 84%;
     }
 
-    .outerContainerPadding {
+    .outerContainerVerticalPadding {
         padding: 23px 0px;
     }
 
@@ -228,7 +228,7 @@
 }
 
 @include respond-to("extra-small") {
-    .outerContainerPadding {
+    .outerContainerVerticalPadding {
         padding: 22px 0px;
     }
 
@@ -260,7 +260,7 @@
 }
 
 @include respond-to("extra-extra-small") {
-    .outerContainerPadding {
+    .outerContainerVerticalPadding {
         padding: 20px 0px;
     }
 
