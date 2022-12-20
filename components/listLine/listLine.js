@@ -9,16 +9,29 @@ const ListLine = ({ isVertical, items }) => {
   } else {
     return (
       <ul className={clsx(styles.container, isVertical ? styles.verticalList : undefined)}>
-        {items.map((item, index) => (
-          <li className={utilStyles.defaultElementLineHeight} key={index}>
-            <CustomLink
-              label={item.label}
-              link={item.link}
-              isLinkExternal={item.isLinkExternal}
-              styleLabel={utilStyles.commonAnchor}
-            />
-          </li>
-        ))}
+        {items.map(
+          (item, index) =>
+            item.label && (
+              <li
+                className={clsx(
+                  utilStyles.defaultElementLineHeight,
+                  !item.link ? styles.listLabel : undefined
+                )}
+                key={index}
+              >
+                {!item.link ? (
+                  item.label
+                ) : (
+                  <CustomLink
+                    label={item.label}
+                    link={item.link}
+                    isLinkExternal={item.isLinkExternal}
+                    styleLabel={utilStyles.commonAnchor}
+                  />
+                )}
+              </li>
+            )
+        )}
       </ul>
     );
   }
