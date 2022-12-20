@@ -32,17 +32,17 @@
     display: flex;
 }
 
-.onlyChildContainer {
-    display: flex;
-    width: 100%;
-}
-
 .childContainer {
     margin-top: 25px;
 }
 
 .altChildContainer {
     margin-top: 16.5px;
+}
+
+.onlyChildContainer {
+    display: flex;
+    width: 100%;
 }
 
 .maxWidth {
