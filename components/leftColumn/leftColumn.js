@@ -44,7 +44,16 @@ const LeftColumn = ({
               height={62}
             />
           )}
-          {title && <h2 className={utilStyles.defaultElementLineHeight}>{title}</h2>}
+          {title && (
+            <h2
+              className={clsx(
+                utilStyles.defaultElementLineHeight,
+                isSmallTitle ? utilStyles.smallh2 : undefined
+              )}
+            >
+              {title}
+            </h2>
+          )}
         </div>
       )}
       {body?.map(
