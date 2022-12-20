@@ -185,6 +185,12 @@ const CloudResources = () => {
             }
             isAChild={true}
             hasBorderBottom={tabContent?.lateralColumn1?.hasBorderBottom}
+            styleColumnAlignment={
+              tabContent?.lateralColumn1?.rightColumn?.image?.srcPath &&
+              tabContent?.lateralColumn1?.rightColumn?.image?.alt
+                ? utilStyles.flexDirectionColumnReverse
+                : undefined
+            }
           />
           {tabContent?.textbox &&
             (!tabContent?.textbox?.titleImageSrcPath || !tabContent?.textbox?.titleImageAlt) && (
@@ -227,6 +233,7 @@ const CloudResources = () => {
             }
             isAChild={true}
             hasBorderBottom={tabContent?.lateralColumn2?.hasBorderBottom}
+            styleColumnAlignment={utilStyles.flexDirectionColumnReverse}
           />
           {tabContent?.lateralColumn3 && (
             <LateralColumn
@@ -250,6 +257,7 @@ const CloudResources = () => {
               }
               isAChild={true}
               hasBorderBottom={tabContent.lateralColumn3.hasBorderBottom}
+              styleColumnAlignment={utilStyles.flexDirectionColumnReverse}
             />
           )}
         </TabSection>
