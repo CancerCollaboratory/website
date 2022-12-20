@@ -72,6 +72,10 @@
     border-bottom: 1px dotted $light-x5-gray;
 }
 
+.flexDirectionColumnReverse {
+    flex-direction: column-reverse;
+}
+
 .verticallyCenterItem {
     align-items: center;
 }
