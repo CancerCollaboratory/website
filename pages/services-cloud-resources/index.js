@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Jumbotron from "../../components/jumbotron/jumbotron";
@@ -44,10 +45,14 @@ const CloudResources = () => {
           }
           rightColumn={
             <RightColumn>
-              <div className={utilStyles.peakWidth}>
-                <LogoBlockList
-                  logoBlocks={lateralColumn1?.rightColumn?.logoBlockList?.logoBlocks}
-                />
+              <div
+                className={clsx(utilStyles.onlyChildContainer, utilStyles.horizontallyCenterItem)}
+              >
+                <div className={utilStyles.peakWidth}>
+                  <LogoBlockList
+                    logoBlocks={lateralColumn1?.rightColumn?.logoBlockList?.logoBlocks}
+                  />
+                </div>
               </div>
             </RightColumn>
           }
