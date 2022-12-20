@@ -6,26 +6,69 @@
             "isLinkExternal": true
         }
     },
-    "logoBlockList": {
-        "logoBlocks": [
-            {
-                "logo": {
-                    "srcPath": "/assets/logoBlockList/logo-openstack.png",
-                    "alt": "Logo - OpenStack",
-                    "link": "http://www.openstack.org",
-                    "isLinkExternal": true
-                }
-            },
-            {
-                "logo": {
-                    "srcPath": "/assets/logoBlockList/logo-ceph.png",
-                    "alt": "Logo - Ceph",
-                    "link": "https://ceph.io",
+    "lateralColumn1": {
+        "leftColumn": {
+            "title": "Openstack Infrastructure",
+            "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
+            "imageAlt": "Icon - Cloud Resources",
+            "body": [
+                {
+                    "text": "Openstack provides services like server virtualization, block & object storage systems, software defined networking, an image repository, a web based dashboard and authentication. You can read more about [Openstack and its various projects](http://docs.openstack.org).",
                     "isLinkExternal": true
                 },
-                "hasBackground": true
+                {
+                    "text": "For more information about Ceph, please read the [Storage section](/services-cloud-resources#storage) below.",
+                    "isLastText": true
+                }
+            ]
+        },
+        "rightColumn": {
+            "logoBlockList": {
+                "logoBlocks": [
+                    {
+                        "logo": {
+                            "srcPath": "/assets/logoBlockList/logo-openstack.png",
+                            "alt": "Logo - OpenStack",
+                            "link": "http://www.openstack.org",
+                            "isLinkExternal": true
+                        }
+                    },
+                    {
+                        "logo": {
+                            "srcPath": "/assets/logoBlockList/logo-ceph.png",
+                            "alt": "Logo - Ceph",
+                            "link": "https://ceph.io",
+                            "isLinkExternal": true
+                        },
+                        "hasBackground": true
+                    }
+                ]
             }
-        ]
+        },
+        "hasBorderBottom": true
+    },
+    "lateralColumn2": {
+        "leftColumn": {
+            "title": "Fees for using the Collaboratory Resources",
+            "isSmallTitle": true,
+            "imageSrcPath": "/assets/common/icon-fees.svg",
+            "imageAlt": "Icon - Fees"
+        },
+        "rightColumn": {
+            "body": [
+                {
+                    "text": "$0.03 CAD per vCPU hour (Billing calculated by allocation not % of utilization)"
+                },
+                {
+                    "text": "$0.000067 CAD per GB hour of storage (volumes, images and object storage)"
+                },
+                {
+                    "text": "[Billing FAQ](/support/faqs/billing-faqs)",
+                    "isLastText": true
+                }
+            ]
+        },
+        "hasBackground": true
     },
     "tabSection": {
         "mainPageUrl": "/services-cloud-resources",
