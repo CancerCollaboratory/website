@@ -33,7 +33,9 @@ const LateralColumn = ({
           <div
             className={clsx(
               styles.head,
-              !titleImageSrcPath || !titleImageAlt ? utilStyles.horizontallyCenterItem : undefined
+              (!titleImageSrcPath || !titleImageAlt) && !isAChild
+                ? utilStyles.horizontallyCenterItem
+                : undefined
             )}
           >
             {titleImageSrcPath && titleImageAlt && (
