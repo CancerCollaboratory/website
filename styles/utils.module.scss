@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.lateralColumnInnerContainer {
+    display: flex;
+}
+
 .outerContainerWidth {
     width: 1098px;
 }
@@ -159,6 +163,10 @@
 }
 
 @include respond-to("medium") {
+    .lateralColumnInnerContainer {
+        flex-direction: column;
+    }
+
     .outerContainerWidth {
         width: 674px;
     }
@@ -210,6 +218,10 @@
 }
 
 @include respond-to("small") {
+    .lateralColumnInnerContainer {
+        width: 100%;
+    }
+
     .outerContainerWidth {
         width: 84%;
     }
