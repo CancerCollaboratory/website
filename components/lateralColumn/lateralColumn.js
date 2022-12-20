@@ -60,7 +60,7 @@ const LateralColumn = ({
             )}
           </div>
         )}
-        <div className={clsx(styles.innerContainer, styleColumnAlignment)}>
+        <div className={clsx(utilStyles.lateralColumnInnerContainer, styleColumnAlignment)}>
           <Column styleBorder={clsx(hasColumnBorder ? utilStyles.columnBorder : undefined)}>
             {leftColumn}
           </Column>
