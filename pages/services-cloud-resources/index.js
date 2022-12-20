@@ -1,11 +1,17 @@
 import clsx from "clsx";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Jumbotron from "../../components/jumbotron/jumbotron";
 import LateralColumn from "../../components/lateralColumn/lateralColumn";
 import LeftColumn from "../../components/leftColumn/leftColumn";
 import RightColumn from "../../components/rightColumn/rightColumn";
 import LogoBlockList from "../../components/logoBlockList/logoBlockList";
+import TabSection from "../../components/tabSection/tabSection";
+import Textbox from "../../components/textbox/textbox";
+import BasicTable from "../../components/basicTable/basicTable";
+import ListLine from "../../components/listLine/listLine";
+import CallToAction from "../../components/callToAction/callToAction";
 import pageData from "../../data/pages/services/services-cloud-resources.json";
 import utilStyles from "../../styles/utils.module.scss";
 
