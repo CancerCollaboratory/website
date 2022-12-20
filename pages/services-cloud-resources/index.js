@@ -58,7 +58,7 @@ const CloudResources = () => {
           leftColumn={
             <LeftColumn
               title={lateralColumn2?.leftColumn?.title}
-              iSmallTitle={lateralColumn2?.leftColumn?.isSmallTitle}
+              isSmallTitle={lateralColumn2?.leftColumn?.isSmallTitle}
               imageSrcPath={lateralColumn2?.leftColumn?.imageSrcPath}
               imageAlt={lateralColumn2?.leftColumn?.imageAlt}
             />
