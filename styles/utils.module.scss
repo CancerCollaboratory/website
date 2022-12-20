@@ -111,12 +111,10 @@
 }
 
 .commonAnchor {
-    a {
-        text-decoration: underline;
+    text-decoration: underline;
 
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+        text-decoration: none;
     }
 }
 
