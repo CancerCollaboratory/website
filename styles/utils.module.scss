@@ -19,9 +19,8 @@
     padding: 0px 25px;
 }
 
-.innerContainerHorizontalPadding {
-    padding-left: 4px;
-    padding-right: 4px;
+.innerContainerPadding {
+    padding: 25px 4px;
 }
 
 .defaultContainerWidth {
@@ -209,6 +208,10 @@
         padding: 0px 23px;
     }
 
+    .innerContainerPadding {
+        padding: 23px 4px;
+    }
+
     .defaultContainerWidth {
         width: 100%;
     }
@@ -249,6 +252,10 @@
         padding: 0px 22px;
     }
 
+    .innerContainerPadding {
+        padding: 22px 4px;
+    }
+
     .childContainer {
         margin-top: 22px;
     }
@@ -283,6 +290,10 @@
 
     .outerContainerHorizontalPadding {
         padding: 0px 20px;
+    }
+
+    .innerContainerPadding {
+        padding: 20px 4px;
     }
 
     .childContainer {
