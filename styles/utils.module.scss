@@ -15,6 +15,10 @@
     padding: 25px 0px;
 }
 
+.outerContainerHorizontalPadding {
+    padding: 0px 25px;
+}
+
 .defaultContainerWidth {
     width: 1170px;
 }
@@ -196,6 +200,10 @@
         padding: 23px 0px;
     }
 
+    .outerContainerHorizontalPadding {
+        padding: 0px 23px;
+    }
+
     .defaultContainerWidth {
         width: 100%;
     }
@@ -232,6 +240,10 @@
         padding: 22px 0px;
     }
 
+    .outerContainerHorizontalPadding {
+        padding: 0px 22px;
+    }
+
     .childContainer {
         margin-top: 22px;
     }
@@ -262,6 +274,10 @@
 @include respond-to("extra-extra-small") {
     .outerContainerVerticalPadding {
         padding: 20px 0px;
+    }
+
+    .outerContainerHorizontalPadding {
+        padding: 0px 20px;
     }
 
     .childContainer {
