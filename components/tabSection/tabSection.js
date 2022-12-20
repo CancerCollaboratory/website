@@ -12,7 +12,7 @@ const TabSection = ({ children }) => {
         className={clsx(
           styles.container,
           utilStyles.outerContainerWidth,
-          utilStyles.outerContainerPadding
+          utilStyles.outerContainerVerticalPadding
         )}
       >
         <div className={utilStyles.onlyChildContainer}>
