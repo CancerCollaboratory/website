@@ -16,7 +16,7 @@ const FileLink = ({ links }) => {
           } else {
             return (
               <li key={index}>
-                <div className={clsx(styles.content, utilStyles.commonAnchor)}>
+                <div className={styles.content}>
                   <Image
                     src={item.icon.srcPath}
                     alt={item.icon.alt}
@@ -25,7 +25,12 @@ const FileLink = ({ links }) => {
                     width={18}
                     height={18}
                   />
-                  <CustomLink label={item.label} link={item.link} isLinkExternal={true} />
+                  <CustomLink
+                    label={item.label}
+                    link={item.link}
+                    isLinkExternal={true}
+                    styleLabel={utilStyles.commonAnchor}
+                  />
                 </div>
               </li>
             );

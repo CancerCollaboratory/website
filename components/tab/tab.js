@@ -1,4 +1,3 @@
-import clsx from "clsx";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styles from "../tabLayout/tabLayout.module.scss";
@@ -17,8 +16,8 @@ const Tab = ({ label, link }) => {
     return null;
   } else {
     return (
-      <li className={clsx(isTabActive ? styles.activeTab : undefined, utilStyles.commonAnchor)}>
-        <CustomLink label={label} link={link} />
+      <li className={isTabActive ? styles.activeTab : undefined}>
+        <CustomLink label={label} link={link} styleLabel={utilStyles.commonAnchor} />
       </li>
     );
   }

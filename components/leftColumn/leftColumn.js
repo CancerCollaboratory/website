@@ -52,8 +52,7 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
                       )
                   : megaTitle
                   ? styles.introBody
-                  : utilStyles.embeddedParagraphLineHeight,
-                item.isLinkExternal ? utilStyles.commonAnchor : undefined
+                  : utilStyles.embeddedParagraphLineHeight
               )}
               key={index}
             >

@@ -55,8 +55,7 @@ const Textbox = ({
                       utilStyles.defaultElementMarginBottom,
                       utilStyles.embeddedParagraphLineHeight
                     )
-                  : utilStyles.embeddedParagraphLineHeight,
-                item.isLinkExternal ? utilStyles.commonAnchor : undefined
+                  : utilStyles.embeddedParagraphLineHeight
               )}
               key={index}
             >
