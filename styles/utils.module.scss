@@ -84,6 +84,12 @@
     align-items: flex-end;
 }
 
+.tabSectionImage {
+    border: 2px solid $light-x4-gray;
+    width: 90%;
+    height: auto;
+}
+
 .titleIcon {
     margin-right: 21px;
     height: max-content;
