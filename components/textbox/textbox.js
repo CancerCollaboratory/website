@@ -11,6 +11,7 @@ const Textbox = ({
   titleImageAlt,
   body,
   isInLateralColumn,
+  hasBorderBottom,
   children,
 }) => {
   return (
@@ -19,8 +20,8 @@ const Textbox = ({
         styles.container,
         !isInLateralColumn
           ? clsx(
-              utilStyles.outerContainerVerticalPadding,
-              utilStyles.innerContainerHorizontalPadding
+              utilStyles.innerContainerPadding,
+              hasBorderBottom ? utilStyles.containerBorderBottom : undefined
             )
           : undefined
       )}
