@@ -531,7 +531,79 @@
                 {
                     "label": "Networking",
                     "link": "/services-cloud-resources#networking",
-                    "content": {}
+                    "content": {
+                        "lateralColumn1": {
+                            "title": "Networking",
+                            "isSmallTitle": true,
+                            "titleImageSrcPath": "/assets/common/icon-fees.svg",
+                            "titleImageAlt": "Icon - Fees",
+                            "leftColumn": {
+                                "body": [
+                                    {
+                                        "text": "The Cancer Genome Collaboratory provides 10Gbps Internet connectivity, 10Gbps inter-host and 240Gbps inter-rack network connectivity using Openstack's Software Defined Networking (SDN). The Openstack Dashboard for Networking provides you with an easy to use Interface to view your Network Topology, create Networks & Routers.",
+                                        "isLastText": true
+                                    }
+                                ]
+                            },
+                            "rightColumn": {
+                                "image": {
+                                    "srcPath": "/assets/tabSection/networking/floating-ip.png",
+                                    "alt": "Networking - Floating IP"
+                                }
+                            },
+                            "isAChild": true,
+                            "hasBorderBottom": true
+                        },
+                        "textbox": {
+                            "title": "Floating IPs",
+                            "body": [
+                                {
+                                    "text": "Floating IPs provide the ability to lease a publicly routed IP from OICR space and assign it to your instance. Floating IPs are necessary if you need your instance to be accessible FROM the Internet. Without a floating IP instances only have outbound access to the Internet, however you can facilitate access between your instances using Networks (see below).",
+                                    "isLastText": true
+                                }
+                            ],
+                            "hasBorderBottom": true
+                        },
+                        "lateralColumn2": {
+                            "title": "Networks",
+                            "isSmallTitle": true,
+                            "leftColumn": {
+                                "body": [
+                                    {
+                                        "text": "Networks are user defined and provide layer 2 instance to instance connectivity without needing to talk over the Internet. Internal networks also provide very high bandwidth between instances.",
+                                        "isLastText": true
+                                    }
+                                ]
+                            },
+                            "rightColumn": {
+                                "image": {
+                                    "srcPath": "/assets/tabSection/networking/networks.png",
+                                    "alt": "Networking - Networks"
+                                }
+                            },
+                            "isAChild": true,
+                            "hasBorderBottom": true
+                        },
+                        "lateralColumn3": {
+                            "title": "Routers",
+                            "isSmallTitle": true,
+                            "leftColumn": {
+                                "body": [
+                                    {
+                                        "text": "Routers are user defined and allow you to bridge multiple networks using Layer 3, provide a default gateway to the Internet and other networks. Routers also layer on the DHCP functionality so that your Instances are easier to manage.",
+                                        "isLastText": true
+                                    }
+                                ]
+                            },
+                            "rightColumn": {
+                                "image": {
+                                    "srcPath": "/assets/tabSection/networking/routers.png",
+                                    "alt": "Networking - Routers"
+                                }
+                            },
+                            "isAChild": true
+                        }
+                    }
                 }
             ]
         }
