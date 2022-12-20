@@ -77,7 +77,399 @@
                 {
                     "label": "Compute",
                     "link": "/services-cloud-resources#compute",
-                    "content": {}
+                    "content": {
+                        "lateralColumn1": {
+                            "title": "Compute",
+                            "isSmallTitle": true,
+                            "titleImageSrcPath": "/assets/common/icon-fees.svg",
+                            "titleImageAlt": "Icon - Fees",
+                            "leftColumn1": {
+                                "body": [
+                                    {
+                                        "text": "The compute infrastructure provides you with access to a large set of CPU & RAM and are provisioned on a per Instance basis. Instances are virtual machines and are available to be provisioned in several different flavours. Choosing the right flavour depends on your workflow. Use the chart below to find one that suits your needs. When provisioning instances you have the option to deploy using the Dashboard (see below) or by using the API. Many instances can be deployed at once. Amazon AWS Equivalent: EC2 / Elastic Compute Cloud.",
+                                        "isLastText": true
+                                    }
+                                ]
+                            },
+                            "rightColumn": {
+                                "textbox1": {
+                                    "body": [
+                                        {
+                                            "text": "Collaboratory c1 flavour types are based on Intel Xeon E5-2630 v3 2.4Ghz CPU with DDR4 2133Mhz RAM and 10k SAS HDD for local storage.",
+                                            "isLastText": true
+                                        }
+                                    ],
+                                    "isInLateralColumn": true
+                                },
+                                "basicTable1": {
+                                    "headRow": [
+                                        {
+                                            "value": "Flavour"
+                                        },
+                                        {
+                                            "value": "Cores"
+                                        },
+                                        {
+                                            "value": "RAM"
+                                        },
+                                        {
+                                            "value": "Disk"
+                                        }
+                                    ],
+                                    "body": [
+                                        [
+                                            {
+                                                "value": "c1.micro"
+                                            },
+                                            {
+                                                "value": "1"
+                                            },
+                                            {
+                                                "value": "8GB"
+                                            },
+                                            {
+                                                "value": "162GB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "c1.small"
+                                            },
+                                            {
+                                                "value": "2"
+                                            },
+                                            {
+                                                "value": "16GB"
+                                            },
+                                            {
+                                                "value": "325GB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "c1.medium"
+                                            },
+                                            {
+                                                "value": "4"
+                                            },
+                                            {
+                                                "value": "32GB"
+                                            },
+                                            {
+                                                "value": "650GB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "c1.large"
+                                            },
+                                            {
+                                                "value": "8"
+                                            },
+                                            {
+                                                "value": "58GB"
+                                            },
+                                            {
+                                                "value": "1.3TB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "*c1.xlarge"
+                                            },
+                                            {
+                                                "value": "15"
+                                            },
+                                            {
+                                                "value": "125GB"
+                                            },
+                                            {
+                                                "value": "2.6TB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "*c1.xxlarge"
+                                            },
+                                            {
+                                                "value": "30"
+                                            },
+                                            {
+                                                "value": "244GB"
+                                            },
+                                            {
+                                                "value": "5.2TB"
+                                            }
+                                        ]
+                                    ]
+                                },
+                                "textbox2": {
+                                    "body": [
+                                        {
+                                            "text": "Collaboratory c2 flavour types are based on Intel Xeon E5-2630 v4 2.2Ghz CPU with DDR4 2400Mhz RAM and 10k SAS HDD for local storage.",
+                                            "isLastText": true
+                                        }
+                                    ],
+                                    "isInLateralColumn": true
+                                },
+                                "basicTable2": {
+                                    "headRow": [
+                                        {
+                                            "value": "Flavour"
+                                        },
+                                        {
+                                            "value": "Cores"
+                                        },
+                                        {
+                                            "value": "RAM"
+                                        },
+                                        {
+                                            "value": "Disk"
+                                        }
+                                    ],
+                                    "body": [
+                                        [
+                                            {
+                                                "value": "c2.micro"
+                                            },
+                                            {
+                                                "value": "1"
+                                            },
+                                            {
+                                                "value": "6GB"
+                                            },
+                                            {
+                                                "value": "137GB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "c2.small"
+                                            },
+                                            {
+                                                "value": "2"
+                                            },
+                                            {
+                                                "value": "12GB"
+                                            },
+                                            {
+                                                "value": "274GB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "c2.medium"
+                                            },
+                                            {
+                                                "value": "4"
+                                            },
+                                            {
+                                                "value": "24GB"
+                                            },
+                                            {
+                                                "value": "548GB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "c2.large"
+                                            },
+                                            {
+                                                "value": "8"
+                                            },
+                                            {
+                                                "value": "48GB"
+                                            },
+                                            {
+                                                "value": "1TB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "*c2.xlarge"
+                                            },
+                                            {
+                                                "value": "19"
+                                            },
+                                            {
+                                                "value": "122GB"
+                                            },
+                                            {
+                                                "value": "2.6TB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "*c2.xxlarge"
+                                            },
+                                            {
+                                                "value": "38"
+                                            },
+                                            {
+                                                "value": "244GB"
+                                            },
+                                            {
+                                                "value": "5.2TB"
+                                            }
+                                        ]
+                                    ]
+                                },
+                                "textbox3": {
+                                    "body": [
+                                        {
+                                            "text": "Collaboratory c3 flavour types are based on Intel Xeon Gold 6138 @ 2Ghz CPU with DDR4 2666Mhz RAM and SATA3 SSD for local storage.",
+                                            "isLastText": true
+                                        }
+                                    ],
+                                    "isInLateralColumn": true
+                                },
+                                "basicTable3": {
+                                    "headRow": [
+                                        {
+                                            "value": "Flavour"
+                                        },
+                                        {
+                                            "value": "Cores"
+                                        },
+                                        {
+                                            "value": "RAM"
+                                        },
+                                        {
+                                            "value": "Disk"
+                                        }
+                                    ],
+                                    "body": [
+                                        [
+                                            {
+                                                "value": "c3.medium"
+                                            },
+                                            {
+                                                "value": "13"
+                                            },
+                                            {
+                                                "value": "62GB"
+                                            },
+                                            {
+                                                "value": "700GB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "c3.large"
+                                            },
+                                            {
+                                                "value": "19"
+                                            },
+                                            {
+                                                "value": "93GB"
+                                            },
+                                            {
+                                                "value": "1TB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "*c3.xlarge"
+                                            },
+                                            {
+                                                "value": "39"
+                                            },
+                                            {
+                                                "value": "186GB"
+                                            },
+                                            {
+                                                "value": "2.1TB"
+                                            }
+                                        ],
+                                        [
+                                            {
+                                                "value": "*c3.xxlarge"
+                                            },
+                                            {
+                                                "value": "78"
+                                            },
+                                            {
+                                                "value": "372GB"
+                                            },
+                                            {
+                                                "value": "4.2TB"
+                                            }
+                                        ]
+                                    ]
+                                },
+                                "textbox4": {
+                                    "body": [
+                                        {
+                                            "text": "__* Please note that if you are using a flavour with 2TB+ disk you must use the Ubuntu 18.04 image so that the entire disk capacity is available to you. Any other image will result in only 2TB being available to you.__",
+                                            "isLastText": true
+                                        }
+                                    ],
+                                    "isInLateralColumn": true
+                                }
+                            },
+                            "isAChild": true,
+                            "hasBorderBottom": true
+                        },
+                        "lateralColumn2": {
+                            "title": "Images",
+                            "isSmallTitle": true,
+                            "leftColumn": {
+                                "body": [
+                                    {
+                                        "text": "Images are used to build your instances. They define the base operating system and can contain user applications. You can build your own images by uploading a new image, or by creating one from a snapshot. This is useful if you want to deploy instances with a custom set of applications to use for your workflow."
+                                    },
+                                    {
+                                        "text": "**Image examples:**",
+                                        "isLastText": true
+                                    }
+                                ],
+                                "listLine": {
+                                    "isVertical": true,
+                                    "items": [
+                                        {
+                                            "label": "Ubuntu 18.04"
+                                        },
+                                        {
+                                            "label": "Ubuntu 16.04"
+                                        },
+                                        {
+                                            "label": "Debian 9"
+                                        },
+                                        {
+                                            "label": "CentOS 7"
+                                        }
+                                    ]
+                                }
+                            },
+                            "rightColumn": {
+                                "image": {
+                                    "srcPath": "/assets/tabSection/compute/images.png",
+                                    "alt": "Compute - Images"
+                                }
+                            },
+                            "isAChild": true,
+                            "hasBorderBottom": true
+                        },
+                        "lateralColumn3": {
+                            "title": "Access & Security",
+                            "isSmallTitle": true,
+                            "leftColumn": {
+                                "body": [
+                                    {
+                                        "text": "Network access to & from your instances is secured by using security groups. Security groups are a list of firewall rules that define what IP's, ports and protocols can connect to/from your instance. Security groups are controlled by the user, so it is important to maintain best security practices for your environment by limiting access to your instances only from necessary/trusted sources. Knowing your applications and what ports they use as well as what type of connectivity they require will allow you to confidently create security groups that fit the application. For example, a public web server would likely need to allow all ingress sources on TCP/80 & 443, but it is unlikely that you would need to also allow all ingress sources on TCP/22 (SSH). Limiting your exposure is a good security practice.",
+                                        "isLastText": true
+                                    }
+                                ]
+                            },
+                            "rightColumn": {
+                                "image": {
+                                    "srcPath": "/assets/tabSection/compute/access-security.png",
+                                    "alt": "Compute - Access & Security"
+                                }
+                            },
+                            "isAChild": true
+                        }
+                    }
                 },
                 {
                     "label": "Storage",
