@@ -1,15 +1,20 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import styles from "../tabLayout/tabLayout.module.scss";
 import CustomLink from "../customLink/customLink";
+import data from "../../data/pages/services/services-cloud-resources.json";
 import utilStyles from "../../styles/utils.module.scss";
+import styles from "../tabLayout/tabLayout.module.scss";
 
 const Tab = ({ label, link }) => {
   const { asPath } = useRouter();
   const [isTabActive, setIsTabActive] = useState(false);
+  const tabSection = data.tabSection;
 
   useEffect(() => {
-    link === asPath ? setIsTabActive(true) : setIsTabActive(false);
+    link === asPath ||
+    (link === tabSection?.tabLayout?.tabs[0]?.link && asPath === tabSection?.mainPageUrl)
+      ? setIsTabActive(true)
+      : setIsTabActive(false);
   }, [asPath]);
 
   if (!label || !link) {
