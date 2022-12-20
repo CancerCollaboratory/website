@@ -407,7 +407,6 @@
                                     "isInLateralColumn": true
                                 }
                             },
-                            "isAChild": true,
                             "hasBorderBottom": true
                         },
                         "lateralColumn2": {
@@ -447,7 +446,6 @@
                                     "alt": "Compute - Images"
                                 }
                             },
-                            "isAChild": true,
                             "hasBorderBottom": true
                         },
                         "lateralColumn3": {
@@ -466,8 +464,7 @@
                                     "srcPath": "/assets/tabSection/compute/access-security.png",
                                     "alt": "Compute - Access & Security"
                                 }
-                            },
-                            "isAChild": true
+                            }
                         }
                     }
                 },
@@ -504,7 +501,6 @@
                                     "alt": "Storage - Volumes"
                                 }
                             },
-                            "isAChild": true,
                             "hasBorderBottom": true
                         },
                         "lateralColumn2": {
@@ -523,8 +519,7 @@
                                     "srcPath": "/assets/tabSection/storage/containers.png",
                                     "alt": "Storage - Containers"
                                 }
-                            },
-                            "isAChild": true
+                            }
                         }
                     }
                 },
@@ -551,7 +546,6 @@
                                     "alt": "Networking - Floating IP"
                                 }
                             },
-                            "isAChild": true,
                             "hasBorderBottom": true
                         },
                         "textbox": {
@@ -581,7 +575,6 @@
                                     "alt": "Networking - Networks"
                                 }
                             },
-                            "isAChild": true,
                             "hasBorderBottom": true
                         },
                         "lateralColumn3": {
@@ -600,8 +593,7 @@
                                     "srcPath": "/assets/tabSection/networking/routers.png",
                                     "alt": "Networking - Routers"
                                 }
-                            },
-                            "isAChild": true
+                            }
                         }
                     }
                 }
