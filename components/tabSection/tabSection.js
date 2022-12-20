@@ -18,7 +18,9 @@ const TabSection = ({ children }) => {
         <div className={utilStyles.onlyChildContainer}>
           <TabLayout />
         </div>
-        <div className={styles.innerContainer}>{children}</div>
+        <div className={clsx(styles.innerContainer, utilStyles.outerContainerHorizontalPadding)}>
+          {children}
+        </div>
       </div>
     );
   }
