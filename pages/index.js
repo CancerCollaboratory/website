@@ -61,7 +61,8 @@ const Home = () => {
             />
             <div
               className={clsx(
-                clsx(utilStyles.childContainer, utilStyles.childContainerAlignment),
+                utilStyles.childContainer,
+                utilStyles.childContainerAlignment,
                 utilStyles.horizontallyCenterItem
               )}
             >
