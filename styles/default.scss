@@ -4,7 +4,7 @@
 @import "./imgPaths";
 
 html {
-    background-color: $dark-x6-gray;
+    background-color: $dark-x7-gray;
 }
 
 body,
@@ -15,8 +15,8 @@ input {
 
 input {
     border: 1px solid $light-x3-gray;
-    border-top: 2px solid $light-x6-gray;
-    background-color: $light-x9-gray;
+    border-top: 2px solid $light-x7-gray;
+    background-color: $light-x11-gray;
     background-image: $icon-search;
     background-repeat: no-repeat;
     font-weight: 500;
@@ -40,16 +40,24 @@ h3 {
     font-size: 17px;
 }
 
-p {
+p,
+td {
     color: $dark-x2-gray;
 }
 
 caption {
+    color: $dark-x6-gray;
+}
+
+th {
     color: $dark-x3-gray;
+    font-weight: 600;
 }
 
 p,
-caption {
+caption,
+th,
+td {
     font-size: 14px;
 }
 
@@ -89,7 +97,9 @@ a {
     }
 
     p,
-    caption {
+    caption,
+    th,
+    td {
         font-size: 13px;
     }
 }
@@ -108,7 +118,9 @@ a {
     }
 
     p,
-    caption {
+    caption,
+    th,
+    td {
         font-size: 12px;
     }
 }
@@ -137,7 +149,9 @@ a {
     }
 
     p,
-    caption {
+    caption,
+    th,
+    td {
         font-size: 11px;
     }
 }

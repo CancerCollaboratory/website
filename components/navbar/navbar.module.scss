@@ -384,13 +384,13 @@
                         &:hover {
                             .itemName {
                                 &:hover {
-                                    background-color: $light-x9-gray;
+                                    background-color: $light-x11-gray;
                                     color: $dark-x2-red;
                                 }
                             }
 
                             .noDropdown {
-                                background-color: $light-x9-gray;
+                                background-color: $light-x11-gray;
                                 color: $dark-x2-red;
                             }
                         }
@@ -402,12 +402,12 @@
 
                             a {
                                 display: block;
-                                color: $dark-x3-gray;
+                                color: $dark-x6-gray;
                                 padding: 9px 28px;
                                 font-size: 13.5px;
 
                                 &:hover {
-                                    background-color: $light-x9-gray;
+                                    background-color: $light-x11-gray;
                                     color: $dark-x2-red;
                                 }
                             }
@@ -423,7 +423,7 @@
 
                         .itemName,
                         .noDropdown {
-                            color: $dark-x3-gray;
+                            color: $dark-x6-gray;
                             font-size: 13.5px;
                         }
                     }

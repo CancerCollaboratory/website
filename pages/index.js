@@ -5,7 +5,7 @@ import RightColumn from "../components/rightColumn/rightColumn";
 import Button from "../components/button/button";
 import Publication from "../components/publication/publication";
 import BarChart from "../components/barChart/barChart";
-import Table from "../components/table/table";
+import GraphTable from "../components/graphTable/graphTable";
 import ListLine from "../components/listLine/listLine";
 import NavLine from "../components/navLine/navLine";
 import CallToAction from "../components/callToAction/callToAction";
@@ -60,7 +60,7 @@ const Home = () => {
               alt={lateralColumn1?.rightColumn?.barChart?.alt}
             />
             <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
-              <Table
+              <GraphTable
                 title={lateralColumn1?.rightColumn?.table?.title}
                 body={lateralColumn1?.rightColumn?.table?.body}
               />
