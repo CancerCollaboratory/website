@@ -5,7 +5,16 @@ import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/inse
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./leftColumn.module.scss";
 
-const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body, children }) => {
+const LeftColumn = ({
+  megaTitle,
+  title,
+  isSmallTitle,
+  centerHead,
+  imageSrcPath,
+  imageAlt,
+  body,
+  children,
+}) => {
   return (
     <div className={styles.container}>
       {megaTitle && (
@@ -29,7 +38,7 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
             <Image
               src={imageSrcPath}
               alt={imageAlt}
-              className={utilStyles.titleIcon}
+              className={!isSmallTitle ? utilStyles.titleIcon : utilStyles.smallTitleIcon}
               quality={100}
               width={62}
               height={62}
