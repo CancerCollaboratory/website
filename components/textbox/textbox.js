@@ -37,7 +37,11 @@ const Textbox = ({
               height={62}
             />
           )}
-          {title && <h2 className={utilStyles.defaultElementLineHeight}>{title}</h2>}
+          {title && (
+            <h2 className={clsx(utilStyles.defaultElementLineHeight, utilStyles.smallh2)}>
+              {title}
+            </h2>
+          )}
         </div>
       )}
       {body?.map(
