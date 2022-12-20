@@ -24,7 +24,7 @@ const LateralColumn = ({
       <div
         className={clsx(
           styles.container,
-          !isAChild ? utilStyles.outerContainerWidth : utilStyles.onlyChildContainer,
+          !isAChild ? utilStyles.outerContainerWidth : utilStyles.maxWidth,
           hasBackground ? utilStyles.gradientBackgroundGray : undefined,
           hasBorderBottom ? utilStyles.containerBorderBottom : undefined
         )}
