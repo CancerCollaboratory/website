@@ -16,11 +16,7 @@ const GraphTable = ({ title, body }) => {
             <tr key={index}>
               {item.cells?.map((cell, subIndex) => (
                 <td
-                  className={clsx(
-                    styles.cell,
-                    utilStyles.embeddedParagraphLineHeight,
-                    cell.isLinkExternal ? utilStyles.commonAnchor : undefined
-                  )}
+                  className={clsx(styles.cell, utilStyles.embeddedParagraphLineHeight)}
                   key={subIndex}
                 >
                   {cell.title &&

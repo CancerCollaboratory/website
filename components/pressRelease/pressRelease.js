@@ -9,7 +9,7 @@ const PressRelease = ({ date, shortUrl, articleUrl, articleTitle, description, b
     return null;
   } else {
     return (
-      <div className={clsx(styles.container, utilStyles.commonAnchor)}>
+      <div className={styles.container}>
         <div className={styles.head}>
           <p className={styles.date}>{date}</p>
           <p className={styles.shortUrl}>{shortUrl}</p>
@@ -18,7 +18,7 @@ const PressRelease = ({ date, shortUrl, articleUrl, articleTitle, description, b
           label={articleTitle}
           link={articleUrl}
           isLinkExternal={true}
-          styleLabel={styles.articleTitle}
+          styleLabel={clsx(styles.articleTitle, utilStyles.commonAnchor)}
         />
         <p className={styles.description}>{description}</p>
         <NavLine navItems={buttonItems} />

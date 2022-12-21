@@ -30,13 +30,7 @@ const ResourceSection = ({
         <h2>{title}</h2>
         <ResourceCardLayout cards={cards} />
         {caption && (
-          <div
-            className={clsx(
-              styles.caption,
-              utilStyles.embeddedParagraphLineHeight,
-              isCaptionLinkExternal ? utilStyles.commonAnchor : undefined
-            )}
-          >
+          <div className={clsx(styles.caption, utilStyles.embeddedParagraphLineHeight)}>
             {renderData(caption, isCaptionLinkExternal ? insertLinkExternal : insertLinkInternal)}
           </div>
         )}

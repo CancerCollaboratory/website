@@ -10,6 +10,7 @@ const Textbox = ({
   titleImageSrcPath,
   titleImageAlt,
   body,
+  styleBodyAlignment,
   isInLateralColumn,
   hasBorderBottom,
   children,
@@ -56,7 +57,7 @@ const Textbox = ({
                       utilStyles.embeddedParagraphLineHeight
                     )
                   : utilStyles.embeddedParagraphLineHeight,
-                item.isLinkExternal ? utilStyles.commonAnchor : undefined
+                styleBodyAlignment
               )}
               key={index}
             >

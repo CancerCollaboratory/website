@@ -12,12 +12,15 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 1200px;
-    padding: 23px 0px;
+
+    .titleMargin {
+        margin-top: 6px;
+    }
 
     .bodyBlock {
         color: $dark-x1-gray;
+        margin-top: 9px;
         text-align: center;
-        margin-top: 8.5px;
         width: 720px;
 
         p {
@@ -31,8 +34,8 @@
         align-items: center;
 
         .image {
-            margin: 9.5px 0px;
-            width: 76px;
+            margin: 12.5px 0px 6.5px 0px;
+            width: 84px;
             height: auto;
         }
     }
@@ -45,7 +48,6 @@
 @include respond-to("large") {
     .container {
         background-size: 1130px;
-        padding: 22px 0px;
 
         .bodyBlock {
             width: 650px;
@@ -57,7 +59,7 @@
 
         .bottomBlock {
             .image {
-                width: 74px;
+                width: 75px;
             }
         }
     }
@@ -70,10 +72,8 @@
 @include respond-to("medium") {
     .container {
         background-size: 1070px;
-        padding: 21px 0px;
 
         .bodyBlock {
-            margin-top: 8px;
             width: 600px;
 
             p {
@@ -83,8 +83,7 @@
 
         .bottomBlock {
             .image {
-                margin: 9px 0px;
-                width: 71px;
+                width: 73px;
             }
         }
     }
@@ -93,15 +92,19 @@
 @include respond-to("small") {
     .container {
         background-size: 129.5%;
-        padding: 20px;
+        padding: 23px 20px;
 
         .title {
             text-align: center;
             width: 61%;
         }
 
+        .titleMargin {
+            margin-top: 5.5px;
+        }
+
         .bodyBlock {
-            margin-top: 7.5px;
+            margin-top: 8.25px;
             padding: 0% 7%;
             width: 92%;
 
@@ -112,7 +115,8 @@
 
         .bottomBlock {
             .image {
-                width: 68px;
+                margin: 11.5px 0px 6px 0px;
+                width: 67px;
             }
         }
     }
@@ -124,13 +128,14 @@
 
 @include respond-to("extra-small") {
     .container {
-        padding: 18px;
+        padding: 22px 18px;
 
         .title {
             width: 53%;
         }
 
         .bodyBlock {
+            margin-top: 7.9px;
             width: 90%;
 
             p {
@@ -140,8 +145,8 @@
 
         .bottomBlock {
             .image {
-                margin: 8.5px 0px;
-                width: 58px;
+                margin: 11px 0px 5.5px 0px;
+                width: 62px;
             }
         }
     }
@@ -149,15 +154,14 @@
 
 @include respond-to("extra-extra-small") {
     .container {
-        padding: 16px;
+        padding: 20px 16px;
 
-        .title {
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .titleMargin {
+            margin-top: 5px;
         }
 
         .bodyBlock {
-            margin-top: 7px;
+            margin-top: 7.2px;
 
             p {
                 font-size: 11.5px;
@@ -166,8 +170,8 @@
 
         .bottomBlock {
             .image {
-                margin: 8px 0px;
-                width: 53px;
+                margin: 10px 0px 5px 0px;
+                width: 52px;
             }
         }
     }

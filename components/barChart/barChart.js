@@ -12,8 +12,8 @@ const BarChart = ({ title, subTitle, srcPath, alt }) => {
         <Image
           src={srcPath}
           alt={alt}
-          priority={true}
           className={styles.chart}
+          priority={true}
           quality={100}
           width={550}
           height={550}

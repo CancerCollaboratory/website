@@ -8,6 +8,7 @@
         list-style-type: disc;
         list-style-position: inside;
         margin-right: 22px;
+        font-size: 14px;
 
         &::marker {
             color: $dark-x1-blue;
@@ -15,7 +16,14 @@
 
         a {
             margin-left: -4px;
-            font-size: 14px;
+        }
+    }
+
+    .listLabel {
+        color: $dark-x2-gray;
+
+        &::marker {
+            color: $dark-x2-gray;
         }
     }
 }
@@ -27,9 +35,7 @@
 @include respond-to("medium") {
     .container {
         li {
-            a {
-                font-size: 13px;
-            }
+            font-size: 13px;
         }
     }
 
@@ -43,6 +49,10 @@
                 margin-left: 0px;
             }
         }
+
+        .listLabel {
+            list-style-type: disc;
+        }
     }
 }
 
@@ -53,10 +63,7 @@
         li {
             margin-right: 0px;
             text-align: center;
-
-            a {
-                font-size: 12px;
-            }
+            font-size: 12px;
         }
     }
 }
@@ -65,10 +72,7 @@
     .container {
         li {
             line-height: 166%;
-
-            a {
-                font-size: 11px;
-            }
+            font-size: 11px;
         }
     }
 }

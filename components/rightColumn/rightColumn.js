@@ -5,14 +5,22 @@ import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/inse
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./rightColumn.module.scss";
 
-const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children }) => {
+const RightColumn = ({
+  title,
+  centerHead,
+  imageSrcPath,
+  imageAlt,
+  body,
+  styleParagraphMarginBottom,
+  children,
+}) => {
   return (
     <div className={styles.container}>
       {(title || (imageSrcPath && imageAlt)) && (
         <div
           className={clsx(
             styles.head,
-            utilStyles.defaultElementMarginBottom,
+            body || children ? utilStyles.defaultElementMarginBottom : undefined,
             centerHead ? utilStyles.horizontallyCenterItem : undefined
           )}
         >
@@ -39,11 +47,12 @@ const RightColumn = ({ title, centerHead, imageSrcPath, imageAlt, body, children
               className={clsx(
                 !item.isLastText
                   ? clsx(
-                      utilStyles.defaultElementMarginBottom,
+                      !styleParagraphMarginBottom
+                        ? utilStyles.defaultElementMarginBottom
+                        : styleParagraphMarginBottom,
                       utilStyles.embeddedParagraphLineHeight
                     )
-                  : utilStyles.embeddedParagraphLineHeight,
-                item.isLinkExternal ? utilStyles.commonAnchor : undefined
+                  : utilStyles.embeddedParagraphLineHeight
               )}
               key={index}
             >
