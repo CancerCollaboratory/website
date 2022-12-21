@@ -85,6 +85,7 @@ const CloudResources = () => {
               titleImageSrcPath={tabContent.textbox.titleImageSrcPath}
               titleImageAlt={tabContent.textbox.titleImageAlt}
               body={tabContent.textbox.body}
+              styleBodyAlignment={utilStyles.centerBodyText}
               isInLateralColumn={tabContent.textbox.isInLateralColumn}
               hasBorderBottom={tabContent.textbox.hasBorderBottom}
             />
@@ -184,6 +185,7 @@ const CloudResources = () => {
                       <Textbox
                         title={tabContent?.lateralColumn1?.rightColumn?.textbox4?.title}
                         body={tabContent?.lateralColumn1?.rightColumn?.textbox4?.body}
+                        styleBodyAlignment={utilStyles.centerBodyText}
                         isInLateralColumn={
                           tabContent?.lateralColumn1?.rightColumn?.textbox4?.isInLateralColumn
                         }
@@ -207,6 +209,7 @@ const CloudResources = () => {
               <Textbox
                 title={tabContent.textbox.title}
                 body={tabContent.textbox.body}
+                styleBodyAlignment={utilStyles.centerBodyText}
                 isInLateralColumn={tabContent.textbox.isInLateralColumn}
                 hasBorderBottom={tabContent.textbox.hasBorderBottom}
               />
