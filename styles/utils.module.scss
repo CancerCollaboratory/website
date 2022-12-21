@@ -109,6 +109,10 @@
     margin-bottom: 25px;
 }
 
+.altElementMarginBottom {
+    margin-bottom: 16.5px;
+}
+
 .defaultElementLineHeight {
     line-height: 170%;
 }
@@ -268,6 +272,10 @@
         margin-bottom: 23px;
     }
 
+    .altElementMarginBottom {
+        margin-bottom: 15.5px;
+    }
+
     .smallh2 {
         font-size: 14px;
     }
@@ -308,6 +316,10 @@
         margin-bottom: 22px;
     }
 
+    .altElementMarginBottom {
+        margin-bottom: 14.5px;
+    }
+
     .smallh2 {
         font-size: 13px;
     }
@@ -345,5 +357,9 @@
 
     .defaultElementMarginBottom {
         margin-bottom: 20px;
+    }
+
+    .altElementMarginBottom {
+        margin-bottom: 13.5px;
     }
 }
