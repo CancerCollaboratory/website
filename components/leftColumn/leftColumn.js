@@ -5,7 +5,18 @@ import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/inse
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./leftColumn.module.scss";
 
-const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body, children }) => {
+const LeftColumn = ({
+  megaTitle,
+  title,
+  isSmallTitle,
+  centerHead,
+  imageSrcPath,
+  imageAlt,
+  body,
+  styleBodyAlignment,
+  styleParagraphMarginBottom,
+  children,
+}) => {
   return (
     <div className={styles.container}>
       {megaTitle && (
@@ -21,7 +32,7 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
         <div
           className={clsx(
             styles.head,
-            utilStyles.defaultElementMarginBottom,
+            body || children ? utilStyles.defaultElementMarginBottom : undefined,
             centerHead ? utilStyles.horizontallyCenterItem : undefined
           )}
         >
@@ -29,13 +40,22 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
             <Image
               src={imageSrcPath}
               alt={imageAlt}
-              className={utilStyles.titleIcon}
+              className={!isSmallTitle ? utilStyles.titleIcon : utilStyles.smallTitleIcon}
               quality={100}
               width={62}
               height={62}
             />
           )}
-          {title && <h2 className={utilStyles.defaultElementLineHeight}>{title}</h2>}
+          {title && (
+            <h2
+              className={clsx(
+                utilStyles.defaultElementLineHeight,
+                isSmallTitle ? utilStyles.smallh2 : undefined
+              )}
+            >
+              {title}
+            </h2>
+          )}
         </div>
       )}
       {body?.map(
@@ -47,13 +67,15 @@ const LeftColumn = ({ megaTitle, title, centerHead, imageSrcPath, imageAlt, body
                   ? megaTitle
                     ? clsx(styles.introBody, utilStyles.defaultElementMarginBottom)
                     : clsx(
-                        utilStyles.defaultElementMarginBottom,
+                        !styleParagraphMarginBottom
+                          ? utilStyles.defaultElementMarginBottom
+                          : styleParagraphMarginBottom,
                         utilStyles.embeddedParagraphLineHeight
                       )
                   : megaTitle
                   ? styles.introBody
                   : utilStyles.embeddedParagraphLineHeight,
-                item.isLinkExternal ? utilStyles.commonAnchor : undefined
+                styleBodyAlignment
               )}
               key={index}
             >

@@ -11,16 +11,24 @@ const Jumbotron = ({ title, bodyText, isBodyLinkExternal, imageSrcPath, imageAlt
     return null;
   } else {
     return (
-      <div className={clsx(styles.container, !bodyText ? styles.stretchBackground : undefined)}>
-        <h1 className={styles.title}>{title}</h1>
+      <div
+        className={clsx(
+          styles.container,
+          !bodyText ? styles.stretchBackground : undefined,
+          utilStyles.outerContainerVerticalPadding
+        )}
+      >
+        <h1
+          className={clsx(
+            styles.title,
+            imageSrcPath && imageAlt && buttonData ? styles.titleMargin : undefined,
+            utilStyles.textOverflow
+          )}
+        >
+          {title}
+        </h1>
         {bodyText && (
-          <div
-            className={clsx(
-              styles.bodyBlock,
-              utilStyles.embeddedParagraphLineHeight,
-              isBodyLinkExternal ? utilStyles.commonAnchor : undefined
-            )}
-          >
+          <div className={clsx(styles.bodyBlock, utilStyles.embeddedParagraphLineHeight)}>
             {renderData(bodyText, isBodyLinkExternal ? insertLinkExternal : insertLinkInternal)}
           </div>
         )}

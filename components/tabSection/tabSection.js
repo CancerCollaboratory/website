@@ -11,8 +11,10 @@ const TabSection = ({ children }) => {
       <div
         className={clsx(
           styles.container,
-          utilStyles.outerContainerWidth,
-          utilStyles.outerContainerVerticalPadding
+          utilStyles.gradientBackgroundGray,
+          utilStyles.containerBorderBottom,
+          utilStyles.outerContainerVerticalPadding,
+          utilStyles.outerContainerWidth
         )}
       >
         <div className={utilStyles.maxWidth}>

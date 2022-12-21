@@ -9,12 +9,8 @@
     .head {
         display: flex;
         align-items: center;
-        padding-bottom: 25px;
+        padding: 0px 0px 25px 4px;
         width: 100%;
-    }
-
-    .innerContainer {
-        display: flex;
     }
 }
 
@@ -26,10 +22,6 @@
             justify-content: center;
             padding: 12.5px 0px;
         }
-
-        .innerContainer {
-            flex-direction: column;
-        }
     }
 }
 
@@ -39,10 +31,6 @@
 
         .head {
             padding: 11.5px 0px;
-        }
-
-        .innerContainer {
-            width: 100%;
         }
     }
 }

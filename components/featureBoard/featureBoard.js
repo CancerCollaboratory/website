@@ -15,8 +15,7 @@ const FeatureBoard = ({ boards }) => {
               className={clsx(
                 styles.innerContainer,
                 board.hasBackground ? styles.background : undefined,
-                index % 2 !== 0 ? styles.addBackground : undefined,
-                board.titleLink ? utilStyles.commonAnchor : undefined
+                index % 2 !== 0 ? styles.addBackground : undefined
               )}
               key={index}
             >
@@ -26,7 +25,7 @@ const FeatureBoard = ({ boards }) => {
                   label={board.title}
                   link={board.titleLink}
                   isLinkExternal={board.isTitleLinkExternal}
-                  styleLabel={styles.titleLink}
+                  styleLabel={clsx(styles.titleLink, utilStyles.commonAnchor)}
                 />
               )}
               <p className={styles.caption}>{board.caption}</p>

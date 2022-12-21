@@ -28,7 +28,7 @@ const Home = () => {
             megaTitle={lateralColumn1?.leftColumn?.megaTitle}
             body={lateralColumn1?.leftColumn?.body}
           >
-            <div className={utilStyles.altChildContainer}>
+            <div className={clsx(utilStyles.altChildContainer, utilStyles.childContainerAlignment)}>
               <Button
                 label={lateralColumn1?.leftColumn?.button?.label}
                 link={lateralColumn1?.leftColumn?.button?.link}
@@ -36,7 +36,7 @@ const Home = () => {
                 hasIcon={lateralColumn1?.leftColumn?.button?.hasIcon}
               />
             </div>
-            <div className={utilStyles.childContainer}>
+            <div className={clsx(utilStyles.childContainer, utilStyles.childContainerAlignment)}>
               <Publication
                 imageSrcPath={lateralColumn1?.leftColumn?.publication?.imageSrcPath}
                 imageAlt={lateralColumn1?.leftColumn?.publication?.imageAlt}
@@ -59,7 +59,13 @@ const Home = () => {
               srcPath={lateralColumn1?.rightColumn?.barChart?.srcPath}
               alt={lateralColumn1?.rightColumn?.barChart?.alt}
             />
-            <div className={clsx(utilStyles.childContainer, utilStyles.horizontallyCenterItem)}>
+            <div
+              className={clsx(
+                utilStyles.childContainer,
+                utilStyles.childContainerAlignment,
+                utilStyles.horizontallyCenterItem
+              )}
+            >
               <GraphTable
                 title={lateralColumn1?.rightColumn?.table?.title}
                 body={lateralColumn1?.rightColumn?.table?.body}
@@ -78,13 +84,13 @@ const Home = () => {
             imageAlt={lateralColumn2?.leftColumn?.imageAlt}
             body={lateralColumn2?.leftColumn?.body}
           >
-            <div className={utilStyles.altChildContainer}>
+            <div className={clsx(utilStyles.altChildContainer, utilStyles.childContainerAlignment)}>
               <ListLine
                 isVertical={lateralColumn2?.leftColumn?.listLine?.isVertical}
                 items={lateralColumn2?.leftColumn?.listLine?.items}
               />
             </div>
-            <div className={utilStyles.childContainer}>
+            <div className={clsx(utilStyles.childContainer, utilStyles.childContainerAlignment)}>
               <NavLine navItems={lateralColumn2?.leftColumn?.navLine?.items} />
             </div>
           </LeftColumn>
@@ -96,7 +102,7 @@ const Home = () => {
             imageAlt={lateralColumn2?.rightColumn?.imageAlt}
             body={lateralColumn2?.rightColumn?.body}
           >
-            <div className={utilStyles.childContainer}>
+            <div className={clsx(utilStyles.childContainer, utilStyles.childContainerAlignment)}>
               <NavLine navItems={lateralColumn2?.rightColumn?.navLine?.items} />
             </div>
           </RightColumn>
@@ -107,7 +113,7 @@ const Home = () => {
         title={lateralColumn3?.title}
         leftColumn={
           <LeftColumn body={lateralColumn3?.leftColumn?.body}>
-            <div className={utilStyles.childContainer}>
+            <div className={clsx(utilStyles.childContainer, utilStyles.childContainerAlignment)}>
               <NavLine navItems={lateralColumn3?.leftColumn?.navLine?.items} />
             </div>
           </LeftColumn>
@@ -121,7 +127,7 @@ const Home = () => {
         hasBorderBottom={callToAction?.hasBorderBottom}
       />
       <ResourceSection title={resourceSection?.title} cards={resourceSection?.cards}>
-        <div className={utilStyles.childContainer}>
+        <div className={clsx(utilStyles.childContainer, utilStyles.childContainerAlignment)}>
           <NavLine navItems={resourceSection?.navLine?.items} />
         </div>
       </ResourceSection>

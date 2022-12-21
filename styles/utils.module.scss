@@ -7,6 +7,10 @@
     align-items: center;
 }
 
+.lateralColumnInnerContainer {
+    display: flex;
+}
+
 .outerContainerWidth {
     width: 1098px;
 }
@@ -27,14 +31,8 @@
     width: 1170px;
 }
 
-.childContainer,
-.altChildContainer {
+.childContainerAlignment {
     display: flex;
-}
-
-.onlyChildContainer {
-    display: flex;
-    width: 100%;
 }
 
 .childContainer {
@@ -45,8 +43,17 @@
     margin-top: 16.5px;
 }
 
+.onlyChildContainer {
+    display: flex;
+    width: 100%;
+}
+
 .maxWidth {
     width: 100%;
+}
+
+.peakWidth {
+    width: 90%;
 }
 
 .columnBorder {
@@ -81,6 +88,12 @@
     align-items: flex-end;
 }
 
+.tabSectionImage {
+    border: 2px solid $light-x4-gray;
+    width: 90%;
+    height: auto;
+}
+
 .titleIcon {
     margin-right: 21px;
     height: max-content;
@@ -96,6 +109,10 @@
     margin-bottom: 25px;
 }
 
+.altElementMarginBottom {
+    margin-bottom: 16.5px;
+}
+
 .defaultElementLineHeight {
     line-height: 170%;
 }
@@ -107,12 +124,10 @@
 }
 
 .commonAnchor {
-    a {
-        text-decoration: underline;
+    text-decoration: underline;
 
-        &:hover {
-            text-decoration: none;
-        }
+    &:hover {
+        text-decoration: none;
     }
 }
 
@@ -152,6 +167,10 @@
 }
 
 @include respond-to("medium") {
+    .lateralColumnInnerContainer {
+        flex-direction: column;
+    }
+
     .outerContainerWidth {
         width: 674px;
     }
@@ -160,8 +179,7 @@
         width: 750px;
     }
 
-    .childContainer,
-    .altChildContainer {
+    .childContainerAlignment {
         flex-direction: column;
         align-items: center;
     }
@@ -175,6 +193,10 @@
         background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
     }
 
+    .flexDirectionColumnReverse {
+        flex-direction: column-reverse;
+    }
+
     .titleIcon {
         margin-right: 18px;
         width: 54px;
@@ -182,6 +204,10 @@
 
     .smallTitleIcon {
         width: 26px;
+    }
+
+    .centerBodyText {
+        text-align: center;
     }
 
     .defaultElementLineHeight {
@@ -200,6 +226,10 @@
 }
 
 @include respond-to("small") {
+    .lateralColumnInnerContainer {
+        width: 100%;
+    }
+
     .outerContainerWidth {
         width: 84%;
     }
@@ -242,6 +272,10 @@
         margin-bottom: 23px;
     }
 
+    .altElementMarginBottom {
+        margin-bottom: 15.5px;
+    }
+
     .smallh2 {
         font-size: 14px;
     }
@@ -282,6 +316,10 @@
         margin-bottom: 22px;
     }
 
+    .altElementMarginBottom {
+        margin-bottom: 14.5px;
+    }
+
     .smallh2 {
         font-size: 13px;
     }
@@ -319,5 +357,9 @@
 
     .defaultElementMarginBottom {
         margin-bottom: 20px;
+    }
+
+    .altElementMarginBottom {
+        margin-bottom: 13.5px;
     }
 }

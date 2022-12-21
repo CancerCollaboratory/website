@@ -1,6 +1,7 @@
 import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import IconArrow from "../../public/assets/navLine/icon-arrow-red.svg";
+import utilStyles from "../../styles/utils.module.scss";
 import styles from "./navLine.module.scss";
 
 const NavLine = ({ navItems }) => {
@@ -18,6 +19,7 @@ const NavLine = ({ navItems }) => {
                   label={item.label}
                   link={item.link}
                   isLinkExternal={item.isLinkExternal}
+                  styleLabel={utilStyles.commonAnchor}
                 />
                 <Image src={IconArrow} alt={"Icon"} className={styles.iconArrow} quality={100} />
               </li>
