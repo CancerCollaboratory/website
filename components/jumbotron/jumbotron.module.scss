@@ -13,6 +13,10 @@
     background-position: center bottom;
     background-size: 1200px;
 
+    .titleMargin {
+        margin-top: 6px;
+    }
+
     .bodyBlock {
         color: $dark-x1-gray;
         text-align: center;
@@ -30,7 +34,7 @@
         align-items: center;
 
         .image {
-            margin: 9.5px 0px;
+            margin: 12.5px 0px 6.5px 0px;
             width: 84px;
             height: auto;
         }
@@ -80,7 +84,6 @@
 
         .bottomBlock {
             .image {
-                margin: 9px 0px;
                 width: 73px;
             }
         }
@@ -97,6 +100,10 @@
             width: 61%;
         }
 
+        .titleMargin {
+            margin-top: 5.5px;
+        }
+
         .bodyBlock {
             margin-top: 7.5px;
             padding: 0% 7%;
@@ -109,6 +116,7 @@
 
         .bottomBlock {
             .image {
+                margin: 11.5px 0px 6px 0px;
                 width: 67px;
             }
         }
@@ -137,7 +145,7 @@
 
         .bottomBlock {
             .image {
-                margin: 8.5px 0px;
+                margin: 11px 0px 5.5px 0px;
                 width: 62px;
             }
         }
@@ -148,9 +156,8 @@
     .container {
         padding: 20px 16px;
 
-        .title {
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .titleMargin {
+            margin-top: 5px;
         }
 
         .bodyBlock {
@@ -163,7 +170,7 @@
 
         .bottomBlock {
             .image {
-                margin: 8px 0px;
+                margin: 10px 0px 5px 0px;
                 width: 52px;
             }
         }
