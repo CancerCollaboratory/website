@@ -2,7 +2,7 @@
 @import "../../styles/mixins";
 
 .table {
-    table-layout: fixed;
+    table-layout: auto;
     width: 90%;
 
     thead {
@@ -31,6 +31,8 @@
 
 @include respond-to("medium") {
     .table {
+        table-layout: fixed;
+
         tbody {
             tr {
                 td {
