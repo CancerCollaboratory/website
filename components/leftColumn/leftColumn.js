@@ -14,6 +14,7 @@ const LeftColumn = ({
   imageAlt,
   body,
   styleBodyAlignment,
+  styleParagraphMarginBottom,
   children,
 }) => {
   return (
@@ -66,7 +67,9 @@ const LeftColumn = ({
                   ? megaTitle
                     ? clsx(styles.introBody, utilStyles.defaultElementMarginBottom)
                     : clsx(
-                        utilStyles.defaultElementMarginBottom,
+                        !styleParagraphMarginBottom
+                          ? utilStyles.defaultElementMarginBottom
+                          : styleParagraphMarginBottom,
                         utilStyles.embeddedParagraphLineHeight
                       )
                   : megaTitle
