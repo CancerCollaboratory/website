@@ -1,4 +1,10 @@
 {
+    "jumbotron": {
+        "title": "Software for Your Research",
+        "body": {
+            "text": "Several software and analysis workflow collections were developed through the use of the Cancer Genome Collaboratory. Explore these free resources to aid your research."
+        }
+    },
     "softwareBoxLayout": {
         "softwareBoxes": [
             {
@@ -18,7 +24,8 @@
                         "hasBackground": true,
                         "isLastBoard": true
                     }
-                ]
+                ],
+                "hasBorderBottom": true
             },
             {
                 "title": "Indexing, Search & Compression",
@@ -56,7 +63,9 @@
                         "caption": "Clonality inference from low coverage single-sample tumors",
                         "isLastBoard": true
                     }
-                ]
+                ],
+                "hasBackground": true,
+                "hasBorderBottom": true
             },
             {
                 "title": "Drug Target Identification",

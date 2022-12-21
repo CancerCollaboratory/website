@@ -7,15 +7,15 @@ const SoftwareBoxLayout = ({ SoftwareBoxes }) => {
     return null;
   } else {
     return (
-      <div
-        className={clsx(
-          utilStyles.flexDirectionColumn,
-          utilStyles.defaultElementMarginBottom,
-          utilStyles.outerContainerWidth
-        )}
-      >
+      <div className={clsx(utilStyles.flexDirectionColumn, utilStyles.outerContainerWidth)}>
         {SoftwareBoxes.map((box, index) => (
-          <SoftwareBox title={box.title} boards={box.boards} key={index} />
+          <SoftwareBox
+            title={box.title}
+            boards={box.boards}
+            hasBackground={box.hasBackground}
+            hasBorderBottom={box.hasBorderBottom}
+            key={index}
+          />
         ))}
       </div>
     );

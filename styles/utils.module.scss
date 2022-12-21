@@ -72,6 +72,10 @@
     background-image: linear-gradient(to right, white 0%, $light-x9-gray 100%);
 }
 
+.resetBackgroundColor {
+    background-color: $white;
+}
+
 .boardBackground {
     background-color: $light-x9-gray;
 }
