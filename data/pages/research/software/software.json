@@ -15,7 +15,8 @@
                         "titleLink": "http://docs.icgc.org/cloud/guide",
                         "isTitleLinkExternal": true,
                         "caption": "Our software solution for storing and accessing ICGC data on the Collaboratory",
-                        "hasBackground": true
+                        "hasBackground": true,
+                        "isLastBoard": true
                     }
                 ]
             },
@@ -52,7 +53,8 @@
                         "title": "CTPsingle",
                         "titleLink": "https://github.com/sfu-compbio/ctpsingle",
                         "isTitleLinkExternal": true,
-                        "caption": "Clonality inference from low coverage single-sample tumors"
+                        "caption": "Clonality inference from low coverage single-sample tumors",
+                        "isLastBoard": true
                     }
                 ]
             },
@@ -70,7 +72,8 @@
                         "titleLink": "http://blaster.docking.org",
                         "isTitleLinkExternal": true,
                         "caption": "On-line molecular docking",
-                        "hasBackground": true
+                        "hasBackground": true,
+                        "isLastBoard": true
                     }
                 ]
             }
