@@ -72,6 +72,10 @@
     background-image: linear-gradient(to right, white 0%, $light-x9-gray 100%);
 }
 
+.boardBackground {
+    background-color: $light-x9-gray;
+}
+
 .containerBorderBottom {
     border-bottom: 1px dotted $light-x5-gray;
 }
@@ -86,6 +90,11 @@
 
 .reverseVerticalAlignment {
     align-items: flex-end;
+}
+
+.flexDirectionColumn {
+    display: flex;
+    flex-direction: column;
 }
 
 .tabSectionImage {
@@ -111,6 +120,10 @@
 
 .altElementMarginBottom {
     margin-bottom: 16.5px;
+}
+
+.outerBoardMargins {
+    margin: 12.5px 6.25px 0px 6.25px;
 }
 
 .defaultElementLineHeight {
@@ -258,6 +271,14 @@
         margin-top: 15.5px;
     }
 
+    .boardBackground {
+        background-color: $white;
+    }
+
+    .swapBoardBackground {
+        background-color: $light-x9-gray;
+    }
+
     .titleIcon {
         margin-right: 16px;
         width: 48px;
@@ -274,6 +295,10 @@
 
     .altElementMarginBottom {
         margin-bottom: 15.5px;
+    }
+
+    .outerBoardMargins {
+        margin: 0px;
     }
 
     .smallh2 {

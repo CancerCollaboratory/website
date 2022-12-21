@@ -1,0 +1,82 @@
+{
+    "softwareBoxLayout": {
+        "softwareBoxes": [
+            {
+                "title": "Infrastructure",
+                "boards": [
+                    {
+                        "title": "Dockstore",
+                        "titleLink": "http://dockstore.org",
+                        "isTitleLinkExternal": true,
+                        "caption": "A library of tools that can be run on the Collaboratory or elsewhere"
+                    },
+                    {
+                        "title": "ICGC Storage",
+                        "titleLink": "http://docs.icgc.org/cloud/guide",
+                        "isTitleLinkExternal": true,
+                        "caption": "Our software solution for storing and accessing ICGC data on the Collaboratory",
+                        "hasBackground": true,
+                        "isLastBoard": true
+                    }
+                ]
+            },
+            {
+                "title": "Indexing, Search & Compression",
+                "boards": [
+                    {
+                        "title": "DeeZ",
+                        "titleLink": "http://sfu-compbio.github.io/deez",
+                        "isTitleLinkExternal": true,
+                        "caption": "Reference-based compression by local assembly"
+                    },
+                    {
+                        "title": "SiNVICT",
+                        "titleLink": "http://sfu-compbio.github.io/sinvict",
+                        "isTitleLinkExternal": true,
+                        "caption": "Ultra-Sensitive Detection of Single Nucleotide Variants and Indels in Circulating Tumour DNA",
+                        "hasBackground": true
+                    },
+                    {
+                        "title": "mrsFAST",
+                        "titleLink": "http://sfu-compbio.github.io/mrsfast",
+                        "isTitleLinkExternal": true,
+                        "caption": "Compact, SNP-aware mapper for high performance sequencing applications"
+                    },
+                    {
+                        "title": "Cypripi",
+                        "titleLink": "http://sfu-compbio.github.io/cypiripi",
+                        "isTitleLinkExternal": true,
+                        "caption": "Exact genotyping of CYP2D6 using high-throughput sequencing data",
+                        "hasBackground": true
+                    },
+                    {
+                        "title": "CTPsingle",
+                        "titleLink": "https://github.com/sfu-compbio/ctpsingle",
+                        "isTitleLinkExternal": true,
+                        "caption": "Clonality inference from low coverage single-sample tumors",
+                        "isLastBoard": true
+                    }
+                ]
+            },
+            {
+                "title": "Drug Target Identification",
+                "boards": [
+                    {
+                        "title": "ZINC",
+                        "titleLink": "http://zinc15.docking.org",
+                        "isTitleLinkExternal": true,
+                        "caption": "Database of commercially available and annotated molecules"
+                    },
+                    {
+                        "title": "DOCK Blaster",
+                        "titleLink": "http://blaster.docking.org",
+                        "isTitleLinkExternal": true,
+                        "caption": "On-line molecular docking",
+                        "hasBackground": true,
+                        "isLastBoard": true
+                    }
+                ]
+            }
+        ]
+    }
+}
