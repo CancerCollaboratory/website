@@ -94,7 +94,17 @@ const CloudResources = () => {
             isSmallTitle={tabContent?.lateralColumn1?.isSmallTitle}
             titleImageSrcPath={tabContent?.lateralColumn1?.titleImageSrcPath}
             titleImageAlt={tabContent?.lateralColumn1?.titleImageAlt}
-            leftColumn={<LeftColumn body={tabContent?.lateralColumn1?.leftColumn?.body} />}
+            leftColumn={
+              <LeftColumn
+                body={tabContent?.lateralColumn1?.leftColumn?.body}
+                styleBodyAlignment={
+                  tabContent?.lateralColumn1?.rightColumn?.image?.srcPath &&
+                  tabContent?.lateralColumn1?.rightColumn?.image?.alt
+                    ? utilStyles.centerBodyText
+                    : undefined
+                }
+              />
+            }
             rightColumn={
               <RightColumn>
                 {tabContent?.lateralColumn1?.rightColumn?.image?.srcPath &&
@@ -205,7 +215,10 @@ const CloudResources = () => {
             title={tabContent?.lateralColumn2?.title}
             isSmallTitle={tabContent?.lateralColumn2?.isSmallTitle}
             leftColumn={
-              <LeftColumn body={tabContent?.lateralColumn2?.leftColumn?.body}>
+              <LeftColumn
+                body={tabContent?.lateralColumn2?.leftColumn?.body}
+                styleBodyAlignment={utilStyles.centerBodyText}
+              >
                 {tabContent?.lateralColumn2?.leftColumn?.listLine && (
                   <div className={utilStyles.altChildContainer}>
                     <ListLine
@@ -239,7 +252,12 @@ const CloudResources = () => {
             <LateralColumn
               title={tabContent.lateralColumn3.title}
               isSmallTitle={tabContent.lateralColumn3.isSmallTitle}
-              leftColumn={<LeftColumn body={tabContent.lateralColumn3.leftColumn?.body} />}
+              leftColumn={
+                <LeftColumn
+                  body={tabContent.lateralColumn3.leftColumn?.body}
+                  styleBodyAlignment={utilStyles.centerBodyText}
+                />
+              }
               rightColumn={
                 <RightColumn>
                   <div className={utilStyles.childContainerAlignment}>
