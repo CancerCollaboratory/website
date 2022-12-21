@@ -11,7 +11,13 @@ const Jumbotron = ({ title, bodyText, isBodyLinkExternal, imageSrcPath, imageAlt
     return null;
   } else {
     return (
-      <div className={clsx(styles.container, !bodyText ? styles.stretchBackground : undefined)}>
+      <div
+        className={clsx(
+          styles.container,
+          !bodyText ? styles.stretchBackground : undefined,
+          utilStyles.outerContainerVerticalPadding
+        )}
+      >
         <h1 className={styles.title}>{title}</h1>
         {bodyText && (
           <div className={clsx(styles.bodyBlock, utilStyles.embeddedParagraphLineHeight)}>
