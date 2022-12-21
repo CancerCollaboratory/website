@@ -1,0 +1,23 @@
+@import "../../styles/mixins";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .head {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@include respond-to("medium") {
+    .container {
+        align-items: center;
+
+        .head {
+            justify-content: center;
+        }
+    }
+}

@@ -11,8 +11,16 @@
     width: 1098px;
 }
 
-.outerContainerPadding {
+.outerContainerVerticalPadding {
     padding: 25px 0px;
+}
+
+.outerContainerHorizontalPadding {
+    padding: 0px 25px;
+}
+
+.innerContainerPadding {
+    padding: 25px 4px;
 }
 
 .defaultContainerWidth {
@@ -35,6 +43,10 @@
 
 .altChildContainer {
     margin-top: 16.5px;
+}
+
+.maxWidth {
+    width: 100%;
 }
 
 .columnBorder {
@@ -192,8 +204,16 @@
         width: 84%;
     }
 
-    .outerContainerPadding {
+    .outerContainerVerticalPadding {
         padding: 23px 0px;
+    }
+
+    .outerContainerHorizontalPadding {
+        padding: 0px 23px;
+    }
+
+    .innerContainerPadding {
+        padding: 23px 4px;
     }
 
     .defaultContainerWidth {
@@ -228,8 +248,16 @@
 }
 
 @include respond-to("extra-small") {
-    .outerContainerPadding {
+    .outerContainerVerticalPadding {
         padding: 22px 0px;
+    }
+
+    .outerContainerHorizontalPadding {
+        padding: 0px 22px;
+    }
+
+    .innerContainerPadding {
+        padding: 22px 4px;
     }
 
     .childContainer {
@@ -260,8 +288,16 @@
 }
 
 @include respond-to("extra-extra-small") {
-    .outerContainerPadding {
+    .outerContainerVerticalPadding {
         padding: 20px 0px;
+    }
+
+    .outerContainerHorizontalPadding {
+        padding: 0px 20px;
+    }
+
+    .innerContainerPadding {
+        padding: 20px 4px;
     }
 
     .childContainer {

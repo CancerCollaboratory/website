@@ -12,13 +12,15 @@ const TabSection = ({ children }) => {
         className={clsx(
           styles.container,
           utilStyles.outerContainerWidth,
-          utilStyles.outerContainerPadding
+          utilStyles.outerContainerVerticalPadding
         )}
       >
-        <div className={utilStyles.onlyChildContainer}>
+        <div className={utilStyles.maxWidth}>
           <TabLayout />
         </div>
-        <div className={styles.innerContainer}>{children}</div>
+        <div className={clsx(styles.innerContainer, utilStyles.outerContainerHorizontalPadding)}>
+          {children}
+        </div>
       </div>
     );
   }
