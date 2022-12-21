@@ -34,29 +34,17 @@
                 {
                     "label": "Compute",
                     "link": "/services-cloud-resources#compute",
-                    "content": {
-                        "lateralColumn": {
-                            "title": "Enter title1 here."
-                        }
-                    }
+                    "content": {}
                 },
                 {
                     "label": "Storage",
                     "link": "/services-cloud-resources#storage",
-                    "content": {
-                        "lateralColumn": {
-                            "title": "Enter title2 here."
-                        }
-                    }
+                    "content": {}
                 },
                 {
                     "label": "Networking",
                     "link": "/services-cloud-resources#networking",
-                    "content": {
-                        "lateralColumn": {
-                            "title": "Enter title3 here."
-                        }
-                    }
+                    "content": {}
                 }
             ]
         }
