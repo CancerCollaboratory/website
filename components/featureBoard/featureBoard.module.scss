@@ -13,32 +13,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 1px solid $light-x4-gray;
-        border-radius: 6px;
-        margin: 12.5px 6.25px 0px 6.25px;
-        padding: 12.5px;
         width: 44%;
         height: 90px;
-
-        .titleLink {
-            font-size: 14px;
-        }
-
-        .title,
-        .titleLink {
-            margin-bottom: 12.5px;
-        }
-
-        .title,
-        .titleLink,
-        .caption {
-            font-weight: 600;
-            text-align: center;
-        }
-    }
-
-    .background {
-        background-color: $light-x9-gray;
     }
 }
 
@@ -47,7 +23,6 @@
         width: 425px;
 
         .innerContainer {
-            border-radius: 8px;
             width: 42%;
             height: 94px;
         }
@@ -59,13 +34,8 @@
         width: 470px;
 
         .innerContainer {
-            border-radius: 10px;
             width: 45%;
             height: 93px;
-
-            .titleLink {
-                font-size: 13px;
-            }
         }
     }
 }
@@ -76,28 +46,8 @@
         width: 60%;
 
         .innerContainer {
-            border-radius: 12px;
-            margin: 15.5px 0px 0px 0px;
-            padding: 15%;
             width: 100%;
             height: auto;
-
-            .titleLink {
-                font-size: 12px;
-            }
-
-            .title,
-            .titleLink {
-                margin-bottom: 11.5px;
-            }
-        }
-
-        .background {
-            background-color: $white;
-        }
-
-        .addBackground {
-            background-color: $light-x9-gray;
         }
     }
 }
@@ -105,35 +55,5 @@
 @include respond-to("extra-small") {
     .container {
         width: 80%;
-
-        .innerContainer {
-            border-radius: 14px;
-            margin: 14.5px 0px 0px 0px;
-            padding: 16.5%;
-
-            .title,
-            .titleLink {
-                margin-bottom: 11px;
-            }
-        }
-    }
-}
-
-@include respond-to("extra-extra-small") {
-    .container {
-        .innerContainer {
-            border-radius: 16px;
-            margin: 13.5px 0px 0px 0px;
-            padding: 17%;
-
-            .titleLink {
-                font-size: 11px;
-            }
-
-            .title,
-            .titleLink {
-                margin-bottom: 10px;
-            }
-        }
     }
 }
