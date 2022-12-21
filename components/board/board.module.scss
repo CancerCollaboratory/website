@@ -5,7 +5,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     border: 1px solid $light-x4-gray;
     border-radius: 6px;
     width: 100%;
@@ -17,7 +16,12 @@
 
     .title,
     .titleLink {
-        margin-bottom: 12.5px;
+        padding-top: 12.5px;
+    }
+
+    .caption {
+        padding: 12.5px;
+        line-height: 150%;
     }
 
     .title,
@@ -46,6 +50,7 @@
 
 @include respond-to("small") {
     .container {
+        justify-content: center;
         border-radius: 12px;
         margin: 15.5px 0px 0px 0px;
         padding: 15%;
@@ -57,7 +62,11 @@
 
         .title,
         .titleLink {
-            margin-bottom: 11.5px;
+            padding-top: 11.5px;
+        }
+
+        .caption {
+            padding: 11.5px;
         }
     }
 }
@@ -70,7 +79,11 @@
 
         .title,
         .titleLink {
-            margin-bottom: 11px;
+            padding-top: 11px;
+        }
+
+        .caption {
+            padding: 11px;
         }
     }
 }
@@ -88,7 +101,11 @@
 
         .title,
         .titleLink {
-            margin-bottom: 10px;
+            padding-top: 10px;
+        }
+
+        .caption {
+            padding: 10px;
         }
     }
 }
