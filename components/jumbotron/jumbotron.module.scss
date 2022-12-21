@@ -12,7 +12,6 @@
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 1200px;
-    padding: 23px 0px;
 
     .bodyBlock {
         color: $dark-x1-gray;
@@ -45,7 +44,6 @@
 @include respond-to("large") {
     .container {
         background-size: 1130px;
-        padding: 22px 0px;
 
         .bodyBlock {
             width: 650px;
@@ -70,7 +68,6 @@
 @include respond-to("medium") {
     .container {
         background-size: 1070px;
-        padding: 21px 0px;
 
         .bodyBlock {
             margin-top: 8px;
@@ -93,7 +90,7 @@
 @include respond-to("small") {
     .container {
         background-size: 129.5%;
-        padding: 20px;
+        padding: 23px 20px;
 
         .title {
             text-align: center;
@@ -124,7 +121,7 @@
 
 @include respond-to("extra-small") {
     .container {
-        padding: 18px;
+        padding: 22px 18px;
 
         .title {
             width: 53%;
@@ -149,7 +146,7 @@
 
 @include respond-to("extra-extra-small") {
     .container {
-        padding: 16px;
+        padding: 20px 16px;
 
         .title {
             overflow: hidden;
