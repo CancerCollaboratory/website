@@ -24,7 +24,8 @@
                         "hasBackground": true,
                         "isLastBoard": true
                     }
-                ]
+                ],
+                "hasBorderBottom": true
             },
             {
                 "title": "Indexing, Search & Compression",
@@ -62,7 +63,9 @@
                         "caption": "Clonality inference from low coverage single-sample tumors",
                         "isLastBoard": true
                     }
-                ]
+                ],
+                "hasBackground": true,
+                "hasBorderBottom": true
             },
             {
                 "title": "Drug Target Identification",
