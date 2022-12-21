@@ -48,6 +48,7 @@ const CloudResources = () => {
               imageSrcPath={lateralColumn1?.leftColumn?.imageSrcPath}
               imageAlt={lateralColumn1?.leftColumn?.imageAlt}
               body={lateralColumn1?.leftColumn?.body}
+              styleParagraphMarginBottom={utilStyles.altElementMarginBottom}
             />
           }
           rightColumn={
@@ -75,7 +76,12 @@ const CloudResources = () => {
               imageAlt={lateralColumn2?.leftColumn?.imageAlt}
             />
           }
-          rightColumn={<RightColumn body={lateralColumn2?.rightColumn?.body} />}
+          rightColumn={
+            <RightColumn
+              body={lateralColumn2?.rightColumn?.body}
+              styleParagraphMarginBottom={utilStyles.altElementMarginBottom}
+            />
+          }
           hasBackground={lateralColumn2?.hasBackground}
         />
         <TabSection>
