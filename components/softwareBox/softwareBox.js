@@ -12,7 +12,7 @@ const SoftwareBox = ({ title, boards, hasBackground, hasBorderBottom }) => {
         className={clsx(
           styles.container,
           utilStyles.maxWidth,
-          utilStyles.outerContainerVerticalPadding,
+          utilStyles.innerContainerPadding,
           hasBackground ? utilStyles.gradientBackgroundGray : undefined,
           hasBorderBottom ? utilStyles.containerBorderBottom : undefined
         )}
