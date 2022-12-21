@@ -108,16 +108,6 @@
                     color: $dark-x2-red;
                 }
 
-                .searchBarInput {
-                    background-size: 15px 15px;
-                    background-position: 7px;
-                    border-radius: 17px;
-                    margin: 0px 8px;
-                    padding: 4px 8px 4px 28px;
-                    font-size: 14px;
-                    width: 185px;
-                }
-
                 .dropdown {
                     display: flex;
                     flex-direction: column;
@@ -172,12 +162,6 @@
 
                     a {
                         font-size: 12px;
-                    }
-
-                    .searchBarInput {
-                        padding: 3.5px 7.5px 3.5px 27.5px;
-                        font-size: 12px;
-                        width: 152px;
                     }
                 }
             }
@@ -243,11 +227,6 @@
 
                     a {
                         font-size: 12.5px;
-                    }
-
-                    .searchBarInput {
-                        font-size: 12.5px;
-                        width: 168px;
                     }
 
                     .dropdown {
@@ -353,22 +332,6 @@
                 flex-direction: column;
                 align-items: flex-start;
                 border-bottom: 1px solid $light-x4-gray;
-
-                .expandedSearchBarContainer {
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-
-                    .expandedSearchBarInput {
-                        background-size: 15px 15px;
-                        background-position: 7px;
-                        border-radius: 15px;
-                        margin: 14px 15px;
-                        padding: 3.5px 7.5px 3.5px 27.5px;
-                        font-size: 13.5px;
-                        width: 100%;
-                    }
-                }
 
                 .wrapExpandedDropdown {
                     width: 100%;
