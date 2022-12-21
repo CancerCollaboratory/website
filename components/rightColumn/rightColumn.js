@@ -20,7 +20,7 @@ const RightColumn = ({
         <div
           className={clsx(
             styles.head,
-            utilStyles.defaultElementMarginBottom,
+            body || children ? utilStyles.defaultElementMarginBottom : undefined,
             centerHead ? utilStyles.horizontallyCenterItem : undefined
           )}
         >
