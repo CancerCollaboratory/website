@@ -92,6 +92,11 @@
     align-items: flex-end;
 }
 
+.flexDirectionColumn {
+    display: flex;
+    flex-direction: column;
+}
+
 .tabSectionImage {
     border: 2px solid $light-x4-gray;
     width: 90%;
