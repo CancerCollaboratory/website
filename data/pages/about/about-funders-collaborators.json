@@ -98,7 +98,7 @@
         "rightColumn": {
             "collabCard": {
                 "logo": {
-                    "srcPath": "/assets/collabCard/logo-uoft.png",
+                    "srcPath": "/assets/collabCard/logo-uoft.svg",
                     "alt": "Logo - University of Toronto",
                     "isLinkExternal": true
                 },
