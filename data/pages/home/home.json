@@ -26,8 +26,8 @@
                 "isLinkExternal": false,
                 "hasIcon": true
             },
-            "publication": {
-                "imageSrcPath": "/assets/publication/pcawg-nature-cover.png",
+            "announcement": {
+                "imageSrcPath": "/assets/announcement/pcawg-nature-cover.png",
                 "imageAlt": "PCAWG Nature Cover",
                 "title": "Pan-cancer Analysis of Whole Genomes Published!",
                 "titleLink": "https://www.nature.com/collections/afdejfafdb",
