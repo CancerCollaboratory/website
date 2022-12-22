@@ -1,6 +1,7 @@
 import BannerLayout from "../components/bannerLayout/bannerLayout";
 import CommonHead from "../components/commonHead/commonHead";
 import Layout from "../components/layout/layout";
+import utilStyles from "../styles/utils.module.scss";
 import "../styles/reset.scss";
 import "../styles/default.scss";
 
@@ -9,19 +10,25 @@ const WebApp = ({ Component, pageProps }) => {
 
   if (Component.getLayout) {
     return (
-      <BannerLayout>
-        <CommonHead />
-        {getLayout(<Component {...pageProps} />)}
-      </BannerLayout>
+      <div className={utilStyles.mainContainer}>
+        <BannerLayout>
+          <CommonHead />
+          {getLayout(<Component {...pageProps} />)}
+        </BannerLayout>
+      </div>
     );
   } else {
     return (
-      <BannerLayout>
-        <CommonHead />
-        <Layout>
-          <Component {...pageProps} />
-        </Layout>
-      </BannerLayout>
+      <div className={utilStyles.mainContainer}>
+        <BannerLayout>
+          <CommonHead />
+          <Layout>
+            <div className={utilStyles.flexGrow}>
+              <Component {...pageProps} />
+            </div>
+          </Layout>
+        </BannerLayout>
+      </div>
     );
   }
 };
