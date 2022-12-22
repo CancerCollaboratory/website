@@ -16,17 +16,8 @@
             color: $dark-x4-gray;
         }
 
-        .content {
-            display: flex;
-            align-items: center;
-
-            .icon {
-                margin-right: 16px;
-            }
-
-            a {
-                font-size: 15px;
-            }
+        a {
+            font-size: 15px;
         }
     }
 }
@@ -38,12 +29,6 @@
         li {
             margin: 7.5px 0px 7.5px 22.5px;
             padding-left: 4.5px;
-
-            .content {
-                .icon {
-                    margin-right: 15.5px;
-                }
-            }
         }
     }
 }
@@ -56,14 +41,8 @@
             margin: 7px 0px 7px 21px;
             padding-left: 4px;
 
-            .content {
-                .icon {
-                    margin-right: 15px;
-                }
-
-                a {
-                    font-size: 14.5px;
-                }
+            a {
+                font-size: 14.5px;
             }
         }
     }
@@ -72,15 +51,8 @@
 @include respond-to("small") {
     .container {
         li {
-            .content {
-                .icon {
-                    width: auto;
-                    height: 17px;
-                }
-
-                a {
-                    font-size: 14px;
-                }
+            a {
+                font-size: 14px;
             }
         }
     }
@@ -94,14 +66,8 @@
             margin: 6.5px 0px 6.5px 19.5px;
             padding-left: 3.5px;
 
-            .content {
-                .icon {
-                    margin-right: 14.5px;
-                }
-
-                a {
-                    font-size: 13.5px;
-                }
+            a {
+                font-size: 13.5px;
             }
         }
     }
@@ -115,15 +81,8 @@
             margin: 6px 0px 6px 18px;
             padding-left: 3px;
 
-            .content {
-                .icon {
-                    margin-right: 14px;
-                    height: 16px;
-                }
-
-                a {
-                    font-size: 13px;
-                }
+            a {
+                font-size: 13px;
             }
         }
     }

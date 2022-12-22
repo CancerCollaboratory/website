@@ -1,5 +1,4 @@
 import clsx from "clsx";
-import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import utilStyles from "../../styles/utils.module.scss";
 import styles from "./fileLink.module.scss";
@@ -11,27 +10,17 @@ const FileLink = ({ links }) => {
     return (
       <ul className={clsx(styles.container, utilStyles.outerContainerWidth)}>
         {links.map((item, index) => {
-          if (!item.icon?.srcPath || !item.icon?.alt || !item.label || !item.link) {
+          if (!item.label || !item.link) {
             return null;
           } else {
             return (
               <li key={index}>
-                <div className={styles.content}>
-                  <Image
-                    src={item.icon.srcPath}
-                    alt={item.icon.alt}
-                    className={styles.icon}
-                    quality={100}
-                    width={18}
-                    height={18}
-                  />
-                  <CustomLink
-                    label={item.label}
-                    link={item.link}
-                    isLinkExternal={true}
-                    styleLabel={utilStyles.commonAnchor}
-                  />
-                </div>
+                <CustomLink
+                  label={item.label}
+                  link={item.link}
+                  isLinkExternal={true}
+                  styleLabel={utilStyles.commonAnchor}
+                />
               </li>
             );
           }
