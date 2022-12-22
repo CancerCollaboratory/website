@@ -65,10 +65,10 @@
         justify-content: center;
         background-color: $white;
         box-shadow: 0px 5px 10px 0px $dark-x5-gray;
-        padding-bottom: 13px;
+        padding-bottom: 14px;
 
         .imageContainer {
-            margin: -35px 106px 0px 11.5px;
+            margin: -35px 106px 0px 9px;
 
             .logo {
                 &:hover {
@@ -87,7 +87,7 @@
 
             .itemContainer {
                 display: flex;
-                margin: 0px 6px;
+                margin: 0px 9px;
                 height: max-content;
 
                 a {
@@ -112,7 +112,7 @@
                     display: flex;
                     flex-direction: column;
                     position: absolute;
-                    top: 121px;
+                    top: 126px;
                     margin-left: 10.5px;
                     padding-top: 7px;
                     background-color: $white;
@@ -153,15 +153,15 @@
             padding: 0px 7px 13px 7px;
 
             .imageContainer {
-                margin: -35px 48px 0px 9.5px;
+                margin: -35px 48px 0px 7.5px;
             }
 
             .itemLine {
                 .itemContainer {
-                    margin: 0px 3.5px;
+                    margin: 0px 7.5px;
 
                     a {
-                        font-size: 12px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -218,19 +218,17 @@
 
             .itemLine {
                 justify-content: center;
-                margin: 9px 0px 1px 0px;
+                margin: 10px 0px 0px 0px;
                 padding-left: 35px;
                 width: 100%;
 
                 .itemContainer {
-                    margin: 0px 4px;
-
                     a {
                         font-size: 12.5px;
                     }
 
                     .dropdown {
-                        top: 153px;
+                        top: 148px;
                     }
                 }
             }
