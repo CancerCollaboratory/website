@@ -65,10 +65,10 @@
         justify-content: center;
         background-color: $white;
         box-shadow: 0px 5px 10px 0px $dark-x5-gray;
-        padding-bottom: 14px;
+        padding-bottom: 13px;
 
         .imageContainer {
-            margin: -35px 106px 0px 10px;
+            margin: -35px 106px 0px 12px;
 
             .logo {
                 &:hover {
@@ -87,7 +87,7 @@
 
             .itemContainer {
                 display: flex;
-                margin: 0px 10px;
+                margin: 0px 12px;
                 height: max-content;
 
                 a {
