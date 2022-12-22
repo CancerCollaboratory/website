@@ -54,7 +54,7 @@
                     },
                     {
                         "logo": {
-                            "srcPath": "/assets/common/logo-oicr.png",
+                            "srcPath": "/assets/common/logo-oicr.svg",
                             "alt": "Logo - Ontario Institute for Cancer Research",
                             "link": "http://oicr.on.ca",
                             "isLinkExternal": true,
