@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: center;
         background-color: $dark-x4-gray;
-        padding-left: 608px;
+        padding-left: 596px;
         height: 44.5px;
 
         .secondaryBlock {
@@ -146,7 +146,7 @@
 @include respond-to("large") {
     .container {
         .secondaryContainer {
-            padding-left: 436px;
+            padding-left: 386px;
         }
 
         .mainContainer {
@@ -172,7 +172,7 @@
 @include respond-to("medium") {
     .container {
         .secondaryContainer {
-            padding-left: 203px;
+            padding-left: 184px;
             position: relative;
             z-index: 1;
 
