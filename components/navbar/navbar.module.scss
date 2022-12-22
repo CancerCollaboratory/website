@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: center;
         background-color: $dark-x4-gray;
-        padding-left: 580px;
+        padding-left: 526px;
         height: 44.5px;
 
         .secondaryBlock {
@@ -68,7 +68,7 @@
         padding-bottom: 14px;
 
         .imageContainer {
-            margin: -35px 106px 0px 9px;
+            margin: -35px 106px 0px 10px;
 
             .logo {
                 &:hover {
@@ -87,7 +87,7 @@
 
             .itemContainer {
                 display: flex;
-                margin: 0px 9px;
+                margin: 0px 10px;
                 height: max-content;
 
                 a {
@@ -146,7 +146,7 @@
 @include respond-to("large") {
     .container {
         .secondaryContainer {
-            padding-left: 386px;
+            padding-left: 338px;
         }
 
         .mainContainer {
@@ -172,7 +172,7 @@
 @include respond-to("medium") {
     .container {
         .secondaryContainer {
-            padding-left: 184px;
+            padding-left: 175px;
             position: relative;
             z-index: 1;
 
@@ -223,6 +223,8 @@
                 width: 100%;
 
                 .itemContainer {
+                    margin: 0px 7px;
+
                     a {
                         font-size: 12.5px;
                     }
