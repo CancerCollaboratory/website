@@ -12,8 +12,10 @@ const SupportLayout = ({ children }) => {
     return (
       <>
         <Navbar />
-        <div className={utilStyles.pageBodyContainer}>
-          <div className={clsx(styles.container, utilStyles.outerContainerWidth)}>
+        <div className={clsx(utilStyles.pageBodyContainer, utilStyles.flexGrow)}>
+          <div
+            className={clsx(styles.container, utilStyles.outerContainerWidth, utilStyles.flexGrow)}
+          >
             <SupportSidebar />
             {children}
           </div>
