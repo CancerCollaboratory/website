@@ -181,7 +181,7 @@
                 "items": [
                     {
                         "label": "ABOUT OUR RESEARCH",
-                        "link": "/research",
+                        "link": "/research/software",
                         "isLinkExternal": false
                     }
                 ]

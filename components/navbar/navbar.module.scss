@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: center;
         background-color: $dark-x4-gray;
-        padding-left: 608px;
+        padding-left: 522px;
         height: 44.5px;
 
         .secondaryBlock {
@@ -24,7 +24,7 @@
                 display: flex;
 
                 li {
-                    margin-left: 13px;
+                    margin-left: 13.5px;
 
                     a {
                         background-color: $dark-x1-blue;
@@ -43,7 +43,7 @@
                 display: flex;
 
                 li {
-                    margin-left: 13px;
+                    margin-left: 13.5px;
 
                     a {
                         color: $light-x5-blue;
@@ -52,7 +52,7 @@
 
                 .borderRight {
                     border-right: 3px solid $light-x5-blue;
-                    padding-right: 13px;
+                    padding-right: 13.5px;
                 }
             }
         }
@@ -68,7 +68,7 @@
         padding-bottom: 13px;
 
         .imageContainer {
-            margin: -35px 106px 0px 11.5px;
+            margin: -35px 106px 0px 12px;
 
             .logo {
                 &:hover {
@@ -87,7 +87,7 @@
 
             .itemContainer {
                 display: flex;
-                margin: 0px 6px;
+                margin: 0px 12px;
                 height: max-content;
 
                 a {
@@ -108,21 +108,11 @@
                     color: $dark-x2-red;
                 }
 
-                .searchBarInput {
-                    background-size: 15px 15px;
-                    background-position: 7px;
-                    border-radius: 17px;
-                    margin: 0px 8px;
-                    padding: 4px 8px 4px 28px;
-                    font-size: 14px;
-                    width: 185px;
-                }
-
                 .dropdown {
                     display: flex;
                     flex-direction: column;
                     position: absolute;
-                    top: 121px;
+                    top: 126px;
                     margin-left: 10.5px;
                     padding-top: 7px;
                     background-color: $white;
@@ -156,28 +146,42 @@
 @include respond-to("large") {
     .container {
         .secondaryContainer {
-            padding-left: 436px;
+            padding-left: 353px;
+
+            .secondaryBlock {
+                font-size: 11.5px;
+
+                .coloredBlock {
+                    li {
+                        margin-left: 13px;
+                    }
+                }
+
+                .uncoloredBlock {
+                    li {
+                        margin-left: 13px;
+                    }
+
+                    .borderRight {
+                        padding-right: 13px;
+                    }
+                }
+            }
         }
 
         .mainContainer {
             padding: 0px 7px 13px 7px;
 
             .imageContainer {
-                margin: -35px 48px 0px 9.5px;
+                margin: -35px 48px 0px 7.5px;
             }
 
             .itemLine {
                 .itemContainer {
-                    margin: 0px 3.5px;
+                    margin: 0px 7.5px;
 
                     a {
-                        font-size: 12px;
-                    }
-
-                    .searchBarInput {
-                        padding: 3.5px 7.5px 3.5px 27.5px;
-                        font-size: 12px;
-                        width: 152px;
+                        font-size: 13px;
                     }
                 }
             }
@@ -188,12 +192,12 @@
 @include respond-to("medium") {
     .container {
         .secondaryContainer {
-            padding-left: 203px;
+            padding-left: 190px;
             position: relative;
             z-index: 1;
 
             .secondaryBlock {
-                font-size: 11.5px;
+                font-size: 11px;
 
                 .coloredBlock {
                     li {
@@ -234,24 +238,18 @@
 
             .itemLine {
                 justify-content: center;
-                margin: 9px 0px 1px 0px;
-                padding-left: 35px;
+                margin: 10px 0px 0px 0px;
                 width: 100%;
 
                 .itemContainer {
-                    margin: 0px 4px;
+                    margin: 0px 7px;
 
                     a {
                         font-size: 12.5px;
                     }
 
-                    .searchBarInput {
-                        font-size: 12.5px;
-                        width: 168px;
-                    }
-
                     .dropdown {
-                        top: 153px;
+                        top: 148px;
                     }
                 }
             }
@@ -346,29 +344,13 @@
 
         .outerExpandedDropdownContainer[aria-expanded="true"] {
             height: max-content;
-            margin-top: 4px;
+            margin-top: 4.5px;
 
             .expandedDropdownContainer {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 border-bottom: 1px solid $light-x4-gray;
-
-                .expandedSearchBarContainer {
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
-
-                    .expandedSearchBarInput {
-                        background-size: 15px 15px;
-                        background-position: 7px;
-                        border-radius: 15px;
-                        margin: 14px 15px;
-                        padding: 3.5px 7.5px 3.5px 27.5px;
-                        font-size: 13.5px;
-                        width: 100%;
-                    }
-                }
 
                 .wrapExpandedDropdown {
                     width: 100%;

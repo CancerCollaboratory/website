@@ -3,7 +3,6 @@ import EscapeOutside from "react-escape-outside";
 import Image from "next/image";
 import CustomLink from "../customLink/customLink";
 import NavbarItem from "../navbarItem/navbarItem";
-import SearchBar from "../searchBar/searchBar";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import data from "../../data/components/navbar/navbar.json";
@@ -75,7 +74,6 @@ const Navbar = () => {
                 key={index}
               />
             ))}
-            <SearchBar styleContainer={styles.itemContainer} styleInput={styles.searchBarInput} />
           </div>
         </div>
         <div
@@ -83,10 +81,6 @@ const Navbar = () => {
           aria-expanded={isDropdownToggled.toString()}
         >
           <div className={styles.expandedDropdownContainer}>
-            <SearchBar
-              styleContainer={styles.expandedSearchBarContainer}
-              styleInput={styles.expandedSearchBarInput}
-            />
             <div className={styles.wrapExpandedDropdown}>
               {data.navbarItems?.map((item, index) =>
                 item.dropdownItems ? (
