@@ -3,7 +3,7 @@ import LateralColumn from "../components/lateralColumn/lateralColumn";
 import LeftColumn from "../components/leftColumn/leftColumn";
 import RightColumn from "../components/rightColumn/rightColumn";
 import Button from "../components/button/button";
-import Publication from "../components/publication/publication";
+import Announcement from "../components/announcement/announcement";
 import BarChart from "../components/barChart/barChart";
 import GraphTable from "../components/graphTable/graphTable";
 import ListLine from "../components/listLine/listLine";
@@ -37,7 +37,7 @@ const Home = () => {
               />
             </div>
             <div className={clsx(utilStyles.childContainer, utilStyles.childContainerAlignment)}>
-              <Publication
+              <Announcement
                 imageSrcPath={lateralColumn1?.leftColumn?.publication?.imageSrcPath}
                 imageAlt={lateralColumn1?.leftColumn?.publication?.imageAlt}
                 title={lateralColumn1?.leftColumn?.publication?.title}

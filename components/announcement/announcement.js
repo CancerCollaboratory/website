@@ -1,12 +1,12 @@
 import clsx from "clsx";
 import Image from "next/image";
-import CustomLink from "../../components/customLink/customLink";
+import CustomLink from "../customLink/customLink";
 import { renderData } from "../../lib/functions/renderData";
 import { insertLinkExternal, insertLinkInternal } from "../../lib/functions/insertLink";
 import utilStyles from "../../styles/utils.module.scss";
-import styles from "./publication.module.scss";
+import styles from "./announcement.module.scss";
 
-const Publication = ({
+const Announcement = ({
   imageSrcPath,
   imageAlt,
   title,
@@ -46,4 +46,4 @@ const Publication = ({
   }
 };
 
-export default Publication;
+export default Announcement;
