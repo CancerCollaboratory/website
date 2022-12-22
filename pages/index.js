@@ -38,14 +38,14 @@ const Home = () => {
             </div>
             <div className={clsx(utilStyles.childContainer, utilStyles.childContainerAlignment)}>
               <Announcement
-                imageSrcPath={lateralColumn1?.leftColumn?.publication?.imageSrcPath}
-                imageAlt={lateralColumn1?.leftColumn?.publication?.imageAlt}
-                title={lateralColumn1?.leftColumn?.publication?.title}
-                titleLink={lateralColumn1?.leftColumn?.publication?.titleLink}
-                isTitleLinkExternal={lateralColumn1?.leftColumn?.publication?.isTitleLinkExternal}
-                caption={lateralColumn1?.leftColumn?.publication?.caption}
+                imageSrcPath={lateralColumn1?.leftColumn?.announcement?.imageSrcPath}
+                imageAlt={lateralColumn1?.leftColumn?.announcement?.imageAlt}
+                title={lateralColumn1?.leftColumn?.announcement?.title}
+                titleLink={lateralColumn1?.leftColumn?.announcement?.titleLink}
+                isTitleLinkExternal={lateralColumn1?.leftColumn?.announcement?.isTitleLinkExternal}
+                caption={lateralColumn1?.leftColumn?.announcement?.caption}
                 isCaptionLinkExternal={
-                  lateralColumn1?.leftColumn?.publication?.isCaptionLinkExternal
+                  lateralColumn1?.leftColumn?.announcement?.isCaptionLinkExternal
                 }
               />
             </div>
