@@ -1,6 +1,12 @@
 @import "./colors";
 @import "./mixins";
 
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .pageBodyContainer {
     display: flex;
     flex-direction: column;
@@ -94,6 +100,10 @@
 
 .reverseVerticalAlignment {
     align-items: flex-end;
+}
+
+.flexGrow {
+    flex-grow: 1;
 }
 
 .flexDirectionColumn {
