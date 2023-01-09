@@ -1,0 +1,32 @@
+.supportPage {
+  .content {
+    margin-left: 30px;
+  }
+
+  h1 {
+    font-size: 26px;
+    color: #474747;
+    margin: 20px 0;
+  }
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 17px;
+    color: #4d4d4d;
+  }
+
+  p {
+    line-height: 29px;
+    color: default;
+  }
+
+  pre {
+    font-size: 13px;
+    color: #475055;
+    border-color: #dedfe1;
+    border-radius: 4px;
+    background-color: #e5f3fe;
+    padding: 10px;
+  }
+}

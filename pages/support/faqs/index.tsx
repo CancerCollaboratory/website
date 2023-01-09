@@ -1,11 +1,15 @@
+import Image from "next/image";
 import SupportLayout from "../../../components/supportLayout/supportLayout";
+import styles from "../styles.module.scss";
+import imageSSH from "";
+import imageProtectVM from "";
 
-const FrequentlyAskedQuestions = () => {
-  return (
-    <div id="support_faqs">
+const FrequentlyAskedQuestions = () => (
+  <div className={styles.supportPage}>
+    <div className={styles.content}>
       <h1>Frequently Asked Questions</h1>
 
-      <h3>Q: Do you monitor my VM’s activity?</h3>
+      <h3>Q: Do you monitor my VM's activity?</h3>
 
       <p>
         A: We do not monitor user VM activity, but we used in the past a free open-source monitoring
@@ -40,18 +44,25 @@ const FrequentlyAskedQuestions = () => {
       <p>&nbsp;</p>
 
       <pre>
-        [ 1920.399095] Not tainted 3.13.0-79-generic #123-Ubuntu [ 1920.399559] "echo 0 &gt;
-        /proc/sys/kernel/hung_task_timeout_secs" disables this message. [ 1920.400763] INFO: task
-        apt-check:1286 blocked for more than 120 seconds. [ 1920.401360] Not tainted
-        3.13.0-79-generic #123-Ubuntu [ 1920.401820] "echo 0 &gt;
-        /proc/sys/kernel/hung_task_timeout_secs" disables this message. [ 2040.400079] INFO: task
-        rs:main Q:Reg:1061 blocked for more than 120 seconds. [ 2040.400697] Not tainted
-        3.13.0-79-generic #123-Ubuntu [ 2040.401132] "echo 0 &gt;
-        /proc/sys/kernel/hung_task_timeout_secs" disables this message. [ 2040.401883] INFO: task
-        apt-check:1286 blocked for more than 120 seconds.
+        {`
+      [ 1920.399095] Not tainted 3.13.0-79-generic #123-Ubuntu
+      [ 1920.399559] "echo 0 &gt;/proc/sys/kernel/hung_task_timeout_secs" disables this message. 
+      [ 1920.400763] INFO: taskapt-check:1286 blocked for more than 120 seconds. 
+      [ 1920.401360] Not tainted 3.13.0-79-generic#123-Ubuntu 
+      [ 1920.401820] "echo 0 &gt; /proc/sys/kernel/hung_task_timeout_secs" disables this message. 
+      [ 2040.400079] INFO: task rs:main Q:Reg:1061 blocked for more than 120 seconds. 
+      [ 2040.400697] Not tainted 3.13.0-79-generic #123-Ubuntu 
+      [ 2040.401132] "echo 0 &gt;/proc/sys/kernel/hung_task_timeout_secs" disables this message. 
+      [ 2040.401883] INFO: taskapt-check:1286 blocked for more than 120 seconds.
+      `}
       </pre>
 
-      <p>[[nid-img:949]]</p>
+      <Image
+        src="/assets/support/faq/SSH-into-VM-FAQ.png"
+        alt="SSH into VM instructions"
+        width="570"
+        height="245"
+      />
 
       <p>&nbsp;</p>
 
@@ -64,8 +75,10 @@ const FrequentlyAskedQuestions = () => {
 
       <p>&nbsp;</p>
 
-      <p>Basically, add these lines to "/etc/sysctl.conf":</p>
-      <pre>vm.dirty_background_ratio = 5 vm.dirty_ratio = 10</pre>
+      <p>
+        Basically, add these lines to "/etc/sysctl.conf":
+        <pre>vm.dirty_background_ratio = 5 vm.dirty_ratio = 10</pre>
+      </p>
 
       <p>
         And then apply them: <pre>sysctl -p </pre>
@@ -98,15 +111,21 @@ const FrequentlyAskedQuestions = () => {
         is “unlocked”. The operation is available in the “Actions” drop-down of each instance.
       </p>
 
-      <p>[[nid-img:950]]</p>
-
+      <Image
+        src="/assets/support/faq/Protect-VM-FAQ.png"
+        alt="Protect VM from deletion"
+        width="200"
+        height="200"
+      />
       <h3>
         Q: I attached a large volume to my instance (10 TB), but when I try to format it takes a
         very long time. What can I do to make this step faster?
       </h3>
 
-      <p>A: We recommend you format it as XFS and use the "-K" option: </p>
-      <pre>mkfs.xfs -K /dev/vdb </pre>
+      <p>
+        A: We recommend you format it as XFS and use the "-K" option:{" "}
+        <pre>mkfs.xfs -K /dev/vdb </pre>
+      </p>
 
       <p>In our tests, it took around 3 min to format a 10 TB attached volume.</p>
 
@@ -146,77 +165,8 @@ const FrequentlyAskedQuestions = () => {
         </li>
       </ol>
     </div>
-  );
-  return (
-    <div id="support_faqs">
-      <h1>Frequently Asked Questions</h1>
-
-      <h3>Q: Do you monitor my VM’s activity?</h3>
-
-      <p>
-        A: We do not monitor user VM activity, but we used in the past a free open-source monitoring
-        tool called Sensu to monitor our own VMs, and we have an Ansible playbook that you could use
-        to deploy the sensu clients and server:{" "}
-        <a href="https://github.com/ICGC-TCGA-PanCancer/monitoring-bag">
-          https://github.com/ICGC-TCGA-PanCancer/monitoring-bag
-        </a>
-      </p>
-
-      <p>
-        Sensu can be extended and you can send some of its metrics (cpu, memory, disk, network) to a
-        Graphite server. There are are many other open-source monitoring solutions (Nagios, Cacti,
-        Zabbix, etc) that can be used.
-      </p>
-
-      <h3>
-        Q: I cannot SSH into my VM which was working fine yesterday, do you know what happened?
-      </h3>
-
-      <p>
-        A: Please provide us more details about your VM in order to investigate. In the meantime,
-        please click on the Instance name in the Compute -&gt; Instances tab, and then click on the
-        Console tab to see if there is any error output sent to the console.
-      </p>
-
-      <p>
-        If you see messages like below it means that the kernel has hung and you will have to hard
-        reboot the VM using the Actions drop-down menu.
-      </p>
-
-      <p>&nbsp;</p>
-
-      <pre>
-        [ 1920.399095] Not tainted 3.13.0-79-generic #123-Ubuntu [ 1920.399559] "echo 0 &gt;
-        /proc/sys/kernel/hung_task_timeout_secs" disables this message. [ 1920.400763] INFO: task
-        apt-check:1286 blocked for more than 120 seconds. [ 1920.401360] Not tainted
-        3.13.0-79-generic #123-Ubuntu [ 1920.401820] "echo 0 &gt;
-        /proc/sys/kernel/hung_task_timeout_secs" disables this message. [ 2040.400079] INFO: task
-        rs:main Q:Reg:1061 blocked for more than 120 seconds. [ 2040.400697] Not tainted
-        3.13.0-79-generic #123-Ubuntu [ 2040.401132] "echo 0 &gt;
-        /proc/sys/kernel/hung_task_timeout_secs" disables this message. [ 2040.401883] INFO: task
-        apt-check:1286 blocked for more than 120 seconds.
-      </pre>
-
-      <p>[[nid-img:949]]</p>
-
-      <p>&nbsp;</p>
-
-      <p>
-        A possible way to avoid this issue in the future is described in this blog:{" "}
-        <a href="https://www.blackmoreops.com/2014/09/22/linux-kernel-panic-issue-fix-hung_task_timeout_secs-blocked-120-seconds-problem/">
-          https://www.blackmoreops.com/2014/09/22/linux-kernel-panic-issue-fix-hung_task_timeout_secs-blocked-120-seconds-problem/
-        </a>
-      </p>
-
-      <p>&nbsp;</p>
-
-      <p>
-        Basically, add these lines to "/etc/sysctl.conf":
-        <pre>vm.dirty_background_ratio = 5 vm.dirty_ratio = 10</pre>
-      </p>
-    </div>
-  );
-};
+  </div>
+);
 
 export default FrequentlyAskedQuestions;
 
