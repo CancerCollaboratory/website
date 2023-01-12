@@ -9,22 +9,42 @@
 }
 
 .supportPage {
+  display: flex;
+  padding: 30px 15px 10px 15px;
+
   h1 {
-    font-size: 26px;
+    //     font-size: 26px;
     color: #474747;
     margin: 20px 0;
   }
 
-  h3 {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 17px;
-    color: #4d4d4d;
+  h2 {
+    margin-bottom: 20px;
   }
 
-  p {
-    line-height: 29px;
-    color: default;
+  //   h3 {
+  //     margin-top: 20px;
+  //     margin-bottom: 30px;
+  //     font-size: 17px;
+  //     color: #4d4d4d;
+  //   }
+
+  //   p {
+  //     line-height: 29px;
+  //     color: default;
+  //   }
+
+  .cardCont {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    flex: 1 1 50%;
+    min-height: 100px;
+    width: 250px;
   }
 
   pre {
@@ -36,6 +56,7 @@
     padding: 10px;
   }
 }
+
 @include respond-to("medium") {
   .container {
     flex-direction: column-reverse;

@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "userGuides": [
+      {
+        "title": "### [Getting Started](/support/getting-started)",
+        "bodyText": "Simple instructions on how to start a new instance.",
+        "imageSrcPath": "/assets/support/overview/icon-circle-documentation.svg",
+        "imageAlt": "icon - documentation"
+      },
+      {
+        "title": "### [User Guide](/support/user-guide)",
+        "bodyText": "Detailed guide on how to work with the Collaboratory resources.",
+        "imageSrcPath": "/assets/support/overview/icon-circle-documentation.svg",
+        "imageAlt": "icon - documentation"
+      }
+    ],
+    "resources": [
+      {
+        "title": "### [Best Practices](/support/best-practices)",
+        "bodyText": "A list of tips and tricks that we have found helpful.",
+        "imageSrcPath": "/assets/support/overview/icon-circle-lightbulb.svg",
+        "imageAlt": "icon - documentation"
+      },
+      {
+        "title": "### [Glossary of Terms](/support/glossary-of-terms)",
+        "bodyText": "Cloud specific terms explained.",
+        "imageSrcPath": "/assets/support/overview/icon-circle-lightbulb.svg",
+        "imageAlt": "icon - documentation"
+      },
+      {
+        "title": "Getting Started",
+        "bodyText": "Simple instructions on how to start a new instance.",
+        "imageSrcPath": "/assets/support/overview/icon-circle-lightbulb.svg",
+        "imageAlt": "icon - documentation"
+      },
+      {
+        "title": "### [FAQs](/support/faqs)",
+        "bodyText": "Common questions that the Collaboratory users have asked.",
+        "imageSrcPath": "/assets/support/overview/icon-circle-lightbulb.svg",
+        "imageAlt": "icon - documentation"
+      }
+    ]
+  }
+}
