@@ -1,0 +1,21 @@
+.glossaryTerms {
+  table {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  th {
+    text-align: left;
+    color: #4f4f4f;
+  }
+
+  tr:nth-child(even) {
+    background: #f8f8f8;
+  }
+
+  th,
+  td {
+    border: 1px solid #c7c7c7;
+    padding: 5px 15px;
+  }
+}

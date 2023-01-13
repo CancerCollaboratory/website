@@ -1,14 +1,15 @@
 import SupportLayout from "../../../components/supportLayout/supportLayout";
+import styles from "./glossaryTerms.module.scss";
 
 const GlossaryOfTerms = () => (
-  <div>
+  <div className={styles.glossaryTerms}>
     <h1>Glossary of Terms</h1>
 
-    <table class="terms-table">
+    <table>
       <tbody>
         <tr>
-          <th class="terms">Term</th>
-          <th class="meanings">Meaning</th>
+          <th>Term</th>
+          <th>Meaning</th>
         </tr>
         <tr>
           <td>absolute limit</td>
