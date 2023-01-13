@@ -1,9 +1,9 @@
 import SupportLayout from "../../../components/supportLayout/supportLayout";
+import styles from "./bestPractices.module.scss";
 
 const BestPractices = () => (
-  <div>
+  <div className={styles.bestPractices}>
     <h1>Best Practices</h1>
-
     <ul>
       <li>
         <p>Spin up a VM instance corresponding to your needs.</p>
