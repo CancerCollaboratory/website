@@ -1,6 +1,19 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
 
+.actionButton {
+    background-color: $dark-x1-blue;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $light-x1-blue;
+    }
+}
+
 .container {
     display: flex;
     align-items: center;

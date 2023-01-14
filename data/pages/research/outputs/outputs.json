@@ -1,0 +1,857 @@
+{
+  "jumbotron": {
+      "title": "Research Outputs from Collaboratory",
+      "body": {
+          "text": "The work of the Collaboratory consists of technology development cores and research modules organized with the common goal of encouraging collaboration and accelerating the development of new tools that will advance the personalized treatment of cancer through genomic research."
+      }
+  },
+  "publicationInstructions": "Should your use of the Cancer Genome Collaboratory result in a publication, please acknowledge the Collaboratory in your work with the following statement: “Data and/or analyses in this work were conducted using the Cancer Genome Collaboratory.",
+  "publicationsSection": {
+    "title": "Latest Publications & Presentations"
+  },
+  "publications": [
+    {
+      "author": "Akdemir KC, Le VT, Chandran S, Li Y, Verhaak RG, Beroukhim R, Campbell PJ, Chin L, Dixon JR, Futreal PA; PCAWG Structural Variation Working Group; PCAWG Consortium",
+      "title": "Disruption of chromatin folding domains by somatic genomic rearrangements in human cancer",
+      "source": "Nat Genet. 2020 Mar;52(3):294-305. doi: 10.1038/s41588-019-0564-y. Epub 2020 Feb 5. PMID: 32024999",
+      "pmid": "32024999"
+    },
+    {
+      "author": "Alexandrov LB, Kim J, Haradhvala NJ, Huang MN, Tian Ng AW, Wu Y, Boot A, Covington KR, Gordenin DA, Bergstrom EN, Islam SMA, Lopez-Bigas N, Klimczak LJ, McPherson JR, Morganella S, Sabarinathan R, Wheeler DA, Mustonen V; PCAWG Mutational Signatures Working Group, Getz G, Rozen SG, Stratton MR; PCAWG Consortium",
+      "title": "The repertoire of mutational signatures in human cancer",
+      "source": "Nature. 2020 Feb;578(7793):94-101. doi: 10.1038/s41586-020-1943-3. Epub 2020 Feb 5. PMID: 32025018",
+      "pmid": "32025018"
+    },
+    {
+      "author": "Bhandari V, Li CH, Bristow RG, Boutros PC; PCAWG Consortium",
+      "title": "Divergent mutational processes distinguish hypoxic and normoxic tumours",
+      "source": "Nat Commun. 2020 Feb 5;11(1):737. doi: 10.1038/s41467-019-14052-x. PMID: 32024819",
+      "pmid": "32024819"
+    },
+    {
+      "author": "Campbell, P.J., Getz, G., Korbel, J.O. et al. ICGC/TCGA Pan-Cancer Analysis of Whole Genomes Consortium",
+      "title": "Pan-cancer analysis of whole genomes",
+      "source": "Nature. 2020 Feb;578(7793):82-93. doi: 10.1038/s41586-020-1969-6. Epub 2020 Feb 5. PMID: 32025007",
+      "pmid": "32025007"
+    },
+    {
+      "author": "Carlevaro-Fita J, Lanz√≥s A, Feuerbach L, Hong C, Mas-Ponte D, Pedersen JS; PCAWG Drivers and Functional Interpretation Group, Johnson R; PCAWG Consortium",
+      "title": "Cancer LncRNA Census reveals evidence for deep functional conservation of long noncoding RNAs in tumorigenesis",
+      "source": "Commun Biol. 2020 Feb 5;3(1):56. doi: 10.1038/s42003-019-0741-7. PMID: 32024996",
+      "pmid": "32024996"
+    },
+    {
+      "author": "Cmero M, Yuan K, Ong CS, Schr√∂der J; PCAWG Evolution and Heterogeneity Working Group, Corcoran NM, Papenfuss T, Hovens CM, Markowetz F, Macintyre G; PCAWG Consortium",
+      "title": "Inferring structural variant cancer cell fraction",
+      "source": "Nat Commun. 2020 Feb 5;11(1):730. doi: 10.1038/s41467-020-14351-8. PMID: 32024845",
+      "pmid": "32024845"
+    },
+    {
+      "author": "Isidro Cortés-Ciriano, Jake June-Koo Lee, Ruibin Xi, Dhawal Jain, Youngsook L Jung, Lixing Yang, Dmitry Gordenin, Leszek J Klimczak, Cheng-Zhong Zhang, David S Pellman, PCAWG Structural Variation Working Group, Peter J Park, PCAWG Consortium",
+      "title": "Comprehensive analysis of chromothripsis in 2,658 human cancers using whole-genome sequencing",
+      "source": "Nat Genet. 2020 Mar;52(3):331-341. doi: 10.1038/s41588-019-0576-7. Epub 2020 Feb 5. PMID: 32025003",
+      "pmid": "32025003"
+    },
+    {
+      "author": "Moritz Gerstung, Clemency Jolly, Ignaty Leshchiner, Stefan C Dentro, Santiago Gonzalez, Daniel Rosebrock, Thomas J Mitchell, Yulia Rubanova, Pavana Anur, Kaixian Yu, Maxime Tarabichi, Amit Deshwar, Jeff Wintersinger, Kortine Kleinheinz, Ignacio Vázquez-García, Kerstin Haase, Lara Jerman, Subhajit Sengupta, Geoff Macintyre, Salem Malikic, Nilgun Donmez, Dimitri G Livitz, Marek Cmero, Jonas Demeulemeester, Steven Schumacher, Yu Fan, Xiaotong Yao, Juhee Lee, Matthias Schlesner, Paul C Boutros, David D Bowtell, Hongtu Zhu, Gad Getz, Marcin Imielinski, Rameen Beroukhim, S Cenk Sahinalp, Yuan Ji, Martin Peifer, Florian Markowetz, Ville Mustonen, Ke Yuan, Wenyi Wang, Quaid D Morris, PCAWG Evolution & Heterogeneity Working Group, Paul T Spellman, David C Wedge, Peter Van Loo, PCAWG Consortium",
+      "title": "The evolutionary history of 2,658 cancers",
+      "source": "Nature. 2020 Feb;578(7793):122-128. doi: 10.1038/s41586-019-1907-7. Epub 2020 Feb 6. PMID: 32025013",
+      "pmid": "32025013"
+    },
+    {
+      "author": "Jiao W, Atwal G, Polak P, Karlic R, Cuppen E; PCAWG Tumor Subtypes and Clinical Translation Working Group, Danyi A, de Ridder J, van Herpen C, Lolkema MP, Steeghs N, Getz G, Morris Q, Stein LD; PCAWG Consortium",
+      "title": "A deep learning system accurately classifies primary and metastatic cancers using passenger mutation patterns",
+      "source": "Nat Commun. 2020 Feb 5;11(1):728. doi: 10.1038/s41467-019-13825-8. PMID: 32024849",
+      "pmid": "32024849"
+    },
+    {
+      "author": "Li Y, Roberts ND, Wala JA, Shapira O, Schumacher SE, Kumar K, Khurana E, Waszak S, Korbel JO, Haber JE, Imielinski M; PCAWG Structural Variation Working Group, Weischenfeldt J, Beroukhim R, Campbell PJ; PCAWG Consortium",
+      "title": "Patterns of somatic structural variation in human cancer genomes",
+      "source": "Nature. 2020 Feb;578(7793):112-121. doi: 10.1038/s41586-019-1913-9. Epub 2020 Feb 5. PMID: 32025012",
+      "pmid": "32025012"
+    },
+    {
+      "author": "Paczkowska M, Barenboim J, Sintupisut N, Fox NS, Zhu H, Abd-Rabbo D, Mee MW, Boutros PC; PCAWG Drivers and Functional Interpretation Working Group, Reimand J; PCAWG Consortium",
+      "title": "Integrative pathway enrichment analysis of multivariate omics data",
+      "source": "Nat Commun. 2020 Feb 5;11(1):735. doi: 10.1038/s41467-019-13983-9. PMID: 32024846",
+      "pmid": "32024846"
+    },
+    {
+      "author": "PCAWG Transcriptome Core Group, Claudia Calabrese, Natalie R Davidson, Deniz Demircioğlu, Nuno A Fonseca, Yao He, André Kahles, Kjong-Van Lehmann, Fenglin Liu, Yuichi Shiraishi, Cameron M Soulette, Lara Urban, Liliana Greger, Siliang Li, Dongbing Liu, Marc D Perry, Qian Xiang, Fan Zhang, Junjun Zhang, Peter Bailey, Serap Erkek, Katherine A Hoadley, Yong Hou, Matthew R Huska, Helena Kilpinen, Jan O Korbel, Maximillian G Marin, Julia Markowski, Tannistha Nandi, Qiang Pan-Hammarström, Chandra Sekhar Pedamallu, Reiner Siebert, Stefan G Stark, Hong Su, Patrick Tan, Sebastian M Waszak, Christina Yung, Shida Zhu, Philip Awadalla, Chad J Creighton, Matthew Meyerson, B F Francis Ouellette, Kui Wu, Huanming Yang, PCAWG Transcriptome Working Group, Alvis Brazma, Angela N Brooks, Jonathan Göke, Gunnar Rätsch, Roland F Schwarz, Oliver Stegle, Zemin Zhang, PCAWG Consortium",
+      "title": "Genomic basis for RNA alterations in cancer",
+      "source": "Nature. 2020 Feb;578(7793):129-136. doi: 10.1038/s41586-020-1970-0. Epub 2020 Feb 5. PMID: 32025019",
+      "pmid": "32025019"
+    },
+    {
+      "author": "Phillips M, Molnár-Gábor F, Korbel JO, Thorogood A, Joly Y, Chalmers D, Townend D, Knoppers BM",
+      "title": "Genomics: data sharing needs international code of conduct",
+      "source": "Nature. Feb 2020; 578(7793) doi: 10.1038/d41586-020-00082-9",
+      "pmid": "32025008"
+    },
+    {
+      "author": "Reyna MA, Haan D, Paczkowska M, Verbeke LPC, Vazquez M, Kahraman A, Pulido-Tamayo S, Barenboim J, Wadi L, Dhingra P, Shrestha R, Getz G, Lawrence MS, Pedersen JS, Rubin MA, Wheeler DA, Brunak S, Izarzugaza JMG, Khurana E, Marchal K, von Mering C, Sahinalp SC, Valencia A; PCAWG Drivers and Functional Interpretation Working Group, Reimand J, Stuart JM, Raphael BJ; PCAWG Consortium",
+      "title": "Pathway and network analysis of more than 2500 whole cancer genomes",
+      "source": "Nat Commun. 2020 Feb 5;11(1):729. doi: 10.1038/s41467-020-14367-0. PMID: 32024854",
+      "pmid": "32024854"
+    },
+    {
+      "author": "Esther Rheinbay, Morten Muhlig Nielsen, Federico Abascal, Jeremiah A Wala, Ofer Shapira, Grace Tiao, Henrik Hornshøj, Julian M Hess, Randi Istrup Juul, Ziao Lin, Lars Feuerbach, Radhakrishnan Sabarinathan, Tobias Madsen, Jaegil Kim, Loris Mularoni, Shimin Shuai, Andrés Lanzós, Carl Herrmann, Yosef E Maruvka, Ciyue Shen, Samirkumar B Amin, Pratiti Bandopadhayay, Johanna Bertl, Keith A Boroevich, John Busanovich, Joana Carlevaro-Fita, Dimple Chakravarty, Calvin Wing Yiu Chan, David Craft, Priyanka Dhingra, Klev Diamanti, Nuno A Fonseca, Abel Gonzalez-Perez, Qianyun Guo, Mark P Hamilton, Nicholas J Haradhvala, Chen Hong, Keren Isaev, Todd A Johnson, Malene Juul, Andre Kahles, Abdullah Kahraman, Youngwook Kim, Jan Komorowski, Kiran Kumar, Sushant Kumar, Donghoon Lee, Kjong-Van Lehmann, Yilong Li, Eric Minwei Liu, Lucas Lochovsky, Keunchil Park, Oriol Pich, Nicola D Roberts, Gordon Saksena, Steven E Schumacher, Nikos Sidiropoulos, Lina Sieverling, Nasa Sinnott-Armstrong, Chip Stewart, David Tamborero, Jose M C Tubio, Husen M Umer, Liis Uusküla-Reimand, Claes Wadelius, Lina Wadi, Xiaotong Yao, Cheng-Zhong Zhang, Jing Zhang, James E Haber, Asger Hobolth, Marcin Imielinski, Manolis Kellis, Michael S Lawrence, Christian von Mering, Hidewaki Nakagawa, Benjamin J Raphael, Mark A Rubin, Chris Sander, Lincoln D Stein, Joshua M Stuart, Tatsuhiko Tsunoda, David A Wheeler, Rory Johnson, Jüri Reimand, Mark Gerstein, Ekta Khurana, Peter J Campbell, Núria López-Bigas, PCAWG Drivers and Functional Interpretation Working Group, PCAWG Structural Variation Working Group, Joachim Weischenfeldt, Rameen Beroukhim, Iñigo Martincorena, Jakob Skou Pedersen, Gad Getz, PCAWG Consortium",
+      "title": "Analyses of non-coding somatic drivers in 2,658 cancer whole genomes",
+      "source": "Nature. 2020 Feb;578(7793):102-111. doi: 10.1038/s41586-020-1965-x. Epub 2020 Feb 5. PMID: 32025015",
+      "pmid": "32025015"
+    },
+    {
+      "author": "Bernardo Rodriguez-Martin, Eva G Alvarez, Adrian Baez-Ortega, Jorge Zamora, Fran Supek, Jonas Demeulemeester, Martin Santamarina, Young Seok Ju, Javier Temes, Daniel Garcia-Souto, Harald Detering, Yilong Li, Jorge Rodriguez-Castro, Ana Dueso-Barroso, Alicia L Bruzos, Stefan C Dentro, Miguel G Blanco, Gianmarco Contino, Daniel Ardeljan, Marta Tojo, Nicola D Roberts, Sonia Zumalave, Paul A W Edwards, Joachim Weischenfeldt, Montserrat Puiggròs, Zechen Chong, Ken Chen, Eunjung Alice Lee, Jeremiah A Wala, Keiran Raine, Adam Butler, Sebastian M Waszak, Fabio C P Navarro, Steven E Schumacher, Jean Monlong, Francesco Maura, Niccolo Bolli, Guillaume Bourque, Mark Gerstein, Peter J Park, David C Wedge, Rameen Beroukhim, David Torrents, Jan O Korbel, Inigo Martincorena, Rebecca C Fitzgerald, Peter Van Loo, Haig H Kazazian, Kathleen H Burns, PCAWG Structural Variation Working Group, Peter J Campbell, Jose M C Tubio, PCAWG Consortium",
+      "title": "Pan-cancer analysis of whole genomes identifies driver rearrangements promoted by LINE-1 retrotransposition",
+      "source": "Nat Genet. 2020 Mar;52(3):306-319. doi: 10.1038/s41588-019-0562-0. Epub 2020 Feb 5. PMID: 32024998",
+      "pmid": "32024998"
+    },
+    {
+      "author": "Rubanova Y, Shi R, Harrigan CF, Li R, Wintersinger J, Sahin N, Deshwar A; PCAWG Evolution and Heterogeneity Working Group, Morris Q; PCAWG Consortium",
+      "title": "Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig",
+      "source": "Nat Commun. 2020 Feb 5;11(1):731. doi: 10.1038/s41467-020-14352-7. PMID: 32024834",
+      "pmid": "32024834"
+    },
+    {
+      "author": "Salichos L, Meyerson W, Warrell J, Gerstein M",
+      "title": "Estimating growth patterns and driver effects in tumor evolution from individual samples",
+      "source": "Nat Commun. 2020 Feb 5;11(1):732. doi: 10.1038/s41467-020-14407-9. PMID: 32024824",
+      "pmid": "32024824"
+    },
+    {
+      "author": "Shuai S; PCAWG Drivers and Functional Interpretation Working Group, Gallinger S, Stein L; PCAWG Consortium",
+      "title": "Combined burden and functional impact tests for cancer driver discovery using DriverPower",
+      "source": "Nat Commun. 2020 Feb 5;11(1):734. doi: 10.1038/s41467-019-13929-1. PMID: 32024818",
+      "pmid": "32024818"
+    },
+    {
+      "author": "Sieverling L, Hong C, Koser SD, Ginsbach P, Kleinheinz K, Hutter B, Braun DM, Cort√©s-Ciriano I, Xi R, Kabbe R, Park PJ, Eils R, Schlesner M; PCAWG-Structural Variation Working Group, Brors B, Rippe K, Jones DTW, Feuerbach L; PCAWG Consortium",
+      "title": "Genomic footprints of activated telomere maintenance mechanisms in cancer",
+      "source": "Nat Commun. 2020 Feb 5;11(1):733. doi: 10.1038/s41467-019-13824-9. PMID: 32024817",
+      "pmid": "32024817"
+    },
+    {
+      "author": "Yakneen S, Waszak SM; PCAWG Technical Working Group, Gertz M, Korbel JO; PCAWG Consortium",
+      "title": "Butler enables rapid cloud-based analysis of thousands of human genomes",
+      "source": "Nat Biotechnol. 2020 Mar;38(3):288-292. doi: 10.1038/s41587-019-0360-3. Epub 2020 Feb 5. PMID: 32024987",
+      "pmid": "32024987"
+    },
+    {
+      "author": "Yuan Y, Ju YS, Kim Y, Li J, Wang Y, Yoon CJ, Yang Y, Martincorena I, Creighton CJ, Weinstein JN, Xu Y, Han L, Kim HL, Nakagawa H, Park K, Campbell PJ, Liang H; PCAWG Consortium",
+      "title": "Comprehensive molecular characterization of mitochondrial genomes in human cancers",
+      "source": "Nat Genet. 2020 Mar;52(3):342-352. doi: 10.1038/s41588-019-0557-x. Epub 2020 Feb 5. PMID: 32024997",
+      "pmid": "32024997"
+    },
+    {
+      "author": "Zapatka M, Borozan I, Brewer DS, Iskar M, Grundhoff A, Alawi M, Desai N, S√ºltmann H, Moch H; PCAWG Pathogens, Cooper CS, Eils R, Ferretti V, Lichter P; PCAWG Consortium",
+      "title": "The landscape of viral associations in human cancers",
+      "source": "Nat Genet. 2020 Mar;52(3):320-330. doi: 10.1038/s41588-019-0558-9. Epub 2020 Feb 5. PMID: 32025001",
+      "pmid": "32025001"
+    },
+    {
+      "author": "Zhang Y, Chen F, Fonseca NA, He Y, Fujita M, Nakagawa H, Zhang Z, Brazma A; PCAWG Transcriptome Working Group; PCAWG Structural Variation Working Group, Creighton CJ; PCAWG Consortium",
+      "title": "High-coverage whole-genome analysis of 1220 cancers reveals hundreds of genes deregulated by rearrangement-mediated cis-regulatory alterations",
+      "source": "Nat Commun. 2020 Feb 5;11(1):736. doi: 10.1038/s41467-019-13885-w. PMID: 32024823",
+      "pmid": "32024823"
+    },
+    {
+      "author": "Baker DB, Knoppers BM, Phillips M, van Enckevort D, Kaufmann P, Lochmuller H, Taruscio D",
+      "title": "Privacy-Preserving Linkage of Genomic and Clinical Data Sets",
+      "source": "IEEE/ACM Transactions on Computational Biology and Bioinformatics. 2019; 16(4). doi: 10.1109/TCBB.2018.2855125",
+      "pmid": "30059313"
+    },
+    {
+      "author": "Cristian Groza, Tony Kwan, Nicole Soranzo, Tomi Pastinen, and Guillaume Bourque",
+      "title": "Personalized and graph genomes reveal missing signal epige-nomic data",
+      "source": "bioRxiv, page 457101, January 2019",
+      "pmid": "32450900"
+    },
+    {
+      "author": "Diaz-Mejia JJ, Meng EC, Pico AR, MacParland SA, Ketela T, Pugh TJ, Bader GD, Morris JH",
+      "title": "Evaluation of methods to assign cell type labels to cell clusters from single-cell RNA-sequencing data",
+      "source": "Version 3. F1000Res. 2019 Mar 15 [revised 2019 Jan 1];8. pii: ISCB Comm J-296. doi: 10.12688/f1000research.18490.3. eCollection 2019. PubMed PMID: 31508207; PubMed Central PMCID: PMC6720041",
+      "pmid": "31508207"
+    },
+    {
+      "author": "Gawroński AR, Lin YY, McConeghy B, LeBihan S, Asghari H, Koçkan C, Orabi B, Adra N, Pili R, Collins CC, Sahinalp SC, Hach F",
+      "title": "Structural variation and fusion detection using targeted sequencing data from circulating cell free DNA",
+      "source": "Nucleic Acids Res. 2019 Apr 23;47(7):e38",
+      "pmid": "30759232"
+    },
+    {
+      "author": "Haghshenas E, Sahinalp SC, Hach F",
+      "title": "lordFAST: sensitive and Fast Alignment Search Tool for LOng noisy Read sequencing Data",
+      "source": "Bioinformatics. 2019 Jan 1;35(1):20-27",
+      "pmid": "30561550"
+    },
+    {
+      "author": "Hodzic E, Shrestha R, Zhu K, Cheng K, Collins CC, Cenk Sahinalp S",
+      "title": "Combinatorial Detection of Conserved Alteration Patterns for Identifying Cancer Subnetworks",
+      "source": "Gigascience. 2019 Apr 1;8(4).",
+      "pmid": "30978274"
+    },
+    {
+      "author": "Hu LZ, Goebels F, Tan JH, Wolf E, Kuzmanov U, Wan C, Phanse S, Xu C, Schertzberg M, Fraser AG, Bader GD, Emili A",
+      "title": "EPIC: software toolkit for elution profile-based inference of protein complexes",
+      "source": "Nat Methods. 2019 Aug;16(8):737-742. doi: 10.1038/s41592-019-0461-4. Epub 2019 Jul 15. PubMed PMID: 31308550",
+      "pmid": "31308550"
+    },
+    {
+      "author": "Innes BT, Bader GD",
+      "title": "scClustViz - Single-cell RNAseq cluster assessment and visualization",
+      "source": "Version 2. F1000Res. 2018 Sep 21 [revised 2019 Jan 1];7. pii: ISCB Comm J-1522. doi: 10.12688/f1000research.16198.2. eCollection 2018. PubMed PMID: 31016009; PubMed Central PMCID: PMC6456841.",
+      "pmid": "31016009"
+    },
+    {
+      "author": "Karpov N, Malikic S, Rahman MK, Sahinalp SC",
+      "title": "A multi-labeled tree dissimilarity measure for comparing 'clonal trees' of tumor progression",
+      "source": "Algorithms Mol Biol. 2019 Jul 27;14:17.",
+      "pmid": "31372179"
+    },
+    {
+      "author": "Laperle J, Hebert-Deschamps S, Raby J, de Lima Morais DA, Barrette M, Bujold D, Bastin C, Robert MA, Nadeau JF, Harel M, Nordell-Markovits A, Veilleux A, Bourque G. & Jacques PE",
+      "title": "The epiGenomic Efficient Correlator (epiGeEC) tool allows fast comparison of user datasets with thousands of public epigenomic datasets",
+      "source": "Bioinformatics. 2019 Feb 15; 35(4):674-676",
+      "pmid": "30052804"
+    },
+    {
+      "author": "Shokoohi F, Stephens DA, Bourque G, Pastinen T, Greenwood CMT, Labbe A",
+      "title": "A hidden markov model for identifying differentially methylated sites in bisulfite sequencing data",
+      "source": "Biometrics. 2019 Mar;75(1):210-221",
+      "pmid": "30168593"
+    },
+    {
+      "author": "Shrestha R, Nabavi N, Lin YY, Mo F, Anderson S, Volik S, Adomat HH, Lin D, Xue H, Dong X, Shukin R, Bell RH, McConeghy B, Haegert A, Brahmbhatt S, Li E, Oo HZ, Hurtado-Coll A, Fazli L, Zhou J, McConnell Y, McCart A, Lowy A, Morin GB, Chen T, Daugaard M, Sahinalp SC, Hach F, Le Bihan S, Gleave ME, Wang Y, Churg A, Collins CC",
+      "title": "BAP1 haploinsufficiency predicts a distinct immunogenic class of malignant peritoneal mesothelioma",
+      "source": "Genome Med. 2019 Feb 18;11(1):8.",
+      "pmid": "30777124"
+    },
+    {
+      "author": "Shuai S, Suzuki H, Diaz-Navarro A, Nadeu F, Kumar SA, Gutierrez-Fernandez A, Delgado J, Pinyol M, Lopez-Otin C, Puente XS, Taylor MD, Campo E, and Stein LD",
+      "title": "The U1 Spliceosomal RNA is Recurrently Mutated in Multiple Cancers",
+      "source": "Nature 2019 October 9. Oct;574(7780):712-716. doi: 10.1038/s41586-019-1651-z. Epub 2019 Oct 9.",
+      "pmid": "31597163"
+    },
+    {
+      "author": "Simmons S, Berger B, Sahinalp C",
+      "title": "Protecting Genomic Data Privacy with Probabilistic Modeling",
+      "source": "Pac Symp Biocomput. 2019;24:403-414.",
+      "pmid": "30963078"
+    },
+    {
+      "author": "Malikic S, Jahn K, Kuipers J, Sahinalp SC, Beerenwinkel N",
+      "title": "Integrative inference of subclonal tumour evolution from single-cell and bulk sequencing data.Nat Commun",
+      "source": "2019 Jun 21;10(1):2750.",
+      "pmid": "31227714"
+    },
+    {
+      "author": "Mark Phillips, Bartha M. Knoppers",
+      "title": "Whose Commons? Data Protection as a Legal Limit of Open Science",
+      "source": "(2019) 47 Journal of Law, Medicine & Ethics. doi: 10.1177/1073110519840489",
+      "pmid": "30994061"
+    },
+    {
+      "author": "Page DJ, Miossec MJ, Williams SG, Monaghan RM, Fotiou E, Cordell HJ, Sutcliffe L, Topf A, Bourgey M, Bourque G, Eveleigh R, Dunwoodie SL, Winlaw DS, Bhattacharya S, Breckpot J, Devriendt K, Gewillig M, Brook JD, Setchfield KJ, Bu'Lock FA, O'Sullivan J, Stuart G, Bezzina CR, Mulder BJM, Postma AV, Bentham JR, Baron M, Bhaskar SS, Black GC, Newman WG, Hentges KE, Lathrop GM, Santibanez-Koref M & Keavney BD",
+      "title": "Whole Exome Sequencing Reveals the Major Genetic Contributors to Nonsyndromic Tetralogy of Fallot",
+      "source": "Circ Res. 2019 Feb 15;124 (4):553-563",
+      "pmid": "30582441"
+    },
+    {
+      "author": "Pai S, Hui S, Isserlin R, Shah MA, Kaka H, Bader GD",
+      "title": "netDx: interpretable patient classification using integrated patient similarity networks",
+      "source": "Mol Syst Biol. 2019 Mar 14;15(3):e8497. doi: 10.15252/msb.20188497. PubMed PMID: 30872331; PubMed Central PMCID: PMC6423721.",
+      "pmid": "30872331"
+    },
+    {
+      "author": "Reimand J, Isserlin R, Voisin V, Kucera M, Tannus-Lopes C, Rostamianfar A, Wadi L, Meyer M, Wong J, Xu C, Merico D, Bader GD",
+      "title": "Pathway enrichment analysis and visualization of omics data using g:Profiler, GSEA, Cytoscape and EnrichmentMap",
+      "source": "Nat Protoc. 2019 Feb;14(2):482-517. 10.1038/s41596-018-0103-9. PubMed PMID: 30664679; PubMed Central PMCID:doi:PMC6607905.",
+      "pmid": "30664679"
+    },
+    {
+      "author": "Vladoiu MC, El-Hamamy I, Donovan LK, Farooq H, Holgado BL, Sundaravadanam Y, Ramaswamy V, Hendrikse LD, Kumar S, Mack SC, Lee JJY, Fong V, Juraschka K, Przelicki D, Michealraj A, Skowron P, Luu B, Suzuki H, Morrissy AS, Cavalli FMG, Garzia L, Daniels C, Wu X, Qazi MA, Singh SK, Chan JA, Marra MA, Malkin D, Dirks P, Heisler L, Pugh T, Ng K, Notta F, Thompson EM, Kleinman CL, Joyner AL, Jabado N, Stein L, Taylor MD",
+      "title": "Childhood cerebellar tumours mirror conserved fetal transcriptional programs",
+      "source": "Nature. 2019 May 1. pii: 10.1038/s41586-019-1158-7. doi: 10.1038/s41586-019-1158-7.",
+      "pmid": "31043743"
+    },
+    {
+      "author": "Zhang J, Bajari R, Andric D, Gerthoffert F, Lepsa A, Nahal-Bose H, Stein LD, Ferretti V (2019)",
+      "title": "The International Cancer Genome Consortium Data Portal",
+      "source": "Nat Biotechnol. 2019 Apr;37(4):367-369. doi: 10.1038/s41587-019-0055-9. PMID: 30877282",
+      "pmid": "30877282"
+    },
+    {
+      "author": "Bourgey M, Dali R, Eveleigh R, Chen KC, Letourneau L, Fillon J, Michaud M, Caron M, Sandoval J, Lefebvre F, Leveque G, Mercier E, Bujold D, Marquis P, Van PT, Anderson de Lima Morais D, Tremblay J, Shao X, Henrion E, Gonzalez E, Quirion PO, Caron B, Bourque G",
+      "title": "GenPipes: an open-source framework for distributed and scalable genomic analyses",
+      "source": "BioRIvx, Page 459552, November 01, 2018",
+      "pmid": "31185495"
+    },
+    {
+      "author": "Bourque G, Burns K, Gehring M, Gorbunova V, Hammel M, Imbeault M, Iszvak S, Levin H, Macfarlan T, Mager D, Feschotte C",
+      "title": "10 things you should know about transposable elements",
+      "source": "Genome Biology. 2018 Nov 19;19 (1):199. doi: 10.1186/s13059-018-1577-z",
+      "pmid": "30454069"
+    },
+    {
+      "author": "Chong J, Soufan O, Li C, Caurus I, Li S, Bourque G, Wishart D, Xia J",
+      "title": "MetaboAnalyst 4.0 - Towards More Transparent and Integrative Metabolomic Analysis",
+      "source": "Nucleic Acids Res. 2018 Jul 2;46(W1):W486-W494",
+      "pmid": "29762782"
+    },
+    {
+      "author": "Contreras JL, Knoppers BM (2018)",
+      "title": "The Genomic Commons",
+      "source": "Annu Rev Genomics Hum Genet. 2018 Aug 31;19:429-453. doi: 10.1146/annurev-genom-083117-021552. Epub 2018 Jan 25.",
+      "pmid": "29400986"
+    },
+    {
+      "author": "Franz M, Rodriguez H, Lopes C, Zuberi K, Montojo J, Bader GD, Morris Q",
+      "title": "GeneMANIA update 2018. Nucleic Acids Res",
+      "source": "2018 Jul 2;46(W1):W60-W64. doi:10.1093/nar/gky311. PubMed PMID: 29912392; PubMed Central PMCID: PMC6030815",
+      "pmid": "29912392"
+    },
+    {
+      "author": "Ginart AA, Hui J, Zhu K, Numanagic I, Courtade TA, Sahinalp SC, Tse DN",
+      "title": "Optimal Compressed Representation of High Throughput Sequence Data via Light Assembly",
+      "source": "Nat Commun. 2018 Apr 26;9(1):1755. doi: 10.1038/s41467-018-03711-0",
+      "pmid": "29700301"
+    },
+    {
+      "author": "Goerner-Potvin P and Bourque G",
+      "title": "Computational tools to unmask transposable elements",
+      "source": "Nature Review Genetics. 2018 Nov;19(11):688-704. doi: 10.1038/s41576-018-0050-x",
+      "pmid": "30232369"
+    },
+    {
+      "author": "Hirukawa A, Smith HW, Zuo D, Dufour CR, Savage P, Bertos N, Johnson RM, Bui T, Bourque G, Basik M, Giguère V, Park M, Muller WJ",
+      "title": "Targeting EZH2 reactivates a breast cancer subtype-specific anti-metastatic transcriptional program",
+      "source": "Nat Commun. 2018 Jun 29;9(1):2547",
+      "pmid": "29959321"
+    },
+    {
+      "author": "Lee AY*, Ewing AD*, Ellrott KE*, Hu Y, Houlahan KE, Bare JC, Espiritu SM, Huang V, Dang K, Chong Z, Caloian C, Yamaguchi TN, ICGC-TCGA DREAM SMC Challenge Participants, Kellen MR, Chen K, Norman TC, Friend SH, Guinney J, Stolovitzky G, Haussler D, Margolin AA, Stuart JM, Boutros PC (2015)",
+      "title": "Combining accurate tumour genome simulation with crowd-sourcing to benchmark somatic structural variant detection",
+      "source": "Genome Biol. 2018 Nov 6;19(1):188. doi: 10.1186/s13059-018-1539-5.",
+      "pmid": "30400818"
+    },
+    {
+      "author": "Monlong J, Cossette P, Meloche C, Rouleau G, Girard SL, Bourque G",
+      "title": "Human copy number variants are enriched in regions of low-mappability",
+      "source": "NAR. 2018 Aug 21;46(14):7236-7249. doi: 10.1093/nar/gky538.",
+      "pmid": "30137632"
+    },
+    {
+      "author": "Numanagic I, Malikic S, Ford M, Qin X, Toji L, Radovich M, Skaar TC, Pratt VM, Berger B, Scherer S, Sahinalp SC",
+      "title": "Allelic decomposition and exact genotyping of highly polymorphic and structurally variant genes",
+      "source": "Nat Commun. 2018 Feb 26;9(1):828. doi: 10.1038/s41467-018-03273-1.",
+      "pmid": "29483503"
+    },
+    {
+      "author": "Phillips M (2018)",
+      "title": "International data-sharing norms: from the OECD to the General Data Protection Regulation (GDPR)",
+      "source": "Human Genetics. 137(8): 575-582.",
+      "pmid": "30069638"
+    },
+    {
+      "author": "Sendorek DH*, Lalonde E*, Yao CQ, Sabelnykova VY, Bristow RG, Boutros PC (2017)",
+      "title": "NanoStringNormCNV: Pre-processing of NanoString CNV data",
+      "source": "Bioinformatics. 2018 Mar 15;34(6):1034-1036. doi: 10.1093/bioinformatics/btx707.",
+      "pmid": "29112706"
+    },
+    {
+      "author": "Abdalla M, Tran-Thanh D, Moreno J, Iakovlev V, Nair R, Kanwar N, Abdalla M, Lee JP, Kwan JY, Cawthorn TR, Warren K, Arneson N, Wang DY, Fox NS, Youngson BJ, Miller NA, Easson AM, McCready D, Leong WL, Boutros PC, Done SJ (2017)",
+      "title": "Mapping genomic and transcriptomic alterations spatially in epithelial cells adjacent to human breast carcinoma",
+      "source": "Nature Communications 8(1):1245 (PMID: 29093438)",
+      "pmid": "29093438"
+    },
+    {
+      "author": "Albuquerque MA, Grande BM, Ritch EJ , Jessa S, Krzywinski M, Grewal JK, Shah SP, Boutros PC, Morin RD (2017)",
+      "title": "Enhancing Knowledge Discovery from Cancer Genomics Data with Galaxy",
+      "source": "Gigascience 6(5):1-13 (PMID: 28327945)",
+      "pmid": "28327945"
+    },
+    {
+      "author": "Alfaro JA, Ignatchenko A, Ignatchenko V, Sinha A, Boutros PC*, Kislinger T* (2017)",
+      "title": "Detecting protein variants by mass-spectrometry: a comprehensive study in cancer cell-lines",
+      "source": "Genome Medicine 9(1):62 (PMID: 28716134)",
+      "pmid": "28716134"
+    },
+    {
+      "author": "Arseneault M, Monlong J, Vasudev NS, Laskar RS, Safisamghabadi M, Harnden P, Egevad L, Nourbehesht N, Panichnantakul P, Holcatova I, Brisuda A, Janout V, Kollarova H, Foretova L, Navratilova M, Mates D, Jinga V, Zaridze D, Mukeria A, Jandaghi P, Brennan P, Brazma A, Tost J, Scelo G, Banks RE, Lathrop M, Bourque G, Riazalhosseini Y",
+      "title": "Loss of chromosome Y leads to down regulation of KDM5D and KDM6C epigenetic modifiers in clear cell renal cell carcinoma",
+      "source": "Sci Rep. 2017 Mar 23;7:44876.",
+      "pmid": "28332632"
+    },
+    {
+      "author": "Bayani J*, Yao CQ*, Quintayo MA, Yan F, Haider S, D'Costa A, Brookes CL, van de Velde CJ, Hasenburg A, Kieback DG, Markopoulos C, Dirix L, Seynaeve C, Re D, Boutros PC*, Bartlett JM* (2017)",
+      "title": "Molecular stratification of early breast cancer identifies drug targets to drive stratified medicine",
+      "source": "NPJ Breast Cancer 3:3 (PMID: 28649643)",
+      "pmid": "28649643"
+    },
+    {
+      "author": "Chen F, Wang C, Dai W, Jiang X, Mohammed N, Al Aziz MM, Sadat MN, Sahinalp SC, Lauter K, Wang S",
+      "title": "PRESAGE: PRivacy-preserving gEnetic testing via Software Guard Extension",
+      "source": "BMC Med Genomics. 2017 Jul 26;10(Suppl 2):48.",
+      "pmid": "28786365"
+    },
+    {
+      "author": "Chen F, Wang S, Jiang X, Ding S, Lu Y, Kim J, Sahinalp SC, Shimizu C, Burns JC, Wright VJ, Png E, Hibberd ML, Lloyd DD, Yang H, Telenti A, Bloss CS, Fox D, Lauter K, Ohno-Machado L",
+      "title": "PRINCESS: Privacy-protecting Rare disease International Network Collaboration via Encryption through Software guard extensionS",
+      "source": "Bioinformatics. 2017 Mar 15;33(6):871-878.",
+      "pmid": "28065902"
+    },
+    {
+      "author": "Chong Z, Ruan J, Gao M, Zhou W, Chen T, Fan X, Ding L, Lee AY, Boutros PC, Chen J, Chen K (2017)",
+      "title": "novoBreak: local assembly for breakpoint detection in cancer genomes",
+      "source": "Nature Methods 14(1):65-67 (PMID: 27892959)",
+      "pmid": "27892959"
+    },
+    {
+      "author": "Chüeh AC, Liew MS, Russell PA, Walkiewicz M, Jayachandran A, Starmans MH, Boutros PC, Wright G, Barnett SA, Mariadason JM, John T (2017)",
+      "title": "Promoter hypomethylation of NY-ESO-1, association with clinicopathological features and PD-L1 expression in non-small cell lung cancer",
+      "source": "Oncotarget 8(43):74036-74048 (PMID: 29088766)",
+      "pmid": "29088766"
+    },
+    {
+      "author": "Donmez N, Malikic S, Wyatt AW, Gleave ME, Collins CC, Sahinalp SC",
+      "title": "Clonality Inference from Single Tumor Samples Using Low-Coverage Sequence Data",
+      "source": "J Comput Biol. 2017 Jun;24(6):515-52",
+      "pmid": "28056180"
+    },
+    {
+      "author": "Feldcamp LA, Boutros PC, Raymond R, Fletcher PJ, Nobrega JN, Wong AHC (2017)",
+      "title": "Pdxdc1 modulates pre-pulse inhibition of acoustic startle in the mouse",
+      "source": "Translational Psychiatry 7(5):e1125 (PMID: 28485732)",
+      "pmid": "28485732"
+    },
+    {
+      "author": "Hamdan FF, Myers CT, Cossette P, Lemay P, Spiegelman D, Laporte AD, Nassif C, Diallo O, Monlong J, Cadieux-Dion M, Dobrzeniecka S, Meloche C, Retterer K, Cho MT, Rosenfeld JA, Bi W, Massicotte C, Miguet M, Brunga L, Regan BM, Mo K, Tam C, Schneider A, Hollingsworth G; Deciphering Developmental Disorders Study, FitzPatrick DR, Donaldson A, Canham N, Blair E, Kerr B, Fry AE, Thomas RH, Shelagh J, Hurst JA, Brittain H, Blyth M, Lebel RR, Gerkes EH, Davis-Keppen L, Stein Q, Chung WK, Dorison SJ, Benke PJ, Fassi E, Corsten-Janssen N, Kamsteeg EJ, Mau-Them FT, Bruel AL, Verloes A, Õunap K, Wojcik MH, Albert DVF, Venkateswaran S, Ware T, Jones D, Liu YC, Mohammad SS, Bizargity P, Bacino CA, Leuzzi V, Martinelli S, Dallapiccola B, Tartaglia M, Blumkin L, Wierenga KJ, Purcarin G, O'Byrne JJ, Stockler S, Lehman A, Keren B, Nougues MC, Mignot C, Auvin S, Nava C, Hiatt SM, Bebin M, Shao Y, Scaglia F, Lalani SR, Frye RE, Jarjour IT, Jacques S, Boucher RM, Riou E, Srour M, Carmant L, Lortie A, Major P, Diadori P, Dubeau F, D'Anjou G, Bourque G, Berkovic SF, Sadleir LG, Campeau PM, Kibar Z, Lafrenière RG, Girard SL, Mercimek-Mahmutoglu S, Boelman C, Rouleau GA, Scheffer IE, Mefford HC, Andrade DM, Rossignol E, Minassian BA, Michaud JL",
+      "title": "High Rate of Recurrent De Novo Mutations in Developmental and Epileptic Encephalopathies",
+      "source": "2017. Am J Hum Genet. Nov 2;101(5):664-685. doi: 10.1016/j.ajhg.2017.09.008.",
+      "pmid": "29100083"
+    },
+    {
+      "author": "Ghasemi F, Black M, Vizeacoumar F, Pinto N, Ruicci KM, Le CCSH, Lowerison MR, Leong HS, Yoo J, Fung K, MacNeil D, Palma DA, Winquist E, Mymryk JS, Boutros PC, Datti A, Barrett JW, Nichols AC (2017)",
+      "title": "Repurposing Albendazole: new potential as a chemotherapeutic agent with preferential activity against HPV-negative head and neck squamous cell cancer",
+      "source": "Oncotarget 8(42):71512-71519 (PMID: 29069723)",
+      "pmid": "29069723"
+    },
+    {
+      "author": "Holley G, Wittler R, Stoye J, Hach F",
+      "title": "Dynamic Alignment-Free and Reference-Free Read Compression",
+      "source": "Proc of RECOMB 2017: 50-65. (to appear in Journal of Computational Biology)",
+      "pmid": "30011247"
+    },
+    {
+      "author": "Kalina JL, Neilson DS, Lin YY, Hamilton PT, Comber AP, Loy EMH, Sahinalp SC, Collins CC, Hach F, Lum JJ",
+      "title": "Mutational Analysis of Gene Fusions Predicts Novel MHC Class I-Restricted T-Cell Epitopes and Immune Signatures in a Subset of Prostate Cancer",
+      "source": "Clin Cancer Res. 2017 Sep 27. doi: 10.1158/1078-0432.CCR-17-0618.",
+      "pmid": "28954787"
+    },
+    {
+      "author": "Kavak P, Lin YY, Numanagic I, Asghari H, Güngör T, Alkan C, Hach F",
+      "title": "Discovery and genotyping of novel sequence insertions in many sequenced individuals",
+      "source": "Bioinformatics. 2017 Jul 15;33(14):i161-i169. doi: 10.1093/bioinformatics/btx254.",
+      "pmid": "28881988"
+    },
+    {
+      "author": "Keller A, Gerkin RC, Guan Y, Panwar B, Dhurandhar A, Turu G, Szalai B, Mainland J, Ihara Y, Yu W, Wolfinger R, Vens C, Schietgat L, De Grave K, Norel R, DREAM Olfaction Consortium, Stolovitzky G, Cecchi G, Vosshall LB, Meyer P (2017)",
+      "title": "Personalized predictions of human odour perceptual attributes from chemical features",
+      "source": "Science 355(6327):820-826 (PMID: 28219971)",
+      "pmid": "28219971"
+    },
+    {
+      "author": "Kockan C, Hach F, Sarrafi I, Bell RH, McConeghy B, Beja K, Haegert A, Wyatt AW, Volik SV, Chi KN, Collins CC, Sahinalp SC",
+      "title": "SiNVICT: ultra-sensitive detection of single nucleotide variants and indels in circulating tumour DNA",
+      "source": "Bioinformatics. 2017 Jan 1;33(1):26-34",
+      "pmid": "27531099"
+    },
+    {
+      "author": "McPherson A, Roth A, Ha G, Chauve C, Steif A, de Souza CPE, Eirew P, Bouchard-Côté A, Aparicio S, Sahinalp SC, Shah SP",
+      "title": "ReMixT: clone-specific genomic structure estimation in cancer",
+      "source": "Genome Biology. 2017 Jul 27;18(1):140. doi: 10.1186/s13059-017-1267-2.",
+      "pmid": "28750660"
+    },
+    {
+      "author": "Oliazadeh N, Gorman KF, Eveleigh R, Bourque G, Moreau A",
+      "title": "Identification of Elongated Primary Cilia with Impaired Mechanotransduction in Idiopathic Scoliosis Patients",
+      "source": "Sci Rep. 2017 Mar 14;7:44260.",
+      "pmid": "28290481"
+    },
+    {
+      "author": "Salehi S, Steif A, Roth A, Aparicio S, Bouchard-Côté A, Shah SP",
+      "title": "ddClone: joint statistical inference of clonal populations from single cell and bulk tumour sequencing data",
+      "source": "Genome Biol. 2017 Mar 1;18(1):44. doi: 10.1186/s13059-017-1169-3.",
+      "pmid": "28249593"
+    },
+    {
+      "author": "Shiah YJ, Fraser M, Bristow RG, Boutros PC (2017)",
+      "title": "Comparison of Pre-processing Methods for Infinium HumanMethylation450 BeadChip Array",
+      "source": "Bioinformatics 33(20):3151-3157 (PMID: 28605401)",
+      "pmid": "28605401"
+    },
+    {
+      "author": "Smith MA*, Nielsen CB*, Chan FC, McPherson A, Roth A, Farahani H, Machev D, Steif A, Shah SP",
+      "title": "E-scape: interactive visualization of single-cell phylogenetics and cancer evolution",
+      "source": "Nature Methods. 2017 May 30;14(6):549-550. doi:10.1038/nmeth.4303. *Co-authorship",
+      "pmid": "28557980"
+    },
+    {
+      "author": "Taghiyar MJ, Rosner J, Grewal D, Grande BM, Aniba R, Grewal J, Boutros PC, Morin RD, Bashashati A, Shah SP",
+      "title": "Kronos: a workflow assembler for genome analytics and informatics",
+      "source": "Gigascience. 2017 Jun 26. doi: 10.1093/gigascience/gix042",
+      "pmid": "28655203"
+    },
+    {
+      "author": "Taylor RA*, Fraser M*, Livingstone J*, Espiritu SM*, Thorne H*, Huang V, Lo W, Shiah YJ, Yamaguchi TN, Ania A, Horsburgh S, Meng A, Heisler LE, Yu N, Yousif F, Papargiris M, Lawrence MG, Timms L, Murphy DG, Frydenberg M, Hopkins JF, Bolton D, Clouston D, McPherson JD, van der Kwast T, Boutros PC**, Risbridger GP**, Bristow RG** (2016)",
+      "title": "Germline BRCA2 Mutations Drive Prostate Cancers With Distinct Evolutionary Trajectories",
+      "source": "Nature Communications (in press); Archives of Toxicology 91(1):325-338 (PMID: 27136898). Jan, 2017",
+      "pmid": "28067867"
+    },
+    {
+      "author": "Thapa B, Salcedo A, Lin X, Walkeiwicz M, Murone C, Ameratunga M, Asadi K, Deb S, Barnett SA, Knight S, Mitchell P, Watkins DN, Boutros PC, John T (2017)",
+      "title": "The Immune Microenvironment, Genome -Wide Copy Number Aberrations and Survival in Mesothelioma",
+      "source": "Journal of Thoracic Oncology 17:30124-30127 (PMID: 28257959)",
+      "pmid": "28257959"
+    },
+    {
+      "author": "Wang YK, Bashashati A, Anglesio MS, Cochrane DR, Grewal D, Ha G, McPherson A, Horlings HM, Senz J, Prentice LM, Karnezis, Anthony N, Lai D, Aniba MR, Zhang AW, Shumansky K, Siu C, Wan A, McConechy MK, Li-Chang H, Tone A, Provencher D, de Ladurantaye M, Fleury H, Okamoto A, Yanagida S, Yanaihara N, Saito M, Mungall AJ, Moore R, Marra MA, Gilks CB, Mes-Masson A, McAlpine JN, Aparicio S, Huntsman DG and Shah SP",
+      "title": "Genomic consequences of aberrant DNA repair mechanisms stratify ovarian cancer histotypes",
+      "source": "Nature Genetics. 2017 Apr 24. doi: 10.1038/ng.3849",
+      "pmid": "28436987"
+    },
+    {
+      "author": "Watson JD, Prokopec SD, Smith AB, Okey AB, Pohjanvirta R, Boutros PC (2017)",
+      "title": "2,3,7,8 Tetrachlorodibenzo-p-dioxin-induced RNA abundance changes identify Ackr3, Col18a1, Cyb5a and Glud1 as candidate mediators of toxicity",
+      "source": "Archives of Toxicology 91(1):325-338 (PMID: 27136898)",
+      "pmid": "27136898"
+    },
+    {
+      "author": "Charlebois K, Palmour N, Knoppers BM",
+      "title": "The Adoption of Cloud Computing in the Field of Genomics Research: The Influence of Ethical and Legal Issues",
+      "source": "PloS one, 2016;11(10):e0164347 (PMID: 27755563). Oct, 2016",
+      "pmid": "27755563"
+    },
+    {
+      "author": "Dove ES, Thompson B, Knoppers BM",
+      "title": "A step forward for data protection and biomedical research",
+      "source": "Lancet (London, England), 2016;387(10026):1374-5 (PMID: 27115815). Apr, 2016",
+      "pmid": "27115815"
+    },
+    {
+      "author": "Dyke SO, Kirby E, Shabani M, Thorogood A, Kato K, Knoppers BM",
+      "title": "Registered access: a 'Triple-A' approach",
+      "source": "European journal of human genetics: EJHG, 2016; (PMID: 27677416). Sep, 2016",
+      "pmid": "27677416"
+    },
+    {
+      "author": "Dyke SO, Philippakis AA, Rambla De Argila J, Paltoo DN, Luetkemeier ES, Knoppers BM, Brookes AJ, Spalding JD, Thompson M, Roos M, Boycott KM, Brudno M, Hurles M, Rehm HL, Matern A, Fiume M, Sherry ST",
+      "title": "Consent Codes: Updating Standard Data Use Conditions PLoS genetics",
+      "source": "2016;12(1):e1005772 (PMID: 26796797). Jan, 2016",
+      "pmid": "26796797"
+    },
+    {
+      "author": "Franz M, Lopes CT, Huck G, Dong Y, Sumer O, Bader GD",
+      "title": "Cytoscape.js: a graph theory library for visualisation and analysis",
+      "source": "Bioinformatics. 2016 Jan 15;32(2):309-11. doi: 10.1093/bioinformatics/btv557. Epub 2015 Sep 28. PubMed PMID: 26415722; PubMed Central PMCID: PMC4708103",
+      "pmid": "26415722"
+    },
+    {
+      "author": "Haghshenas E, Hach F, Sahinalp SC, Chauve C",
+      "title": "CoLoRMap: Correcting Long Reads by Mapping short reads",
+      "source": "Bioinformatics. 2016 Sep 1;32(17):i545-i551. doi: 10.1093/bioinformatics/btw463. PMID: 27587673",
+      "pmid": "27587673"
+    },
+    {
+      "author": "Haider S, Waggott D, Lalonde E, Fung C, Liu FF, Boutros PC (2016)",
+      "title": "A BedR way of genomic interval processing",
+      "source": "Source Code Biol Med. 2016 Dec 15;11:14. doi: 10.1186/s13029-016-0059-5. eCollection 2016",
+      "pmid": "27999613"
+    },
+    {
+      "author": "Helmy M, Crits-Christoph A, Bader GD",
+      "title": "Ten Simple Rules for Developing Public Biological Databases",
+      "source": "PLoS Comput Biol. 2016 Nov 10;12(11):e1005128. doi:10.1371/journal.pcbi.1005128. eCollection 2016 Nov. PubMed PMID: 27832061; PubMed Central PMCID: PMC5104318.",
+      "pmid": "27832061"
+    },
+    {
+      "author": "Hocking TD, Goerner-Potvin P, Morin A, Shao X, Pastinen T, Bourque G",
+      "title": "Optimizing ChIP-seq peak detectors using visual labels and supervised machine learning",
+      "source": "Bioinformatics. 2016 Oct 24.",
+      "pmid": "27797775"
+    },
+    {
+      "author": "Kucera M, Isserlin R, Arkhangorodsky A, Bader GD",
+      "title": "AutoAnnotate: A Cytoscape app for summarizing networks with semantic annotations",
+      "source": "F1000Res. 2016 Jul 15;5:1717. eCollection 2016. PubMed PMID: 27830058; PubMed Central PMCID:PMC5082607.",
+      "pmid": "27830058"
+    },
+    {
+      "author": "Macdonald JM, Boutros PC",
+      "title": "Log::ProgramInfo: A Perl module to collect and log data for bioinformatics pipelines",
+      "source": "Source Code for Biology and Medicine 11:9 (PMID: 27347003)",
+      "pmid": "27347003"
+    },
+    {
+      "author": "Mascalzoni D, Dove ES, Rubinstein Y, Dawkins HJ, Kole A, McCormack P, Woods S, Riess O, Schaefer F, Lochmüller H, Knoppers BM, Hansson M",
+      "title": "International Charter of principles for sharing bio-specimens and data",
+      "source": "European journal of human genetics : EJHG, 2016;24(7):1096 (PMID: 27307116). Jul, 2016.",
+      "pmid": "27307116"
+    },
+    {
+      "author": "Masella AP, Lalansingh CM, Sivasundaram P, Fraser M, Bristow RG, Boutros PC (2016)",
+      "title": "BAMQL: A query language for extracting reads from BAM files",
+      "source": "BMC Bioinformatics 17:305 (PMID: 27516195)",
+      "pmid": "27516195"
+    },
+    {
+      "author": "McPherson A, Roth A, Laks E, Masud T, Bashashati A, Zhang AW, Ha G, Biele J, Yap D, Wan A, Prentice LM, Khattra J, Smith MA, Nielsen CB, Mullaly SC, Kalloger S, Karnezis A, Shumansky K, Siu C, Rosner J, Chan HL, Ho J, Melnyk N, Senz J, Yang W, Moore R, Mungall AJ, Marra MA, Bouchard-Côté A, Gilks CB, Huntsman DG, McAlpine JN, Aparicio S, Shah SP",
+      "title": "Divergent modes of clonal spread and intraperitoneal mixing in high grade serous ovarian cancers",
+      "source": "Nat Genet. 2016 Jul;48(7):758-67. doi: 10.1038/ng.3573. Epub 2016 May 16.",
+      "pmid": "27182968"
+    },
+    {
+      "author": "Numanagić I, Bonfield JK, Hach F, Voges J, Ostermann J, Alberti C, Mattavelli M, Sahinalp SC",
+      "title": "Comparison of high-throughput sequencing data compression tools",
+      "source": "Nat Methods. 2016 Dec;13(12):1005-1008. doi: 10.1038/nmeth.4037. PMID: 27776113",
+      "pmid": "27776113"
+    },
+    {
+      "author": "Robert L. Grossman, Allison P. Heath, Ferretti V, Harold E. Varmus., Douglas R. Lowy, Warren A. Kibbe, Louis M. Staudt",
+      "title": "Toward a Shared Vision for Cancer Genomic Data",
+      "source": "N Engl J Med, September 22, 2016, DOI: 10.1056/NEJMp16075912016;2016",
+      "pmid": "27653561"
+    },
+    {
+      "author": "Schreiber F, Bader GD, Gleeson P, Golebiewski M, Hucka M, Le Novère N, Myers C, Nickerson D, Sommer B, Walthemath D",
+      "title": "Specifications of Standards in Systems and Synthetic Biology: Status and Developments in 2016",
+      "source": "J Integr Bioinform. 2016 Dec 18;13(3):289. doi: 10.2390/biecoll-jib-2016-289. PubMed PMID: 28187405; PubMed Central PMCID: PMC5431574.",
+      "pmid": "28187405"
+    },
+    {
+      "author": "Simmons S, Sahinalp C, Berger B",
+      "title": "Enabling Privacy-Preserving GWASs in Heterogeneous Human Populations",
+      "source": "Cell Syst. 2016 Jul;3(1):54-61. doi: 10.1016/j.cels.2016.04.013. PMID: 27453444",
+      "pmid": "27453444"
+    },
+    {
+      "author": "Siu LL, Lawler M, Haussler D, Knoppers BM, Lewin J, Vis DJ, Liao RG, Andre F, Banks I, Barrett JC, Caldas C, Camargo AA, Fitzgerald RC, Mao M, Mattison JE, Pao W, Sellers WR, Sullivan P, Teh BT, Ward RL, ZenKlusen JC, Sawyers CL, Voest EE",
+      "title": "Facilitating a culture of responsible and effective sharing of cancer genome data",
+      "source": "Nature medicine, 2016;22(5):464-71 (PMID: 27149219). May, 2016.",
+      "pmid": "27149219"
+    },
+    {
+      "author": "Burton PR, Murtagh MJ, Boyd A, Williams JB, Dove ES, Wallace SE, Tassé AM, Little J, Chisholm RL, Gaye A, Hveem K, Brookes AJ, Goodwin P, Fistein J, Bobrow M, Knoppers BM",
+      "title": "Data Safe Havens in Health Research and Healthcare",
+      "source": "Bioinformatics (Oxford, England), 2015;31(20):3241-8 (PMID: 26112289). Oct, 2015",
+      "pmid": "26112289"
+    },
+    {
+      "author": "Ewing AD*, Houlahan KE*, Hu Y*, Ellrott K, Caloian C, Yamaguchi TN, Bare JC, P'ng C, Waggott D, Sabelnykova VY, ICGC-TCGA DREAM Somatic Mutation Calling Challenge Participants, Kellen MR, Norman TC, Haussler D, Friend SH, Stolovitzky G, Margolin A, Stuart JM, Boutros PC (2015)",
+      "title": "Combining accurate tumour genome simulation with crowd-sourcing to benchmark somatic single nucleotide variant detection",
+      "source": "Nature Methods 12(7):623-630 (PMID: 25984700)",
+      "pmid": "25984700"
+    },
+    {
+      "author": "Rinnone F, Micale G, Bonnici V, Bader GD, Shasha D, Ferro A, Pulvirenti A, Giugno R",
+      "title": "NetMatchStar: an enhanced Cytoscape network querying app",
+      "source": "Version 2. F1000Res. 2015 Aug 5 [revised 2015 Jan 1];4:479. doi:10.12688/f1000research.6656.2. eCollection 2015. PubMed PMID: 26594341; PubMed Central PMCID: PMC4642848.",
+      "pmid": "26594341"
+    },
+    {
+      "author": "Shabani M, Knoppers BM, Borry P",
+      "title": "From the principles of genomic data sharing to the practices of data access committees",
+      "source": "EMBO molecular medicine, 2015;7(5):507-9 (PMID: 25759363). Mar, 2015",
+      "pmid": "25759363"
+    },
+    {
+      "author": "Stein LD, Knoppers BM, Campbell P, Getz G, Korbel JO",
+      "title": "Data Analysis: Create a Cloud Commons",
+      "source": "Nature, 2015;523(7559):149-51 (PMID: 26156357). Jul, 2015",
+      "pmid": "26156357"
+    },
+    {
+      "author": "Wagih O, Reimand J, Bader GD",
+      "title": "MIMP: predicting the impact of mutations on kinase-substrate phosphorylation",
+      "source": "Nat Methods. 2015 Jun;12(6):531-3. doi:10.1038/nmeth.3396. Epub 2015 May 4. PubMed PMID: 25938373.",
+      "pmid": "25938373"
+    },
+    {
+      "author": "Boutros PC, Margolin AA, Stuart JD, Califano A, Stolovitzky G (2014)",
+      "title": "Toward Better Benchmarking: Competition-Based Methods Assessment in Cancer Genomics",
+      "source": "Genome Biology 15(9):462 (PMID: 25314947)",
+      "pmid": "25314947"
+    },
+    {
+      "author": "Boutros PC*, Ewing AD, Ellrott K, Norman TC, Dang KK, Hu Y, Kellen MR, Suver C, Bare JC, Stein LD, Spellman PT, Stolovitzky G, Friend SH, Margolin AA*, Stuart JD* (2014)",
+      "title": "The Challenge of Identifying Somatic Variants in Cancer Genomes: Global Optimization by a Global Community",
+      "source": "Nature Genetics 46(4):318-319 (PMID: 24675517)",
+      "pmid": "24675517"
+    },
+    {
+      "author": "Dove ES, Tassé AM, Knoppers BM",
+      "title": "What are some of the ELSI challenges of international collaboratories involving biobanks, global sample collection and genomic data sharing, and how should they be addressed",
+      "source": "Biopreservation and biobanking, 2014;12(6):363-4 (PMID: 25496146). Dec, 2014",
+      "pmid": "25496146"
+    },
+    {
+      "author": "Eirew P, Steif A, Khattra J, Ha G, Yap D, Farahani H, Gelmon K, Chia S, Mar C, Wan A, Laks E, Biele J, Shumansky K, Rosner J, McPherson A, Nielsen C, Roth AJ, Lefebvre C, Bashashati A, de Souza C, Siu C, Aniba R, Brimhall J, Oloumi A, Osako T, Bruna A, Sandoval JL, Algara T, Greenwood W, Leung K, Cheng H, Xue H, Wang Y, Lin D, Mungall AJ, Moore R, Zhao Y, Lorette J, Nguyen L, Huntsman D, Eaves CJ, Hansen C, Marra MA, Caldas C, Shah SP, Aparicio S",
+      "title": "Dynamics of genomic clones in breast cancer patient xenografts at single-cell resolution",
+      "source": "Nature. 2014 Nov 26. doi: 10.1038/nature13952. [Epub ahead of print] PubMed PMID: 25470049",
+      "pmid": "25470049"
+    },
+    {
+      "author": "Gfeller D, Ernst A, Jarvik N, Sidhu SS, Bader GD",
+      "title": "Prediction and experimental characterization of nsSNPs altering human PDZ-binding motifs",
+      "source": "PLoS One. 2014 Apr 10;9(4):e94507. doi: 10.1371/journal.pone.0094507. eCollection 2014. PubMed PMID:24722214; PubMed Central PMCID: PMC3983204",
+      "pmid": "24722214"
+    },
+    {
+      "author": "Ha G, Roth A, Khattra J, Ho J, Yap D, Prentice LM, Melnyk N, McPherson A, Bashashati A, Laks E, Biele J, Ding J, Le A, Rosner J, Shumansky K, Marra MA, Gilks CB, Huntsman DG, McAlpine JN, Aparicio S, Shah SP",
+      "title": "TITAN: inference of copy number architectures in clonal cell populations from tumor whole-genome sequence data",
+      "source": "Genome Res. 2014 Nov;24(11):1881-93. doi: 10.1101/gr.180281.114. Epub 2014 Jul 24. PubMed PMID: 25060187; PubMed Central PMCID: PMC4216928",
+      "pmid": "25060187"
+    },
+    {
+      "author": "Hach F, Numanagic I, Sahinalp SC",
+      "title": "DeeZ: reference-based compression by local assembly",
+      "source": "Nat Methods. 2014 Oct 30;11(11):1082-4. [PMID: 25357237]",
+      "pmid": "25357237"
+    },
+    {
+      "author": "Hach F, Sarrafi I, Hormozdiari F, Alkan C, Eichler EE, Sahinalp SC",
+      "title": "mrsFAST-Ultra: a compact, SNP-aware mapper for high performance sequencing applications",
+      "source": "Nucleic Acids Res. 2014 Jul, 42: W494-500",
+      "pmid": "24810850"
+    },
+    {
+      "author": "Isserlin R, Merico D, Voisin V, Bader GD",
+      "title": "Enrichment Map - a Cytoscape app to visualize and explore OMICs pathway enrichment results",
+      "source": "F1000Res. 2014 Jul 1;3:141. doi: 10.12688/f1000research.4536.1. eCollection 2014. PubMed PMID:25075306; PubMed Central PMCID: PMC4103489",
+      "pmid": "25075306"
+    },
+    {
+      "author": "Leung A, Bader GD, Reimand J",
+      "title": "HyperModules: identifying clinically and phenotypically significant network modules with disease mutations for biomarker discovery",
+      "source": "Bioinformatics. 2014 Aug 1;30(15):2230-2. doi:10.1093/bioinformatics/btu172. Epub 2014 Apr 8. PubMed PMID: 24713437; PubMed Central PMCID: PMC4103591",
+      "pmid": "24713437"
+    },
+    {
+      "author": "Montojo J, Zuberi K, Rodriguez H, Bader GD, Morris Q",
+      "title": "GeneMANIA: Fast gene network construction and function prediction for Cytoscape",
+      "source": "F1000Res. 2014 Jul 1;3:153. doi: 10.12688/f1000research.4572.1. eCollection 2014. PubMed PMID:25254104; PubMed Central PMCID: PMC4168749.",
+      "pmid": "25254104"
+    },
+    {
+      "author": "Montojo J, Zuberi K, Shao Q, Bader GD, Morris Q",
+      "title": "Network Assessor: an automated method for quantitative assessment of a network's potential for gene function prediction",
+      "source": "Front Genet. 2014 May 16;5:123. doi:10.3389/fgene.2014.00123. eCollection 2014. PubMed PMID: 24904632; PubMed Central PMCID: PMC4032932.",
+      "pmid": "24904632"
+    },
+    {
+      "author": "Roth A, Khattra J, Yap D, Wan A, Laks E, Biele J, Ha G, Aparicio S, Bouchard-Côté A, Shah SP",
+      "title": "PyClone: statistical inference of clonal population structure in cancer",
+      "source": "Nat Methods. 2014 Apr;11(4):396-8. doi: 10.1038/nmeth.2883. Epub 2014 Mar 16. PubMed PMID: 24633410.",
+      "pmid": "24633410"
+    },
+    {
+      "author": "Su G, Morris JH, Demchak B, Bader GD",
+      "title": "Biological network exploration with Cytoscape 3",
+      "source": "Curr Protoc Bioinformatics. 2014 Sep 8;47:8.13.1-24. doi:10.1002/0471250953.bi0813s47. PubMed PMID: 25199793; PubMed Central PMCID:PMC4174321.",
+      "pmid": "25199793"
+    }
+  ],
+  "presentations": [
+    {
+      "title": "The Cube Interview with George Mihaiescu at OpenStack Summit 2018",
+      "link": "https://www.youtube.com/watch?v=lhzIr3K9Kgs&list=PLenh213llmcbJ0qoK2f9l-hLiAWhFAobR",
+      "speaker": "George Mihaiescu",
+      "date": "Jun, 2018",
+      "meeting": ""
+    },
+    {
+      "title": "In-depth monitoring for Openstack services",
+      "link": "https://www.youtube.com/watch?v=lfFHxR3p-mg&feature=youtu.be",
+      "speaker": "George Mihaiescu, Jared Baker",
+      "date": "Jun, 2018",
+      "meeting": null
+    },
+    {
+      "title": "Openstack Superuser Award presented to Cancer Genome Collaboratory - Openstack Summit Vancouver 2018",
+      "link": "https://www.youtube.com/watch?v=vtqm3RzGkwc&feature=youtu.be",
+      "speaker": "George Mihaiescu, Jared Baker",
+      "date": "Jun, 2018",
+      "meeting": null
+    },
+    {
+      "title": "Festival of Genomics 2017: Cancer Genome Analysis for Everyone - The Cancer Genome Collaboratory",
+      "link": "/files/FestivalGenomics_June2017_Collaboratory_Brazas.pdf",
+      "speaker": "Michelle Brazas",
+      "date": "Jun, 2017",
+      "meeting": null
+    },
+    {
+      "title": "Operational Lessons from Running Openstack and Ceph for Cancer Research at Scale",
+      "link": "https://www.youtube.com/watch?v=EhrXALI_I-Y",
+      "speaker": "George Mihaiescu, Jared Baker",
+      "date": "May, 2017",
+      "meeting": null
+    },
+    {
+      "title": "Openstack and Ceph used in large scale cancer research",
+      "link": "https://www.youtube.com/watch?v=Yt4QHTXERUQ",
+      "speaker": "George Mihaiescu",
+      "date": "Oct, 2016",
+      "meeting": null
+    },
+    {
+      "title": "Introduction to Cloud Computing and Virtual Machines",
+      "link": "https://bioinformatics.ca/workshops/workshops-2016/",
+      "speaker": "Francis Ouellette",
+      "date": "Sep, 2016",
+      "meeting": "Bioinformatics on Big Data: Cloud Computing on the Human Genome"
+    },
+    {
+      "title": "Ethics of data usage & security best practices",
+      "link": "https://bioinformatics.ca/workshops/workshops-2016/",
+      "speaker": "Mark Phillips",
+      "date": "Sep, 2016",
+      "meeting": "Bioinformatics on Big Data: Cloud Computing on the Human Genome"
+    },
+    {
+      "title": "Working Reproducibly in the Cloud",
+      "link": "https://bioinformatics.ca/workshops/workshops-2016/",
+      "speaker": "George Mihaiescu",
+      "date": "Sep, 2016",
+      "meeting": "Bioinformatics on Big Data: Cloud Computing on the Human Genome"
+    },
+    {
+      "title": "Sharing and Scaling a VM",
+      "link": "https://bioinformatics.ca/workshops/workshops-2016/",
+      "speaker": "George Mihaiescu",
+      "date": "Sep, 2016",
+      "meeting": "Bioinformatics on Big Data: Cloud Computing on the Human Genome"
+    },
+    {
+      "title": "Big Data Analysis in the Cloud",
+      "link": "https://bioinformatics.ca/workshops/workshops-2016/",
+      "speaker": "Christina Yung",
+      "date": "Sep, 2016",
+      "meeting": "Bioinformatics on Big Data: Cloud Computing on the Human Genome"
+    },
+    {
+      "title": "The Collaboratory",
+      "link": "/files/Collaboratory_Presentation.pdf",
+      "speaker": "Vincent Ferretti",
+      "date": "Jun, 2016",
+      "meeting": "Data Commons and Data Sharing Workshop 2016"
+    },
+    {
+      "title": "ICGC in the Cloud",
+      "link": "/files/ICGC_In_The_Cloud.pdf",
+      "speaker": "Christina Yung",
+      "date": "Apr, 2016",
+      "meeting": "American Association for Cancer Research Annual Meeting 2016"
+    }
+  ]
+}
