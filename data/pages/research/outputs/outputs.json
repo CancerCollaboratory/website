@@ -785,7 +785,7 @@
     },
     {
       "title": "Festival of Genomics 2017: Cancer Genome Analysis for Everyone - The Cancer Genome Collaboratory",
-      "link": "https://cancercollaboratory.org/files/public/file/FestivalGenomics_June2017_Collaboratory_Brazas.pdf",
+      "link": "/files/FestivalGenomics_June2017_Collaboratory_Brazas.pdf",
       "speaker": "Michelle Brazas",
       "date": "Jun, 2017",
       "meeting": null
@@ -841,14 +841,14 @@
     },
     {
       "title": "The Collaboratory",
-      "link": "https://cancercollaboratory.org/files/public/file/Collaboratory_Presentation.pdf",
+      "link": "/files/Collaboratory_Presentation.pdf",
       "speaker": "Vincent Ferretti",
       "date": "Jun, 2016",
       "meeting": "Data Commons and Data Sharing Workshop 2016"
     },
     {
       "title": "ICGC in the Cloud",
-      "link": "https://cancercollaboratory.org/files/public/file/ICGC_In_The_Cloud.pdf",
+      "link": "/files/ICGC_In_The_Cloud.pdf",
       "speaker": "Christina Yung",
       "date": "Apr, 2016",
       "meeting": "American Association for Cancer Research Annual Meeting 2016"
