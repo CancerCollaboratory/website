@@ -5,6 +5,14 @@ import IconArrow from "../../public/assets/common/icon-arrow-white.svg";
 import { renderData } from "../../lib/functions/renderData";
 import styles from "./button.module.scss";
 
+export const ActionButton = ({ clickHandler, label }) => {
+  return (
+    <button onClick={clickHandler} className={styles.actionButton}>
+      {label}
+    </button>
+  );
+};
+
 const Button = ({ tag, label, link, isLinkExternal, hasBlueBackground, hasIcon }) => {
   if (!label || !link) {
     return null;
