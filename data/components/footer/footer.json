@@ -88,15 +88,6 @@
             {
               "label": "User Guide",
               "link": "/support/user-guide"
-            },
-            {
-              "label": "Workshops",
-              "link": "/support/workshops"
-            },
-            {
-              "label": "System Status",
-              "link": "/support/system-status",
-              "lastSubItem": true
             }
           ]
         },
