@@ -2,38 +2,39 @@
 @import "../../styles/colors";
 
 .container {
-    border-right: 1px solid $light-x4-gray;
-    padding: 48px;
+  padding-top: 60px;
+  border-right: 1px solid $light-x4-gray;
+  width: 33%;
 }
 
 @include respond-to("large") {
-    .container {
-        padding: 40px;
-    }
+  .container {
+    padding: 40px;
+  }
 }
 
 @include respond-to("medium") {
-    .container {
-        border-top: 1px solid $light-x4-gray;
-        border-right: none;
-        width: 100%;
-    }
+  .container {
+    border-top: 1px solid $light-x4-gray;
+    border-right: none;
+    width: 100%;
+  }
 }
 
 @include respond-to("small") {
-    .container {
-        padding: 38px;
-    }
+  .container {
+    padding: 38px;
+  }
 }
 
 @include respond-to("extra-small") {
-    .container {
-        padding: 26px;
-    }
+  .container {
+    padding: 26px;
+  }
 }
 
 @include respond-to("extra-extra-small") {
-    .container {
-        padding: 24px;
-    }
+  .container {
+    padding: 24px;
+  }
 }
