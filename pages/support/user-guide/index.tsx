@@ -1445,10 +1445,10 @@ const UserGuide = () => (
     </h3>
     <p>
       Openstack volumes are logical block devices that can be attached to a single instance to
-      provide a persistent location for data storage. Unlike a virtual machine's local disk which is
-      destroyed along with the VM, volumes are decoupled from instances so that they may be attached
-      and reattached to different instances. This allows you to create &amp; destroy instances as
-      you see fit while maintaining a persistent store for data.
+      provide a persistent location for data storage. Unlike a virtual machine&apos;s local disk
+      which is destroyed along with the VM, volumes are decoupled from instances so that they may be
+      attached and reattached to different instances. This allows you to create &amp; destroy
+      instances as you see fit while maintaining a persistent store for data.
     </p>
 
     <h3 id="create-a-volume">

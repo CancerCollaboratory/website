@@ -44,7 +44,7 @@ const BestPractices = () => (
         <p>
           If you DO have to allow SSH access to your publicly accessible instances from 0.0.0.0/0
           (entire Internet), make sure that only SSH key-based authentication is allowed by editing
-          SSH's config file and restarting the ssh service afterwards:
+          SSH&apos;s config file and restarting the ssh service afterwards:
           <ul>
             <li>
               <p>PasswordAuthentication no</p>

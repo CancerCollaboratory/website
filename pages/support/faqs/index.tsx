@@ -6,7 +6,7 @@ const FrequentlyAskedQuestions = () => (
   <div className={styles.content}>
     <h1>Frequently Asked Questions</h1>
 
-    <h3>Q: Do you monitor my VM's activity?</h3>
+    <h3>Q: Do you monitor my VM&apos;s activity?</h3>
 
     <p>
       A: We do not monitor user VM activity, but we used in the past a free open-source monitoring
@@ -90,10 +90,10 @@ const FrequentlyAskedQuestions = () => (
 
     <p>
       A: You can snapshot your instance which saves its state into a new base image that you can use
-      later. The snapshot causes the instance to be paused temporarily and it's preferable to not
-      have disk activity while doing this, and the snapshot might even fail if the instance has (or
-      had) a lot of data written to it since it was started. Please see the User Guide section for
-      more info on how to take a snapshot.
+      later. The snapshot causes the instance to be paused temporarily and it&apos;s preferable to
+      not have disk activity while doing this, and the snapshot might even fail if the instance has
+      (or had) a lot of data written to it since it was started. Please see the User Guide section
+      for more info on how to take a snapshot.
     </p>
 
     <h3>
@@ -131,7 +131,7 @@ const FrequentlyAskedQuestions = () => (
     <p>
       A: You should never give another user access to your credentials or private key. Please run
       the following commands inside your instance in order to create a new user and allow him SSH
-      key-based access to your instance. Replace "username" with your colleague's name.
+      key-based access to your instance. Replace "username" with your colleague&apos;s name.
     </p>
 
     <ol>
