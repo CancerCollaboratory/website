@@ -1,127 +1,121 @@
 {
-    "jumbotron": {
-        "title": "Our Services",
-        "body": {
-            "text": "The Cancer Genome Collaboratory is an academic research cloud built by the [Ontario Institute for Cancer Research (OICR)](https://oicr.on.ca).",
-            "isLinkExternal": true
-        }
-    },
-    "lateralColumn1": {
-        "title": "Cloud Infrastructure",
-        "imageSrcPath": "/assets/leftColumn/icon-cloud-infrastructure.svg",
-        "imageAlt": "Icon - Cloud Infrastructure",
-        "leftColumn": {
-            "body": [
-                {
-                    "text": "The Collaboratory hosts ICGC BAM, VCF and other types of protected datasets, as well as compute capabilities and Docker-based analysis tools for use by its research community. One of them main goals of the Collaboratory project is to remove many of the barriers that prevent researchers from using the ICGC's vast genomic database such as the large sizes of ICGC datasets.",
-                    "isLastText": true
-                }
-            ]
-        },
-        "rightColumn": {
-            "body": [
-                {
-                    "text": "Many research groups do not have the required computing power to analyze ICGC datasets that can take months to download. The Collaboratory project will allow scientists to access and analyze ICGC datasets through Collaboratory’s cloud computing platform, enhancing collaboration and accelerating the development of new tools and treatments for cancer patients.",
-                    "isLastText": true
-                }
-            ]
-        },
-        "hasBorderBottom": true
-    },
-    "lateralColumn2": {
-        "leftColumn": {
-            "title": "Cloud Resources",
-            "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
-            "imageAlt": "Icon - Cloud Resources",
-            "body": [
-                {
-                    "text": "Although most of the ICGC datasets are stored both in AWS S3 and Collaboratory, some research projects only allowed their collected data to be stored in non-commercial public cloud environments, so Collaboratory was a perfect place to store them."
-                },
-                {
-                    "text": "Because Collaboratory was custom-built for cancer research, its physical nodes have generous amounts of local storage potentially offering better performing disk access as well as better CPU/memory ratios. The proximity to the object storage storing the large datasets means also fast downloads and decreased workflow runtimes.",
-                    "isLastText": true
-                }
-            ]
-        },
-        "rightColumn": {
-            "statGrid": {
-                "title": "As of ",
-                "body": [
-                    {
-                        "title": "CPU Cores",
-                        "subTitle": "3552"
-                    },
-                    {
-                        "title": "Memory",
-                        "subTitle": "22 TB",
-                        "hasBackground": true
-                    },
-                    {
-                        "title": "Local Disk",
-                        "subTitle": "435 TB",
-                        "subBlockA": {
-                            "hasBackground": true
-                        },
-                        "hasBackground": true
-                    },
-                    {
-                        "title": "Object Storage (Raw)",
-                        "subTitle": "10 PB",
-                        "subBlockB": {
-                            "hasBackground": true
-                        }
-                    },
-                    {
-                        "title": "Block Storage",
-                        "subTitle": "60 TB"
-                    },
-                    {
-                        "title": "Network (Shared)",
-                        "subTitle": "10 Gbps",
-                        "hasBackground": true
-                    }
-                ]
-            }
-        },
-        "hasBackground": true,
-        "hasBorderBottom": true
-    },
-    "resourceSection": {
-        "title": "Get Started",
-        "cards": [
-            {
-                "title": "### [Read about our Resources](/services-cloud-resources)",
-                "bodyText": "Investigate the services we have available for your team.",
-                "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
-                "imageAlt": "Icon - Cloud Resources"
-            },
-            {
-                "title": "### [Request an Account](/services-request-account)",
-                "bodyText": "Register your research project or a user with the Collaboratory.",
-                "imageSrcPath": "/assets/resourceCard/icon-registration.svg",
-                "imageAlt": "Icon - Registration"
-            },
-            {
-                "title": "### [Getting Started Documentation](/support/getting-started)",
-                "bodyText": "How to get started with running your analysis on the ICGC data.",
-                "imageSrcPath": "/assets/resourceCard/icon-documentation.svg",
-                "imageAlt": "Icon - Documentation",
-                "isLastCard": true
-            }
-        ],
-        "hasBorderBottom": true
-    },
-    "callToAction": {
-        "title": "For Technical Assistance",
-        "imageSrcPath": "/assets/callToAction/icon-tech-assistance.svg",
-        "imageAlt": "Icon - Technical Assistance",
-        "description": "If you can't find what you are looking for, please contact our support team. We are working hard to get back to you within 1-2 business days.",
-        "buttonData": [
-            {
-                "label": "CONTACT US",
-                "link": "/contact-us",
-                "hasIcon": true
-            }
-        ]
+  "jumbotron": {
+    "title": "Our Services",
+    "body": {
+      "text": "The Cancer Genome Collaboratory is an academic research cloud built by the [Ontario Institute for Cancer Research (OICR)](https://oicr.on.ca).",
+      "isLinkExternal": true
     }
+  },
+  "lateralColumn1": {
+    "title": "Cloud Infrastructure",
+    "imageSrcPath": "/assets/leftColumn/icon-cloud-infrastructure.svg",
+    "imageAlt": "Icon - Cloud Infrastructure",
+    "leftColumn": {
+      "body": [
+        {
+          "text": "The Collaboratory hosts ICGC BAM, VCF and other types of protected datasets, as well as compute capabilities and Docker-based analysis tools for use by its research community. One of them main goals of the Collaboratory project is to remove many of the barriers that prevent researchers from using the ICGC's vast genomic database such as the large sizes of ICGC datasets.",
+          "isLastText": true
+        }
+      ]
+    },
+    "rightColumn": {
+      "body": [
+        {
+          "text": "Many research groups do not have the required computing power to analyze ICGC datasets that can take months to download. The Collaboratory project will allow scientists to access and analyze ICGC datasets through Collaboratory’s cloud computing platform, enhancing collaboration and accelerating the development of new tools and treatments for cancer patients.",
+          "isLastText": true
+        }
+      ]
+    },
+    "hasBorderBottom": true
+  },
+  "lateralColumn2": {
+    "leftColumn": {
+      "title": "Cloud Resources",
+      "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
+      "imageAlt": "Icon - Cloud Resources",
+      "body": [
+        {
+          "text": "Although most of the ICGC datasets are stored both in AWS S3 and Collaboratory, some research projects only allowed their collected data to be stored in non-commercial public cloud environments, so Collaboratory was a perfect place to store them."
+        },
+        {
+          "text": "Because Collaboratory was custom-built for cancer research, its physical nodes have generous amounts of local storage potentially offering better performing disk access as well as better CPU/memory ratios. The proximity to the object storage storing the large datasets means also fast downloads and decreased workflow runtimes.",
+          "isLastText": true
+        }
+      ]
+    },
+    "rightColumn": {
+      "statGrid": {
+        "title": "As of ",
+        "body": [
+          {
+            "title": "CPU Cores",
+            "subTitle": "3552"
+          },
+          {
+            "title": "Memory",
+            "subTitle": "22 TB",
+            "hasBackground": true
+          },
+          {
+            "title": "Local Disk",
+            "subTitle": "435 TB",
+            "subBlockA": {
+              "hasBackground": true
+            },
+            "hasBackground": true
+          },
+          {
+            "title": "Object Storage (Raw)",
+            "subTitle": "10 PB",
+            "subBlockB": {
+              "hasBackground": true
+            }
+          },
+          {
+            "title": "Block Storage",
+            "subTitle": "60 TB"
+          },
+          {
+            "title": "Network (Shared)",
+            "subTitle": "10 Gbps",
+            "hasBackground": true
+          }
+        ]
+      }
+    },
+    "hasBackground": true,
+    "hasBorderBottom": true
+  },
+  "resourceSection": {
+    "title": "Get Started",
+    "cards": [
+      {
+        "title": "### [Read about our Resources](/services-cloud-resources)",
+        "bodyText": "Investigate the services we have available for your team.",
+        "imageSrcPath": "/assets/common/icon-cloud-resources.svg",
+        "imageAlt": "Icon - Cloud Resources"
+      },
+      {
+        "title": "### [Getting Started Documentation](/support/getting-started)",
+        "bodyText": "How to get started with running your analysis on the ICGC data.",
+        "imageSrcPath": "/assets/resourceCard/icon-documentation.svg",
+        "imageAlt": "Icon - Documentation",
+        "isLastCard": true
+      }
+    ],
+    "hasBorderBottom": true
+  },
+  "callToAction": {
+    "title": "For Technical Assistance",
+    "imageSrcPath": "/assets/callToAction/icon-tech-assistance.svg",
+    "imageAlt": "Icon - Technical Assistance",
+    "description": "If you can't find what you are looking for, please contact our support team. We are working hard to get back to you within 1-2 business days.",
+    "buttonData": [
+      {
+        "label": "CONTACT US",
+        "link": "/contact-us",
+        "hasIcon": true
+      }
+    ]
+  }
 }

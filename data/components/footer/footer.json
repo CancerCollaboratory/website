@@ -1,132 +1,127 @@
 {
-    "headItems": [
+  "headItems": [
+    {
+      "logo": {
+        "srcPath": "/assets/common/logo-oicr.svg",
+        "label": "Ontario Institute for Cancer Research",
+        "link": "https://oicr.on.ca"
+      }
+    },
+    {
+      "label": "Cancer Genome Collaboratory. All rights reserved.",
+      "links": [
         {
-            "logo": {
-                "srcPath": "/assets/common/logo-oicr.svg",
-                "label": "Ontario Institute for Cancer Research",
-                "link": "https://oicr.on.ca"
+          "label": "Terms & Conditions",
+          "link": "https://oicr.on.ca/terms-and-conditions",
+          "isLinkExternal": true
+        },
+        {
+          "label": "Privacy",
+          "link": "/privacy-policy",
+          "lastLink": true
+        }
+      ]
+    }
+  ],
+  "tailItems": [
+    {
+      "label": "About Us",
+      "link": "/about-collaboratory",
+      "subItems": [
+        {
+          "label": "About the Collaboratory",
+          "link": "/about-collaboratory"
+        },
+        {
+          "label": "Our Team",
+          "link": "/about-team"
+        },
+        {
+          "label": "Funders & Collaborators",
+          "link": "/about-funders-collaborators",
+          "lastSubItem": true
+        }
+      ]
+    },
+    {
+      "label": "Our Services",
+      "link": "/services",
+      "subItems": [
+        {
+          "label": "Our Services",
+          "link": "/services"
+        },
+        {
+          "label": "Cloud Resources",
+          "link": "/services-cloud-resources"
+        },
+        {
+          "label": "Dockstore",
+          "link": "/services-dockstore"
+        }
+      ]
+    },
+    {
+      "label": "Our Research",
+      "link": "/research/software",
+      "subItems": [
+        {
+          "label": "Software for Your Research",
+          "link": "/research/software"
+        },
+        {
+          "label": "Research Outputs from Collaboratory",
+          "link": "/research/outputs"
+        }
+      ]
+    },
+    {
+      "label": "Support",
+      "link": "/support/overview",
+      "subItems": [
+        {
+          "column": [
+            {
+              "label": "Getting Started",
+              "link": "/support/getting-started"
+            },
+            {
+              "label": "User Guide",
+              "link": "/support/user-guide"
+            },
+            {
+              "label": "Workshops",
+              "link": "/support/workshops"
+            },
+            {
+              "label": "System Status",
+              "link": "/support/system-status",
+              "lastSubItem": true
             }
+          ]
         },
         {
-            "label": "Cancer Genome Collaboratory. All rights reserved.",
-            "links": [
-                {
-                    "label": "Terms & Conditions",
-                    "link": "https://oicr.on.ca/terms-and-conditions",
-                    "isLinkExternal": true
-                },
-                {
-                    "label": "Privacy",
-                    "link": "/privacy-policy",
-                    "lastLink": true
-                }
-            ]
+          "column": [
+            {
+              "label": "Best Practices",
+              "link": "/support/best-practices"
+            },
+            {
+              "label": "Glossary of Terms",
+              "link": "/support/glossary-terms"
+            },
+            {
+              "label": "FAQs",
+              "link": "/support/faqs",
+              "lastSubItem": true
+            }
+          ]
         }
-    ],
-    "tailItems": [
-        {
-            "label": "About Us",
-            "link": "/about-collaboratory",
-            "subItems": [
-                {
-                    "label": "About the Collaboratory",
-                    "link": "/about-collaboratory"
-                },
-                {
-                    "label": "Our Team",
-                    "link": "/about-team"
-                },
-                {
-                    "label": "Funders & Collaborators",
-                    "link": "/about-funders-collaborators",
-                    "lastSubItem": true
-                }
-            ]
-        },
-        {
-            "label": "Our Services",
-            "link": "/services",
-            "subItems": [
-                {
-                    "label": "Our Services",
-                    "link": "/services"
-                },
-                {
-                    "label": "Cloud Resources",
-                    "link": "/services-cloud-resources"
-                },
-                {
-                    "label": "Dockstore",
-                    "link": "/services-dockstore"
-                },
-                {
-                    "label": "Request an Account",
-                    "link": "/services-request-account",
-                    "lastSubItem": true
-                }
-            ]
-        },
-        {
-            "label": "Our Research",
-            "link": "/research/software",
-            "subItems": [
-                {
-                    "label": "Software for Your Research",
-                    "link": "/research/software"
-                },
-                {
-                    "label": "Research Outputs from Collaboratory",
-                    "link": "/research/outputs"
-                }
-            ]
-        },
-        {
-            "label": "Support",
-            "link": "/support/overview",
-            "subItems": [
-                {
-                    "column": [
-                        {
-                            "label": "Getting Started",
-                            "link": "/support/getting-started"
-                        },
-                        {
-                            "label": "User Guide",
-                            "link": "/support/user-guide"
-                        },
-                        {
-                            "label": "Workshops",
-                            "link": "/support/workshops"
-                        },
-                        {
-                            "label": "System Status",
-                            "link": "/support/system-status",
-                            "lastSubItem": true
-                        }
-                    ]
-                },
-                {
-                    "column": [
-                        {
-                            "label": "Best Practices",
-                            "link": "/support/best-practices"
-                        },
-                        {
-                            "label": "Glossary of Terms",
-                            "link": "/support/glossary-terms"
-                        },
-                        {
-                            "label": "FAQs",
-                            "link": "/support/faqs",
-                            "lastSubItem": true
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "label": "Contact Us",
-            "link": "/contact-us"
-        }
-    ]
+      ]
+    },
+    {
+      "label": "Contact Us",
+      "link": "/contact-us"
+    }
+  ]
 }
