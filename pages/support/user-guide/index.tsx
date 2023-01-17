@@ -104,8 +104,8 @@ const UserGuide = () => (
           <a
             title="Click on this header and copy URL to link to this section."
             href="https://git.openstack.org/cgit/openstack/horizon"
-            className="ext"
             target="_blank"
+            rel="noreferrer"
           >
             horizon
           </a>
@@ -127,7 +127,7 @@ const UserGuide = () => (
       <a
         title="Click on this header and copy URL to link to this section."
         href="http://curl.haxx.se"
-        className="ext"
+        rel="noreferrer"
         target="_blank"
       >
         cURL
@@ -337,7 +337,7 @@ const UserGuide = () => (
       <a
         title="Click on this header and copy URL to link to this section."
         href="http://docs.openstack.org/image-guide/"
-        className="ext"
+        rel="noreferrer"
         target="_blank"
       >
         OpenStack Virtual Machine Image Guide
@@ -359,7 +359,7 @@ const UserGuide = () => (
           <a
             title="Click on this header and copy URL to link to this section."
             href="http://docs.openstack.org/user-guide/common/cli-manage-images.html"
-            className="ext"
+            rel="noreferrer"
             target="_blank"
           >
             Manage images
@@ -841,7 +841,7 @@ const UserGuide = () => (
               <a
                 title="Click on this header and copy URL to link to this section."
                 href="http://winscp.net/eng/docs/ui_puttygen"
-                target="_blank"
+                rel="noreferrer"
                 className="ext"
               >
                 WinSCP web page for PuTTYgen
