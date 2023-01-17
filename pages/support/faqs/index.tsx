@@ -71,7 +71,7 @@ const FrequentlyAskedQuestions = () => (
     <p>&nbsp;</p>
 
     <p>
-      Basically, add these lines to "/etc/sysctl.conf":
+      Basically, add these lines to &quot;/etc/sysctl.conf&quot;:
       <pre>vm.dirty_background_ratio = 5 vm.dirty_ratio = 10</pre>
     </p>
 
@@ -118,7 +118,8 @@ const FrequentlyAskedQuestions = () => (
     </h3>
 
     <p>
-      A: We recommend you format it as XFS and use the "-K" option: <pre>mkfs.xfs -K /dev/vdb </pre>
+      A: We recommend you format it as XFS and use the &quot;-K&quot; option:{" "}
+      <pre>mkfs.xfs -K /dev/vdb </pre>
     </p>
 
     <p>In our tests, it took around 3 min to format a 10 TB attached volume.</p>
@@ -131,7 +132,8 @@ const FrequentlyAskedQuestions = () => (
     <p>
       A: You should never give another user access to your credentials or private key. Please run
       the following commands inside your instance in order to create a new user and allow him SSH
-      key-based access to your instance. Replace "username" with your colleague&apos;s name.
+      key-based access to your instance. Replace &quot;username&quot; with your colleague&apos;s
+      name.
     </p>
 
     <ol>

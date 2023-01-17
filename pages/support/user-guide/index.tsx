@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import styles from "../../../components/supportLayout/supportLayout.module.scss";
 
@@ -1255,7 +1256,7 @@ const UserGuide = () => (
                   <a
                     title="Click on this header and copy URL to link to this section."
                     href="http://cloudinit.readthedocs.io/en/latest/topics/examples.html"
-                    className="ext"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     here
@@ -1558,7 +1559,7 @@ const UserGuide = () => (
       mount.
     </p>
     <p>As root:</p>
-    <pre>"mkdir db1 mount -t xfs /dev/vdb /db1 df -hT /db1 "</pre>
+    <pre>&quot;mkdir db1 mount -t xfs /dev/vdb /db1 df -hT /db1&quot;</pre>
     <img
       className="user-guide-img"
       src="/assets/support/user-guide/user-guide-21.png"
@@ -1908,15 +1909,15 @@ const UserGuide = () => (
 
     <div>
       <div>
-        <a href="/support/getting-started" className="page-previous" title="Go to previous page">
+        <Link href="/support/getting-started" className="page-previous" title="Go to previous page">
           Getting Started
-        </a>
+        </Link>
         <a href="/support" className="page-up" title="Go to parent page">
           up
         </a>
-        <a href="/support/best-practices" className="page-next" title="Go to next page">
+        <Link href="/support/best-practices" className="page-next" title="Go to next page">
           Best Practices
-        </a>
+        </Link>
       </div>
     </div>
   </div>

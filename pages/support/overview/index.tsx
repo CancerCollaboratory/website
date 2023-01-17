@@ -15,14 +15,14 @@ const SupportOverview = () => (
     <h1>Support Resources</h1>
     <h2>User Guides</h2>
     <div className={clsx(styles.cardCont)}>
-      {pageData.sections.userGuides.map((data) => (
-        <Card {...data} />
+      {pageData.sections.userGuides.map((data, i) => (
+        <Card {...data} key={i} />
       ))}
     </div>
     <h2>Other Helpful Resources</h2>
     <div className={clsx(styles.cardCont)}>
-      {pageData.sections.resources.map((data) => (
-        <Card {...data} />
+      {pageData.sections.resources.map((data, i) => (
+        <Card {...data} key={i} />
       ))}
     </div>
   </div>
