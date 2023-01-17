@@ -83,7 +83,7 @@ const GettingStarted = () => (
             <p>Choose the source image to be used (Ubuntu Precise, Trusty, Centos, Debian)</p>
             <img
               alt="A screenshot of the luanch instance window with the source image selected."
-              className="support-img"
+              className={styles.instructionalImage}
               src="/assets/support/getting-started/Getting-started-2d.png"
             />
           </li>
@@ -110,7 +110,7 @@ const GettingStarted = () => (
             </p>
             <img
               alt="A screenshot of the post-creation tab of the luanch instance window."
-              className="support-img"
+              className={styles.instructionalImage}
               src="/assets/support/getting-started/Getting-started-2g.png"
             />
             <p>

@@ -213,7 +213,7 @@ const UserGuide = () => (
         href="/assets/support/user-guide/user-guide-1.png"
       >
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-1.png"
           alt="OpenStack dashboard project tab"
         />
@@ -232,7 +232,7 @@ const UserGuide = () => (
           connect to them through VNC.
         </p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-2.png"
           alt="OpenStack dashboard compute tab instances window"
         />
@@ -248,7 +248,7 @@ const UserGuide = () => (
           </li>
         </ul>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-3.png"
           alt="OpenStack dashboard compute tab volumes window"
         />
@@ -260,7 +260,7 @@ const UserGuide = () => (
           and snapshots.
         </p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-4.png"
           alt="OpenStack dashboard compute tab images window"
         />
@@ -285,7 +285,7 @@ const UserGuide = () => (
           </li>
         </ul>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-5.png"
           alt="OpenStack dashboard compute tab accessibility and security window"
         />
@@ -300,7 +300,7 @@ const UserGuide = () => (
       <li>
         <p>Networks: Create and manage public and private networks.</p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-6.png"
           alt="OpenStack dashboard network tab networks window"
         />
@@ -315,7 +315,7 @@ const UserGuide = () => (
       <li>
         <p>Containers: Create and manage containers and objects.</p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-7.png"
           alt="OpenStack dashboard object store tab containers window"
         />
@@ -388,7 +388,7 @@ const UserGuide = () => (
       <li>
         <p>The Create An Image dialog box appears.</p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-8.png"
           alt="A screenshot of the create an image dialog box"
         />
@@ -735,7 +735,7 @@ const UserGuide = () => (
       <li>
         <p>Instances will now have SSH port 22 open for requests from any IP address.</p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-9.png"
           alt="A screenshot of the Add Rule dialog box"
         />
@@ -1176,7 +1176,7 @@ const UserGuide = () => (
           <tfoot></tfoot>
         </table>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-10.png"
           alt="A screenshot of the luanch instance disalogue's details tab"
         />
@@ -1215,7 +1215,7 @@ const UserGuide = () => (
           <tfoot></tfoot>
         </table>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-11.png"
           alt="A screenshot of the luanch instance disalogue's access and security tab"
         />
@@ -1235,7 +1235,7 @@ const UserGuide = () => (
           <tfoot></tfoot>
         </table>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-12.png"
           alt="A screenshot of the luanch instance disalogue's networking tab"
         />
@@ -1302,7 +1302,7 @@ const UserGuide = () => (
       </p>
     </div>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-13.png"
       alt="A screenshot of an example showing the description attached to an image."
     />
@@ -1345,7 +1345,7 @@ const UserGuide = () => (
       </li>
     </ol>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-14.png"
       alt="A screenshot of the create snapshot dialog box"
     />
@@ -1380,7 +1380,7 @@ const UserGuide = () => (
       </li>
     </ol>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-15.png"
       alt="A screenshot of the instances category's actions column."
     />
@@ -1464,7 +1464,7 @@ const UserGuide = () => (
       an instance’.
     </p>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-16.png"
       alt="A screenshot of the Create Volume dialog box"
     />
@@ -1482,7 +1482,7 @@ const UserGuide = () => (
       the volume you want to attach to an Instance, click ‘Manage Attachments’.
     </p>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-17.png"
       alt="A screenshot of the Actions drop down for the volumes."
     />
@@ -1493,7 +1493,7 @@ const UserGuide = () => (
       Instance.
     </p>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-18.png"
       alt="A screenshot of the Manage Volume Attachments form."
     />
@@ -1508,7 +1508,7 @@ const UserGuide = () => (
     </h3>
     <p>SSH into your instance, su to root and run ‘lsblk’</p>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-19.png"
       alt="A screenshot of result of running lsblk."
     />
@@ -1541,7 +1541,7 @@ const UserGuide = () => (
     <p>As root:</p>
     <pre>mkfs.xfs -f /dev/vdb</pre>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-20.png"
       alt="A screenshot of result of running the above code."
     />
@@ -1561,7 +1561,7 @@ const UserGuide = () => (
     <p>As root:</p>
     <pre>&quot;mkdir db1 mount -t xfs /dev/vdb /db1 df -hT /db1&quot;</pre>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-21.png"
       alt="A screenshot of result of running the above code."
     />
@@ -1593,7 +1593,7 @@ const UserGuide = () => (
       detach the volume from.
     </p>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-22.png"
       alt="A screenshot of the Manage Volume Attachments form."
     />
@@ -1637,7 +1637,7 @@ const UserGuide = () => (
       select ‘Extend Volume’.
     </p>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-23.png"
       alt="A screenshot of the Extended Volume dialog box."
     />
@@ -1751,7 +1751,7 @@ const UserGuide = () => (
       <li>
         <p>Click the Upload Object icon.</p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-24.png"
           alt="A screenshot of the Project tab showing where the Upload Object icon is at the right upper corner."
         />
@@ -1773,7 +1773,7 @@ const UserGuide = () => (
       </li>
     </ol>
     <img
-      className="user-guide-img"
+      className={styles.instructionalImage}
       src="/assets/support/user-guide/user-guide-25.png"
       alt="A screenshot of the Upload Object to container dialog box."
     />
@@ -1880,7 +1880,7 @@ const UserGuide = () => (
       <li>
         <p>Click Create Pseudo-folder.</p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-26.png"
           alt="A screenshot of the Containers category showing where the create pseudo-folder button is located."
         />
@@ -1900,7 +1900,7 @@ const UserGuide = () => (
       <li>
         <p>Click Create.</p>
         <img
-          className="user-guide-img"
+          className={styles.instructionalImage}
           src="/assets/support/user-guide/user-guide-27.png"
           alt="A screenshot of the Containers category after creating a pseudo-folder."
         />
