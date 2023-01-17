@@ -1,4 +1,5 @@
 import SupportLayout from "../../../components/supportLayout/supportLayout";
+import styles from "../../../components/supportLayout/supportLayout.module.scss";
 
 const UserGuide = () => (
   <div>
@@ -350,7 +351,7 @@ const UserGuide = () => (
       and manage images in the admin project.
     </p>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>
           You can also use the openstack, glance and nova command-line clients or the Image service
@@ -648,7 +649,7 @@ const UserGuide = () => (
       see the section “Import a key pair”.
     </p>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>
           A key pair belongs to an individual user, not to a project. To share a key pair across
@@ -676,7 +677,7 @@ const UserGuide = () => (
       project, if your cloud requires them.
     </p>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>
           When adding a rule, you must specify the protocol used with the destination port or source
@@ -717,7 +718,7 @@ const UserGuide = () => (
           </li>
         </ul>
         <p className="note-title">Note</p>
-        <div className="note-box">
+        <div className={styles.instructionBox}>
           <p>
             <em>
               0.0.0.0/0 represents the entire Internet anf it is not recommended to allow such a
@@ -832,7 +833,7 @@ const UserGuide = () => (
         </p>
         <pre>$ chmod 0600 yourPrivateKey.pem</pre>
         <p className="note-title">Note</p>
-        <div className="note-box">
+        <div className={styles.instructionBox}>
           <p>
             <em>
               If you are using the Dashboard from a Windows computer, use PuTTYgen to load the *.pem
@@ -1045,7 +1046,7 @@ const UserGuide = () => (
               <td>
                 <p>By default, this value is set to nova.</p>
                 <p className="note-title">Note</p>
-                <div className="note-box">
+                <div className={styles.instructionExample}>
                   <p>
                     <em>
                       The name you assign here becomes the initial host name of the server. If the
@@ -1075,7 +1076,7 @@ const UserGuide = () => (
               <td>
                 <p>Specify the size of the instance to launch.</p>
                 <p className="note-title">Note</p>
-                <div className="note-box">
+                <div className={styles.instructionExample}>
                   <p>
                     <em>
                       The flavor is selected based on the size of the image selected for launching
@@ -1273,7 +1274,7 @@ const UserGuide = () => (
     </ol>
     <p>The instance starts on a compute node in the cloud.</p>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>
           If you did not provide a key pair, security groups, or rules, users can access the
@@ -1290,7 +1291,7 @@ const UserGuide = () => (
     <h4 id="connect-to-your-instance-by-using-ssh">Connect to your instance by using SSH</h4>
     <p>To use SSH to connect to your instance, use the downloaded keypair file.</p>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>
           The user name is ubuntu for the Ubuntu cloud images. For all other images, the user can be
@@ -1624,7 +1625,7 @@ const UserGuide = () => (
       detached from an Instance.
     </p>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>Volumes cannot have their size reduced.</em>
       </p>
@@ -1726,7 +1727,7 @@ const UserGuide = () => (
     </ol>
     <p>You have successfully created a container.</p>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>To delete a container, click the More button and select Delete Container.</em>
       </p>
@@ -1777,7 +1778,7 @@ const UserGuide = () => (
     />
     <p>You have successfully uploaded an object to the container.</p>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>To delete an object, click the More button and select Delete Object.</em>
       </p>
@@ -1813,7 +1814,7 @@ const UserGuide = () => (
       </li>
     </ol>
     <p className="note-title">Note</p>
-    <div className="note-box">
+    <div className={styles.instructionExample}>
       <p>
         <em>To delete an object, click the menu button and select Delete Object.</em>
       </p>
@@ -1905,8 +1906,8 @@ const UserGuide = () => (
       </li>
     </ol>
 
-    <div id="book-navigation-758" className="book-navigation">
-      <div className="page-links clearfix">
+    <div>
+      <div>
         <a href="/support/getting-started" className="page-previous" title="Go to previous page">
           Getting Started
         </a>

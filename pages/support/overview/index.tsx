@@ -12,7 +12,7 @@ const Card = (data) => (
 
 const SupportOverview = () => (
   <div>
-    <h1>Support Overview</h1>
+    <h1>Support Resources</h1>
     <h2>User Guides</h2>
     <div className={clsx(styles.cardCont)}>
       {pageData.sections.userGuides.map((data) => (

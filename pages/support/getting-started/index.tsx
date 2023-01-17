@@ -4,20 +4,18 @@ import styles from "../../../components/supportLayout/supportLayout.module.scss"
 const GettingStarted = () => (
   <div>
     <h1>Getting Started</h1>
-
     <p>
       Cancer Genome Collaboratory is built using Openstack, which is an open-source cloud solution
       with extensive documentation provided on the{" "}
       <a href="http://docs.openstack.org/user-guide/dashboard.html">official site</a>.
     </p>
-
     <p>
       For your convenience, we offer these short instructions that you should follow in order to
       start a new instance, while also recommending you read the official user guide to familiarize
       with more advanced functionalities.
-    </p>
-
-    <ol className="">
+    </p>{" "}
+    <br />
+    <ol>
       <li>
         <h2 className={styles.hiddenAnchor} title="Access the Console" />
 
@@ -35,11 +33,11 @@ const GettingStarted = () => (
       <li id="getting-started-2">
         <h2 className={styles.hiddenAnchor} title="Pre VM setup" />
 
-        <p class="instruction">
+        <p className="instruction">
           Before launching a virtual machine, you have to accomplish a number of steps.
         </p>
 
-        <ol class="alpha-instruction" type="a">
+        <ol className="alpha-instruction" type="a">
           <li>
             <p>
               Create a SSH key-pair by going to the Compute tab, Access &amp; Security, Key Pairs:
@@ -85,7 +83,7 @@ const GettingStarted = () => (
             <p>Choose the source image to be used (Ubuntu Precise, Trusty, Centos, Debian)</p>
             <img
               alt="A screenshot of the luanch instance window with the source image selected."
-              class="support-img"
+              className="support-img"
               src="/assets/support/getting-started/Getting-started-2d.png"
             />
           </li>
@@ -112,7 +110,7 @@ const GettingStarted = () => (
             </p>
             <img
               alt="A screenshot of the post-creation tab of the luanch instance window."
-              class="support-img"
+              className="support-img"
               src="/assets/support/getting-started/Getting-started-2g.png"
             />
             <p>
@@ -126,7 +124,7 @@ const GettingStarted = () => (
       <li id="getting-started-3">
         <h2 className={styles.hiddenAnchor} title="Associate a floating IP" />
 
-        <p class="instruction">Associate a floating/public IP address.</p>
+        <p className="instruction">Associate a floating/public IP address.</p>
 
         <p>
           By default, the VM will receive a private IP that is only reachable from inside your
@@ -147,7 +145,7 @@ const GettingStarted = () => (
       <li id="getting-started-4">
         <h2 className={styles.hiddenAnchor} title="SSH into your instance" />
 
-        <p class="instruction">SSH into your instance.</p>
+        <p className="instruction">SSH into your instance.</p>
 
         <p>
           When you started the VM and specified the name of your key pair, its public part was
@@ -169,14 +167,13 @@ const GettingStarted = () => (
       <li id="getting-started-5">
         <h2 className={styles.hiddenAnchor} title="Customize your VM" />
 
-        <p class="instruction">
+        <p className="instruction">
           Customize your virtual machine, upgrade the package index and existing packages, and it’s
           especially important to apply all the security updates available.
         </p>
       </li>
     </ol>
-
-    <div class="instruction-example">
+    <div className={styles.instructionExample}>
       <p>
         In order to access and analyze ICGC data on the Collaboratory, please follow the{" "}
         <a href="/node/764">user guide</a> provided that has step-by-step instructions.
