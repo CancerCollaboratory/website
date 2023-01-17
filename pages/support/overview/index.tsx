@@ -3,6 +3,7 @@ import ResourceCard from "../../../components/resourceCard/resourceCard";
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import pageData from "../../../data/pages/support/overview.json";
 import styles from "../../../components/supportLayout/supportLayout.module.scss";
+import SupportFooterNav from "../../../components/supportFooterNav/supportFooterNav";
 
 const Card = (data) => (
   <div className={styles.card}>
@@ -25,6 +26,7 @@ const SupportOverview = () => (
         <Card {...data} key={i} />
       ))}
     </div>
+    <SupportFooterNav.Item label="NEXT: GETTING STARTED" link="/support/getting-started" />
   </div>
 );
 
