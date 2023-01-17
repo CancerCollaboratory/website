@@ -1,0 +1,16 @@
+.supportFooterNav {
+  font-size: 13px;
+  font-weight: bold;
+  color: #c1272c;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: #ec1c23;
+  }
+}
+.iconArrow {
+  margin-left: 6px;
+  width: 12px;
+  height: 12px;
+}

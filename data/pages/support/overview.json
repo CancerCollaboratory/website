@@ -27,12 +27,7 @@
         "imageSrcPath": "/assets/support/overview/icon-circle-lightbulb.svg",
         "imageAlt": "icon - documentation"
       },
-      {
-        "title": "Getting Started",
-        "bodyText": "Simple instructions on how to start a new instance.",
-        "imageSrcPath": "/assets/support/overview/icon-circle-lightbulb.svg",
-        "imageAlt": "icon - documentation"
-      },
+
       {
         "title": "### [FAQs](/support/faqs)",
         "bodyText": "Common questions that the Collaboratory users have asked.",

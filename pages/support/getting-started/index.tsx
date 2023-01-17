@@ -1,5 +1,6 @@
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import styles from "../../../components/supportLayout/supportLayout.module.scss";
+import NavLine from "../../../components/navLine/navLine";
 
 const GettingStarted = () => (
   <div>
@@ -83,7 +84,7 @@ const GettingStarted = () => (
             <p>Choose the source image to be used (Ubuntu Precise, Trusty, Centos, Debian)</p>
             <img
               alt="A screenshot of the luanch instance window with the source image selected."
-              className="support-img"
+              className={styles.instructionalImage}
               src="/assets/support/getting-started/Getting-started-2d.png"
             />
           </li>
@@ -110,7 +111,7 @@ const GettingStarted = () => (
             </p>
             <img
               alt="A screenshot of the post-creation tab of the luanch instance window."
-              className="support-img"
+              className={styles.instructionalImage}
               src="/assets/support/getting-started/Getting-started-2g.png"
             />
             <p>
@@ -179,6 +180,7 @@ const GettingStarted = () => (
         <a href="/node/764">user guide</a> provided that has step-by-step instructions.
       </p>
     </div>
+    <NavLine navItems={[{ label: "label", link: "link", isExternal: false }]} />
   </div>
 );
 
