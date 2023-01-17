@@ -60,28 +60,22 @@
           "link": "/support/getting-started"
         },
         {
-          "label": "Best Practices",
-          "link": "/support/best-practices"
-        },
-        {
           "label": "User Guide",
           "link": "/support/user-guide"
         },
         {
+          "label": "Best Practices",
+          "link": "/support/best-practices"
+        },
+
+        {
           "label": "Glossary of Terms",
           "link": "/support/glossary-terms"
         },
-        {
-          "label": "Workshops",
-          "link": "/support/workshops"
-        },
+
         {
           "label": "FAQs",
           "link": "/support/faqs"
-        },
-        {
-          "label": "System Status",
-          "link": "/support/system-status"
         }
       ]
     },

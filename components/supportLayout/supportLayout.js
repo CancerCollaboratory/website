@@ -17,7 +17,7 @@ const SupportLayout = ({ children }) => {
             className={clsx(styles.container, utilStyles.outerContainerWidth, utilStyles.flexGrow)}
           >
             <SupportSidebar />
-            {children}
+            <div className={clsx(styles.supportPage)}>{children}</div>
           </div>
         </div>
         <Footer />
