@@ -23,7 +23,16 @@
         border-left-color: $dark-x2-red;
         color: $dark-x2-red;
       }
+
+      & a:hover {
+        border: none;
+      }
     }
+  }
+
+  .sub {
+    font-size: 13px;
+    padding: 10px 15px;
   }
 
   .selectedSubItem {

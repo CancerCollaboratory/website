@@ -5,6 +5,10 @@
   padding-top: 60px;
   border-right: 1px solid $light-x4-gray;
   width: 33%;
+  top: 0;
+  position: sticky;
+  align-self: flex-start;
+  min-height: 100vw;
 }
 
 @include respond-to("large") {

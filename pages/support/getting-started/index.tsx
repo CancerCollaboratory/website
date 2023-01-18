@@ -19,7 +19,7 @@ const GettingStarted = () => (
     <br />
     <ol>
       <li>
-        <h2 className={styles.hiddenAnchor} title="Access the Console" />
+        <h2 className={styles.hiddenAnchor} title="Access the Console" id="access-the-console" />
 
         <p className="instruction">
           First please open{" "}
@@ -33,7 +33,7 @@ const GettingStarted = () => (
         />
       </li>
       <li id="getting-started-2">
-        <h2 className={styles.hiddenAnchor} title="Pre VM setup" />
+        <h2 className={styles.hiddenAnchor} title="Pre VM setup" id="pre-vm-setup" />
 
         <p className="instruction">
           Before launching a virtual machine, you have to accomplish a number of steps.
@@ -124,7 +124,11 @@ const GettingStarted = () => (
         </ol>
       </li>
       <li id="getting-started-3">
-        <h2 className={styles.hiddenAnchor} title="Associate a floating IP" />
+        <h2
+          className={styles.hiddenAnchor}
+          title="Associate a floating IP"
+          id="associate-floating-ip"
+        />
 
         <p className="instruction">Associate a floating/public IP address.</p>
 
@@ -145,7 +149,7 @@ const GettingStarted = () => (
         />
       </li>
       <li id="getting-started-4">
-        <h2 className={styles.hiddenAnchor} title="SSH into your instance" />
+        <h2 className={styles.hiddenAnchor} title="SSH into your instance" id="ssh-into-instance" />
 
         <p className="instruction">SSH into your instance.</p>
 
@@ -167,7 +171,7 @@ const GettingStarted = () => (
         <pre>ssh -i path_to_private_key ubuntu@142.1.177.X</pre>
       </li>
       <li id="getting-started-5">
-        <h2 className={styles.hiddenAnchor} title="Customize your VM" />
+        <h2 className={styles.hiddenAnchor} title="Customize your VM" id="customize-vm" />
 
         <p className="instruction">
           Customize your virtual machine, upgrade the package index and existing packages, and it’s
