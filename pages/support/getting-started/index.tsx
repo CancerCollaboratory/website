@@ -1,6 +1,7 @@
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import styles from "../../../components/supportLayout/supportLayout.module.scss";
 import NavLine from "../../../components/navLine/navLine";
+import SupportFooterNav from "../../../components/supportFooterNav/supportFooterNav";
 
 const GettingStarted = () => (
   <div>
@@ -180,7 +181,16 @@ const GettingStarted = () => (
         <a href="/node/764">user guide</a> provided that has step-by-step instructions.
       </p>
     </div>
-    <NavLine navItems={[{ label: "label", link: "link", isExternal: false }]} />
+    <SupportFooterNav
+      previous={{
+        label: "PREVIOUS: OVERVIEW",
+        link: "/support/overview",
+      }}
+      next={{
+        label: "NEXT: USER GUIDE",
+        link: "/support/user-guide",
+      }}
+    />
   </div>
 );
 

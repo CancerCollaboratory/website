@@ -1,3 +1,4 @@
+import SupportFooterNav from "../../../components/supportFooterNav/supportFooterNav";
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import styles from "./glossaryTerms.module.scss";
 
@@ -3945,6 +3946,17 @@ const GlossaryOfTerms = () => (
         </tr>
       </tbody>
     </table>
+
+    <SupportFooterNav
+      previous={{
+        label: "PREVIOUS: BEST PRACTICES",
+        link: "/support/best-practices",
+      }}
+      next={{
+        label: "NEXT: FAQS",
+        link: "/support/faqs",
+      }}
+    />
   </div>
 );
 

@@ -1,3 +1,4 @@
+import SupportFooterNav from "../../../components/supportFooterNav/supportFooterNav";
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import styles from "./bestPractices.module.scss";
 
@@ -118,6 +119,17 @@ const BestPractices = () => (
         </p>
       </li>
     </ul>
+
+    <SupportFooterNav
+      previous={{
+        label: "PREVIOUS: USER GUIDE",
+        link: "/support/user-guide",
+      }}
+      next={{
+        label: "NEXT: GLOSSARY OF TERMS",
+        link: "/support/glossary-terms",
+      }}
+    />
   </div>
 );
 

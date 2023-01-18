@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SupportFooterNav from "../../../components/supportFooterNav/supportFooterNav";
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import styles from "../../../components/supportLayout/supportLayout.module.scss";
 
@@ -1907,19 +1908,16 @@ const UserGuide = () => (
       </li>
     </ol>
 
-    <div>
-      <div>
-        <Link href="/support/getting-started" className="page-previous" title="Go to previous page">
-          Getting Started
-        </Link>
-        <a href="/support" className="page-up" title="Go to parent page">
-          up
-        </a>
-        <Link href="/support/best-practices" className="page-next" title="Go to next page">
-          Best Practices
-        </Link>
-      </div>
-    </div>
+    <SupportFooterNav
+      previous={{
+        label: "PREVIOUS: GETTING STARTED",
+        link: "/support/getting-started",
+      }}
+      next={{
+        label: "NEXT: BEST PRACTICES",
+        link: "/support/best-practices",
+      }}
+    />
   </div>
 );
 

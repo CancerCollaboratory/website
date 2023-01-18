@@ -26,7 +26,12 @@ const SupportOverview = () => (
         <Card {...data} key={i} />
       ))}
     </div>
-    <SupportFooterNav.Item label="NEXT: GETTING STARTED" link="/support/getting-started" />
+    <SupportFooterNav
+      next={{
+        label: "NEXT: GETTING STARTED",
+        link: "/support/getting-started",
+      }}
+    />
   </div>
 );
 
