@@ -23,18 +23,7 @@ const UserGuide = () => (
     </p>
 
     <h3 id="#resource">Collaboratory Resource Allocations</h3>
-    <p>
-      A new project account creation on the Collaboratory can be requested through the{" "}
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="../services-request-account"
-        className="ext"
-      >
-        application process
-      </a>
-      . Upon submitting the signed application form(s), we will send you an email with further
-      instructions.{" "}
-    </p>
+
     <p>Collaboratory users are expected to:</p>
     <ul>
       <li>

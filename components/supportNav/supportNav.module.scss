@@ -16,23 +16,28 @@
       border-left: 3px solid white;
       color: $dark-x6-gray;
       padding-left: 9px;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 500;
 
       &:hover {
         border-left-color: $dark-x2-red;
         color: $dark-x2-red;
       }
-
-      & a:hover {
-        border: none;
-      }
     }
   }
 
   .sub {
-    font-size: 13px;
     padding: 10px 15px;
+    a {
+      font-size: 14px;
+      margin: 6px 0;
+    }
+    a:hover {
+      border-color: white;
+    }
+    .selectedSubItem {
+      border-color: white;
+    }
   }
 
   .selectedSubItem {
