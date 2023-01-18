@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SupportFooterNav from "../../../components/supportFooterNav/supportFooterNav";
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import styles from "../../../components/supportLayout/supportLayout.module.scss";
 
@@ -8,13 +9,7 @@ const UserGuide = () => (
       <a href="#user-guide">User Guide</a>
     </h1>
 
-    <h2 id="introduction-to-the-collaboratory">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#introduction-to-the-collaboratory"
-      ></a>
-      Introduction to the Collaboratory
-    </h2>
+    <h2 id="intro-to-collab">Introduction to the Collaboratory</h2>
 
     <h3 id="overview">
       <a title="Click on this header and copy URL to link to this section." href="#overview">
@@ -27,13 +22,7 @@ const UserGuide = () => (
       sets.
     </p>
 
-    <h3 id="collaboratory-resource allocations">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#collaboratory-resource allocations"
-      ></a>
-      Collaboratory Resource Allocations
-    </h3>
+    <h3 id="#resource">Collaboratory Resource Allocations</h3>
     <p>
       A new project account creation on the Collaboratory can be requested through the{" "}
       <a
@@ -70,7 +59,7 @@ const UserGuide = () => (
       </li>
     </ul>
 
-    <h3 id="protected-data-resources">
+    <h3 id="protected-data">
       <a
         title="Click on this header and copy URL to link to this section."
         href="#protected-data-resources"
@@ -85,14 +74,7 @@ const UserGuide = () => (
       responsibility of the users to protect sensitive data they receive access to.
     </p>
 
-    <h3 id="how-can-i-use-an-openstack-cloud">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#how-can-i-use-an-openstack-cloud"
-      >
-        How can I use an OpenStack cloud?
-      </a>
-    </h3>
+    <h3 id="cloud">How can I use an OpenStack cloud?</h3>
     <p>
       As an OpenStack cloud end user, you can provision your own resources within the limits set by
       cloud administrators.
@@ -141,14 +123,7 @@ const UserGuide = () => (
       OpenStack services, and JSON or XML data serialization formats.
     </p>
 
-    <h3 id="openstack-dashboard">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#openstack-dashboard"
-      >
-        OpenStack dashboard
-      </a>
-    </h3>
+    <h3 id="dash">OpenStack dashboard</h3>
     <p>
       As a cloud end user, you can use the OpenStack dashboard to provision your own resources
       within the limits set by administrators. You can modify the examples provided in this section
@@ -192,11 +167,7 @@ const UserGuide = () => (
       </li>
     </ul>
 
-    <h3 id="openstack-dashboard-project-tab">
-      <a title="Click on this header and copy URL to link to this section." href="#project-tab">
-        OpenStack dashboard — Project tab
-      </a>
-    </h3>
+    <h3 id="project">OpenStack dashboard — Project tab</h3>
     <p>
       Projects are organizational units in the cloud and are also known as tenants or accounts. Each
       user is a member of one or more projects. Within a project, a user creates and manages
@@ -221,7 +192,7 @@ const UserGuide = () => (
     </p>
     <p>From the Project tab, you can access the following categories:</p>
 
-    <h4 id="compute-tab">Compute tab</h4>
+    <h4 id="compute">Compute tab</h4>
     <ul>
       <li>
         <p>Overview: View reports for the project.</p>
@@ -292,7 +263,7 @@ const UserGuide = () => (
       </li>
     </ul>
 
-    <h4 id="network-tab">Network tab</h4>
+    <h4 id="network">Network tab</h4>
     <ul>
       <li>
         <p>Network Topology: View the network topology.</p>
@@ -322,7 +293,7 @@ const UserGuide = () => (
       </li>
     </ul>
 
-    <h3 id="upload-and-manageimages">
+    <h3 id="images">
       <a
         title="Click on this header and copy URL to link to this section."
         href="#upload-and-manageimages"
@@ -582,14 +553,7 @@ const UserGuide = () => (
       </li>
     </ol>
 
-    <h3 id="configure-access-and-security-for-instances">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#configure-access-and-security-for-instances"
-      >
-        Configure access and security for instances
-      </a>
-    </h3>
+    <h3 id="access">Configure access and security for instances</h3>
     <ul>
       <li>
         <p>
@@ -926,7 +890,7 @@ const UserGuide = () => (
       </li>
     </ol>
 
-    <h3 id="launch-and-manage-instance">
+    <h3 id="launch">
       <a
         title="Click on this header and copy URL to link to this section."
         href="#launch-and-manage-instance"
@@ -1385,65 +1349,26 @@ const UserGuide = () => (
       alt="A screenshot of the instances category's actions column."
     />
 
-    <h2 id="volumes">
-      <a title="Click on this header and copy URL to link to this section." href="#volumes"></a>
-      Volumes
-    </h2>
+    <h2 id="volumes">Volumes</h2>
 
-    <h3 id="scope">
-      <a title="Click on this header and copy URL to link to this section." href="#scope">
-        Scope
-      </a>
-    </h3>
+    <h3 id="scope">Scope</h3>
     <p>In this section you will learn how to:</p>
     <ul>
       <li>
-        <p>
-          <a
-            title="Click on this header and copy URL to link to this section."
-            href="#create-a-volume"
-          >
-            Create a volume
-          </a>
-        </p>
+        <p>Create a volume</p>
       </li>
       <li>
-        <p>
-          <a
-            title="Click on this header and copy URL to link to this section."
-            href="#attach-a-volume-to-an-instance"
-          >
-            Attach it to your instance
-          </a>
-        </p>
+        <p>Attach it to your instance</p>
       </li>
       <li>
-        <p>
-          <a
-            title="Click on this header and copy URL to link to this section."
-            href="#identifying-volume-within-your-instance"
-          >
-            Identify, format and mount the volume
-          </a>
-        </p>
+        <p>Identify, format and mount the volume</p>
       </li>
       <li>
-        <p>
-          <a
-            title="Click on this header and copy URL to link to this section."
-            href="#re-attaching-the-volume-to-a-different-instance"
-          >
-            Re-attach it to a different instance
-          </a>
-        </p>
+        <p>Re-attach it to a different instance</p>
       </li>
     </ul>
 
-    <h3 id="introduction">
-      <a title="Click on this header and copy URL to link to this section." href="#introduction">
-        Introduction
-      </a>
-    </h3>
+    <h3 id="intro">Introduction</h3>
     <p>
       Openstack volumes are logical block devices that can be attached to a single instance to
       provide a persistent location for data storage. Unlike a virtual machine&apos;s local disk
@@ -1452,11 +1377,7 @@ const UserGuide = () => (
       instances as you see fit while maintaining a persistent store for data.
     </p>
 
-    <h3 id="create-a-volume">
-      <a title="Click on this header and copy URL to link to this section." href="#create-a-volume">
-        Create a volume
-      </a>
-    </h3>
+    <h3 id="create">Create a volume</h3>
     <p>
       From the Openstack dashboard, click Compute &gt; Volumes &gt; Create Volume, fill out the form
       by providing a meaningful name, description and size. Once this is done, click ‘Create
@@ -1469,14 +1390,7 @@ const UserGuide = () => (
       alt="A screenshot of the Create Volume dialog box"
     />
 
-    <h3 id="attach-a-voume-to-an-instance">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#attach-a-voume-to-an-instance"
-      >
-        Attach a volume to an Instance
-      </a>
-    </h3>
+    <h3 id="attach">Attach a volume to an Instance</h3>
     <p>
       From the Openstack dashboard, click Compute &gt; Volumes and then on the Actions drop down for
       the volume you want to attach to an Instance, click ‘Manage Attachments’.
@@ -1498,14 +1412,7 @@ const UserGuide = () => (
       alt="A screenshot of the Manage Volume Attachments form."
     />
 
-    <h3 id="identifying-volume-within-your-instance">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#identifying-volume-within-your-instance"
-      >
-        Identifying volume within your Instance
-      </a>
-    </h3>
+    <h3 id="identify">Identifying volume within your Instance</h3>
     <p>SSH into your instance, su to root and run ‘lsblk’</p>
     <img
       className={styles.instructionalImage}
@@ -1520,14 +1427,7 @@ const UserGuide = () => (
       Instance you can move on to Formatting.
     </p>
 
-    <h3 id="formatting-the-volume">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#formatting-the-volume"
-      >
-        Formatting the Volume
-      </a>
-    </h3>
+    <h3 id="format">Formatting the Volume</h3>
 
     <h4 id="prerequisite-install-xfsprogs">Prerequisite: Install xfsprogs</h4>
     <p>As root:</p>
@@ -1546,14 +1446,7 @@ const UserGuide = () => (
       alt="A screenshot of result of running the above code."
     />
 
-    <h3 id="mounting-the-volume">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#mounting-the-volume"
-      >
-        Mounting the Volume
-      </a>
-    </h3>
+    <h3 id="mount">Mounting the Volume</h3>
     <p>
       Create a directory to mount the volume (example ‘db1’), mount the volume and then verify the
       mount.
@@ -1569,14 +1462,7 @@ const UserGuide = () => (
     <pre>/dev/vdb /db1 xfs defaults 0 0</pre>
     <p>At this point the volume is ready to read &amp; write data.</p>
 
-    <h3 id="re-attaching-the-volume-to-a-different-instance">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#re-attaching-the-volume-to-a-different-instance"
-      >
-        Re-attaching the volume to a different Instance
-      </a>
-    </h3>
+    <h3 id="different-instance">Re-attaching the volume to a different Instance</h3>
 
     <h4 id="unmount-the-volume">Unmount the Volume</h4>
     <p>As root:</p>
@@ -1599,28 +1485,14 @@ const UserGuide = () => (
     />
     <p>Verify the device is no longer seen by the Instance by looking at the output of ‘lsblk’.</p>
 
-    <h3 id="re-attach-volume">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#re-attach-volume"
-      >
-        Re-attach Volume
-      </a>
-    </h3>
+    <h3 id="re-attach">Re-attach Volume</h3>
     <p>
       Follow the steps at the beginning of this guide to attach the volume to a desired instance.{" "}
       <mark>DO NOT Format the volume from the new instance</mark>. Skip that step and go directly to
       mounting. The volume is now mounted on a different Instance and the data is preserved.
     </p>
 
-    <h3 id="extend-volume-grow">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#extend-volume-grow"
-      >
-        Extend Volume (Grow)
-      </a>
-    </h3>
+    <h3 id="extend">Extend Volume (Grow)</h3>
     <p>
       Volumes can also be extended in size. In order to Extend the volume it must be unmounted and
       detached from an Instance.
@@ -1649,14 +1521,7 @@ const UserGuide = () => (
     <p>As root:</p>
     <pre>xfs_growfs /dev/vdb -d</pre>
 
-    <h3 id="create-and-manage-object-containers">
-      <a
-        title="Click on this header and copy URL to link to this section."
-        href="#create-and-manage-object-containers"
-      >
-        Create and manage object containers
-      </a>
-    </h3>
+    <h3 id="containers">Create and manage object containers</h3>
     <ul>
       <li>
         <p>
@@ -1907,19 +1772,16 @@ const UserGuide = () => (
       </li>
     </ol>
 
-    <div>
-      <div>
-        <Link href="/support/getting-started" className="page-previous" title="Go to previous page">
-          Getting Started
-        </Link>
-        <a href="/support" className="page-up" title="Go to parent page">
-          up
-        </a>
-        <Link href="/support/best-practices" className="page-next" title="Go to next page">
-          Best Practices
-        </Link>
-      </div>
-    </div>
+    <SupportFooterNav
+      previous={{
+        label: "PREVIOUS: GETTING STARTED",
+        link: "/support/getting-started",
+      }}
+      next={{
+        label: "NEXT: BEST PRACTICES",
+        link: "/support/best-practices",
+      }}
+    />
   </div>
 );
 

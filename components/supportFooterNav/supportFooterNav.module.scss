@@ -10,7 +10,18 @@
   }
 }
 .iconArrow {
-  margin-left: 6px;
+  margin: 0 6px;
   width: 12px;
   height: 12px;
+}
+
+.leftArrow {
+  transform: rotate(180deg);
+}
+
+.cont {
+  display: flex;
+  margin-top: 60px;
+  padding: 5px;
+  justify-content: space-between;
 }

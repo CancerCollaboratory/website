@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SupportFooterNav from "../../../components/supportFooterNav/supportFooterNav";
 import SupportLayout from "../../../components/supportLayout/supportLayout";
 import styles from "../styles.module.scss";
 
@@ -160,6 +161,13 @@ const FrequentlyAskedQuestions = () => (
         <code>chown username:username /home/username/.ssh/authorized_keys</code>
       </li>
     </ol>
+
+    <SupportFooterNav
+      previous={{
+        label: "PREVIOUS: GLOSSARY OF TERMS",
+        link: "/support/glossary-terms",
+      }}
+    />
   </div>
 );
 
