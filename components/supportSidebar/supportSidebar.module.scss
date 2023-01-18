@@ -9,7 +9,7 @@
 
 @include respond-to("large") {
   .container {
-    padding: 40px;
+    padding: 40px 0;
   }
 }
 
@@ -36,5 +36,56 @@
 @include respond-to("extra-extra-small") {
   .container {
     padding: 24px;
+  }
+}
+
+.callOut {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #d4d4d4;
+  border-right: none;
+  border-radius: 15px 0 0 15px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+
+  p {
+    line-height: 25px;
+    margin: 6px auto;
+  }
+
+  a {
+    font-size: 14px;
+    color: #c1272c;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover,
+  .arrow:hover {
+    color: #ec1c23;
+  }
+
+  .arrow {
+    margin-left: 4px;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@include respond-to("medium") {
+  .callOut {
+    border-right: 1px solid #d4d4d4;
+    border-radius: 15px;
   }
 }
