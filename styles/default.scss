@@ -1,146 +1,145 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 @import "./mixins";
 @import "./colors";
 
 html {
-    background-color: $dark-x7-gray;
+  background-color: $dark-x7-gray;
 }
 
 body {
-    background-color: $white;
-    font-family: 'Open Sans', sans-serif;
+  background-color: $white;
+  font-family: var(--font-opensans), sans-serif;
 }
 
 h1 {
-    color: $dark-x1-blue;
-    font-size: 28px;
+  color: $dark-x1-blue;
+  font-size: 28px;
 }
 
 h2,
 h3 {
-    color: $dark-x4-gray;
+  color: $dark-x4-gray;
 }
 
 h2 {
-    font-size: 21px;
+  font-size: 21px;
 }
 
 h3 {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 p,
 td {
-    color: $dark-x2-gray;
+  color: $dark-x2-gray;
 }
 
 caption {
-    color: $dark-x6-gray;
+  color: $dark-x6-gray;
 }
 
 th {
-    color: $dark-x3-gray;
-    font-weight: 600;
+  color: $dark-x3-gray;
+  font-weight: 600;
 }
 
 p,
 caption,
 th,
 td {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 a {
-    color: $dark-x1-blue;
+  color: $dark-x1-blue;
 
-    &:hover {
-        color: $light-x3-blue;
-    }
+  &:hover {
+    color: $light-x3-blue;
+  }
 }
 
 @include respond-to("large") {
-    h1 {
-        font-size: 26px;
-    }
+  h1 {
+    font-size: 26px;
+  }
 
-    h2 {
-        font-size: 20px;
-    }
+  h2 {
+    font-size: 20px;
+  }
 
-    h3 {
-        font-size: 16px;
-    }
+  h3 {
+    font-size: 16px;
+  }
 }
 
 @include respond-to("medium") {
-    h1 {
-        font-size: 24px;
-    }
+  h1 {
+    font-size: 24px;
+  }
 
-    h2 {
-        font-size: 19px;
-    }
+  h2 {
+    font-size: 19px;
+  }
 
-    h3 {
-        font-size: 15px;
-    }
+  h3 {
+    font-size: 15px;
+  }
 
-    p,
-    caption,
-    th,
-    td {
-        font-size: 13px;
-    }
+  p,
+  caption,
+  th,
+  td {
+    font-size: 13px;
+  }
 }
 
 @include respond-to("small") {
-    h1 {
-        font-size: 18px;
-    }
+  h1 {
+    font-size: 18px;
+  }
 
-    h2 {
-        font-size: 16px;
-    }
+  h2 {
+    font-size: 16px;
+  }
 
-    h3 {
-        font-size: 13px;
-    }
+  h3 {
+    font-size: 13px;
+  }
 
-    p,
-    caption,
-    th,
-    td {
-        font-size: 12px;
-    }
+  p,
+  caption,
+  th,
+  td {
+    font-size: 12px;
+  }
 }
 
 @include respond-to("extra-small") {
-    h1 {
-        font-size: 16px;
-    }
+  h1 {
+    font-size: 16px;
+  }
 
-    h2 {
-        font-size: 15px;
-    }
+  h2 {
+    font-size: 15px;
+  }
 
-    h3 {
-        font-size: 12px;
-    }
+  h3 {
+    font-size: 12px;
+  }
 }
 
 @include respond-to("extra-extra-small") {
-    h1 {
-        font-size: 14px;
-    }
+  h1 {
+    font-size: 14px;
+  }
 
-    h2 {
-        font-size: 13px;
-    }
+  h2 {
+    font-size: 13px;
+  }
 
-    p,
-    caption,
-    th,
-    td {
-        font-size: 11px;
-    }
+  p,
+  caption,
+  th,
+  td {
+    font-size: 11px;
+  }
 }
