@@ -128,28 +128,13 @@ const UserGuide = () => (
         </p>
       </li>
       <li>
-        <p>
-          <a title="Click on this header and copy URL to link to this section." href="#compute-tab">
-            Compute tab
-          </a>
-        </p>
+        <p>Compute tab</p>
       </li>
       <li>
-        <p>
-          <a title="Click on this header and copy URL to link to this section." href="#network-tab">
-            Network tab
-          </a>
-        </p>
+        <p>Network tab</p>
       </li>
       <li>
-        <p>
-          <a
-            title="Click on this header and copy URL to link to this section."
-            href="#object-store-tab"
-          >
-            Object Store tab
-          </a>
-        </p>
+        <p>Object Store tab</p>
       </li>
       <li>
         <p>Identity tab</p>
@@ -672,7 +657,7 @@ const UserGuide = () => (
           </li>
         </ul>
         <p className="note-title">Note</p>
-        <div className={styles.instructionBox}>
+        <div className={styles.instructionExample}>
           <p>
             <em>
               0.0.0.0/0 represents the entire Internet anf it is not recommended to allow such a
@@ -787,7 +772,7 @@ const UserGuide = () => (
         </p>
         <pre>$ chmod 0600 yourPrivateKey.pem</pre>
         <p className="note-title">Note</p>
-        <div className={styles.instructionBox}>
+        <div className={styles.instructionExample}>
           <p>
             <em>
               If you are using the Dashboard from a Windows computer, use PuTTYgen to load the *.pem
