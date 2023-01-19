@@ -1,9 +1,18 @@
 {
   "jumbotron": {
-      "title": "Research Outputs from Collaboratory",
-      "body": {
-          "text": "The work of the Collaboratory consists of technology development cores and research modules organized with the common goal of encouraging collaboration and accelerating the development of new tools that will advance the personalized treatment of cancer through genomic research."
-      }
+    "title": "Research Outputs from Collaboratory",
+    "body": {
+      "text": ""
+    }
+  },
+  "singlePublication": {
+    "imageSrcPath": "/assets/publication/pcawg-nature-cover.png",
+    "imageAlt": "PCAWG Nature Cover",
+    "title": "Pan-cancer Analysis of Whole Genomes Published!",
+    "titleLink": "https://www.nature.com/collections/afdejfafdb",
+    "isTitleLinkExternal": true,
+    "caption": "Read about the ICGC/TCGA analysis of >2,600 whole cancer genomes across 38 tumour types in 23 papers published in [Nature and other Nature journals](https://www.nature.com/collections/afdejfafdb). *Photo credit: Nik Spencer/Nature.*",
+    "isCaptionLinkExternal": true
   },
   "publicationInstructions": "Should your use of the Cancer Genome Collaboratory result in a publication, please acknowledge the Collaboratory in your work with the following statement: “Data and/or analyses in this work were conducted using the Cancer Genome Collaboratory.",
   "publicationsSection": {

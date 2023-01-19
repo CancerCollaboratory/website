@@ -2,407 +2,411 @@
 @import "./mixins";
 
 .mainContainer {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .pageBodyContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lateralColumnInnerContainer {
-    display: flex;
+  display: flex;
 }
 
 .outerContainerWidth {
-    width: 1098px;
+  width: 1098px;
 }
 
 .outerContainerVerticalPadding {
-    padding: 25px 0px;
+  padding: 25px 0px;
 }
 
 .outerContainerHorizontalPadding {
-    padding: 0px 25px;
+  padding: 0px 25px;
 }
 
 .innerContainerPadding {
-    padding: 25px 4px;
+  padding: 25px 4px;
 }
 
 .defaultContainerWidth {
-    width: 1170px;
+  width: 1170px;
 }
 
 .childContainerAlignment {
-    display: flex;
+  display: flex;
 }
 
 .childContainer {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .altChildContainer {
-    margin-top: 16.5px;
+  margin-top: 16.5px;
 }
 
 .onlyChildContainer {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .maxWidth {
-    width: 100%;
+  width: 100%;
 }
 
 .peakWidth {
-    width: 90%;
+  width: 90%;
 }
 
 .columnBorder {
-    border-right: 1px solid $light-x4-gray;
+  border-right: 1px solid $light-x4-gray;
 }
 
 .itemLabel {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .gradientBackgroundGray {
-    background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
+  background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
 }
 
 .altGradientBackgroundGray {
-    background-image: linear-gradient(to right, white 0%, $light-x9-gray 100%);
+  background-image: linear-gradient(to right, white 0%, $light-x9-gray 100%);
 }
 
 .resetBackgroundColor {
-    background-color: $white;
+  background-color: $white;
 }
 
 .boardBackground {
-    background-color: $light-x9-gray;
+  background-color: $light-x9-gray;
 }
 
 .containerBorderBottom {
-    border-bottom: 1px dotted $light-x5-gray;
+  border-bottom: 1px dotted $light-x5-gray;
 }
 
 .containerBorderTop {
-    border-top: 1px dotted $light-x5-gray;
+  border-top: 1px dotted $light-x5-gray;
 }
 
 .verticallyCenterItem {
-    align-items: center;
+  align-items: center;
 }
 
 .horizontallyCenterItem {
-    justify-content: center;
+  justify-content: center;
 }
 
 .reverseVerticalAlignment {
-    align-items: flex-end;
+  align-items: flex-end;
+}
+
+.centerAlignment {
+  align-items: center;
 }
 
 .flexGrow {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .flexDirectionColumn {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tabSectionImage {
-    border: 2px solid $light-x4-gray;
-    width: 90%;
-    height: auto;
+  border: 2px solid $light-x4-gray;
+  width: 90%;
+  height: auto;
 }
 
 .titleIcon {
-    margin-right: 21px;
-    height: max-content;
+  margin-right: 21px;
+  height: max-content;
 }
 
 .smallTitleIcon {
-    margin-right: 13px;
-    width: 28px;
-    height: auto;
+  margin-right: 13px;
+  width: 28px;
+  height: auto;
 }
 
 .defaultElementMarginBottom {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .altElementMarginBottom {
-    margin-bottom: 16.5px;
+  margin-bottom: 16.5px;
 }
 
 .outerBoardMargins {
-    margin: 12.5px 6.25px 0px 6.25px;
+  margin: 12.5px 6.25px 0px 6.25px;
 }
 
 .defaultElementLineHeight {
-    line-height: 170%;
+  line-height: 170%;
 }
 
 .embeddedParagraphLineHeight {
-    p {
-        line-height: 170%;
-    }
+  p {
+    line-height: 170%;
+  }
 }
 
 .commonAnchor {
-    text-decoration: underline;
+  text-decoration: underline;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .smallh2 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .textOverflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @include respond-to("large") {
-    .outerContainerWidth {
-        width: 898px;
-    }
+  .outerContainerWidth {
+    width: 898px;
+  }
 
-    .defaultContainerWidth {
-        width: 970px;
-    }
+  .defaultContainerWidth {
+    width: 970px;
+  }
 
-    .titleIcon {
-        margin-right: 19px;
-        width: 58px;
-        height: auto;
-    }
+  .titleIcon {
+    margin-right: 19px;
+    width: 58px;
+    height: auto;
+  }
 
-    .smallTitleIcon {
-        margin-right: 12.5px;
-        width: 27px;
-    }
+  .smallTitleIcon {
+    margin-right: 12.5px;
+    width: 27px;
+  }
 
-    .smallh2 {
-        font-size: 17px;
-    }
+  .smallh2 {
+    font-size: 17px;
+  }
 }
 
 @include respond-to("medium") {
-    .lateralColumnInnerContainer {
-        flex-direction: column;
-    }
+  .lateralColumnInnerContainer {
+    flex-direction: column;
+  }
 
-    .outerContainerWidth {
-        width: 674px;
-    }
+  .outerContainerWidth {
+    width: 674px;
+  }
 
-    .defaultContainerWidth {
-        width: 750px;
-    }
+  .defaultContainerWidth {
+    width: 750px;
+  }
 
-    .childContainerAlignment {
-        flex-direction: column;
-        align-items: center;
-    }
+  .childContainerAlignment {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .columnBorder {
-        border-right: none;
-        border-bottom: 1px dotted $light-x5-gray;
-    }
+  .columnBorder {
+    border-right: none;
+    border-bottom: 1px dotted $light-x5-gray;
+  }
 
-    .altGradientBackgroundGray {
-        background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
-    }
+  .altGradientBackgroundGray {
+    background-image: linear-gradient(to right, white 0%, $light-x9-gray 50%, white 100%);
+  }
 
-    .flexDirectionColumnReverse {
-        flex-direction: column-reverse;
-    }
+  .flexDirectionColumnReverse {
+    flex-direction: column-reverse;
+  }
 
-    .titleIcon {
-        margin-right: 18px;
-        width: 54px;
-    }
+  .titleIcon {
+    margin-right: 18px;
+    width: 54px;
+  }
 
-    .smallTitleIcon {
-        width: 26px;
-    }
+  .smallTitleIcon {
+    width: 26px;
+  }
 
-    .centerBodyText {
-        text-align: center;
-    }
+  .centerBodyText {
+    text-align: center;
+  }
 
-    .defaultElementLineHeight {
-        line-height: 168%;
-    }
+  .defaultElementLineHeight {
+    line-height: 168%;
+  }
 
-    .embeddedParagraphLineHeight {
-        p {
-            line-height: 168%;
-        }
+  .embeddedParagraphLineHeight {
+    p {
+      line-height: 168%;
     }
+  }
 
-    .smallh2 {
-        font-size: 16px;
-    }
+  .smallh2 {
+    font-size: 16px;
+  }
 }
 
 @include respond-to("small") {
-    .lateralColumnInnerContainer {
-        width: 100%;
-    }
+  .lateralColumnInnerContainer {
+    width: 100%;
+  }
 
-    .outerContainerWidth {
-        width: 84%;
-    }
+  .outerContainerWidth {
+    width: 84%;
+  }
 
-    .outerContainerVerticalPadding {
-        padding: 23px 0px;
-    }
+  .outerContainerVerticalPadding {
+    padding: 23px 0px;
+  }
 
-    .outerContainerHorizontalPadding {
-        padding: 0px 23px;
-    }
+  .outerContainerHorizontalPadding {
+    padding: 0px 23px;
+  }
 
-    .innerContainerPadding {
-        padding: 23px 4px;
-    }
+  .innerContainerPadding {
+    padding: 23px 4px;
+  }
 
-    .defaultContainerWidth {
-        width: 100%;
-    }
+  .defaultContainerWidth {
+    width: 100%;
+  }
 
-    .childContainer {
-        margin-top: 23px;
-    }
+  .childContainer {
+    margin-top: 23px;
+  }
 
-    .altChildContainer {
-        margin-top: 15.5px;
-    }
+  .altChildContainer {
+    margin-top: 15.5px;
+  }
 
-    .boardBackground {
-        background-color: $white;
-    }
+  .boardBackground {
+    background-color: $white;
+  }
 
-    .swapBoardBackground {
-        background-color: $light-x9-gray;
-    }
+  .swapBoardBackground {
+    background-color: $light-x9-gray;
+  }
 
-    .titleIcon {
-        margin-right: 16px;
-        width: 48px;
-    }
+  .titleIcon {
+    margin-right: 16px;
+    width: 48px;
+  }
 
-    .smallTitleIcon {
-        margin-right: 11.5px;
-        width: 24px;
-    }
+  .smallTitleIcon {
+    margin-right: 11.5px;
+    width: 24px;
+  }
 
-    .defaultElementMarginBottom {
-        margin-bottom: 23px;
-    }
+  .defaultElementMarginBottom {
+    margin-bottom: 23px;
+  }
 
-    .altElementMarginBottom {
-        margin-bottom: 15.5px;
-    }
+  .altElementMarginBottom {
+    margin-bottom: 15.5px;
+  }
 
-    .outerBoardMargins {
-        margin: 0px;
-    }
+  .outerBoardMargins {
+    margin: 0px;
+  }
 
-    .smallh2 {
-        font-size: 14px;
-    }
+  .smallh2 {
+    font-size: 14px;
+  }
 }
 
 @include respond-to("extra-small") {
-    .outerContainerVerticalPadding {
-        padding: 22px 0px;
-    }
+  .outerContainerVerticalPadding {
+    padding: 22px 0px;
+  }
 
-    .outerContainerHorizontalPadding {
-        padding: 0px 22px;
-    }
+  .outerContainerHorizontalPadding {
+    padding: 0px 22px;
+  }
 
-    .innerContainerPadding {
-        padding: 22px 4px;
-    }
+  .innerContainerPadding {
+    padding: 22px 4px;
+  }
 
-    .childContainer {
-        margin-top: 22px;
-    }
+  .childContainer {
+    margin-top: 22px;
+  }
 
-    .altChildContainer {
-        margin-top: 14.5px;
-    }
+  .altChildContainer {
+    margin-top: 14.5px;
+  }
 
-    .titleIcon {
-        margin-right: 13.5px;
-        width: 40px;
-    }
+  .titleIcon {
+    margin-right: 13.5px;
+    width: 40px;
+  }
 
-    .smallTitleIcon {
-        margin-right: 11px;
-        width: 23px;
-    }
+  .smallTitleIcon {
+    margin-right: 11px;
+    width: 23px;
+  }
 
-    .defaultElementMarginBottom {
-        margin-bottom: 22px;
-    }
+  .defaultElementMarginBottom {
+    margin-bottom: 22px;
+  }
 
-    .altElementMarginBottom {
-        margin-bottom: 14.5px;
-    }
+  .altElementMarginBottom {
+    margin-bottom: 14.5px;
+  }
 
-    .smallh2 {
-        font-size: 13px;
-    }
+  .smallh2 {
+    font-size: 13px;
+  }
 }
 
 @include respond-to("extra-extra-small") {
-    .outerContainerVerticalPadding {
-        padding: 20px 0px;
-    }
+  .outerContainerVerticalPadding {
+    padding: 20px 0px;
+  }
 
-    .outerContainerHorizontalPadding {
-        padding: 0px 20px;
-    }
+  .outerContainerHorizontalPadding {
+    padding: 0px 20px;
+  }
 
-    .innerContainerPadding {
-        padding: 20px 4px;
-    }
+  .innerContainerPadding {
+    padding: 20px 4px;
+  }
 
-    .childContainer {
-        margin-top: 20px;
-    }
+  .childContainer {
+    margin-top: 20px;
+  }
 
-    .altChildContainer {
-        margin-top: 13.5px;
-    }
+  .altChildContainer {
+    margin-top: 13.5px;
+  }
 
-    .titleIcon {
-        margin-right: 11.5px;
-        width: 34px;
-    }
+  .titleIcon {
+    margin-right: 11.5px;
+    width: 34px;
+  }
 
-    .smallTitleIcon {
-        margin-right: 10.5px;
-    }
+  .smallTitleIcon {
+    margin-right: 10.5px;
+  }
 
-    .defaultElementMarginBottom {
-        margin-bottom: 20px;
-    }
+  .defaultElementMarginBottom {
+    margin-bottom: 20px;
+  }
 
-    .altElementMarginBottom {
-        margin-bottom: 13.5px;
-    }
+  .altElementMarginBottom {
+    margin-bottom: 13.5px;
+  }
 }
