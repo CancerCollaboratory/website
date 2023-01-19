@@ -7,7 +7,16 @@ html {
 
 body {
   background-color: $white;
-  font-family: var(--font-opensans), sans-serif;
+  font-family: var(--font-opensans), Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-gothambold), var(--font-opensans), sans-serif;
 }
 
 h1 {
@@ -21,7 +30,7 @@ h3 {
 }
 
 h2 {
-  font-size: 21px;
+  font-size: 26px;
 }
 
 h3 {

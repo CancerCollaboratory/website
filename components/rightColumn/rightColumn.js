@@ -37,7 +37,7 @@ const RightColumn = ({
           {title && !children && (
             <h2 className={clsx(styles.title, utilStyles.defaultElementLineHeight)}>{title}</h2>
           )}
-          {title && children && <h3>{title}</h3>}
+          {title && children && <h2>{title}</h2>}
         </div>
       )}
       {body?.map(

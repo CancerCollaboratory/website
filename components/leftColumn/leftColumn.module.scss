@@ -2,87 +2,88 @@
 @import "../../styles/mixins";
 
 .container {
-    padding: 0px 20px 0px 4px;
-    height: 100%;
+  padding: 0px 20px 0px 4px;
+  height: 100%;
 
-    .megaTitle {
-        line-height: 50px;
-        font-size: 44px;
+  .megaTitle {
+    line-height: 50px;
+    font-size: 44px;
+    font-family: var(--font-gothambold);
 
-        .mainSubTitle {
-            color: $light-x4-blue;
-        }
+    .mainSubTitle {
+      color: $light-x4-blue;
     }
+  }
 
-    .head {
-        display: flex;
-        align-items: center;
-    }
+  .head {
+    display: flex;
+    align-items: center;
+  }
 
-    .introBody {
-        font-weight: lighter;
-        line-height: 38px;
-        font-size: 17px;
-    }
+  .introBody {
+    font-weight: lighter;
+    line-height: 38px;
+    font-size: 17px;
+  }
 }
 
 @include respond-to("large") {
-    .container {
-        .megaTitle {
-            line-height: 46.5px;
-            font-size: 41px;
-        }
+  .container {
+    .megaTitle {
+      line-height: 46.5px;
+      font-size: 41px;
     }
+  }
 }
 
 @include respond-to("medium") {
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
 
-        .megaTitle {
-            text-align: center;
-            line-height: 42.5px;
-            font-size: 37.5px;
-        }
-
-        .head {
-            justify-content: center;
-        }
+    .megaTitle {
+      text-align: center;
+      line-height: 42.5px;
+      font-size: 37.5px;
     }
+
+    .head {
+      justify-content: center;
+    }
+  }
 }
 
 @include respond-to("small") {
-    .container {
-        align-items: center;
+  .container {
+    align-items: center;
 
-        .megaTitle {
-            line-height: 39px;
-            font-size: 32px;
-        }
-
-        .introBody {
-            line-height: 28px;
-        }
+    .megaTitle {
+      line-height: 39px;
+      font-size: 32px;
     }
+
+    .introBody {
+      line-height: 28px;
+    }
+  }
 }
 
 @include respond-to("extra-small") {
-    .container {
-        .megaTitle {
-            line-height: 34.5px;
-            font-size: 28.5px;
-        }
+  .container {
+    .megaTitle {
+      line-height: 34.5px;
+      font-size: 28.5px;
     }
+  }
 }
 
 @include respond-to("extra-extra-small") {
-    .container {
-        .megaTitle {
-            line-height: 30.5px;
-            font-size: 25px;
-        }
+  .container {
+    .megaTitle {
+      line-height: 30.5px;
+      font-size: 25px;
     }
+  }
 }
