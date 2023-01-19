@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^13.1.2",
     "clsx": "^1.2.1",
     "eslint-config-next": "^13.0.6",
     "html-react-parser": "^3.0.4",

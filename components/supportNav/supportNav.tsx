@@ -1,4 +1,3 @@
-import CustomLink from "../customLink/customLink";
 import { useRouter } from "next/router";
 import styles from "./supportNav.module.scss";
 import Link from "next/link";
@@ -80,19 +79,25 @@ const navData = [
   },
 ];
 
-const renderNav = (item, asPath) => {
+const renderNav = (item, asPath, isParentActive = false) => {
+  const isActiveSection = asPath.includes(item.link);
   if (item.items && item.items.length > 0) {
+    const parentItemLink = item.link;
     return (
       <div>
-        <Link href={item.link} className={clsx(item.link === asPath && "selectedSubItem")}>
+        <Link href={item.link} className={clsx(isActiveSection && styles.selectedSubItem)}>
           {item.label}
         </Link>
-        <div className={styles.sub}>{item.items.map((item) => renderNav(item, asPath))}</div>
+        {(isActiveSection || isParentActive) && (
+          <div className={styles.sub}>
+            {item.items.map((item) => renderNav(item, asPath, isActiveSection))}
+          </div>
+        )}
       </div>
     );
   } else {
     return (
-      <Link href={item.link} className={clsx(item.link === asPath && "selectedSubItem")}>
+      <Link href={item.link} className={clsx(isActiveSection && styles.selectedSubItem)}>
         {item.label}
       </Link>
     );
@@ -101,7 +106,6 @@ const renderNav = (item, asPath) => {
 
 const SupportNav = () => {
   const { asPath } = useRouter();
-  console.log("path", asPath);
   return (
     <ul className={styles.navContainer}>
       {navData.map((item, index) => (

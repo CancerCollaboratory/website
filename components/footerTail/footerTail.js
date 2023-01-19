@@ -14,14 +14,16 @@ const FooterTail = ({ label, labelLink, subItems }) => {
           subItems ? styles.tailItemRightBorder : styles.resetTailItemMargins
         )}
       >
-        <CustomLink
-          label={label}
-          link={labelLink}
-          styleLabel={clsx(
-            utilStyles.itemLabel,
-            !subItems ? styles.resetInternalMargins : undefined
-          )}
-        />
+        <h4>
+          <CustomLink
+            label={label}
+            link={labelLink}
+            styleLabel={clsx(
+              utilStyles.itemLabel,
+              !subItems ? styles.resetInternalMargins : undefined
+            )}
+          />
+        </h4>
         {subItems && (
           <ul
             className={clsx(
