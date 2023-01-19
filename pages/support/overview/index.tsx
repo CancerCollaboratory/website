@@ -4,6 +4,7 @@ import SupportLayout from "../../../components/supportLayout/supportLayout";
 import pageData from "../../../data/pages/support/overview.json";
 import styles from "../../../components/supportLayout/supportLayout.module.scss";
 import SupportFooterNav from "../../../components/supportFooterNav/supportFooterNav";
+import overviewStyles from "./overview.module.scss";
 
 const Card = (data) => (
   <div className={styles.card}>
@@ -12,7 +13,7 @@ const Card = (data) => (
 );
 
 const SupportOverview = () => (
-  <div>
+  <div className={overviewStyles.overview}>
     <h1>Support Resources</h1>
     <h2>User Guides</h2>
     <div className={clsx(styles.cardCont)}>
