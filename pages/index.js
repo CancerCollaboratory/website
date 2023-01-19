@@ -3,7 +3,6 @@ import LateralColumn from "../components/lateralColumn/lateralColumn";
 import LeftColumn from "../components/leftColumn/leftColumn";
 import RightColumn from "../components/rightColumn/rightColumn";
 import Button from "../components/button/button";
-import Publication from "../components/publication/publication";
 import BarChart from "../components/barChart/barChart";
 import GraphTable from "../components/graphTable/graphTable";
 import ListLine from "../components/listLine/listLine";
@@ -36,19 +35,6 @@ const Home = () => {
                 hasIcon={lateralColumn1?.leftColumn?.button?.hasIcon}
               />
             </div>
-            <div className={clsx(utilStyles.childContainer, utilStyles.childContainerAlignment)}>
-              <Publication
-                imageSrcPath={lateralColumn1?.leftColumn?.publication?.imageSrcPath}
-                imageAlt={lateralColumn1?.leftColumn?.publication?.imageAlt}
-                title={lateralColumn1?.leftColumn?.publication?.title}
-                titleLink={lateralColumn1?.leftColumn?.publication?.titleLink}
-                isTitleLinkExternal={lateralColumn1?.leftColumn?.publication?.isTitleLinkExternal}
-                caption={lateralColumn1?.leftColumn?.publication?.caption}
-                isCaptionLinkExternal={
-                  lateralColumn1?.leftColumn?.publication?.isCaptionLinkExternal
-                }
-              />
-            </div>
           </LeftColumn>
         }
         rightColumn={
@@ -74,7 +60,7 @@ const Home = () => {
           </RightColumn>
         }
         hasBorderBottom={lateralColumn1?.hasBorderBottom}
-        styleColumnAlignment={utilStyles.reverseVerticalAlignment}
+        styleColumnAlignment={utilStyles.centerAlignment}
       />
       <LateralColumn
         leftColumn={

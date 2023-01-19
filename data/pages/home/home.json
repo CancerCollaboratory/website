@@ -25,15 +25,6 @@
         "link": "/services-cloud-resources",
         "isLinkExternal": false,
         "hasIcon": true
-      },
-      "publication": {
-        "imageSrcPath": "/assets/publication/pcawg-nature-cover.png",
-        "imageAlt": "PCAWG Nature Cover",
-        "title": "Pan-cancer Analysis of Whole Genomes Published!",
-        "titleLink": "https://www.nature.com/collections/afdejfafdb",
-        "isTitleLinkExternal": true,
-        "caption": "Read about the ICGC/TCGA analysis of >2,600 whole cancer genomes across 38 tumour types in 23 papers published in [Nature and other Nature journals](https://www.nature.com/collections/afdejfafdb). *Photo credit: Nik Spencer/Nature.*",
-        "isCaptionLinkExternal": true
       }
     },
     "rightColumn": {
