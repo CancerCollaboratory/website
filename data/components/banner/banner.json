@@ -1,11 +1,11 @@
 {
     "banner": {
-        "isActive": false,
-        "title": "Enter a title here.",
-        "description": "Enter a description here.",
+        "isActive": true,
+        "title": "The Collaboratory officially closed on December 31, 2023",
+        "description": "Since 2008, the Collaboratory has enabled researchers to access and analyze the world's most comprehensive catalogue of cancer genomes. We want to express our heartfelt gratitude to all contributors, with special thanks to the [Ontario Institute of Cancer Research (OICR)](https://cancercollaboratory.org/about-team) and the [funding agencies and collaborators](https://cancercollaboratory.org/about-funders-collaborators) who helped make it all possible.",
         "isDescriptionLinkExternal": false,
-        "linkLabel": "Enter a label for a link here.",
-        "linkTarget": "Replace this text with a URL.",
+        "linkLabel": "",
+        "linkTarget": "",
         "isLinkTargetExternal": false
     }
 }
